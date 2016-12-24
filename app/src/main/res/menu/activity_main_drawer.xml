@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item android:title="User">
+        <menu>
+            <item
+            android:id="@+id/nav_user_profile"
+            android:icon="@drawable/vr_profile_icon"
+            android:title="User Profile" />
+            <item
+            android:id="@+id/nav_user_profile_edit"
+            android:icon="@drawable/ic_person_add_black_48dp"
+            android:title="User Profile Edit" />
+            <item
+            android:id="@+id/RSA_videos"
+            android:icon="@drawable/vr_video_profile_icon"
+            android:title="RSA Videos" />
+            <item
+            android:id="@+id/nav_start_inspection"
+            android:icon="@drawable/vr_start_inspection_icon"
+            android:title="Start Inspection" />
+            <item
+            android:id="@+id/nav_log_out"
+            android:icon="@drawable/vr_logout_icon"
+            android:title="Logout" />
+        </menu>
+        </item>
+
+
+
+        <item android:title="Database">
+        <menu>
+            <item
+                android:id="@+id/nav_vehicle_reports_database"
+                android:icon="@drawable/vr_search_icon"
+                android:title="Vehicle Reports Database" />
+
+        </menu>
+        </item>
+
+
+        <item android:title="Truckman App">
+        <menu>
+            <item
+                android:id="@+id/nav_truckman_app"
+                android:icon="@drawable/vr_truckman_info_icon"
+                android:title="TRUCKMAN Info" />
+            <item
+                android:id="@+id/nav_truckman_instructions"
+                android:icon="@drawable/vr_truckman_info_icon"
+                android:title="App Instructions" />
+            <item
+                android:id="@+id/nav_truckman_contact"
+                android:icon="@drawable/vr_contact_us_icon"
+                android:title="Contact Us" />
+            <item
+                android:id="@+id/nav_truckman_EULA"
+                android:icon="@drawable/ic_eula"
+                android:title="EULA" />
+        </menu>
+        </item>
+
+    </group>
+
+</menu>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.laptop.truckmanv5.Info_Box_Washers_and_Wipers"
+    tools:showIn="@layout/activity_info__box__washers_and__wipers">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView6" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView7"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/blueicon160x160washerandwiper"
+                    android:layout_gravity="center_vertical"
+                    android:cropToPadding="true" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Washers and Wipers"
+                                android:id="@+id/textView52"
+                                android:layout_below="@+id/imageView7"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"
+                                android:layout_gravity="center_horizontal"
+                                android:textColor="#000000"
+                                android:textSize="40dp"
+                                android:layout_marginBottom="10dp"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:id="@+id/textView54"
+                                android:layout_alignTop="@+id/scrollView6"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:text="Windscreen washers and wipers must, by law, be in working order. Keep the washer bottle topped up with water and ensure that the wiper blades and arms are in good condition."
+                                android:layout_marginBottom="10dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Worn blades smear the windscreen and impair visibility. The makers recommend replacement every 12 months."
+                                android:id="@+id/textView58"
+                                android:layout_alignTop="@+id/scrollView6"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:layout_marginBottom="10dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:id="@+id/textView57"
+                                android:layout_alignTop="@+id/scrollView6"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:text="To keep the screen clear of oil and other pollutants, put some proprietary anti-smear additive in the washer bottle. Do not use washing-up liquid, which collects in the bottom of the bottle and clogs the non-return valve."
+                                android:layout_marginBottom="10dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="In winter, add screen-washer anti-freeze to the bottle. Do not use radiator antifreeze mixture, which will damage paintwork."
+                                android:id="@+id/textView59"
+                                android:layout_alignTop="@+id/scrollView6"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:layout_marginBottom="10dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Look carefully at the wiping edge of the rubber blade every time you clean the car. The rubber flexes sideways each time the blade changes direction, and eventually cracks near the edge."
+                                android:id="@+id/textView60"
+                                android:layout_alignTop="@+id/scrollView6"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:layout_marginBottom="10dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Replacement rubbers vary according to the make of car. Make sure you buy the correct type for your wiper blade — use the old one as a guide. Follow the maker&apos;s instructions when fitting."
+                                android:id="@+id/textView64"
+                                android:layout_alignTop="@+id/scrollView6"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:layout_marginBottom="10dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="If a wiper blade judders across the windscreen, something is out of alignment. Check that the hinge pin on the wiper arm is sound and that the nuts on the spindle bosses are tight."
+                                android:id="@+id/textView65"
+                                android:layout_alignTop="@+id/scrollView6"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:layout_marginBottom="10dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="The flat part of the end, viewed end on, should lie parallel with the glass. If it does not lie parallel, use pliers or a small adjustable spanner to twist the arm gently into alignment."
+                                android:id="@+id/textView66"
+                                android:layout_alignTop="@+id/scrollView6"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:layout_marginBottom="10dp" />
+
+                        </LinearLayout>
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="25dp">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Close"
+                    android:id="@+id/closebutton"
+                    android:layout_alignBottom="@+id/scrollView6"
+                    android:layout_alignEnd="@+id/scrollView6"
+                    android:layout_gravity="bottom|right" />
+            </FrameLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

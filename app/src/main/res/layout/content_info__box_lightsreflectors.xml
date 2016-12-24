@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.laptop.truckmanv5.Info_Box_lightsreflectors"
+    tools:showIn="@layout/activity_info_box_lightsreflectors">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView6" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView7"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/blueicon160x160lightsreflectors"
+                    android:layout_gravity="center_vertical"
+                    android:cropToPadding="true" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Lights and Reflectors check"
+                                android:id="@+id/textView52"
+                                android:layout_below="@+id/imageView7"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"
+                                android:layout_gravity="center_horizontal"
+                                android:textColor="#000000"
+                                android:textSize="40dp"
+                                android:layout_marginBottom="10dp"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:id="@+id/textView54"
+                                android:layout_alignTop="@+id/scrollView6"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:text="Your lights, reflectors, number plate lighting and direction indicators will be effective only if you keep them clean and in good working order."
+                                android:layout_marginBottom="10dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="It will be quicker if you have a colleague help you with this or you could have a fixed mirror in your yard so that lights can be checked from the cab."
+                                android:id="@+id/textView58"
+                                android:layout_alignTop="@+id/scrollView6"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:layout_marginBottom="10dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:id="@+id/textView57"
+                                android:layout_alignTop="@+id/scrollView6"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:text="Check that all required markings are:"
+                                android:layout_marginBottom="10dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="- fitted; "
+                                android:id="@+id/textView59"
+                                android:layout_alignTop="@+id/scrollView6"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:layout_marginBottom="10dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="- clearly visible; and"
+                                android:id="@+id/textView140"
+                                android:layout_alignTop="@+id/scrollView6"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:layout_marginBottom="10dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="- not faded."
+                                android:id="@+id/textView141"
+                                android:layout_alignTop="@+id/scrollView6"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:layout_marginBottom="10dp" />
+
+                        </LinearLayout>
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="25dp">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Close"
+                    android:id="@+id/closebutton"
+                    android:layout_alignBottom="@+id/scrollView6"
+                    android:layout_alignEnd="@+id/scrollView6"
+                    android:layout_gravity="bottom|right" />
+            </FrameLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

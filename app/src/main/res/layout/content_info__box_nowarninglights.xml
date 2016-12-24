@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.laptop.truckmanv5.Info_Box_nowarninglights"
+    tools:showIn="@layout/activity_info__box_nowarninglights">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView6" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView7"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/blueicon160x160nowarninglights"
+                    android:layout_gravity="center_vertical"
+                    android:cropToPadding="true" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="No warning lights"
+                                android:id="@+id/textView52"
+                                android:layout_below="@+id/imageView7"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"
+                                android:layout_gravity="center_horizontal"
+                                android:textColor="#000000"
+                                android:textSize="40dp"
+                                android:layout_marginBottom="10dp"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:id="@+id/textView54"
+                                android:layout_alignTop="@+id/scrollView6"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:text="Dash lights are nothing new, but the messages are. The following list of warning lights are the most common lights used by auto manufacturers. Not all warning lights are universal. Always refer to your owner&apos;s manual when you&apos;re not 100% sure what the light indicates."
+                                android:layout_marginBottom="10dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Many warning lights indicate that a fault has occurred inside the vehicle&apos;s system, but it doesn&apos;t pinpoint the item or system that has failed. In these cases, a code reader or scan tool can help determine the part that needs to be replaced. If an indicator light on your dash is on."
+                                android:id="@+id/textView58"
+                                android:layout_alignTop="@+id/scrollView6"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:layout_marginBottom="10dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:id="@+id/textView57"
+                                android:layout_alignTop="@+id/scrollView6"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:text="It’s not a game of connect four or warning light bingo – if your car’s dashboard is lit up like a Christmas tree, or even if there’s one, small blinking light on there, it’s important to get it checked out."
+                                android:layout_marginBottom="10dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="It could be something as minor as a faulty sensor or a broken wire, but it could be something more serious that, if left unchecked, will cause lasting and expensive damage to your vehicle."
+                                android:id="@+id/textView59"
+                                android:layout_alignTop="@+id/scrollView6"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:layout_marginBottom="10dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Regular servicing and maintenance can help protect your vehicle from firing off a fault, so keep a close eye on your car and its warning lights to save you money and avoid those expensive garage bills."
+                                android:id="@+id/textView60"
+                                android:layout_alignTop="@+id/scrollView6"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:layout_marginBottom="10dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Have you got a warning light illuminated, or have you previously had a problem with your car signified by a telltale sign on the dashboard? How did you go about fixing it and what advice would you give to other motorists with a dash full of LED warnings?"
+                                android:id="@+id/textView64"
+                                android:layout_alignTop="@+id/scrollView6"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:layout_marginBottom="10dp" />
+
+                        </LinearLayout>
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="25dp">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Close"
+                    android:id="@+id/closebutton"
+                    android:layout_alignBottom="@+id/scrollView6"
+                    android:layout_alignEnd="@+id/scrollView6"
+                    android:layout_gravity="bottom|right" />
+            </FrameLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
+

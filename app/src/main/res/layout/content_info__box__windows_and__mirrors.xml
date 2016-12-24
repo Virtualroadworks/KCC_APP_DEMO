@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.laptop.truckmanv5.Info_Box_Windows_and_Mirrors"
+    tools:showIn="@layout/activity_info__box__windows_and__mirrors">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView6" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView7"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/blueicon160x160winmiri"
+                    android:layout_gravity="center_vertical" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Windows and Mirrors"
+                                android:id="@+id/textView52"
+                                android:layout_below="@+id/imageView7"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"
+                                android:layout_gravity="center_horizontal"
+                                android:textColor="#000000"
+                                android:textSize="40dp"
+                                android:layout_marginBottom="10dp"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:id="@+id/textView54"
+                                android:layout_alignTop="@+id/scrollView6"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:text="Windows including windshield, driver’s- and passenger-side windows and rear window must be clean to allow the examinee and driver examiner to see"
+                                android:layout_marginBottom="10dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Windshield, side and rear windows must not be frosted or fogged such that vision is impaired or that the defrosters will not adequately clear them"
+                                android:id="@+id/textView58"
+                                android:layout_alignTop="@+id/scrollView6"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:layout_marginBottom="10dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:id="@+id/textView57"
+                                android:layout_alignTop="@+id/scrollView6"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:text="Windshield must not be badly cracked (e.g., cracks that impair, restrict, obscure or distort examinee’s or examiner’s view through windshield)"
+                                android:layout_marginBottom="10dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="If it is raining or likely to rain during the road test, both driver’s- and passenger-side windshield wipers must work and adequately clear windshield"
+                                android:id="@+id/textView59"
+                                android:layout_alignTop="@+id/scrollView6"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:layout_marginBottom="10dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="• Rear windshield wiper and front or rear windshield washers not required to work"
+                                android:id="@+id/textView60"
+                                android:layout_alignTop="@+id/scrollView6"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:layout_marginBottom="10dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Both the driver’s and passenger’s side windows must open from the inside"
+                                android:id="@+id/textView61"
+                                android:layout_alignTop="@+id/scrollView6"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:layout_marginBottom="10dp" />
+                        </LinearLayout>
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="25dp">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Close"
+                    android:id="@+id/closebutton"
+                    android:layout_alignBottom="@+id/scrollView6"
+                    android:layout_alignEnd="@+id/scrollView6"
+                    android:layout_gravity="bottom|right" />
+            </FrameLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

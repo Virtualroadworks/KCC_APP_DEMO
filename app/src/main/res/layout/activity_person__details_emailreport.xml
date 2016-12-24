@@ -1,0 +1,2725 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView3"
+        tools:ignore="UselessParent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                tools:ignore="UselessParent">
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        tools:ignore="UselessParent">
+
+                        <FrameLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="140dp"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:text="User Name:"
+                                    android:id="@+id/textView30"
+                                    android:textColor="#000000"
+                                    android:textSize="15sp"
+                                    tools:ignore="HardcodedText" />
+
+                                <TextView
+                                    android:id="@+id/tvPersonDetailName"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    tools:text="Person Name"
+                                    android:textAlignment="textStart"
+                                    android:textSize="15sp"
+                                    android:textColor="#000000"
+                                    tools:ignore="RtlSymmetry" />
+
+                                <TextView
+                                    tools:text="Person Name"
+                                    android:id="@+id/tvPersonDetailNameemail"
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:textAlignment="textStart"
+                                    android:textSize="15sp"
+                                    android:textColor="#000000"
+                                    android:paddingLeft="10dp"
+                                    android:visibility="invisible"
+                                    tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+                            </LinearLayout>
+
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" >
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content" >
+
+                                <TextView
+                                    android:layout_width="140dp"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:text="User Email:"
+                                    android:id="@+id/textView32"
+                                    android:textColor="#000000"
+                                    android:textSize="15sp"
+                                    tools:ignore="HardcodedText" />
+
+                                <TextView
+                                    android:id="@+id/tvPersonDetailEmail"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    tools:text="Person Email"
+                                    android:textAlignment="textStart"
+                                    android:textSize="15sp"
+                                    android:textColor="#000000"
+                                    tools:ignore="RtlSymmetry" />
+
+                                <TextView
+                                    tools:text="Person Email"
+                                    android:id="@+id/tvPersonDetailEmailemail"
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:textAlignment="textStart"
+                                    android:textSize="15sp"
+                                    android:textColor="#000000"
+                                    android:paddingLeft="10dp"
+                                    tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+                            </LinearLayout>
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" >
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content" >
+
+                                <TextView
+                                    android:layout_width="140dp"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:text="Inspection Report Email Recipient:"
+                                    android:id="@+id/textView94"
+                                    android:textColor="#000000"
+                                    android:textSize="15sp"
+                                    tools:ignore="HardcodedText" />
+
+                                <TextView
+                                    android:id="@+id/tvreport_email_recipient"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    tools:text="Inspection Report Email Recipient"
+                                    android:textAlignment="textStart"
+                                    android:textSize="15sp"
+                                    android:textColor="#000000"
+                                    tools:ignore="RtlSymmetry" />
+
+                                <TextView
+                                    tools:text="Company Name"
+                                    android:id="@+id/tvreport_email_recipientmail"
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:textAlignment="textStart"
+                                    android:textSize="15sp"
+                                    android:textColor="#000000"
+                                    android:paddingLeft="10dp"
+                                    android:visibility="invisible"
+                                    tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+                            </LinearLayout>
+                        </FrameLayout>
+                        <FrameLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" >
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content" >
+
+                                <TextView
+                                    android:layout_width="140dp"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:text="Company Name:"
+                                    android:id="@+id/textView33"
+                                    android:textColor="#000000"
+                                    android:textSize="15sp"
+                                    tools:ignore="HardcodedText" />
+
+                                <TextView
+                                    android:id="@+id/tvcompanyname"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    tools:text="Company Name"
+                                    android:textAlignment="textStart"
+                                    android:textSize="15sp"
+                                    android:textColor="#000000"
+                                    tools:ignore="RtlSymmetry" />
+
+                                <TextView
+                                    tools:text="Company Name"
+                                    android:id="@+id/tvcompanynameemail"
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:textAlignment="textStart"
+                                    android:textSize="15sp"
+                                    android:textColor="#000000"
+                                    android:paddingLeft="10dp"
+                                    android:visibility="invisible"
+                                    tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+                            </LinearLayout>
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" >
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content" >
+
+                                <TextView
+                                    android:layout_width="140dp"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:text="Contact Number:"
+                                    android:id="@+id/textView34"
+                                    android:textColor="#000000"
+                                    android:textSize="15sp"
+                                    tools:ignore="HardcodedText" />
+
+                                <TextView
+                                    android:id="@+id/tvPersonDetailPhone"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    tools:text="Person Phone"
+                                    android:textAlignment="textStart"
+                                    android:textSize="15sp"
+                                    android:textColor="#000000"
+                                    tools:ignore="RtlSymmetry" />
+
+                                <TextView
+                                    tools:text="Person Phone"
+                                    android:id="@+id/tvPersonDetailPhoneemail"
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:textAlignment="textStart"
+                                    android:textSize="15sp"
+                                    android:textColor="#000000"
+                                    android:paddingLeft="10dp"
+                                    android:visibility="invisible"
+                                    tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+                            </LinearLayout>
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" >
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content" >
+
+                                <TextView
+                                    android:layout_width="140dp"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:text="Inspection Start:"
+                                    android:id="@+id/textView35"
+                                    android:textColor="#000000"
+                                    android:textSize="15sp"
+                                    tools:ignore="HardcodedText" />
+
+                                <TextView
+                                    tools:text="Inspection End Time"
+                                    android:id="@+id/startDate"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textAlignment="textStart"
+                                    android:textSize="15sp"
+                                    android:textColor="#000000"
+                                    tools:ignore="RtlSymmetry" />
+
+                                <TextView
+                                    tools:text="Inspection End Time"
+                                    android:id="@+id/startDateemail"
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:textAlignment="textStart"
+                                    android:textSize="15sp"
+                                    android:textColor="#000000"
+                                    android:paddingLeft="10dp"
+                                    android:visibility="invisible"
+                                    tools:ignore="RtlHardcoded,RtlSymmetry" />
+                            </LinearLayout>
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" >
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content" >
+
+                                <TextView
+                                    android:layout_width="140dp"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:text="Inspection End:"
+                                    android:id="@+id/textView37"
+                                    android:textColor="#000000"
+                                    android:textSize="15sp"
+                                    tools:ignore="HardcodedText" />
+
+                                <TextView
+                                    tools:text="Inspection Start Time"
+                                    android:id="@+id/endDate"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="15sp"
+                                    android:textColor="#000000"
+                                    android:text="Inspection Start Time"
+                                    tools:ignore="HardcodedText,RtlSymmetry" />
+
+                                <TextView
+                                    tools:text="Inspection Start Time"
+                                    android:id="@+id/endDateemail"
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:textSize="15sp"
+                                    android:textColor="#000000"
+                                    android:paddingLeft="10dp"
+                                    android:text="Inspection Start Time"
+                                    android:visibility="invisible"
+                                    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+                            </LinearLayout>
+                        </FrameLayout>
+                        <FrameLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" >
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content" >
+
+                                <TextView
+                                    android:layout_width="140dp"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:text="Location :"
+                                    android:id="@+id/textView47"
+                                    android:textColor="#000000"
+                                    android:textSize="15sp"
+                                    tools:ignore="HardcodedText" />
+
+                                <TextView
+                                    tools:text="Inspection Start Time"
+                                    android:id="@+id/tvlocation_address_view"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="15sp"
+                                    android:textColor="#000000"
+                                    android:text="Inspection Start Time"
+                                    tools:ignore="HardcodedText,RtlSymmetry" />
+
+                                <TextView
+                                    tools:text="Inspection Start Time"
+                                    android:id="@+id/tvlocation_address_viewmail"
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:textSize="15sp"
+                                    android:textColor="#000000"
+                                    android:paddingLeft="10dp"
+                                    android:text="Inspection Start Time"
+                                    android:visibility="invisible"
+                                    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+                            </LinearLayout>
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="175dp"
+                                android:layout_height="match_parent"
+                                app:srcCompat="@drawable/photoplace90x90"
+                                android:id="@+id/vehiclephotoImageviewpicplace"
+                                tools:ignore="ContentDescription"
+                                android:layout_gravity="end" />
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="195dp"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/tvReg"
+                                    android:layout_width="190dp"
+                                    android:layout_height="50dp"
+                                    tools:text="Reg"
+                                    android:textAlignment="center"
+                                    android:background="@drawable/regplatebackground"
+                                    android:paddingTop="12dp"
+                                    android:textColor="#000000"
+                                    android:textSize="20sp"
+                                    android:layout_gravity="start" />
+
+                                <TextView
+                                    tools:text="Reg"
+                                    android:id="@+id/tvRegemail"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_gravity="center"
+                                    android:textAlignment="center"
+                                    android:background="@drawable/regplatebackground"
+                                    android:paddingTop="12dp"
+                                    android:textColor="#000000"
+                                    android:textSize="20sp"
+                                    android:visibility="invisible" />
+
+                                <Button
+                                    android:text="Email Report"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/emailreport"
+                                    android:background="@drawable/button_roundoff4"
+                                    android:layout_margin="5dp"
+                                    tools:ignore="HardcodedText" />
+
+                            </LinearLayout>
+
+                        </FrameLayout>
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="2dp">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Outside - Inspection"
+                        android:id="@+id/textView99"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:textSize="15sp"
+                        android:background="@drawable/button_roundoff3"
+                        android:textColor="#ffffff"
+                        tools:ignore="HardcodedText" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Tax and insurance"
+                            android:id="@+id/textView142"
+                            android:textAlignment="center"
+                            android:textSize="15sp"
+                            android:background="@drawable/button_roundoff3"
+                            android:textColor="#ffffff"
+                            tools:ignore="HardcodedText" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:baselineAligned="false">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    tools:ignore="InefficientWeight">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Defect Status:"
+                                        android:id="@+id/textView143"
+                                        tools:ignore="HardcodedText,TooDeepLayout" />
+
+                                    <TextView
+                                        tools:text="Tax and Insurance"
+                                        android:id="@+id/taxinsurancedescribedefectfill_report"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        tools:text="Windows and Mirrors"
+                                        android:id="@+id/taxinsurancedescribedefectfill_reportemail"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:visibility="invisible" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Temporary Fix (If Any):"
+                                        android:id="@+id/textView145"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        tools:text="Tax and Insurance"
+                                        android:id="@+id/taxinsurancetempfixfill_report"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        tools:text="Tax and Insurance"
+                                        android:id="@+id/taxinsurancetempfixfill_reportemail"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:visibility="invisible"
+                                        tools:ignore="HardcodedText" />
+                                </LinearLayout>
+
+                                <ImageView
+                                    app:srcCompat="@drawable/photoplace90x90"
+                                    android:id="@+id/taxinsuranceImageviewpicplace"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    tools:ignore="ContentDescription" />
+
+                            </LinearLayout>
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Reg Plate, Markings"
+                            android:id="@+id/textView200"
+                            android:textAlignment="center"
+                            android:textSize="15sp"
+                            android:background="@drawable/button_roundoff3"
+                            android:textColor="#ffffff"
+                            tools:ignore="HardcodedText" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_weight="1"
+                                    tools:ignore="InefficientWeight">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Defect Status:"
+                                        android:id="@+id/textView201"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        tools:text="Reg Plate"
+                                        android:id="@+id/regplatedescribedefectfill_report"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        tools:text="Windows and Mirrors"
+                                        android:id="@+id/regplatedescribedefectfill_reportemail"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:visibility="invisible" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Temporary Fix (If Any):"
+                                        android:id="@+id/textView203"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        tools:text="Reg Plate"
+                                        android:id="@+id/regplatetempfixfill_report"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        tools:ignore="HardcodedText,TooManyViews" />
+
+                                    <TextView
+                                        tools:text="Windows and Mirrors"
+                                        android:id="@+id/regplatetempfixfill_reportemail"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:visibility="invisible"
+                                        tools:ignore="HardcodedText" />
+
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    app:srcCompat="@drawable/photoplace90x90"
+                                    android:id="@+id/regplateImageviewpicplace"
+                                    tools:ignore="ContentDescription" />
+
+                            </LinearLayout>
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Air and Electrial"
+                            android:id="@+id/textView212"
+                            android:textAlignment="center"
+                            android:textSize="15sp"
+                            android:background="@drawable/button_roundoff3"
+                            android:textColor="#ffffff"
+                            tools:ignore="HardcodedText" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    tools:ignore="InefficientWeight">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Defect Status:"
+                                        android:id="@+id/textView213"
+                                        tools:ignore="HardcodedText,TooManyViews" />
+
+                                    <TextView
+                                        tools:text="Air and Electrial"
+                                        android:id="@+id/airelectrialdescribedefectfill_report"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        tools:ignore="TooManyViews" />
+
+                                    <TextView
+                                        tools:text="Windows and Mirrors"
+                                        android:id="@+id/airelectrialdescribedefectfill_reportemail"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:visibility="invisible" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Temporary Fix (If Any):"
+                                        android:id="@+id/textView215"
+                                        tools:ignore="HardcodedText,TooManyViews" />
+
+                                    <TextView
+                                        tools:text="Air and Electrial"
+                                        android:id="@+id/airelectrialtempfixfill_report"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        tools:text="Windows and Mirrors"
+                                        android:id="@+id/airelectrialtempfixfill_reportemail"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:visibility="invisible"
+                                        tools:ignore="HardcodedText" />
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    app:srcCompat="@drawable/photoplace90x90"
+                                    android:id="@+id/airelectrialImageviewpicplace"
+                                    tools:ignore="ContentDescription" />
+
+                            </LinearLayout>
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Fluid Levels, leaks"
+                            android:id="@+id/textView208"
+                            android:textAlignment="center"
+                            android:textSize="15sp"
+                            android:background="@drawable/button_roundoff3"
+                            android:textColor="#ffffff"
+                            tools:ignore="HardcodedText,TooManyViews" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    tools:ignore="InefficientWeight">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Defect Status:"
+                                        android:id="@+id/textView209"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        tools:text="Fluid and Leaks"
+                                        android:id="@+id/fluidleaksdescribedefectfill_report"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        tools:text="Windows and Mirrors"
+                                        android:id="@+id/fluidleaksdescribedefectfill_reportemail"
+                                        android:layout_width="0dp"
+                                        android:layout_height="0dp"
+                                        android:visibility="invisible"
+                                        tools:ignore="TooManyViews" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Temporary Fix (If Any):"
+                                        android:id="@+id/textView211"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        tools:text="Fluid and Leaks"
+                                        android:id="@+id/fluidleakstempfixfill_report"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        tools:text="Windows and Mirrors"
+                                        android:id="@+id/fluidleakstempfixfill_reportemail"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:visibility="invisible"
+                                        tools:ignore="HardcodedText" />
+
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    app:srcCompat="@drawable/photoplace90x90"
+                                    android:id="@+id/fluidleaksImageviewpicplace"
+                                    tools:ignore="ContentDescription" />
+
+                            </LinearLayout>
+                        </FrameLayout>
+
+                    </LinearLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Air Suspension"
+                            android:id="@+id/textView220"
+                            android:textAlignment="center"
+                            android:textSize="15sp"
+                            android:background="@drawable/button_roundoff3"
+                            android:textColor="#ffffff"
+                            tools:ignore="HardcodedText" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    tools:ignore="InefficientWeight">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Defect Status:"
+                                        android:id="@+id/textView221"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        tools:text="Air Suspension"
+                                        android:id="@+id/airsuspensiondescribedefectfill_report"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        tools:text="Windows and Mirrors"
+                                        android:id="@+id/airsuspensiondescribedefectfill_reportemail"
+                                        android:layout_width="0dp"
+                                        android:layout_height="0dp"
+                                        android:visibility="invisible" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Temporary Fix (If Any):"
+                                        android:id="@+id/textView223"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        tools:text="Air Suspension"
+                                        android:id="@+id/airsuspensiontempfixfill_report"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Loading..."
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        tools:text="Windows and Mirrors"
+                                        android:id="@+id/airsuspensiontempfixfill_reportemail"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:visibility="invisible"
+                                        tools:ignore="HardcodedText" />
+
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    app:srcCompat="@drawable/photoplace90x90"
+                                    android:id="@+id/airsuspensionImageviewpicplace"
+                                    tools:ignore="ContentDescription" />
+
+                            </LinearLayout>
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Wheels and Tyres"
+                            android:id="@+id/textView148"
+                            android:textAlignment="center"
+                            android:textSize="15sp"
+                            android:background="@drawable/button_roundoff3"
+                            android:textColor="#ffffff"
+                            tools:ignore="HardcodedText" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    tools:ignore="InefficientWeight">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Defect Status:"
+                                        android:id="@+id/textView149"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        tools:text="Wheels and Tyres"
+                                        android:id="@+id/wheelstyresdescribedefectfill_report"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        tools:text="Windows and Mirrors"
+                                        android:id="@+id/wheelstyresdescribedefectfill_reportemail"
+                                        android:layout_width="0dp"
+                                        android:layout_height="0dp"
+                                        android:visibility="invisible" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Temporary Fix (If Any):"
+                                        android:id="@+id/textView151"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        tools:text="Wheels and Tyres"
+                                        android:id="@+id/wheelstyrestempfixfill_report"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Loading..."
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        tools:text="Windows and Mirrors"
+                                        android:id="@+id/wheelstyrestempfixfill_reportemail"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:visibility="invisible"
+                                        tools:ignore="HardcodedText" />
+
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    app:srcCompat="@drawable/photoplace90x90"
+                                    android:id="@+id/wheelsandtyresImageviewpicplace"
+                                    tools:ignore="ContentDescription" />
+
+                            </LinearLayout>
+                        </FrameLayout>
+
+                    </LinearLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Lights and Reflectors"
+                            android:id="@+id/textView156"
+                            android:textAlignment="center"
+                            android:textSize="15sp"
+                            android:background="@drawable/button_roundoff3"
+                            android:textColor="#ffffff"
+                            tools:ignore="HardcodedText" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    tools:ignore="InefficientWeight">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Defect Status:"
+                                        android:id="@+id/textView157"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        tools:text="Lights and Reflectors"
+                                        android:id="@+id/lightsreflectorsdescribedefectfill_report"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        tools:text="Windows and Mirrors"
+                                        android:id="@+id/lightsreflectorsdescribedefectfill_reportemail"
+                                        android:visibility="invisible"
+                                        android:layout_width="0dp"
+                                        android:layout_height="0dp" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Temporary Fix (If Any):"
+                                        android:id="@+id/textView159"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        tools:text="Lights and Reflectors"
+                                        android:id="@+id/lightsreflectorstempfixfill_report"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        tools:text="Windows and Mirrors"
+                                        android:id="@+id/lightsreflectorstempfixfill_reportemail"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:visibility="invisible"
+                                        tools:ignore="HardcodedText" />
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    app:srcCompat="@drawable/photoplace90x90"
+                                    android:id="@+id/lightsreflectorsImageviewpicplace"
+                                    tools:ignore="ContentDescription" />
+
+                            </LinearLayout>
+                        </FrameLayout>
+
+                    </LinearLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        tools:ignore="UselessParent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Exhaust"
+                            android:id="@+id/textView162"
+                            android:textAlignment="center"
+                            android:textSize="15sp"
+                            android:background="@drawable/button_roundoff3"
+                            android:textColor="#ffffff"
+                            tools:ignore="HardcodedText" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    tools:ignore="InefficientWeight">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Defect Status:"
+                                        android:id="@+id/textView163"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        tools:text="Exhaust"
+                                        android:id="@+id/exhaustdescribedefectfill_report"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        tools:text="Windows and Mirrors"
+                                        android:id="@+id/exhaustdescribedefectfill_reportemail"
+                                        android:layout_width="0dp"
+                                        android:layout_height="0dp"
+                                        android:visibility="invisible" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Temporary Fix (If Any):"
+                                        android:id="@+id/textView165"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        tools:text="Exhaust"
+                                        android:id="@+id/exhausttempfixfill_report"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        tools:text="Windows and Mirrors"
+                                        android:id="@+id/exhausttempfixfill_reportemail"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:visibility="invisible"
+                                        tools:ignore="HardcodedText" />
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    app:srcCompat="@drawable/photoplace90x90"
+                                    android:id="@+id/exhaustImageviewpicplace"
+                                    tools:ignore="ContentDescription" />
+
+                            </LinearLayout>
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Body, Guards, Straps"
+                            android:id="@+id/textView182"
+                            android:textAlignment="center"
+                            android:textSize="15sp"
+                            android:background="@drawable/button_roundoff3"
+                            android:textColor="#ffffff"
+                            tools:ignore="HardcodedText" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    tools:ignore="InefficientWeight">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Defect Status:"
+                                        android:id="@+id/textView183"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        tools:text="Body and Guards"
+                                        android:id="@+id/bodyguardsdescribedefectfill_report"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        tools:text="Windows and Mirrors"
+                                        android:id="@+id/bodyguardsdescribedefectfill_reportemail"
+                                        android:layout_width="0dp"
+                                        android:layout_height="0dp"
+                                        android:visibility="invisible" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Temporary Fix (If Any):"
+                                        android:id="@+id/textView185"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        tools:text="Body and Guards"
+                                        android:id="@+id/bodyguardstempfixfill_report"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        tools:text="Windows and Mirrors"
+                                        android:id="@+id/bodyguardstempfixfill_reportemail"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:visibility="invisible"
+                                        tools:ignore="HardcodedText" />
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    app:srcCompat="@drawable/photoplace90x90"
+                                    android:id="@+id/bodyguardsImageviewpicplace"
+                                    tools:ignore="ContentDescription" />
+
+                            </LinearLayout>
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="landing Leg"
+                            android:id="@+id/textView190"
+                            android:textAlignment="center"
+                            android:textSize="15sp"
+                            android:background="@drawable/button_roundoff3"
+                            android:textColor="#ffffff"
+                            tools:ignore="HardcodedText" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    tools:ignore="InefficientWeight">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Defect Status:"
+                                        android:id="@+id/textView191"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        tools:text="Landing Leg"
+                                        android:id="@+id/landinglegdescribedefectfill_report"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        tools:text="Windows and Mirrors"
+                                        android:id="@+id/landinglegdescribedefectfill_reportemail"
+                                        android:layout_width="0dp"
+                                        android:layout_height="0dp" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Temporary Fix (If Any):"
+                                        android:id="@+id/textView193"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        tools:text="Landing Leg"
+                                        android:id="@+id/landinglegtempfixfill_report"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        tools:text="Windows and Mirrors"
+                                        android:id="@+id/landinglegtempfixfill_reportemail"
+                                        android:layout_width="0dp"
+                                        android:layout_height="0dp" />
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    app:srcCompat="@drawable/photoplace90x90"
+                                    android:id="@+id/landinglegImageviewpicplace"
+                                    tools:ignore="ContentDescription" />
+
+                            </LinearLayout>
+                        </FrameLayout>
+
+                    </LinearLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Spare, Steps, Tow"
+                            android:id="@+id/textView169"
+                            android:textAlignment="center"
+                            android:textSize="15sp"
+                            android:background="@drawable/button_roundoff3"
+                            android:textColor="#ffffff"
+                            tools:ignore="HardcodedText" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    tools:ignore="InefficientWeight">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Defect Status:"
+                                        android:id="@+id/textView170"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        tools:text="Spare,Steps,Tow"
+                                        android:id="@+id/sparetowdescribedefectfill_report"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        tools:text="Windows and Mirrors"
+                                        android:id="@+id/sparetowdescribedefectfill_reportemail"
+                                        android:layout_width="0dp"
+                                        android:layout_height="0dp"
+                                        android:visibility="invisible" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Temporary Fix (If Any):"
+                                        android:id="@+id/textView172"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        tools:text="Spare,Steps,Tow"
+                                        android:id="@+id/sparetowtempfixfill_report"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        tools:text="Windows and Mirrors"
+                                        android:id="@+id/sparetowtempfixfill_reportemail"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:visibility="invisible" />
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    app:srcCompat="@drawable/photoplace90x90"
+                                    android:id="@+id/sparetowImageviewpicplace"
+                                    tools:ignore="ContentDescription" />
+
+                            </LinearLayout>
+                        </FrameLayout>
+
+                    </LinearLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Trailer Brake (operate)"
+                            android:id="@+id/textView177"
+                            android:textAlignment="center"
+                            android:textSize="15sp"
+                            android:background="@drawable/button_roundoff3"
+                            android:textColor="#ffffff"
+                            tools:ignore="HardcodedText" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    tools:ignore="InefficientWeight">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Defect Status:"
+                                        android:id="@+id/textView178"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        tools:text="Trailer Brake"
+                                        android:id="@+id/trailerbrakedescribedefectfill_report"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        tools:text="Windows and Mirrors"
+                                        android:id="@+id/trailerbrakedescribedefectfill_reportemail"
+                                        android:layout_width="0dp"
+                                        android:layout_height="0dp"
+                                        android:visibility="invisible" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Temporary Fix (If Any):"
+                                        android:id="@+id/textView180"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        tools:text="Trailer Brake"
+                                        android:id="@+id/trailerbraketempfixfill_report"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        tools:text="Windows and Mirrors"
+                                        android:id="@+id/trailerbraketempfixfill_reportemail"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:visibility="invisible" />
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    app:srcCompat="@drawable/photoplace90x90"
+                                    android:id="@+id/trailerbrakeImageviewpicplace"
+                                    tools:ignore="ContentDescription" />
+
+                            </LinearLayout>
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="2dp">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="In-Cab - Inspection"
+                        android:id="@+id/textView14"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:textSize="15sp"
+                        android:background="@drawable/button_roundoff2"
+                        android:textColor="#ffffff"
+                        tools:ignore="HardcodedText" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Windows and Mirrors check"
+                            android:id="@+id/textView6"
+                            android:textAlignment="center"
+                            android:textSize="15sp"
+                            android:background="@drawable/button_roundoff2"
+                            android:textColor="#ffffff"
+                            tools:ignore="HardcodedText" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    tools:ignore="InefficientWeight">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Defect Status:"
+                                        android:id="@+id/textView17"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        tools:text="Windows and Mirrors"
+                                        android:id="@+id/winmirdescribedefectfill_report"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        tools:text="Windows and Mirrors"
+                                        android:id="@+id/winmirdescribedefectfill_reportemail"
+                                        android:layout_width="0dp"
+                                        android:layout_height="0dp"
+                                        android:visibility="invisible" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Temporary Fix (If Any):"
+                                        android:id="@+id/textView18"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        tools:text="Windows and Mirrors"
+                                        android:id="@+id/winmirtempfixfill_report"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        tools:text="Windows and Mirrors"
+                                        android:id="@+id/winmirtempfixfill_reportemail"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:visibility="invisible" />
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    app:srcCompat="@drawable/photoplace90x90"
+                                    android:id="@+id/winmirImageviewpicplace"
+                                    tools:ignore="ContentDescription" />
+
+                            </LinearLayout>
+                        </FrameLayout>
+
+                    </LinearLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Seats,Belts and Controls check"
+                            android:id="@+id/textView8"
+                            android:textAlignment="center"
+                            android:textSize="15sp"
+                            android:background="@drawable/button_roundoff2"
+                            android:textColor="#ffffff"
+                            tools:ignore="HardcodedText" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    tools:ignore="InefficientWeight">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Defect Status:"
+                                        android:id="@+id/textView67"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        tools:text="Seats, Belts and Controls"
+                                        android:id="@+id/seatbeltdescribedefectfill_report"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        tools:text="Windows and Mirrors"
+                                        android:id="@+id/seatbeltdescribedefectfill_reportemail"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="0dp"
+                                        android:visibility="invisible" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Temporary Fix (If Any):"
+                                        android:id="@+id/textView69"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        tools:text="Seats, Belts and Controls"
+                                        android:id="@+id/seatbelttempfixfill_report"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        tools:text="Windows and Mirrors"
+                                        android:id="@+id/seatbelttempfixfill_reportemail"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:visibility="invisible" />
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    app:srcCompat="@drawable/photoplace90x90"
+                                    android:id="@+id/seatbeltsImageviewpicplace"
+                                    tools:ignore="ContentDescription" />
+
+                            </LinearLayout>
+                        </FrameLayout>
+
+                    </LinearLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Washers and Wipers check"
+                            android:id="@+id/textView10"
+                            android:textAlignment="center"
+                            android:textSize="15sp"
+                            android:background="@drawable/button_roundoff2"
+                            android:textColor="#ffffff"
+                            tools:ignore="HardcodedText" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    tools:ignore="InefficientWeight">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Defect Status:"
+                                        android:id="@+id/textView68"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        tools:text="Washers and Wipers"
+                                        android:id="@+id/washerandwiperdescribedefectfill_report"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        tools:text="Windows and Mirrors"
+                                        android:id="@+id/washerandwiperdescribedefectfill_reportemail"
+                                        android:layout_width="0dp"
+                                        android:layout_height="0dp"
+                                        android:visibility="invisible" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Temporary Fix (If Any):"
+                                        android:id="@+id/textView71"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        tools:text="Washers and Wipers"
+                                        android:id="@+id/washerandwipertempfixfill_report"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        tools:text="Windows and Mirrors"
+                                        android:id="@+id/washerandwipertempfixfill_reportemail"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:visibility="invisible" />
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    app:srcCompat="@drawable/photoplace90x90"
+                                    android:id="@+id/washerandwiperImageviewpicplace"
+                                    tools:ignore="ContentDescription" />
+
+                            </LinearLayout>
+                        </FrameLayout>
+
+                    </LinearLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Horn check"
+                            android:id="@+id/textView12"
+                            android:textAlignment="center"
+                            android:textSize="15sp"
+                            android:background="@drawable/button_roundoff2"
+                            android:textColor="#ffffff"
+                            tools:ignore="HardcodedText" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    tools:ignore="InefficientWeight">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Defect Status:"
+                                        android:id="@+id/textView73"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        tools:text="Horn"
+                                        android:id="@+id/horndescribedefectfill_report"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        tools:text="Windows and Mirrors"
+                                        android:id="@+id/horndescribedefectfill_reportemail"
+                                        android:layout_width="0dp"
+                                        android:layout_height="0dp"
+                                        android:visibility="invisible" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Temporary Fix (If Any):"
+                                        android:id="@+id/textView75"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        tools:text="Horn"
+                                        android:id="@+id/horntempfixfill_report"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        tools:text="Horn"
+                                        android:id="@+id/horntempfixfill_reportemail"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:visibility="invisible" />
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    app:srcCompat="@drawable/photoplace90x90"
+                                    android:id="@+id/hornImageviewpicplace"
+                                    tools:ignore="ContentDescription" />
+
+                            </LinearLayout>
+                        </FrameLayout>
+
+                    </LinearLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Break warning light"
+                            android:id="@+id/textView20"
+                            android:textAlignment="center"
+                            android:textSize="15sp"
+                            android:background="@drawable/button_roundoff2"
+                            android:textColor="#ffffff"
+                            tools:ignore="HardcodedText" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    tools:ignore="InefficientWeight">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Defect Status:"
+                                        android:id="@+id/textView79"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        tools:text="Break warning light"
+                                        android:id="@+id/breakwarninglightdescribedefectfill_report"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        tools:text="Windows and Mirrors"
+                                        android:id="@+id/breakwarninglightdescribedefectfill_reportemail"
+                                        android:layout_width="0dp"
+                                        android:layout_height="0dp"
+                                        android:visibility="invisible" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Temporary Fix (If Any):"
+                                        android:id="@+id/textView81"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        tools:text="Break warning light"
+                                        android:id="@+id/breakwarninglighttempfixfill_report"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        tools:text="Windows and Mirrors"
+                                        android:id="@+id/breakwarninglighttempfixfill_reportemail"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:visibility="invisible" />
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    app:srcCompat="@drawable/photoplace90x90"
+                                    android:id="@+id/breakwarninglightImageviewpicplace"
+                                    tools:ignore="ContentDescription" />
+
+                            </LinearLayout>
+                        </FrameLayout>
+
+                    </LinearLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Gauge &amp; Warning Lights"
+                            android:id="@+id/textView84"
+                            android:textAlignment="center"
+                            android:textSize="15sp"
+                            android:background="@drawable/button_roundoff2"
+                            android:textColor="#ffffff"
+                            tools:ignore="HardcodedText" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    tools:ignore="InefficientWeight">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Defect Status:"
+                                        android:id="@+id/textView85"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        tools:text="Gauge and warning lights"
+                                        android:id="@+id/gaugedescribedefectfill_report"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        tools:text="Windows and Mirrors"
+                                        android:id="@+id/gaugedescribedefectfill_reportemail"
+                                        android:layout_width="0dp"
+                                        android:layout_height="0dp"
+                                        android:visibility="invisible" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Temporary Fix (If Any):"
+                                        android:id="@+id/textView87"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        tools:text="Gauge and warning lights"
+                                        android:id="@+id/gaugetempfixfill_report"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        tools:text="Windows and Mirrors"
+                                        android:id="@+id/gaugetempfixfill_reportemail"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:visibility="invisible" />
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    app:srcCompat="@drawable/photoplace90x90"
+                                    android:id="@+id/gaugeImageviewpicplace"
+                                    tools:ignore="ContentDescription" />
+
+                            </LinearLayout>
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Tacho and Speed Limiter"
+                            android:id="@+id/textView91"
+                            android:textAlignment="center"
+                            android:textSize="15sp"
+                            android:background="@drawable/button_roundoff2"
+                            android:textColor="#ffffff"
+                            tools:ignore="HardcodedText" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    tools:ignore="InefficientWeight">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Defect Status:"
+                                        android:id="@+id/textView92"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        tools:text="Tacho and Speed"
+                                        android:id="@+id/tachodescribedefectfill_report"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        tools:text="Windows and Mirrors"
+                                        android:id="@+id/tachodescribedefectfill_reportemail"
+                                        android:layout_width="0dp"
+                                        android:layout_height="0dp"
+                                        android:visibility="invisible" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Temporary Fix (If Any):"
+                                        android:id="@+id/textView194"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        tools:text="Tacho and Speed"
+                                        android:id="@+id/tachotempfixfill_report"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        tools:text="Windows and Mirrors"
+                                        android:id="@+id/tachotempfixfill_reportemail"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:visibility="invisible" />
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    app:srcCompat="@drawable/photoplace90x90"
+                                    android:id="@+id/tachoImageviewpicplace"
+                                    tools:ignore="ContentDescription" />
+
+                            </LinearLayout>
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Air Leaks and Pressure"
+                            android:id="@+id/textView104"
+                            android:textAlignment="center"
+                            android:textSize="15sp"
+                            android:background="@drawable/button_roundoff2"
+                            android:textColor="#ffffff"
+                            tools:ignore="HardcodedText" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    tools:ignore="InefficientWeight">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Defect Status:"
+                                        android:id="@+id/textView105"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        tools:text="Air Leaks and Pressure"
+                                        android:id="@+id/airleaksdescribedefectfill_report"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        tools:text="Windows and Mirrors"
+                                        android:id="@+id/airleaksdescribedefectfill_reportemail"
+                                        android:layout_width="0dp"
+                                        android:layout_height="0dp"
+                                        android:visibility="invisible" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Temporary Fix (If Any):"
+                                        android:id="@+id/textView107"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        tools:text="Air Leaks and Pressure"
+                                        android:id="@+id/airleakstempfixfill_report"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        tools:text="Windows and Mirrors"
+                                        android:id="@+id/airleakstempfixfill_reportemail"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:visibility="invisible" />
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    app:srcCompat="@drawable/photoplace90x90"
+                                    android:id="@+id/airleaksImageviewpicplace"
+                                    tools:ignore="ContentDescription" />
+
+                            </LinearLayout>
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="2dp">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Driving - Inspection"
+                        android:id="@+id/textView24"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:textSize="15sp"
+                        android:background="@drawable/button_roundoff"
+                        android:textColor="#ffffff"
+                        tools:ignore="HardcodedText" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Steering and Breaking checks"
+                            android:id="@+id/textView22"
+                            android:textAlignment="center"
+                            android:textSize="15sp"
+                            android:background="@drawable/button_roundoff"
+                            android:textColor="#ffffff"
+                            tools:ignore="HardcodedText" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    tools:ignore="InefficientWeight">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Defect Status:"
+                                        android:id="@+id/textView109"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        tools:text="Steering and Breaking"
+                                        android:id="@+id/steeringbreakingdescribedefectfill_report"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        tools:text="Windows and Mirrors"
+                                        android:id="@+id/steeringbreakingdescribedefectfill_reportemail"
+                                        android:layout_width="0dp"
+                                        android:layout_height="0dp"
+                                        android:visibility="invisible" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Temporary Fix (If Any):"
+                                        android:id="@+id/textView111"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        tools:text="Steering and Breaking"
+                                        android:id="@+id/steeringbreakingtempfixfill_report"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        tools:text="Windows and Mirrors"
+                                        android:id="@+id/steeringbreakingtempfixfill_reportemail2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:visibility="invisible" />
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    app:srcCompat="@drawable/photoplace90x90"
+                                    android:id="@+id/steeringbreakingImageviewpicplace"
+                                    tools:ignore="ContentDescription" />
+
+                            </LinearLayout>
+                        </FrameLayout>
+
+                    </LinearLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Load secure, balance checks"
+                            android:id="@+id/textView119"
+                            android:textAlignment="center"
+                            android:textSize="15sp"
+                            android:background="@drawable/button_roundoff"
+                            android:textColor="#ffffff"
+                            tools:ignore="HardcodedText" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    tools:ignore="InefficientWeight">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Defect Status:"
+                                        android:id="@+id/textView120"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        tools:text="Load Secure"
+                                        android:id="@+id/loadsecuredescribedefectfill_report"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        tools:text="Windows and Mirrors"
+                                        android:id="@+id/loadsecuredescribedefectfill_reportemail"
+                                        android:layout_width="0dp"
+                                        android:layout_height="0dp"
+                                        android:visibility="invisible" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Temporary Fix (If Any):"
+                                        android:id="@+id/textView122"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        tools:text="Load Secure"
+                                        android:id="@+id/loadsecuretempfixfill_report"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        tools:text="Windows and Mirrors"
+                                        android:id="@+id/loadsecuretempfixfill_reportemail"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:visibility="invisible" />
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    app:srcCompat="@drawable/photoplace90x90"
+                                    android:id="@+id/loadsecureImageviewpicplace"
+                                    tools:ignore="ContentDescription" />
+
+                            </LinearLayout>
+                        </FrameLayout>
+
+                    </LinearLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Tacho, Speedo Limiter checks"
+                            android:id="@+id/textView127"
+                            android:textAlignment="center"
+                            android:textSize="15sp"
+                            android:background="@drawable/button_roundoff"
+                            android:textColor="#ffffff"
+                            tools:ignore="HardcodedText"
+                            android:maxLines="1" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    tools:ignore="InefficientWeight">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Defect Status:"
+                                        android:id="@+id/textView128"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        tools:text="Tacho. Speedo Limiter"
+                                        android:id="@+id/tachospeedodescribedefectfill_report"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        tools:text="Windows and Mirrors"
+                                        android:id="@+id/tachospeedodescribedefectfill_reportemail"
+                                        android:layout_width="0dp"
+                                        android:layout_height="0dp"
+                                        android:visibility="invisible" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Temporary Fix (If Any):"
+                                        android:id="@+id/textView133"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        tools:text="Tacho. Speedo Limiter"
+                                        android:id="@+id/tachospeedotempfixfill_report"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        tools:text="Windows and Mirrors"
+                                        android:id="@+id/tachospeedotempfixfill_reportemail"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:visibility="invisible" />
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    app:srcCompat="@drawable/photoplace90x90"
+                                    android:id="@+id/tachospeedoImageviewpicplace"
+                                    tools:ignore="ContentDescription" />
+
+                            </LinearLayout>
+                        </FrameLayout>
+
+                    </LinearLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="No Warning lights check"
+                            android:id="@+id/textView135"
+                            android:textAlignment="center"
+                            android:textSize="15sp"
+                            android:background="@drawable/button_roundoff"
+                            android:textColor="#ffffff"
+                            tools:ignore="HardcodedText" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    tools:ignore="InefficientWeight">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Defect Status:"
+                                        android:id="@+id/textView136"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        tools:text="No Warning Lights"
+                                        android:id="@+id/nowarninglightsdescribedefectfill_report"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        tools:text="Windows and Mirrors"
+                                        android:id="@+id/nowarninglightsdescribedefectfill_reportemail"
+                                        android:layout_width="0dp"
+                                        android:layout_height="0dp"
+                                        android:visibility="invisible" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Temporary Fix (If Any):"
+                                        android:id="@+id/textView138"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        tools:text="No Warning Lights"
+                                        android:id="@+id/nowarninglightstempfixfill_report"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        tools:text="Windows and Mirrors"
+                                        android:id="@+id/nowarninglightstempfixfill_reportemail"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:visibility="invisible" />
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    app:srcCompat="@drawable/photoplace90x90"
+                                    android:id="@+id/nowarninglightsImageviewpicplace"
+                                    tools:ignore="ContentDescription"
+                                    android:layout_height="match_parent" />
+
+                            </LinearLayout>
+                        </FrameLayout>
+
+                    </LinearLayout>
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+    </ScrollView>
+
+</LinearLayout>

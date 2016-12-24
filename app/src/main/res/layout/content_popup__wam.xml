@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView5" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Close"
+                    android:id="@+id/buttonnodefect"
+                    android:onClick="buttonOnClick"
+                    android:layout_gravity="right" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Has a Defect has been Found?"
+                android:id="@+id/textView44"
+                android:layout_gravity="center_horizontal"
+                android:textSize="25dp"
+                android:padding="10dp"
+                android:textColor="#000000" />
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#61cbf9"
+                android:paddingTop="2dp"
+                android:visibility="invisible"
+                android:textColorHint="#B9959595"
+                android:paddingBottom="2dp"></FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Describe Defect"
+                android:id="@+id/textView45"
+                android:paddingLeft="25dp"
+                android:paddingTop="25dp"
+                android:paddingBottom="5dp"
+                android:textColor="#000000" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/describedefect"
+                android:padding="25dp"
+                android:background="#FFFDF8CC"
+                android:hint="Fill in defect here...."
+                android:textColorHint="#b9c6c6c6" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Is there a Temporary fix (If Any)"
+                android:id="@+id/textView46"
+                android:paddingLeft="25dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="#000000" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tempfix"
+                android:padding="25dp"
+                android:background="#FFFDF8CC"
+                android:hint="Fill in defect here...."
+                android:textColorHint="#b9c6c6c6"
+                android:textColor="#000000" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="10dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="10dp">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/upload_button_defect"
+                        android:src="@drawable/upload_defect_button"
+                        android:background="#00ffffff"
+                        android:layout_gravity="center_horizontal"
+                        android:onClick="buttonOnClick" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Upload comments"
+                        android:id="@+id/textView63"
+                        android:layout_gravity="center_horizontal" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#ff0000"></FrameLayout>
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="25dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="25dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right">
+
+                            <ImageButton
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/windows_inspect_vehicle_unroadworthy_button"
+                                android:src="@drawable/unroadworthy_button_effect"
+                                android:background="#00ffffff" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="Unroad Worthy"
+                                android:id="@+id/textView62"
+                                android:textColor="#000000"
+                                android:textAlignment="center" />
+                        </LinearLayout>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="190dp"
+                            android:layout_height="82dp"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Press the Red button if you believe that the defect is a hazard to you or the public. If the vehicle is in motion and will require the attention of a qualified person."
+                            android:id="@+id/textView50"
+                            android:paddingLeft="10dp"
+                            android:textSize="10dp" />
+                    </FrameLayout>
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#ff0000" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

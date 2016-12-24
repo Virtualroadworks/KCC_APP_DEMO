@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_apptutorial"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.laptop.truckmanv5.Apptutorial"
+    tools:showIn="@layout/activity_apptutorial">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="ExtraText">>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="UselessParent">
+
+                    <TextView
+                        android:text="App Tutorial"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView6"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                        android:gravity="center"
+                        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:text="Step One"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView5"
+                        android:textAppearance="@style/TextAppearance.AppCompat"
+                        android:gravity="center"
+                        tools:ignore="HardcodedText"
+                        android:textAlignment="viewStart"
+                        android:textStyle="normal|bold"
+                        android:paddingTop="25dp" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                android:weightSum="1"
+                android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="300dp"
+                        app:srcCompat="@drawable/tut001"
+                        android:id="@+id/tutimage001"
+                        android:contentDescription=""
+                        tools:ignore="ContentDescription" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.20"
+                    android:id="@+id/tutframe01">
+
+                    <TextView
+                            android:text="Once logged in. At the home page screen, open the sidebar menu"
+                            android:layout_width="185dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/tuttext001"
+                            android:textAppearance="@style/TextAppearance.AppCompat"
+                            android:gravity="center|start"
+                            tools:ignore="HardcodedText"
+                        android:paddingStart="10dp" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:text="Step Two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView234"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textAlignment="viewStart"
+                android:textStyle="normal|bold"
+                android:paddingTop="25dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:weightSum="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="300dp"
+                    app:srcCompat="@drawable/tut002"
+                    android:id="@+id/tutimage002"
+                    android:contentDescription=""
+                    tools:ignore="ContentDescription" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.20"
+                    android:id="@+id/tutframe02">
+
+                    <TextView
+                        android:text="On The Profile Edit Page, Ensure all the details are correctly filled in."
+                        android:layout_width="185dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/tuttext002"
+                        android:textAppearance="@style/TextAppearance.AppCompat"
+                        android:gravity="center|start"
+                        tools:ignore="HardcodedText"
+                        android:paddingStart="10dp" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:text="Step Three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView235"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textStyle="normal|bold"
+                android:paddingTop="25dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:weightSum="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="300dp"
+                    app:srcCompat="@drawable/tut003"
+                    android:id="@+id/tutimage003"
+                    android:contentDescription=""
+                    tools:ignore="ContentDescription" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.20"
+                    android:id="@+id/tutframe003">
+
+                    <TextView
+                        android:text="To Check that everything is entered correctly, view the User Profile page."
+                        android:layout_width="185dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/tuttext003"
+                        android:textAppearance="@style/TextAppearance.AppCompat"
+                        android:gravity="center|start"
+                        tools:ignore="HardcodedText"
+                        android:paddingStart="10dp" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:text="Step Four"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView236"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textStyle="normal|bold"
+                android:paddingTop="25dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:weightSum="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="300dp"
+                    app:srcCompat="@drawable/tut004"
+                    android:id="@+id/tutimage004"
+                    android:contentDescription=""
+                    tools:ignore="ContentDescription" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.20"
+                    android:id="@+id/tutframe004">
+
+                    <TextView
+                        android:text="Everytime you open the App, ensure that your User Name is displayed in the middle of the Home Screen."
+                        android:layout_width="185dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/tuttext004"
+                        android:textAppearance="@style/TextAppearance.AppCompat"
+                        android:gravity="center|start"
+                        tools:ignore="HardcodedText"
+                        android:paddingStart="10dp" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.laptop.truckmanv5.inspection_driving_warning_box"
+    tools:showIn="@layout/activity_person__details_popupreportemailbox">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView6"
+        tools:ignore="UselessParent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="181dp"
+                    android:id="@+id/imageView7"
+                    android:src="@drawable/driving"
+                    android:layout_gravity="center_vertical"
+                    android:cropToPadding="true"
+                    tools:ignore="ContentDescription" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    tools:ignore="UselessParent">
+
+                    <TextView
+                        android:text="! WARNING !"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView16"
+                        android:textSize="45sp"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:gravity="center"
+                        tools:ignore="HardcodedText" />
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Driving Inspection Checks"
+                                android:id="@+id/textView52"
+                                android:layout_gravity="center_horizontal"
+                                android:textColor="#000000"
+                                android:textSize="40sp"
+                                android:textAlignment="center"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:id="@+id/textView54"
+                                android:layout_marginTop="10dp"
+                                android:text="Disclaimer:"
+                                android:layout_marginBottom="10dp"
+                                android:gravity="center"
+                                tools:ignore="HardcodedText"
+                                android:textStyle="normal|bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="You must not enter details"
+                                android:id="@+id/textView58"
+                                android:gravity="center"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:id="@+id/textView57"
+                                android:text="in this section of the form"
+                                android:gravity="center"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="while driving!"
+                                android:id="@+id/textView59"
+                                android:gravity="center"
+                                tools:ignore="HardcodedText" />
+
+                        </LinearLayout>
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:layout_width="181dp"
+                    android:layout_height="wrap_content"
+                    android:text="Understood"
+                    android:id="@+id/closebutton"
+                    android:background="@android:color/holo_green_light"
+                    android:textColor="@color/cardview_light_background"
+                    android:layout_gravity="center"
+                    tools:ignore="HardcodedText"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp" />
+            </FrameLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

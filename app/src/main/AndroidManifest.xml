@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.laptop.truckmanv5">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".truckmanv5"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Truckman"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity android:name=".Splash_Screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="Home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Login_Page"
+            android:label="Login Page"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Register_Page"
+            android:label="Registration Page"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".Vehicle_Reports"
+            android:label="Vehicle Reports List"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Add_or_Update_Inspection"
+            android:label="Report Card"
+            android:launchMode="singleInstance"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.laptop.truckmanv5.Vehicle_Reports" />
+        </activity>
+        <activity
+            android:name=".Person_Details"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.laptop.truckmanv5.Vehicle_Reports" />
+        </activity>
+        <activity
+            android:name=".Person_Details_emailreport"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".User_Profile_Edit"
+            android:label="Profile Edit Page"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".User_Profile"
+            android:label="User Profile Page"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Popup_WAM"
+            android:label="@string/title_activity_popup__wam"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Popup_WAM"
+            android:label="@string/title_activity_popup__wam"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Info_Box_Windows_and_Mirrors"
+            android:label="Info Box Windows and Mirrors"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Info_Box_seatbelt"
+            android:label="Info Box seatbelts"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Info_Box_Washers_and_Wipers"
+            android:label="@string/title_activity_info__box__washers_and__wipers"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Info_Box_Horn"
+            android:label="@string/title_activity_info__box__horn"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Info_Box_breakwarninglight"
+            android:label="@string/title_activity_info__box_breakwarninglight"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Info_Box_gauge"
+            android:label="@string/title_activity_info__box_gauge"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Info_Box_tacho"
+            android:label="@string/title_activity_info__box_tacho"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Info_Box_airleaks"
+            android:label="@string/title_activity_info__box_airleaks"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Info_Box_steeringbreaking"
+            android:label="@string/title_activity_info__box_steeringbreaking"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Info_Box_loadsecure"
+            android:label="@string/title_activity_info__box_loadsecure"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Info_Box_tachospeedo"
+            android:label="@string/title_activity_info__box_tachospeedo"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Info_Box_nowarninglights"
+            android:label="@string/title_activity_info__box_nowarninglights"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MyLocationDemoActivity"
+            android:label="@string/my_location_demo_label" />
+        <activity
+            android:name=".Info_Box_taxinsurance"
+            android:label="@string/title_activity_info_box_taxinsurance"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Info_Box_wheelstyres"
+            android:label="@string/title_activity_info__box_wheelstyres"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Info_Box_lightsreflectors"
+            android:label="@string/title_activity_info__box_lightsreflectors"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Info_Box_exhaust"
+            android:label="@string/title_activity_info__box_exhaust"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Info_Box_sparetow"
+            android:label="@string/title_activity_info__box_sparetow"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Info_Box_trailerbrake"
+            android:label="@string/title_activity_info__box_trailerbrake"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Info_Box_bodyguards"
+            android:label="@string/title_activity_info__box_bodyguards"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Info_Box_landingleg"
+            android:label="@string/title_activity_info__box_landingleg"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Info_Box_regplate"
+            android:label="@string/title_activity_info__box_regplate"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Info_Box_fluidleaks"
+            android:label="@string/title_activity_info__box_fluidleaks"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Info_Box_airsuspension"
+            android:label="@string/title_activity_info__box_airsuspension"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Info_Box_airelectrial"
+            android:label="@string/title_activity_info__box_airelectrial"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Virtualroadworkswebpage"
+            android:label="Virtualroadworks"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".inspection_driving_warning_box"
+            android:label="@string/title_activity_inspection_driving_warning_box"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Rsavideowebpage"
+            android:label="Rsavideowebpage"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Apptutorial"
+            android:label="@string/title_activity_apptutorial"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".EULA"
+            android:label="@string/title_activity_eul"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".person_Details_popupreportemailbox"
+            android:label="@string/title_activity_person__details_popupreportemailbox"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>
