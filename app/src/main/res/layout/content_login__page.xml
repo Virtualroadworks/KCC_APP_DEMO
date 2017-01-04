@@ -47,7 +47,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textAppearance="?android:attr/textAppearanceMedium"
-                            android:text="Truckman"
+                            android:text="DCC App"
                             android:id="@+id/textView36"
                             android:textSize="45dp"
                             android:layout_gravity="center_horizontal"
@@ -73,21 +73,16 @@
                                 android:id="@+id/lgemail"
                                 android:layout_alignParentEnd="true"
                                 android:layout_alignParentStart="true"
-                                android:hint="Registered Email Address"
+                                android:hint="Login Email Address"
                                 android:layout_gravity="top|center"
                                 android:textAlignment="center"
                                 android:paddingTop="25dp"
-                                android:textColor="#b9000000"
-                                android:background="#ffffff"
+                                android:textColor="#000000"
+                                android:background="@drawable/text_roundoff_white"
                                 android:textColorHint="#B9959595"
-                                android:paddingBottom="10dp" />
+                                android:paddingBottom="10dp"
+                                android:textSize="24sp" />
 
-                            <FrameLayout
-                                android:layout_width="fill_parent"
-                                android:layout_height="wrap_content"
-                                android:background="#61cbf9"
-                                android:layout_gravity="bottom"
-                                android:padding="2dp"></FrameLayout>
                         </FrameLayout>
 
                         <FrameLayout
@@ -108,17 +103,11 @@
                                 android:id="@+id/lgpassword"
                                 android:password="true"
                                 android:inputType="textPassword"
-                                android:background="#ffffff"
+                                android:background="@drawable/text_roundoff_white"
                                 android:textColor="#000000"
                                 android:textColorHint="#B9959595"
-                                android:paddingBottom="10dp" />
-
-                            <FrameLayout
-                                android:layout_width="fill_parent"
-                                android:layout_height="wrap_content"
-                                android:background="#61cbf9"
-                                android:padding="2dp"
-                                android:layout_gravity="bottom" />
+                                android:paddingBottom="10dp"
+                                android:textSize="24sp" />
 
                         </FrameLayout>
 
@@ -153,7 +142,8 @@
                         android:layout_height="fill_parent"
                         android:text="Login"
                         android:id="@+id/blogin"
-                        android:layout_alignParentEnd="false" />
+                        android:layout_alignParentEnd="false"
+                        android:background="@drawable/button_roundoff5" />
                 </FrameLayout>
 
                 <FrameLayout

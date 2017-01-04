@@ -33,13 +33,63 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content">
 
-                    <ImageView
-                        android:layout_width="130dp"
-                        android:layout_height="130dp"
-                        android:id="@+id/imageView4"
-                        android:src="@drawable/profile_edit"
-                        android:layout_gravity="center_horizontal"
-                        tools:ignore="ContentDescription" />
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <ImageButton
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        app:srcCompat="@drawable/user_base_button_effect"
+                                        android:id="@+id/user_base_icon"
+                                        android:background="@color/Egis_trans"
+                                        android:layout_weight="1"
+                                        android:layout_margin="4dp" />
+
+                                    <TextView
+                                        android:text="Edit User Depot"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/textView13"
+                                        android:layout_weight="1"
+                                        android:textAlignment="center" />
+
+                                </LinearLayout>
+                            </FrameLayout>
+
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:layout_width="130dp"
+                                android:layout_height="130dp"
+                                android:id="@+id/imageView4"
+                                android:src="@drawable/profile_edit"
+                                android:layout_gravity="center_horizontal"
+                                tools:ignore="ContentDescription" />
+                        </FrameLayout>
+                    </LinearLayout>
+
                 </FrameLayout>
 
                 <FrameLayout

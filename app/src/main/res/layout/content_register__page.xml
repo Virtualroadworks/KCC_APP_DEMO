@@ -53,7 +53,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textAppearance="?android:attr/textAppearanceMedium"
-                                android:text="Truckman"
+                                android:text="DCC App"
                                 android:id="@+id/textView38"
                                 android:textSize="45dp"
                                 android:layout_gravity="center_horizontal"
@@ -68,48 +68,50 @@
                                 android:textSize="45dp"
                                 android:textColor="#000000" />
 
-                            <EditText
-                                android:layout_width="fill_parent"
-                                android:layout_height="wrap_content"
-                                android:id="@+id/lgemail"
-                                android:layout_alignParentEnd="true"
-                                android:layout_alignParentStart="true"
-                                android:hint="Register Email"
-                                android:layout_gravity="center"
-                                android:textAlignment="center"
-                                android:paddingTop="25dp"
-                                android:background="#ffffff"
-                                android:paddingBottom="10dp" />
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:paddingTop="20dp">
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/lgemail"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentStart="true"
+                                    android:hint="Register Email"
+                                    android:layout_gravity="center"
+                                    android:textAlignment="center"
+                                    android:paddingTop="25dp"
+                                    android:background="@drawable/text_roundoff_white"
+                                    android:paddingBottom="10dp"
+                                    android:textColor="#000000"
+                                    android:textSize="24sp" />
+                            </FrameLayout>
 
                             <FrameLayout
-                                android:layout_width="fill_parent"
-                                android:layout_height="wrap_content"
-                                android:background="#61cbf9"
-                                android:layout_gravity="bottom"
-                                android:padding="2dp" />
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:paddingTop="20dp">
 
-                            <EditText
-                                android:layout_width="fill_parent"
-                                android:layout_height="wrap_content"
-                                android:ems="10"
-                                android:layout_below="@+id/lgemail"
-                                android:layout_alignParentStart="true"
-                                android:hint="Password"
-                                android:layout_gravity="center"
-                                android:textAlignment="center"
-                                android:paddingTop="25dp"
-                                android:id="@+id/RegPassword"
-                                android:password="true"
-                                android:inputType="textPassword"
-                                android:background="#ffffff"
-                                android:paddingBottom="10dp" />
-
-                            <FrameLayout
-                                android:layout_width="fill_parent"
-                                android:layout_height="wrap_content"
-                                android:background="#61cbf9"
-                                android:layout_gravity="bottom"
-                                android:padding="2dp" />
+                                <EditText
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:layout_below="@+id/lgemail"
+                                    android:layout_alignParentStart="true"
+                                    android:hint="Password"
+                                    android:layout_gravity="center"
+                                    android:textAlignment="center"
+                                    android:paddingTop="25dp"
+                                    android:id="@+id/RegPassword"
+                                    android:password="true"
+                                    android:inputType="textPassword"
+                                    android:background="@drawable/text_roundoff_white"
+                                    android:paddingBottom="10dp"
+                                    android:textColor="#000000"
+                                    android:textSize="24sp" />
+                            </FrameLayout>
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -143,7 +145,8 @@
                         android:layout_height="fill_parent"
                         android:text="Register Here"
                         android:id="@+id/blogin"
-                        android:layout_alignParentEnd="false" />
+                        android:layout_alignParentEnd="false"
+                        android:background="@drawable/button_roundoff5" />
                 </FrameLayout>
 
                 <FrameLayout

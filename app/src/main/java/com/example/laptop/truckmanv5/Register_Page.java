@@ -82,7 +82,7 @@ public class Register_Page extends AppCompatActivity implements View.OnClickList
                         if (task.isSuccessful()) {
                             //user is successfully registered and loggin in
                             finish();
-                            startActivity(new Intent(getApplicationContext(),User_Profile_Edit.class));
+                            startActivity(new Intent(getApplicationContext(),zRegname.class));
                             //we will start the profile activit here
                             //right now lets display a toast only
                             Toast.makeText(Register_Page.this, "Registration Successfull", Toast.LENGTH_SHORT).show();

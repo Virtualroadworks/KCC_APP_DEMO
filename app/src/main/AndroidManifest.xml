@@ -206,7 +206,27 @@
         <activity
             android:name=".person_Details_popupreportemailbox"
             android:label="@string/title_activity_person__details_popupreportemailbox"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DCC_Login_or_Reg"
+            android:label="Login or Register"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".zRegname"
+            android:label="@string/title_activity_z_regname"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".zRegphone"
+            android:label="@string/title_activity_z_regphone"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".zRegemail"
+            android:label="@string/title_activity_z_regemail"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".User_Basearea"
+            android:label="@string/title_activity_user__basearea"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

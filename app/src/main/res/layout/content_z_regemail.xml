@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_z_regemail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.laptop.truckmanv5.zRegemail"
+    tools:showIn="@layout/activity_z_regemail">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/egislaganlogo100"
+                    android:id="@+id/imageView5"
+                    tools:ignore="ContentDescription"
+                    android:layout_gravity="center" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="top|center">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Step 3 of 3"
+                            android:id="@+id/Step_1_of_4"
+                            android:textSize="20sp"
+                            android:paddingTop="10dp"
+                            tools:ignore="HardcodedText,RtlHardcoded"
+                            android:textAlignment="textStart"
+                            android:layout_gravity="start" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp"
+                            android:background="@color/colorAccent">
+                        </FrameLayout>
+                    </LinearLayout>
+
+                </FrameLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="User Email Address :"
+                    android:id="@+id/User_Name_tital"
+                    android:layout_gravity="left|top"
+                    android:textSize="20sp"
+                    android:paddingTop="10dp"
+                    tools:ignore="HardcodedText,RtlHardcoded"
+                    android:textStyle="normal|bold"
+                    android:paddingBottom="10dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etuser_email"
+                    android:hint="Fill in Email Address here..."
+                    android:textColorHint="#b9c6c6c6"
+                    tools:ignore="HardcodedText"
+                    android:textAlignment="center"
+                    android:background="@drawable/text_roundoff_white"
+                    android:padding="25dp"
+                    android:elevation="0dp"
+                    android:textSize="20sp" />
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:ignore="DisableBaselineAlignment">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/arrow_left_button_effect"
+                                android:id="@+id/z_regnameleftarrow"
+                                android:layout_gravity="center|end"
+                                android:background="@color/Egis_trans"
+                                android:paddingRight="25dp"
+                                tools:ignore="ContentDescription,RtlHardcoded,RtlSymmetry" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:paddingLeft="25dp"
+                            tools:ignore="RtlHardcoded,RtlSymmetry">
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/arrow_right_button_effect"
+                                android:id="@+id/z_regnamerightarrow"
+                                android:layout_gravity="center|start"
+                                android:background="@color/Egis_trans"
+                                tools:ignore="ContentDescription" />
+                        </FrameLayout>
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>

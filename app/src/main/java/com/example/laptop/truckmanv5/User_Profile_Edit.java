@@ -11,6 +11,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -20,7 +21,9 @@ import com.firebase.client.ValueEventListener;
 import com.google.firebase.auth.FirebaseAuth;
 
 
-public class User_Profile_Edit extends AppCompatActivity {
+public class User_Profile_Edit extends AppCompatActivity  {
+
+    ImageButton user_base_icon;
 
     private TextView User_Name_tital;
     private EditText etuser_name;
@@ -68,6 +71,8 @@ public class User_Profile_Edit extends AppCompatActivity {
         User_Email_tital = (TextView) findViewById(R.id.User_Email_tital);
         User_Company_tital = (TextView) findViewById(R.id.User_Company_tital);
         User_Contact_Number_tital = (TextView) findViewById(R.id.User_Contact_Number_tital);
+
+        user_base_icon = (ImageButton) findViewById(R.id.user_base_icon);
 
         Profile_upload_button = (Button) findViewById(R.id.Profile_upload_button);
         Profile_upload_button.setOnClickListener(new View.OnClickListener() {
@@ -128,6 +133,15 @@ public class User_Profile_Edit extends AppCompatActivity {
 
             @Override
             public void onCancelled(FirebaseError firebaseError) {
+
+            }
+        });
+
+        user_base_icon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                startActivity(new Intent(User_Profile_Edit.this, User_Basearea.class));
 
             }
         });

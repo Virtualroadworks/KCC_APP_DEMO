@@ -41,6 +41,11 @@ public class User_Profile extends AppCompatActivity implements View.OnClickListe
     private TextView User_Contact_Number_tital;
     private TextView User_Contact_Number_tital_fill;
 
+    private TextView Depot_Area_fill;
+    private TextView Depot_Address_fill;
+    private TextView Depot_County_fill;
+    private TextView Depot_Contact_Number_fill;
+
 
     private Button MainMenuButton;
 
@@ -66,6 +71,11 @@ public class User_Profile extends AppCompatActivity implements View.OnClickListe
         User_Company_tital_fill = (TextView) findViewById(R.id.User_Company_tital_fill);
         User_Contact_Number_tital_fill = (TextView) findViewById(R.id.User_Contact_Number_tital_fill);
 
+        Depot_Area_fill = (TextView) findViewById(R.id.Depot_Area_fill);
+        Depot_Address_fill = (TextView) findViewById(R.id.Depot_Address_fill);
+        Depot_County_fill= (TextView) findViewById(R.id.Depot_County_fill);
+        Depot_Contact_Number_fill = (TextView) findViewById(R.id.Depot_Contact_Number_fill);
+
         User_Name_tital = (TextView) findViewById(R.id.User_Name_tital);
         User_Email_tital = (TextView) findViewById(R.id.User_Email_tital);
         etreport_email_recipient = (TextView) findViewById(R.id.etreport_email_recipient);
@@ -88,11 +98,21 @@ public class User_Profile extends AppCompatActivity implements View.OnClickListe
                 String userCompany  = dataSnapshot.child("User Company").getValue(String.class);
                 String userContactNumber  = dataSnapshot.child("User Contact Number").getValue(String.class);
 
+                String depot_area = dataSnapshot.child("Address Line 1").getValue(String.class);
+                String depot_address = dataSnapshot.child("Address Line 2").getValue(String.class);
+                String depot_county = dataSnapshot.child("Address Line 3").getValue(String.class);
+                String depot_contact_number = dataSnapshot.child("Depot Contact Number").getValue(String.class);
+
                 User_Name_tital_fill.setText(userName);
                 User_Email_tital_fill.setText(userEmail);
                 etreport_email_recipient.setText(report_email_recipient);
                 User_Company_tital_fill.setText(userCompany);
                 User_Contact_Number_tital_fill.setText(userContactNumber);
+
+                Depot_Area_fill.setText(depot_area);
+                Depot_Address_fill.setText(depot_address);
+                Depot_County_fill.setText(depot_county);
+                Depot_Contact_Number_fill.setText(depot_contact_number);
             }
 
             @Override

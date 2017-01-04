@@ -362,5 +362,10 @@
     <string name="title_activity_person__details_popupreportemailbox">
         Person_Details_popupreportemailbox
     </string>
+    <string name="title_activity_dcc__login_or__reg">DCC_Login_or_Reg</string>
+    <string name="title_activity_z_regname">zRegname</string>
+    <string name="title_activity_z_regphone">zRegphone</string>
+    <string name="title_activity_z_regemail">zRegemail</string>
+    <string name="title_activity_user__basearea">User_Basearea</string>
 
 </resources>
