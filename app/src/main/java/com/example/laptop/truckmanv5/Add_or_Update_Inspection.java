@@ -5248,8 +5248,8 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                        Vehicle_Reports.getInstance().addPerson(p);
 
                     new AlertDialog.Builder(Add_or_Update_Inspection.this)
-                            .setTitle("Email report, Now")
-                            .setMessage("Would you like to directly Email this report now?")
+                            .setTitle("Inspection Saved")
+                            .setMessage("Would you like to Read/Email this report now?")
                             .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int which) {
 

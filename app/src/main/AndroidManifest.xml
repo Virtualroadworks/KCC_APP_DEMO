@@ -12,7 +12,7 @@
         android:name=".truckmanv5"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="Truckman"
+        android:label="DCC APP"
         android:screenOrientation="portrait"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -59,7 +59,7 @@
         </activity>
         <activity
             android:name=".Person_Details"
-            android:label="@string/app_name"
+            android:label="Vehicle Report"
             android:launchMode="singleInstance">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -67,8 +67,7 @@
         </activity>
         <activity
             android:name=".Person_Details_emailreport"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:label="Report Page" />
         <activity
             android:name=".User_Profile_Edit"
             android:label="Profile Edit Page"
@@ -207,7 +206,7 @@
         <activity
             android:name=".person_Details_popupreportemailbox"
             android:label="@string/title_activity_person__details_popupreportemailbox"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>

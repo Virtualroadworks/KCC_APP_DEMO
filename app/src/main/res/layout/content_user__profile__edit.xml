@@ -12,159 +12,165 @@
     tools:context="com.example.laptop.truckmanv5.User_Profile_Edit"
     tools:showIn="@layout/activity_user__profile__edit">
 
-    <FrameLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_alignParentTop="false"
-        android:layout_alignParentEnd="false"
-        tools:ignore="UselessParent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:weightSum="1">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentEnd="false"
+            tools:ignore="UselessParent">
 
-            <FrameLayout
+            <LinearLayout
+                android:orientation="vertical"
                 android:layout_width="fill_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="fill_parent"
+                android:weightSum="1">
 
-                <ImageView
-                    android:layout_width="130dp"
-                    android:layout_height="130dp"
-                    android:id="@+id/imageView4"
-                    android:src="@drawable/profile_edit"
-                    android:layout_gravity="center_horizontal"
-                    tools:ignore="ContentDescription" />
-            </FrameLayout>
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
 
-            <FrameLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal">
+                    <ImageView
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:id="@+id/imageView4"
+                        android:src="@drawable/profile_edit"
+                        android:layout_gravity="center_horizontal"
+                        tools:ignore="ContentDescription" />
+                </FrameLayout>
 
-                <LinearLayout
-                    android:orientation="horizontal"
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Please update your user profile"
+                            android:id="@+id/textView39"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <FrameLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="5dp"
+                    android:background="#61cbf9">
+                </FrameLayout>
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:text="Please update your user profile"
-                        android:id="@+id/textView39"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
-                        tools:ignore="HardcodedText" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="User Name"
+                    android:id="@+id/User_Name_tital"
+                    android:layout_gravity="left|top"
+                    android:textSize="15sp"
+                    android:paddingTop="20dp"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
 
-                </LinearLayout>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etuser_name"
+                    android:hint="Fill in Name here..."
+                    android:textColorHint="#b9c6c6c6"
+                    tools:ignore="HardcodedText" />
 
-            </FrameLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="User Email"
+                    android:id="@+id/User_Email_tital"
+                    android:layout_gravity="left|top"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
 
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="5dp"
-                android:background="#61cbf9">
-            </FrameLayout>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etuser_email"
+                    android:hint="Fill in Email here..."
+                    android:textColorHint="#b9c6c6c6"
+                    tools:ignore="HardcodedText,TextFields" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="User Name"
-                android:id="@+id/User_Name_tital"
-                android:layout_gravity="left|top"
-                android:textSize="15sp"
-                android:paddingTop="20dp"
-                tools:ignore="HardcodedText,RtlHardcoded" />
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/etuser_name"
-                android:hint="Fill in Name here..."
-                android:textColorHint="#b9c6c6c6"
-                tools:ignore="HardcodedText" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="User Email"
-                android:id="@+id/User_Email_tital"
-                android:layout_gravity="left|top"
-                android:textSize="15sp"
-                tools:ignore="HardcodedText,RtlHardcoded" />
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/etuser_email"
-                android:hint="Fill in Email here..."
-                android:textColorHint="#b9c6c6c6"
-                tools:ignore="HardcodedText,TextFields" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Inspection Report Email Recipient"
-                android:id="@+id/report_email_recipient"
-                android:layout_gravity="left|top"
-                android:textSize="15sp"
-                tools:ignore="HardcodedText,RtlHardcoded" />
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/etreport_email_recipient"
-                android:hint="Fill in Recipients Email address here..."
-                android:textColorHint="#b9c6c6c6"
-                tools:ignore="HardcodedText,TextFields" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Inspection Report Email Recipient"
+                    android:id="@+id/report_email_recipient"
+                    android:layout_gravity="left|top"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etreport_email_recipient"
+                    android:hint="Fill in Recipients Email address here..."
+                    android:textColorHint="#b9c6c6c6"
+                    tools:ignore="HardcodedText,TextFields" />
 
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="User Company"
-                android:id="@+id/User_Company_tital"
-                android:layout_gravity="left|top"
-                android:textSize="15sp"
-                tools:ignore="HardcodedText,RtlHardcoded" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="User Company"
+                    android:id="@+id/User_Company_tital"
+                    android:layout_gravity="left|top"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
 
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/etuser_company"
-                android:hint="Fill in Company name here..."
-                android:textColorHint="#b9c6c6c6"
-                tools:ignore="HardcodedText" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etuser_company"
+                    android:hint="Fill in Company name here..."
+                    android:textColorHint="#b9c6c6c6"
+                    tools:ignore="HardcodedText" />
 
-            <TextView
-                android:layout_width="246dp"
-                android:layout_height="wrap_content"
-                android:text="User Contact Number"
-                android:id="@+id/User_Contact_Number_tital"
-                android:layout_gravity="left|top"
-                android:textSize="15sp"
-                android:layout_weight="0.03"
-                tools:ignore="HardcodedText,InefficientWeight,RtlHardcoded" />
+                <TextView
+                    android:layout_width="246dp"
+                    android:layout_height="wrap_content"
+                    android:text="User Contact Number"
+                    android:id="@+id/User_Contact_Number_tital"
+                    android:layout_gravity="left|top"
+                    android:textSize="15sp"
+                    android:layout_weight="0.03"
+                    tools:ignore="HardcodedText,InefficientWeight,RtlHardcoded" />
 
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/etuser_contact_number"
-                android:hint="Fill in Contact Number here..."
-                android:textColorHint="#b9c6c6c6"
-                android:inputType="phone"
-                tools:ignore="HardcodedText" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etuser_contact_number"
+                    android:hint="Fill in Contact Number here..."
+                    android:textColorHint="#b9c6c6c6"
+                    android:inputType="phone"
+                    tools:ignore="HardcodedText" />
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Update Profile"
-                android:id="@+id/Profile_upload_button"
-                android:layout_gravity="center_horizontal"
-                android:onClick="onButtonClick"
-                tools:ignore="HardcodedText" />
-        </LinearLayout>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Update Profile"
+                    android:id="@+id/Profile_upload_button"
+                    android:layout_gravity="center_horizontal"
+                    android:onClick="onButtonClick"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
 
-    </FrameLayout>
+        </FrameLayout>
+    </ScrollView>
+
 </RelativeLayout>

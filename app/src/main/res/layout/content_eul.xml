@@ -72,7 +72,7 @@
             </FrameLayout>
 
             <TextView
-                android:text='"TRUCKMAN" Mobile/Web application software '
+                android:text='"DCC APP" Mobile/Web application software '
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView11"

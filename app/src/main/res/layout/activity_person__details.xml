@@ -638,7 +638,7 @@
                                         android:id="@+id/regplatetempfixfill_report"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        tools:ignore="HardcodedText" />
+                                        tools:ignore="HardcodedText,TooManyViews" />
 
                                     <TextView
                                         tools:text="Windows and Mirrors"
@@ -2213,7 +2213,7 @@
                                         android:layout_height="wrap_content"
                                         android:text="Temporary Fix (If Any):"
                                         android:id="@+id/textView94"
-                                        tools:ignore="HardcodedText" />
+                                        tools:ignore="DuplicateIds,HardcodedText" />
 
                                     <TextView
                                         tools:text="Tacho and Speed"

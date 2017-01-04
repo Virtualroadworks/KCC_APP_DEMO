@@ -249,8 +249,7 @@ public class Person_Details_emailreport extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_person__details_emailreport);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+
 
         mStorage = FirebaseStorage.getInstance().getReference();
 
@@ -269,13 +268,7 @@ public class Person_Details_emailreport extends AppCompatActivity {
             }
         });
 
-        Handler handler = new Handler();
-        handler.postDelayed(new Runnable(){
-            @Override
-            public void run(){
-                emailreport.performClick();
-            }
-        }, 3000);
+
 
 
         emailreport.setOnClickListener(new View.OnClickListener() {
@@ -442,9 +435,9 @@ public class Person_Details_emailreport extends AppCompatActivity {
                 String [] username= { emailsend_name };
 
                 final String template_message =
-                        ">>>>>>> Truckman Report <<<<<<<"
+                        ">>>>>>> Vehicle Report <<<<<<<"
                         + '\n'
-                        + '\n' + "This is a Vehicle inspection report, filled by " + tvPersonDetailNameemailemailstring + " using the Truckman App."
+                        + '\n' + "This is a Vehicle inspection report, filled by " + tvPersonDetailNameemailemailstring + " using the DCC App."
                         + '\n'
                         + '\n' + "An inspection has just been filled out and compleated on vehicle reg number "
                         + '\n'
@@ -469,12 +462,12 @@ public class Person_Details_emailreport extends AppCompatActivity {
                         + '\n'
                         + '\n' + "Kind Regards"
                         + '\n'
-                        + '\n' + "The Truckman Team.";
+                        + '\n' + "The DCC Team.";
 
 
                 final String csvString =
 
-                         ", " + "Truckman Report"+ "\n" +
+                         ", " + "DCC Vehicle Inspection Report"+ "\n" +
                         "Date of Inspection, " + startDateemailstring + '\n' +
                         "Inspector Name, " + tvPersonDetailNameemailemailstring + '\n' +
                         "Vehicle reg number, " + tvRegemailstring + "\n" +
@@ -585,7 +578,7 @@ public class Person_Details_emailreport extends AppCompatActivity {
                 u.draw(canvas);
 
 
-                File pdfFile = new File(outputDir, "Vehicle Report" + startDateemailstring + ".pdf");
+                File pdfFile = new File(outputDir, "DCC Vehicle Report" + startDateemailstring + ".pdf");
 
                 try {
 
@@ -636,7 +629,7 @@ public class Person_Details_emailreport extends AppCompatActivity {
                     intent = new Intent(Intent.ACTION_SEND_MULTIPLE);
                     intent.putExtra(Intent.EXTRA_EMAIL, tvPersonDetailEmailemailstring);
                     intent.putExtra(android.content.Intent.EXTRA_EMAIL,new String[] { tvreport_email_recipientmailstring });
-                    intent.putExtra(Intent.EXTRA_SUBJECT, ("Truckman Vehicle Report :- " + startDateemailstring + " Submitted By " + tvPersonDetailNameemailemailstring));
+                    intent.putExtra(Intent.EXTRA_SUBJECT, ("DCC Vehicle Report :- " + startDateemailstring + " Submitted By " + tvPersonDetailNameemailemailstring));
                     intent.putExtra(Intent.EXTRA_TEXT, template_message);
 
                     ArrayList<Uri> uris = new ArrayList<Uri>();
@@ -755,15 +748,6 @@ public class Person_Details_emailreport extends AppCompatActivity {
         int position = getIntent().getIntExtra("Position", -1);
         searchPerson(position);
 
-//        if (view2.hasExtra("CalledFromAdd_or_Update_Inspection") == true) {
-//
-//            boolean isFromMainView = view2.getExtras().getBoolean("CalledFromAdd_or_Update_Inspection");
-//
-//            if (isFromMainView == true) {
-//
-//                emailreport.performClick();
-//            }
-//        }
 
     }
 

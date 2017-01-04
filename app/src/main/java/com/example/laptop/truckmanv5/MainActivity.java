@@ -65,9 +65,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         mRootRef = new Firebase("https://truckman-1dc51.firebaseio.com");
 
         user_name = (TextView) findViewById(R.id.user_name);
-        start_inspection_button = (Button) findViewById(R.id.start_inspection_button);
+    //    start_inspection_button = (Button) findViewById(R.id.start_inspection_button);
 
-        start_inspection_button.setOnClickListener(this);
+//        start_inspection_button.setOnClickListener(this);
 
         if (firebaseAuth.getCurrentUser() == null) {
             finish();
@@ -170,7 +170,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             Toast.makeText(this, "Vehicle Reports Database", Toast.LENGTH_SHORT).show();
 
         } else if (id == R.id.nav_truckman_app) {
-            Toast.makeText(this, "About Truckman", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "About DCC APP", Toast.LENGTH_SHORT).show();
 
         } else if (id == R.id.nav_truckman_contact) {
             startActivity(new Intent(this, Virtualroadworkswebpage.class));

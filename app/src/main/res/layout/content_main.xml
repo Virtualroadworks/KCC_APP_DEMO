@@ -26,12 +26,13 @@
                 android:layout_height="match_parent">
 
                 <FrameLayout
-                    android:layout_width="161dp"
-                    android:layout_height="145dp"
-                    android:layout_gravity="center_horizontal">
+                    android:layout_width="wrap_content"
+                    android:layout_height="140dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp">
 
                     <ImageView
-                        android:layout_width="wrap_content"
+                        android:layout_width="361dp"
                         android:layout_height="wrap_content"
                         android:id="@+id/imageView6"
                         android:src="@drawable/main_unlock_icon" />
@@ -71,43 +72,6 @@
                     android:layout_gravity="center_horizontal"
                     android:textColorHint="#B9959595"
                     android:hint="User Name" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Would you like to do a vehicle inspection?"
-                    android:id="@+id/textView4"
-                    android:textAlignment="center"
-                    android:layout_gravity="center_horizontal"
-                    android:paddingTop="15dp"
-                    android:textColor="#000000"
-                    android:textSize="20dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Press the Button"
-                    android:id="@+id/textView43"
-                    android:textAlignment="center"
-                    android:layout_gravity="center_horizontal"
-                    android:paddingTop="15dp"
-                    android:textColor="#000000" />
-
-                <FrameLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingTop="25dp">
-
-                    <Button
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:id="@+id/start_inspection_button"
-                        android:background="@drawable/fab_button_effect"
-                        android:layout_alignBottom="@+id/scrollView4"
-                        android:layout_alignTop="@+id/scrollView4"
-                        android:layout_gravity="center_horizontal"
-                        android:onClick="buttonOnClick" />
-                </FrameLayout>
 
             </LinearLayout>
 
