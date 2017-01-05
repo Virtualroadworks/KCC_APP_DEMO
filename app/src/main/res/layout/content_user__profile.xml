@@ -316,6 +316,362 @@
                     </FrameLayout>
 
                     <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="fill_vertical|center_horizontal"
+                        android:layout_marginTop="10dp">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                tools:ignore="DisableBaselineAlignment">
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                tools:ignore="DisableBaselineAlignment">
+
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_margin="5dp">
+
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="20dp"
+                                        tools:ignore="RtlHardcoded,RtlSymmetry,UselessParent"
+                                        android:id="@+id/User_qualification_Safepass_layout">
+
+                                        <CheckBox
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:scaleX="1.6"
+                                            android:scaleY="1.6"
+                                            android:id="@+id/User_qualification_Safepass"
+                                            android:buttonTint="@color/Egis_OK"
+                                            android:textColorLink="@android:color/holo_green_light"
+                                            android:clickable="false" />
+
+                                        <FrameLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:paddingLeft="5dp">
+
+                                            <TextView
+                                                android:text="Safe Pass"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                                tools:ignore="HardcodedText,TooDeepLayout"
+                                                android:layout_gravity="center"
+                                                android:textSize="12sp" />
+                                        </FrameLayout>
+
+                                    </LinearLayout>
+                                </FrameLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                tools:ignore="DisableBaselineAlignment">
+
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_margin="5dp"
+                                    tools:ignore="NestedWeights">
+
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="20dp"
+                                        tools:ignore="RtlHardcoded,RtlSymmetry,UselessParent"
+                                        android:id="@+id/User_qualification_1_Day_Health_layout">
+
+                                        <CheckBox
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:scaleX="1.6"
+                                            android:scaleY="1.6"
+                                            android:buttonTint="@color/Egis_OK"
+                                            android:id="@+id/User_qualification_1_Day_Health"
+                                            android:textColorLink="@android:color/holo_green_light"
+                                            android:clickable="false" />
+
+                                        <FrameLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:paddingLeft="5dp">
+
+                                            <TextView
+                                                android:text="1 Day Health and Safety"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                                tools:ignore="HardcodedText,TooDeepLayout"
+                                                android:layout_gravity="center"
+                                                android:textSize="12sp" />
+                                        </FrameLayout>
+
+                                    </LinearLayout>
+                                </FrameLayout>
+
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_margin="5dp">
+
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="20dp"
+                                        tools:ignore="RtlHardcoded,RtlSymmetry,TooManyViews,UselessParent"
+                                        android:id="@+id/User_qualification_SLG_layout">
+
+                                        <CheckBox
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:scaleX="1.6"
+                                            android:scaleY="1.6"
+                                            android:buttonTint="@color/Egis_OK"
+                                            android:id="@+id/User_qualification_SLG"
+                                            android:textColorLink="@android:color/holo_green_light"
+                                            android:clickable="false" />
+
+                                        <FrameLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:paddingLeft="5dp">
+
+                                            <TextView
+                                                android:text="SLG"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                                tools:ignore="HardcodedText,TooDeepLayout"
+                                                android:layout_gravity="center"
+                                                android:textSize="12sp" />
+                                        </FrameLayout>
+
+                                    </LinearLayout>
+                                </FrameLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                tools:ignore="DisableBaselineAlignment">
+
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_margin="5dp"
+                                    tools:ignore="NestedWeights">
+
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="20dp"
+                                        tools:ignore="RtlHardcoded,RtlSymmetry,UselessParent"
+                                        android:id="@+id/User_qualification_HGV_licence_layout">
+
+                                        <CheckBox
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:scaleX="1.6"
+                                            android:scaleY="1.6"
+                                            android:buttonTint="@color/Egis_OK"
+                                            android:id="@+id/User_qualification_HGV_licence"
+                                            android:textColorLink="@android:color/holo_green_light"
+                                            android:clickable="false" />
+
+                                        <FrameLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:paddingLeft="5dp">
+
+                                            <TextView
+                                                android:text="HGV Licence"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                                tools:ignore="HardcodedText,TooDeepLayout"
+                                                android:layout_gravity="center"
+                                                android:textSize="12sp" />
+                                        </FrameLayout>
+
+                                    </LinearLayout>
+                                </FrameLayout>
+
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_margin="5dp">
+
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="20dp"
+                                        tools:ignore="RtlHardcoded,RtlSymmetry,UselessParent"
+                                        android:id="@+id/User_qualification_Forklift_layout">
+
+                                        <CheckBox
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:scaleX="1.6"
+                                            android:scaleY="1.6"
+                                            android:buttonTint="@color/Egis_OK"
+                                            android:id="@+id/User_qualification_Forklift"
+                                            android:textColorLink="@android:color/holo_green_light"
+                                            android:clickable="false" />
+
+                                        <FrameLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:paddingLeft="5dp">
+
+                                            <TextView
+                                                android:text="Forklift"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                                tools:ignore="HardcodedText,TooDeepLayout"
+                                                android:layout_gravity="center"
+                                                android:textSize="12sp" />
+                                        </FrameLayout>
+
+                                    </LinearLayout>
+                                </FrameLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                tools:ignore="DisableBaselineAlignment">
+
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_margin="5dp"
+                                    tools:ignore="NestedWeights">
+
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="20dp"
+                                        tools:ignore="RtlHardcoded,RtlSymmetry,UselessParent"
+                                        android:id="@+id/User_qualification_Manual_handling_layout">
+
+                                        <CheckBox
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:scaleX="1.6"
+                                            android:scaleY="1.6"
+                                            android:buttonTint="@color/Egis_OK"
+                                            android:id="@+id/User_qualification_Manual_handling"
+                                            android:textColorLink="@android:color/holo_green_light"
+                                            android:clickable="false" />
+
+                                        <FrameLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:paddingLeft="5dp">
+
+                                            <TextView
+                                                android:text="Manual Handling"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                                tools:ignore="HardcodedText,TooDeepLayout"
+                                                android:layout_gravity="center"
+                                                android:textSize="12sp" />
+                                        </FrameLayout>
+
+                                    </LinearLayout>
+                                </FrameLayout>
+
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_margin="5dp">
+
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="20dp"
+                                        tools:ignore="RtlHardcoded,RtlSymmetry,UselessParent"
+                                        android:id="@+id/User_qualification_First_aid_layout">
+
+                                        <CheckBox
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:scaleX="1.6"
+                                            android:scaleY="1.6"
+                                            android:buttonTint="@color/Egis_OK"
+                                            android:id="@+id/User_qualification_First_aid"
+                                            android:textColorLink="@android:color/holo_green_light"
+                                            android:clickable="false" />
+
+                                        <FrameLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:paddingLeft="5dp">
+
+                                            <TextView
+                                                android:text="First Aid"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                                tools:ignore="HardcodedText,TooDeepLayout"
+                                                android:layout_gravity="center"
+                                                android:textSize="12sp" />
+                                        </FrameLayout>
+
+                                    </LinearLayout>
+                                </FrameLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+
+
+
+
+                    <FrameLayout
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:paddingTop="10dp">

@@ -226,7 +226,7 @@
         <activity
             android:name=".User_Basearea"
             android:label="@string/title_activity_user__basearea"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

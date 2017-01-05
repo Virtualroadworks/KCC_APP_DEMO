@@ -367,5 +367,6 @@
     <string name="title_activity_z_regphone">zRegphone</string>
     <string name="title_activity_z_regemail">zRegemail</string>
     <string name="title_activity_user__basearea">User_Basearea</string>
+    <string name="title_activity_user__qualifications">User_Qualifications</string>
 
 </resources>

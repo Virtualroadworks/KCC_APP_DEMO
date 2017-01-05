@@ -11,6 +11,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -45,6 +46,15 @@ public class User_Profile extends AppCompatActivity implements View.OnClickListe
     private TextView Depot_Address_fill;
     private TextView Depot_County_fill;
     private TextView Depot_Contact_Number_fill;
+
+
+    CheckBox User_qualification_Safepass;
+    CheckBox User_qualification_1_Day_Health;
+    CheckBox User_qualification_SLG;
+    CheckBox User_qualification_HGV_licence;
+    CheckBox User_qualification_Forklift;
+    CheckBox User_qualification_Manual_handling;
+    CheckBox User_qualification_First_aid;
 
 
     private Button MainMenuButton;
@@ -87,6 +97,16 @@ public class User_Profile extends AppCompatActivity implements View.OnClickListe
         MainMenuButton.setOnClickListener(this);
 
 
+        User_qualification_Safepass = (CheckBox) findViewById(R.id.User_qualification_Safepass);
+        User_qualification_1_Day_Health = (CheckBox) findViewById(R.id.User_qualification_1_Day_Health);
+        User_qualification_SLG = (CheckBox) findViewById(R.id.User_qualification_SLG);
+        User_qualification_HGV_licence = (CheckBox) findViewById(R.id.User_qualification_HGV_licence);
+        User_qualification_Forklift = (CheckBox) findViewById(R.id.User_qualification_Forklift);
+        User_qualification_Manual_handling = (CheckBox) findViewById(R.id.User_qualification_Manual_handling);
+        User_qualification_First_aid = (CheckBox) findViewById(R.id.User_qualification_First_aid);
+
+
+
 
         mRootRef.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("Profile").addValueEventListener(new ValueEventListener() {
             @Override
@@ -113,6 +133,93 @@ public class User_Profile extends AppCompatActivity implements View.OnClickListe
                 Depot_Address_fill.setText(depot_address);
                 Depot_County_fill.setText(depot_county);
                 Depot_Contact_Number_fill.setText(depot_contact_number);
+
+
+
+                String Safepass = dataSnapshot.child("Safepass").getValue(String.class);
+                if (Safepass == null) {
+                    User_qualification_Safepass.setChecked(false);
+                } else {
+                    if (Safepass.equals("Yes")) {
+                        User_qualification_Safepass.setChecked(true);
+                    }
+                    else {
+                        User_qualification_Safepass.setChecked(false);
+                    }
+                }
+
+                String Day_Health = dataSnapshot.child("1_Day_Health").getValue(String.class);
+                if (Day_Health == null) {
+                    User_qualification_1_Day_Health.setChecked(false);
+                } else {
+                    if (Day_Health.equals("Yes")) {
+                        User_qualification_1_Day_Health.setChecked(true);
+                    }
+                    else {
+                        User_qualification_1_Day_Health.setChecked(false);
+                    }
+                }
+
+                String SLG = dataSnapshot.child("SLG").getValue(String.class);
+                if (SLG == null) {
+                    User_qualification_SLG.setChecked(false);
+                } else {
+                    if (SLG.equals("Yes")) {
+                        User_qualification_SLG.setChecked(true);
+                    }
+                    else {
+                        User_qualification_SLG.setChecked(false);
+                    }
+                }
+
+                String HGV_licence = dataSnapshot.child("HGV Licence").getValue(String.class);
+                if (HGV_licence == null) {
+                    User_qualification_HGV_licence.setChecked(false);
+                } else {
+                    if (HGV_licence.equals("Yes")) {
+                        User_qualification_HGV_licence.setChecked(true);
+                    }
+                    else {
+                        User_qualification_HGV_licence.setChecked(false);
+                    }
+                }
+
+                String Forklift = dataSnapshot.child("Forklift").getValue(String.class);
+                if (Forklift == null) {
+                    User_qualification_Forklift.setChecked(false);
+                } else {
+                    if (Forklift.equals("Yes")) {
+                        User_qualification_Forklift.setChecked(true);
+                    }
+                    else {
+                        User_qualification_Forklift.setChecked(false);
+                    }
+                }
+
+                String Manual_handling = dataSnapshot.child("Manual Handling").getValue(String.class);
+                if (Manual_handling == null) {
+                    User_qualification_Manual_handling.setChecked(false);
+                } else {
+                    if (Manual_handling.equals("Yes")) {
+                        User_qualification_Manual_handling.setChecked(true);
+                    }
+                    else {
+                        User_qualification_Manual_handling.setChecked(false);
+                    }
+                }
+
+                String First_aid = dataSnapshot.child("First_aid").getValue(String.class);
+                if (First_aid == null) {
+                    User_qualification_First_aid.setChecked(false);
+                } else {
+                    if (First_aid.equals("Yes")) {
+                        User_qualification_First_aid.setChecked(true);
+                    }
+                    else {
+                        User_qualification_First_aid.setChecked(false);
+                    }
+                }
+
             }
 
             @Override
