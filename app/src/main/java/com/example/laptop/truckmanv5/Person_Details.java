@@ -438,7 +438,7 @@ public class Person_Details extends AppCompatActivity {
                         + '\n'
                         + '\n' + ">>>>>>> End of vehicle report <<<<<<<"
                         + '\n'
-                        + '\n' + "Thank you for using the Truckman App"
+                        + '\n' + "Thank you for using the DCC App"
                         + '\n'
                         + '\n' + "Kind Regards"
                         + '\n'
@@ -918,7 +918,7 @@ public class Person_Details extends AppCompatActivity {
                 return true;
 
             case R.id.vrdatabase:
-                startActivity (new Intent(this, Vehicle_Reports.class));
+                startActivity (new Intent(this, dccdrainageforms.class));
                 return true;
 
         }

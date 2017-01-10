@@ -18,6 +18,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.FrameLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -36,7 +37,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private Firebase mRootRef;
     private Button start_inspection_button;
 
-    private TextView user_name;
+    private TextView user_name,user_name2,access_level;
+
+    private String Level_0 = "Level 0";
+    private String Level_1 = "Level 1";
+    private String Level_2 = "Level 2";
+    private String Level_3 = "Level 3";
+
+    FrameLayout Lockoutuserframelayout;
 
 
     @Override
@@ -65,9 +73,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         mRootRef = new Firebase("https://truckman-1dc51.firebaseio.com");
 
         user_name = (TextView) findViewById(R.id.user_name);
-    //    start_inspection_button = (Button) findViewById(R.id.start_inspection_button);
+        user_name2 = (TextView) findViewById(R.id.user_name2);
+        access_level = (TextView) findViewById(R.id.access_level);
+        Lockoutuserframelayout = (FrameLayout) findViewById(R.id.Lockoutuserframelayout);
 
-//        start_inspection_button.setOnClickListener(this);
 
         if (firebaseAuth.getCurrentUser() == null) {
             finish();
@@ -81,8 +90,21 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
                 String userName = dataSnapshot.child("User Name").getValue(String.class);
 
+                String userAccessLevel = dataSnapshot.child("User Access Level").getValue(String.class);
 
+                if (Level_0.equals (userAccessLevel)) {
+                    Lockoutuserframelayout.setVisibility(View.VISIBLE);
+                    startActivity(new Intent(MainActivity.this, Userheldoutsideapp.class));
+                } else if(Level_1.equals (userAccessLevel)) {
+                    Lockoutuserframelayout.setVisibility(View.GONE);
+                } else if(Level_2.equals (userAccessLevel)) {
+                    Lockoutuserframelayout.setVisibility(View.GONE);
+                } else if(Level_3.equals (userAccessLevel)) {
+                    Lockoutuserframelayout.setVisibility(View.GONE);
+                }
+                access_level.setText(userAccessLevel);
                 user_name.setText(userName);
+                user_name2.setText(userName);
 
             }
 
@@ -138,7 +160,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         switch (item.getItemId()) {
 
             case R.id.vrdatabase:
-                startActivity (new Intent(this, Vehicle_Reports.class));
+                startActivity (new Intent(this, dccdrainageforms.class));
                 return true;
 
         }
@@ -160,14 +182,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             startActivity(new Intent(this, User_Profile_Edit.class));
             Toast.makeText(this, "User Profile Edit Selected", Toast.LENGTH_SHORT).show();
 
-        } else if (id == R.id.RSA_videos) {
+        } else if (id == R.id.Videos) {
             startActivity(new Intent(this, Rsavideowebpage.class));
-            Toast.makeText(this, "RSA Selected", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Videos Selected", Toast.LENGTH_SHORT).show();
 
         } else if (id == R.id.nav_vehicle_reports_database) {
-            Intent nextView = new Intent(this, Vehicle_Reports.class);
+            Intent nextView = new Intent(this, dccdrainageforms.class);
             startActivity(nextView);
-            Toast.makeText(this, "Vehicle Reports Database", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Forms Database", Toast.LENGTH_SHORT).show();
 
         } else if (id == R.id.nav_truckman_app) {
             Toast.makeText(this, "About DCC APP", Toast.LENGTH_SHORT).show();
@@ -184,9 +206,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             startActivity(new Intent(this, Apptutorial.class));
             Toast.makeText(this, "How to use App", Toast.LENGTH_SHORT).show();
 
-        } else if (id == R.id.nav_start_inspection) {
-            startActivity(new Intent(this, Vehicle_Reports.class));
-            Toast.makeText(this, "Inspection Started", Toast.LENGTH_SHORT).show();
 
         } else if (id == R.id.nav_log_out) {
             firebaseAuth.signOut();

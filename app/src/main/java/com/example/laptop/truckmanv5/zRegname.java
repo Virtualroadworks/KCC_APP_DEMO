@@ -25,7 +25,7 @@ public class zRegname extends AppCompatActivity implements View.OnClickListener 
     private FirebaseAuth firebaseAuth;
 
 
-    private EditText etuser_name;
+    private EditText etuser_name, etuser_access_level;
     private ImageButton z_regnamerightarrow,z_regnameleftarrow;
 
     private ProgressDialog progressDialog;
@@ -48,6 +48,7 @@ public class zRegname extends AppCompatActivity implements View.OnClickListener 
 
 
         etuser_name = (EditText) findViewById(R.id.etuser_name);
+        etuser_access_level = (EditText) findViewById(R.id.etuser_access_level);
 
         z_regnamerightarrow.setOnClickListener(this);
         z_regnameleftarrow.setOnClickListener(this);
@@ -62,6 +63,14 @@ public class zRegname extends AppCompatActivity implements View.OnClickListener 
                     etuser_name.setText("");
                 } else {
                     etuser_name.setText(user_name);
+                }
+
+                String user_access_level = dataSnapshot.child("User Access Level").getValue(String.class);
+
+                if (user_access_level == null) {
+                    etuser_access_level.setText("Level 0");
+                } else {
+                    etuser_access_level.setText(user_access_level);
                 }
             }
 
@@ -90,6 +99,11 @@ public class zRegname extends AppCompatActivity implements View.OnClickListener 
                 progressDialog.dismiss();
                 return;
             }
+
+            Firebase childRef2 = mRootRef.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("Profile").child("User Access Level");
+            String user_access_level = etuser_access_level.getText().toString();
+
+            childRef2.setValue(user_access_level);
 
 
             startActivity(new Intent(getApplicationContext(), zRegphone.class));

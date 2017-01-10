@@ -103,12 +103,10 @@ public class Vehicle_Reports extends AppCompatActivity  {
         Intent view= getIntent();
         new Wait().execute();
 
-        if (view.hasExtra("CalledFromMainView") == true) {
+        if (view.hasExtra("CalledFromdccnorthsideforms") == true) {
 
-            boolean isFromMainView = view.getExtras().getBoolean("CalledFromMainView");
-
-            if (isFromMainView == true) {
-
+            boolean isFromDaily_forms = view.getExtras().getBoolean("CalledFromdccnorthsideforms");
+            if (isFromDaily_forms == true) {
                 startInspection();
             }
         }
@@ -560,7 +558,7 @@ public class Vehicle_Reports extends AppCompatActivity  {
 
 
             case R.id.vrdatabase:
-                startActivity (new Intent(this, Vehicle_Reports.class));
+                startActivity (new Intent(this, dccdrainageforms.class));
                 return true;
 
 

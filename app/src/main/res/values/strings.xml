@@ -368,5 +368,16 @@
     <string name="title_activity_z_regemail">zRegemail</string>
     <string name="title_activity_user__basearea">User_Basearea</string>
     <string name="title_activity_user__qualifications">User_Qualifications</string>
+    <string name="title_activity_userheldoutsideapp">Userheldoutsideapp</string>
 
+    <string name="title_activity_at0013_3">AT0013_3</string>
+    <string name="title_activity_at0013_3_reports">AT0013_3_reports</string>
+    <string name="title_activity_at0013_3_details_adapter">AT0013_3DetailsAdapter</string>
+    <string name="title_activity_at0013_3_filled_form">AT0013_3FilledForm</string>
+    <string name="title_activity_at0013_3_database">AT0013_3_database</string>
+    <string name="title_activity_at0013_3_formfilled">AT0013_3_formfilled</string>
+    <string name="title_activity_at0013_3_listadaptor">AT0013_3_listadaptor</string>
+
+    <string name="title_activity_dccnorthsideforms">dccnorthsideforms</string>
+    <string name="title_activity_dccdrainageforms">dccdrainageforms</string>
 </resources>

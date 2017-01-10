@@ -11,71 +11,170 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/app_bar_main">
 
-    <ScrollView
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:id="@+id/scrollView4" >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="140dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="361dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView6"
+                    android:src="@drawable/main_unlock_icon" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="LOGIN SUCCESSFUL"
+                android:id="@+id/textView55"
+                android:textSize="15dp"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentStart="false"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Greetings,"
+                android:id="@+id/textView102"
+                android:textSize="20dp"
+                android:layout_below="@+id/textView55"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="25dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/user_name"
+                android:textSize="40dp"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:textColorHint="#B9959595"
+                android:hint="User Name" />
+
+        </LinearLayout>
 
         <FrameLayout
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/Egis_OK"
+            android:id="@+id/Lockoutuserframelayout">
 
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="fill_parent"
+            <FrameLayout
+                android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <FrameLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="140dp"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="10dp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-                    <ImageView
-                        android:layout_width="361dp"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/imageView6"
-                        android:src="@drawable/main_unlock_icon" />
-                </FrameLayout>
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
 
-                <TextView
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:text="LOGIN SUCCESSFUL"
-                    android:id="@+id/textView55"
-                    android:textSize="15dp"
-                    android:layout_alignParentTop="false"
-                    android:layout_alignParentStart="false"
-                    android:layout_centerHorizontal="true"
-                    android:textAlignment="center"
-                    android:layout_gravity="center_horizontal" />
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Greetings,"
-                    android:id="@+id/textView102"
-                    android:textSize="20dp"
-                    android:layout_below="@+id/textView55"
-                    android:layout_centerHorizontal="true"
-                    android:layout_gravity="center_horizontal"
-                    android:paddingTop="25dp"
-                    android:textColor="#000000" />
+                            <TextView
+                                android:text="Greetings"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center"
+                                android:textSize="28sp"
+                                android:textColor="@color/common_google_signin_btn_text_dark_default" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/user_name"
-                    android:textSize="40dp"
-                    android:textAlignment="center"
-                    android:layout_centerHorizontal="true"
-                    android:layout_gravity="center_horizontal"
-                    android:textColorHint="#B9959595"
-                    android:hint="User Name" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/user_name2"
+                                android:textSize="40dp"
+                                android:textAlignment="center"
+                                android:layout_centerHorizontal="true"
+                                android:layout_gravity="center_horizontal"
+                                android:textColor="@color/cast_libraries_material_featurehighlight_text_body_color"
+                                android:hint="User Name" />
 
-            </LinearLayout>
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/lockouticon"
+                                android:id="@+id/imageView8"
+                                android:layout_gravity="center" />
 
+                            <TextView
+                                android:text="Please await"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView40"
+                                android:textAlignment="center"
+                                android:textSize="28sp"
+                                android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+                            <TextView
+                                android:text="Activation"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView40"
+                                android:textAlignment="center"
+                                android:textSize="28sp"
+                                android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+                            <TextView
+                                android:text="to DCC APP"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center"
+                                android:textSize="20sp"
+                                android:textColor="@color/cast_libraries_material_featurehighlight_text_body_color" />
+
+                            <TextView
+                                android:text="Your access Level is"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center"
+                                android:textSize="20sp"
+                                android:textColor="@color/cast_libraries_material_featurehighlight_text_body_color" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/access_level"
+                                android:textSize="40dp"
+                                android:textAlignment="center"
+                                android:layout_centerHorizontal="true"
+                                android:layout_gravity="center_horizontal"
+                                android:textColor="@color/cast_libraries_material_featurehighlight_text_body_color"
+                                android:hint="User Name" />
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
         </FrameLayout>
-    </ScrollView>
+
+    </FrameLayout>
 
 </RelativeLayout>

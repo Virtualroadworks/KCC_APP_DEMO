@@ -79,7 +79,7 @@ public class EULA extends AppCompatActivity implements View.OnClickListener{
 
 
             case R.id.vrdatabase:
-                startActivity (new Intent(this, Vehicle_Reports.class));
+                startActivity (new Intent(this, dccdrainageforms.class));
                 return true;
 
 

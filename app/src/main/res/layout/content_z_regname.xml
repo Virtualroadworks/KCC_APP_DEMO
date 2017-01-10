@@ -100,6 +100,21 @@
                     android:textSize="24sp"
                     android:textColor="#000000" />
 
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etuser_access_level"
+                    android:hint="Fill in Name here..."
+                    android:textColorHint="#b9c6c6c6"
+                    tools:ignore="HardcodedText"
+                    android:textAlignment="center"
+                    android:background="@drawable/text_roundoff_white"
+                    android:padding="25dp"
+                    android:elevation="0dp"
+                    android:textSize="24sp"
+                    android:textColor="#000000"
+                    android:visibility="gone" />
+
 
                 <FrameLayout
                     android:layout_width="match_parent"

@@ -4,5 +4,9 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#ffec5c</color>
     <color name="Egis_trans">#00ffffff</color>
-    <color name="Egis_OK">#2fff00</color>
+    <color name="Egis_OK">#da09daff</color>
+    <color name="DCC_colour">#3399ff</color>
+    <color name="DCC_colour_2">#e9e9e9</color>
+    <color name="DCC_colour_3">#d2d1d1</color>
+    <color name="trans">#00ffffff</color>
 </resources>

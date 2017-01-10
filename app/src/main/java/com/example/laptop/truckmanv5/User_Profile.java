@@ -42,6 +42,12 @@ public class User_Profile extends AppCompatActivity implements View.OnClickListe
     private TextView User_Contact_Number_tital;
     private TextView User_Contact_Number_tital_fill;
 
+    private TextView User_Role_tital;
+    private TextView User_Role_tital_fill;
+
+    private TextView User_Access_tital;
+    private TextView User_Access_tital_fill;
+
     private TextView Depot_Area_fill;
     private TextView Depot_Address_fill;
     private TextView Depot_County_fill;
@@ -81,6 +87,9 @@ public class User_Profile extends AppCompatActivity implements View.OnClickListe
         User_Company_tital_fill = (TextView) findViewById(R.id.User_Company_tital_fill);
         User_Contact_Number_tital_fill = (TextView) findViewById(R.id.User_Contact_Number_tital_fill);
 
+        User_Role_tital_fill = (TextView) findViewById(R.id.User_Role_tital_fill);
+        User_Access_tital_fill = (TextView) findViewById(R.id.User_Access_tital_fill);
+
         Depot_Area_fill = (TextView) findViewById(R.id.Depot_Area_fill);
         Depot_Address_fill = (TextView) findViewById(R.id.Depot_Address_fill);
         Depot_County_fill= (TextView) findViewById(R.id.Depot_County_fill);
@@ -118,6 +127,9 @@ public class User_Profile extends AppCompatActivity implements View.OnClickListe
                 String userCompany  = dataSnapshot.child("User Company").getValue(String.class);
                 String userContactNumber  = dataSnapshot.child("User Contact Number").getValue(String.class);
 
+                String userRole  = dataSnapshot.child("User Security Level").getValue(String.class);
+                String userAccess  = dataSnapshot.child("User Access Level").getValue(String.class);
+
                 String depot_area = dataSnapshot.child("Address Line 1").getValue(String.class);
                 String depot_address = dataSnapshot.child("Address Line 2").getValue(String.class);
                 String depot_county = dataSnapshot.child("Address Line 3").getValue(String.class);
@@ -128,6 +140,9 @@ public class User_Profile extends AppCompatActivity implements View.OnClickListe
                 etreport_email_recipient.setText(report_email_recipient);
                 User_Company_tital_fill.setText(userCompany);
                 User_Contact_Number_tital_fill.setText(userContactNumber);
+
+                User_Role_tital_fill.setText(userRole);
+                User_Access_tital_fill.setText(userAccess);
 
                 Depot_Area_fill.setText(depot_area);
                 Depot_Address_fill.setText(depot_address);
@@ -269,7 +284,7 @@ public class User_Profile extends AppCompatActivity implements View.OnClickListe
                 return true;
 
             case R.id.vrdatabase:
-                startActivity (new Intent(this, Vehicle_Reports.class));
+                startActivity (new Intent(this, dccdrainageforms.class));
                 return true;
 
         }

@@ -193,7 +193,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Rsavideowebpage"
-            android:label="Rsavideowebpage"
+            android:label="DCC Videos"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Apptutorial"
@@ -226,6 +226,30 @@
         <activity
             android:name=".User_Basearea"
             android:label="@string/title_activity_user__basearea"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Userheldoutsideapp"
+            android:label="Account on Hold"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".dccdrainageforms"
+            android:label="DCC Forms Database"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AT0013_3_view"
+            android:label="Inspection Checklist"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AT0013_3_database"
+            android:label="Inspection Checklist"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AT0013_3_formfilled"
+            android:label="Inspection Checklist"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AT0013_3_listadaptor"
+            android:label="Inspection Checklist"
             android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
