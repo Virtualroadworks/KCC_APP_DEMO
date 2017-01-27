@@ -50,7 +50,7 @@ import com.google.firebase.storage.UploadTask;
 import com.squareup.picasso.Picasso;
 
 
-public class Add_or_Update_Inspection extends AppCompatActivity implements Popup_WAM.DefectRecordedListener {
+public class Add_or_Update_Inspection extends AppCompatActivity implements Popup_WAM.DefectRecordedListener, UserLocation.LocationCallback {
 
     MediaPlayer mp;
     Button bOK,bCancel,vehiclephoto;
@@ -592,6 +592,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
     //<<--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+    UserLocation userLocation;
 
     public void onFinishEditDialog(String caller, String description, String fix)
     {
@@ -792,6 +793,8 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_or__update__inspection);
+
+        userLocation = new UserLocation(this, this);
 
         prg = (ProgressBar) findViewById(R.id.progressBar);
         prg.setProgress(0);
@@ -5057,12 +5060,13 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
             @Override
             public void onClick(View v) {
 
-                mp.start();
-                startActivity(new Intent(Add_or_Update_Inspection.this, MyLocationDemoActivity.class));
+                userLocation.disconnect();
+                userLocation.connect();
+//                mp.start();
+//                startActivity(new Intent(Add_or_Update_Inspection.this, MyLocationDemoActivity.class));
 
             }
         });
-
 
 
 
@@ -6058,6 +6062,13 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+
+    public void handleNewLocation(Location location) {
+
+        System.out.println(location);
+        
     }
 
 }
