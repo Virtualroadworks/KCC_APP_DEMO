@@ -34,7 +34,7 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.gms.tasks.OnSuccessListener;
+
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -221,7 +221,12 @@ public class Person_Details extends AppCompatActivity {
     String tachospeedopicturepath;
     String nowarninglightspicturepath;
 
+
     String vehiclephotopicturepath;
+
+    String locationlat;
+    String locationlong;
+
 
     public static Bitmap getBitmapFromView(View view) {
         Bitmap returnedBitmap = Bitmap.createBitmap(view.getWidth(), view.getHeight(),Bitmap.Config.ARGB_8888);

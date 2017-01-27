@@ -127,6 +127,9 @@ public class Person {
 
     private String vehiclephotopicturepath;
 
+    private String locationlat;
+    private String locationlong;
+
     //////////////////////////////////////////////////////////////////////////////////
 
 
@@ -822,6 +825,20 @@ public class Person {
         return vehiclephotopicturepath;
     }
 
+    public void setlocationlat(String locationlat) {
+        this.locationlat = locationlat;
+    }
+    public String getlocationlat() {
+        return locationlat;
+    }
+
+    public void setlocationlong(String locationlong) {
+        this.locationlong = locationlong;
+    }
+    public String getlocationlong() {
+        return locationlong;
+    }
+
 
 
 
@@ -952,6 +969,9 @@ public class Person {
         result.put("nowarninglightspicturepath", nowarninglightspicturepath);
 
         result.put("vehiclephotopicturepath", vehiclephotopicturepath);
+
+        result.put("locationlat", locationlat);
+        result.put("locationlong", locationlong);
 
         return result;
     }

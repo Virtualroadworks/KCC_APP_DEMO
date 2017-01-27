@@ -564,6 +564,9 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
     String vehiclephotopictureuri;
     String vehiclephotopicturepath;
 
+    double Locationlat = 0;
+    double Locationlong = 0;
+
     Boolean taxinsurancebackbuttonPressed = false;
     Boolean regplatebackbuttonPressed = false;
     Boolean airelectrialbackbuttonPressed = false;
@@ -5248,6 +5251,11 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
                     p.setvehiclephotopicturepath(vehiclephotopicturepath);
 
+                    p.setlocationlat(Double.toString(Locationlat));
+                    p.setlocationlong(Double.toString(Locationlong));
+
+
+
                     //if (person == null)
                        Vehicle_Reports.getInstance().addPerson(p);
 
@@ -6068,7 +6076,16 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
     public void handleNewLocation(Location location) {
 
         System.out.println(location);
-        
+
+
+
+        Locationlat = location.getLatitude();
+        Locationlong = location.getLongitude();
+
+
+
+
+
     }
 
 }

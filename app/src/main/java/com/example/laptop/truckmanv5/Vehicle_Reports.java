@@ -295,6 +295,9 @@ public class Vehicle_Reports extends AppCompatActivity  {
 
         person.setvehiclephotopicturepath(model.getvehiclephotopicturepath());
 
+        person.setlocationlat(model.getlocationlat());
+        person.setlocationlong(model.getlocationlong());
+
         Date date = new Date();
         String dateString = DateFormat.getDateTimeInstance().format(date);
         person.setendDate(dateString);
