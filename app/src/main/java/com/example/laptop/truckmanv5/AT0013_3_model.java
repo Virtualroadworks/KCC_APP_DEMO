@@ -91,12 +91,14 @@ public class AT0013_3_model {
     private String at0013_3pictureuri;
     private String at0013_3picturepath;
 
-    public AT0013_3_model () {
+    //////////////////////////////////////////////////////////////////////////////////
 
+
+
+    public AT0013_3_model () {
     }
 
     //////////////////////////////////////////////////////////////////////////////////
-
 
     public void setuser_name(String user_name) {
         this.user_name = user_name;
@@ -562,6 +564,9 @@ public class AT0013_3_model {
 
 //--------------------------------------------------------------------------------------
 
+
+
+//--------------------------------------------------------------------------------------
     public Map<String, Object> toMap() {
         HashMap<String, Object> result = new HashMap<>();
         result.put("user_name", user_name);
@@ -571,7 +576,8 @@ public class AT0013_3_model {
         result.put("startDate", startDate);
         result.put("endDate", endDate);
 
-//--------------------------------------------------------------------------------------
+
+
 
         result.put("at0013_3ck_tony_robinson", at0013_3ck_tony_robinson);
         result.put("at0013_3ck_mark_dixon", at0013_3ck_mark_dixon);

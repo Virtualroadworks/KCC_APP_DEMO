@@ -230,7 +230,7 @@
         <activity
             android:name=".Userheldoutsideapp"
             android:label="Account on Hold"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".dccdrainageforms"
             android:label="DCC Forms Database"
@@ -251,6 +251,26 @@
             android:name=".AT0013_3_listadaptor"
             android:label="Inspection Checklist"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AT_RiskAssessment_database"
+            android:label="@string/title_activity_at__risk_assessment_database"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AT_RiskAssessment_formfilled"
+            android:label="@string/title_activity_at__risk_assessment_formfilled"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AT_RiskAssessment_listadaptor"
+            android:label="@string/title_activity_at__risk_assessment_listadaptor"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AT_RiskAssessment_model"
+            android:label="@string/title_activity_at__risk_assessment_model"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AT_RiskAssessment_view"
+            android:label="@string/title_activity_at__risk_assessment_view"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

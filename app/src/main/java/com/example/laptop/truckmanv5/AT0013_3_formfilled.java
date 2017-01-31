@@ -1,5 +1,6 @@
 package com.example.laptop.truckmanv5;
 
+import android.app.FragmentManager;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
@@ -147,13 +148,13 @@ public class AT0013_3_formfilled extends AppCompatActivity {
 
 
 
-
     LinearLayout at0013_3ck_hazard_tmp_number_box;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_at0013_3_formfilled);
+
 
         user_name = (TextView) findViewById(R.id.user_name);
         user_email = (TextView) findViewById(R.id.user_email);

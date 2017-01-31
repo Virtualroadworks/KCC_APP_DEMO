@@ -380,4 +380,11 @@
 
     <string name="title_activity_dccnorthsideforms">dccnorthsideforms</string>
     <string name="title_activity_dccdrainageforms">dccdrainageforms</string>
+    <string name="title_activity_at__risk_assessment_database">AT_RiskAssessment_database</string>
+    <string name="title_activity_at__risk_assessment_formfilled">AT_RiskAssessment_formfilled
+    </string>
+    <string name="title_activity_at__risk_assessment_listadaptor">AT_RiskAssessment_listadaptor
+    </string>
+    <string name="title_activity_at__risk_assessment_model">AT_RiskAssessment_model</string>
+    <string name="title_activity_at__risk_assessment_view">AT_RiskAssessment_view</string>
 </resources>

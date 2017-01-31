@@ -20,6 +20,9 @@ public class dccdrainageforms extends AppCompatActivity  {
     Button form_at0013_3;
     Button database_at0013_3;
 
+    Button AT_RiskAssessment_Database;
+    Button AT_RiskAssessment_Form;
+
     Button form_Vehicle_check;
     Button database_Vehicle_check;
 
@@ -48,6 +51,9 @@ public class dccdrainageforms extends AppCompatActivity  {
 
         form_at0013_3 = (Button) findViewById(R.id.form_at0013_3);
         database_at0013_3 = (Button) findViewById(R.id.database_at0013_3);
+
+        AT_RiskAssessment_Database = (Button) findViewById(R.id.AT_RiskAssessment_Database);
+        AT_RiskAssessment_Form = (Button) findViewById(R.id.AT_RiskAssessment_Form);
 
         form_Vehicle_check = (Button) findViewById(R.id.form_Vehicle_check);
         database_Vehicle_check = (Button) findViewById(R.id.database_Vehicle_check);
@@ -146,6 +152,28 @@ public class dccdrainageforms extends AppCompatActivity  {
             public void onClick(View view) {
                 finish();
                 Intent nextView = new Intent(dccdrainageforms.this, Vehicle_Reports.class);
+                nextView.putExtra("CalledFromdccnorthsideforms", true);
+                startActivity(nextView);
+            }
+        });
+
+
+        AT_RiskAssessment_Database.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(dccdrainageforms.this, AT_RiskAssessment_database.class));
+            }
+        });
+
+
+
+        AT_RiskAssessment_Form.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                finish();
+                Intent nextView = new Intent(dccdrainageforms.this, AT_RiskAssessment_database.class);
                 nextView.putExtra("CalledFromdccnorthsideforms", true);
                 startActivity(nextView);
             }
