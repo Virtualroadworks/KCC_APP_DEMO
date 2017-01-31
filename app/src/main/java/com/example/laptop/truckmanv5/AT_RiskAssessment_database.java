@@ -181,78 +181,23 @@ public class AT_RiskAssessment_database extends AppCompatActivity {
         add.setraform_trafficleftsite_no(model.getraform_trafficleftsite_no());
         add.setraform_trafficfallsystem_yes(model.getraform_trafficfallsystem_yes());
         add.setraform_trafficfallsystem_no(model.getraform_trafficfallsystem_no());
+
+        add.setraform_heights_harnessinspect_yes(model.getraform_heights_harnessinspect_yes());
+        add.setraform_heights_harnessinspect_no(model.getraform_heights_harnessinspect_no());
+        add.setraform_heights_ladderinspect_yes(model.getraform_heights_ladderinspect_yes());
+        add.setraform_heights_ladderinspect_no(model.getraform_heights_ladderinspect_no());
+        add.setraform_heights_laddertie_yes(model.getraform_heights_laddertie_yes());
+        add.setraform_heights_laddertie_no(model.getraform_heights_laddertie_no());
+        add.setraform_heights_manholebarriier_yes(model.getraform_heights_manholebarriier_yes());
+        add.setraform_heights_manholebarriier_no(model.getraform_heights_manholebarriier_no());
+
+
+
         ///////////////////////////////////////Risk Assessment/////////////////////////////////////////////////
 
 
-        add.setat0013_3ck_tony_robinson(model.getat0013_3ck_tony_robinson());
-        add.setat0013_3ck_mark_dixon(model.getat0013_3ck_mark_dixon());
-        add.setat0013_3ck_brian_byrne(model.getat0013_3ck_brian_byrne());
-        add.setat0013_3ck_declan_byrne(model.getat0013_3ck_declan_byrne());
-        add.setat0013_3ck_michael_mccormack(model.getat0013_3ck_michael_mccormack());
-        add.setat0013_3ck_david_mcasey(model.getat0013_3ck_david_mcasey());
-        add.setat0013_3ck_eamonn_storey(model.getat0013_3ck_eamonn_storey());
-        add.setat0013_3ck_thomas_martin(model.getat0013_3ck_thomas_martin());
-        add.setat0013_3ck_richard_gilligan(model.getat0013_3ck_richard_gilligan());
-        add.setat0013_3ck_noel_perry(model.getat0013_3ck_noel_perry());
-        add.setat0013_3ck_willie_harris(model.getat0013_3ck_willie_harris());
-        add.setat0013_3ck_kieran_fitzgerald(model.getat0013_3ck_kieran_fitzgerald());
-        add.setat0013_3ck_mark_dalton(model.getat0013_3ck_mark_dalton());
-        add.setat0013_3ck_william_burke(model.getat0013_3ck_william_burke());
-        add.setat0013_3ck_martin_maher(model.getat0013_3ck_martin_maher());
-        add.setat0013_3ck_graham_mcloghlin(model.getat0013_3ck_graham_mcloghlin());
-        add.setat0013_3ck_christy_oreilly(model.getat0013_3ck_christy_oreilly());
-        add.setat0013_3ck_ritchie_kavanagh(model.getat0013_3ck_ritchie_kavanagh());
-        add.setat0013_3ck_river_cleaning(model.getat0013_3ck_river_cleaning());
-        add.setat0013_3ck_debris_removal(model.getat0013_3ck_debris_removal());
-        add.setat0013_3ck_screen_cleaning(model.getat0013_3ck_screen_cleaning());
-        add.setat0013_3ck_tree_cutting(model.getat0013_3ck_tree_cutting());
-        add.setat0013_3ck_weir_maintenance(model.getat0013_3ck_weir_maintenance());
-        add.setat0013_3ck_river_dredging(model.getat0013_3ck_river_dredging());
-        add.setat0013_3ck_nature_works_other(model.getat0013_3ck_nature_works_other());
-        add.setat0013_3ck_nature_works_other_description(model.getat0013_3ck_nature_works_other_description());
 
-        add.setat0013_3ck_safepass(model.getat0013_3ck_safepass());
-        add.setat0013_3ck_manual_handling(model.getat0013_3ck_manual_handling());
-        add.setat0013_3ck_water_awareness(model.getat0013_3ck_water_awareness());
-        add.setat0013_3ck_chainsaw(model.getat0013_3ck_chainsaw());
-        add.setat0013_3ck_tirfor_winch(model.getat0013_3ck_tirfor_winch());
-        add.setat0013_3ck_confined_space(model.getat0013_3ck_confined_space());
-        add.setat0013_3ck_safety_footware(model.getat0013_3ck_safety_footware());
-        add.setat0013_3ck_high_vis_vest(model.getat0013_3ck_high_vis_vest());
-        add.setat0013_3ck_gloves(model.getat0013_3ck_gloves());
-        add.setat0013_3ck_safety_helmet(model.getat0013_3ck_safety_helmet());
-        add.setat0013_3ck_ear_protection(model.getat0013_3ck_ear_protection());
-        add.setat0013_3ck_eye_protection(model.getat0013_3ck_eye_protection());
-        add.setat0013_3ck_life_jacket(model.getat0013_3ck_life_jacket());
-        add.setat0013_3ck_chainsaw_suit(model.getat0013_3ck_chainsaw_suit());
-        add.setat0013_3ck_waders(model.getat0013_3ck_waders());
-        add.setat0013_3ck_throw_bags(model.getat0013_3ck_throw_bags());
-        add.setat0013_3ck_life_line(model.getat0013_3ck_life_line());
-        add.setat0013_3ck_hazard_life_jacket(model.getat0013_3ck_hazard_life_jacket());
-        add.setat0013_3ck_hazard_throw_bags(model.getat0013_3ck_hazard_throw_bags());
-        add.setat0013_3ck_hazard_na(model.getat0013_3ck_hazard_na());
-        add.setat0013_3ck_river_bank_life_line(model.getat0013_3ck_river_bank_life_line());
-        add.setat0013_3ck_river_bank_laddders(model.getat0013_3ck_river_bank_laddders());
-        add.setat0013_3ck_river_bank_safety_footware(model.getat0013_3ck_river_bank_safety_footware());
-        add.setat0013_3ck_river_bank_na(model.getat0013_3ck_river_bank_na());
-        add.setat0013_3ck_hazard_yes(model.getat0013_3ck_hazard_yes());
-        add.setat0013_3ck_hazard_no(model.getat0013_3ck_hazard_no());
-        add.setat0013_3ck_barrier_na(model.getat0013_3ck_barrier_na());
-        add.setat0013_3ck_hazard_hog_avoid(model.getat0013_3ck_hazard_hog_avoid());
-        add.setat0013_3ck_hazard_hog_ppe(model.getat0013_3ck_hazard_hog_ppe());
-        add.setat0013_3ck_hazard_hog_na(model.getat0013_3ck_hazard_hog_na());
-        add.setat0013_3ck_hazard_hygine_ppe(model.getat0013_3ck_hazard_hygine_ppe());
-        add.setat0013_3ck_hazard_washing_facilities(model.getat0013_3ck_hazard_washing_facilities());
-        add.setat0013_3ck_hazard_canteen(model.getat0013_3ck_hazard_canteen());
-        add.setat0013_3ck_hazard_clean_tools(model.getat0013_3ck_hazard_clean_tools());
-        add.setat0013_3ck_hazard_sharp_prevention_pack(model.getat0013_3ck_hazard_sharp_prevention_pack());
-        add.setat0013_3ck_hazard_hygiene_na(model.getat0013_3ck_hazard_hygiene_na());
-        add.setat0013_3ck_hazard_tmp_number(model.getat0013_3ck_hazard_tmp_number());
-        add.setat0013_3ck_hazard_tmp_na(model.getat0013_3ck_hazard_tmp_na());
-        add.setat0013_3ck_hazard_tmp_comments(model.getat0013_3ck_hazard_tmp_comments());
 
-        add.setat0013_3pictureuri(model.getat0013_3pictureuri());
-        add.setat0013_3picturepath(model.getat0013_3picturepath());
 
         Date date = new Date();
         String dateString = DateFormat.getDateTimeInstance().format(date);
@@ -271,17 +216,11 @@ public class AT_RiskAssessment_database extends AppCompatActivity {
 
         AT_RiskAssessment_model p = arrayListAT_RiskAssessment.get(position);
 
-        String at0013_3picturepath = p.getat0013_3picturepath();
 
-
-        if (at0013_3picturepath != null) {
-
-            mStorage.child(at0013_3picturepath).delete();
-            String folderPath = p.getat0013_3picturepath().substring(0, p.getat0013_3picturepath().lastIndexOf('/'));
-            mStorage.child(folderPath).delete();
-        }
         mDatabase.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("AT RiskAssessment Form").child(clickedKey).removeValue();
     }
+
+
 
     ChildEventListener childEventListener = new ChildEventListener() {
         @Override
