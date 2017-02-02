@@ -26,6 +26,9 @@ public class dccdrainageforms extends AppCompatActivity  {
     Button form_Vehicle_check;
     Button database_Vehicle_check;
 
+    Button form_tm_plans;
+    Button database_tm_plans;
+
     private FirebaseAuth firebaseAuth;
     private Firebase mRootRef;
 
@@ -57,6 +60,9 @@ public class dccdrainageforms extends AppCompatActivity  {
 
         form_Vehicle_check = (Button) findViewById(R.id.form_Vehicle_check);
         database_Vehicle_check = (Button) findViewById(R.id.database_Vehicle_check);
+
+        form_tm_plans = (Button) findViewById(R.id.form_tm_plans);
+        database_tm_plans = (Button) findViewById(R.id.database_tm_plans);
 
         firebaseAuth = FirebaseAuth.getInstance();
         Firebase.setAndroidContext(this);
@@ -178,6 +184,37 @@ public class dccdrainageforms extends AppCompatActivity  {
                 startActivity(nextView);
             }
         });
+
+        form_tm_plans.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+           public void onClick(View view) {
+              startActivity(new Intent(dccdrainageforms.this, DCC_PLANS_PDF.class));
+         }
+       });
+
+
+
+//        database_tm_plans.setOnClickListener(new View.OnClickListener() {
+//
+//            @Override
+//            public void onClick(View view) {
+//                startActivity(new Intent(dccdrainageforms.this, AT_TrafficPlanSelection.class));
+//            }
+//        });
+//
+//
+//
+//        form_tm_plans.setOnClickListener(new View.OnClickListener() {
+//
+//            @Override
+//            public void onClick(View view) {
+//                finish();
+//                Intent nextView = new Intent(dccdrainageforms.this, AT_TrafficPlanSelection.class);
+//                nextView.putExtra("CalledFromdccnorthsideforms", true);
+//                startActivity(nextView);
+//            }
+//        });
 
     }
 

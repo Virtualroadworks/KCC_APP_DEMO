@@ -317,7 +317,7 @@
                         android:layout_width="match_parent">
 
                         <TextView
-                            android:text="Confined Space Entry permit"
+                            android:text="Traffic Management Plan Selection"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:gravity="center"
@@ -358,10 +358,10 @@
                         android:padding="10dp">
 
                         <Button
-                            android:text="Form : Confined"
+                            android:text="Form : TM Plans"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:id="@+id/form_at0008_2"
+                            android:id="@+id/form_tm_plans"
                             tools:ignore="ButtonStyle,HardcodedText"
                             android:layout_weight="1"
                             android:clickable="false"
@@ -370,10 +370,10 @@
                             android:layout_margin="5dp" />
 
                         <Button
-                            android:text="Database : Confined"
+                            android:text="Database : Plans Achive"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:id="@+id/database_at0008_2"
+                            android:id="@+id/database_tm_plans"
                             tools:ignore="ButtonStyle,HardcodedText"
                             android:layout_weight="1"
                             android:clickable="false"

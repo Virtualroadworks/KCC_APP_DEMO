@@ -270,6 +270,14 @@
         <activity
             android:name=".AT_RiskAssessment_view"
             android:label="@string/title_activity_at__risk_assessment_view"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AT_TrafficPlanSelection"
+            android:label="Traffic Plans Selection"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DCC_PLANS_PDF"
+            android:label="DCC Document"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

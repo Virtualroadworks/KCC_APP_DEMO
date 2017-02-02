@@ -978,7 +978,8 @@
 
             <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
 
                 <LinearLayout
                     android:orientation="vertical"
@@ -1690,6 +1691,356 @@
 
             </FrameLayout>
 
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                tools:ignore="UseCompoundDrawables">
+
+                                <ImageButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    app:srcCompat="@drawable/rarivercleaningbuttoneffect"
+                                    android:id="@+id/rarivercleaningicon100x100"
+                                    tools:ignore="ContentDescription"
+                                    android:background="@color/Egis_trans"
+                                    android:layout_marginLeft="25dp" />
+
+                            </LinearLayout>
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:text="3: River Cleaning/ Working in Weirs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="normal|bold|italic"
+                        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                        tools:ignore="HardcodedText"
+                        android:textSize="25sp"
+                        android:background="@drawable/button_roundoff2"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:paddingLeft="25dp"
+                        android:layout_marginTop="10dp" />
+
+                </LinearLayout>
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                tools:ignore="UseCompoundDrawables">
+
+                                <ImageButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    app:srcCompat="@drawable/rapowerlinesbuttoneffect"
+                                    android:id="@+id/rapowerlinesicon100x100"
+                                    tools:ignore="ContentDescription"
+                                    android:background="@color/Egis_trans"
+                                    android:layout_marginLeft="25dp" />
+
+                            </LinearLayout>
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:text="4 : Underground Services / Overhead Powerlines"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="normal|bold|italic"
+                        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                        tools:ignore="HardcodedText"
+                        android:textSize="25sp"
+                        android:background="@drawable/button_roundoff2"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:paddingLeft="25dp"
+                        android:layout_marginTop="10dp" />
+
+                </LinearLayout>
+
+
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                tools:ignore="UseCompoundDrawables">
+
+                                <ImageButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    app:srcCompat="@drawable/ramanhandlebuttoneffect"
+                                    android:id="@+id/ramanhandleicon100x100"
+                                    tools:ignore="ContentDescription"
+                                    android:background="@color/Egis_trans"
+                                    android:layout_marginLeft="25dp" />
+
+                            </LinearLayout>
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:text="5 : Manual Handling"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="normal|bold|italic"
+                        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                        tools:ignore="HardcodedText"
+                        android:textSize="25sp"
+                        android:background="@drawable/button_roundoff2"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:paddingLeft="25dp"
+                        android:layout_marginTop="10dp" />
+
+                </LinearLayout>
+
+
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                tools:ignore="UseCompoundDrawables">
+
+                                <ImageButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    app:srcCompat="@drawable/raconspacebuttoneffect"
+                                    android:id="@+id/raconspaceicon100x100"
+                                    tools:ignore="ContentDescription"
+                                    android:background="@color/Egis_trans"
+                                    android:layout_marginLeft="25dp" />
+
+                            </LinearLayout>
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:text="6 : Confined Space Entry"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="normal|bold|italic"
+                        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                        tools:ignore="HardcodedText"
+                        android:textSize="25sp"
+                        android:background="@drawable/button_roundoff2"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:paddingLeft="25dp"
+                        android:layout_marginTop="10dp" />
+
+                </LinearLayout>
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                tools:ignore="UseCompoundDrawables">
+
+                                <ImageButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    app:srcCompat="@drawable/rapowertoolsbuttoneffect"
+                                    android:id="@+id/rapowertoolsicon100x100"
+                                    tools:ignore="ContentDescription"
+                                    android:background="@color/Egis_trans"
+                                    android:layout_marginLeft="25dp" />
+
+                            </LinearLayout>
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:text="7 : Using Power Tools"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="normal|bold|italic"
+                        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                        tools:ignore="HardcodedText"
+                        android:textSize="25sp"
+                        android:background="@drawable/button_roundoff2"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:paddingLeft="25dp"
+                        android:layout_marginTop="10dp" />
+
+                </LinearLayout>
+
+
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                tools:ignore="UseCompoundDrawables">
+
+                                <ImageButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    app:srcCompat="@drawable/rageneralppebuttoneffect"
+                                    android:id="@+id/rageneralppeicon100x100"
+                                    tools:ignore="ContentDescription"
+                                    android:background="@color/Egis_trans"
+                                    android:layout_marginLeft="25dp" />
+
+                            </LinearLayout>
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:text="8 : General PPE (Required)"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="normal|bold|italic"
+                        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                        tools:ignore="HardcodedText"
+                        android:textSize="25sp"
+                        android:background="@drawable/button_roundoff2"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:paddingLeft="25dp"
+                        android:layout_marginTop="10dp" />
+
+                </LinearLayout>
+
+
+            </FrameLayout>
 
 
 
@@ -1698,7 +2049,9 @@
 
 
 
-                <FrameLayout
+
+
+            <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 

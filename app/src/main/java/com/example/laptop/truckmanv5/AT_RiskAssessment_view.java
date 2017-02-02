@@ -67,8 +67,14 @@ public class AT_RiskAssessment_view extends AppCompatActivity {
     ImageButton rappeicon100x100;
     ImageButton raroadsicon100x100;
     ImageButton rafootpathicon100x100;
+    ImageButton rarivercleaningicon100x100;
 
     ImageButton raworkingatheightsicon100x100;
+    ImageButton rapowerlinesicon100x100;
+    ImageButton ramanhandleicon100x100;
+    ImageButton raconspaceicon100x100;
+    ImageButton rapowertoolsicon100x100;
+    ImageButton rageneralppeicon100x100;
 
     CheckBox raform_trafficppe_yes;
     CheckBox raform_trafficppe_no;
@@ -93,8 +99,6 @@ public class AT_RiskAssessment_view extends AppCompatActivity {
     CheckBox raform_heights_manholebarriier_no;
 
 
-
-
     FrameLayout framelayout_traffic;
     FrameLayout framelayout_workingatheights;
 
@@ -114,8 +118,15 @@ public class AT_RiskAssessment_view extends AppCompatActivity {
         rappeicon100x100 = (ImageButton) findViewById(R.id.rappeicon100x100);
         raroadsicon100x100 = (ImageButton) findViewById(R.id.raroadsicon100x100);
         rafootpathicon100x100 = (ImageButton) findViewById(R.id.rafootpathicon100x100);
+        rarivercleaningicon100x100 = (ImageButton) findViewById(R.id.rarivercleaningicon100x100);
+        ramanhandleicon100x100 = (ImageButton) findViewById(R.id.ramanhandleicon100x100);
+        raconspaceicon100x100 = (ImageButton) findViewById(R.id.raconspaceicon100x100);
+        rapowertoolsicon100x100 = (ImageButton) findViewById(R.id.rapowertoolsicon100x100);
+        rageneralppeicon100x100 = (ImageButton) findViewById(R.id.rageneralppeicon100x100);
+
 
         raworkingatheightsicon100x100 = (ImageButton) findViewById(R.id.raworkingatheightsicon100x100);
+        rapowerlinesicon100x100 = (ImageButton) findViewById(R.id.rapowerlinesicon100x100);
 
         raform_trafficppe_yes = (CheckBox) findViewById(R.id.raform_trafficppe_yes);
         raform_trafficppe_no = (CheckBox) findViewById(R.id.raform_trafficppe_no);
