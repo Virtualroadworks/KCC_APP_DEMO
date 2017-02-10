@@ -137,7 +137,7 @@
                         android:layout_marginTop="5dp">
 
                         <TextView
-                            android:text="Daily Vehicle walkaround checklist"
+                            android:text="Vehicle Inspection Form"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:gravity="center"
@@ -224,7 +224,7 @@
                         android:layout_marginTop="5dp">
 
                         <TextView
-                            android:text="Inspection Checklist"
+                            android:text="Inspection Form"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:gravity="center"
@@ -402,7 +402,7 @@
                         android:layout_marginTop="5dp">
 
                         <TextView
-                            android:text="Site Risk Assessments"
+                            android:text="Risk Assessments Form"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:gravity="center"
@@ -448,7 +448,7 @@
                             android:text="Form : Site Risk"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:id="@+id/AT_RiskAssessment_Form"
+                            android:id="@+id/form_risk_assessment"
                             tools:ignore="ButtonStyle,HardcodedText"
                             android:layout_weight="1"
                             android:clickable="false"
@@ -460,7 +460,7 @@
                             android:text="Database : Site Risk"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:id="@+id/AT_RiskAssessment_Database"
+                            android:id="@+id/database_risk_assessment"
                             tools:ignore="ButtonStyle,HardcodedText"
                             android:layout_weight="1"
                             android:clickable="false"
@@ -489,7 +489,7 @@
                         android:layout_marginTop="5dp">
 
                         <TextView
-                            android:text="Management inspection Checklist"
+                            android:text="Confined Space Forms"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:gravity="center"
@@ -531,10 +531,10 @@
                         android:padding="10dp">
 
                         <Button
-                            android:text="Form : Management"
+                            android:text="Form : Confined Space"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:id="@+id/form_at00011"
+                            android:id="@+id/form_confined_space"
                             tools:ignore="ButtonStyle,HardcodedText"
                             android:layout_weight="1"
                             android:clickable="false"
@@ -544,10 +544,10 @@
                             android:textSize="12sp" />
 
                         <Button
-                            android:text="Database : Management"
+                            android:text="Database : Confined Space"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:id="@+id/database_at00011"
+                            android:id="@+id/database_confined_space"
                             tools:ignore="ButtonStyle,HardcodedText"
                             android:layout_weight="1"
                             android:clickable="false"

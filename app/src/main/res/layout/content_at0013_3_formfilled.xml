@@ -15,8 +15,8 @@
         android:id="@+id/scrollviewat0013_3_report"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
-        android:layout_centerVertical="true"
-        android:layout_alignParentEnd="true">
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
 
         <LinearLayout
             android:orientation="vertical"
@@ -237,6 +237,28 @@
                 android:layout_width="match_parent"
                 android:layout_height="3dp"
                 android:background="@color/cardview_dark_background">
+
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:text="Email Report"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/emailreport"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:layout_margin="5dp"
+                        tools:ignore="HardcodedText,InefficientWeight"
+                        android:background="@drawable/button_roundoff4" />
+                </LinearLayout>
 
             </FrameLayout>
 
@@ -3385,28 +3407,6 @@
                         tools:ignore="HardcodedText,TextViewEdits"
                         android:textSize="18sp" />
 
-                </LinearLayout>
-
-            </FrameLayout>
-
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <Button
-                        android:text="Email Report"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/emailreport"
-                        android:layout_weight="1"
-                        android:padding="25dp"
-                        android:layout_margin="25dp"
-                        tools:ignore="HardcodedText,InefficientWeight" />
                 </LinearLayout>
 
             </FrameLayout>

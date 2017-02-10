@@ -20,8 +20,11 @@ public class dccdrainageforms extends AppCompatActivity  {
     Button form_at0013_3;
     Button database_at0013_3;
 
-    Button AT_RiskAssessment_Database;
-    Button AT_RiskAssessment_Form;
+    Button form_risk_assessment;
+    Button database_risk_assessment;
+
+    Button form_confined_space;
+    Button database_confined_space;
 
     Button form_Vehicle_check;
     Button database_Vehicle_check;
@@ -55,14 +58,17 @@ public class dccdrainageforms extends AppCompatActivity  {
         form_at0013_3 = (Button) findViewById(R.id.form_at0013_3);
         database_at0013_3 = (Button) findViewById(R.id.database_at0013_3);
 
-        AT_RiskAssessment_Database = (Button) findViewById(R.id.AT_RiskAssessment_Database);
-        AT_RiskAssessment_Form = (Button) findViewById(R.id.AT_RiskAssessment_Form);
+        form_risk_assessment = (Button) findViewById(R.id.form_risk_assessment);
+        database_risk_assessment = (Button) findViewById(R.id.database_risk_assessment);
 
         form_Vehicle_check = (Button) findViewById(R.id.form_Vehicle_check);
         database_Vehicle_check = (Button) findViewById(R.id.database_Vehicle_check);
 
         form_tm_plans = (Button) findViewById(R.id.form_tm_plans);
         database_tm_plans = (Button) findViewById(R.id.database_tm_plans);
+
+        form_confined_space = (Button) findViewById(R.id.form_confined_space);
+        database_confined_space = (Button) findViewById(R.id.database_confined_space);
 
         firebaseAuth = FirebaseAuth.getInstance();
         Firebase.setAndroidContext(this);
@@ -164,7 +170,7 @@ public class dccdrainageforms extends AppCompatActivity  {
         });
 
 
-        AT_RiskAssessment_Database.setOnClickListener(new View.OnClickListener() {
+        database_risk_assessment.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
@@ -174,12 +180,33 @@ public class dccdrainageforms extends AppCompatActivity  {
 
 
 
-        AT_RiskAssessment_Form.setOnClickListener(new View.OnClickListener() {
+        form_risk_assessment.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
                 finish();
                 Intent nextView = new Intent(dccdrainageforms.this, AT_RiskAssessment_database.class);
+                nextView.putExtra("CalledFromdccnorthsideforms", true);
+                startActivity(nextView);
+            }
+        });
+
+        database_confined_space.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(dccdrainageforms.this, AT_Confined_Space_database.class));
+            }
+        });
+
+
+
+        form_confined_space.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                finish();
+                Intent nextView = new Intent(dccdrainageforms.this, AT_Confined_Space_database.class);
                 nextView.putExtra("CalledFromdccnorthsideforms", true);
                 startActivity(nextView);
             }
