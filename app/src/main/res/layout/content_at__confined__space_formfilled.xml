@@ -2,20 +2,20 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/content_at__risk_assessment_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.laptop.truckmanv5.AT_RiskAssessment_view"
-    tools:showIn="@layout/activity_at__risk_assessment_view">
+    tools:context="com.example.laptop.truckmanv5.AT_Confined_Space_formfilled"
+    tools:showIn="@layout/activity_at__confined__space_formfilled">
 
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:ignore="UselessParent"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
+        android:id="@+id/scrollview_confined_space"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true">
 
@@ -24,6 +24,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             tools:ignore="UselessParent">
+
 
             <FrameLayout
                 android:layout_width="match_parent"
@@ -45,7 +46,7 @@
                         tools:ignore="ContentDescription" />
 
                     <TextView
-                        android:text="Risk Assessment"
+                        android:text="Confined Space Form"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:textStyle="normal|bold"
@@ -63,37 +64,6 @@
             <FrameLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content">
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content" >
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Form start time:"
-                        android:id="@+id/textView28"
-                        android:textSize="15sp"
-                        android:layout_gravity="top|left"
-                        tools:ignore="HardcodedText,RtlHardcoded" />
-
-                    <TextView
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:text="New Text"
-                        android:id="@+id/time_stamp"
-                        android:textAlignment="textEnd"
-                        android:textStyle="bold"/>
-
-                </LinearLayout>
-            </FrameLayout>
-
-
-
-
-            <FrameLayout
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content">
 
                 <LinearLayout
                     android:orientation="horizontal"
@@ -107,7 +77,8 @@
                         android:id="@+id/textView25"
                         android:layout_gravity="top|start"
                         android:textSize="15sp"
-                        tools:ignore="HardcodedText" />
+                        tools:ignore="HardcodedText"
+                        android:textStyle="normal|bold" />
 
                     <TextView
                         android:layout_width="fill_parent"
@@ -135,7 +106,8 @@
                         android:id="@+id/textView27"
                         android:layout_gravity="top|start"
                         android:textSize="15sp"
-                        tools:ignore="HardcodedText" />
+                        tools:ignore="HardcodedText"
+                        android:textStyle="normal|bold" />
 
                     <TextView
                         android:layout_width="fill_parent"
@@ -159,11 +131,12 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="User Department Area:"
+                        android:text="User Company:"
                         android:id="@+id/textView29"
                         android:layout_gravity="top|start"
                         android:textSize="15sp"
-                        tools:ignore="HardcodedText" />
+                        tools:ignore="HardcodedText"
+                        android:textStyle="normal|bold" />
 
                     <TextView
                         android:layout_width="fill_parent"
@@ -177,15 +150,7 @@
 
             <FrameLayout
                 android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:paddingBottom="10dp">
-
-                <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    tools:ignore="UselessLeaf">
-
-                </FrameLayout>
+                android:layout_height="wrap_content">
 
                 <LinearLayout
                     android:orientation="horizontal"
@@ -199,7 +164,8 @@
                         android:id="@+id/textView31"
                         android:layout_gravity="top|start"
                         android:textSize="15sp"
-                        tools:ignore="HardcodedText" />
+                        tools:ignore="HardcodedText"
+                        android:textStyle="normal|bold" />
 
                     <TextView
                         android:layout_width="fill_parent"
@@ -210,6 +176,72 @@
                         android:textStyle="bold" />
                 </LinearLayout>
             </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Inspection Start:"
+                        android:id="@+id/textView26"
+                        android:layout_gravity="top|start"
+                        android:textSize="15sp"
+                        tools:ignore="HardcodedText"
+                        android:textStyle="normal|bold" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="New Text"
+                        android:id="@+id/startDate"
+                        android:textAlignment="textEnd"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Inspection End:"
+                        android:id="@+id/textView28"
+                        android:layout_gravity="top|start"
+                        android:textSize="15sp"
+                        tools:ignore="HardcodedText"
+                        android:textStyle="normal|bold" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="New Text"
+                        android:id="@+id/endDate"
+                        android:textAlignment="textEnd"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/cardview_dark_background">
+
+            </FrameLayout>
+
 
             <FrameLayout
                 android:layout_width="match_parent"
@@ -240,6 +272,28 @@
                         tools:ignore="HardcodedText"
                         android:textSize="15sp" />
 
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <Button
+                                android:text="Email Report"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/emailreport"
+                                android:layout_weight="1"
+                                android:padding="5dp"
+                                android:layout_margin="5dp"
+                                tools:ignore="HardcodedText,InefficientWeight"
+                                android:background="@drawable/button_roundoff4" />
+                        </LinearLayout>
+
+                    </FrameLayout>
                 </LinearLayout>
 
             </FrameLayout>
@@ -386,7 +440,8 @@
                                             android:id="@+id/raform_trafficppe_yes"
                                             android:buttonTint="@color/Green_tickbox"
                                             android:layout_weight="1"
-                                            tools:ignore="TooDeepLayout" />
+                                            tools:ignore="TooDeepLayout"
+                                            android:clickable="false"/>
 
                                         <TextView
                                             android:text="Yes"
@@ -423,7 +478,8 @@
                                             android:scaleY="1.6"
                                             android:id="@+id/raform_trafficppe_no"
                                             android:buttonTint="@color/Red_tickbox"
-                                            android:layout_weight="1" />
+                                            android:layout_weight="1"
+                                            android:clickable="false"/>
 
                                         <TextView
                                             android:text="No"
@@ -482,20 +538,7 @@
                                 android:background="@color/Egis_trans" />
 
                         </LinearLayout>
-                        <LinearLayout
-                            android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent">
 
-                            <ImageButton
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                app:srcCompat="@drawable/rafootpathbuttoneffect"
-                                android:id="@+id/rafootpathicon100x100"
-                                tools:ignore="ContentDescription"
-                                android:background="@color/Egis_trans" />
-
-                        </LinearLayout>
 
                         <FrameLayout
                             android:layout_width="wrap_content"
@@ -529,7 +572,8 @@
                                             android:id="@+id/raform_trafficroads"
                                             android:buttonTint="@color/Green_tickbox"
                                             android:layout_weight="1"
-                                            tools:ignore="TooDeepLayout" />
+                                            tools:ignore="TooDeepLayout"
+                                            android:clickable="false"/>
 
                                         <TextView
                                             android:text="Roads"
@@ -566,7 +610,8 @@
                                             android:scaleY="1.6"
                                             android:id="@+id/raform_trafficfootpath"
                                             android:buttonTint="@color/Red_tickbox"
-                                            android:layout_weight="1" />
+                                            android:layout_weight="1"
+                                            android:clickable="false"/>
 
                                         <TextView
                                             android:text="Footpath"
@@ -588,133 +633,135 @@
 
                     </LinearLayout>
                     <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:baselineAligned="false"
-                    android:id="@+id/framelayout_traffictmpguidelines">
-
-                    <FrameLayout
-                        android:layout_width="170dp"
-                        android:layout_height="match_parent">
-
-                        <TextView
-                            android:text="1.3 : Traffic Management applied in accordance with temporary traffic management guidelines? "
-                            android:layout_width="170dp"
-                            android:layout_height="wrap_content"
-                            android:textStyle="normal|bold"
-                            android:textAlignment="textStart"
-                            tools:ignore="HardcodedText"
-                            android:textColor="@color/cast_expanded_controller_background_color" />
-
-
-                    </FrameLayout>
-
-                    <LinearLayout
-                        android:orientation="vertical"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent">
-
-                        <ImageButton
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            app:srcCompat="@drawable/ratmpguidelinesbuttoneffect"
-                            android:id="@+id/ratmpguidelinesicon100x100"
-                            tools:ignore="ContentDescription"
-                            android:background="@color/Egis_trans" />
-
-                    </LinearLayout>
-
-                    <FrameLayout
-                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        tools:ignore="InefficientWeight,TooManyViews">
+                        android:baselineAligned="false"
+                        android:id="@+id/framelayout_traffictmpguidelines">
+
+                        <FrameLayout
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:text="1.3 : Traffic Management applied in accordance with temporary traffic management guidelines? "
+                                android:layout_width="170dp"
+                                android:layout_height="wrap_content"
+                                android:textStyle="normal|bold"
+                                android:textAlignment="textStart"
+                                tools:ignore="HardcodedText"
+                                android:textColor="@color/cast_expanded_controller_background_color" />
+
+
+                        </FrameLayout>
 
                         <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="match_parent">
 
-                            <LinearLayout
-                                android:orientation="horizontal"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:paddingLeft="7dp"
-                                tools:ignore="RtlHardcoded,RtlSymmetry"
-                                android:layout_weight="1">
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/ratmpguidelinesbuttoneffect"
+                                android:id="@+id/ratmpguidelinesicon100x100"
+                                tools:ignore="ContentDescription"
+                                android:background="@color/Egis_trans" />
 
-                                <LinearLayout
-                                    android:orientation="horizontal"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent">
-
-                                    <CheckBox
-                                        android:layout_width="60dp"
-                                        android:layout_height="match_parent"
-                                        android:scaleX="1.6"
-                                        android:scaleY="1.6"
-                                        android:id="@+id/raform_traffictmpguidelines_yes"
-                                        android:buttonTint="@color/Green_tickbox"
-                                        android:layout_weight="1"
-                                        tools:ignore="TooDeepLayout" />
-
-                                    <TextView
-                                        android:text="Yes"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:textStyle="normal|bold"
-                                        android:textColor="@color/common_google_signin_btn_text_dark_focused"
-                                        tools:ignore="HardcodedText,TooDeepLayout"
-                                        android:layout_gravity="center"
-                                        android:layout_weight="1"
-                                        android:gravity="center|start"
-                                        android:layout_marginLeft="5dp" />
-                                </LinearLayout>
-
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:orientation="horizontal"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:paddingLeft="7dp"
-                                tools:ignore="RtlHardcoded,RtlSymmetry"
-                                android:layout_weight="1">
-
-                                <LinearLayout
-                                    android:orientation="horizontal"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent">
-
-                                    <CheckBox
-                                        android:layout_width="60dp"
-                                        android:layout_height="match_parent"
-                                        android:scaleX="1.6"
-                                        android:scaleY="1.6"
-                                        android:id="@+id/raform_traffictmpguidelines_no"
-                                        android:buttonTint="@color/Red_tickbox"
-                                        android:layout_weight="1" />
-
-                                    <TextView
-                                        android:text="No"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:textStyle="normal|bold"
-                                        android:textColor="@color/common_google_signin_btn_text_dark_focused"
-                                        tools:ignore="HardcodedText,TooDeepLayout"
-                                        android:layout_weight="1"
-                                        android:layout_marginLeft="5dp"
-                                        android:layout_gravity="start"
-                                        android:gravity="center|start" />
-                                </LinearLayout>
-
-                            </LinearLayout>
                         </LinearLayout>
 
-                    </FrameLayout>
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            tools:ignore="InefficientWeight,TooManyViews">
 
-                </LinearLayout>
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:paddingLeft="7dp"
+                                    tools:ignore="RtlHardcoded,RtlSymmetry"
+                                    android:layout_weight="1">
+
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <CheckBox
+                                            android:layout_width="60dp"
+                                            android:layout_height="match_parent"
+                                            android:scaleX="1.6"
+                                            android:scaleY="1.6"
+                                            android:id="@+id/raform_traffictmpguidelines_yes"
+                                            android:buttonTint="@color/Green_tickbox"
+                                            android:layout_weight="1"
+                                            tools:ignore="TooDeepLayout"
+                                            android:clickable="false"/>
+
+                                        <TextView
+                                            android:text="Yes"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:textStyle="normal|bold"
+                                            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                            tools:ignore="HardcodedText,TooDeepLayout"
+                                            android:layout_gravity="center"
+                                            android:layout_weight="1"
+                                            android:gravity="center|start"
+                                            android:layout_marginLeft="5dp" />
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:paddingLeft="7dp"
+                                    tools:ignore="RtlHardcoded,RtlSymmetry"
+                                    android:layout_weight="1">
+
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <CheckBox
+                                            android:layout_width="60dp"
+                                            android:layout_height="match_parent"
+                                            android:scaleX="1.6"
+                                            android:scaleY="1.6"
+                                            android:id="@+id/raform_traffictmpguidelines_no"
+                                            android:buttonTint="@color/Red_tickbox"
+                                            android:layout_weight="1"
+                                            android:clickable="false"/>
+
+                                        <TextView
+                                            android:text="No"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:textStyle="normal|bold"
+                                            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                            tools:ignore="HardcodedText,TooDeepLayout"
+                                            android:layout_weight="1"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_gravity="start"
+                                            android:gravity="center|start" />
+                                    </LinearLayout>
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </FrameLayout>
+
+                    </LinearLayout>
 
                     <LinearLayout
                         android:orientation="horizontal"
@@ -786,7 +833,8 @@
                                             android:id="@+id/raform_trafficbeacon_yes"
                                             android:buttonTint="@color/Green_tickbox"
                                             android:layout_weight="1"
-                                            tools:ignore="TooDeepLayout" />
+                                            tools:ignore="TooDeepLayout"
+                                            android:clickable="false"/>
 
                                         <TextView
                                             android:text="Yes"
@@ -823,7 +871,8 @@
                                             android:scaleY="1.6"
                                             android:id="@+id/raform_trafficbeacon_no"
                                             android:buttonTint="@color/Red_tickbox"
-                                            android:layout_weight="1" />
+                                            android:layout_weight="1"
+                                            android:clickable="false"/>
 
                                         <TextView
                                             android:text="No"
@@ -914,7 +963,8 @@
                                             android:id="@+id/raform_trafficleftsite_yes"
                                             android:buttonTint="@color/Green_tickbox"
                                             android:layout_weight="1"
-                                            tools:ignore="TooDeepLayout" />
+                                            tools:ignore="TooDeepLayout"
+                                            android:clickable="false"/>
 
                                         <TextView
                                             android:text="Yes"
@@ -951,7 +1001,8 @@
                                             android:scaleY="1.6"
                                             android:id="@+id/raform_trafficleftsite_no"
                                             android:buttonTint="@color/Red_tickbox"
-                                            android:layout_weight="1" />
+                                            android:layout_weight="1"
+                                            android:clickable="false"/>
 
                                         <TextView
                                             android:text="No"
@@ -1118,7 +1169,8 @@
                                             android:id="@+id/raform_trafficfallsystem_yes"
                                             android:buttonTint="@color/Green_tickbox"
                                             android:layout_weight="1"
-                                            tools:ignore="TooDeepLayout" />
+                                            tools:ignore="TooDeepLayout"
+                                            android:clickable="false"/>
 
                                         <TextView
                                             android:text="Yes"
@@ -1145,7 +1197,7 @@
 
                                     <LinearLayout
                                         android:orientation="horizontal"
-                                        android:layout_width="match_parent"
+                                        android:layout_width="243dp"
                                         android:layout_height="match_parent">
 
                                         <CheckBox
@@ -1155,7 +1207,8 @@
                                             android:scaleY="1.6"
                                             android:id="@+id/raform_trafficfallsystem_no"
                                             android:buttonTint="@color/Red_tickbox"
-                                            android:layout_weight="1" />
+                                            android:layout_weight="1"
+                                            android:clickable="false"/>
 
                                         <TextView
                                             android:text="No"
@@ -1246,7 +1299,8 @@
                                             android:id="@+id/raform_heights_harnessinspect_yes"
                                             android:buttonTint="@color/Green_tickbox"
                                             android:layout_weight="1"
-                                            tools:ignore="TooDeepLayout" />
+                                            tools:ignore="TooDeepLayout"
+                                            android:clickable="false"/>
 
                                         <TextView
                                             android:text="Yes"
@@ -1283,7 +1337,8 @@
                                             android:scaleY="1.6"
                                             android:id="@+id/raform_heights_harnessinspect_no"
                                             android:buttonTint="@color/Red_tickbox"
-                                            android:layout_weight="1" />
+                                            android:layout_weight="1"
+                                            android:clickable="false"/>
 
                                         <TextView
                                             android:text="No"
@@ -1374,7 +1429,8 @@
                                             android:id="@+id/raform_heights_ladderinspect_yes"
                                             android:buttonTint="@color/Green_tickbox"
                                             android:layout_weight="1"
-                                            tools:ignore="TooDeepLayout" />
+                                            tools:ignore="TooDeepLayout"
+                                            android:clickable="false"/>
 
                                         <TextView
                                             android:text="Yes"
@@ -1411,7 +1467,8 @@
                                             android:scaleY="1.6"
                                             android:id="@+id/raform_heights_ladderinspect_no"
                                             android:buttonTint="@color/Red_tickbox"
-                                            android:layout_weight="1" />
+                                            android:layout_weight="1"
+                                            android:clickable="false"/>
 
                                         <TextView
                                             android:text="No"
@@ -1502,7 +1559,8 @@
                                             android:id="@+id/raform_heights_laddertie_yes"
                                             android:buttonTint="@color/Green_tickbox"
                                             android:layout_weight="1"
-                                            tools:ignore="TooDeepLayout" />
+                                            tools:ignore="TooDeepLayout"
+                                            android:clickable="false"/>
 
                                         <TextView
                                             android:text="Yes"
@@ -1539,7 +1597,8 @@
                                             android:scaleY="1.6"
                                             android:id="@+id/raform_heights_laddertie_no"
                                             android:buttonTint="@color/Red_tickbox"
-                                            android:layout_weight="1" />
+                                            android:layout_weight="1"
+                                            android:clickable="false"/>
 
                                         <TextView
                                             android:text="No"
@@ -1630,7 +1689,8 @@
                                             android:id="@+id/raform_heights_manholebarriier_yes"
                                             android:buttonTint="@color/Green_tickbox"
                                             android:layout_weight="1"
-                                            tools:ignore="TooDeepLayout" />
+                                            tools:ignore="TooDeepLayout"
+                                            android:clickable="false"/>
 
                                         <TextView
                                             android:text="Yes"
@@ -1667,7 +1727,8 @@
                                             android:scaleY="1.6"
                                             android:id="@+id/raform_heights_manholebarriier_no"
                                             android:buttonTint="@color/Red_tickbox"
-                                            android:layout_weight="1" />
+                                            android:layout_weight="1"
+                                            android:clickable="false"/>
 
                                         <TextView
                                             android:text="No"
@@ -2042,42 +2103,6 @@
 
 
             </FrameLayout>
-
-
-
-
-
-
-
-
-
-
-            <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <LinearLayout
-                        android:orientation="horizontal"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                        <Button
-                            android:text="Cancel"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/bCancel"
-                            android:layout_weight="1"
-                            tools:ignore="ButtonStyle,HardcodedText" />
-                        <Button
-                            android:text="OK"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/bOK"
-                            android:layout_weight="1"
-                            tools:ignore="ButtonStyle,HardcodedText" />
-                    </LinearLayout>
-
-                </FrameLayout>
 
 
         </LinearLayout>

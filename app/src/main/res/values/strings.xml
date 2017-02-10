@@ -389,4 +389,11 @@
     <string name="title_activity_at__risk_assessment_view">AT_RiskAssessment_view</string>
     <string name="title_activity_at__traffic_plan_selection">AT_TrafficPlanSelection</string>
     <string name="title_activity_dcc__plans__pdf">DCC_PLANS_PDF</string>
+    <string name="title_activity_at__confined__space_view">AT_Confined_Space_view</string>
+    <string name="title_activity_at__confined__space_model">AT_Confined_Space_model</string>
+    <string name="title_activity_at__confined__space_listadaptor">AT_Confined_Space_listadaptor
+    </string>
+    <string name="title_activity_at__confined__space_formfilled">AT_Confined_Space_formfilled
+    </string>
+    <string name="title_activity_at__confined__space_database">AT_Confined_Space_database</string>
 </resources>

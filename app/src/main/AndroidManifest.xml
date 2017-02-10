@@ -278,6 +278,26 @@
         <activity
             android:name=".DCC_PLANS_PDF"
             android:label="DCC Document"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AT_Confined_Space_view"
+            android:label="@string/title_activity_at__confined__space_view"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AT_Confined_Space_model"
+            android:label="@string/title_activity_at__confined__space_model"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AT_Confined_Space_listadaptor"
+            android:label="@string/title_activity_at__confined__space_listadaptor"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AT_Confined_Space_formfilled"
+            android:label="@string/title_activity_at__confined__space_formfilled"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AT_Confined_Space_database"
+            android:label="@string/title_activity_at__confined__space_database"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

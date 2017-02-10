@@ -45,7 +45,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class AT_RiskAssessment_formfilled extends AppCompatActivity {
+public class AT_Confined_Space_formfilled extends AppCompatActivity {
 
     TextView user_name,user_email,user_department_area,user_contact_number,startDate,endDate;
 
@@ -89,12 +89,11 @@ public class AT_RiskAssessment_formfilled extends AppCompatActivity {
     String raform_heights_manholebarriier_yes;
     String raform_heights_manholebarriier_no;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_at__risk_assessment_formfilled);
+        setContentView(R.layout.activity_at__confined__space_formfilled);
+        ratrafficicon100x100 = (ImageButton) findViewById(R.id.ratrafficicon100x100);
 
         ///////////////////////////////////////////////////////////////////////////////////
 
@@ -132,7 +131,7 @@ public class AT_RiskAssessment_formfilled extends AppCompatActivity {
 
 
         int position = getIntent().getIntExtra("Position", -1);
-        searchAT_RiskAssessment_model(position);
+        searchAT_Confined_Space_model(position);
 
         emailreport.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -162,7 +161,7 @@ public class AT_RiskAssessment_formfilled extends AppCompatActivity {
                 String [] username= { user_emailstring };
 
                 final String template_message =
-                        ">>>>>>> Risk Assessment Report - CHECKLIST<<<<<<<"
+                        ">>>>>>> Confined Space Report - CHECKLIST<<<<<<<"
                                 + '\n'
                                 + '\n' + "This is a checklist report, filled on " + startDatestring + " using the DCC App."
                                 + '\n'
@@ -184,7 +183,7 @@ public class AT_RiskAssessment_formfilled extends AppCompatActivity {
 
                 final String csvString =
 
-                        "Report Form, " + "Risk Assessment" + ", " +
+                        "Report Form, " + "Confined Space" + ", " +
                                 "\n" +
                                 "Inspection done by, " + user_namestring + ", " +
                                 "\n" +
@@ -247,7 +246,7 @@ public class AT_RiskAssessment_formfilled extends AppCompatActivity {
 
                 File outputDir = getApplicationContext().getExternalCacheDir();
 
-                ScrollView u = (ScrollView) findViewById(R.id.scrollview_risk_assessment);
+                ScrollView u = (ScrollView) findViewById(R.id.scrollview_confined_space);
                 Bitmap screen = Bitmap.createBitmap(u.getChildAt(0).getWidth(), u.getChildAt(0).getHeight(),  Bitmap.Config.ARGB_8888);
 
                 Canvas canvas = new Canvas(screen);
@@ -258,7 +257,7 @@ public class AT_RiskAssessment_formfilled extends AppCompatActivity {
                     canvas.drawColor(Color.WHITE);
                 u.draw(canvas);
 
-                File pdfFile = new File(outputDir, "Risk_Assessment_Checklist" + startDatestring + ".pdf");
+                File pdfFile = new File(outputDir, "Confined_Space_Checklist" + startDatestring + ".pdf");
 
                 try {
 
@@ -307,7 +306,7 @@ public class AT_RiskAssessment_formfilled extends AppCompatActivity {
 
                     intent = new Intent(Intent.ACTION_SEND_MULTIPLE);
                     intent.putExtra(Intent.EXTRA_EMAIL, user_emailstring);
-                    intent.putExtra(Intent.EXTRA_SUBJECT, ("DCC Risk Assessment Checklist :- " + startDatestring + " Submitted by " + user_namestring));
+                    intent.putExtra(Intent.EXTRA_SUBJECT, ("DCC Confined Space Checklist :- " + startDatestring + " Submitted by " + user_namestring));
                     intent.putExtra(Intent.EXTRA_TEXT, template_message);
 
                     ArrayList<Uri> uris = new ArrayList<Uri>();
@@ -328,15 +327,15 @@ public class AT_RiskAssessment_formfilled extends AppCompatActivity {
 
 
 
-    public void searchAT_RiskAssessment_model(int position) {
-        String clickedKey = AT_RiskAssessment_database.getInstance().getKeysArray().get(position);
+    public void searchAT_Confined_Space_model(int position) {
+        String clickedKey = AT_Confined_Space_database.getInstance().getKeysArray().get(position);
         FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
-        AT_RiskAssessment_database.getInstance().getmDatabase().child("users").child(firebaseAuth.getCurrentUser().getUid()).child("AT RiskAssessment Form").child(clickedKey).addListenerForSingleValueEvent(
+        AT_Confined_Space_database.getInstance().getmDatabase().child("users").child(firebaseAuth.getCurrentUser().getUid()).child("AT Confined Space Form").child(clickedKey).addListenerForSingleValueEvent(
                 new ValueEventListener() {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
                         // Get user value
-                        AT_RiskAssessment_model personDetailsModel = dataSnapshot.getValue(AT_RiskAssessment_model.class);
+                        AT_Confined_Space_model personDetailsModel = dataSnapshot.getValue(AT_Confined_Space_model.class);
                         user_name.setText(personDetailsModel.getuser_name());
                         user_email.setText(personDetailsModel.getuser_email());
                         user_department_area.setText(personDetailsModel.getuser_department_area());

@@ -2,12 +2,12 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/content_at__risk_assessment_view"
+    android:id="@+id/content_at__confined__space_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.laptop.truckmanv5.AT_RiskAssessment_view"
-    tools:showIn="@layout/activity_at__risk_assessment_view">
+    tools:context="com.example.laptop.truckmanv5.AT_Confined_Space_view"
+    tools:showIn="@layout/activity_at__confined__space_view">
 
 
     <ScrollView
@@ -239,7 +239,6 @@
                         android:textColor="@color/common_google_signin_btn_text_dark_focused"
                         tools:ignore="HardcodedText"
                         android:textSize="15sp" />
-
                 </LinearLayout>
 
             </FrameLayout>
@@ -588,133 +587,133 @@
 
                     </LinearLayout>
                     <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:baselineAligned="false"
-                    android:id="@+id/framelayout_traffictmpguidelines">
-
-                    <FrameLayout
-                        android:layout_width="170dp"
-                        android:layout_height="match_parent">
-
-                        <TextView
-                            android:text="1.3 : Traffic Management applied in accordance with temporary traffic management guidelines? "
-                            android:layout_width="170dp"
-                            android:layout_height="wrap_content"
-                            android:textStyle="normal|bold"
-                            android:textAlignment="textStart"
-                            tools:ignore="HardcodedText"
-                            android:textColor="@color/cast_expanded_controller_background_color" />
-
-
-                    </FrameLayout>
-
-                    <LinearLayout
-                        android:orientation="vertical"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent">
-
-                        <ImageButton
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            app:srcCompat="@drawable/ratmpguidelinesbuttoneffect"
-                            android:id="@+id/ratmpguidelinesicon100x100"
-                            tools:ignore="ContentDescription"
-                            android:background="@color/Egis_trans" />
-
-                    </LinearLayout>
-
-                    <FrameLayout
-                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        tools:ignore="InefficientWeight,TooManyViews">
+                        android:baselineAligned="false"
+                        android:id="@+id/framelayout_traffictmpguidelines">
+
+                        <FrameLayout
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:text="1.3 : Traffic Management applied in accordance with temporary traffic management guidelines? "
+                                android:layout_width="170dp"
+                                android:layout_height="wrap_content"
+                                android:textStyle="normal|bold"
+                                android:textAlignment="textStart"
+                                tools:ignore="HardcodedText"
+                                android:textColor="@color/cast_expanded_controller_background_color" />
+
+
+                        </FrameLayout>
 
                         <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="match_parent">
 
-                            <LinearLayout
-                                android:orientation="horizontal"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:paddingLeft="7dp"
-                                tools:ignore="RtlHardcoded,RtlSymmetry"
-                                android:layout_weight="1">
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/ratmpguidelinesbuttoneffect"
+                                android:id="@+id/ratmpguidelinesicon100x100"
+                                tools:ignore="ContentDescription"
+                                android:background="@color/Egis_trans" />
 
-                                <LinearLayout
-                                    android:orientation="horizontal"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent">
-
-                                    <CheckBox
-                                        android:layout_width="60dp"
-                                        android:layout_height="match_parent"
-                                        android:scaleX="1.6"
-                                        android:scaleY="1.6"
-                                        android:id="@+id/raform_traffictmpguidelines_yes"
-                                        android:buttonTint="@color/Green_tickbox"
-                                        android:layout_weight="1"
-                                        tools:ignore="TooDeepLayout" />
-
-                                    <TextView
-                                        android:text="Yes"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:textStyle="normal|bold"
-                                        android:textColor="@color/common_google_signin_btn_text_dark_focused"
-                                        tools:ignore="HardcodedText,TooDeepLayout"
-                                        android:layout_gravity="center"
-                                        android:layout_weight="1"
-                                        android:gravity="center|start"
-                                        android:layout_marginLeft="5dp" />
-                                </LinearLayout>
-
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:orientation="horizontal"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:paddingLeft="7dp"
-                                tools:ignore="RtlHardcoded,RtlSymmetry"
-                                android:layout_weight="1">
-
-                                <LinearLayout
-                                    android:orientation="horizontal"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent">
-
-                                    <CheckBox
-                                        android:layout_width="60dp"
-                                        android:layout_height="match_parent"
-                                        android:scaleX="1.6"
-                                        android:scaleY="1.6"
-                                        android:id="@+id/raform_traffictmpguidelines_no"
-                                        android:buttonTint="@color/Red_tickbox"
-                                        android:layout_weight="1" />
-
-                                    <TextView
-                                        android:text="No"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:textStyle="normal|bold"
-                                        android:textColor="@color/common_google_signin_btn_text_dark_focused"
-                                        tools:ignore="HardcodedText,TooDeepLayout"
-                                        android:layout_weight="1"
-                                        android:layout_marginLeft="5dp"
-                                        android:layout_gravity="start"
-                                        android:gravity="center|start" />
-                                </LinearLayout>
-
-                            </LinearLayout>
                         </LinearLayout>
 
-                    </FrameLayout>
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            tools:ignore="InefficientWeight,TooManyViews">
 
-                </LinearLayout>
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:paddingLeft="7dp"
+                                    tools:ignore="RtlHardcoded,RtlSymmetry"
+                                    android:layout_weight="1">
+
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <CheckBox
+                                            android:layout_width="60dp"
+                                            android:layout_height="match_parent"
+                                            android:scaleX="1.6"
+                                            android:scaleY="1.6"
+                                            android:id="@+id/raform_traffictmpguidelines_yes"
+                                            android:buttonTint="@color/Green_tickbox"
+                                            android:layout_weight="1"
+                                            tools:ignore="TooDeepLayout" />
+
+                                        <TextView
+                                            android:text="Yes"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:textStyle="normal|bold"
+                                            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                            tools:ignore="HardcodedText,TooDeepLayout"
+                                            android:layout_gravity="center"
+                                            android:layout_weight="1"
+                                            android:gravity="center|start"
+                                            android:layout_marginLeft="5dp" />
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:paddingLeft="7dp"
+                                    tools:ignore="RtlHardcoded,RtlSymmetry"
+                                    android:layout_weight="1">
+
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <CheckBox
+                                            android:layout_width="60dp"
+                                            android:layout_height="match_parent"
+                                            android:scaleX="1.6"
+                                            android:scaleY="1.6"
+                                            android:id="@+id/raform_traffictmpguidelines_no"
+                                            android:buttonTint="@color/Red_tickbox"
+                                            android:layout_weight="1" />
+
+                                        <TextView
+                                            android:text="No"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:textStyle="normal|bold"
+                                            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                            tools:ignore="HardcodedText,TooDeepLayout"
+                                            android:layout_weight="1"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_gravity="start"
+                                            android:gravity="center|start" />
+                                    </LinearLayout>
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </FrameLayout>
+
+                    </LinearLayout>
 
                     <LinearLayout
                         android:orientation="horizontal"
@@ -2053,31 +2052,31 @@
 
 
             <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="horizontal"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <LinearLayout
-                        android:orientation="horizontal"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                    <Button
+                        android:text="Cancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/bCancel"
+                        android:layout_weight="1"
+                        tools:ignore="ButtonStyle,HardcodedText" />
+                    <Button
+                        android:text="OK"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/bOK"
+                        android:layout_weight="1"
+                        tools:ignore="ButtonStyle,HardcodedText" />
+                </LinearLayout>
 
-                        <Button
-                            android:text="Cancel"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/bCancel"
-                            android:layout_weight="1"
-                            tools:ignore="ButtonStyle,HardcodedText" />
-                        <Button
-                            android:text="OK"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/bOK"
-                            android:layout_weight="1"
-                            tools:ignore="ButtonStyle,HardcodedText" />
-                    </LinearLayout>
-
-                </FrameLayout>
+            </FrameLayout>
 
 
         </LinearLayout>

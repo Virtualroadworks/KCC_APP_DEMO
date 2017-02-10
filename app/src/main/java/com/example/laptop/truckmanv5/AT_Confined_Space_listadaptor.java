@@ -13,25 +13,25 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class AT_RiskAssessment_listadaptor extends BaseAdapter {
-    private ArrayList<AT_RiskAssessment_model> arrayListAT_RiskAssessment ;
+public class AT_Confined_Space_listadaptor extends BaseAdapter {
+    private ArrayList<AT_Confined_Space_model> arrayListAT_Confined_Space ;
     private Context context;
     private LayoutInflater inflater;
 
-    public AT_RiskAssessment_listadaptor(Context context, ArrayList<AT_RiskAssessment_model> arrayListAT_RiskAssessment) {
+    public AT_Confined_Space_listadaptor(Context context, ArrayList<AT_Confined_Space_model> arrayListAT_Confined_Space) {
         this.context = context;
-        this.arrayListAT_RiskAssessment  = arrayListAT_RiskAssessment;
+        this.arrayListAT_Confined_Space  = arrayListAT_Confined_Space;
         inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
 
     @Override
     public int getCount() {
-        return arrayListAT_RiskAssessment.size();
+        return arrayListAT_Confined_Space.size();
     }
 
     @Override
     public Object getItem(int position) {
-        return arrayListAT_RiskAssessment.get(position);
+        return arrayListAT_Confined_Space.get(position);
     }
 
     @Override
@@ -42,20 +42,20 @@ public class AT_RiskAssessment_listadaptor extends BaseAdapter {
     @Override
     public View getView(final int position, View convertView, ViewGroup parent) {
         View v = convertView;
-        AT_RiskAssessment_listadaptor.Holder holder;
+        AT_Confined_Space_listadaptor.Holder holder;
         if (v == null) {
             v = inflater.inflate(R.layout.activity_at__risk_assessment_listadaptor, null);
-            holder = new AT_RiskAssessment_listadaptor.Holder();
+            holder = new AT_Confined_Space_listadaptor.Holder();
             holder.startdate = (TextView) v.findViewById(R.id.startdate);
             holder.user_name = (TextView) v.findViewById(R.id.user_name);
             holder.DeletePerson = (ImageView) v.findViewById(R.id.DeletePerson);
             v.setTag(holder);
         } else {
-            holder = (AT_RiskAssessment_listadaptor.Holder) v.getTag();
+            holder = (AT_Confined_Space_listadaptor.Holder) v.getTag();
         }
 
-        holder.user_name.setText(arrayListAT_RiskAssessment.get(position).getuser_name());
-        holder.startdate.setText(String.valueOf(arrayListAT_RiskAssessment.get(position).getstartDate()));
+        holder.user_name.setText(arrayListAT_Confined_Space.get(position).getuser_name());
+        holder.startdate.setText(String.valueOf(arrayListAT_Confined_Space.get(position).getstartDate()));
 
         // Make a text area to hold the date, then get the date from the person class
 
@@ -82,7 +82,7 @@ public class AT_RiskAssessment_listadaptor extends BaseAdapter {
                 .setCancelable(true)
                 .setPositiveButton("YES", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
-                        AT_RiskAssessment_database.getInstance().deletePerson(position);
+                        AT_Confined_Space_database.getInstance().deletePerson(position);
                     }
                 })
                 .setNegativeButton("NO", new DialogInterface.OnClickListener() {
