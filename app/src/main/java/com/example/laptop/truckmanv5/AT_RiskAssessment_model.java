@@ -13,12 +13,22 @@ public class AT_RiskAssessment_model {
     private String startDate;
     private String endDate;
 
+    private String traffic_ppe;
+    private String traffic_roads_or_footpath;
+    private String traffic_following_guidelines;
+    private String traffic_beacons;
+    private String traffic_left_site_in_good_order;
+
+    private String heights_fall_arrest_system;
+    private String heights_harness_inspection;
+    private String heights_ladder_inspection;
+    private String heights_laddertied;
+    private String heights_manholebarrier;
+
 
 
     //////////////////////////////////////////////////////////////////////////////////
 
-    private String raform_trafficppe_yes;
-    private String raform_trafficppe_no;
     private String raform_trafficroads;
     private String raform_trafficfootpath;
     private String raform_traffictmpguidelines_yes;
@@ -47,21 +57,21 @@ public class AT_RiskAssessment_model {
 
     //////////////////////////////////////////////////////////////////////////////////
 
-    public void setraform_trafficppe_yes(String raform_trafficppe_yes) {
-        this.raform_trafficppe_yes = raform_trafficppe_yes;
+    public void settraffic_ppe(String traffic_ppe) {
+        this.traffic_ppe = traffic_ppe;
     }
-    public String getraform_trafficppe_yes() {
-        return raform_trafficppe_yes;
+    public String gettraffic_ppe() {
+        return traffic_ppe;
     }
-    public void setraform_trafficppe_no(String raform_trafficppe_no) {
-        this.raform_trafficppe_no = raform_trafficppe_no;
+
+    public void settraffic_roads_or_footpath(String traffic_roads_or_footpath) {
+        this.traffic_roads_or_footpath = traffic_roads_or_footpath;
     }
-    public String getraform_trafficppe_no() {
-        return raform_trafficppe_no;
+    public String gettraffic_roads_or_footpath() {
+        return traffic_roads_or_footpath;
     }
-    public void setraform_trafficroads(String raform_trafficroads) {
-        this.raform_trafficroads = raform_trafficroads;
-    }
+
+
     public String getraform_trafficroads() {
         return raform_trafficroads;
     }
@@ -230,11 +240,13 @@ public class AT_RiskAssessment_model {
         result.put("startDate", startDate);
         result.put("endDate", endDate);
 
+        result.put("traffic_ppe", traffic_ppe);
+        result.put("traffic_roads_or_footpath", traffic_roads_or_footpath);
+
+
 //--------------------------------------------------------------------------------------
 
 
-        result.put("raform_trafficppe_yes", raform_trafficppe_yes);
-        result.put("raform_trafficppe_no", raform_trafficppe_no);
 
         result.put("raform_trafficroads", raform_trafficroads);
         result.put("raform_trafficfootpath", raform_trafficfootpath);

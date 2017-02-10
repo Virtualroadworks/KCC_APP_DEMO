@@ -62,7 +62,6 @@ public class AT_RiskAssessment_view extends AppCompatActivity {
     Boolean ratrafficicon100x100pressed = false;
     Boolean raworkingatheightsicon100x100pressed = false;
 
-
     ImageButton ratrafficicon100x100;
     ImageButton rappeicon100x100;
     ImageButton raroadsicon100x100;
@@ -97,6 +96,20 @@ public class AT_RiskAssessment_view extends AppCompatActivity {
     CheckBox raform_heights_laddertie_no;
     CheckBox raform_heights_manholebarriier_yes;
     CheckBox raform_heights_manholebarriier_no;
+
+
+
+    String traffic_ppe;
+    String traffic_roads_or_footpath;
+    String traffic_following_guidelines;
+    String traffic_beacons;
+    String traffic_left_site_in_good_order;
+
+    String heights_fall_arrest_system;
+    String heights_harness_inspection;
+    String heights_ladder_inspection;
+    String heights_laddertied;
+    String heights_manholebarrier;
 
 
     FrameLayout framelayout_traffic;
@@ -259,8 +272,12 @@ public class AT_RiskAssessment_view extends AppCompatActivity {
             public void onClick(View v) {
 
                 if (raform_trafficppe_yes.isChecked()) {
+                    traffic_ppe = "Yes";
                     raform_trafficppe_yes.setChecked(true);
                     raform_trafficppe_no.setChecked(false);
+                } else {
+                    traffic_ppe = "No";
+                    raform_trafficppe_yes.setChecked(true);
                 }
             }
 
@@ -285,10 +302,14 @@ public class AT_RiskAssessment_view extends AppCompatActivity {
             public void onClick(View v) {
 
                 if (raform_trafficroads.isChecked()) {
+                    traffic_roads_or_footpath = "Roads";
                     raform_trafficroads.setChecked(true);
                     raform_trafficfootpath.setChecked(false);
                     raroadsicon100x100.setVisibility(LinearLayout.VISIBLE);
                     rafootpathicon100x100.setVisibility(LinearLayout.GONE);
+                } else {
+                    traffic_ppe = "Footpath";
+                    raform_trafficroads.setChecked(true);
                 }
             }
 
@@ -552,31 +573,31 @@ public class AT_RiskAssessment_view extends AppCompatActivity {
 
 ///////////////////////////////////////1 Section 1 Location/////////////////////////////////////////////////
                     if(raform_trafficppe_yes.isChecked()) {
-                        p.setraform_trafficppe_yes("Yes");
+                        p.settraffic_ppe("Yes");
                     }
                     else {
-                        p.setraform_trafficppe_yes("No");
+                        p.settraffic_ppe("No");
                     }
 
                     if(raform_trafficppe_no.isChecked()) {
-                        p.setraform_trafficppe_no("Yes");
+                        p.settraffic_ppe("No");
                     }
                     else {
-                        p.setraform_trafficppe_no("No");
+                        p.settraffic_ppe("Yes");
                     }
 
                     if(raform_trafficroads.isChecked()) {
-                        p.setraform_trafficroads("Yes");
+                        p.settraffic_roads_or_footpath("Road");
                     }
                     else {
-                        p.setraform_trafficroads("No");
+                        p.settraffic_roads_or_footpath("Footpath");
                     }
 
                     if(raform_trafficfootpath.isChecked()) {
-                        p.setraform_trafficfootpath("Yes");
+                        p.settraffic_roads_or_footpath("Footpath");
                     }
                     else {
-                        p.setraform_trafficfootpath("No");
+                        p.settraffic_roads_or_footpath("Road");
                     }
                     if(raform_traffictmpguidelines_yes.isChecked()) {
                         p.setraform_traffictmpguidelines_yes("Yes");
@@ -731,7 +752,7 @@ public class AT_RiskAssessment_view extends AppCompatActivity {
         String clickedKey = AT_RiskAssessment_database.getInstance().getKeysArray().get(position);
         FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
 
-        AT_RiskAssessment_database.getInstance().getmDatabase().child("users").child(firebaseAuth.getCurrentUser().getUid()).child("AT RiskAssessment Form").child(clickedKey).addListenerForSingleValueEvent(
+        AT_RiskAssessment_database.getInstance().getmDatabase().child("users").child(firebaseAuth.getCurrentUser().getUid()).child("AT Risk Assessment Form").child(clickedKey).addListenerForSingleValueEvent(
                 new ValueEventListener() {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {

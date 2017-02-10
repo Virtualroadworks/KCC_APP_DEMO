@@ -65,7 +65,8 @@ public class AT_RiskAssessment_formfilled extends AppCompatActivity {
     ImageButton rapowertoolsicon100x100;
     ImageButton rageneralppeicon100x100;
 
-
+    String traffic_ppe;
+    String traffic_roads_or_footpath;
 
     String raform_trafficppe_yes;
     String raform_trafficppe_no;
@@ -331,7 +332,7 @@ public class AT_RiskAssessment_formfilled extends AppCompatActivity {
     public void searchAT_RiskAssessment_model(int position) {
         String clickedKey = AT_RiskAssessment_database.getInstance().getKeysArray().get(position);
         FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
-        AT_RiskAssessment_database.getInstance().getmDatabase().child("users").child(firebaseAuth.getCurrentUser().getUid()).child("AT RiskAssessment Form").child(clickedKey).addListenerForSingleValueEvent(
+        AT_RiskAssessment_database.getInstance().getmDatabase().child("users").child(firebaseAuth.getCurrentUser().getUid()).child("AT Risk Assessment Form").child(clickedKey).addListenerForSingleValueEvent(
                 new ValueEventListener() {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
@@ -345,40 +346,40 @@ public class AT_RiskAssessment_formfilled extends AppCompatActivity {
                         startDate.setText(personDetailsModel.getstartDate());
                         ///////////////////////////////////////1: Traffic/////////////////////////////////////////////////
 
-                        raform_trafficppe_yes = personDetailsModel.getraform_trafficppe_yes();
+                        traffic_ppe = personDetailsModel.gettraffic_ppe();
                         CheckBox trafficppe_yes = (CheckBox) findViewById(R.id.raform_trafficppe_yes);
 
-                        if (raform_trafficppe_yes.equals("Yes")) {
+                        if (traffic_ppe.equals("Yes")) {
 
                             trafficppe_yes.setChecked(true);
                         }
                         else {
                             trafficppe_yes.setChecked(false);
                         }
-                        raform_trafficppe_no = personDetailsModel.getraform_trafficppe_no();
+
                         CheckBox trafficppe_no = (CheckBox) findViewById(R.id.raform_trafficppe_no);
 
-                        if (raform_trafficppe_no.equals("Yes")) {
+                        if (traffic_ppe.equals("No")) {
 
                             trafficppe_no.setChecked(true);
                         }
                         else {
                             trafficppe_no.setChecked(false);
                         }
-                        raform_trafficroads = personDetailsModel.getraform_trafficroads();
+                        traffic_roads_or_footpath = personDetailsModel.gettraffic_roads_or_footpath();
                         CheckBox trafficroads = (CheckBox) findViewById(R.id.raform_trafficroads);
 
-                        if (raform_trafficroads.equals("Yes")) {
+                        if (traffic_roads_or_footpath.equals("Road")) {
 
                             trafficroads.setChecked(true);
                         }
                         else {
                             trafficroads.setChecked(false);
                         }
-                        raform_trafficfootpath = personDetailsModel.getraform_trafficfootpath();
+
                         CheckBox trafficfootpath = (CheckBox) findViewById(R.id.raform_trafficfootpath);
 
-                        if (raform_trafficfootpath.equals("Yes")) {
+                        if (traffic_roads_or_footpath.equals("Footpath")) {
 
                             trafficfootpath.setChecked(true);
                         }

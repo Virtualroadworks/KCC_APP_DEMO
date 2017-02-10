@@ -529,7 +529,7 @@ public class AT0013_3_formfilled extends AppCompatActivity {
 
                     intent = new Intent(Intent.ACTION_SEND_MULTIPLE);
                     intent.putExtra(Intent.EXTRA_EMAIL, user_emailstring);
-                    intent.putExtra(Intent.EXTRA_SUBJECT, ("DCC AT0013_3 Form :- " + startDatestring + " Submitted by " + user_namestring));
+                    intent.putExtra(Intent.EXTRA_SUBJECT, ("DCC Inspections Form :- " + startDatestring + " Submitted by " + user_namestring));
                     intent.putExtra(Intent.EXTRA_TEXT, template_message);
 
                     ArrayList<Uri> uris = new ArrayList<Uri>();
@@ -553,7 +553,7 @@ public class AT0013_3_formfilled extends AppCompatActivity {
     public void searchAT0013_3_model(int position) {
         String clickedKey = AT0013_3_database.getInstance().getKeysArray().get(position);
         FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
-        AT0013_3_database.getInstance().getmDatabase().child("users").child(firebaseAuth.getCurrentUser().getUid()).child("AT0013_3 Form").child(clickedKey).addListenerForSingleValueEvent(
+        AT0013_3_database.getInstance().getmDatabase().child("users").child(firebaseAuth.getCurrentUser().getUid()).child("AT General Inspections Form").child(clickedKey).addListenerForSingleValueEvent(
                 new ValueEventListener() {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {

@@ -739,7 +739,7 @@ public class Person_Details extends AppCompatActivity {
     public void searchPerson(int position) {
         String clickedKey = Vehicle_Reports.getInstance().getKeysArray().get(position);
         FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
-        Vehicle_Reports.getInstance().getmDatabase().child("users").child(firebaseAuth.getCurrentUser().getUid()).child("inspections").child(clickedKey).addListenerForSingleValueEvent(
+        Vehicle_Reports.getInstance().getmDatabase().child("users").child(firebaseAuth.getCurrentUser().getUid()).child("AT Vehicle Inspection Form").child(clickedKey).addListenerForSingleValueEvent(
                 new ValueEventListener() {
                     @Override
 

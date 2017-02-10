@@ -55,7 +55,7 @@ public class AT0013_3_database extends AppCompatActivity {
         firebaseAuth = FirebaseAuth.getInstance();
 
         mDatabase = FirebaseDatabase.getInstance().getReference();
-        mDatabase.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("AT0013_3 Form").addChildEventListener(childEventListener);
+        mDatabase.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("AT General Inspections Form").addChildEventListener(childEventListener);
         AT0013_3_database = this;
 
         progressBar = (ProgressBar) findViewById(R.id.progressBar);
@@ -138,7 +138,7 @@ public class AT0013_3_database extends AppCompatActivity {
         AT0013_3_model AT0013_3_model = new AT0013_3_model();
         Map<String, Object> postValues = AT0013_3_model.toMap();
 
-        mDatabase.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("AT0013_3 Form").child(currentInspectionDate).updateChildren(postValues);
+        mDatabase.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("AT General Inspections Form").child(currentInspectionDate).updateChildren(postValues);
         intent.putExtra("Date", currentInspectionDate);
         intent.putExtra("Position", -1);
         startActivity(intent);
@@ -244,7 +244,7 @@ public class AT0013_3_database extends AppCompatActivity {
 
         // Add a date field to the person class, set the date as this dateString
 
-        mDatabase.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("AT0013_3 Form").child(currentInspectionDate).updateChildren(postValues);
+        mDatabase.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("AT General Inspections Form").child(currentInspectionDate).updateChildren(postValues);
     }
 
     public void deletePerson(int position) {
@@ -261,7 +261,7 @@ public class AT0013_3_database extends AppCompatActivity {
             String folderPath = p.getat0013_3picturepath().substring(0, p.getat0013_3picturepath().lastIndexOf('/'));
             mStorage.child(folderPath).delete();
         }
-        mDatabase.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("AT0013_3 Form").child(clickedKey).removeValue();
+        mDatabase.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("AT General Inspections Form").child(clickedKey).removeValue();
     }
 
     ChildEventListener childEventListener = new ChildEventListener() {

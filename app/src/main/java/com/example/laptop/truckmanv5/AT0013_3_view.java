@@ -777,7 +777,7 @@ public class AT0013_3_view extends AppCompatActivity {
 
             Uri uri = data.getData();
             String startDate = getIntent().getStringExtra("Date");
-            StorageReference filepath = mStorage.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("Photos").child(startDate).child(uri.getLastPathSegment());
+            StorageReference filepath = mStorage.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("AT General Inspections Form Photos").child(startDate).child(uri.getLastPathSegment());
 
             filepath.putFile(uri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
 
@@ -809,7 +809,7 @@ public class AT0013_3_view extends AppCompatActivity {
         String clickedKey = AT0013_3_database.getInstance().getKeysArray().get(position);
         FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
 
-        AT0013_3_database.getInstance().getmDatabase().child("users").child(firebaseAuth.getCurrentUser().getUid()).child("AT0013_3 Form").child(clickedKey).addListenerForSingleValueEvent(
+        AT0013_3_database.getInstance().getmDatabase().child("users").child(firebaseAuth.getCurrentUser().getUid()).child("AT General Inspections Form").child(clickedKey).addListenerForSingleValueEvent(
                 new ValueEventListener() {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {

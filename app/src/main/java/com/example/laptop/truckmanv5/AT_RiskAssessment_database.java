@@ -56,7 +56,7 @@ public class AT_RiskAssessment_database extends AppCompatActivity {
         firebaseAuth = FirebaseAuth.getInstance();
 
         mDatabase = FirebaseDatabase.getInstance().getReference();
-        mDatabase.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("AT RiskAssessment Form").addChildEventListener(childEventListener);
+        mDatabase.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("AT Risk Assessment Form").addChildEventListener(childEventListener);
         AT_RiskAssessment_database = this;
 
         progressBar = (ProgressBar) findViewById(R.id.progressBar);
@@ -139,7 +139,7 @@ public class AT_RiskAssessment_database extends AppCompatActivity {
         AT_RiskAssessment_model AT_RiskAssessment_model = new AT_RiskAssessment_model();
         Map<String, Object> postValues = AT_RiskAssessment_model.toMap();
 
-        mDatabase.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("AT RiskAssessment Form").child(currentInspectionDate).updateChildren(postValues);
+        mDatabase.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("AT Risk Assessment Form").child(currentInspectionDate).updateChildren(postValues);
         intent.putExtra("Date", currentInspectionDate);
         intent.putExtra("Position", -1);
         startActivity(intent);
@@ -167,12 +167,13 @@ public class AT_RiskAssessment_database extends AppCompatActivity {
         add.setstartDate(model.getstartDate());
         add.setendDate(model.getendDate());
 
+        add.settraffic_ppe(model.gettraffic_ppe());
+        add.settraffic_roads_or_footpath(model.gettraffic_roads_or_footpath());
+
         ///////////////////////////////////////Risk Assessment/////////////////////////////////////////////////
 
-        add.setraform_trafficppe_yes(model.getraform_trafficppe_yes());
-        add.setraform_trafficppe_no(model.getraform_trafficppe_no());
-        add.setraform_trafficroads(model.getraform_trafficroads());
-        add.setraform_trafficfootpath(model.getraform_trafficfootpath());
+
+
         add.setraform_traffictmpguidelines_yes(model.getraform_traffictmpguidelines_yes());
         add.setraform_traffictmpguidelines_no(model.getraform_traffictmpguidelines_no());
         add.setraform_trafficbeacon_yes(model.getraform_trafficbeacon_yes());
@@ -208,7 +209,7 @@ public class AT_RiskAssessment_database extends AppCompatActivity {
 
         // Add a date field to the person class, set the date as this dateString
 
-        mDatabase.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("AT RiskAssessment Form").child(currentInspectionDate).updateChildren(postValues);
+        mDatabase.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("AT Risk Assessment Form").child(currentInspectionDate).updateChildren(postValues);
     }
 
     public void deletePerson(int position) {
@@ -217,7 +218,7 @@ public class AT_RiskAssessment_database extends AppCompatActivity {
         AT_RiskAssessment_model p = arrayListAT_RiskAssessment.get(position);
 
 
-        mDatabase.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("AT RiskAssessment Form").child(clickedKey).removeValue();
+        mDatabase.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("AT Risk Assessment Form").child(clickedKey).removeValue();
     }
 
 

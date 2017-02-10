@@ -62,7 +62,7 @@ public class Vehicle_Reports extends AppCompatActivity  {
         firebaseAuth = FirebaseAuth.getInstance();
 
         mDatabase = FirebaseDatabase.getInstance().getReference();
-        mDatabase.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("inspections").addChildEventListener(childEventListener);
+        mDatabase.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("AT Vehicle Inspection Form").addChildEventListener(childEventListener);
         Vehicle_Reports = this;
 
         progressBar = (ProgressBar) findViewById(R.id.progressBar);
@@ -154,7 +154,7 @@ public class Vehicle_Reports extends AppCompatActivity  {
 
 
 
-        mDatabase.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("inspections").child(currentInspectionDate).updateChildren(postValues);
+        mDatabase.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("AT Vehicle Inspection Form").child(currentInspectionDate).updateChildren(postValues);
         intent.putExtra("Date", currentInspectionDate);
         intent.putExtra("Position", -1);
         startActivity(intent);
@@ -310,7 +310,7 @@ public class Vehicle_Reports extends AppCompatActivity  {
         mDatabase.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("LastReportdone").updateChildren(postValues);
 
 
-        mDatabase.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("inspections").child(currentInspectionDate).updateChildren(postValues);
+        mDatabase.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("AT Vehicle Inspection Form").child(currentInspectionDate).updateChildren(postValues);
     }
 
     public void deletePerson(int position) {
@@ -482,8 +482,8 @@ public class Vehicle_Reports extends AppCompatActivity  {
             mStorage.child(folderPath).delete();
         }*/
 
-        mStorage.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("Photos").child(clickedKey).delete();
-        mDatabase.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("inspections").child(clickedKey).removeValue();
+        mStorage.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("AT Vehicle Inspection Form Photos").child(clickedKey).delete();
+        mDatabase.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("AT Vehicle Inspection Form").child(clickedKey).removeValue();
 
     }
 
