@@ -26,162 +26,9 @@ public class AT_RiskAssessment_model {
     private String heights_manholebarrier;
 
 
-
-    //////////////////////////////////////////////////////////////////////////////////
-
-    private String raform_trafficroads;
-    private String raform_trafficfootpath;
-    private String raform_traffictmpguidelines_yes;
-    private String raform_traffictmpguidelines_no;
-    private String raform_trafficbeacon_yes;
-    private String raform_trafficbeacon_no;
-    private String raform_trafficleftsite_yes;
-    private String raform_trafficleftsite_no;
-
-    private String raform_trafficfallsystem_yes;
-    private String raform_trafficfallsystem_no;
-    private String raform_heights_harnessinspect_yes;
-    private String raform_heights_harnessinspect_no;
-    private String raform_heights_ladderinspect_yes;
-    private String raform_heights_ladderinspect_no;
-    private String raform_heights_laddertie_yes;
-    private String raform_heights_laddertie_no;
-    private String raform_heights_manholebarriier_yes;
-    private String raform_heights_manholebarriier_no;
-
-    //////////////////////////////////////////////////////////////////////////////////
-
     public AT_RiskAssessment_model () {
     }
-
-
     //////////////////////////////////////////////////////////////////////////////////
-
-    public void settraffic_ppe(String traffic_ppe) {
-        this.traffic_ppe = traffic_ppe;
-    }
-    public String gettraffic_ppe() {
-        return traffic_ppe;
-    }
-
-    public void settraffic_roads_or_footpath(String traffic_roads_or_footpath) {
-        this.traffic_roads_or_footpath = traffic_roads_or_footpath;
-    }
-    public String gettraffic_roads_or_footpath() {
-        return traffic_roads_or_footpath;
-    }
-
-
-    public String getraform_trafficroads() {
-        return raform_trafficroads;
-    }
-    public void setraform_trafficfootpath(String raform_trafficfootpath) {
-        this.raform_trafficfootpath = raform_trafficfootpath;
-    }
-    public String getraform_trafficfootpath() {
-        return raform_trafficfootpath;
-    }
-    public void setraform_traffictmpguidelines_yes(String raform_traffictmpguidelines_yes) {
-        this.raform_traffictmpguidelines_yes = raform_traffictmpguidelines_yes;
-    }
-    public String getraform_traffictmpguidelines_yes() {
-        return raform_traffictmpguidelines_yes;
-    }
-    public void setraform_traffictmpguidelines_no(String raform_traffictmpguidelines_no) {
-        this.raform_traffictmpguidelines_no = raform_traffictmpguidelines_no;
-    }
-    public String getraform_traffictmpguidelines_no() {
-        return raform_traffictmpguidelines_no;
-    }
-    public void setraform_trafficbeacon_yes(String raform_trafficbeacon_yes) {
-        this.raform_trafficbeacon_yes = raform_trafficbeacon_yes;
-    }
-    public String getraform_trafficbeacon_yes() {
-        return raform_trafficbeacon_yes;
-    }
-    public void setraform_trafficbeacon_no(String raform_trafficbeacon_no) {
-        this.raform_trafficbeacon_no = raform_trafficbeacon_no;
-    }
-    public String getraform_trafficbeacon_no() {
-        return raform_trafficbeacon_no;
-    }
-    public void setraform_trafficleftsite_yes(String raform_trafficleftsite_yes) {
-        this.raform_trafficleftsite_yes = raform_trafficleftsite_yes;
-    }
-    public String getraform_trafficleftsite_yes() {
-        return raform_trafficleftsite_yes;
-    }
-    public void setraform_trafficleftsite_no(String raform_trafficleftsite_no) {
-        this.raform_trafficleftsite_no = raform_trafficleftsite_no;
-    }
-    public String getraform_trafficleftsite_no() {
-        return raform_trafficleftsite_no;
-    }
-
-    public void setraform_trafficfallsystem_yes(String raform_trafficfallsystem_yes) {
-        this.raform_trafficfallsystem_yes = raform_trafficfallsystem_yes;
-    }
-    public String getraform_trafficfallsystem_yes() {
-        return raform_trafficfallsystem_yes;
-    }
-    public void setraform_trafficfallsystem_no(String raform_trafficfallsystem_no) {
-        this.raform_trafficfallsystem_no = raform_trafficfallsystem_no;
-    }
-    public String getraform_trafficfallsystem_no() {
-        return raform_trafficfallsystem_no;
-    }
-
-    public void setraform_heights_harnessinspect_yes(String raform_heights_harnessinspect_yes) {
-        this.raform_heights_harnessinspect_yes = raform_heights_harnessinspect_yes;
-    }
-    public String getraform_heights_harnessinspect_yes() {
-        return raform_heights_harnessinspect_yes;
-    }
-    public void setraform_heights_harnessinspect_no(String raform_heights_harnessinspect_no) {
-        this.raform_heights_harnessinspect_no = raform_heights_harnessinspect_no;
-    }
-    public String getraform_heights_harnessinspect_no() {
-        return raform_heights_harnessinspect_no;
-    }
-    public void setraform_heights_ladderinspect_yes(String raform_heights_ladderinspect_yes) {
-        this.raform_heights_ladderinspect_yes = raform_heights_ladderinspect_yes;
-    }
-    public String getraform_heights_ladderinspect_yes() {
-        return raform_heights_ladderinspect_yes;
-    }
-    public void setraform_heights_ladderinspect_no(String raform_heights_ladderinspect_no) {
-        this.raform_heights_ladderinspect_no = raform_heights_ladderinspect_no;
-    }
-    public String getraform_heights_ladderinspect_no() {
-        return raform_heights_ladderinspect_no;
-    }
-    public void setraform_heights_laddertie_yes(String raform_heights_laddertie_yes) {
-        this.raform_heights_laddertie_yes = raform_heights_laddertie_yes;
-    }
-    public String getraform_heights_laddertie_yes() {
-        return raform_heights_laddertie_yes;
-    }
-    public void setraform_heights_laddertie_no(String raform_heights_laddertie_no) {
-        this.raform_heights_laddertie_no = raform_heights_laddertie_no;
-    }
-    public String getraform_heights_laddertie_no() {
-        return raform_heights_laddertie_no;
-    }
-    public void setraform_heights_manholebarriier_yes(String raform_heights_manholebarriier_yes) {
-        this.raform_heights_manholebarriier_yes = raform_heights_manholebarriier_yes;
-    }
-    public String getraform_heights_manholebarriier_yes() {
-        return raform_heights_manholebarriier_yes;
-    }
-    public void setraform_heights_manholebarriier_no(String raform_heights_manholebarriier_no) {
-        this.raform_heights_manholebarriier_no = raform_heights_manholebarriier_no;
-    }
-    public String getraform_heights_manholebarriier_no() {
-        return raform_heights_manholebarriier_no;
-    }
-
-    //////////////////////////////////////////////////////////////////////////////////
-
 
     public void setuser_name(String user_name) {
         this.user_name = user_name;
@@ -226,7 +73,80 @@ public class AT_RiskAssessment_model {
     }
 
 
-///////////////////////////////////////1 Section 1 Location/////////////////////////////////////////////////
+    ///////////////////////////////////////1 Traffic/////////////////////////////////////////////////
+
+    public void settraffic_ppe(String traffic_ppe) {
+        this.traffic_ppe = traffic_ppe;
+    }
+    public String gettraffic_ppe() {
+        return traffic_ppe;
+    }
+
+    public void settraffic_roads_or_footpath(String traffic_roads_or_footpath) {
+        this.traffic_roads_or_footpath = traffic_roads_or_footpath;
+    }
+    public String gettraffic_roads_or_footpath() {
+        return traffic_roads_or_footpath;
+    }
+
+    public void settraffic_following_guidelines(String traffic_following_guidelines) {
+        this.traffic_following_guidelines = traffic_following_guidelines;
+    }
+    public String gettraffic_following_guidelines() {
+        return traffic_following_guidelines;
+    }
+
+    public void settraffic_beacons(String traffic_beacons) {
+        this.traffic_beacons = traffic_beacons;
+    }
+    public String gettraffic_beacons() {
+        return traffic_beacons;
+    }
+
+    public void settraffic_left_site_in_good_order(String traffic_left_site_in_good_order) {
+        this.traffic_left_site_in_good_order = traffic_left_site_in_good_order;
+    }
+    public String gettraffic_left_site_in_good_order() {
+        return traffic_left_site_in_good_order;
+    }
+
+    ///////////////////////////////////////2 Heights/////////////////////////////////////////////////
+
+    public void setheights_fall_arrest_system(String heights_fall_arrest_system) {
+        this.heights_fall_arrest_system = heights_fall_arrest_system;
+    }
+    public String getheights_fall_arrest_system() {
+        return heights_fall_arrest_system;
+    }
+
+    public void setheights_harness_inspection(String heights_harness_inspection) {
+        this.heights_harness_inspection = heights_harness_inspection;
+    }
+    public String getheights_harness_inspection() {
+        return heights_harness_inspection;
+    }
+
+    public void setheights_ladder_inspection(String heights_ladder_inspection) {
+        this.heights_ladder_inspection = heights_ladder_inspection;
+    }
+    public String getheights_ladder_inspection() {
+        return heights_ladder_inspection;
+    }
+
+    public void setheights_laddertied(String heights_laddertied) {
+        this.heights_laddertied = heights_laddertied;
+    }
+    public String getheights_laddertied() {
+        return heights_laddertied;
+    }
+
+    public void setheights_manholebarrier(String heights_manholebarrier) {
+        this.heights_manholebarrier = heights_manholebarrier;
+    }
+    public String getheights_manholebarrier() {
+        return heights_manholebarrier;
+    }
+
 
 
 //--------------------------------------------------------------------------------------
@@ -240,39 +160,24 @@ public class AT_RiskAssessment_model {
         result.put("startDate", startDate);
         result.put("endDate", endDate);
 
+        //--------------------------------------------------------------------------------------
+
         result.put("traffic_ppe", traffic_ppe);
         result.put("traffic_roads_or_footpath", traffic_roads_or_footpath);
+        result.put("traffic_following_guidelines", traffic_following_guidelines);
+        result.put("traffic_beacons", traffic_beacons);
+        result.put("traffic_left_site_in_good_order", traffic_left_site_in_good_order);
+
+        //--------------------------------------------------------------------------------------
+
+        result.put("heights_fall_arrest_system", heights_fall_arrest_system);
+        result.put("heights_harness_inspection", heights_harness_inspection);
+        result.put("heights_ladder_inspection", heights_ladder_inspection);
+        result.put("heights_laddertied", heights_laddertied);
+        result.put("heights_manholebarrier", heights_manholebarrier);
 
 
 //--------------------------------------------------------------------------------------
-
-
-
-        result.put("raform_trafficroads", raform_trafficroads);
-        result.put("raform_trafficfootpath", raform_trafficfootpath);
-        result.put("raform_traffictmpguidelines_yes", raform_traffictmpguidelines_yes);
-        result.put("raform_traffictmpguidelines_no", raform_traffictmpguidelines_no);
-        result.put("raform_trafficbeacon_yes", raform_trafficbeacon_yes);
-        result.put("raform_trafficbeacon_no", raform_trafficbeacon_no);
-        result.put("raform_trafficleftsite_yes", raform_trafficleftsite_yes);
-        result.put("raform_trafficleftsite_no", raform_trafficleftsite_no);
-
-        result.put("raform_trafficfallsystem_yes", raform_trafficfallsystem_yes);
-        result.put("raform_trafficfallsystem_no", raform_trafficfallsystem_no);
-
-        result.put("raform_heights_harnessinspect_yes", raform_heights_harnessinspect_yes);
-        result.put("raform_heights_harnessinspect_no", raform_heights_harnessinspect_no);
-        result.put("raform_heights_ladderinspect_yes", raform_heights_ladderinspect_yes);
-        result.put("raform_heights_ladderinspect_no", raform_heights_ladderinspect_no);
-        result.put("raform_heights_laddertie_yes", raform_heights_laddertie_yes);
-        result.put("raform_heights_laddertie_no", raform_heights_laddertie_no);
-        result.put("raform_heights_manholebarriier_yes", raform_heights_manholebarriier_yes);
-        result.put("raform_heights_manholebarriier_no", raform_heights_manholebarriier_no);
-
-
-//--------------------------------------------------------------------------------------
-
-
 
         return result;
     }

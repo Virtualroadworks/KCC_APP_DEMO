@@ -28,14 +28,15 @@ import com.firebase.client.ValueEventListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener,View.OnClickListener {
+import java.text.DateFormat;
+import java.util.Date;
 
-    MediaPlayer mp;
-    MediaPlayer mp1;
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener,View.OnClickListener {
 
     private FirebaseAuth firebaseAuth;
     private Firebase mRootRef;
     private Button start_inspection_button;
+
 
     private TextView user_name,user_name2,access_level;
 
@@ -54,6 +55,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        Firebase.setAndroidContext(this);
+        mRootRef = new Firebase("https://truckman-1dc51.firebaseio.com");
+        firebaseAuth = FirebaseAuth.getInstance();
+
+        Date date = new Date();
+        String currentDateandTime = DateFormat.getDateTimeInstance().format(date);
+
+        Firebase childRef = mRootRef.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("Profile").child("Time User last connected");
+        childRef.setValue(currentDateandTime);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -64,13 +74,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        mp = MediaPlayer.create(this, R.raw.beep_splash);
-        mp1 = MediaPlayer.create(this, R.raw.beep_button_g);
-        mp.start();
-
-        firebaseAuth = FirebaseAuth.getInstance();
-        Firebase.setAndroidContext(this);
-        mRootRef = new Firebase("https://truckman-1dc51.firebaseio.com");
 
         user_name = (TextView) findViewById(R.id.user_name);
         user_name2 = (TextView) findViewById(R.id.user_name2);
@@ -134,7 +137,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         if(view == start_inspection_button){
             finish();
-            mp1.start();
             Intent nextView = new Intent(this, Vehicle_Reports.class);
             nextView.putExtra("CalledFromMainView", true);
             startActivity(nextView);

@@ -167,36 +167,22 @@ public class AT_RiskAssessment_database extends AppCompatActivity {
         add.setstartDate(model.getstartDate());
         add.setendDate(model.getendDate());
 
+
+        ///////////////////////////////////////1 Traffic/////////////////////////////////////////////////
+
         add.settraffic_ppe(model.gettraffic_ppe());
         add.settraffic_roads_or_footpath(model.gettraffic_roads_or_footpath());
+        add.settraffic_following_guidelines(model.gettraffic_following_guidelines());
+        add.settraffic_beacons(model.gettraffic_beacons());
+        add.settraffic_left_site_in_good_order(model.gettraffic_left_site_in_good_order());
 
-        ///////////////////////////////////////Risk Assessment/////////////////////////////////////////////////
+        ///////////////////////////////////////2 Heights/////////////////////////////////////////////////
 
-
-
-        add.setraform_traffictmpguidelines_yes(model.getraform_traffictmpguidelines_yes());
-        add.setraform_traffictmpguidelines_no(model.getraform_traffictmpguidelines_no());
-        add.setraform_trafficbeacon_yes(model.getraform_trafficbeacon_yes());
-        add.setraform_trafficbeacon_no(model.getraform_trafficbeacon_no());
-        add.setraform_trafficleftsite_yes(model.getraform_trafficleftsite_yes());
-        add.setraform_trafficleftsite_no(model.getraform_trafficleftsite_no());
-        add.setraform_trafficfallsystem_yes(model.getraform_trafficfallsystem_yes());
-        add.setraform_trafficfallsystem_no(model.getraform_trafficfallsystem_no());
-
-        add.setraform_heights_harnessinspect_yes(model.getraform_heights_harnessinspect_yes());
-        add.setraform_heights_harnessinspect_no(model.getraform_heights_harnessinspect_no());
-        add.setraform_heights_ladderinspect_yes(model.getraform_heights_ladderinspect_yes());
-        add.setraform_heights_ladderinspect_no(model.getraform_heights_ladderinspect_no());
-        add.setraform_heights_laddertie_yes(model.getraform_heights_laddertie_yes());
-        add.setraform_heights_laddertie_no(model.getraform_heights_laddertie_no());
-        add.setraform_heights_manholebarriier_yes(model.getraform_heights_manholebarriier_yes());
-        add.setraform_heights_manholebarriier_no(model.getraform_heights_manholebarriier_no());
-
-
-
-        ///////////////////////////////////////Risk Assessment/////////////////////////////////////////////////
-
-
+        add.setheights_fall_arrest_system(model.getheights_fall_arrest_system());
+        add.setheights_harness_inspection(model.getheights_harness_inspection());
+        add.setheights_ladder_inspection(model.getheights_ladder_inspection());
+        add.setheights_laddertied(model.getheights_laddertied());
+        add.setheights_manholebarrier(model.getheights_manholebarrier());
 
 
 

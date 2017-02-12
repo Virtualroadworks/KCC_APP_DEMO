@@ -82,7 +82,8 @@ public class zRegemail extends AppCompatActivity implements View.OnClickListener
             String user_email = etuser_email.getText().toString();
 
             Firebase childRef = mRootRef.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("Profile").child("User Email");
-
+            Firebase childRef2 = mRootRef.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("Profile").child("Report Email Recipient");
+            childRef2.setValue(user_email);
             childRef.setValue(user_email);
 
             if(TextUtils.isEmpty(user_email)) {

@@ -33,6 +33,10 @@ public class User_Profile extends AppCompatActivity implements View.OnClickListe
 
     private TextView User_Name_tital;
     private TextView User_Name_tital_fill;
+
+    private TextView User_Account_Created_on_tital_fill;
+    private TextView Time_User_last_connected_tital_fill;
+
     private TextView User_Email_tital;
     private TextView User_Email_tital_fill;
     private TextView Report_email_recipient;
@@ -82,6 +86,8 @@ public class User_Profile extends AppCompatActivity implements View.OnClickListe
         firebaseAuth = FirebaseAuth.getInstance();
 
         User_Name_tital_fill = (TextView) findViewById(R.id.User_Name_tital_fill);
+        User_Account_Created_on_tital_fill = (TextView) findViewById(R.id.User_Account_Created_on_tital_fill);
+        Time_User_last_connected_tital_fill = (TextView) findViewById(R.id.Time_User_last_connected_tital_fill);
         User_Email_tital_fill = (TextView) findViewById(R.id.User_Email_tital_fill);
         Report_email_recipient = (TextView) findViewById(R.id.etreport_email_recipient);
         User_Company_tital_fill = (TextView) findViewById(R.id.User_Company_tital_fill);
@@ -122,6 +128,8 @@ public class User_Profile extends AppCompatActivity implements View.OnClickListe
             public void onDataChange(com.firebase.client.DataSnapshot dataSnapshot) {
 
                 String userName  = dataSnapshot.child("User Name").getValue(String.class);
+                String Account_Created_on  = dataSnapshot.child("User Account Created on").getValue(String.class);
+                String Time_User_last_connected  = dataSnapshot.child("Time User last connected").getValue(String.class);
                 String userEmail  = dataSnapshot.child("User Email").getValue(String.class);
                 String report_email_recipient  = dataSnapshot.child("Report Email Recipient").getValue(String.class);
                 String userCompany  = dataSnapshot.child("User Company").getValue(String.class);
@@ -136,6 +144,8 @@ public class User_Profile extends AppCompatActivity implements View.OnClickListe
                 String depot_contact_number = dataSnapshot.child("Depot Contact Number").getValue(String.class);
 
                 User_Name_tital_fill.setText(userName);
+                User_Account_Created_on_tital_fill.setText(Account_Created_on);
+                Time_User_last_connected_tital_fill.setText(Time_User_last_connected);
                 User_Email_tital_fill.setText(userEmail);
                 etreport_email_recipient.setText(report_email_recipient);
                 User_Company_tital_fill.setText(userCompany);

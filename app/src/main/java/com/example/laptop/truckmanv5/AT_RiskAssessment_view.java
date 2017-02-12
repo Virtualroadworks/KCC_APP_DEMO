@@ -44,8 +44,6 @@ public class AT_RiskAssessment_view extends AppCompatActivity {
     int position;
     AT_RiskAssessment_model AT_RiskAssessment_model;
 
-    private static final int GALLARY_INTENT = 2;
-    private static final int CAMERA_REQUEST_CODE = 1;
 
     private ProgressDialog mProgressDialog;
 
@@ -54,7 +52,6 @@ public class AT_RiskAssessment_view extends AppCompatActivity {
     ImageButton at0013_3takephoto;
     ImageButton at0013_3gallary;
     ImageButton at0013_3selectmap;
-
 
 
     ///////////////////////////////////////////////////////////////////////////////////
@@ -74,6 +71,8 @@ public class AT_RiskAssessment_view extends AppCompatActivity {
     ImageButton raconspaceicon100x100;
     ImageButton rapowertoolsicon100x100;
     ImageButton rageneralppeicon100x100;
+
+    ///////////////////////////////////////////////////////////////////////////////////
 
     CheckBox raform_trafficppe_yes;
     CheckBox raform_trafficppe_no;
@@ -97,7 +96,7 @@ public class AT_RiskAssessment_view extends AppCompatActivity {
     CheckBox raform_heights_manholebarriier_yes;
     CheckBox raform_heights_manholebarriier_no;
 
-
+    ///////////////////////////////////////////////////////////////////////////////////
 
     String traffic_ppe;
     String traffic_roads_or_footpath;
@@ -111,6 +110,7 @@ public class AT_RiskAssessment_view extends AppCompatActivity {
     String heights_laddertied;
     String heights_manholebarrier;
 
+    ///////////////////////////////////////////////////////////////////////////////////
 
     FrameLayout framelayout_traffic;
     FrameLayout framelayout_workingatheights;
@@ -169,6 +169,9 @@ public class AT_RiskAssessment_view extends AppCompatActivity {
 
         ///////////////////////////////////////////////////////////////////////////////////
 
+        framelayout_traffic.setVisibility(LinearLayout.GONE);
+        rafootpathicon100x100.setVisibility(LinearLayout.GONE);
+
         if (ratrafficicon100x100pressed == false) {
             framelayout_traffic.setVisibility(LinearLayout.GONE);
         }
@@ -182,12 +185,6 @@ public class AT_RiskAssessment_view extends AppCompatActivity {
         if (raworkingatheightsicon100x100pressed == true) {
             framelayout_workingatheights.setVisibility(LinearLayout.VISIBLE);
         }
-
-
-        framelayout_traffic.setVisibility(LinearLayout.GONE);
-        rafootpathicon100x100.setVisibility(LinearLayout.GONE);
-
-        ///////////////////////////////////////////////////////////////////////////////////
 
         ratrafficicon100x100.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -219,20 +216,12 @@ public class AT_RiskAssessment_view extends AppCompatActivity {
 
         });
 
-
-
-
-
-
-
         ///////////////////////////////////////////////////////////////////////////////////
 
 
         mStorage = FirebaseStorage.getInstance().getReference();
 
         mProgressDialog = new ProgressDialog(this);
-
-
 
         at0013_3takephoto = (ImageButton) findViewById(R.id.at0013_3takephoto);
         at0013_3gallary = (ImageButton) findViewById(R.id.at0013_3gallary);
@@ -265,6 +254,7 @@ public class AT_RiskAssessment_view extends AppCompatActivity {
             AT_RiskAssessment_model = null;
         }
 
+        ///////////////////////////////////////1 Traffic/////////////////////////////////////////////////
 
         raform_trafficppe_yes.setOnClickListener(new View.OnClickListener() {
 
@@ -275,14 +265,12 @@ public class AT_RiskAssessment_view extends AppCompatActivity {
                     traffic_ppe = "Yes";
                     raform_trafficppe_yes.setChecked(true);
                     raform_trafficppe_no.setChecked(false);
-                } else {
-                    traffic_ppe = "No";
+                } else { traffic_ppe = "No";
                     raform_trafficppe_yes.setChecked(true);
                 }
             }
 
         });
-
         raform_trafficppe_no.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -307,8 +295,7 @@ public class AT_RiskAssessment_view extends AppCompatActivity {
                     raform_trafficfootpath.setChecked(false);
                     raroadsicon100x100.setVisibility(LinearLayout.VISIBLE);
                     rafootpathicon100x100.setVisibility(LinearLayout.GONE);
-                } else {
-                    traffic_ppe = "Footpath";
+                } else { traffic_roads_or_footpath = "Footpath";
                     raform_trafficroads.setChecked(true);
                 }
             }
@@ -336,8 +323,11 @@ public class AT_RiskAssessment_view extends AppCompatActivity {
             public void onClick(View v) {
 
                 if (raform_traffictmpguidelines_yes.isChecked()) {
+                    traffic_following_guidelines = "Yes";
                     raform_traffictmpguidelines_yes.setChecked(true);
                     raform_traffictmpguidelines_no.setChecked(false);
+                }else { traffic_following_guidelines = "No";
+                    raform_traffictmpguidelines_yes.setChecked(true);
                 }
             }
 
@@ -362,8 +352,12 @@ public class AT_RiskAssessment_view extends AppCompatActivity {
             public void onClick(View v) {
 
                 if (raform_trafficbeacon_yes.isChecked()) {
+                    traffic_beacons = "Yes";
                     raform_trafficbeacon_yes.setChecked(true);
                     raform_trafficbeacon_no.setChecked(false);
+                }
+                else { traffic_beacons = "No";
+                    raform_trafficbeacon_yes.setChecked(true);
                 }
             }
 
@@ -388,8 +382,11 @@ public class AT_RiskAssessment_view extends AppCompatActivity {
             public void onClick(View v) {
 
                 if (raform_trafficleftsite_yes.isChecked()) {
+                    traffic_left_site_in_good_order = "Yes";
                     raform_trafficleftsite_yes.setChecked(true);
                     raform_trafficleftsite_no.setChecked(false);
+                }else { traffic_left_site_in_good_order = "No";
+                    raform_trafficleftsite_yes.setChecked(true);
                 }
             }
 
@@ -408,14 +405,21 @@ public class AT_RiskAssessment_view extends AppCompatActivity {
 
         });
 
+        ///////////////////////////////////////2 Heights/////////////////////////////////////////////////
+
+
+
         raform_trafficfallsystem_yes.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
 
                 if (raform_trafficfallsystem_yes.isChecked()) {
+                    heights_fall_arrest_system = "Yes";
                     raform_trafficfallsystem_yes.setChecked(true);
                     raform_trafficfallsystem_no.setChecked(false);
+                }else { heights_fall_arrest_system = "No";
+                    raform_trafficfallsystem_yes.setChecked(true);
                 }
             }
 
@@ -440,8 +444,11 @@ public class AT_RiskAssessment_view extends AppCompatActivity {
             public void onClick(View v) {
 
                 if (raform_heights_harnessinspect_yes.isChecked()) {
+                    heights_harness_inspection = "Yes";
                     raform_heights_harnessinspect_yes.setChecked(true);
                     raform_heights_harnessinspect_no.setChecked(false);
+                }else { heights_harness_inspection = "No";
+                    raform_heights_harnessinspect_yes.setChecked(true);
                 }
             }
 
@@ -466,8 +473,11 @@ public class AT_RiskAssessment_view extends AppCompatActivity {
             public void onClick(View v) {
 
                 if (raform_heights_ladderinspect_yes.isChecked()) {
+                    heights_ladder_inspection = "Yes";
                     raform_heights_ladderinspect_yes.setChecked(true);
                     raform_heights_ladderinspect_no.setChecked(false);
+                }else { heights_ladder_inspection = "No";
+                    raform_heights_ladderinspect_yes.setChecked(true);
                 }
             }
 
@@ -491,14 +501,17 @@ public class AT_RiskAssessment_view extends AppCompatActivity {
             public void onClick(View v) {
 
                 if (raform_heights_laddertie_yes.isChecked()) {
+                    heights_laddertied = "Yes";
                     raform_heights_laddertie_yes.setChecked(true);
                     raform_heights_laddertie_no.setChecked(false);
+                }else { heights_laddertied = "No";
+                    raform_heights_laddertie_yes.setChecked(true);
                 }
             }
 
         });
 
-        raform_heights_laddertie_yes.setOnClickListener(new View.OnClickListener() {
+        raform_heights_laddertie_no.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
@@ -516,8 +529,11 @@ public class AT_RiskAssessment_view extends AppCompatActivity {
             public void onClick(View v) {
 
                 if (raform_heights_manholebarriier_yes.isChecked()) {
+                    heights_manholebarrier = "Yes";
                     raform_heights_manholebarriier_yes.setChecked(true);
                     raform_heights_manholebarriier_no.setChecked(false);
+                }else { heights_manholebarrier = "No";
+                    raform_heights_manholebarriier_yes.setChecked(true);
                 }
             }
 
@@ -537,8 +553,7 @@ public class AT_RiskAssessment_view extends AppCompatActivity {
         });
 
 
-
-///////////////////////////////////////Risk Assessment/////////////////////////////////////////////////
+                ///////////////////////////////////////Risk Assessment/////////////////////////////////////////////////
 
         bOK.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -567,136 +582,82 @@ public class AT_RiskAssessment_view extends AppCompatActivity {
                     p.setuser_department_area(user_department_area.getText().toString());
                     p.setuser_contact_number(user_contact_number.getText().toString());
 
-                    ///////////////////////////////////////Store Strings/////////////////////////////////////////////////
+                    ///////////////////////////////////////1 Traffic/////////////////////////////////////////////////
 
-
-
-///////////////////////////////////////1 Section 1 Location/////////////////////////////////////////////////
                     if(raform_trafficppe_yes.isChecked()) {
                         p.settraffic_ppe("Yes");
-                    }
-                    else {
+                    } else {p.settraffic_ppe("No");
+                    }if(raform_trafficppe_no.isChecked()) {
                         p.settraffic_ppe("No");
-                    }
-
-                    if(raform_trafficppe_no.isChecked()) {
-                        p.settraffic_ppe("No");
-                    }
-                    else {
-                        p.settraffic_ppe("Yes");
-                    }
+                    } else {p.settraffic_ppe("Yes");}
 
                     if(raform_trafficroads.isChecked()) {
                         p.settraffic_roads_or_footpath("Road");
-                    }
-                    else {
+                    } else {p.settraffic_roads_or_footpath("Footpath");
+                    }if(raform_trafficfootpath.isChecked()) {
                         p.settraffic_roads_or_footpath("Footpath");
-                    }
+                    } else {p.settraffic_roads_or_footpath("Road");}
 
-                    if(raform_trafficfootpath.isChecked()) {
-                        p.settraffic_roads_or_footpath("Footpath");
-                    }
-                    else {
-                        p.settraffic_roads_or_footpath("Road");
-                    }
                     if(raform_traffictmpguidelines_yes.isChecked()) {
-                        p.setraform_traffictmpguidelines_yes("Yes");
-                    }
-                    else {
-                        p.setraform_traffictmpguidelines_yes("No");
-                    }
-
-                    if(raform_traffictmpguidelines_no.isChecked()) {
-                        p.setraform_traffictmpguidelines_no("Yes");
-                    }
-                    else {
-                        p.setraform_traffictmpguidelines_no("No");
-                    }
+                        p.settraffic_following_guidelines("Yes");
+                    } else {p.settraffic_following_guidelines("No");
+                    }if(raform_traffictmpguidelines_no.isChecked()) {
+                        p.settraffic_following_guidelines("No");
+                    } else {p.settraffic_following_guidelines("Yes");}
 
                     if(raform_trafficbeacon_yes.isChecked()) {
-                        p.setraform_trafficbeacon_yes("Yes");
-                    }
-                    else {
-                        p.setraform_trafficbeacon_yes("No");
-                    }
-                    if(raform_trafficbeacon_no.isChecked()) {
-                        p.setraform_trafficbeacon_no("Yes");
-                    }
-                    else {
-                        p.setraform_trafficbeacon_no("No");
-                    }
+                        p.settraffic_beacons("Yes");
+                    } else {p.settraffic_beacons("No");
+                    }if(raform_trafficbeacon_no.isChecked()) {
+                        p.settraffic_beacons("No");
+                    } else {p.settraffic_beacons("Yes");}
+
                     if(raform_trafficleftsite_yes.isChecked()) {
-                        p.setraform_trafficleftsite_yes("Yes");
-                    }
-                    else {
-                        p.setraform_trafficleftsite_yes("No");
-                    }
-                    if(raform_trafficleftsite_no.isChecked()) {
-                        p.setraform_trafficleftsite_no("Yes");
-                    }
-                    else {
-                        p.setraform_trafficleftsite_no("No");
-                    }
+                        p.settraffic_left_site_in_good_order("Yes");
+                    } else {p.settraffic_left_site_in_good_order("No");
+                    }if(raform_trafficleftsite_no.isChecked()) {
+                        p.settraffic_left_site_in_good_order("No");
+                    } else {p.settraffic_left_site_in_good_order("Yes");}
+
+
+                    ///////////////////////////////////////2 Heights/////////////////////////////////////////////////
+
                     if(raform_trafficfallsystem_yes.isChecked()) {
-                        p.setraform_trafficfallsystem_yes("Yes");
-                    }
-                    else {
-                        p.setraform_trafficfallsystem_yes("No");
-                    }
-                    if(raform_trafficfallsystem_no.isChecked()) {
-                        p.setraform_trafficfallsystem_no("Yes");
-                    }
-                    else {
-                        p.setraform_trafficfallsystem_no("No");
-                    }
+                        p.setheights_fall_arrest_system("Yes");
+                    } else {p.setheights_fall_arrest_system("No");
+                    }if(raform_trafficfallsystem_no.isChecked()) {
+                        p.setheights_fall_arrest_system("No");
+                    } else {p.setheights_fall_arrest_system("Yes");}
+
                     if(raform_heights_harnessinspect_yes.isChecked()) {
-                        p.setraform_heights_harnessinspect_yes("Yes");
-                    }
-                    else {
-                        p.setraform_heights_harnessinspect_yes("No");
-                    }
-                    if(raform_heights_harnessinspect_no.isChecked()) {
-                        p.setraform_heights_harnessinspect_no("Yes");
-                    }
-                    else {
-                        p.setraform_heights_harnessinspect_no("No");
-                    }
+                        p.setheights_harness_inspection("Yes");
+                    } else {p.setheights_harness_inspection("No");
+                    }if(raform_heights_harnessinspect_no.isChecked()) {
+                        p.setheights_harness_inspection("No");
+                    } else {p.setheights_harness_inspection("Yes");}
+
                     if(raform_heights_ladderinspect_yes.isChecked()) {
-                        p.setraform_heights_ladderinspect_yes("Yes");
-                    }
-                    else {
-                        p.setraform_heights_ladderinspect_yes("No");
-                    }
-                    if(raform_heights_ladderinspect_no.isChecked()) {
-                        p.setraform_heights_ladderinspect_no("Yes");
-                    }
-                    else {
-                        p.setraform_heights_ladderinspect_no("No");
-                    }
+                        p.setheights_ladder_inspection("Yes");
+                    } else {p.setheights_ladder_inspection("No");
+                    }if(raform_heights_ladderinspect_no.isChecked()) {
+                        p.setheights_ladder_inspection("No");
+                    } else {p.setheights_ladder_inspection("Yes");}
+
                     if(raform_heights_laddertie_yes.isChecked()) {
-                        p.setraform_heights_laddertie_yes("Yes");
-                    }
-                    else {
-                        p.setraform_heights_laddertie_yes("No");
-                    }
-                    if(raform_heights_laddertie_no.isChecked()) {
-                        p.setraform_heights_laddertie_no("Yes");
-                    }
-                    else {
-                        p.setraform_heights_laddertie_no("No");
-                    }
+                        p.setheights_laddertied("Yes");
+                    } else {p.setheights_laddertied("No");
+                    }if(raform_heights_laddertie_no.isChecked()) {
+                        p.setheights_laddertied("No");
+                    } else {p.setheights_laddertied("Yes");}
+
                     if(raform_heights_manholebarriier_yes.isChecked()) {
-                        p.setraform_heights_manholebarriier_yes("Yes");
-                    }
-                    else {
-                        p.setraform_heights_manholebarriier_yes("No");
-                    }
-                    if(raform_heights_manholebarriier_no.isChecked()) {
-                        p.setraform_heights_manholebarriier_no("Yes");
-                    }
-                    else {
-                        p.setraform_heights_manholebarriier_no("No");
-                    }
+                        p.setheights_manholebarrier("Yes");
+                    } else {p.setheights_manholebarrier("No");
+                    }if(raform_heights_manholebarriier_no.isChecked()) {
+                        p.setheights_manholebarrier("No");
+                    } else {p.setheights_manholebarrier("Yes");}
+
+
 
                     ///////////////////////////////////////1 Section 1 Location/////////////////////////////////////////////////
 

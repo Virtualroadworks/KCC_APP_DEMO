@@ -81,7 +81,7 @@
                         android:layout_height="wrap_content" >
 
                         <TextView
-                            android:layout_width="120dp"
+                            android:layout_width="200dp"
                             android:layout_height="wrap_content"
                             android:text="User Name :"
                             android:id="@+id/User_Name_tital"
@@ -96,7 +96,9 @@
                             android:layout_gravity="center_horizontal"
                             android:textColor="#000000" />
                     </LinearLayout>
+
                 </FrameLayout>
+
                     <FrameLayout
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
@@ -108,9 +110,67 @@
                             android:layout_height="wrap_content" >
 
                             <TextView
-                                android:layout_width="120dp"
+                                android:layout_width="200dp"
                                 android:layout_height="wrap_content"
-                                android:text="User Role :"
+                                android:text="Date User Account Created :"
+                                android:id="@+id/User_Account_Created_on_tital"
+                                android:layout_gravity="left|bottom"
+                                android:textSize="16dp" />
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="New Text"
+                                android:id="@+id/User_Account_Created_on_tital_fill"
+                                android:layout_gravity="center_horizontal"
+                                android:textColor="#000000" />
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content"
+                                android:text="Date User last connected :"
+                                android:id="@+id/Time_User_last_connected_tital"
+                                android:layout_gravity="left|bottom"
+                                android:textSize="16dp" />
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="New Text"
+                                android:id="@+id/Time_User_last_connected_tital_fill"
+                                android:layout_gravity="center_horizontal"
+                                android:textColor="#000000" />
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content"
+                                android:text="Admin/User"
                                 android:id="@+id/User_Role_tital"
                                 android:layout_gravity="left|bottom"
                                 android:textSize="16dp" />
@@ -124,6 +184,7 @@
                                 android:textColor="#000000" />
                         </LinearLayout>
                     </FrameLayout>
+
                     <FrameLayout
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
@@ -135,7 +196,7 @@
                             android:layout_height="wrap_content" >
 
                             <TextView
-                                android:layout_width="120dp"
+                                android:layout_width="200dp"
                                 android:layout_height="wrap_content"
                                 android:text="User Access Level :"
                                 android:id="@+id/User_Access_tital"
@@ -163,7 +224,7 @@
                             android:layout_height="wrap_content" >
 
                             <TextView
-                                android:layout_width="120dp"
+                                android:layout_width="200dp"
                                 android:layout_height="wrap_content"
                                 android:text="User Email :"
                                 android:id="@+id/User_Email_tital"
@@ -190,7 +251,7 @@
                             android:layout_height="wrap_content" >
 
                             <TextView
-                                android:layout_width="120dp"
+                                android:layout_width="200dp"
                                 android:layout_height="wrap_content"
                                 android:text="Inspection Report Email Recipient :"
                                 android:id="@+id/report_email_recipient"
@@ -218,7 +279,7 @@
                             android:layout_height="wrap_content" >
 
                             <TextView
-                                android:layout_width="120dp"
+                                android:layout_width="200dp"
                                 android:layout_height="wrap_content"
                                 android:text="User Company :"
                                 android:id="@+id/User_Company_tital"
@@ -246,7 +307,7 @@
                             android:layout_height="wrap_content" >
 
                             <TextView
-                                android:layout_width="120dp"
+                                android:layout_width="200dp"
                                 android:layout_height="wrap_content"
                                 android:text="User Contact Number :"
                                 android:id="@+id/User_Contact_Number_tital"
@@ -275,7 +336,7 @@
                             android:layout_height="wrap_content" >
 
                             <TextView
-                                android:layout_width="120dp"
+                                android:layout_width="200dp"
                                 android:layout_height="wrap_content"
                                 android:text="Depot Location :"
                                 android:layout_gravity="left|bottom"
@@ -302,7 +363,7 @@
                             android:layout_height="wrap_content" >
 
                             <TextView
-                                android:layout_width="120dp"
+                                android:layout_width="200dp"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="left|bottom"
                                 android:textSize="12sp"
@@ -328,7 +389,7 @@
                             android:layout_height="wrap_content" >
 
                             <TextView
-                                android:layout_width="120dp"
+                                android:layout_width="200dp"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="left|bottom"
                                 android:textSize="12sp"
@@ -354,7 +415,7 @@
                             android:layout_height="wrap_content" >
 
                             <TextView
-                                android:layout_width="120dp"
+                                android:layout_width="200dp"
                                 android:layout_height="wrap_content"
                                 android:text="Contact Number :"
                                 android:layout_gravity="left|bottom"
@@ -737,7 +798,10 @@
                             android:text="Back to Main Menu"
                             android:id="@+id/MainMenuButton"
                             android:onClick="onButtonClick"
-                            android:layout_gravity="center_horizontal" />
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/button_roundoff4"
+                            android:paddingLeft="25dp"
+                            android:paddingRight="25dp" />
                     </FrameLayout>
 
                     <TextView
