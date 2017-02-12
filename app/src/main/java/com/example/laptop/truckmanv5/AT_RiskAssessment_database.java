@@ -184,7 +184,19 @@ public class AT_RiskAssessment_database extends AppCompatActivity {
         add.setheights_laddertied(model.getheights_laddertied());
         add.setheights_manholebarrier(model.getheights_manholebarrier());
 
+        ///////////////////////////////////////3 River Cleaning/////////////////////////////////////////////////
 
+        add.setriverlifejacket(model.getriverlifejacket());
+        add.setriverwaders(model.getriverwaders());
+        add.setrivertieoffpoint(model.getrivertieoffpoint());
+        add.setriversafeaccess(model.getriversafeaccess());
+
+        ///////////////////////////////////////4 Overhead Powerlines/////////////////////////////////////////////////
+
+        add.setoverheadpowerlines(model.getoverheadpowerlines());
+
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
         Date date = new Date();
         String dateString = DateFormat.getDateTimeInstance().format(date);

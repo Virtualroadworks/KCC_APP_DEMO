@@ -36,8 +36,7 @@ import com.squareup.picasso.Picasso;
 public class AT_RiskAssessment_view extends AppCompatActivity {
 
     TextView user_name,user_email,user_department_area,user_contact_number,time_stamp;
-    EditText at0013_3ck_nature_works_other_description;
-    EditText at0013_3ck_hazard_tmp_comments;
+
 
     CoordinatorLayout cl;
     Button bOK,bCancel;
@@ -49,15 +48,15 @@ public class AT_RiskAssessment_view extends AppCompatActivity {
 
     private StorageReference mStorage;
 
-    ImageButton at0013_3takephoto;
-    ImageButton at0013_3gallary;
-    ImageButton at0013_3selectmap;
-
-
     ///////////////////////////////////////////////////////////////////////////////////
 
     Boolean ratrafficicon100x100pressed = false;
     Boolean raworkingatheightsicon100x100pressed = false;
+    Boolean rarivercleaningicon100x100pressed = false;
+
+    Boolean rapowerlinesicon100x100pressed = false;
+    Boolean raoverheadpowerlinesicon100x100pressed = false;
+
 
     ImageButton ratrafficicon100x100;
     ImageButton rappeicon100x100;
@@ -67,10 +66,17 @@ public class AT_RiskAssessment_view extends AppCompatActivity {
 
     ImageButton raworkingatheightsicon100x100;
     ImageButton rapowerlinesicon100x100;
+    ImageButton raoverheadpowerlinesicon100x100;
+    ImageButton raoverheadpowerlinesalerticon100x100;
     ImageButton ramanhandleicon100x100;
     ImageButton raconspaceicon100x100;
     ImageButton rapowertoolsicon100x100;
     ImageButton rageneralppeicon100x100;
+
+    ImageButton rariverlifejacketicon100x100;
+    ImageButton rariverwadersicon100x100;
+    ImageButton rarivertieoffpointicon100x100;
+    ImageButton rariversafeaccessicon100x100;
 
     ///////////////////////////////////////////////////////////////////////////////////
 
@@ -96,6 +102,18 @@ public class AT_RiskAssessment_view extends AppCompatActivity {
     CheckBox raform_heights_manholebarriier_yes;
     CheckBox raform_heights_manholebarriier_no;
 
+    CheckBox raform_riverlifejacket_yes;
+    CheckBox raform_riverlifejacket_no;
+    CheckBox raform_riverwaders_yes;
+    CheckBox raform_riverwaders_no;
+    CheckBox raform_rivertieoffpoint_yes;
+    CheckBox raform_rivertieoffpoint_no;
+    CheckBox raform_riversafeaccess_yes;
+    CheckBox raform_riversafeaccess_no;
+
+    CheckBox raform_overheadpowerlines_yes;
+    CheckBox raform_overheadpowerlines_no;
+
     ///////////////////////////////////////////////////////////////////////////////////
 
     String traffic_ppe;
@@ -110,10 +128,21 @@ public class AT_RiskAssessment_view extends AppCompatActivity {
     String heights_laddertied;
     String heights_manholebarrier;
 
+    String riverlifejacket;
+    String riverwaders;
+    String rivertieoffpoint;
+    String riversafeaccess;
+
+    String overheadpowerlines;
+
     ///////////////////////////////////////////////////////////////////////////////////
 
     FrameLayout framelayout_traffic;
     FrameLayout framelayout_workingatheights;
+    FrameLayout framelayout_rivercleaning;
+
+    FrameLayout framelayout_overheadpowerlines;
+    FrameLayout framelayout_overheadpowerlinesalert;
 
     ///////////////////////////////////////////////////////////////////////////////////
 
@@ -136,10 +165,19 @@ public class AT_RiskAssessment_view extends AppCompatActivity {
         raconspaceicon100x100 = (ImageButton) findViewById(R.id.raconspaceicon100x100);
         rapowertoolsicon100x100 = (ImageButton) findViewById(R.id.rapowertoolsicon100x100);
         rageneralppeicon100x100 = (ImageButton) findViewById(R.id.rageneralppeicon100x100);
-
-
         raworkingatheightsicon100x100 = (ImageButton) findViewById(R.id.raworkingatheightsicon100x100);
+
+
         rapowerlinesicon100x100 = (ImageButton) findViewById(R.id.rapowerlinesicon100x100);
+        raoverheadpowerlinesicon100x100 = (ImageButton) findViewById(R.id.raoverheadpowerlinesicon100x100);
+        raoverheadpowerlinesalerticon100x100 = (ImageButton) findViewById(R.id.raoverheadpowerlinesalerticon100x100);
+
+        rariverlifejacketicon100x100 = (ImageButton) findViewById(R.id.rariverlifejacketicon100x100);
+        rariverwadersicon100x100 = (ImageButton) findViewById(R.id.rariverwadersicon100x100);
+        rarivertieoffpointicon100x100 = (ImageButton) findViewById(R.id.rarivertieoffpointicon100x100);
+        rariversafeaccessicon100x100 = (ImageButton) findViewById(R.id.rariversafeaccessicon100x100);
+
+        ///////////////////////////////////////////////////////////////////////////////////
 
         raform_trafficppe_yes = (CheckBox) findViewById(R.id.raform_trafficppe_yes);
         raform_trafficppe_no = (CheckBox) findViewById(R.id.raform_trafficppe_no);
@@ -163,14 +201,32 @@ public class AT_RiskAssessment_view extends AppCompatActivity {
         raform_heights_manholebarriier_yes = (CheckBox) findViewById(R.id.raform_heights_manholebarriier_yes);
         raform_heights_manholebarriier_no = (CheckBox) findViewById(R.id.raform_heights_manholebarriier_no);
 
+        raform_riverlifejacket_yes = (CheckBox) findViewById(R.id.raform_riverlifejacket_yes);
+        raform_riverlifejacket_no = (CheckBox) findViewById(R.id.raform_riverlifejacket_no);
+        raform_riverwaders_yes = (CheckBox) findViewById(R.id.raform_riverwaders_yes);
+        raform_riverwaders_no = (CheckBox) findViewById(R.id.raform_riverwaders_no);
+        raform_rivertieoffpoint_yes = (CheckBox) findViewById(R.id.raform_rivertieoffpoint_yes);
+        raform_rivertieoffpoint_no = (CheckBox) findViewById(R.id.raform_rivertieoffpoint_no);
+        raform_riversafeaccess_yes = (CheckBox) findViewById(R.id.raform_riversafeaccess_yes);
+        raform_riversafeaccess_no = (CheckBox) findViewById(R.id.raform_riversafeaccess_no);
+
+        raform_overheadpowerlines_yes = (CheckBox) findViewById(R.id.raform_overheadpowerlines_yes);
+        raform_overheadpowerlines_no = (CheckBox) findViewById(R.id.raform_overheadpowerlines_no);
+
 
         framelayout_traffic = (FrameLayout) findViewById(R.id.framelayout_traffic);
         framelayout_workingatheights = (FrameLayout) findViewById(R.id.framelayout_workingatheights);
+        framelayout_rivercleaning = (FrameLayout) findViewById(R.id.framelayout_rivercleaning);
+        framelayout_overheadpowerlines = (FrameLayout) findViewById(R.id.framelayout_overheadpowerlines);
+        framelayout_overheadpowerlinesalert = (FrameLayout) findViewById(R.id.framelayout_overheadpowerlinesalert);
 
         ///////////////////////////////////////////////////////////////////////////////////
 
         framelayout_traffic.setVisibility(LinearLayout.GONE);
         rafootpathicon100x100.setVisibility(LinearLayout.GONE);
+        framelayout_rivercleaning.setVisibility(LinearLayout.GONE);
+        framelayout_overheadpowerlines.setVisibility(LinearLayout.GONE);
+        framelayout_overheadpowerlinesalert.setVisibility(LinearLayout.GONE);
 
         if (ratrafficicon100x100pressed == false) {
             framelayout_traffic.setVisibility(LinearLayout.GONE);
@@ -184,6 +240,20 @@ public class AT_RiskAssessment_view extends AppCompatActivity {
         }
         if (raworkingatheightsicon100x100pressed == true) {
             framelayout_workingatheights.setVisibility(LinearLayout.VISIBLE);
+        }
+
+        if (rarivercleaningicon100x100pressed == false) {
+            framelayout_rivercleaning.setVisibility(LinearLayout.GONE);
+        }
+        if (rarivercleaningicon100x100pressed == true) {
+            framelayout_rivercleaning.setVisibility(LinearLayout.VISIBLE);
+        }
+
+        if (rapowerlinesicon100x100pressed == false) {
+            framelayout_overheadpowerlines.setVisibility(LinearLayout.GONE);
+        }
+        if (rapowerlinesicon100x100pressed == true) {
+            framelayout_overheadpowerlines.setVisibility(LinearLayout.VISIBLE);
         }
 
         ratrafficicon100x100.setOnClickListener(new View.OnClickListener() {
@@ -216,19 +286,42 @@ public class AT_RiskAssessment_view extends AppCompatActivity {
 
         });
 
+        rarivercleaningicon100x100.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (rarivercleaningicon100x100pressed == false) {
+                    framelayout_rivercleaning.setVisibility(LinearLayout.VISIBLE);
+                    rarivercleaningicon100x100pressed ^= true;
+                } else if
+                        (rarivercleaningicon100x100pressed == true) {
+                    framelayout_rivercleaning.setVisibility(LinearLayout.GONE);
+                    rarivercleaningicon100x100pressed ^= true;
+                }
+            }
+
+        });
+
+        rapowerlinesicon100x100.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (rapowerlinesicon100x100pressed == false) {
+                    framelayout_overheadpowerlines.setVisibility(LinearLayout.VISIBLE);
+                    rapowerlinesicon100x100pressed ^= true;
+                } else if
+                        (rapowerlinesicon100x100pressed == true) {
+                    framelayout_overheadpowerlines.setVisibility(LinearLayout.GONE);
+                    rapowerlinesicon100x100pressed ^= true;
+                }
+            }
+
+        });
+
         ///////////////////////////////////////////////////////////////////////////////////
 
 
         mStorage = FirebaseStorage.getInstance().getReference();
 
         mProgressDialog = new ProgressDialog(this);
-
-        at0013_3takephoto = (ImageButton) findViewById(R.id.at0013_3takephoto);
-        at0013_3gallary = (ImageButton) findViewById(R.id.at0013_3gallary);
-        at0013_3selectmap = (ImageButton) findViewById(R.id.at0013_3selectmap);
-
-        at0013_3ck_nature_works_other_description = (EditText) findViewById(R.id.at0013_3ck_nature_works_other_description);
-        at0013_3ck_hazard_tmp_comments = (EditText) findViewById(R.id.at0013_3ck_hazard_tmp_comments);
 
         String date = getIntent().getStringExtra("Date");
         time_stamp.setText(getIntent().getStringExtra("Date"));
@@ -516,9 +609,9 @@ public class AT_RiskAssessment_view extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                if (raform_heights_laddertie_yes.isChecked()) {
-                    raform_heights_laddertie_yes.setChecked(true);
-                    raform_heights_laddertie_no.setChecked(false);
+                if (raform_heights_laddertie_no.isChecked()) {
+                    raform_heights_laddertie_no.setChecked(true);
+                    raform_heights_laddertie_yes.setChecked(false);
                 }
             }
 
@@ -547,6 +640,156 @@ public class AT_RiskAssessment_view extends AppCompatActivity {
                 if (raform_heights_manholebarriier_no.isChecked()) {
                     raform_heights_manholebarriier_no.setChecked(true);
                     raform_heights_manholebarriier_yes.setChecked(false);
+                }
+            }
+
+        });
+
+        ///////////////////////////////////////3 River Cleaning/////////////////////////////////////////////////
+
+        raform_riverlifejacket_yes.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                if (raform_riverlifejacket_yes.isChecked()) {
+                    riverlifejacket = "Yes";
+                    raform_riverlifejacket_yes.setChecked(true);
+                    raform_riverlifejacket_no.setChecked(false);
+                }else { riverlifejacket = "No";
+                    raform_riverlifejacket_yes.setChecked(true);
+                }
+            }
+
+        });
+
+        raform_riverlifejacket_no.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                if (raform_riverlifejacket_no.isChecked()) {
+                    raform_riverlifejacket_no.setChecked(true);
+                    raform_riverlifejacket_yes.setChecked(false);
+                }
+            }
+
+        });
+
+        raform_riverwaders_yes.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                if (raform_riverwaders_yes.isChecked()) {
+                    riverwaders = "Yes";
+                    raform_riverwaders_yes.setChecked(true);
+                    raform_riverwaders_no.setChecked(false);
+                }else { riverwaders = "No";
+                    raform_riverwaders_yes.setChecked(true);
+                }
+            }
+
+        });
+
+        raform_riverwaders_no.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                if (raform_riverwaders_no.isChecked()) {
+                    raform_riverwaders_no.setChecked(true);
+                    raform_riverwaders_yes.setChecked(false);
+                }
+            }
+
+        });
+        raform_rivertieoffpoint_yes.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                if (raform_rivertieoffpoint_yes.isChecked()) {
+                    rivertieoffpoint = "Yes";
+                    raform_rivertieoffpoint_yes.setChecked(true);
+                    raform_rivertieoffpoint_no.setChecked(false);
+                }else { rivertieoffpoint = "No";
+                    raform_rivertieoffpoint_yes.setChecked(true);
+                }
+            }
+
+        });
+
+        raform_rivertieoffpoint_no.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                if (raform_rivertieoffpoint_no.isChecked()) {
+                    raform_rivertieoffpoint_no.setChecked(true);
+                    raform_rivertieoffpoint_yes.setChecked(false);
+                }
+            }
+
+        });
+        raform_riversafeaccess_yes.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                if (raform_riversafeaccess_yes.isChecked()) {
+                    riversafeaccess = "Yes";
+                    raform_riversafeaccess_yes.setChecked(true);
+                    raform_riversafeaccess_no.setChecked(false);
+                }else { riversafeaccess = "No";
+                    raform_riversafeaccess_yes.setChecked(true);
+                }
+            }
+
+        });
+
+        raform_riversafeaccess_no.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                if (raform_riversafeaccess_no.isChecked()) {
+                    raform_riversafeaccess_no.setChecked(true);
+                    raform_riversafeaccess_yes.setChecked(false);
+                }
+            }
+
+        });
+
+        ///////////////////////////////////////4 Overhead Pwerlines/////////////////////////////////////////////////
+
+        raform_overheadpowerlines_yes.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                if (raform_overheadpowerlines_yes.isChecked()) {
+                    overheadpowerlines = "Yes";
+                    raform_overheadpowerlines_yes.setChecked(true);
+                    raform_overheadpowerlines_no.setChecked(false);
+                    framelayout_overheadpowerlinesalert.setVisibility(LinearLayout.VISIBLE);
+                }else { overheadpowerlines = "No";
+                    raform_overheadpowerlines_yes.setChecked(true);
+                    framelayout_overheadpowerlinesalert.setVisibility(LinearLayout.GONE);
+                }
+            }
+
+        });
+
+        raform_overheadpowerlines_no.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                if (raform_overheadpowerlines_no.isChecked()) {
+                    raform_overheadpowerlines_no.setChecked(true);
+                    raform_overheadpowerlines_yes.setChecked(false);
+                    framelayout_overheadpowerlinesalert.setVisibility(LinearLayout.GONE);
                 }
             }
 
@@ -657,10 +900,46 @@ public class AT_RiskAssessment_view extends AppCompatActivity {
                         p.setheights_manholebarrier("No");
                     } else {p.setheights_manholebarrier("Yes");}
 
+                    ///////////////////////////////////////2 Heights/////////////////////////////////////////////////
 
+                    if(raform_riverlifejacket_yes.isChecked()) {
+                        p.setriverlifejacket("Yes");
+                    } else {p.setriverlifejacket("No");
+                    }if(raform_riverlifejacket_no.isChecked()) {
+                        p.setriverlifejacket("No");
+                    } else {p.setriverlifejacket("Yes");}
+
+                    if(raform_riverwaders_yes.isChecked()) {
+                        p.setriverwaders("Yes");
+                    } else {p.setriverwaders("No");
+                    }if(raform_riverwaders_no.isChecked()) {
+                        p.setriverwaders("No");
+                    } else {p.setriverwaders("Yes");}
+
+                    if(raform_rivertieoffpoint_yes.isChecked()) {
+                        p.setrivertieoffpoint("Yes");
+                    } else {p.setrivertieoffpoint("No");
+                    }if(raform_rivertieoffpoint_no.isChecked()) {
+                        p.setrivertieoffpoint("No");
+                    } else {p.setrivertieoffpoint("Yes");}
+
+                    if(raform_riversafeaccess_yes.isChecked()) {
+                        p.setriversafeaccess("Yes");
+                    } else {p.setriversafeaccess("No");
+                    }if(raform_riversafeaccess_no.isChecked()) {
+                        p.setriversafeaccess("No");
+                    } else {p.setriversafeaccess("Yes");}
+
+                    ///////////////////////////////////////4 Overhead Powerline/////////////////////////////////////////////////
+
+                    if(raform_overheadpowerlines_yes.isChecked()) {
+                        p.setoverheadpowerlines("Yes");
+                    } else {p.setoverheadpowerlines("No");
+                    }if(raform_overheadpowerlines_no.isChecked()) {
+                        p.setoverheadpowerlines("No");
+                    } else {p.setoverheadpowerlines("Yes");}
 
                     ///////////////////////////////////////1 Section 1 Location/////////////////////////////////////////////////
-
 
 
                     if (AT_RiskAssessment_model == null)

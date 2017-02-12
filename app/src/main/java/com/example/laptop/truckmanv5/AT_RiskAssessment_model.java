@@ -25,6 +25,13 @@ public class AT_RiskAssessment_model {
     private String heights_laddertied;
     private String heights_manholebarrier;
 
+    private String riverlifejacket;
+    private String riverwaders;
+    private String rivertieoffpoint;
+    private String riversafeaccess;
+
+    private String overheadpowerlines;
+
 
     public AT_RiskAssessment_model () {
     }
@@ -147,7 +154,41 @@ public class AT_RiskAssessment_model {
         return heights_manholebarrier;
     }
 
+    ///////////////////////////////////////3 River Cleaning/////////////////////////////////////////////////
 
+    public void setriverlifejacket(String riverlifejacket) {
+        this.riverlifejacket = riverlifejacket;
+    }
+    public String getriverlifejacket() {
+        return riverlifejacket;
+    }
+    public void setriverwaders(String riverwaders) {
+        this.riverwaders = riverwaders;
+    }
+    public String getriverwaders() {
+        return riverwaders;
+    }
+    public void setrivertieoffpoint(String rivertieoffpoint) {
+        this.rivertieoffpoint = rivertieoffpoint;
+    }
+    public String getrivertieoffpoint() {
+        return rivertieoffpoint;
+    }
+    public void setriversafeaccess(String riversafeaccess) {
+        this.riversafeaccess = riversafeaccess;
+    }
+    public String getriversafeaccess() {
+        return riversafeaccess;
+    }
+
+    ///////////////////////////////////////3 River Cleaning/////////////////////////////////////////////////
+
+    public void setoverheadpowerlines(String overheadpowerlines) {
+        this.overheadpowerlines = overheadpowerlines;
+    }
+    public String getoverheadpowerlines() {
+        return overheadpowerlines;
+    }
 
 //--------------------------------------------------------------------------------------
 
@@ -176,7 +217,16 @@ public class AT_RiskAssessment_model {
         result.put("heights_laddertied", heights_laddertied);
         result.put("heights_manholebarrier", heights_manholebarrier);
 
+        //--------------------------------------------------------------------------------------
 
+        result.put("riverlifejacket", riverlifejacket);
+        result.put("riverwaders", riverwaders);
+        result.put("rivertieoffpoint", rivertieoffpoint);
+        result.put("riversafeaccess", riversafeaccess);
+
+        //--------------------------------------------------------------------------------------
+
+        result.put("overheadpowerlines", overheadpowerlines);
 //--------------------------------------------------------------------------------------
 
         return result;

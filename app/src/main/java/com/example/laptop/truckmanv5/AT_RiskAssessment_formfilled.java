@@ -45,12 +45,16 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 
+import static com.example.laptop.truckmanv5.R.id.framelayout_workingatheights;
+
 public class AT_RiskAssessment_formfilled extends AppCompatActivity {
 
     TextView user_name,user_email,user_department_area,user_contact_number,startDate,endDate;
 
     private Button emailreport;
 
+
+    ///////////////////////////////////////////////////////////////////////////////////
 
     ImageButton ratrafficicon100x100;
     ImageButton rappeicon100x100;
@@ -60,10 +64,19 @@ public class AT_RiskAssessment_formfilled extends AppCompatActivity {
 
     ImageButton raworkingatheightsicon100x100;
     ImageButton rapowerlinesicon100x100;
+    ImageButton raoverheadpowerlinesicon100x100;
+    ImageButton raoverheadpowerlinesalerticon100x100;
     ImageButton ramanhandleicon100x100;
     ImageButton raconspaceicon100x100;
     ImageButton rapowertoolsicon100x100;
     ImageButton rageneralppeicon100x100;
+
+    ImageButton rariverlifejacketicon100x100;
+    ImageButton rariverwadersicon100x100;
+    ImageButton rarivertieoffpointicon100x100;
+    ImageButton rariversafeaccessicon100x100;
+
+    ///////////////////////////////////////////////////////////////////////////////////
 
     private String traffic_ppe;
     private String traffic_roads_or_footpath;
@@ -77,7 +90,16 @@ public class AT_RiskAssessment_formfilled extends AppCompatActivity {
     private String heights_laddertied;
     private String heights_manholebarrier;
 
+    private String riverlifejacket;
+    private String riverwaders;
+    private String rivertieoffpoint;
+    private String riversafeaccess;
 
+    private String overheadpowerlines;
+
+    ///////////////////////////////////////////////////////////////////////////////////
+
+    FrameLayout framelayout_overheadpowerlinesalert;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -95,13 +117,27 @@ public class AT_RiskAssessment_formfilled extends AppCompatActivity {
         raconspaceicon100x100 = (ImageButton) findViewById(R.id.raconspaceicon100x100);
         rapowertoolsicon100x100 = (ImageButton) findViewById(R.id.rapowertoolsicon100x100);
         rageneralppeicon100x100 = (ImageButton) findViewById(R.id.rageneralppeicon100x100);
-
         raworkingatheightsicon100x100 = (ImageButton) findViewById(R.id.raworkingatheightsicon100x100);
         rapowerlinesicon100x100 = (ImageButton) findViewById(R.id.rapowerlinesicon100x100);
 
+        raoverheadpowerlinesicon100x100 = (ImageButton) findViewById(R.id.raoverheadpowerlinesicon100x100);
+        raoverheadpowerlinesalerticon100x100 = (ImageButton) findViewById(R.id.raoverheadpowerlinesalerticon100x100);
+
         ///////////////////////////////////////////////////////////////////////////////////
 
-        ratrafficicon100x100 = (ImageButton) findViewById(R.id.ratrafficicon100x100);
+        rariverlifejacketicon100x100 = (ImageButton) findViewById(R.id.rariverlifejacketicon100x100);
+        rariverwadersicon100x100 = (ImageButton) findViewById(R.id.rariverwadersicon100x100);
+        rarivertieoffpointicon100x100 = (ImageButton) findViewById(R.id.rarivertieoffpointicon100x100);
+        rariversafeaccessicon100x100 = (ImageButton) findViewById(R.id.rariversafeaccessicon100x100);
+
+        ///////////////////////////////////////////////////////////////////////////////////
+
+        framelayout_overheadpowerlinesalert = (FrameLayout) findViewById(R.id.framelayout_overheadpowerlinesalert);
+
+        ///////////////////////////////////////////////////////////////////////////////////
+
+        framelayout_overheadpowerlinesalert.setVisibility(LinearLayout.GONE);
+
 
         user_name = (TextView) findViewById(R.id.user_name);
         user_email = (TextView) findViewById(R.id.user_email);
@@ -335,6 +371,13 @@ public class AT_RiskAssessment_formfilled extends AppCompatActivity {
                         heights_laddertied = personDetailsModel.getheights_laddertied();
                         heights_manholebarrier = personDetailsModel.getheights_manholebarrier();
 
+                        riverlifejacket = personDetailsModel.getriverlifejacket();
+                        riverwaders = personDetailsModel.getriverwaders();
+                        rivertieoffpoint = personDetailsModel.getrivertieoffpoint();
+                        riversafeaccess = personDetailsModel.getriversafeaccess();
+
+                        overheadpowerlines = personDetailsModel.getoverheadpowerlines();
+
 
                         CheckBox raform_trafficppe_yes = (CheckBox) findViewById(R.id.raform_trafficppe_yes);
                         CheckBox raform_trafficppe_no = (CheckBox) findViewById(R.id.raform_trafficppe_no);
@@ -357,6 +400,18 @@ public class AT_RiskAssessment_formfilled extends AppCompatActivity {
                         CheckBox raform_heights_laddertie_no = (CheckBox) findViewById(R.id.raform_heights_laddertie_no);
                         CheckBox raform_heights_manholebarriier_yes = (CheckBox) findViewById(R.id.raform_heights_manholebarriier_yes);
                         CheckBox raform_heights_manholebarriier_no = (CheckBox) findViewById(R.id.raform_heights_manholebarriier_no);
+
+                        CheckBox raform_riverlifejacket_yes = (CheckBox) findViewById(R.id.raform_riverlifejacket_yes);
+                        CheckBox raform_riverlifejacket_no = (CheckBox) findViewById(R.id.raform_riverlifejacket_no);
+                        CheckBox raform_riverwaders_yes = (CheckBox) findViewById(R.id.raform_riverwaders_yes);
+                        CheckBox raform_riverwaders_no = (CheckBox) findViewById(R.id.raform_riverwaders_no);
+                        CheckBox raform_rivertieoffpoint_yes = (CheckBox) findViewById(R.id.raform_rivertieoffpoint_yes);
+                        CheckBox raform_rivertieoffpoint_no = (CheckBox) findViewById(R.id.raform_rivertieoffpoint_no);
+                        CheckBox raform_riversafeaccess_yes = (CheckBox) findViewById(R.id.raform_riversafeaccess_yes);
+                        CheckBox raform_riversafeaccess_no = (CheckBox) findViewById(R.id.raform_riversafeaccess_no);
+
+                        CheckBox raform_overheadpowerlines_yes = (CheckBox) findViewById(R.id.raform_overheadpowerlines_yes);
+                        CheckBox raform_overheadpowerlines_no = (CheckBox) findViewById(R.id.raform_overheadpowerlines_no);
 
                         ///////////////////////////////////////1: Traffic/////////////////////////////////////////////////
 
@@ -444,10 +499,52 @@ public class AT_RiskAssessment_formfilled extends AppCompatActivity {
                         } else { raform_heights_manholebarriier_no.setChecked(false);
                         }
 
+                        ///////////////////////////////////////3: River Cleaning/////////////////////////////////////////////////
 
+                        if (riverlifejacket.equals("Yes")) {
+                            raform_riverlifejacket_yes.setChecked(true);
+                        } else { raform_riverlifejacket_yes.setChecked(false);
+                        }
+                        if (riverlifejacket.equals("No")) {
+                            raform_riverlifejacket_no.setChecked(true);
+                        } else { raform_riverlifejacket_no.setChecked(false);
+                        }
+                        if (riverwaders.equals("Yes")) {
+                            raform_riverwaders_yes.setChecked(true);
+                        } else { raform_riverwaders_yes.setChecked(false);
+                        }
+                        if (riverwaders.equals("No")) {
+                            raform_riverwaders_no.setChecked(true);
+                        } else { raform_riverwaders_no.setChecked(false);
+                        }
+                        if (rivertieoffpoint.equals("Yes")) {
+                            raform_rivertieoffpoint_yes.setChecked(true);
+                        } else { raform_rivertieoffpoint_yes.setChecked(false);
+                        }
+                        if (rivertieoffpoint.equals("No")) {
+                            raform_rivertieoffpoint_no.setChecked(true);
+                        } else { raform_rivertieoffpoint_no.setChecked(false);
+                        }
+                        if (riversafeaccess.equals("Yes")) {
+                            raform_riversafeaccess_yes.setChecked(true);
+                        } else { raform_riversafeaccess_yes.setChecked(false);
+                        }
+                        if (riversafeaccess.equals("No")) {
+                            raform_riversafeaccess_no.setChecked(true);
+                        } else { raform_riversafeaccess_no.setChecked(false);
+                        }
 
-
-
+                        ///////////////////////////////////////3: River Cleaning/////////////////////////////////////////////////
+                        if (overheadpowerlines.equals("Yes")) {
+                            raform_overheadpowerlines_yes.setChecked(true);
+                            framelayout_overheadpowerlinesalert.setVisibility(LinearLayout.VISIBLE);
+                        } else { raform_overheadpowerlines_yes.setChecked(false);
+                        }
+                        if (overheadpowerlines.equals("No")) {
+                            raform_overheadpowerlines_no.setChecked(true);
+                            framelayout_overheadpowerlinesalert.setVisibility(LinearLayout.GONE);
+                        } else { raform_overheadpowerlines_no.setChecked(false);
+                        }
 
                     }
 
