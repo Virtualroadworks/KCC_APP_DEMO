@@ -195,6 +195,35 @@ public class AT_RiskAssessment_database extends AppCompatActivity {
 
         add.setoverheadpowerlines(model.getoverheadpowerlines());
 
+        ///////////////////////////////////////5 underground Services/////////////////////////////////////////////////
+
+        add.setundergrounddrawings(model.getundergrounddrawings());
+        add.setundergroundcat(model.getundergroundcat());
+
+        ///////////////////////////////////////6 Manual Handling/////////////////////////////////////////////////
+
+        add.setmanhandleloadassessed(model.getmanhandleloadassessed());
+        add.setmanhandlemechanical(model.getmanhandlemechanical());
+        add.setmanhandletwomanlift(model.getmanhandletwomanlift());
+
+        ///////////////////////////////////////7 Confined Space/////////////////////////////////////////////////
+
+        add.setconfinedspace(model.getconfinedspace());
+
+        ///////////////////////////////////////8 Power Tools/////////////////////////////////////////////////
+
+        add.setpowertools(model.getpowertools());
+
+        ///////////////////////////////////////9 General PPE/////////////////////////////////////////////////
+
+        add.setgeneralppesafetygoogles(model.getgeneralppesafetygoogles());
+        add.setgeneralppehearing(model.getgeneralppehearing());
+        add.setgeneralppegloves(model.getgeneralppegloves());
+        add.setgeneralppedustoverall(model.getgeneralppedustoverall());
+        add.setgeneralppehivis(model.getgeneralppehivis());
+        add.setgeneralppehardhat(model.getgeneralppehardhat());
+        add.setgeneralppedustmask(model.getgeneralppedustmask());
+
 
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 

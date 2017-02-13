@@ -65,56 +65,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
     private StorageReference mStorage;
 
-    private static final int GALLARY_INTENT = 2;
-    private static final int CAMERA_REQUEST_CODE= 1;
-    private static final int GALLARY_INTENT2 = 3;
-    private static final int CAMERA_REQUEST_CODE2= 4;
-    private static final int GALLARY_INTENT3 = 5;
-    private static final int CAMERA_REQUEST_CODE3= 6;
-    private static final int GALLARY_INTENT4 = 7;
-    private static final int CAMERA_REQUEST_CODE4= 8;
-    private static final int GALLARY_INTENT5 = 9;
-    private static final int CAMERA_REQUEST_CODE5= 10;
-    private static final int GALLARY_INTENT6 = 11;
-    private static final int CAMERA_REQUEST_CODE6= 12;
-    private static final int GALLARY_INTENT7 = 13;
-    private static final int CAMERA_REQUEST_CODE7= 14;
-    private static final int GALLARY_INTENT8 = 15;
-    private static final int CAMERA_REQUEST_CODE8= 16;
-    private static final int GALLARY_INTENT9 = 17;
-    private static final int CAMERA_REQUEST_CODE9= 18;
-    private static final int GALLARY_INTENT10 = 19;
-    private static final int CAMERA_REQUEST_CODE10= 20;
-    private static final int GALLARY_INTENT11 = 21;
-    private static final int CAMERA_REQUEST_CODE11= 22;
-    private static final int GALLARY_INTENT12 = 23;
-    private static final int CAMERA_REQUEST_CODE12= 24;
 
-    private static final int GALLARY_INTENT13 = 25;
-    private static final int CAMERA_REQUEST_CODE13= 26;
-    private static final int GALLARY_INTENT14 = 27;
-    private static final int CAMERA_REQUEST_CODE14= 28;
-    private static final int GALLARY_INTENT15 = 29;
-    private static final int CAMERA_REQUEST_CODE15= 30;
-    private static final int GALLARY_INTENT16 = 31;
-    private static final int CAMERA_REQUEST_CODE16= 32;
-    private static final int GALLARY_INTENT17 = 33;
-    private static final int CAMERA_REQUEST_CODE17= 34;
-    private static final int GALLARY_INTENT18 = 35;
-    private static final int CAMERA_REQUEST_CODE18= 36;
-    private static final int GALLARY_INTENT19 = 37;
-    private static final int CAMERA_REQUEST_CODE19= 38;
-    private static final int GALLARY_INTENT20 = 39;
-    private static final int CAMERA_REQUEST_CODE20= 40;
-
-    private static final int GALLARY_INTENT21 = 41;
-    private static final int CAMERA_REQUEST_CODE21= 42;
-    private static final int GALLARY_INTENT22 = 43;
-    private static final int CAMERA_REQUEST_CODE22= 44;
-    private static final int GALLARY_INTENT23 = 45;
-    private static final int CAMERA_REQUEST_CODE23= 46;
-    private static final int GALLARY_INTENT24 = 47;
-    private static final int CAMERA_REQUEST_CODE24= 48;
     private static final int GALLARY_INTENT25 = 49;
     private static final int CAMERA_REQUEST_CODE25= 50;
 
@@ -183,31 +134,6 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
     LinearLayout loadsecurewholebox;
     LinearLayout tachospeedowholebox;
     LinearLayout nowarninglightswholebox;
-
-    LinearLayout taxinsurancepicturelayoutframe;
-    LinearLayout regplatepicturelayoutframe;
-    LinearLayout airelectrialpicturelayoutframe;
-    LinearLayout fluidleakspicturelayoutframe;
-    LinearLayout airsuspensionpicturelayoutframe;
-    LinearLayout wheelsandtyrespicturelayoutframe;
-    LinearLayout lightsreflectorspicturelayoutframe;
-    LinearLayout exhaustpicturelayoutframe;
-    LinearLayout bodyguardspicturelayoutframe;
-    LinearLayout landinglegpicturelayoutframe;
-    LinearLayout sparetowpicturelayoutframe;
-    LinearLayout trailerbrakepicturelayoutframe;
-    LinearLayout windowsandmirrorspicturelayoutframe;
-    LinearLayout seatbeltpicturelayoutframe;
-    LinearLayout washerandwiperpicturelayoutframe;
-    LinearLayout hornpicturelayoutframe;
-    LinearLayout breakwarninglightpicturelayoutframe;
-    LinearLayout gaugepicturelayoutframe;
-    LinearLayout tachopicturelayoutframe;
-    LinearLayout airleakspicturelayoutframe;
-    LinearLayout steeringbreakingpicturelayoutframe;
-    LinearLayout loadsecurepicturelayoutframe;
-    LinearLayout tachospeedopicturelayoutframe;
-    LinearLayout nowarninglightspicturelayoutframe;
 
 
     //<<--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -433,80 +359,6 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
     //<<--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-    ImageView photoplace100x100taxinsurance;
-    ImageButton taxinsurancetakephoto;
-    ImageButton taxinsurancecheckgallary;
-    ImageView photoplace100x100regplate;
-    ImageButton regplatetakephoto;
-    ImageButton regplatecheckgallary;
-    ImageView photoplace100x100airelectrial;
-    ImageButton airelectrialtakephoto;
-    ImageButton airelectrialcheckgallary;
-    ImageView photoplace100x100fluidleaks;
-    ImageButton fluidleakstakephoto;
-    ImageButton fluidleakscheckgallary;
-    ImageView photoplace100x100airsuspension;
-    ImageButton airsuspensiontakephoto;
-    ImageButton airsuspensioncheckgallary;
-    ImageView photoplace100x100wheelsandtyres;
-    ImageButton wheelsandtyrestakephoto;
-    ImageButton wheelsandtyrescheckgallary;
-    ImageView photoplace100x100lightsreflectors;
-    ImageButton lightsreflectorstakephoto;
-    ImageButton lightsreflectorscheckgallary;
-    ImageView photoplace100x100exhaust;
-    ImageButton exhausttakephoto;
-    ImageButton exhaustcheckgallary;
-    ImageView photoplace100x100bodyguards;
-    ImageButton bodyguardstakephoto;
-    ImageButton bodyguardscheckgallary;
-    ImageView photoplace100x100landingleg;
-    ImageButton landinglegtakephoto;
-    ImageButton landinglegcheckgallary;
-    ImageView photoplace100x100sparetow;
-    ImageButton sparetowtakephoto;
-    ImageButton sparetowcheckgallary;
-    ImageView photoplace100x100trailerbrake;
-    ImageButton trailerbraketakephoto;
-    ImageButton trailerbrakecheckgallary;
-
-    ImageView photoplace100x100winmir;
-    ImageButton windowsandmirrorstakephoto;
-    ImageButton windowsandmirrorscheckgallary;
-    ImageView photoplace100x100seatbelts;
-    ImageButton seatbelttakephoto;
-    ImageButton seatbeltcheckgallary;
-    ImageView photoplace100x100washerandwiper;
-    ImageButton washerandwipertakephoto;
-    ImageButton washerandwipercheckgallary;
-    ImageView photoplace100x100horn;
-    ImageButton horntakephoto;
-    ImageButton horncheckgallary;
-    ImageView photoplace100x100breakwarninglight;
-    ImageButton breakwarninglighttakephoto;
-    ImageButton breakwarninglightcheckgallary;
-    ImageView photoplace100x100gauge;
-    ImageButton gaugetakephoto;
-    ImageButton gaugecheckgallary;
-    ImageView photoplace100x100tacho;
-    ImageButton tachotakephoto;
-    ImageButton tachocheckgallary;
-    ImageView photoplace100x100airleaks;
-    ImageButton airleakstakephoto;
-    ImageButton airleakscheckgallary;
-
-    ImageView photoplace100x100steeringbreaking;
-    ImageButton steeringbreakingtakephoto;
-    ImageButton steeringbreakingcheckgallary;
-    ImageView photoplace100x100loadsecure;
-    ImageButton loadsecuretakephoto;
-    ImageButton loadsecurecheckgallary;
-    ImageView photoplace100x100tachospeedo;
-    ImageButton tachospeedotakephoto;
-    ImageButton tachospeedocheckgallary;
-    ImageView photoplace100x100nowarninglights;
-    ImageButton nowarninglightstakephoto;
-    ImageButton nowarninglightscheckgallary;
 
 
     String taxinsurancepictureuri;
@@ -1141,80 +993,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
         photoplace100x100vehiclephoto = (ImageView) findViewById(R.id.photoplace100x100vehiclephoto);
 
-        photoplace100x100taxinsurance = (ImageView) findViewById(R.id.photoplace100x100taxinsurance);
-        taxinsurancetakephoto = (ImageButton) findViewById(R.id.taxinsurancetakephoto);
-        taxinsurancecheckgallary = (ImageButton) findViewById(R.id.taxinsurancecheckgallary);
-        photoplace100x100regplate = (ImageView) findViewById(R.id.photoplace100x100regplate);
-        regplatetakephoto = (ImageButton) findViewById(R.id.regplatetakephoto);
-        regplatecheckgallary = (ImageButton) findViewById(R.id.regplatecheckgallary);
-        photoplace100x100airelectrial = (ImageView) findViewById(R.id.photoplace100x100airelectrial);
-        airelectrialtakephoto = (ImageButton) findViewById(R.id.airelectrialtakephoto);
-        airelectrialcheckgallary = (ImageButton) findViewById(R.id.airelectrialcheckgallary);
-        photoplace100x100fluidleaks = (ImageView) findViewById(R.id.photoplace100x100fluidleaks);
-        fluidleakstakephoto = (ImageButton) findViewById(R.id.fluidleakstakephoto);
-        fluidleakscheckgallary = (ImageButton) findViewById(R.id.fluidleakscheckgallary);
-        photoplace100x100airsuspension = (ImageView) findViewById(R.id.photoplace100x100airsuspension);
-        airsuspensiontakephoto = (ImageButton) findViewById(R.id.airsuspensiontakephoto);
-        airsuspensioncheckgallary = (ImageButton) findViewById(R.id.airsuspensioncheckgallary);
-        photoplace100x100wheelsandtyres = (ImageView) findViewById(R.id.photoplace100x100wheelstyres);
-        wheelsandtyrestakephoto = (ImageButton) findViewById(R.id.wheelsandtyrestakephoto);
-        wheelsandtyrescheckgallary = (ImageButton) findViewById(R.id.wheelsandtyrescheckgallary);
-        photoplace100x100lightsreflectors = (ImageView) findViewById(R.id.photoplace100x100lightsreflectors);
-        lightsreflectorstakephoto = (ImageButton) findViewById(R.id.lightsreflectorstakephoto);
-        lightsreflectorscheckgallary = (ImageButton) findViewById(R.id.lightsreflectorscheckgallary);
-        photoplace100x100exhaust = (ImageView) findViewById(R.id.photoplace100x100exhaust);
-        exhausttakephoto = (ImageButton) findViewById(R.id.exhausttakephoto);
-        exhaustcheckgallary = (ImageButton) findViewById(R.id.exhaustcheckgallary);
-        photoplace100x100bodyguards = (ImageView) findViewById(R.id.photoplace100x100bodyguards);
-        bodyguardstakephoto = (ImageButton) findViewById(R.id.bodyguardstakephoto);
-        bodyguardscheckgallary = (ImageButton) findViewById(R.id.bodyguardscheckgallary);
-        photoplace100x100landingleg = (ImageView) findViewById(R.id.photoplace100x100landingleg);
-        landinglegtakephoto = (ImageButton) findViewById(R.id.landinglegtakephoto);
-        landinglegcheckgallary = (ImageButton) findViewById(R.id.landinglegcheckgallary);
-        photoplace100x100sparetow = (ImageView) findViewById(R.id.photoplace100x100sparetow);
-        sparetowtakephoto = (ImageButton) findViewById(R.id.sparetowtakephoto);
-        sparetowcheckgallary = (ImageButton) findViewById(R.id.sparetowcheckgallary);
-        photoplace100x100trailerbrake = (ImageView) findViewById(R.id.photoplace100x100trailerbrake);
-        trailerbraketakephoto = (ImageButton) findViewById(R.id.trailerbraketakephoto);
-        trailerbrakecheckgallary = (ImageButton) findViewById(R.id.trailerbrakecheckgallary);
 
-        photoplace100x100winmir = (ImageView) findViewById(R.id.photoplace100x100winmir);
-        windowsandmirrorstakephoto = (ImageButton) findViewById(R.id.windowsandmirrorstakephoto);
-        windowsandmirrorscheckgallary = (ImageButton) findViewById(R.id.windowsandmirrorscheckgallary);
-        photoplace100x100seatbelts = (ImageView) findViewById(R.id.photoplace100x100seatbelts);
-        seatbelttakephoto = (ImageButton) findViewById(R.id.seatbelttakephoto);
-        seatbeltcheckgallary = (ImageButton) findViewById(R.id.seatbeltcheckgallary);
-        photoplace100x100washerandwiper = (ImageView) findViewById(R.id.photoplace100x100washerandwiper);
-        washerandwipertakephoto = (ImageButton) findViewById(R.id.washerandwipertakephoto);
-        washerandwipercheckgallary = (ImageButton) findViewById(R.id.washerandwipercheckgallary);
-        photoplace100x100horn = (ImageView) findViewById(R.id.photoplace100x100horn);
-        horntakephoto = (ImageButton) findViewById(R.id.horntakephoto);
-        horncheckgallary = (ImageButton) findViewById(R.id.horncheckgallary);
-        photoplace100x100breakwarninglight = (ImageView) findViewById(R.id.photoplace100x100breakwarninglight);
-        breakwarninglighttakephoto = (ImageButton) findViewById(R.id.breakwarninglighttakephoto);
-        breakwarninglightcheckgallary = (ImageButton) findViewById(R.id.breakwarninglightcheckgallary);
-        photoplace100x100gauge = (ImageView) findViewById(R.id.photoplace100x100gauge);
-        gaugetakephoto = (ImageButton) findViewById(R.id.gaugetakephoto);
-        gaugecheckgallary = (ImageButton) findViewById(R.id.gaugecheckgallary);
-        photoplace100x100tacho = (ImageView) findViewById(R.id.photoplace100x100tacho);
-        tachotakephoto = (ImageButton) findViewById(R.id.tachotakephoto);
-        tachocheckgallary = (ImageButton) findViewById(R.id.tachocheckgallary);
-        photoplace100x100airleaks = (ImageView) findViewById(R.id.photoplace100x100airleaks);
-        airleakstakephoto = (ImageButton) findViewById(R.id.airleakstakephoto);
-        airleakscheckgallary = (ImageButton) findViewById(R.id.airleakscheckgallary);
-
-        photoplace100x100steeringbreaking = (ImageView) findViewById(R.id.photoplace100x100steeringbreaking);
-        steeringbreakingtakephoto = (ImageButton) findViewById(R.id.steeringbreakingtakephoto);
-        steeringbreakingcheckgallary = (ImageButton) findViewById(R.id.steeringbreakingcheckgallary);
-        photoplace100x100loadsecure = (ImageView) findViewById(R.id.photoplace100x100loadsecure);
-        loadsecuretakephoto = (ImageButton) findViewById(R.id.loadsecuretakephoto);
-        loadsecurecheckgallary = (ImageButton) findViewById(R.id.loadsecurecheckgallary);
-        photoplace100x100tachospeedo = (ImageView) findViewById(R.id.photoplace100x100tachospeedo);
-        tachospeedotakephoto = (ImageButton) findViewById(R.id.tachospeedotakephoto);
-        tachospeedocheckgallary = (ImageButton) findViewById(R.id.tachospeedocheckgallary);
-        photoplace100x100nowarninglights = (ImageView) findViewById(R.id.photoplace100x100nowarninglights);
-        nowarninglightstakephoto = (ImageButton) findViewById(R.id.nowarninglightstakephoto);
-        nowarninglightscheckgallary = (ImageButton) findViewById(R.id.nowarninglightscheckgallary);
 
         /////////////////////////Whole Boxs///////////////////////////////////////////
 
@@ -1245,30 +1024,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
         tachospeedowholebox = (LinearLayout) findViewById(R.id.tachospeedowholebox);
         nowarninglightswholebox = (LinearLayout) findViewById(R.id.nowarninglightswholebox);
 
-        taxinsurancepicturelayoutframe = (LinearLayout) findViewById(R.id.taxinsurancepicturelayoutframe);
-        regplatepicturelayoutframe = (LinearLayout) findViewById(R.id.regplatepicturelayoutframe);
-        airelectrialpicturelayoutframe = (LinearLayout) findViewById(R.id.airelectrialpicturelayoutframe);
-        fluidleakspicturelayoutframe = (LinearLayout) findViewById(R.id.fluidleakspicturelayoutframe);
-        airsuspensionpicturelayoutframe = (LinearLayout) findViewById(R.id.airsuspensionpicturelayoutframe);
-        wheelsandtyrespicturelayoutframe = (LinearLayout) findViewById(R.id.wheelsandtyrespicturelayoutframe);
-        lightsreflectorspicturelayoutframe = (LinearLayout) findViewById(R.id.lightsreflectorspicturelayoutframe);
-        exhaustpicturelayoutframe = (LinearLayout) findViewById(R.id.exhaustpicturelayoutframe);
-        bodyguardspicturelayoutframe = (LinearLayout) findViewById(R.id.bodyguardspicturelayoutframe);
-        landinglegpicturelayoutframe = (LinearLayout) findViewById(R.id.landinglegpicturelayoutframe);
-        sparetowpicturelayoutframe = (LinearLayout) findViewById(R.id.sparetowpicturelayoutframe);
-        trailerbrakepicturelayoutframe = (LinearLayout) findViewById(R.id.trailerbrakepicturelayoutframe);
-        windowsandmirrorspicturelayoutframe = (LinearLayout) findViewById(R.id.windowsandmirrorspicturelayoutframe);
-        seatbeltpicturelayoutframe = (LinearLayout) findViewById(R.id.seatbeltpicturelayoutframe);
-        washerandwiperpicturelayoutframe = (LinearLayout) findViewById(R.id.washerandwiperpicturelayoutframe);
-        hornpicturelayoutframe = (LinearLayout) findViewById(R.id.hornpicturelayoutframe);
-        breakwarninglightpicturelayoutframe = (LinearLayout) findViewById(R.id.breakwarninglightpicturelayoutframe);
-        gaugepicturelayoutframe = (LinearLayout) findViewById(R.id.gaugepicturelayoutframe);
-        tachopicturelayoutframe = (LinearLayout) findViewById(R.id.tachopicturelayoutframe);
-        airleakspicturelayoutframe = (LinearLayout) findViewById(R.id.airleakspicturelayoutframe);
-        steeringbreakingpicturelayoutframe = (LinearLayout) findViewById(R.id.steeringbreakingpicturelayoutframe);
-        loadsecurepicturelayoutframe = (LinearLayout) findViewById(R.id.loadsecurepicturelayoutframe);
-        tachospeedopicturelayoutframe = (LinearLayout) findViewById(R.id.tachospeedopicturelayoutframe);
-        nowarninglightspicturelayoutframe = (LinearLayout) findViewById(R.id.nowarninglightspicturelayoutframe);
+
 
 
         //<<--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1285,8 +1041,8 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
         taxinsurance_describe_tempfix_text_view.setVisibility(View.GONE);
         taxinsurancedescribedefectfill.setVisibility(View.GONE);
         taxinsurancetempfixfill.setVisibility(View.GONE);
-        photoplace100x100taxinsurance.setVisibility(View.GONE);
-        taxinsurancepicturelayoutframe.setVisibility(View.GONE);
+
+
 
         regplate_report_done_without_inspect.setVisibility(View.GONE);
         regplate_report_done_with_inspect.setVisibility(View.GONE);
@@ -1294,8 +1050,8 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
         regplate_describe_tempfix_text_view.setVisibility(View.GONE);
         regplatedescribedefectfill.setVisibility(View.GONE);
         regplatetempfixfill.setVisibility(View.GONE);
-        photoplace100x100regplate.setVisibility(View.GONE);
-        regplatepicturelayoutframe.setVisibility(View.GONE);
+
+
 
 
         airelectrial_report_done_without_inspect.setVisibility(View.GONE);
@@ -1304,8 +1060,8 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
         airelectrial_describe_tempfix_text_view.setVisibility(View.GONE);
         airelectrialdescribedefectfill.setVisibility(View.GONE);
         airelectrialtempfixfill.setVisibility(View.GONE);
-        photoplace100x100airelectrial.setVisibility(View.GONE);
-        airelectrialpicturelayoutframe.setVisibility(View.GONE);
+
+
 
         fluidleaks_report_done_without_inspect.setVisibility(View.GONE);
         fluidleaks_report_done_with_inspect.setVisibility(View.GONE);
@@ -1313,8 +1069,8 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
         fluidleaks_describe_tempfix_text_view.setVisibility(View.GONE);
         fluidleaksdescribedefectfill.setVisibility(View.GONE);
         fluidleakstempfixfill.setVisibility(View.GONE);
-        photoplace100x100fluidleaks.setVisibility(View.GONE);
-        fluidleakspicturelayoutframe.setVisibility(View.GONE);
+
+
 
         airsuspension_report_done_without_inspect.setVisibility(View.GONE);
         airsuspension_report_done_with_inspect.setVisibility(View.GONE);
@@ -1322,8 +1078,8 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
         airsuspension_describe_tempfix_text_view.setVisibility(View.GONE);
         airsuspensiondescribedefectfill.setVisibility(View.GONE);
         airsuspensiontempfixfill.setVisibility(View.GONE);
-        photoplace100x100airsuspension.setVisibility(View.GONE);
-        airsuspensionpicturelayoutframe.setVisibility(View.GONE);
+
+
 
         wheelsandtyres_report_done_without_inspect.setVisibility(View.GONE);
         wheelsandtyres_report_done_with_inspect.setVisibility(View.GONE);
@@ -1331,8 +1087,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
         wheelstyres_describe_tempfix_text_view.setVisibility(View.GONE);
         wheelstyresdescribedefectfill.setVisibility(View.GONE);
         wheelstyrestempfixfill.setVisibility(View.GONE);
-        photoplace100x100wheelsandtyres.setVisibility(View.GONE);
-        wheelsandtyrespicturelayoutframe.setVisibility(View.GONE);
+
 
         lightsreflectors_report_done_without_inspect.setVisibility(View.GONE);
         lightsreflectors_report_done_with_inspect.setVisibility(View.GONE);
@@ -1340,8 +1095,8 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
         lightsreflectors_describe_tempfix_text_view.setVisibility(View.GONE);
         lightsreflectorsdescribedefectfill.setVisibility(View.GONE);
         lightsreflectorstempfixfill.setVisibility(View.GONE);
-        photoplace100x100lightsreflectors.setVisibility(View.GONE);
-        lightsreflectorspicturelayoutframe.setVisibility(View.GONE);
+
+
 
         exhaust_report_done_without_inspect.setVisibility(View.GONE);
         exhaust_report_done_with_inspect.setVisibility(View.GONE);
@@ -1349,8 +1104,8 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
         exhaust_describe_tempfix_text_view.setVisibility(View.GONE);
         exhaustdescribedefectfill.setVisibility(View.GONE);
         exhausttempfixfill.setVisibility(View.GONE);
-        photoplace100x100exhaust.setVisibility(View.GONE);
-        exhaustpicturelayoutframe.setVisibility(View.GONE);
+
+
 
         bodyguards_report_done_without_inspect.setVisibility(View.GONE);
         bodyguards_report_done_with_inspect.setVisibility(View.GONE);
@@ -1358,8 +1113,8 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
         bodyguards_describe_tempfix_text_view.setVisibility(View.GONE);
         bodyguardsdescribedefectfill.setVisibility(View.GONE);
         bodyguardstempfixfill.setVisibility(View.GONE);
-        photoplace100x100bodyguards.setVisibility(View.GONE);
-        bodyguardspicturelayoutframe.setVisibility(View.GONE);
+
+
 
         landingleg_report_done_without_inspect.setVisibility(View.GONE);
         landingleg_report_done_with_inspect.setVisibility(View.GONE);
@@ -1367,8 +1122,8 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
         landingleg_describe_tempfix_text_view.setVisibility(View.GONE);
         landinglegdescribedefectfill.setVisibility(View.GONE);
         landinglegtempfixfill.setVisibility(View.GONE);
-        photoplace100x100landingleg.setVisibility(View.GONE);
-        landinglegpicturelayoutframe.setVisibility(View.GONE);
+
+
 
         sparetow_report_done_without_inspect.setVisibility(View.GONE);
         sparetow_report_done_with_inspect.setVisibility(View.GONE);
@@ -1376,8 +1131,8 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
         sparetow_describe_tempfix_text_view.setVisibility(View.GONE);
         sparetowdescribedefectfill.setVisibility(View.GONE);
         sparetowtempfixfill.setVisibility(View.GONE);
-        photoplace100x100sparetow.setVisibility(View.GONE);
-        sparetowpicturelayoutframe.setVisibility(View.GONE);
+
+
 
         trailerbrake_report_done_without_inspect.setVisibility(View.GONE);
         trailerbrake_report_done_with_inspect.setVisibility(View.GONE);
@@ -1385,8 +1140,8 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
         trailerbrake_describe_tempfix_text_view.setVisibility(View.GONE);
         trailerbrakedescribedefectfill.setVisibility(View.GONE);
         trailerbraketempfixfill.setVisibility(View.GONE);
-        photoplace100x100trailerbrake.setVisibility(View.GONE);
-        trailerbrakepicturelayoutframe.setVisibility(View.GONE);
+
+
 
         windowsandmirrors_report_done_without_inspect.setVisibility(View.GONE);
         windowsandmirrors_report_done_with_inspect.setVisibility(View.GONE);
@@ -1394,8 +1149,8 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
         windows_and_mirrors_describe_tempfix_text_view.setVisibility(View.GONE);
         winmirdescribedefectfill.setVisibility(View.GONE);
         winmirtempfixfill.setVisibility(View.GONE);
-        photoplace100x100winmir.setVisibility(View.GONE);
-        windowsandmirrorspicturelayoutframe.setVisibility(View.GONE);
+
+
 
         seatbelt_report_done_without_inspect.setVisibility(View.GONE);
         seatbelt_report_done_with_inspect.setVisibility(View.GONE);
@@ -1403,8 +1158,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
         seatbelt_describe_tempfix_text_view.setVisibility(View.GONE);
         seatbeltdescribedefectfill.setVisibility(View.GONE);
         seatbelttempfixfill.setVisibility(View.GONE);
-        photoplace100x100seatbelts.setVisibility(View.GONE);
-        seatbeltpicturelayoutframe.setVisibility(View.GONE);
+
 
         washerandwiper_report_done_without_inspect.setVisibility(View.GONE);
         washerandwiper_report_done_with_inspect.setVisibility(View.GONE);
@@ -1412,8 +1166,8 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
         washerandwiper_describe_tempfix_text_view.setVisibility(View.GONE);
         washerandwiperdescribedefectfill.setVisibility(View.GONE);
         washerandwipertempfixfill.setVisibility(View.GONE);
-        photoplace100x100washerandwiper.setVisibility(View.GONE);
-        washerandwiperpicturelayoutframe.setVisibility(View.GONE);
+
+
 
         horn_report_done_without_inspect.setVisibility(View.GONE);
         horn_report_done_with_inspect.setVisibility(View.GONE);
@@ -1421,8 +1175,8 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
         horn_describe_tempfix_text_view.setVisibility(View.GONE);
         horndescribedefectfill.setVisibility(View.GONE);
         horntempfixfill.setVisibility(View.GONE);
-        photoplace100x100horn.setVisibility(View.GONE);
-        hornpicturelayoutframe.setVisibility(View.GONE);
+
+
 
         breakwarninglight_report_done_without_inspect.setVisibility(View.GONE);
         breakwarninglight_report_done_with_inspect.setVisibility(View.GONE);
@@ -1430,8 +1184,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
         breakwarninglight_describe_tempfix_text_view.setVisibility(View.GONE);
         breakwarninglightdescribedefectfill.setVisibility(View.GONE);
         breakwarninglighttempfixfill.setVisibility(View.GONE);
-        photoplace100x100breakwarninglight.setVisibility(View.GONE);
-        breakwarninglightpicturelayoutframe.setVisibility(View.GONE);
+
 
         gauge_report_done_without_inspect.setVisibility(View.GONE);
         gauge_report_done_with_inspect.setVisibility(View.GONE);
@@ -1439,8 +1192,8 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
         gauge_describe_tempfix_text_view.setVisibility(View.GONE);
         gaugedescribedefectfill.setVisibility(View.GONE);
         gaugetempfixfill.setVisibility(View.GONE);
-        photoplace100x100gauge.setVisibility(View.GONE);
-        gaugepicturelayoutframe.setVisibility(View.GONE);
+
+
 
         tacho_report_done_without_inspect.setVisibility(View.GONE);
         tacho_report_done_with_inspect.setVisibility(View.GONE);
@@ -1448,8 +1201,8 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
         tacho_describe_tempfix_text_view.setVisibility(View.GONE);
         tachodescribedefectfill.setVisibility(View.GONE);
         tachotempfixfill.setVisibility(View.GONE);
-        photoplace100x100tacho.setVisibility(View.GONE);
-        tachopicturelayoutframe.setVisibility(View.GONE);
+
+
 
         airleaks_report_done_without_inspect.setVisibility(View.GONE);
         airleaks_report_done_with_inspect.setVisibility(View.GONE);
@@ -1457,8 +1210,8 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
         airleaks_describe_tempfix_text_view.setVisibility(View.GONE);
         airleaksdescribedefectfill.setVisibility(View.GONE);
         airleakstempfixfill.setVisibility(View.GONE);
-        photoplace100x100airleaks.setVisibility(View.GONE);
-        airleakspicturelayoutframe.setVisibility(View.GONE);
+
+
 
         steeringbreaking_report_done_without_inspect.setVisibility(View.GONE);
         steeringbreaking_report_done_with_inspect.setVisibility(View.GONE);
@@ -1466,8 +1219,8 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
         steeringbreaking_describe_tempfix_text_view.setVisibility(View.GONE);
         steeringbreakingdescribedefectfill.setVisibility(View.GONE);
         steeringbreakingtempfixfill.setVisibility(View.GONE);
-        photoplace100x100steeringbreaking.setVisibility(View.GONE);
-        steeringbreakingpicturelayoutframe.setVisibility(View.GONE);
+
+
 
         loadsecure_report_done_without_inspect.setVisibility(View.GONE);
         loadsecure_report_done_with_inspect.setVisibility(View.GONE);
@@ -1475,8 +1228,8 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
         loadsecure_describe_tempfix_text_view.setVisibility(View.GONE);
         loadsecuredescribedefectfill.setVisibility(View.GONE);
         loadsecuretempfixfill.setVisibility(View.GONE);
-        photoplace100x100loadsecure.setVisibility(View.GONE);
-        loadsecurepicturelayoutframe.setVisibility(View.GONE);
+
+
 
         tachospeedo_report_done_without_inspect.setVisibility(View.GONE);
         tachospeedo_report_done_with_inspect.setVisibility(View.GONE);
@@ -1484,8 +1237,8 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
         tachospeedo_describe_tempfix_text_view.setVisibility(View.GONE);
         tachospeedodescribedefectfill.setVisibility(View.GONE);
         tachospeedotempfixfill.setVisibility(View.GONE);
-        photoplace100x100tachospeedo.setVisibility(View.GONE);
-        tachospeedopicturelayoutframe.setVisibility(View.GONE);
+
+
 
         nowarninglights_report_done_without_inspect.setVisibility(View.GONE);
         nowarninglights_report_done_with_inspect.setVisibility(View.GONE);
@@ -1493,8 +1246,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
         nowarninglights_describe_tempfix_text_view.setVisibility(View.GONE);
         nowarninglightsdescribedefectfill.setVisibility(View.GONE);
         nowarninglightstempfixfill.setVisibility(View.GONE);
-        photoplace100x100nowarninglights.setVisibility(View.GONE);
-        nowarninglightspicturelayoutframe.setVisibility(View.GONE);
+
 
 
         //<<--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1802,28 +1554,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
         });
 
 //------------------------------------------------------------------------//------------------------------------------------------------------------Tax and Insurance------------------------------------------------
-        taxinsurancecheckgallary.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-                Intent intent2 = new Intent(Intent.ACTION_PICK);
-                intent2.setType("image/*");
-                taxinsurancepicturelayoutframe.setVisibility(View.GONE);
-                taxinsurancebackbuttonPressed ^=true;
-                startActivityForResult(intent2, GALLARY_INTENT);
-            }
-        });
-
-        taxinsurancetakephoto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                taxinsurancepicturelayoutframe.setVisibility(View.GONE);
-                taxinsurancebackbuttonPressed ^=true;
-                startActivityForResult(intent, CAMERA_REQUEST_CODE);
-            }
-        });
 
 
         taxinsurance_backbutton_defect.setOnClickListener(new View.OnClickListener() {
@@ -1832,10 +1563,8 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
                 prg.incrementProgressBy(-4);
                 taxinsurance_icon_image.setVisibility(View.VISIBLE);
-                taxinsurancepicturelayoutframe.setVisibility(View.GONE);
-                taxinsurancetakephoto.setVisibility(View.GONE);
-                taxinsurancecheckgallary.setVisibility(View.GONE);
-                photoplace100x100taxinsurance.setVisibility(View.GONE);
+
+
 
                 taxinsurance_inspect_button_defect.setVisibility(View.VISIBLE);
                 taxinsurance_inspect_button_tick_defect.setVisibility(View.VISIBLE);
@@ -1860,17 +1589,6 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                 prg.incrementProgressBy(4);
                 FragmentManager fm = getFragmentManager();
 
-                taxinsurancepicturelayoutframe.setVisibility(View.VISIBLE);
-
-                if (internet_connected == false) {
-                    taxinsurancetakephoto.setVisibility(View.GONE);
-                    taxinsurancecheckgallary.setVisibility(View.GONE);
-                    photoplace100x100taxinsurance.setVisibility(View.GONE);
-                } else {
-                    taxinsurancetakephoto.setVisibility(View.VISIBLE);
-                    taxinsurancecheckgallary.setVisibility(View.VISIBLE);
-                    photoplace100x100taxinsurance.setVisibility(View.VISIBLE);
-                }
 
                 if (taxinsurancebackbuttonPressed == false) {
 
@@ -1891,7 +1609,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
                     Popup_WAM dialogFragment = Popup_WAM.newInstance("taxinsurance_button_defect");
                     taxinsurance_icon_image.setVisibility(View.GONE);
-                    taxinsurancepicturelayoutframe.setVisibility(View.GONE);
+
                     taxinsurance_inspect_button_defect.setVisibility(View.GONE);
                     taxinsurance_inspect_button_tick_defect.setVisibility(View.GONE);
                     taxinsurance_backbutton_defect.setVisibility(View.VISIBLE);
@@ -1901,8 +1619,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                     taxinsurancedescribedefectfill.setVisibility(View.VISIBLE);
                     taxinsurance_describe_tempfix_text_view.setVisibility(View.VISIBLE);
                     taxinsurancetempfixfill.setVisibility(View.VISIBLE);
-                    taxinsurancetakephoto.setVisibility(View.GONE);
-                    taxinsurancecheckgallary.setVisibility(View.GONE);
+
 
                     dialogFragment.show(fm, "Sample Fragment");
                 }
@@ -1916,7 +1633,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                 prg.incrementProgressBy(4);
 
                 taxinsurance_icon_image.setVisibility(View.GONE);
-                taxinsurancepicturelayoutframe.setVisibility(View.GONE);
+
                 taxinsurance_inspect_button_defect.setVisibility(View.GONE);
                 taxinsurance_inspect_button_tick_defect.setVisibility(View.GONE);
                 taxinsurance_backbutton_defect.setVisibility(View.VISIBLE);
@@ -1933,28 +1650,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
         });
 //------------------------------------------------------------------------//------------------------------------------------------------------------REG PLATE------------------------------------------------
 
-        regplatecheckgallary.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-                Intent intent2 = new Intent(Intent.ACTION_PICK);
-                intent2.setType("image/*");
-                regplatepicturelayoutframe.setVisibility(View.GONE);
-                regplatebackbuttonPressed ^=true;
-                startActivityForResult(intent2, GALLARY_INTENT2);
-            }
-        });
-
-        regplatetakephoto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                regplatepicturelayoutframe.setVisibility(View.GONE);
-                regplatebackbuttonPressed ^=true;
-                startActivityForResult(intent, CAMERA_REQUEST_CODE2);
-            }
-        });
 
         regplate_backbutton_defect.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -1962,10 +1658,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
                 prg.incrementProgressBy(-4);
                 regplate_icon_image.setVisibility(View.VISIBLE);
-                regplatepicturelayoutframe.setVisibility(View.GONE);
-                regplatetakephoto.setVisibility(View.GONE);
-                regplatecheckgallary.setVisibility(View.GONE);
-                photoplace100x100regplate.setVisibility(View.GONE);
+
 
                 regplate_inspect_button_defect.setVisibility(View.VISIBLE);
                 regplate_inspect_button_tick_defect.setVisibility(View.VISIBLE);
@@ -1990,17 +1683,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                 prg.incrementProgressBy(4);
                 FragmentManager fm = getFragmentManager();
 
-                regplatepicturelayoutframe.setVisibility(View.VISIBLE);
 
-                if (internet_connected == false) {
-                    regplatetakephoto.setVisibility(View.GONE);
-                    regplatecheckgallary.setVisibility(View.GONE);
-                    photoplace100x100regplate.setVisibility(View.GONE);
-                } else {
-                    regplatetakephoto.setVisibility(View.VISIBLE);
-                    regplatecheckgallary.setVisibility(View.VISIBLE);
-                    photoplace100x100regplate.setVisibility(View.VISIBLE);
-                }
 
                 if (regplatebackbuttonPressed == false) {
 
@@ -2021,7 +1704,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
                     Popup_WAM dialogFragment = Popup_WAM.newInstance("regplate_button_defect");
                     regplate_icon_image.setVisibility(View.GONE);
-                    regplatepicturelayoutframe.setVisibility(View.GONE);
+
                     regplate_inspect_button_defect.setVisibility(View.GONE);
                     regplate_inspect_button_tick_defect.setVisibility(View.GONE);
                     regplate_backbutton_defect.setVisibility(View.VISIBLE);
@@ -2031,8 +1714,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                     regplatedescribedefectfill.setVisibility(View.VISIBLE);
                     regplate_describe_tempfix_text_view.setVisibility(View.VISIBLE);
                     regplatetempfixfill.setVisibility(View.VISIBLE);
-                    regplatetakephoto.setVisibility(View.GONE);
-                    regplatecheckgallary.setVisibility(View.GONE);
+
 
                     dialogFragment.show(fm, "Sample Fragment");
                 }
@@ -2046,7 +1728,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                 prg.incrementProgressBy(4);
 
                 regplate_icon_image.setVisibility(View.GONE);
-                regplatepicturelayoutframe.setVisibility(View.GONE);
+
                 regplate_inspect_button_defect.setVisibility(View.GONE);
                 regplate_inspect_button_tick_defect.setVisibility(View.GONE);
                 regplate_backbutton_defect.setVisibility(View.VISIBLE);
@@ -2064,28 +1746,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
         //------------------------------------------------------------------------//------------------------------------------------------------------------Air and Electrial------------------------------------------------
 
-        airelectrialcheckgallary.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-                Intent intent2 = new Intent(Intent.ACTION_PICK);
-                intent2.setType("image/*");
-                airelectrialpicturelayoutframe.setVisibility(View.GONE);
-                airelectrialbackbuttonPressed ^=true;
-                startActivityForResult(intent2, GALLARY_INTENT3);
-            }
-        });
-
-        airelectrialtakephoto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                airelectrialpicturelayoutframe.setVisibility(View.GONE);
-                airelectrialbackbuttonPressed ^=true;
-                startActivityForResult(intent, CAMERA_REQUEST_CODE3);
-            }
-        });
 
         airelectrial_backbutton_defect.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -2093,10 +1754,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
                 prg.incrementProgressBy(-4);
                 airelectrial_icon_image.setVisibility(View.VISIBLE);
-                airelectrialpicturelayoutframe.setVisibility(View.GONE);
-                airelectrialtakephoto.setVisibility(View.GONE);
-                airelectrialcheckgallary.setVisibility(View.GONE);
-                photoplace100x100airelectrial.setVisibility(View.GONE);
+
 
                 airelectrial_inspect_button_defect.setVisibility(View.VISIBLE);
                 airelectrial_inspect_button_tick_defect.setVisibility(View.VISIBLE);
@@ -2121,17 +1779,6 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                 prg.incrementProgressBy(4);
                 FragmentManager fm = getFragmentManager();
 
-                airelectrialpicturelayoutframe.setVisibility(View.VISIBLE);
-
-                if (internet_connected == false) {
-                    airelectrialtakephoto.setVisibility(View.GONE);
-                    airelectrialcheckgallary.setVisibility(View.GONE);
-                    photoplace100x100airelectrial.setVisibility(View.GONE);
-                } else {
-                    airelectrialtakephoto.setVisibility(View.VISIBLE);
-                    airelectrialcheckgallary.setVisibility(View.VISIBLE);
-                    photoplace100x100airelectrial.setVisibility(View.VISIBLE);
-                }
 
                 if (airelectrialbackbuttonPressed == false) {
 
@@ -2152,7 +1799,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
                     Popup_WAM dialogFragment = Popup_WAM.newInstance("airelectrial_button_defect");
                     airelectrial_icon_image.setVisibility(View.GONE);
-                    airelectrialpicturelayoutframe.setVisibility(View.GONE);
+
                     airelectrial_inspect_button_defect.setVisibility(View.GONE);
                     airelectrial_inspect_button_tick_defect.setVisibility(View.GONE);
                     airelectrial_backbutton_defect.setVisibility(View.VISIBLE);
@@ -2162,8 +1809,6 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                     airelectrialdescribedefectfill.setVisibility(View.VISIBLE);
                     airelectrial_describe_tempfix_text_view.setVisibility(View.VISIBLE);
                     airelectrialtempfixfill.setVisibility(View.VISIBLE);
-                    airelectrialtakephoto.setVisibility(View.GONE);
-                    airelectrialcheckgallary.setVisibility(View.GONE);
 
                     dialogFragment.show(fm, "Sample Fragment");
                 }
@@ -2177,7 +1822,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                 prg.incrementProgressBy(4);
 
                 airelectrial_icon_image.setVisibility(View.GONE);
-                airelectrialpicturelayoutframe.setVisibility(View.GONE);
+
                 airelectrial_inspect_button_defect.setVisibility(View.GONE);
                 airelectrial_inspect_button_tick_defect.setVisibility(View.GONE);
                 airelectrial_backbutton_defect.setVisibility(View.VISIBLE);
@@ -2195,28 +1840,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
 //------------------------------------------------------------------------//------------------------------------------------------------------------FLUID LEAKS------------------------------------------------
 
-        fluidleakscheckgallary.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-                Intent intent2 = new Intent(Intent.ACTION_PICK);
-                intent2.setType("image/*");
-                fluidleakspicturelayoutframe.setVisibility(View.GONE);
-                fluidleaksbackbuttonPressed ^=true;
-                startActivityForResult(intent2, GALLARY_INTENT4);
-            }
-        });
-
-        fluidleakstakephoto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                fluidleakspicturelayoutframe.setVisibility(View.GONE);
-                fluidleaksbackbuttonPressed ^=true;
-                startActivityForResult(intent, CAMERA_REQUEST_CODE4);
-            }
-        });
 
         fluidleaks_backbutton_defect.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -2224,10 +1848,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
                 prg.incrementProgressBy(-4);
                 fluidleaks_icon_image.setVisibility(View.VISIBLE);
-                fluidleakspicturelayoutframe.setVisibility(View.GONE);
-                fluidleakstakephoto.setVisibility(View.GONE);
-                fluidleakscheckgallary.setVisibility(View.GONE);
-                photoplace100x100fluidleaks.setVisibility(View.GONE);
+
 
                 fluidleaks_inspect_button_defect.setVisibility(View.VISIBLE);
                 fluidleaks_inspect_button_tick_defect.setVisibility(View.VISIBLE);
@@ -2252,17 +1873,6 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                 prg.incrementProgressBy(4);
                 FragmentManager fm = getFragmentManager();
 
-                fluidleakspicturelayoutframe.setVisibility(View.VISIBLE);
-
-                if (internet_connected == false) {
-                    fluidleakstakephoto.setVisibility(View.GONE);
-                    fluidleakscheckgallary.setVisibility(View.GONE);
-                    photoplace100x100fluidleaks.setVisibility(View.GONE);
-                } else {
-                    fluidleakstakephoto.setVisibility(View.VISIBLE);
-                    fluidleakscheckgallary.setVisibility(View.VISIBLE);
-                    photoplace100x100fluidleaks.setVisibility(View.VISIBLE);
-                }
 
                 if (fluidleaksbackbuttonPressed == false) {
 
@@ -2283,7 +1893,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
                     Popup_WAM dialogFragment = Popup_WAM.newInstance("fluidleaks_button_defect");
                     fluidleaks_icon_image.setVisibility(View.GONE);
-                    fluidleakspicturelayoutframe.setVisibility(View.GONE);
+
                     fluidleaks_inspect_button_defect.setVisibility(View.GONE);
                     fluidleaks_inspect_button_tick_defect.setVisibility(View.GONE);
                     fluidleaks_backbutton_defect.setVisibility(View.VISIBLE);
@@ -2293,8 +1903,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                     fluidleaksdescribedefectfill.setVisibility(View.VISIBLE);
                     fluidleaks_describe_tempfix_text_view.setVisibility(View.VISIBLE);
                     fluidleakstempfixfill.setVisibility(View.VISIBLE);
-                    fluidleakstakephoto.setVisibility(View.GONE);
-                    fluidleakscheckgallary.setVisibility(View.GONE);
+
 
                     dialogFragment.show(fm, "Sample Fragment");
                 }
@@ -2308,7 +1917,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                 prg.incrementProgressBy(4);
 
                 fluidleaks_icon_image.setVisibility(View.GONE);
-                fluidleakspicturelayoutframe.setVisibility(View.GONE);
+
                 fluidleaks_inspect_button_defect.setVisibility(View.GONE);
                 fluidleaks_inspect_button_tick_defect.setVisibility(View.GONE);
                 fluidleaks_backbutton_defect.setVisibility(View.VISIBLE);
@@ -2326,28 +1935,6 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
         //------------------------------------------------------------------------//------------------------------------------------------------------------ Air Suspension------------------------------------------------
 
-        airsuspensioncheckgallary.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent2 = new Intent(Intent.ACTION_PICK);
-                intent2.setType("image/*");
-                airsuspensionpicturelayoutframe.setVisibility(View.GONE);
-                airsuspensionbackbuttonPressed ^=true;
-                startActivityForResult(intent2, GALLARY_INTENT5);
-            }
-        });
-
-        airsuspensiontakephoto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                airsuspensionpicturelayoutframe.setVisibility(View.GONE);
-                airsuspensionbackbuttonPressed ^=true;
-                startActivityForResult(intent, CAMERA_REQUEST_CODE5);
-            }
-        });
 
         airsuspension_backbutton_defect.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -2355,10 +1942,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
                 prg.incrementProgressBy(-4);
                 airsuspension_icon_image.setVisibility(View.VISIBLE);
-                airsuspensionpicturelayoutframe.setVisibility(View.GONE);
-                airsuspensiontakephoto.setVisibility(View.GONE);
-                airsuspensioncheckgallary.setVisibility(View.GONE);
-                photoplace100x100airsuspension.setVisibility(View.GONE);
+
 
                 airsuspension_inspect_button_defect.setVisibility(View.VISIBLE);
                 airsuspension_inspect_button_tick_defect.setVisibility(View.VISIBLE);
@@ -2383,17 +1967,6 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                 prg.incrementProgressBy(4);
                 FragmentManager fm = getFragmentManager();
 
-                airsuspensionpicturelayoutframe.setVisibility(View.VISIBLE);
-
-                if (internet_connected == false) {
-                    airsuspensiontakephoto.setVisibility(View.GONE);
-                    airsuspensioncheckgallary.setVisibility(View.GONE);
-                    photoplace100x100airsuspension.setVisibility(View.GONE);
-                } else {
-                    airsuspensiontakephoto.setVisibility(View.VISIBLE);
-                    airsuspensioncheckgallary.setVisibility(View.VISIBLE);
-                    photoplace100x100airsuspension.setVisibility(View.VISIBLE);
-                }
 
                 if ( airsuspensionbackbuttonPressed == false) {
 
@@ -2414,7 +1987,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
                     Popup_WAM dialogFragment = Popup_WAM.newInstance("airsuspension_button_defect");
                     airsuspension_icon_image.setVisibility(View.GONE);
-                    airsuspensionpicturelayoutframe.setVisibility(View.GONE);
+
                     airsuspension_inspect_button_defect.setVisibility(View.GONE);
                     airsuspension_inspect_button_tick_defect.setVisibility(View.GONE);
                     airsuspension_backbutton_defect.setVisibility(View.VISIBLE);
@@ -2424,8 +1997,6 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                     airsuspensiondescribedefectfill.setVisibility(View.VISIBLE);
                     airsuspension_describe_tempfix_text_view.setVisibility(View.VISIBLE);
                     airsuspensiontempfixfill.setVisibility(View.VISIBLE);
-                    airsuspensiontakephoto.setVisibility(View.GONE);
-                    airsuspensioncheckgallary.setVisibility(View.GONE);
 
                     dialogFragment.show(fm, "Sample Fragment");
                 }
@@ -2439,7 +2010,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                 prg.incrementProgressBy(4);
 
                 airsuspension_icon_image.setVisibility(View.GONE);
-                airsuspensionpicturelayoutframe.setVisibility(View.GONE);
+
                 airsuspension_inspect_button_defect.setVisibility(View.GONE);
                 airsuspension_inspect_button_tick_defect.setVisibility(View.GONE);
                 airsuspension_backbutton_defect.setVisibility(View.VISIBLE);
@@ -2459,28 +2030,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
         //------------------------------------------------------------------------//------------------------------------------------------------------------Wheels and Tyres ------------------------------------------------
 
-        wheelsandtyrescheckgallary.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-                Intent intent2 = new Intent(Intent.ACTION_PICK);
-                intent2.setType("image/*");
-                wheelsandtyrespicturelayoutframe.setVisibility(View.GONE);
-                wheelsandtyresbackbuttonPressed ^=true;
-                startActivityForResult(intent2, GALLARY_INTENT6);
-            }
-        });
-
-        wheelsandtyrestakephoto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                wheelsandtyrespicturelayoutframe.setVisibility(View.GONE);
-                wheelsandtyresbackbuttonPressed ^=true;
-                startActivityForResult(intent, CAMERA_REQUEST_CODE6);
-            }
-        });
 
         wheelsandtyres_backbutton_defect.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -2488,10 +2038,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
                 prg.incrementProgressBy(-4);
                 wheelstyres_icon_image.setVisibility(View.VISIBLE);
-                wheelsandtyrespicturelayoutframe.setVisibility(View.GONE);
-                wheelsandtyrestakephoto.setVisibility(View.GONE);
-                wheelsandtyrescheckgallary.setVisibility(View.GONE);
-                photoplace100x100wheelsandtyres.setVisibility(View.GONE);
+
 
                 wheelstyres_inspect_button_defect.setVisibility(View.VISIBLE);
                 wheelstyres_inspect_button_tick_defect.setVisibility(View.VISIBLE);
@@ -2516,17 +2063,6 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                 prg.incrementProgressBy(4);
                 FragmentManager fm = getFragmentManager();
 
-                wheelsandtyrespicturelayoutframe.setVisibility(View.VISIBLE);
-
-                if (internet_connected == false) {
-                    wheelsandtyrestakephoto.setVisibility(View.GONE);
-                    wheelsandtyrescheckgallary.setVisibility(View.GONE);
-                    photoplace100x100wheelsandtyres.setVisibility(View.GONE);
-                } else {
-                    wheelsandtyrestakephoto.setVisibility(View.VISIBLE);
-                    wheelsandtyrescheckgallary.setVisibility(View.VISIBLE);
-                    photoplace100x100wheelsandtyres.setVisibility(View.VISIBLE);
-                }
 
                 if ( wheelsandtyresbackbuttonPressed == false) {
 
@@ -2547,7 +2083,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
                     Popup_WAM dialogFragment = Popup_WAM.newInstance("wheelstyres_button_defect");
                     wheelstyres_icon_image.setVisibility(View.GONE);
-                    wheelsandtyrespicturelayoutframe.setVisibility(View.GONE);
+
                     wheelstyres_inspect_button_defect.setVisibility(View.GONE);
                     wheelstyres_inspect_button_tick_defect.setVisibility(View.GONE);
                     wheelsandtyres_backbutton_defect.setVisibility(View.VISIBLE);
@@ -2557,8 +2093,6 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                     wheelstyresdescribedefectfill.setVisibility(View.VISIBLE);
                     wheelstyres_describe_tempfix_text_view.setVisibility(View.VISIBLE);
                     wheelstyrestempfixfill.setVisibility(View.VISIBLE);
-                    wheelsandtyrestakephoto.setVisibility(View.GONE);
-                    wheelsandtyrescheckgallary.setVisibility(View.GONE);
 
                     dialogFragment.show(fm, "Sample Fragment");
                 }
@@ -2572,7 +2106,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                 prg.incrementProgressBy(4);
 
                 wheelstyres_icon_image.setVisibility(View.GONE);
-                wheelsandtyrespicturelayoutframe.setVisibility(View.GONE);
+
                 wheelstyres_inspect_button_defect.setVisibility(View.GONE);
                 wheelstyres_inspect_button_tick_defect.setVisibility(View.GONE);
                 wheelsandtyres_backbutton_defect.setVisibility(View.VISIBLE);
@@ -2590,28 +2124,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
         //------------------------------------------------------------------------//------------------------------------------------------------------------Lights and Reflectors ------------------------------------------------
 
-        lightsreflectorscheckgallary.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-                Intent intent2 = new Intent(Intent.ACTION_PICK);
-                intent2.setType("image/*");
-                lightsreflectorspicturelayoutframe.setVisibility(View.GONE);
-                lightsreflectorsbackbuttonPressed ^=true;
-                startActivityForResult(intent2, GALLARY_INTENT7);
-            }
-        });
-
-        lightsreflectorstakephoto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                lightsreflectorspicturelayoutframe.setVisibility(View.GONE);
-                lightsreflectorsbackbuttonPressed ^=true;
-                startActivityForResult(intent, CAMERA_REQUEST_CODE7);
-            }
-        });
 
         lightsreflectors_backbutton_defect.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -2619,10 +2132,6 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
                 prg.incrementProgressBy(-4);
                 lightsreflectors_icon_image.setVisibility(View.VISIBLE);
-                lightsreflectorspicturelayoutframe.setVisibility(View.GONE);
-                lightsreflectorstakephoto.setVisibility(View.GONE);
-                lightsreflectorscheckgallary.setVisibility(View.GONE);
-                photoplace100x100lightsreflectors.setVisibility(View.GONE);
 
                 lightsreflectors_inspect_button_defect.setVisibility(View.VISIBLE);
                 lightsreflectors_inspect_button_tick_defect.setVisibility(View.VISIBLE);
@@ -2647,17 +2156,6 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                 prg.incrementProgressBy(4);
                 FragmentManager fm = getFragmentManager();
 
-                lightsreflectorspicturelayoutframe.setVisibility(View.VISIBLE);
-
-                if (internet_connected == false) {
-                    lightsreflectorstakephoto.setVisibility(View.GONE);
-                    lightsreflectorscheckgallary.setVisibility(View.GONE);
-                    photoplace100x100lightsreflectors.setVisibility(View.GONE);
-                } else {
-                    lightsreflectorstakephoto.setVisibility(View.VISIBLE);
-                    lightsreflectorscheckgallary.setVisibility(View.VISIBLE);
-                    photoplace100x100lightsreflectors.setVisibility(View.VISIBLE);
-                }
 
                 if ( lightsreflectorsbackbuttonPressed == false) {
 
@@ -2678,7 +2176,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
                     Popup_WAM dialogFragment = Popup_WAM.newInstance("lightsreflectors_button_defect");
                     lightsreflectors_icon_image.setVisibility(View.GONE);
-                    lightsreflectorspicturelayoutframe.setVisibility(View.GONE);
+
                     lightsreflectors_inspect_button_defect.setVisibility(View.GONE);
                     lightsreflectors_inspect_button_tick_defect.setVisibility(View.GONE);
                     lightsreflectors_backbutton_defect.setVisibility(View.VISIBLE);
@@ -2688,8 +2186,6 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                     lightsreflectorsdescribedefectfill.setVisibility(View.VISIBLE);
                     lightsreflectors_describe_tempfix_text_view.setVisibility(View.VISIBLE);
                     lightsreflectorstempfixfill.setVisibility(View.VISIBLE);
-                    lightsreflectorstakephoto.setVisibility(View.GONE);
-                    lightsreflectorscheckgallary.setVisibility(View.GONE);
 
                     dialogFragment.show(fm, "Sample Fragment");
                 }
@@ -2703,7 +2199,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                 prg.incrementProgressBy(4);
 
                 lightsreflectors_icon_image.setVisibility(View.GONE);
-                lightsreflectorspicturelayoutframe.setVisibility(View.GONE);
+
                 lightsreflectors_inspect_button_defect.setVisibility(View.GONE);
                 lightsreflectors_inspect_button_tick_defect.setVisibility(View.GONE);
                 lightsreflectors_backbutton_defect.setVisibility(View.VISIBLE);
@@ -2721,28 +2217,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
         //------------------------------------------------------------------------//------------------------------------------------------------------------Exhaust------------------------------------------------
 
-        exhaustcheckgallary.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-                Intent intent2 = new Intent(Intent.ACTION_PICK);
-                intent2.setType("image/*");
-                exhaustpicturelayoutframe.setVisibility(View.GONE);
-                exhaustbackbuttonPressed ^=true;
-                startActivityForResult(intent2, GALLARY_INTENT8);
-            }
-        });
-
-        exhausttakephoto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                exhaustpicturelayoutframe.setVisibility(View.GONE);
-                exhaustbackbuttonPressed ^=true;
-                startActivityForResult(intent, CAMERA_REQUEST_CODE8);
-            }
-        });
 
         exhaust_backbutton_defect.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -2750,10 +2225,6 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
                 prg.incrementProgressBy(-4);
                 exhaust_icon_image.setVisibility(View.VISIBLE);
-                exhaustpicturelayoutframe.setVisibility(View.GONE);
-                exhausttakephoto.setVisibility(View.GONE);
-                exhaustcheckgallary.setVisibility(View.GONE);
-                photoplace100x100exhaust.setVisibility(View.GONE);
 
                 exhaust_inspect_button_defect.setVisibility(View.VISIBLE);
                 exhaust_inspect_button_tick_defect.setVisibility(View.VISIBLE);
@@ -2778,17 +2249,6 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                 prg.incrementProgressBy(4);
                 FragmentManager fm = getFragmentManager();
 
-                exhaustpicturelayoutframe.setVisibility(View.VISIBLE);
-
-                if (internet_connected == false) {
-                    exhausttakephoto.setVisibility(View.GONE);
-                    exhaustcheckgallary.setVisibility(View.GONE);
-                    photoplace100x100exhaust.setVisibility(View.GONE);
-                } else {
-                    exhausttakephoto.setVisibility(View.VISIBLE);
-                    exhaustcheckgallary.setVisibility(View.VISIBLE);
-                    photoplace100x100exhaust.setVisibility(View.VISIBLE);
-                }
 
                 if ( exhaustbackbuttonPressed == false) {
 
@@ -2809,7 +2269,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
                     Popup_WAM dialogFragment = Popup_WAM.newInstance("exhaust_button_defect");
                     exhaust_icon_image.setVisibility(View.GONE);
-                    exhaustpicturelayoutframe.setVisibility(View.GONE);
+
                     exhaust_inspect_button_defect.setVisibility(View.GONE);
                     exhaust_inspect_button_tick_defect.setVisibility(View.GONE);
                     exhaust_backbutton_defect.setVisibility(View.VISIBLE);
@@ -2819,8 +2279,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                     exhaustdescribedefectfill.setVisibility(View.VISIBLE);
                     exhaust_describe_tempfix_text_view.setVisibility(View.VISIBLE);
                     exhausttempfixfill.setVisibility(View.VISIBLE);
-                    exhausttakephoto.setVisibility(View.GONE);
-                    exhaustcheckgallary.setVisibility(View.GONE);
+
 
                     dialogFragment.show(fm, "Sample Fragment");
                 }
@@ -2834,7 +2293,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                 prg.incrementProgressBy(4);
 
                 exhaust_icon_image.setVisibility(View.GONE);
-                exhaustpicturelayoutframe.setVisibility(View.GONE);
+
                 exhaust_inspect_button_defect.setVisibility(View.GONE);
                 exhaust_inspect_button_tick_defect.setVisibility(View.GONE);
                 exhaust_backbutton_defect.setVisibility(View.VISIBLE);
@@ -2853,28 +2312,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
         //------------------------------------------------------------------------//------------------------------------------------------------------------ Body Guards------------------------------------------------
 
-        bodyguardscheckgallary.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-                Intent intent2 = new Intent(Intent.ACTION_PICK);
-                intent2.setType("image/*");
-                bodyguardspicturelayoutframe.setVisibility(View.GONE);
-                bodyguardsbackbuttonPressed ^=true;
-                startActivityForResult(intent2, GALLARY_INTENT9);
-            }
-        });
-
-        bodyguardstakephoto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                bodyguardspicturelayoutframe.setVisibility(View.GONE);
-                bodyguardsbackbuttonPressed ^=true;
-                startActivityForResult(intent, CAMERA_REQUEST_CODE9);
-            }
-        });
 
         bodyguards_backbutton_defect.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -2882,10 +2320,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
                 prg.incrementProgressBy(-4);
                 bodyguards_icon_image.setVisibility(View.VISIBLE);
-                bodyguardspicturelayoutframe.setVisibility(View.GONE);
-                bodyguardstakephoto.setVisibility(View.GONE);
-                bodyguardscheckgallary.setVisibility(View.GONE);
-                photoplace100x100bodyguards.setVisibility(View.GONE);
+
 
                 bodyguards_inspect_button_defect.setVisibility(View.VISIBLE);
                 bodyguards_inspect_button_tick_defect.setVisibility(View.VISIBLE);
@@ -2910,18 +2345,6 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                 prg.incrementProgressBy(4);
                 FragmentManager fm = getFragmentManager();
 
-                bodyguardspicturelayoutframe.setVisibility(View.VISIBLE);
-
-                if (internet_connected == false) {
-                    bodyguardstakephoto.setVisibility(View.GONE);
-                    bodyguardscheckgallary.setVisibility(View.GONE);
-                    photoplace100x100bodyguards.setVisibility(View.GONE);
-                } else {
-                    bodyguardstakephoto.setVisibility(View.VISIBLE);
-                    bodyguardscheckgallary.setVisibility(View.VISIBLE);
-                    photoplace100x100bodyguards.setVisibility(View.VISIBLE);
-                }
-
                 if ( bodyguardsbackbuttonPressed == false) {
 
                     Popup_WAM dialogFragment = Popup_WAM.newInstance("bodyguards_button_defect");
@@ -2941,7 +2364,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
                     Popup_WAM dialogFragment = Popup_WAM.newInstance("bodyguards_button_defect");
                     bodyguards_icon_image.setVisibility(View.GONE);
-                    bodyguardspicturelayoutframe.setVisibility(View.GONE);
+
                     bodyguards_inspect_button_defect.setVisibility(View.GONE);
                     bodyguards_inspect_button_tick_defect.setVisibility(View.GONE);
                     bodyguards_backbutton_defect.setVisibility(View.VISIBLE);
@@ -2951,8 +2374,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                     bodyguardsdescribedefectfill.setVisibility(View.VISIBLE);
                     bodyguards_describe_tempfix_text_view.setVisibility(View.VISIBLE);
                     bodyguardstempfixfill.setVisibility(View.VISIBLE);
-                    bodyguardstakephoto.setVisibility(View.GONE);
-                    bodyguardscheckgallary.setVisibility(View.GONE);
+
 
                     dialogFragment.show(fm, "Sample Fragment");
                 }
@@ -2966,7 +2388,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                 prg.incrementProgressBy(4);
 
                 bodyguards_icon_image.setVisibility(View.GONE);
-                bodyguardspicturelayoutframe.setVisibility(View.GONE);
+
                 bodyguards_inspect_button_defect.setVisibility(View.GONE);
                 bodyguards_inspect_button_tick_defect.setVisibility(View.GONE);
                 bodyguards_backbutton_defect.setVisibility(View.VISIBLE);
@@ -2984,28 +2406,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
         //------------------------------------------------------------------------//------------------------------------------------------------------------ Landing Leg ------------------------------------------------
 
-        landinglegcheckgallary.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-                Intent intent2 = new Intent(Intent.ACTION_PICK);
-                intent2.setType("image/*");
-                landinglegpicturelayoutframe.setVisibility(View.GONE);
-                landinglegbackbuttonPressed ^=true;
-                startActivityForResult(intent2, GALLARY_INTENT10);
-            }
-        });
-
-        bodyguardstakephoto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                landinglegpicturelayoutframe.setVisibility(View.GONE);
-                landinglegbackbuttonPressed ^=true;
-                startActivityForResult(intent, CAMERA_REQUEST_CODE10);
-            }
-        });
 
         landingleg_backbutton_defect.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -3013,10 +2414,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
                 prg.incrementProgressBy(-4);
                 landingleg_icon_image.setVisibility(View.VISIBLE);
-                landinglegpicturelayoutframe.setVisibility(View.GONE);
-                landinglegtakephoto.setVisibility(View.GONE);
-                landinglegcheckgallary.setVisibility(View.GONE);
-                photoplace100x100landingleg.setVisibility(View.GONE);
+
 
                 landingleg_inspect_button_defect.setVisibility(View.VISIBLE);
                 landingleg_inspect_button_tick_defect.setVisibility(View.VISIBLE);
@@ -3041,17 +2439,6 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                 prg.incrementProgressBy(4);
                 FragmentManager fm = getFragmentManager();
 
-                landinglegpicturelayoutframe.setVisibility(View.VISIBLE);
-
-                if (internet_connected == false) {
-                    landinglegtakephoto.setVisibility(View.GONE);
-                    landinglegcheckgallary.setVisibility(View.GONE);
-                    photoplace100x100landingleg.setVisibility(View.GONE);
-                } else {
-                    landinglegtakephoto.setVisibility(View.VISIBLE);
-                    landinglegcheckgallary.setVisibility(View.VISIBLE);
-                    photoplace100x100landingleg.setVisibility(View.VISIBLE);
-                }
 
                 if ( landinglegbackbuttonPressed == false) {
 
@@ -3072,7 +2459,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
                     Popup_WAM dialogFragment = Popup_WAM.newInstance("landingleg_button_defect");
                     landingleg_icon_image.setVisibility(View.GONE);
-                    landinglegpicturelayoutframe.setVisibility(View.GONE);
+
                     landingleg_inspect_button_defect.setVisibility(View.GONE);
                     landingleg_inspect_button_tick_defect.setVisibility(View.GONE);
                     landingleg_backbutton_defect.setVisibility(View.VISIBLE);
@@ -3082,8 +2469,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                     landinglegdescribedefectfill.setVisibility(View.VISIBLE);
                     landingleg_describe_tempfix_text_view.setVisibility(View.VISIBLE);
                     landinglegtempfixfill.setVisibility(View.VISIBLE);
-                    landinglegtakephoto.setVisibility(View.GONE);
-                    landinglegcheckgallary.setVisibility(View.GONE);
+
 
                     dialogFragment.show(fm, "Sample Fragment");
                 }
@@ -3097,7 +2483,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                 prg.incrementProgressBy(4);
 
                 landingleg_icon_image.setVisibility(View.GONE);
-                landinglegpicturelayoutframe.setVisibility(View.GONE);
+
                 landingleg_inspect_button_defect.setVisibility(View.GONE);
                 landingleg_inspect_button_tick_defect.setVisibility(View.GONE);
                 landingleg_backbutton_defect.setVisibility(View.VISIBLE);
@@ -3115,28 +2501,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
         //------------------------------------------------------------------------//------------------------------------------------------------------------Spare Tow ------------------------------------------------
 
-        sparetowcheckgallary.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-                Intent intent2 = new Intent(Intent.ACTION_PICK);
-                intent2.setType("image/*");
-                sparetowpicturelayoutframe.setVisibility(View.GONE);
-                sparetowbackbuttonPressed ^=true;
-                startActivityForResult(intent2, GALLARY_INTENT11);
-            }
-        });
-
-        sparetowtakephoto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                sparetowpicturelayoutframe.setVisibility(View.GONE);
-                sparetowbackbuttonPressed ^=true;
-                startActivityForResult(intent, CAMERA_REQUEST_CODE11);
-            }
-        });
 
         sparetow_backbutton_defect.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -3144,10 +2509,6 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
                 prg.incrementProgressBy(-4);
                 sparetow_icon_image.setVisibility(View.VISIBLE);
-                sparetowpicturelayoutframe.setVisibility(View.GONE);
-                sparetowtakephoto.setVisibility(View.GONE);
-                sparetowcheckgallary.setVisibility(View.GONE);
-                photoplace100x100sparetow.setVisibility(View.GONE);
 
                 sparetow_inspect_button_defect.setVisibility(View.VISIBLE);
                 sparetow_inspect_button_tick_defect.setVisibility(View.VISIBLE);
@@ -3172,18 +2533,6 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                 prg.incrementProgressBy(4);
                 FragmentManager fm = getFragmentManager();
 
-                sparetowpicturelayoutframe.setVisibility(View.VISIBLE);
-
-                if (internet_connected == false) {
-                    sparetowtakephoto.setVisibility(View.GONE);
-                    sparetowcheckgallary.setVisibility(View.GONE);
-                    photoplace100x100sparetow.setVisibility(View.GONE);
-                } else {
-                    sparetowtakephoto.setVisibility(View.VISIBLE);
-                    sparetowcheckgallary.setVisibility(View.VISIBLE);
-                    photoplace100x100sparetow.setVisibility(View.VISIBLE);
-                }
-
                 if ( sparetowbackbuttonPressed == false) {
 
                     Popup_WAM dialogFragment = Popup_WAM.newInstance("sparetow_button_defect");
@@ -3203,7 +2552,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
                     Popup_WAM dialogFragment = Popup_WAM.newInstance("sparetow_button_defect");
                     sparetow_icon_image.setVisibility(View.GONE);
-                    sparetowpicturelayoutframe.setVisibility(View.GONE);
+
                     sparetow_inspect_button_defect.setVisibility(View.GONE);
                     sparetow_inspect_button_tick_defect.setVisibility(View.GONE);
                     sparetow_backbutton_defect.setVisibility(View.VISIBLE);
@@ -3213,8 +2562,6 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                     sparetowdescribedefectfill.setVisibility(View.VISIBLE);
                     sparetow_describe_tempfix_text_view.setVisibility(View.VISIBLE);
                     sparetowtempfixfill.setVisibility(View.VISIBLE);
-                    sparetowtakephoto.setVisibility(View.GONE);
-                    sparetowcheckgallary.setVisibility(View.GONE);
 
                     dialogFragment.show(fm, "Sample Fragment");
                 }
@@ -3228,7 +2575,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                 prg.incrementProgressBy(4);
 
                 sparetow_icon_image.setVisibility(View.GONE);
-                sparetowpicturelayoutframe.setVisibility(View.GONE);
+
                 sparetow_inspect_button_defect.setVisibility(View.GONE);
                 sparetow_inspect_button_tick_defect.setVisibility(View.GONE);
                 sparetow_backbutton_defect.setVisibility(View.VISIBLE);
@@ -3248,28 +2595,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
         //------------------------------------------------------------------------//------------------------------------------------------------------------Trailer Brake------------------------------------------------
 
-        trailerbrakecheckgallary.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-                Intent intent2 = new Intent(Intent.ACTION_PICK);
-                intent2.setType("image/*");
-                trailerbrakepicturelayoutframe.setVisibility(View.GONE);
-                trailerbrakebackbuttonPressed ^=true;
-                startActivityForResult(intent2, GALLARY_INTENT12);
-            }
-        });
-
-        sparetowtakephoto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                trailerbrakepicturelayoutframe.setVisibility(View.GONE);
-                trailerbrakebackbuttonPressed ^=true;
-                startActivityForResult(intent, CAMERA_REQUEST_CODE12);
-            }
-        });
 
         trailerbrake_backbutton_defect.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -3277,10 +2603,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
                 prg.incrementProgressBy(-4);
                 trailerbrake_icon_image.setVisibility(View.VISIBLE);
-                trailerbrakepicturelayoutframe.setVisibility(View.GONE);
-                trailerbraketakephoto.setVisibility(View.GONE);
-                trailerbrakecheckgallary.setVisibility(View.GONE);
-                photoplace100x100trailerbrake.setVisibility(View.GONE);
+
 
                 trailerbrake_inspect_button_defect.setVisibility(View.VISIBLE);
                 trailerbrake_inspect_button_tick_defect.setVisibility(View.VISIBLE);
@@ -3305,17 +2628,6 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                 prg.incrementProgressBy(4);
                 FragmentManager fm = getFragmentManager();
 
-                trailerbrakepicturelayoutframe.setVisibility(View.VISIBLE);
-
-                if (internet_connected == false) {
-                    trailerbraketakephoto.setVisibility(View.GONE);
-                    trailerbrakecheckgallary.setVisibility(View.GONE);
-                    photoplace100x100trailerbrake.setVisibility(View.GONE);
-                } else {
-                    trailerbraketakephoto.setVisibility(View.VISIBLE);
-                    trailerbrakecheckgallary.setVisibility(View.VISIBLE);
-                    photoplace100x100trailerbrake.setVisibility(View.VISIBLE);
-                }
 
                 if ( trailerbrakebackbuttonPressed == false) {
 
@@ -3336,7 +2648,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
                     Popup_WAM dialogFragment = Popup_WAM.newInstance("trailerbrake_button_defect");
                     trailerbrake_icon_image.setVisibility(View.GONE);
-                    trailerbrakepicturelayoutframe.setVisibility(View.GONE);
+
                     trailerbrake_inspect_button_defect.setVisibility(View.GONE);
                     trailerbrake_inspect_button_tick_defect.setVisibility(View.GONE);
                     trailerbrake_backbutton_defect.setVisibility(View.VISIBLE);
@@ -3346,8 +2658,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                     trailerbrakedescribedefectfill.setVisibility(View.VISIBLE);
                     trailerbrake_describe_tempfix_text_view.setVisibility(View.VISIBLE);
                     trailerbraketempfixfill.setVisibility(View.VISIBLE);
-                    trailerbraketakephoto.setVisibility(View.GONE);
-                    trailerbrakecheckgallary.setVisibility(View.GONE);
+
 
                     dialogFragment.show(fm, "Sample Fragment");
                 }
@@ -3361,7 +2672,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                 prg.incrementProgressBy(4);
 
                 trailerbrake_icon_image.setVisibility(View.GONE);
-                trailerbrakepicturelayoutframe.setVisibility(View.GONE);
+
                 trailerbrake_inspect_button_defect.setVisibility(View.GONE);
                 trailerbrake_inspect_button_tick_defect.setVisibility(View.GONE);
                 trailerbrake_backbutton_defect.setVisibility(View.VISIBLE);
@@ -3379,28 +2690,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
         //------------------------------------------------------------------------//------------------------------------------------------------------------     Windows and Mirrors       ------------------------------------------------
 
-        windowsandmirrorscheckgallary.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-                Intent intent2 = new Intent(Intent.ACTION_PICK);
-                intent2.setType("image/*");
-                windowsandmirrorspicturelayoutframe.setVisibility(View.GONE);
-                windowsandmirrorsbackbuttonPressed ^=true;
-                startActivityForResult(intent2, GALLARY_INTENT13);
-            }
-        });
-
-        windowsandmirrorstakephoto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                windowsandmirrorspicturelayoutframe.setVisibility(View.GONE);
-                windowsandmirrorsbackbuttonPressed ^=true;
-                startActivityForResult(intent, CAMERA_REQUEST_CODE13);
-            }
-        });
 
         windowsandmirrors_backbutton_defect.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -3408,10 +2698,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
                 prg.incrementProgressBy(-4);
                 windowsandmirrors_icon_image.setVisibility(View.VISIBLE);
-                windowsandmirrorspicturelayoutframe.setVisibility(View.GONE);
-                windowsandmirrorstakephoto.setVisibility(View.GONE);
-                windowsandmirrorscheckgallary.setVisibility(View.GONE);
-                photoplace100x100winmir.setVisibility(View.GONE);
+
 
                 windowsandmirrors_inspect_button_defect.setVisibility(View.VISIBLE);
                 windowsandmirrors_inspect_button_tick_defect.setVisibility(View.VISIBLE);
@@ -3436,17 +2723,6 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                 prg.incrementProgressBy(4);
                 FragmentManager fm = getFragmentManager();
 
-                windowsandmirrorspicturelayoutframe.setVisibility(View.VISIBLE);
-
-                if (internet_connected == false) {
-                    windowsandmirrorstakephoto.setVisibility(View.GONE);
-                    windowsandmirrorscheckgallary.setVisibility(View.GONE);
-                    photoplace100x100winmir.setVisibility(View.GONE);
-                } else {
-                    windowsandmirrorstakephoto.setVisibility(View.VISIBLE);
-                    windowsandmirrorscheckgallary.setVisibility(View.VISIBLE);
-                    photoplace100x100winmir.setVisibility(View.VISIBLE);
-                }
 
                 if ( windowsandmirrorsbackbuttonPressed == false) {
 
@@ -3467,7 +2743,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
                     Popup_WAM dialogFragment = Popup_WAM.newInstance("windowsandmirrors_inspect_button_defect");
                     windowsandmirrors_icon_image.setVisibility(View.GONE);
-                    windowsandmirrorspicturelayoutframe.setVisibility(View.GONE);
+
                     windowsandmirrors_inspect_button_defect.setVisibility(View.GONE);
                     windowsandmirrors_inspect_button_tick_defect.setVisibility(View.GONE);
                     windowsandmirrors_backbutton_defect.setVisibility(View.VISIBLE);
@@ -3477,8 +2753,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                     winmirdescribedefectfill.setVisibility(View.VISIBLE);
                     windows_and_mirrors_describe_tempfix_text_view.setVisibility(View.VISIBLE);
                     winmirtempfixfill.setVisibility(View.VISIBLE);
-                    windowsandmirrorstakephoto.setVisibility(View.GONE);
-                    windowsandmirrorscheckgallary.setVisibility(View.GONE);
+
 
                     dialogFragment.show(fm, "Sample Fragment");
                 }
@@ -3492,7 +2767,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                 prg.incrementProgressBy(4);
 
                 windowsandmirrors_icon_image.setVisibility(View.GONE);
-                windowsandmirrorspicturelayoutframe.setVisibility(View.GONE);
+
                 windowsandmirrors_inspect_button_defect.setVisibility(View.GONE);
                 windowsandmirrors_inspect_button_tick_defect.setVisibility(View.GONE);
                 windowsandmirrors_backbutton_defect.setVisibility(View.VISIBLE);
@@ -3511,28 +2786,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
         //------------------------------------------------------------------------//------------------------------------------------------------------------       Seat Belt     ------------------------------------------------
 
-        seatbeltcheckgallary.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-                Intent intent2 = new Intent(Intent.ACTION_PICK);
-                intent2.setType("image/*");
-                seatbeltpicturelayoutframe.setVisibility(View.GONE);
-                seatbeltbackbuttonPressed ^=true;
-                startActivityForResult(intent2, GALLARY_INTENT14);
-            }
-        });
-
-        seatbelttakephoto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                seatbeltpicturelayoutframe.setVisibility(View.GONE);
-                seatbeltbackbuttonPressed ^=true;
-                startActivityForResult(intent, CAMERA_REQUEST_CODE14);
-            }
-        });
 
         seatbelt_backbutton_defect.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -3540,10 +2794,6 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
                 prg.incrementProgressBy(-4);
                 seatbelt_icon_image.setVisibility(View.VISIBLE);
-                seatbeltpicturelayoutframe.setVisibility(View.GONE);
-                seatbelttakephoto.setVisibility(View.GONE);
-                seatbeltcheckgallary.setVisibility(View.GONE);
-                photoplace100x100seatbelts.setVisibility(View.GONE);
 
                 seatbelt_inspect_button_defect.setVisibility(View.VISIBLE);
                 seatbelt_inspect_button_tick_defect.setVisibility(View.VISIBLE);
@@ -3568,18 +2818,6 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                 prg.incrementProgressBy(4);
                 FragmentManager fm = getFragmentManager();
 
-                seatbeltpicturelayoutframe.setVisibility(View.VISIBLE);
-
-                if (internet_connected == false) {
-                    seatbelttakephoto.setVisibility(View.GONE);
-                    seatbeltcheckgallary.setVisibility(View.GONE);
-                    photoplace100x100seatbelts.setVisibility(View.GONE);
-                } else {
-                    seatbelttakephoto.setVisibility(View.VISIBLE);
-                    seatbeltcheckgallary.setVisibility(View.VISIBLE);
-                    photoplace100x100seatbelts.setVisibility(View.VISIBLE);
-                }
-
                 if ( seatbeltbackbuttonPressed == false) {
 
                     Popup_WAM dialogFragment = Popup_WAM.newInstance("seatbelt_inspect_button_defect");
@@ -3599,7 +2837,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
                     Popup_WAM dialogFragment = Popup_WAM.newInstance("seatbelt_inspect_button_defect");
                     seatbelt_icon_image.setVisibility(View.GONE);
-                    seatbeltpicturelayoutframe.setVisibility(View.GONE);
+
                     seatbelt_inspect_button_defect.setVisibility(View.GONE);
                     seatbelt_inspect_button_tick_defect.setVisibility(View.GONE);
                     seatbelt_backbutton_defect.setVisibility(View.VISIBLE);
@@ -3609,8 +2847,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                     seatbeltdescribedefectfill.setVisibility(View.VISIBLE);
                     seatbelt_describe_tempfix_text_view.setVisibility(View.VISIBLE);
                     seatbelttempfixfill.setVisibility(View.VISIBLE);
-                    seatbelttakephoto.setVisibility(View.GONE);
-                    seatbeltcheckgallary.setVisibility(View.GONE);
+
 
                     dialogFragment.show(fm, "Sample Fragment");
                 }
@@ -3624,7 +2861,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                 prg.incrementProgressBy(4);
 
                 seatbelt_icon_image.setVisibility(View.GONE);
-                seatbeltpicturelayoutframe.setVisibility(View.GONE);
+
                 seatbelt_inspect_button_defect.setVisibility(View.GONE);
                 seatbelt_inspect_button_tick_defect.setVisibility(View.GONE);
                 seatbelt_backbutton_defect.setVisibility(View.VISIBLE);
@@ -3642,28 +2879,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
         //------------------------------------------------------------------------//------------------------------------------------------------------------ Washer and Wiper ------------------------------------------------
 
-        washerandwipercheckgallary.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-                Intent intent2 = new Intent(Intent.ACTION_PICK);
-                intent2.setType("image/*");
-                washerandwiperpicturelayoutframe.setVisibility(View.GONE);
-                washerandwiperbackbuttonPressed ^=true;
-                startActivityForResult(intent2, GALLARY_INTENT15);
-            }
-        });
-
-        washerandwipertakephoto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                washerandwiperpicturelayoutframe.setVisibility(View.GONE);
-                washerandwiperbackbuttonPressed ^=true;
-                startActivityForResult(intent, CAMERA_REQUEST_CODE15);
-            }
-        });
 
         washerandwiper_backbutton_defect.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -3671,10 +2887,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
                 prg.incrementProgressBy(-4);
                 washerandwiper_icon_image.setVisibility(View.VISIBLE);
-                washerandwiperpicturelayoutframe.setVisibility(View.GONE);
-                washerandwipertakephoto.setVisibility(View.GONE);
-                washerandwipercheckgallary.setVisibility(View.GONE);
-                photoplace100x100washerandwiper.setVisibility(View.GONE);
+
 
                 washerandwiper_inspect_button_defect.setVisibility(View.VISIBLE);
                 washerandwiper_inspect_button_tick_defect.setVisibility(View.VISIBLE);
@@ -3699,17 +2912,6 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                 prg.incrementProgressBy(4);
                 FragmentManager fm = getFragmentManager();
 
-                washerandwiperpicturelayoutframe.setVisibility(View.VISIBLE);
-
-                if (internet_connected == false) {
-                    washerandwipertakephoto.setVisibility(View.GONE);
-                    washerandwipercheckgallary.setVisibility(View.GONE);
-                    photoplace100x100washerandwiper.setVisibility(View.GONE);
-                } else {
-                    washerandwipertakephoto.setVisibility(View.VISIBLE);
-                    washerandwipercheckgallary.setVisibility(View.VISIBLE);
-                    photoplace100x100washerandwiper.setVisibility(View.VISIBLE);
-                }
 
                 if ( washerandwiperbackbuttonPressed == false) {
 
@@ -3730,7 +2932,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
                     Popup_WAM dialogFragment = Popup_WAM.newInstance("washerandwiper_inspect_button_defect");
                     washerandwiper_icon_image.setVisibility(View.GONE);
-                    washerandwiperpicturelayoutframe.setVisibility(View.GONE);
+
                     washerandwiper_inspect_button_defect.setVisibility(View.GONE);
                     washerandwiper_inspect_button_tick_defect.setVisibility(View.GONE);
                     washerandwiper_backbutton_defect.setVisibility(View.VISIBLE);
@@ -3740,8 +2942,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                     washerandwiperdescribedefectfill.setVisibility(View.VISIBLE);
                     washerandwiper_describe_tempfix_text_view.setVisibility(View.VISIBLE);
                     washerandwipertempfixfill.setVisibility(View.VISIBLE);
-                    washerandwipertakephoto.setVisibility(View.GONE);
-                    washerandwipercheckgallary.setVisibility(View.GONE);
+
 
                     dialogFragment.show(fm, "Sample Fragment");
                 }
@@ -3755,7 +2956,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                 prg.incrementProgressBy(4);
 
                 washerandwiper_icon_image.setVisibility(View.GONE);
-                washerandwiperpicturelayoutframe.setVisibility(View.GONE);
+
                 washerandwiper_inspect_button_defect.setVisibility(View.GONE);
                 washerandwiper_inspect_button_tick_defect.setVisibility(View.GONE);
                 washerandwiper_backbutton_defect.setVisibility(View.VISIBLE);
@@ -3773,28 +2974,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
         //------------------------------------------------------------------------//------------------------------------------------------------------------ Horn  ------------------------------------------------
 
-        horncheckgallary.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-                Intent intent2 = new Intent(Intent.ACTION_PICK);
-                intent2.setType("image/*");
-                hornpicturelayoutframe.setVisibility(View.GONE);
-                hornbackbuttonPressed ^=true;
-                startActivityForResult(intent2, GALLARY_INTENT16);
-            }
-        });
-
-        horntakephoto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                hornpicturelayoutframe.setVisibility(View.GONE);
-                hornbackbuttonPressed ^=true;
-                startActivityForResult(intent, CAMERA_REQUEST_CODE16);
-            }
-        });
 
         horn_backbutton_defect.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -3802,10 +2982,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
                 prg.incrementProgressBy(-4);
                 horn_icon_image.setVisibility(View.VISIBLE);
-                hornpicturelayoutframe.setVisibility(View.GONE);
-                horntakephoto.setVisibility(View.GONE);
-                horncheckgallary.setVisibility(View.GONE);
-                photoplace100x100horn.setVisibility(View.GONE);
+
 
                 horn_inspect_button_defect.setVisibility(View.VISIBLE);
                 horn_inspect_button_tick_defect.setVisibility(View.VISIBLE);
@@ -3830,18 +3007,6 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                 prg.incrementProgressBy(4);
                 FragmentManager fm = getFragmentManager();
 
-                hornpicturelayoutframe.setVisibility(View.VISIBLE);
-
-                if (internet_connected == false) {
-                    horntakephoto.setVisibility(View.GONE);
-                    horncheckgallary.setVisibility(View.GONE);
-                    photoplace100x100horn.setVisibility(View.GONE);
-                } else {
-                    horntakephoto.setVisibility(View.VISIBLE);
-                    horncheckgallary.setVisibility(View.VISIBLE);
-                    photoplace100x100horn.setVisibility(View.VISIBLE);
-                }
-
                 if ( hornbackbuttonPressed == false) {
 
                     Popup_WAM dialogFragment = Popup_WAM.newInstance("horn_inspect_button_defect");
@@ -3861,7 +3026,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
                     Popup_WAM dialogFragment = Popup_WAM.newInstance("horn_inspect_button_defect");
                     horn_icon_image.setVisibility(View.GONE);
-                    hornpicturelayoutframe.setVisibility(View.GONE);
+
                     horn_inspect_button_defect.setVisibility(View.GONE);
                     horn_inspect_button_tick_defect.setVisibility(View.GONE);
                     horn_backbutton_defect.setVisibility(View.VISIBLE);
@@ -3871,8 +3036,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                     horndescribedefectfill.setVisibility(View.VISIBLE);
                     horn_describe_tempfix_text_view.setVisibility(View.VISIBLE);
                     horntempfixfill.setVisibility(View.VISIBLE);
-                    horntakephoto.setVisibility(View.GONE);
-                    horncheckgallary.setVisibility(View.GONE);
+
 
                     dialogFragment.show(fm, "Sample Fragment");
                 }
@@ -3886,7 +3050,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                 prg.incrementProgressBy(4);
 
                 horn_icon_image.setVisibility(View.GONE);
-                hornpicturelayoutframe.setVisibility(View.GONE);
+
                 horn_inspect_button_defect.setVisibility(View.GONE);
                 horn_inspect_button_tick_defect.setVisibility(View.GONE);
                 horn_backbutton_defect.setVisibility(View.VISIBLE);
@@ -3904,28 +3068,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
         //------------------------------------------------------------------------//------------------------------------------------------------------------      Break warning light      ------------------------------------------------
 
-        breakwarninglightcheckgallary.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-                Intent intent2 = new Intent(Intent.ACTION_PICK);
-                intent2.setType("image/*");
-                breakwarninglightpicturelayoutframe.setVisibility(View.GONE);
-                breakwarninglightbackbuttonPressed ^=true;
-                startActivityForResult(intent2, GALLARY_INTENT17);
-            }
-        });
-
-        breakwarninglighttakephoto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                breakwarninglightpicturelayoutframe.setVisibility(View.GONE);
-                breakwarninglightbackbuttonPressed ^=true;
-                startActivityForResult(intent, CAMERA_REQUEST_CODE17);
-            }
-        });
 
         breakwarninglight_backbutton_defect.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -3933,10 +3076,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
                 prg.incrementProgressBy(-4);
                 breakwarninglight_icon_image.setVisibility(View.VISIBLE);
-                breakwarninglightpicturelayoutframe.setVisibility(View.GONE);
-                breakwarninglighttakephoto.setVisibility(View.GONE);
-                breakwarninglightcheckgallary.setVisibility(View.GONE);
-                photoplace100x100breakwarninglight.setVisibility(View.GONE);
+
 
                 breakwarninglight_inspect_button_defect.setVisibility(View.VISIBLE);
                 breakwarninglight_inspect_button_tick_defect.setVisibility(View.VISIBLE);
@@ -3961,18 +3101,6 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                 prg.incrementProgressBy(4);
                 FragmentManager fm = getFragmentManager();
 
-                breakwarninglightpicturelayoutframe.setVisibility(View.VISIBLE);
-
-                if (internet_connected == false) {
-                    breakwarninglighttakephoto.setVisibility(View.GONE);
-                    breakwarninglightcheckgallary.setVisibility(View.GONE);
-                    photoplace100x100breakwarninglight.setVisibility(View.GONE);
-                } else {
-                    breakwarninglighttakephoto.setVisibility(View.VISIBLE);
-                    breakwarninglightcheckgallary.setVisibility(View.VISIBLE);
-                    photoplace100x100breakwarninglight.setVisibility(View.VISIBLE);
-                }
-
                 if ( hornbackbuttonPressed == false) {
 
                     Popup_WAM dialogFragment = Popup_WAM.newInstance("breakwarninglight_inspect_button_defect");
@@ -3992,7 +3120,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
                     Popup_WAM dialogFragment = Popup_WAM.newInstance("breakwarninglight_inspect_button_defect");
                     breakwarninglight_icon_image.setVisibility(View.GONE);
-                    breakwarninglightpicturelayoutframe.setVisibility(View.GONE);
+
                     breakwarninglight_inspect_button_defect.setVisibility(View.GONE);
                     breakwarninglight_inspect_button_tick_defect.setVisibility(View.GONE);
                     breakwarninglight_backbutton_defect.setVisibility(View.VISIBLE);
@@ -4002,8 +3130,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                     breakwarninglightdescribedefectfill.setVisibility(View.VISIBLE);
                     breakwarninglight_describe_tempfix_text_view.setVisibility(View.VISIBLE);
                     breakwarninglighttempfixfill.setVisibility(View.VISIBLE);
-                    breakwarninglighttakephoto.setVisibility(View.GONE);
-                    breakwarninglightcheckgallary.setVisibility(View.GONE);
+
 
                     dialogFragment.show(fm, "Sample Fragment");
                 }
@@ -4017,7 +3144,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                 prg.incrementProgressBy(4);
 
                 breakwarninglight_icon_image.setVisibility(View.GONE);
-                breakwarninglightpicturelayoutframe.setVisibility(View.GONE);
+
                 breakwarninglight_inspect_button_defect.setVisibility(View.GONE);
                 breakwarninglight_inspect_button_tick_defect.setVisibility(View.GONE);
                 breakwarninglight_backbutton_defect.setVisibility(View.VISIBLE);
@@ -4035,28 +3162,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
         //------------------------------------------------------------------------//------------------------------------------------------------------------ Gauge ------------------------------------------------
 
-        gaugecheckgallary.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-                Intent intent2 = new Intent(Intent.ACTION_PICK);
-                intent2.setType("image/*");
-                gaugepicturelayoutframe.setVisibility(View.GONE);
-                gaugebackbuttonPressed ^=true;
-                startActivityForResult(intent2, GALLARY_INTENT18);
-            }
-        });
-
-        gaugetakephoto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                gaugepicturelayoutframe.setVisibility(View.GONE);
-                gaugebackbuttonPressed ^=true;
-                startActivityForResult(intent, CAMERA_REQUEST_CODE18);
-            }
-        });
 
         gauge_backbutton_defect.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -4064,10 +3170,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
                 prg.incrementProgressBy(-4);
                 gauge_icon_image.setVisibility(View.VISIBLE);
-                gaugepicturelayoutframe.setVisibility(View.GONE);
-                gaugetakephoto.setVisibility(View.GONE);
-                gaugecheckgallary.setVisibility(View.GONE);
-                photoplace100x100gauge.setVisibility(View.GONE);
+
 
                 gauge_inspect_button_defect.setVisibility(View.VISIBLE);
                 gauge_inspect_button_tick_defect.setVisibility(View.VISIBLE);
@@ -4092,18 +3195,6 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                 prg.incrementProgressBy(4);
                 FragmentManager fm = getFragmentManager();
 
-                gaugepicturelayoutframe.setVisibility(View.VISIBLE);
-
-                if (internet_connected == false) {
-                    gaugetakephoto.setVisibility(View.GONE);
-                    gaugecheckgallary.setVisibility(View.GONE);
-                    photoplace100x100gauge.setVisibility(View.GONE);
-                } else {
-                    gaugetakephoto.setVisibility(View.VISIBLE);
-                    gaugecheckgallary.setVisibility(View.VISIBLE);
-                    photoplace100x100gauge.setVisibility(View.VISIBLE);
-                }
-
                 if ( hornbackbuttonPressed == false) {
 
                     Popup_WAM dialogFragment = Popup_WAM.newInstance("gauge_inspect_button_defect");
@@ -4123,7 +3214,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
                     Popup_WAM dialogFragment = Popup_WAM.newInstance("gauge_inspect_button_defect");
                     gauge_icon_image.setVisibility(View.GONE);
-                    gaugepicturelayoutframe.setVisibility(View.GONE);
+
                     gauge_inspect_button_defect.setVisibility(View.GONE);
                     gauge_inspect_button_tick_defect.setVisibility(View.GONE);
                     gauge_backbutton_defect.setVisibility(View.VISIBLE);
@@ -4133,8 +3224,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                     gaugedescribedefectfill.setVisibility(View.VISIBLE);
                     gauge_describe_tempfix_text_view.setVisibility(View.VISIBLE);
                     gaugetempfixfill.setVisibility(View.VISIBLE);
-                    gaugetakephoto.setVisibility(View.GONE);
-                    gaugecheckgallary.setVisibility(View.GONE);
+
 
                     dialogFragment.show(fm, "Sample Fragment");
                 }
@@ -4148,7 +3238,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                 prg.incrementProgressBy(4);
 
                 gauge_icon_image.setVisibility(View.GONE);
-                gaugepicturelayoutframe.setVisibility(View.GONE);
+
                 gauge_inspect_button_defect.setVisibility(View.GONE);
                 gauge_inspect_button_tick_defect.setVisibility(View.GONE);
                 gauge_backbutton_defect.setVisibility(View.VISIBLE);
@@ -4166,28 +3256,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
         //------------------------------------------------------------------------//------------------------------------------------------------------------ Tacho  ------------------------------------------------
 
-        tachocheckgallary.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-                Intent intent2 = new Intent(Intent.ACTION_PICK);
-                intent2.setType("image/*");
-                tachopicturelayoutframe.setVisibility(View.GONE);
-                tachobackbuttonPressed ^=true;
-                startActivityForResult(intent2, GALLARY_INTENT19);
-            }
-        });
-
-        tachotakephoto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                tachopicturelayoutframe.setVisibility(View.GONE);
-                tachobackbuttonPressed ^=true;
-                startActivityForResult(intent, CAMERA_REQUEST_CODE19);
-            }
-        });
 
         tacho_backbutton_defect.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -4195,10 +3264,6 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
                 prg.incrementProgressBy(-4);
                 tacho_icon_image.setVisibility(View.VISIBLE);
-                tachopicturelayoutframe.setVisibility(View.GONE);
-                tachotakephoto.setVisibility(View.GONE);
-                tachocheckgallary.setVisibility(View.GONE);
-                photoplace100x100tacho.setVisibility(View.GONE);
 
                 tacho_inspect_button_defect.setVisibility(View.VISIBLE);
                 tacho_inspect_button_tick_defect.setVisibility(View.VISIBLE);
@@ -4223,18 +3288,6 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                 prg.incrementProgressBy(4);
                 FragmentManager fm = getFragmentManager();
 
-                tachopicturelayoutframe.setVisibility(View.VISIBLE);
-
-                if (internet_connected == false) {
-                    tachotakephoto.setVisibility(View.GONE);
-                    tachocheckgallary.setVisibility(View.GONE);
-                    photoplace100x100tacho.setVisibility(View.GONE);
-                } else {
-                    tachotakephoto.setVisibility(View.VISIBLE);
-                    tachocheckgallary.setVisibility(View.VISIBLE);
-                    photoplace100x100tacho.setVisibility(View.VISIBLE);
-                }
-
                 if ( hornbackbuttonPressed == false) {
 
                     Popup_WAM dialogFragment = Popup_WAM.newInstance("tacho_button_defect");
@@ -4254,7 +3307,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
                     Popup_WAM dialogFragment = Popup_WAM.newInstance("tacho_button_defect");
                     tacho_icon_image.setVisibility(View.GONE);
-                    tachopicturelayoutframe.setVisibility(View.GONE);
+
                     tacho_inspect_button_defect.setVisibility(View.GONE);
                     tacho_inspect_button_tick_defect.setVisibility(View.GONE);
                     tacho_backbutton_defect.setVisibility(View.VISIBLE);
@@ -4264,8 +3317,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                     tachodescribedefectfill.setVisibility(View.VISIBLE);
                     tacho_describe_tempfix_text_view.setVisibility(View.VISIBLE);
                     tachotempfixfill.setVisibility(View.VISIBLE);
-                    tachotakephoto.setVisibility(View.GONE);
-                    tachocheckgallary.setVisibility(View.GONE);
+
 
                     dialogFragment.show(fm, "Sample Fragment");
                 }
@@ -4279,7 +3331,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                 prg.incrementProgressBy(4);
 
                 tacho_icon_image.setVisibility(View.GONE);
-                tachopicturelayoutframe.setVisibility(View.GONE);
+
                 tacho_inspect_button_defect.setVisibility(View.GONE);
                 tacho_inspect_button_tick_defect.setVisibility(View.GONE);
                 tacho_backbutton_defect.setVisibility(View.VISIBLE);
@@ -4297,28 +3349,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
         //------------------------------------------------------------------------//------------------------------------------------------------------------ Airleaks ------------------------------------------------
 
-        airleakscheckgallary.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-                Intent intent2 = new Intent(Intent.ACTION_PICK);
-                intent2.setType("image/*");
-                airleakspicturelayoutframe.setVisibility(View.GONE);
-                airleaksbackbuttonPressed ^=true;
-                startActivityForResult(intent2, GALLARY_INTENT20);
-            }
-        });
-
-        airleakstakephoto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                airleakspicturelayoutframe.setVisibility(View.GONE);
-                airleaksbackbuttonPressed ^=true;
-                startActivityForResult(intent, CAMERA_REQUEST_CODE20);
-            }
-        });
 
         airleaks_backbutton_defect.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -4326,10 +3357,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
                 prg.incrementProgressBy(-4);
                 airleaks_icon_image.setVisibility(View.VISIBLE);
-                airleakspicturelayoutframe.setVisibility(View.GONE);
-                airleakstakephoto.setVisibility(View.GONE);
-                airleakscheckgallary.setVisibility(View.GONE);
-                photoplace100x100airleaks.setVisibility(View.GONE);
+
 
                 airleaks_inspect_button_defect.setVisibility(View.VISIBLE);
                 airleaks_inspect_button_tick_defect.setVisibility(View.VISIBLE);
@@ -4354,17 +3382,6 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                 prg.incrementProgressBy(4);
                 FragmentManager fm = getFragmentManager();
 
-                airleakspicturelayoutframe.setVisibility(View.VISIBLE);
-
-                if (internet_connected == false) {
-                    airleakstakephoto.setVisibility(View.GONE);
-                    airleakscheckgallary.setVisibility(View.GONE);
-                    photoplace100x100airleaks.setVisibility(View.GONE);
-                } else {
-                    airleakstakephoto.setVisibility(View.VISIBLE);
-                    airleakscheckgallary.setVisibility(View.VISIBLE);
-                    photoplace100x100airleaks.setVisibility(View.VISIBLE);
-                }
 
                 if ( hornbackbuttonPressed == false) {
 
@@ -4385,7 +3402,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
                     Popup_WAM dialogFragment = Popup_WAM.newInstance("airleaks_button_defect");
                     airleaks_icon_image.setVisibility(View.GONE);
-                    airleakspicturelayoutframe.setVisibility(View.GONE);
+
                     airleaks_inspect_button_defect.setVisibility(View.GONE);
                     airleaks_inspect_button_tick_defect.setVisibility(View.GONE);
                     airleaks_backbutton_defect.setVisibility(View.VISIBLE);
@@ -4395,8 +3412,6 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                     airleaksdescribedefectfill.setVisibility(View.VISIBLE);
                     airleaks_describe_tempfix_text_view.setVisibility(View.VISIBLE);
                     airleakstempfixfill.setVisibility(View.VISIBLE);
-                    airleakstakephoto.setVisibility(View.GONE);
-                    airleakscheckgallary.setVisibility(View.GONE);
 
                     dialogFragment.show(fm, "Sample Fragment");
                 }
@@ -4410,7 +3425,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                 prg.incrementProgressBy(4);
 
                 airleaks_icon_image.setVisibility(View.GONE);
-                airleakspicturelayoutframe.setVisibility(View.GONE);
+
                 airleaks_inspect_button_defect.setVisibility(View.GONE);
                 airleaks_inspect_button_tick_defect.setVisibility(View.GONE);
                 airleaks_backbutton_defect.setVisibility(View.VISIBLE);
@@ -4428,28 +3443,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
         //------------------------------------------------------------------------//------------------------------------------------------------------------Steering breaking------------------------------------------------
 
-        steeringbreakingcheckgallary.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-                Intent intent2 = new Intent(Intent.ACTION_PICK);
-                intent2.setType("image/*");
-                steeringbreakingpicturelayoutframe.setVisibility(View.GONE);
-                steeringbreakingbackbuttonPressed ^=true;
-                startActivityForResult(intent2, GALLARY_INTENT21);
-            }
-        });
-
-        steeringbreakingtakephoto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                steeringbreakingpicturelayoutframe.setVisibility(View.GONE);
-                steeringbreakingbackbuttonPressed ^=true;
-                startActivityForResult(intent, CAMERA_REQUEST_CODE21);
-            }
-        });
 
         steeringbreaking_backbutton_defect.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -4457,10 +3451,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
                 prg.incrementProgressBy(-5);
                 steeringbreaking_icon_image.setVisibility(View.VISIBLE);
-                steeringbreakingpicturelayoutframe.setVisibility(View.GONE);
-                steeringbreakingtakephoto.setVisibility(View.GONE);
-                steeringbreakingcheckgallary.setVisibility(View.GONE);
-                photoplace100x100steeringbreaking.setVisibility(View.GONE);
+
 
                 steeringbreaking_inspect_button_defect.setVisibility(View.VISIBLE);
                 steeringbreaking_inspect_button_tick_defect.setVisibility(View.VISIBLE);
@@ -4485,17 +3476,6 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                 prg.incrementProgressBy(5);
                 FragmentManager fm = getFragmentManager();
 
-                steeringbreakingpicturelayoutframe.setVisibility(View.VISIBLE);
-
-                if (internet_connected == false) {
-                    steeringbreakingtakephoto.setVisibility(View.GONE);
-                    steeringbreakingcheckgallary.setVisibility(View.GONE);
-                    photoplace100x100steeringbreaking.setVisibility(View.GONE);
-                } else {
-                    steeringbreakingtakephoto.setVisibility(View.VISIBLE);
-                    steeringbreakingcheckgallary.setVisibility(View.VISIBLE);
-                    photoplace100x100steeringbreaking.setVisibility(View.VISIBLE);
-                }
 
                 if ( hornbackbuttonPressed == false) {
 
@@ -4516,7 +3496,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
                     Popup_WAM dialogFragment = Popup_WAM.newInstance("steeringbreaking_button_defect");
                     steeringbreaking_icon_image.setVisibility(View.GONE);
-                    steeringbreakingpicturelayoutframe.setVisibility(View.GONE);
+
                     steeringbreaking_inspect_button_defect.setVisibility(View.GONE);
                     steeringbreaking_inspect_button_tick_defect.setVisibility(View.GONE);
                     steeringbreaking_backbutton_defect.setVisibility(View.VISIBLE);
@@ -4526,8 +3506,6 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                     steeringbreakingdescribedefectfill.setVisibility(View.VISIBLE);
                     steeringbreaking_describe_tempfix_text_view.setVisibility(View.VISIBLE);
                     steeringbreakingtempfixfill.setVisibility(View.VISIBLE);
-                    steeringbreakingtakephoto.setVisibility(View.GONE);
-                    steeringbreakingcheckgallary.setVisibility(View.GONE);
 
                     dialogFragment.show(fm, "Sample Fragment");
                 }
@@ -4541,7 +3519,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                 prg.incrementProgressBy(5);
 
                 steeringbreaking_icon_image.setVisibility(View.GONE);
-                steeringbreakingpicturelayoutframe.setVisibility(View.GONE);
+
                 steeringbreaking_inspect_button_defect.setVisibility(View.GONE);
                 steeringbreaking_inspect_button_tick_defect.setVisibility(View.GONE);
                 steeringbreaking_backbutton_defect.setVisibility(View.VISIBLE);
@@ -4559,28 +3537,6 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
         //------------------------------------------------------------------------//------------------------------------------------------------------------Load Secure------------------------------------------------
 
-        loadsecurecheckgallary.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent2 = new Intent(Intent.ACTION_PICK);
-                intent2.setType("image/*");
-                loadsecurepicturelayoutframe.setVisibility(View.GONE);
-                loadsecurebackbuttonPressed ^=true;
-                startActivityForResult(intent2, GALLARY_INTENT22);
-            }
-        });
-
-        loadsecuretakephoto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                loadsecurepicturelayoutframe.setVisibility(View.GONE);
-                loadsecurebackbuttonPressed ^=true;
-                startActivityForResult(intent, CAMERA_REQUEST_CODE22);
-            }
-        });
 
         loadsecure_backbutton_defect.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -4588,10 +3544,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
                 prg.incrementProgressBy(-5);
                 loadsecure_icon_image.setVisibility(View.VISIBLE);
-                loadsecurepicturelayoutframe.setVisibility(View.GONE);
-                loadsecuretakephoto.setVisibility(View.GONE);
-                loadsecurecheckgallary.setVisibility(View.GONE);
-                photoplace100x100loadsecure.setVisibility(View.GONE);
+
 
                 loadsecure_inspect_button_defect.setVisibility(View.VISIBLE);
                 loadsecure_inspect_button_tick_defect.setVisibility(View.VISIBLE);
@@ -4616,17 +3569,6 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                 prg.incrementProgressBy(5);
                 FragmentManager fm = getFragmentManager();
 
-                loadsecurepicturelayoutframe.setVisibility(View.VISIBLE);
-
-                if (internet_connected == false) {
-                    loadsecuretakephoto.setVisibility(View.GONE);
-                    loadsecurecheckgallary.setVisibility(View.GONE);
-                    photoplace100x100loadsecure.setVisibility(View.GONE);
-                } else {
-                    loadsecuretakephoto.setVisibility(View.VISIBLE);
-                    loadsecurecheckgallary.setVisibility(View.VISIBLE);
-                    photoplace100x100loadsecure.setVisibility(View.VISIBLE);
-                }
 
                 if ( hornbackbuttonPressed == false) {
 
@@ -4647,7 +3589,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
                     Popup_WAM dialogFragment = Popup_WAM.newInstance("loadsecure_button_defect");
                     loadsecure_icon_image.setVisibility(View.GONE);
-                    loadsecurepicturelayoutframe.setVisibility(View.GONE);
+
                     loadsecure_inspect_button_defect.setVisibility(View.GONE);
                     loadsecure_inspect_button_tick_defect.setVisibility(View.GONE);
                     loadsecure_backbutton_defect.setVisibility(View.VISIBLE);
@@ -4657,8 +3599,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                     loadsecuredescribedefectfill.setVisibility(View.VISIBLE);
                     loadsecure_describe_tempfix_text_view.setVisibility(View.VISIBLE);
                     loadsecuretempfixfill.setVisibility(View.VISIBLE);
-                    loadsecuretakephoto.setVisibility(View.GONE);
-                    loadsecurecheckgallary.setVisibility(View.GONE);
+
 
                     dialogFragment.show(fm, "Sample Fragment");
                 }
@@ -4672,7 +3613,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                 prg.incrementProgressBy(5);
 
                 loadsecure_icon_image.setVisibility(View.GONE);
-                loadsecurepicturelayoutframe.setVisibility(View.GONE);
+
                 loadsecure_inspect_button_defect.setVisibility(View.GONE);
                 loadsecure_inspect_button_tick_defect.setVisibility(View.GONE);
                 loadsecure_backbutton_defect.setVisibility(View.VISIBLE);
@@ -4690,28 +3631,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
         //------------------------------------------------------------------------//------------------------------------------------------------------------Tacho Speedo ------------------------------------------------
 
-        tachospeedocheckgallary.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-                Intent intent2 = new Intent(Intent.ACTION_PICK);
-                intent2.setType("image/*");
-                tachospeedopicturelayoutframe.setVisibility(View.GONE);
-                tachospeedobackbuttonPressed ^=true;
-                startActivityForResult(intent2, GALLARY_INTENT23);
-            }
-        });
-
-        tachospeedotakephoto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                tachospeedopicturelayoutframe.setVisibility(View.GONE);
-                tachospeedobackbuttonPressed ^=true;
-                startActivityForResult(intent, CAMERA_REQUEST_CODE23);
-            }
-        });
 
         tachospeedo_backbutton_defect.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -4719,10 +3639,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
                 prg.incrementProgressBy(-5);
                 tachospeedo_icon_image.setVisibility(View.VISIBLE);
-                tachospeedopicturelayoutframe.setVisibility(View.GONE);
-                tachospeedotakephoto.setVisibility(View.GONE);
-                tachospeedocheckgallary.setVisibility(View.GONE);
-                photoplace100x100tachospeedo.setVisibility(View.GONE);
+
 
                 tachospeedo_inspect_button_defect.setVisibility(View.VISIBLE);
                 tachospeedo_inspect_button_tick_defect.setVisibility(View.VISIBLE);
@@ -4747,17 +3664,6 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                 prg.incrementProgressBy(5);
                 FragmentManager fm = getFragmentManager();
 
-                tachospeedopicturelayoutframe.setVisibility(View.VISIBLE);
-
-                if (internet_connected == false) {
-                    tachospeedotakephoto.setVisibility(View.GONE);
-                    tachospeedocheckgallary.setVisibility(View.GONE);
-                    photoplace100x100tachospeedo.setVisibility(View.GONE);
-                } else {
-                    tachospeedotakephoto.setVisibility(View.VISIBLE);
-                    tachospeedocheckgallary.setVisibility(View.VISIBLE);
-                    photoplace100x100tachospeedo.setVisibility(View.VISIBLE);
-                }
 
                 if ( hornbackbuttonPressed == false) {
 
@@ -4778,7 +3684,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
                     Popup_WAM dialogFragment = Popup_WAM.newInstance("tachospeedo_button_defect");
                     tachospeedo_icon_image.setVisibility(View.GONE);
-                    tachospeedopicturelayoutframe.setVisibility(View.GONE);
+
                     tachospeedo_inspect_button_defect.setVisibility(View.GONE);
                     tachospeedo_inspect_button_tick_defect.setVisibility(View.GONE);
                     tachospeedo_backbutton_defect.setVisibility(View.VISIBLE);
@@ -4788,8 +3694,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                     tachospeedodescribedefectfill.setVisibility(View.VISIBLE);
                     tachospeedo_describe_tempfix_text_view.setVisibility(View.VISIBLE);
                     tachospeedotempfixfill.setVisibility(View.VISIBLE);
-                    tachospeedotakephoto.setVisibility(View.GONE);
-                    tachospeedocheckgallary.setVisibility(View.GONE);
+
 
                     dialogFragment.show(fm, "Sample Fragment");
                 }
@@ -4803,7 +3708,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                 prg.incrementProgressBy(5);
 
                 tachospeedo_icon_image.setVisibility(View.GONE);
-                tachospeedopicturelayoutframe.setVisibility(View.GONE);
+
                 tachospeedo_inspect_button_defect.setVisibility(View.GONE);
                 tachospeedo_inspect_button_tick_defect.setVisibility(View.GONE);
                 tachospeedo_backbutton_defect.setVisibility(View.VISIBLE);
@@ -4821,28 +3726,6 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
         //------------------------------------------------------------------------//------------------------------------------------------------------------ No Warning Light ------------------------------------------------
 
-        nowarninglightscheckgallary.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent2 = new Intent(Intent.ACTION_PICK);
-                intent2.setType("image/*");
-                nowarninglightspicturelayoutframe.setVisibility(View.GONE);
-                nowarninglightsbackbuttonPressed ^=true;
-                startActivityForResult(intent2, GALLARY_INTENT24);
-            }
-        });
-
-        nowarninglightstakephoto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                nowarninglightspicturelayoutframe.setVisibility(View.GONE);
-                nowarninglightsbackbuttonPressed ^=true;
-                startActivityForResult(intent, CAMERA_REQUEST_CODE24);
-            }
-        });
 
         nowarninglights_backbutton_defect.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -4850,10 +3733,6 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
                 prg.incrementProgressBy(-5);
                 nowarninglights_icon_image.setVisibility(View.VISIBLE);
-                nowarninglightspicturelayoutframe.setVisibility(View.GONE);
-                nowarninglightstakephoto.setVisibility(View.GONE);
-                nowarninglightscheckgallary.setVisibility(View.GONE);
-                photoplace100x100nowarninglights.setVisibility(View.GONE);
 
                 nowarninglights_inspect_button_defect.setVisibility(View.VISIBLE);
                 nowarninglights_inspect_button_tick_defect.setVisibility(View.VISIBLE);
@@ -4878,17 +3757,6 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                 prg.incrementProgressBy(5);
                 FragmentManager fm = getFragmentManager();
 
-                nowarninglightspicturelayoutframe.setVisibility(View.VISIBLE);
-
-                if (internet_connected == false) {
-                    nowarninglightstakephoto.setVisibility(View.GONE);
-                    nowarninglightscheckgallary.setVisibility(View.GONE);
-                    photoplace100x100nowarninglights.setVisibility(View.GONE);
-                } else {
-                    nowarninglightstakephoto.setVisibility(View.VISIBLE);
-                    nowarninglightscheckgallary.setVisibility(View.VISIBLE);
-                    photoplace100x100nowarninglights.setVisibility(View.VISIBLE);
-                }
 
                 if ( hornbackbuttonPressed == false) {
 
@@ -4909,7 +3777,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
                     Popup_WAM dialogFragment = Popup_WAM.newInstance("nowarninglights_button_defect");
                     nowarninglights_icon_image.setVisibility(View.GONE);
-                    nowarninglightspicturelayoutframe.setVisibility(View.GONE);
+
                     nowarninglights_inspect_button_defect.setVisibility(View.GONE);
                     nowarninglights_inspect_button_tick_defect.setVisibility(View.GONE);
                     nowarninglights_backbutton_defect.setVisibility(View.VISIBLE);
@@ -4919,8 +3787,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                     nowarninglightsdescribedefectfill.setVisibility(View.VISIBLE);
                     nowarninglights_describe_tempfix_text_view.setVisibility(View.VISIBLE);
                     nowarninglightstempfixfill.setVisibility(View.VISIBLE);
-                    nowarninglightstakephoto.setVisibility(View.GONE);
-                    nowarninglightscheckgallary.setVisibility(View.GONE);
+
 
                     dialogFragment.show(fm, "Sample Fragment");
                 }
@@ -4934,7 +3801,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                 prg.incrementProgressBy(5);
 
                 nowarninglights_icon_image.setVisibility(View.GONE);
-                nowarninglightspicturelayoutframe.setVisibility(View.GONE);
+
                 nowarninglights_inspect_button_defect.setVisibility(View.GONE);
                 nowarninglights_inspect_button_tick_defect.setVisibility(View.GONE);
                 nowarninglights_backbutton_defect.setVisibility(View.VISIBLE);
@@ -5078,6 +3945,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
         bOK.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 if (pReg.getText().toString().trim().equals("") ||
                         user_name.getText().toString().trim().equals("") ||
                         user_email.getText().toString().trim().equals("") ||
@@ -5191,63 +4059,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                     p.setairelectrialdescribedefectfill(airelectrialdescribedefectfill.getText().toString());
                     p.setairsuspensiontempfixfill(airsuspensiontempfixfill.getText().toString());
                     p.setairsuspensiondescribedefectfill(airsuspensiondescribedefectfill.getText().toString());
-                    p.settaxinsurancepictureuri(taxinsurancepictureuri);
-                    p.settaxinsurancepicturepath(taxinsurancepicturepath);
-                    p.setregplatepictureuri(regplatepictureuri);
-                    p.setregplatepicturepath(regplatepicturepath);
-                    p.setairelectrialpictureuri(airelectrialpictureuri);
-                    p.setfluidleakspictureuri(fluidleakspictureuri);
-                    p.setairsuspensionpictureuri(airsuspensionpictureuri);
-                    p.setwheelsandtyrespictureuri(wheelsandtyrespictureuri);
-                    p.setlightsreflectorspictureuri(lightsreflectorspictureuri);
-                    p.setexhaustpictureuri(exhaustpictureuri);
-                    p.setbodyguardspictureuri(bodyguardspictureuri);
-                    p.setlandinglegpictureuri(landinglegpictureuri);
-                    p.setsparetowpictureuri(sparetowpictureuri);
-                    p.settrailerbrakepictureuri(trailerbrakepictureuri);
 
-                    p.setwinmirpictureuri(winmirpictureuri);
-                    p.setseatbeltspictureuri(seatbeltspictureuri);
-                    p.setwasherandwiperpictureuri(washerandwiperpictureuri);
-                    p.setbreakwarninglightpictureuri(washerandwiperpictureuri);
-                    p.sethornpictureuri(hornpictureuri);
-                    p.setbreakwarninglightpictureuri(breakwarninglightpictureuri);
-                    p.setgaugepictureuri(gaugepictureuri);
-                    p.settachopictureuri(tachopictureuri);
-                    p.setairleakspictureuri(airleakspictureuri);
-
-                    p.setsteeringbreakingpictureuri(steeringbreakingpictureuri);
-                    p.setloadsecurepictureuri(loadsecurepictureuri);
-                    p.settachospeedopictureuri(tachospeedopictureuri);
-                    p.setnowarninglightspictureuri(nowarninglightspictureuri);
-
-                    p.setvehiclephotopictureuri(vehiclephotopictureuri);
-
-                    p.setairelectrialpicturepath(airelectrialpicturepath);
-                    p.setfluidleakspicturepath(fluidleakspicturepath);
-                    p.setairsuspensionpicturepath(airsuspensionpicturepath);
-                    p.setwheelsandtyrespicturepath(wheelsandtyrespicturepath);
-                    p.setlightsreflectorspicturepath(lightsreflectorspicturepath);
-                    p.setexhaustpicturepath(exhaustpicturepath);
-                    p.setbodyguardspicturepath(bodyguardspicturepath);
-                    p.setlandinglegpicturepath(landinglegpicturepath);
-                    p.setsparetowpicturepath(sparetowpicturepath);
-                    p.settrailerbrakepicturepath(trailerbrakepicturepath);
-
-                    p.setwinmirpicturepath(winmirpicturepath);
-                    p.setseatbeltspicturepath(seatbeltspicturepath);
-                    p.setwasherandwiperpicturepath(washerandwiperpicturepath);
-                    p.setbreakwarninglightpicturepath(washerandwiperpicturepath);
-                    p.sethornpicturepath(hornpicturepath);
-                    p.setbreakwarninglightpicturepath(breakwarninglightpicturepath);
-                    p.setgaugepicturepath(gaugepicturepath);
-                    p.settachopicturepath(tachopicturepath);
-                    p.setairleakspicturepath(airleakspicturepath);
-
-                    p.setsteeringbreakingpicturepath(steeringbreakingpicturepath);
-                    p.setloadsecurepicturepath(loadsecurepicturepath);
-                    p.settachospeedopicturepath(tachospeedopicturepath);
-                    p.setnowarninglightspicturepath(nowarninglightspicturepath);
 
                     p.setvehiclephotopicturepath(vehiclephotopicturepath);
 
@@ -5347,598 +4159,6 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
     protected void onActivityResult(int requestCode, int resultCode, final Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        if(requestCode == GALLARY_INTENT || requestCode  == CAMERA_REQUEST_CODE && resultCode == RESULT_OK){
-            FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
-
-            mProgressDialog.setMessage("Uploading...");
-            mProgressDialog.show();
-
-            Uri uri = data.getData();
-            String startDate = getIntent().getStringExtra("Date");
-            StorageReference filepath = mStorage.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("Photos").child(startDate).child(uri.getLastPathSegment());
-
-            filepath.putFile(uri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-
-                @Override
-                public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-
-                    Uri downloadUri = taskSnapshot.getDownloadUrl();
-                    taxinsurancepictureuri = downloadUri.toString();
-
-                    String path = taskSnapshot.getMetadata().getPath();
-                    taxinsurancepicturepath = path;
-
-                    Picasso.with(Add_or_Update_Inspection.this).load(downloadUri).fit().centerCrop().into(photoplace100x100taxinsurance);
-
-                    Toast.makeText(Add_or_Update_Inspection.this, "Tax Insurance Upload Done.", Toast.LENGTH_LONG).show();
-
-                    taxinsurancecheckgallary.setVisibility(View.GONE);
-                    taxinsurancetakephoto.setVisibility(View.GONE);
-                    mProgressDialog.dismiss();
-                }
-            });
-        }
-        if(requestCode == GALLARY_INTENT2 || requestCode  == CAMERA_REQUEST_CODE2 && resultCode == RESULT_OK){
-            FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
-
-            mProgressDialog.setMessage("Uploading...");
-            mProgressDialog.show();
-
-            Uri uri = data.getData();
-            String startDate = getIntent().getStringExtra("Date");
-            StorageReference filepath = mStorage.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("Photos").child(startDate).child(uri.getLastPathSegment());
-
-
-            filepath.putFile(uri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-
-                @Override
-                public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-
-                    Uri downloadUri = taskSnapshot.getDownloadUrl();
-                    regplatepictureuri = downloadUri.toString();
-
-                    String path = taskSnapshot.getMetadata().getPath();
-                    regplatepicturepath = path;
-
-                    Picasso.with(Add_or_Update_Inspection.this).load(downloadUri).fit().centerCrop().into(photoplace100x100regplate);
-
-                    Toast.makeText(Add_or_Update_Inspection.this, "Reg Plate Upload Done.", Toast.LENGTH_LONG).show();
-                    mProgressDialog.dismiss();
-                }
-            });
-        }
-        if(requestCode == GALLARY_INTENT3 || requestCode  == CAMERA_REQUEST_CODE3 && resultCode == RESULT_OK){
-            FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
-
-            mProgressDialog.setMessage("Uploading...");
-            mProgressDialog.show();
-
-            Uri uri = data.getData();
-            String startDate = getIntent().getStringExtra("Date");
-            StorageReference filepath = mStorage.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("Photos").child(startDate).child(uri.getLastPathSegment());
-
-            filepath.putFile(uri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-
-                @Override
-                public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-
-                    Uri downloadUri = taskSnapshot.getDownloadUrl();
-                    airelectrialpictureuri = downloadUri.toString();
-
-                    String path = taskSnapshot.getMetadata().getPath();
-                    airelectrialpicturepath = path;
-
-                    Picasso.with(Add_or_Update_Inspection.this).load(downloadUri).fit().centerCrop().into(photoplace100x100airelectrial);
-
-                    Toast.makeText(Add_or_Update_Inspection.this, "Air Electrial Upload Done.", Toast.LENGTH_LONG).show();
-                    mProgressDialog.dismiss();
-                }
-            });
-        }
-        if(requestCode == GALLARY_INTENT4 || requestCode  == CAMERA_REQUEST_CODE4 && resultCode == RESULT_OK){
-            FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
-
-            mProgressDialog.setMessage("Uploading...");
-            mProgressDialog.show();
-
-            Uri uri = data.getData();
-            String startDate = getIntent().getStringExtra("Date");
-            StorageReference filepath = mStorage.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("Photos").child(startDate).child(uri.getLastPathSegment());
-
-            filepath.putFile(uri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-
-                @Override
-                public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-
-                    Uri downloadUri = taskSnapshot.getDownloadUrl();
-                    fluidleakspictureuri = downloadUri.toString();
-                    Picasso.with(Add_or_Update_Inspection.this).load(downloadUri).fit().centerCrop().into(photoplace100x100fluidleaks);
-
-                    Toast.makeText(Add_or_Update_Inspection.this, "Fluid leaks Upload Done.", Toast.LENGTH_LONG).show();
-                    mProgressDialog.dismiss();
-                }
-            });
-        }
-        if(requestCode == GALLARY_INTENT5 || requestCode  == CAMERA_REQUEST_CODE5 && resultCode == RESULT_OK){
-            FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
-
-            mProgressDialog.setMessage("Uploading...");
-            mProgressDialog.show();
-
-            Uri uri = data.getData();
-            String startDate = getIntent().getStringExtra("Date");
-            StorageReference filepath = mStorage.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("Photos").child(startDate).child(uri.getLastPathSegment());
-
-            filepath.putFile(uri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-
-                @Override
-                public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-
-                    Uri downloadUri = taskSnapshot.getDownloadUrl();
-                    airsuspensionpictureuri = downloadUri.toString();
-                    Picasso.with(Add_or_Update_Inspection.this).load(downloadUri).fit().centerCrop().into(photoplace100x100airsuspension);
-
-                    Toast.makeText(Add_or_Update_Inspection.this, "Air Suspension Upload Done.", Toast.LENGTH_LONG).show();
-                    mProgressDialog.dismiss();
-                }
-            });
-        }
-        if(requestCode == GALLARY_INTENT6 || requestCode  == CAMERA_REQUEST_CODE6 && resultCode == RESULT_OK){
-            FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
-
-            mProgressDialog.setMessage("Uploading...");
-            mProgressDialog.show();
-
-            Uri uri = data.getData();
-            String startDate = getIntent().getStringExtra("Date");
-            StorageReference filepath = mStorage.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("Photos").child(startDate).child(uri.getLastPathSegment());
-
-            filepath.putFile(uri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-
-                @Override
-                public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-
-                    Uri downloadUri = taskSnapshot.getDownloadUrl();
-                    wheelsandtyrespictureuri = downloadUri.toString();
-                    Picasso.with(Add_or_Update_Inspection.this).load(downloadUri).fit().centerCrop().into(photoplace100x100wheelsandtyres);
-
-                    Toast.makeText(Add_or_Update_Inspection.this, "Wheels and Tyres Upload Done.", Toast.LENGTH_LONG).show();
-                    mProgressDialog.dismiss();
-                }
-            });
-        }
-        if(requestCode == GALLARY_INTENT7 || requestCode  == CAMERA_REQUEST_CODE7 && resultCode == RESULT_OK){
-            FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
-
-            mProgressDialog.setMessage("Uploading...");
-            mProgressDialog.show();
-
-            Uri uri = data.getData();
-            String startDate = getIntent().getStringExtra("Date");
-            StorageReference filepath = mStorage.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("Photos").child(startDate).child(uri.getLastPathSegment());
-
-            filepath.putFile(uri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-
-                @Override
-                public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-
-                    Uri downloadUri = taskSnapshot.getDownloadUrl();
-                    lightsreflectorspictureuri = downloadUri.toString();
-                    Picasso.with(Add_or_Update_Inspection.this).load(downloadUri).fit().centerCrop().into(photoplace100x100lightsreflectors);
-
-                    Toast.makeText(Add_or_Update_Inspection.this, "Lights and Reflectors Upload Done.", Toast.LENGTH_LONG).show();
-                    mProgressDialog.dismiss();
-                }
-            });
-        }
-        if(requestCode == GALLARY_INTENT8 || requestCode  == CAMERA_REQUEST_CODE8 && resultCode == RESULT_OK){
-            FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
-
-            mProgressDialog.setMessage("Uploading...");
-            mProgressDialog.show();
-
-            Uri uri = data.getData();
-            String startDate = getIntent().getStringExtra("Date");
-            StorageReference filepath = mStorage.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("Photos").child(startDate).child(uri.getLastPathSegment());
-
-            filepath.putFile(uri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-
-                @Override
-                public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-
-                    Uri downloadUri = taskSnapshot.getDownloadUrl();
-                    exhaustpictureuri = downloadUri.toString();
-                    Picasso.with(Add_or_Update_Inspection.this).load(downloadUri).fit().centerCrop().into(photoplace100x100exhaust);
-
-                    Toast.makeText(Add_or_Update_Inspection.this, "Exhaust Upload Done.", Toast.LENGTH_LONG).show();
-                    mProgressDialog.dismiss();
-                }
-            });
-        }
-        if(requestCode == GALLARY_INTENT9 || requestCode  == CAMERA_REQUEST_CODE9 && resultCode == RESULT_OK){
-            FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
-
-            mProgressDialog.setMessage("Uploading...");
-            mProgressDialog.show();
-
-            Uri uri = data.getData();
-            String startDate = getIntent().getStringExtra("Date");
-            StorageReference filepath = mStorage.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("Photos").child(startDate).child(uri.getLastPathSegment());
-
-            filepath.putFile(uri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-
-                @Override
-                public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-
-                    Uri downloadUri = taskSnapshot.getDownloadUrl();
-                    bodyguardspictureuri = downloadUri.toString();
-                    Picasso.with(Add_or_Update_Inspection.this).load(downloadUri).fit().centerCrop().into(photoplace100x100bodyguards);
-
-                    Toast.makeText(Add_or_Update_Inspection.this, "Body Guard Upload Done.", Toast.LENGTH_LONG).show();
-                    mProgressDialog.dismiss();
-                }
-            });
-        }
-        if(requestCode == GALLARY_INTENT10 || requestCode  == CAMERA_REQUEST_CODE10 && resultCode == RESULT_OK){
-            FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
-
-            mProgressDialog.setMessage("Uploading...");
-            mProgressDialog.show();
-
-            Uri uri = data.getData();
-            String startDate = getIntent().getStringExtra("Date");
-            StorageReference filepath = mStorage.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("Photos").child(startDate).child(uri.getLastPathSegment());
-
-            filepath.putFile(uri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-
-                @Override
-                public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-
-                    Uri downloadUri = taskSnapshot.getDownloadUrl();
-                    landinglegpictureuri = downloadUri.toString();
-                    Picasso.with(Add_or_Update_Inspection.this).load(downloadUri).fit().centerCrop().into(photoplace100x100landingleg);
-
-                    Toast.makeText(Add_or_Update_Inspection.this, "Landing Leg Upload Done.", Toast.LENGTH_LONG).show();
-                    mProgressDialog.dismiss();
-                }
-            });
-        }
-        if(requestCode == GALLARY_INTENT11 || requestCode  == CAMERA_REQUEST_CODE11 && resultCode == RESULT_OK){
-            FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
-
-            mProgressDialog.setMessage("Uploading...");
-            mProgressDialog.show();
-
-            Uri uri = data.getData();
-            String startDate = getIntent().getStringExtra("Date");
-            StorageReference filepath = mStorage.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("Photos").child(startDate).child(uri.getLastPathSegment());
-
-            filepath.putFile(uri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-
-                @Override
-                public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-
-                    Uri downloadUri = taskSnapshot.getDownloadUrl();
-                    sparetowpictureuri = downloadUri.toString();
-                    Picasso.with(Add_or_Update_Inspection.this).load(downloadUri).fit().centerCrop().into(photoplace100x100sparetow);
-
-                    Toast.makeText(Add_or_Update_Inspection.this, "Spare Tow Upload Done.", Toast.LENGTH_LONG).show();
-                    mProgressDialog.dismiss();
-                }
-            });
-        }
-        if(requestCode == GALLARY_INTENT12 || requestCode  == CAMERA_REQUEST_CODE12 && resultCode == RESULT_OK){
-            FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
-
-            mProgressDialog.setMessage("Uploading...");
-            mProgressDialog.show();
-
-            Uri uri = data.getData();
-            String startDate = getIntent().getStringExtra("Date");
-            StorageReference filepath = mStorage.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("Photos").child(startDate).child(uri.getLastPathSegment());
-
-            filepath.putFile(uri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-
-                @Override
-                public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-
-                    Uri downloadUri = taskSnapshot.getDownloadUrl();
-                    trailerbrakepictureuri = downloadUri.toString();
-                    Picasso.with(Add_or_Update_Inspection.this).load(downloadUri).fit().centerCrop().into(photoplace100x100trailerbrake);
-
-                    Toast.makeText(Add_or_Update_Inspection.this, "Trailer Brake Upload Done.", Toast.LENGTH_LONG).show();
-                    mProgressDialog.dismiss();
-                }
-            });
-        }
-        if(requestCode == GALLARY_INTENT13 || requestCode  == CAMERA_REQUEST_CODE13 && resultCode == RESULT_OK){
-            FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
-
-            mProgressDialog.setMessage("Uploading...");
-            mProgressDialog.show();
-
-            Uri uri = data.getData();
-            String startDate = getIntent().getStringExtra("Date");
-            StorageReference filepath = mStorage.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("Photos").child(startDate).child(uri.getLastPathSegment());
-
-            filepath.putFile(uri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-
-                @Override
-                public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-
-                    Uri downloadUri = taskSnapshot.getDownloadUrl();
-                    winmirpictureuri = downloadUri.toString();
-                    Picasso.with(Add_or_Update_Inspection.this).load(downloadUri).fit().centerCrop().into(photoplace100x100winmir);
-
-                    Toast.makeText(Add_or_Update_Inspection.this, "Windows and Mirrors Upload Done.", Toast.LENGTH_LONG).show();
-                    mProgressDialog.dismiss();
-                }
-            });
-        }
-        if(requestCode == GALLARY_INTENT14 || requestCode  == CAMERA_REQUEST_CODE14 && resultCode == RESULT_OK) {
-            FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
-
-            mProgressDialog.setMessage("Uploading...");
-            mProgressDialog.show();
-
-            Uri uri = data.getData();
-            String startDate = getIntent().getStringExtra("Date");
-            StorageReference filepath = mStorage.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("Photos").child(startDate).child(uri.getLastPathSegment());
-
-            filepath.putFile(uri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-
-                @Override
-                public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-
-                    Uri downloadUri = taskSnapshot.getDownloadUrl();
-                    seatbeltspictureuri = downloadUri.toString();
-                    Picasso.with(Add_or_Update_Inspection.this).load(downloadUri).fit().centerCrop().into(photoplace100x100seatbelts);
-
-                    Toast.makeText(Add_or_Update_Inspection.this, "Seatbelts Upload Done.", Toast.LENGTH_LONG).show();
-                    mProgressDialog.dismiss();
-                }
-            });
-        }
-        if(requestCode == GALLARY_INTENT15 || requestCode  == CAMERA_REQUEST_CODE15 && resultCode == RESULT_OK) {
-            FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
-
-            mProgressDialog.setMessage("Uploading...");
-            mProgressDialog.show();
-
-            Uri uri = data.getData();
-            String startDate = getIntent().getStringExtra("Date");
-            StorageReference filepath = mStorage.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("Photos").child(startDate).child(uri.getLastPathSegment());
-
-            filepath.putFile(uri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-
-                @Override
-                public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-
-                    Uri downloadUri = taskSnapshot.getDownloadUrl();
-                    washerandwiperpictureuri = downloadUri.toString();
-                    Picasso.with(Add_or_Update_Inspection.this).load(downloadUri).fit().centerCrop().into(photoplace100x100washerandwiper);
-
-                    Toast.makeText(Add_or_Update_Inspection.this, "Washers and Wipers Upload Done.", Toast.LENGTH_LONG).show();
-                    mProgressDialog.dismiss();
-                }
-            });
-        }
-        if(requestCode == GALLARY_INTENT16 || requestCode  == CAMERA_REQUEST_CODE16 && resultCode == RESULT_OK) {
-            FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
-
-            mProgressDialog.setMessage("Uploading...");
-            mProgressDialog.show();
-
-            Uri uri = data.getData();
-            String startDate = getIntent().getStringExtra("Date");
-            StorageReference filepath = mStorage.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("Photos").child(startDate).child(uri.getLastPathSegment());
-
-            filepath.putFile(uri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-
-                @Override
-                public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-
-                    Uri downloadUri = taskSnapshot.getDownloadUrl();
-                    hornpictureuri = downloadUri.toString();
-                    Picasso.with(Add_or_Update_Inspection.this).load(downloadUri).fit().centerCrop().into(photoplace100x100horn);
-
-                    Toast.makeText(Add_or_Update_Inspection.this, "Horn Upload Done.", Toast.LENGTH_LONG).show();
-                    mProgressDialog.dismiss();
-                }
-            });
-        }
-        if(requestCode == GALLARY_INTENT17 || requestCode  == CAMERA_REQUEST_CODE17 && resultCode == RESULT_OK) {
-            FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
-
-            mProgressDialog.setMessage("Uploading...");
-            mProgressDialog.show();
-
-            Uri uri = data.getData();
-            String startDate = getIntent().getStringExtra("Date");
-            StorageReference filepath = mStorage.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("Photos").child(startDate).child(uri.getLastPathSegment());
-
-            filepath.putFile(uri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-
-                @Override
-                public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-
-                    Uri downloadUri = taskSnapshot.getDownloadUrl();
-                    breakwarninglightpictureuri = downloadUri.toString();
-                    Picasso.with(Add_or_Update_Inspection.this).load(downloadUri).fit().centerCrop().into(photoplace100x100breakwarninglight);
-
-                    Toast.makeText(Add_or_Update_Inspection.this, "Break Warning light Upload Done.", Toast.LENGTH_LONG).show();
-                    mProgressDialog.dismiss();
-                }
-            });
-        }
-        if(requestCode == GALLARY_INTENT18 || requestCode  == CAMERA_REQUEST_CODE18 && resultCode == RESULT_OK) {
-            FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
-
-            mProgressDialog.setMessage("Uploading...");
-            mProgressDialog.show();
-
-            Uri uri = data.getData();
-            String startDate = getIntent().getStringExtra("Date");
-            StorageReference filepath = mStorage.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("Photos").child(startDate).child(uri.getLastPathSegment());
-
-            filepath.putFile(uri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-
-                @Override
-                public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-
-                    Uri downloadUri = taskSnapshot.getDownloadUrl();
-                    gaugepictureuri = downloadUri.toString();
-                    Picasso.with(Add_or_Update_Inspection.this).load(downloadUri).fit().centerCrop().into(photoplace100x100gauge);
-
-                    Toast.makeText(Add_or_Update_Inspection.this, "Gauge and Warnings Upload Done.", Toast.LENGTH_LONG).show();
-                    mProgressDialog.dismiss();
-                }
-            });
-        }
-        if(requestCode == GALLARY_INTENT19 || requestCode  == CAMERA_REQUEST_CODE19 && resultCode == RESULT_OK) {
-            FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
-
-            mProgressDialog.setMessage("Uploading...");
-            mProgressDialog.show();
-
-            Uri uri = data.getData();
-            String startDate = getIntent().getStringExtra("Date");
-            StorageReference filepath = mStorage.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("Photos").child(startDate).child(uri.getLastPathSegment());
-
-            filepath.putFile(uri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-
-                @Override
-                public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-
-                    Uri downloadUri = taskSnapshot.getDownloadUrl();
-                    tachopictureuri = downloadUri.toString();
-                    Picasso.with(Add_or_Update_Inspection.this).load(downloadUri).fit().centerCrop().into(photoplace100x100tacho);
-
-                    Toast.makeText(Add_or_Update_Inspection.this, "Tacho and Speed limiter Upload Done.", Toast.LENGTH_LONG).show();
-                    mProgressDialog.dismiss();
-                }
-            });
-        }
-        if(requestCode == GALLARY_INTENT20 || requestCode  == CAMERA_REQUEST_CODE20 && resultCode == RESULT_OK) {
-            FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
-
-            mProgressDialog.setMessage("Uploading...");
-            mProgressDialog.show();
-
-            Uri uri = data.getData();
-            String startDate = getIntent().getStringExtra("Date");
-            StorageReference filepath = mStorage.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("Photos").child(startDate).child(uri.getLastPathSegment());
-
-            filepath.putFile(uri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-
-                @Override
-                public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-
-                    Uri downloadUri = taskSnapshot.getDownloadUrl();
-                    airleakspictureuri = downloadUri.toString();
-                    Picasso.with(Add_or_Update_Inspection.this).load(downloadUri).fit().centerCrop().into(photoplace100x100airleaks);
-
-                    Toast.makeText(Add_or_Update_Inspection.this, "Air leaks / Pressure Upload Done.", Toast.LENGTH_LONG).show();
-                    mProgressDialog.dismiss();
-                }
-            });
-        }
-        if(requestCode == GALLARY_INTENT21 || requestCode  == CAMERA_REQUEST_CODE21 && resultCode == RESULT_OK) {
-            FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
-
-            mProgressDialog.setMessage("Uploading...");
-            mProgressDialog.show();
-
-            Uri uri = data.getData();
-            String startDate = getIntent().getStringExtra("Date");
-            StorageReference filepath = mStorage.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("Photos").child(startDate).child(uri.getLastPathSegment());
-
-            filepath.putFile(uri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-
-                @Override
-                public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-
-                    Uri downloadUri = taskSnapshot.getDownloadUrl();
-                    steeringbreakingpictureuri = downloadUri.toString();
-                    Picasso.with(Add_or_Update_Inspection.this).load(downloadUri).fit().centerCrop().into(photoplace100x100steeringbreaking);
-
-                    Toast.makeText(Add_or_Update_Inspection.this, "Steering and Breaking Upload Done.", Toast.LENGTH_LONG).show();
-                    mProgressDialog.dismiss();
-                }
-            });
-        }
-        if(requestCode == GALLARY_INTENT22 || requestCode  == CAMERA_REQUEST_CODE22 && resultCode == RESULT_OK) {
-            FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
-
-            mProgressDialog.setMessage("Uploading...");
-            mProgressDialog.show();
-
-            Uri uri = data.getData();
-            String startDate = getIntent().getStringExtra("Date");
-            StorageReference filepath = mStorage.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("Photos").child(startDate).child(uri.getLastPathSegment());
-
-            filepath.putFile(uri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-
-                @Override
-                public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-
-                    Uri downloadUri = taskSnapshot.getDownloadUrl();
-                    loadsecurepictureuri = downloadUri.toString();
-                    Picasso.with(Add_or_Update_Inspection.this).load(downloadUri).fit().centerCrop().into(photoplace100x100loadsecure);
-
-                    Toast.makeText(Add_or_Update_Inspection.this, "Load Secure Upload Done.", Toast.LENGTH_LONG).show();
-                    mProgressDialog.dismiss();
-                }
-            });
-        }
-        if(requestCode == GALLARY_INTENT23 || requestCode  == CAMERA_REQUEST_CODE23 && resultCode == RESULT_OK) {
-            FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
-
-            mProgressDialog.setMessage("Uploading...");
-            mProgressDialog.show();
-
-            Uri uri = data.getData();
-            String startDate = getIntent().getStringExtra("Date");
-            StorageReference filepath = mStorage.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("Photos").child(startDate).child(uri.getLastPathSegment());
-
-            filepath.putFile(uri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-
-                @Override
-                public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-
-                    Uri downloadUri = taskSnapshot.getDownloadUrl();
-                    tachospeedopictureuri = downloadUri.toString();
-                    Picasso.with(Add_or_Update_Inspection.this).load(downloadUri).fit().centerCrop().into(photoplace100x100tachospeedo);
-
-                    Toast.makeText(Add_or_Update_Inspection.this, "Tacho, Speedo Upload Done.", Toast.LENGTH_LONG).show();
-                    mProgressDialog.dismiss();
-                }
-            });
-        }
-        if(requestCode == GALLARY_INTENT24 || requestCode  == CAMERA_REQUEST_CODE24 && resultCode == RESULT_OK) {
-            FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
-
-            mProgressDialog.setMessage("Uploading...");
-            mProgressDialog.show();
-
-            Uri uri = data.getData();
-            String startDate = getIntent().getStringExtra("Date");
-            StorageReference filepath = mStorage.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("Photos").child(startDate).child(uri.getLastPathSegment());
-
-            filepath.putFile(uri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-
-                @Override
-                public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-
-                    Uri downloadUri = taskSnapshot.getDownloadUrl();
-                    nowarninglightspictureuri = downloadUri.toString();
-                    Picasso.with(Add_or_Update_Inspection.this).load(downloadUri).fit().centerCrop().into(photoplace100x100nowarninglights);
-
-                    Toast.makeText(Add_or_Update_Inspection.this, "No Warning Lights Upload Done.", Toast.LENGTH_LONG).show();
-                    mProgressDialog.dismiss();
-                }
-            });
-        }
         if(requestCode == GALLARY_INTENT25 || requestCode  == CAMERA_REQUEST_CODE25 && resultCode == RESULT_OK) {
             FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
 

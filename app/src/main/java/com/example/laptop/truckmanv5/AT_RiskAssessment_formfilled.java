@@ -66,15 +66,37 @@ public class AT_RiskAssessment_formfilled extends AppCompatActivity {
     ImageButton rapowerlinesicon100x100;
     ImageButton raoverheadpowerlinesicon100x100;
     ImageButton raoverheadpowerlinesalerticon100x100;
-    ImageButton ramanhandleicon100x100;
-    ImageButton raconspaceicon100x100;
-    ImageButton rapowertoolsicon100x100;
-    ImageButton rageneralppeicon100x100;
 
     ImageButton rariverlifejacketicon100x100;
     ImageButton rariverwadersicon100x100;
     ImageButton rarivertieoffpointicon100x100;
     ImageButton rariversafeaccessicon100x100;
+
+    ImageButton raundergroundservicesicon100x100;
+    ImageButton rundergrounddrawingsicon100x100;
+    ImageButton raundergroundcaticon100x100;
+
+    ImageButton ramanhandleicon100x100;
+    ImageButton ramanhandleloadassessedicon100x100;
+    ImageButton ramanhandlemechanicalicon100x100;
+    ImageButton ramanhandletwomanlifticon100x100;
+
+    ImageButton raconspaceicon100x100;
+    ImageButton raconfinedspaceicon100x100;
+    ImageButton raconfinedspacealert100x100;
+
+    ImageButton rapowertoolsicon100x100;
+    ImageButton rapowertools2icon100x100;
+    ImageButton rapowertoolsiconalert100x100;
+
+    ImageButton rageneralppeicon100x100;
+    ImageButton rageneralppesafetygooglesicon100x100;
+    ImageButton rageneralppehearing100x100;
+    ImageButton rageneralppegloves100x100;
+    ImageButton rageneralppedustoverallicon100x100;
+    ImageButton rageneralppehivisicon100x100;
+    ImageButton rageneralppehardhaticon100x100;
+    ImageButton rageneralppedustmaskicon100x100;
 
     ///////////////////////////////////////////////////////////////////////////////////
 
@@ -97,9 +119,31 @@ public class AT_RiskAssessment_formfilled extends AppCompatActivity {
 
     private String overheadpowerlines;
 
+    private String undergrounddrawings;
+    private String undergroundcat;
+
+    private String manhandleloadassessed;
+    private String manhandlemechanical;
+    private String manhandletwomanlift;
+
+    private String confinedspace;
+
+    private String powertools;
+
+    private String generalppesafetygoogles;
+    private String generalppehearing;
+    private String generalppegloves;
+    private String generalppedustoverall;
+    private String generalppehivis;
+    private String generalppehardhat;
+    private String generalppedustmask;
+
     ///////////////////////////////////////////////////////////////////////////////////
 
     FrameLayout framelayout_overheadpowerlinesalert;
+    FrameLayout framelayout_confinedspacealert;
+    FrameLayout framelayout_powertoolsalert;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -113,10 +157,6 @@ public class AT_RiskAssessment_formfilled extends AppCompatActivity {
         raroadsicon100x100 = (ImageButton) findViewById(R.id.raroadsicon100x100);
         rafootpathicon100x100 = (ImageButton) findViewById(R.id.rafootpathicon100x100);
         rarivercleaningicon100x100 = (ImageButton) findViewById(R.id.rarivercleaningicon100x100);
-        ramanhandleicon100x100 = (ImageButton) findViewById(R.id.ramanhandleicon100x100);
-        raconspaceicon100x100 = (ImageButton) findViewById(R.id.raconspaceicon100x100);
-        rapowertoolsicon100x100 = (ImageButton) findViewById(R.id.rapowertoolsicon100x100);
-        rageneralppeicon100x100 = (ImageButton) findViewById(R.id.rageneralppeicon100x100);
         raworkingatheightsicon100x100 = (ImageButton) findViewById(R.id.raworkingatheightsicon100x100);
         rapowerlinesicon100x100 = (ImageButton) findViewById(R.id.rapowerlinesicon100x100);
 
@@ -133,10 +173,50 @@ public class AT_RiskAssessment_formfilled extends AppCompatActivity {
         ///////////////////////////////////////////////////////////////////////////////////
 
         framelayout_overheadpowerlinesalert = (FrameLayout) findViewById(R.id.framelayout_overheadpowerlinesalert);
+        framelayout_confinedspacealert = (FrameLayout) findViewById(R.id.framelayout_confinedspacealert);
+        framelayout_powertoolsalert = (FrameLayout) findViewById(R.id.framelayout_powertoolsalert);
+
+        ///////////////////////////////////////////////////////////////////////////////////
+
+        raundergroundservicesicon100x100 = (ImageButton) findViewById(R.id.raundergroundservicesicon100x100);
+        rundergrounddrawingsicon100x100 = (ImageButton) findViewById(R.id.rundergrounddrawingsicon100x100);
+        raundergroundcaticon100x100 = (ImageButton) findViewById(R.id.raundergroundcaticon100x100);
+
+        ///////////////////////////////////////////////////////////////////////////////////
+
+        ramanhandleicon100x100 = (ImageButton) findViewById(R.id.ramanhandleicon100x100);
+        ramanhandleloadassessedicon100x100 = (ImageButton) findViewById(R.id.ramanhandleloadassessedicon100x100);
+        ramanhandlemechanicalicon100x100 = (ImageButton) findViewById(R.id.ramanhandlemechanicalicon100x100);
+        ramanhandletwomanlifticon100x100 = (ImageButton) findViewById(R.id.ramanhandletwomanlifticon100x100);
+
+        ///////////////////////////////////////////////////////////////////////////////////
+
+        raconspaceicon100x100 = (ImageButton) findViewById(R.id.raconspaceicon100x100);
+        raconfinedspaceicon100x100 = (ImageButton) findViewById(R.id.raconfinedspaceicon100x100);
+        raconfinedspacealert100x100 = (ImageButton) findViewById(R.id.raconfinedspacealert100x100);
+
+        ///////////////////////////////////////////////////////////////////////////////////
+
+        rapowertoolsicon100x100 = (ImageButton) findViewById(R.id.rapowertoolsicon100x100);
+        rapowertools2icon100x100 = (ImageButton) findViewById(R.id.rapowertools2icon100x100);
+        rapowertoolsiconalert100x100 = (ImageButton) findViewById(R.id.rapowertoolsiconalert100x100);
+
+        ///////////////////////////////////////////////////////////////////////////////////
+
+        rageneralppeicon100x100 = (ImageButton) findViewById(R.id.rageneralppeicon100x100);
+        rageneralppesafetygooglesicon100x100 = (ImageButton) findViewById(R.id.rageneralppesafetygooglesicon100x100);
+        rageneralppehearing100x100 = (ImageButton) findViewById(R.id.rageneralppehearing100x100);
+        rageneralppegloves100x100 = (ImageButton) findViewById(R.id.rageneralppegloves100x100);
+        rageneralppedustoverallicon100x100 = (ImageButton) findViewById(R.id.rageneralppedustoverallicon100x100);
+        rageneralppehivisicon100x100 = (ImageButton) findViewById(R.id.rageneralppehivisicon100x100);
+        rageneralppehardhaticon100x100 = (ImageButton) findViewById(R.id.rageneralppehardhaticon100x100);
+        rageneralppedustmaskicon100x100 = (ImageButton) findViewById(R.id.rageneralppedustmaskicon100x100);
 
         ///////////////////////////////////////////////////////////////////////////////////
 
         framelayout_overheadpowerlinesalert.setVisibility(LinearLayout.GONE);
+        framelayout_confinedspacealert.setVisibility(LinearLayout.GONE);
+        framelayout_powertoolsalert.setVisibility(LinearLayout.GONE);
 
 
         user_name = (TextView) findViewById(R.id.user_name);
@@ -378,6 +458,25 @@ public class AT_RiskAssessment_formfilled extends AppCompatActivity {
 
                         overheadpowerlines = personDetailsModel.getoverheadpowerlines();
 
+                        undergrounddrawings = personDetailsModel.getundergrounddrawings();
+                        undergroundcat = personDetailsModel.getundergroundcat();
+
+                        manhandleloadassessed = personDetailsModel.getmanhandleloadassessed();
+                        manhandlemechanical = personDetailsModel.getmanhandlemechanical();
+                        manhandletwomanlift = personDetailsModel.getmanhandletwomanlift();
+
+                        confinedspace = personDetailsModel.getconfinedspace();
+
+                        powertools = personDetailsModel.getpowertools();
+
+                        generalppesafetygoogles = personDetailsModel.getgeneralppesafetygoogles();
+                        generalppehearing = personDetailsModel.getgeneralppehearing();
+                        generalppegloves = personDetailsModel.getgeneralppegloves();
+                        generalppedustoverall = personDetailsModel.getgeneralppedustoverall();
+                        generalppehivis = personDetailsModel.getgeneralppehivis();
+                        generalppehardhat = personDetailsModel.getgeneralppehardhat();
+                        generalppedustmask = personDetailsModel.getgeneralppedustmask();
+
 
                         CheckBox raform_trafficppe_yes = (CheckBox) findViewById(R.id.raform_trafficppe_yes);
                         CheckBox raform_trafficppe_no = (CheckBox) findViewById(R.id.raform_trafficppe_no);
@@ -413,16 +512,51 @@ public class AT_RiskAssessment_formfilled extends AppCompatActivity {
                         CheckBox raform_overheadpowerlines_yes = (CheckBox) findViewById(R.id.raform_overheadpowerlines_yes);
                         CheckBox raform_overheadpowerlines_no = (CheckBox) findViewById(R.id.raform_overheadpowerlines_no);
 
+                        CheckBox raform_undergrounddrawings_yes = (CheckBox) findViewById(R.id.raform_undergrounddrawings_yes);
+                        CheckBox raform_undergrounddrawings_no = (CheckBox) findViewById(R.id.raform_undergrounddrawings_no);
+                        CheckBox raform_undergroundcat_yes = (CheckBox) findViewById(R.id.raform_undergroundcat_yes);
+                        CheckBox raform_undergroundcat_no = (CheckBox) findViewById(R.id.raform_undergroundcat_no);
+
+                        CheckBox raform_manhandleloadassessed_yes = (CheckBox) findViewById(R.id.raform_manhandleloadassessed_yes);
+                        CheckBox raform_manhandleloadassessed_no = (CheckBox) findViewById(R.id.raform_manhandleloadassessed_no);
+                        CheckBox raform_manhandlemechanical_yes = (CheckBox) findViewById(R.id.raform_manhandlemechanical_yes);
+                        CheckBox raform_manhandlemechanical_no = (CheckBox) findViewById(R.id.raform_manhandlemechanical_no);
+                        CheckBox raform_manhandletwomanlift_yes = (CheckBox) findViewById(R.id.raform_manhandletwomanlift_yes);
+                        CheckBox raform_manhandletwomanlift_no = (CheckBox) findViewById(R.id.raform_manhandletwomanlift_no);
+
+                        CheckBox raform_confinedspace_yes = (CheckBox) findViewById(R.id.raform_confinedspace_yes);
+                        CheckBox raform_confinedspace_no = (CheckBox) findViewById(R.id.raform_confinedspace_no);
+
+                        CheckBox raform_powertools_yes = (CheckBox) findViewById(R.id.raform_powertools_yes);
+                        CheckBox raform_powertools_no = (CheckBox) findViewById(R.id.raform_powertools_no);
+
+                        CheckBox raform_generalppesafetygoogles_yes = (CheckBox) findViewById(R.id.raform_generalppesafetygoogles_yes);
+                        CheckBox raform_generalppesafetygoogles_no = (CheckBox) findViewById(R.id.raform_generalppesafetygoogles_no);
+                        CheckBox raform_generalppehearing_yes = (CheckBox) findViewById(R.id.raform_generalppehearing_yes);
+                        CheckBox raform_generalppehearing_no = (CheckBox) findViewById(R.id.raform_generalppehearing_no);
+                        CheckBox raform_generalppegloves_yes = (CheckBox) findViewById(R.id.raform_generalppegloves_yes);
+                        CheckBox raform_generalppegloves_no = (CheckBox) findViewById(R.id.raform_generalppegloves_no);
+                        CheckBox raform_generalppedustoverall_yes = (CheckBox) findViewById(R.id.raform_generalppedustoverall_yes);
+                        CheckBox raform_generalppedustoverall_no = (CheckBox) findViewById(R.id.raform_generalppedustoverall_no);
+                        CheckBox raform_generalppehivis_yes = (CheckBox) findViewById(R.id.raform_generalppehivis_yes);
+                        CheckBox raform_generalppehivis_no = (CheckBox) findViewById(R.id.raform_generalppehivis_no);
+                        CheckBox raform_generalppehardhat_yes = (CheckBox) findViewById(R.id.raform_generalppehardhat_yes);
+                        CheckBox raform_generalppehardhat_no = (CheckBox) findViewById(R.id.raform_generalppehardhat_no);
+                        CheckBox raform_generalppedustmask_yes = (CheckBox) findViewById(R.id.raform_generalppedustmask_yes);
+                        CheckBox raform_generalppedustmask_no = (CheckBox) findViewById(R.id.raform_generalppedustmask_no);
+
                         ///////////////////////////////////////1: Traffic/////////////////////////////////////////////////
 
                         if (traffic_ppe.equals("Yes")) {
                             raform_trafficppe_yes.setChecked(true);
                         } else { raform_trafficppe_yes.setChecked(false);
                         }
+
                         if (traffic_ppe.equals("No")) {
                             raform_trafficppe_no.setChecked(true);
                         } else { raform_trafficppe_no.setChecked(false);
                         }
+
                         if (traffic_roads_or_footpath.equals("Road")) {
                             raform_trafficroads.setChecked(true);
                         } else { raform_trafficroads.setChecked(false);
@@ -534,7 +668,7 @@ public class AT_RiskAssessment_formfilled extends AppCompatActivity {
                         } else { raform_riversafeaccess_no.setChecked(false);
                         }
 
-                        ///////////////////////////////////////3: River Cleaning/////////////////////////////////////////////////
+                        ///////////////////////////////////////4: Overhead Powerlines/////////////////////////////////////////////////
                         if (overheadpowerlines.equals("Yes")) {
                             raform_overheadpowerlines_yes.setChecked(true);
                             framelayout_overheadpowerlinesalert.setVisibility(LinearLayout.VISIBLE);
@@ -545,6 +679,143 @@ public class AT_RiskAssessment_formfilled extends AppCompatActivity {
                             framelayout_overheadpowerlinesalert.setVisibility(LinearLayout.GONE);
                         } else { raform_overheadpowerlines_no.setChecked(false);
                         }
+
+                        ///////////////////////////////////////5 underground services/////////////////////////////////////////////////
+
+                        if (undergrounddrawings.equals("Yes")) {
+                            raform_undergrounddrawings_yes.setChecked(true);
+                        } else { raform_undergrounddrawings_yes.setChecked(false);
+                        }
+                        if (undergrounddrawings.equals("No")) {
+                            raform_undergrounddrawings_no.setChecked(true);
+                        } else { raform_undergrounddrawings_no.setChecked(false);
+                        }
+
+                        if (undergroundcat.equals("Yes")) {
+                            raform_undergroundcat_yes.setChecked(true);
+                        } else { raform_undergroundcat_yes.setChecked(false);
+                        }
+                        if (undergroundcat.equals("No")) {
+                            raform_undergroundcat_no.setChecked(true);
+                        } else { raform_undergroundcat_no.setChecked(false);
+                        }
+
+                        ///////////////////////////////////////6 Manual Handling/////////////////////////////////////////////////
+
+                        if (manhandleloadassessed.equals("Yes")) {
+                            raform_manhandleloadassessed_yes.setChecked(true);
+                        } else { raform_manhandleloadassessed_yes.setChecked(false);
+                        }
+                        if (manhandleloadassessed.equals("No")) {
+                            raform_manhandleloadassessed_no.setChecked(true);
+                        } else { raform_manhandleloadassessed_no.setChecked(false);
+                        }
+
+                        if (manhandlemechanical.equals("Yes")) {
+                            raform_manhandlemechanical_yes.setChecked(true);
+                        } else { raform_manhandlemechanical_yes.setChecked(false);
+                        }
+                        if (manhandlemechanical.equals("No")) {
+                            raform_manhandlemechanical_no.setChecked(true);
+                        } else { raform_manhandlemechanical_no.setChecked(false);
+                        }
+
+                        if (manhandletwomanlift.equals("Yes")) {
+                            raform_manhandletwomanlift_yes.setChecked(true);
+                        } else { raform_manhandletwomanlift_yes.setChecked(false);
+                        }
+                        if (manhandletwomanlift.equals("No")) {
+                            raform_manhandletwomanlift_no.setChecked(true);
+                        } else { raform_manhandletwomanlift_no.setChecked(false);
+                        }
+                        ///////////////////////////////////////7: Confined Space/////////////////////////////////////////////////
+
+                        if (confinedspace.equals("Yes")) {
+                            raform_confinedspace_yes.setChecked(true);
+                            framelayout_confinedspacealert.setVisibility(LinearLayout.VISIBLE);
+                        } else { raform_confinedspace_yes.setChecked(false);
+                        }
+                        if (confinedspace.equals("No")) {
+                            raform_confinedspace_no.setChecked(true);
+                            framelayout_confinedspacealert.setVisibility(LinearLayout.GONE);
+                        } else { raform_confinedspace_no.setChecked(false);
+                        }
+
+                        ///////////////////////////////////////8: Power Tools/////////////////////////////////////////////////
+
+                        if (powertools.equals("Yes")) {
+                            raform_powertools_yes.setChecked(true);
+                            framelayout_powertoolsalert.setVisibility(LinearLayout.VISIBLE);
+                        } else { raform_powertools_yes.setChecked(false);
+                        }
+                        if (powertools.equals("No")) {
+                            raform_powertools_no.setChecked(true);
+                            framelayout_powertoolsalert.setVisibility(LinearLayout.GONE);
+                        } else { raform_powertools_no.setChecked(false);
+                        }
+
+                        ///////////////////////////////////////9: General PPE/////////////////////////////////////////////////
+
+                        if (generalppesafetygoogles.equals("Yes")) {
+                            raform_generalppesafetygoogles_yes.setChecked(true);
+                        } else { raform_generalppesafetygoogles_yes.setChecked(false);
+                        }
+                        if (generalppesafetygoogles.equals("No")) {
+                            raform_generalppesafetygoogles_no.setChecked(true);
+                        } else { raform_generalppesafetygoogles_no.setChecked(false);
+                        }
+                        if (generalppehearing.equals("Yes")) {
+                            raform_generalppehearing_yes.setChecked(true);
+                        } else { raform_generalppehearing_yes.setChecked(false);
+                        }
+                        if (generalppehearing.equals("No")) {
+                            raform_generalppehearing_no.setChecked(true);
+                        } else { raform_generalppehearing_no.setChecked(false);
+                        }
+                        if (generalppegloves.equals("Yes")) {
+                            raform_generalppegloves_yes.setChecked(true);
+                        } else { raform_generalppegloves_yes.setChecked(false);
+                        }
+                        if (generalppegloves.equals("No")) {
+                            raform_generalppegloves_no.setChecked(true);
+                        } else { raform_generalppegloves_no.setChecked(false);
+                        }
+                        if (generalppedustoverall.equals("Yes")) {
+                            raform_generalppedustoverall_yes.setChecked(true);
+                        } else { raform_generalppedustoverall_yes.setChecked(false);
+                        }
+                        if (generalppedustoverall.equals("No")) {
+                            raform_generalppedustoverall_no.setChecked(true);
+                        } else { raform_generalppedustoverall_no.setChecked(false);
+                        }
+                        if (generalppehivis.equals("Yes")) {
+                            raform_generalppehivis_yes.setChecked(true);
+                        } else { raform_generalppehivis_yes.setChecked(false);
+                        }
+                        if (generalppehivis.equals("No")) {
+                            raform_generalppehivis_no.setChecked(true);
+                        } else { raform_generalppehivis_no.setChecked(false);
+                        }
+                        if (generalppehardhat.equals("Yes")) {
+                            raform_generalppehardhat_yes.setChecked(true);
+                        } else { raform_generalppehardhat_yes.setChecked(false);
+                        }
+                        if (generalppehardhat.equals("No")) {
+                            raform_generalppehardhat_no.setChecked(true);
+                        } else { raform_generalppehardhat_no.setChecked(false);
+                        }
+                        if (generalppedustmask.equals("Yes")) {
+                            raform_generalppedustmask_yes.setChecked(true);
+                        } else { raform_generalppedustmask_yes.setChecked(false);
+                        }
+                        if (generalppedustmask.equals("No")) {
+                            raform_generalppedustmask_no.setChecked(true);
+                        } else { raform_generalppedustmask_no.setChecked(false);
+                        }
+
+
+
+
 
                     }
 

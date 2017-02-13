@@ -32,6 +32,26 @@ public class AT_RiskAssessment_model {
 
     private String overheadpowerlines;
 
+    private String undergrounddrawings;
+    private String undergroundcat;
+
+    private String manhandleloadassessed;
+    private String manhandlemechanical;
+    private String manhandletwomanlift;
+
+    private String confinedspace;
+
+    private String powertools;
+
+    private String generalppesafetygoogles;
+    private String generalppehearing;
+    private String generalppegloves;
+    private String generalppedustoverall;
+    private String generalppehivis;
+    private String generalppehardhat;
+    private String generalppedustmask;
+
+
 
     public AT_RiskAssessment_model () {
     }
@@ -181,7 +201,52 @@ public class AT_RiskAssessment_model {
         return riversafeaccess;
     }
 
-    ///////////////////////////////////////3 River Cleaning/////////////////////////////////////////////////
+    ///////////////////////////////////////4 Overhead Powerlines/////////////////////////////////////////////////
+
+    public void setconfinedspace(String confinedspace) {
+        this.confinedspace = confinedspace;
+    }
+    public String getconfinedspace() {
+        return confinedspace;
+    }
+
+    ///////////////////////////////////////5 Underground Services/////////////////////////////////////////////////
+
+    public void setundergrounddrawings(String undergrounddrawings) {
+        this.undergrounddrawings = undergrounddrawings;
+    }
+    public String getundergrounddrawings() {
+        return undergrounddrawings;
+    }
+    public void setundergroundcat(String undergroundcat) {
+        this.undergroundcat = undergroundcat;
+    }
+    public String getundergroundcat() {
+        return undergroundcat;
+    }
+
+    ///////////////////////////////////////6 Manual Handling/////////////////////////////////////////////////
+
+    public void setmanhandleloadassessed(String manhandleloadassessed) {
+        this.manhandleloadassessed = manhandleloadassessed;
+    }
+    public String getmanhandleloadassessed() {
+        return manhandleloadassessed;
+    }
+    public void setmanhandlemechanical(String manhandlemechanical) {
+        this.manhandlemechanical = manhandlemechanical;
+    }
+    public String getmanhandlemechanical() {
+        return manhandlemechanical;
+    }
+    public void setmanhandletwomanlift(String manhandletwomanlift) {
+        this.manhandletwomanlift = manhandletwomanlift;
+    }
+    public String getmanhandletwomanlift() {
+        return manhandletwomanlift;
+    }
+
+    ///////////////////////////////////////7 Confined Space////////////////////////////////////////////////
 
     public void setoverheadpowerlines(String overheadpowerlines) {
         this.overheadpowerlines = overheadpowerlines;
@@ -189,6 +254,62 @@ public class AT_RiskAssessment_model {
     public String getoverheadpowerlines() {
         return overheadpowerlines;
     }
+
+    ///////////////////////////////////////8 power Tools////////////////////////////////////////////////
+
+    public void setpowertools(String powertools) {
+        this.powertools = powertools;
+    }
+    public String getpowertools() {
+        return powertools;
+    }
+
+    ///////////////////////////////////////9 General PPE////////////////////////////////////////////////
+
+    public void setgeneralppesafetygoogles(String generalppesafetygoogles) {
+        this.generalppesafetygoogles = generalppesafetygoogles;
+    }
+    public String getgeneralppesafetygoogles() {
+        return generalppesafetygoogles;
+    }
+    public void setgeneralppehearing(String generalppehearing) {
+        this.generalppehearing = generalppehearing;
+    }
+    public String getgeneralppehearing() {
+        return generalppehearing;
+    }
+    public void setgeneralppegloves(String generalppegloves) {
+        this.generalppegloves = generalppegloves;
+    }
+    public String getgeneralppegloves() {
+        return generalppegloves;
+    }
+    public void setgeneralppedustoverall(String generalppedustoverall) {
+        this.generalppedustoverall = generalppedustoverall;
+    }
+    public String getgeneralppedustoverall() {
+        return generalppedustoverall;
+    }
+    public void setgeneralppehivis(String generalppehivis) {
+        this.generalppehivis = generalppehivis;
+    }
+    public String getgeneralppehivis() {
+        return generalppehivis;
+    }
+    public void setgeneralppehardhat(String generalppehardhat) {
+        this.generalppehardhat = generalppehardhat;
+    }
+    public String getgeneralppehardhat() {
+        return generalppehardhat;
+    }
+    public void setgeneralppedustmask(String generalppedustmask) {
+        this.generalppedustmask = generalppedustmask;
+    }
+    public String getgeneralppedustmask() {
+        return generalppedustmask;
+    }
+    //////////////////////////////////////////////////////////////////////////////////////////////////
+
 
 //--------------------------------------------------------------------------------------
 
@@ -227,7 +348,40 @@ public class AT_RiskAssessment_model {
         //--------------------------------------------------------------------------------------
 
         result.put("overheadpowerlines", overheadpowerlines);
-//--------------------------------------------------------------------------------------
+
+        //--------------------------------------------------------------------------------------
+
+        result.put("undergrounddrawings", undergrounddrawings);
+        result.put("undergroundcat", undergroundcat);
+
+        //--------------------------------------------------------------------------------------
+
+        result.put("manhandleloadassessed", manhandleloadassessed);
+        result.put("manhandlemechanical", manhandlemechanical);
+        result.put("manhandletwomanlift", manhandletwomanlift);
+
+        //--------------------------------------------------------------------------------------
+
+        result.put("confinedspace", confinedspace);
+
+        //--------------------------------------------------------------------------------------
+
+        result.put("powertools", powertools);
+
+        //--------------------------------------------------------------------------------------
+
+        result.put("generalppesafetygoogles", generalppesafetygoogles);
+        result.put("generalppehearing", generalppehearing);
+        result.put("generalppegloves", generalppegloves);
+        result.put("generalppedustoverall", generalppedustoverall);
+        result.put("generalppehivis", generalppehivis);
+        result.put("generalppehardhat", generalppehardhat);
+        result.put("generalppedustmask", generalppedustmask);
+
+        //--------------------------------------------------------------------------------------
+
+
+
 
         return result;
     }

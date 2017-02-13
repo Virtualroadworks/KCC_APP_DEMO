@@ -379,7 +379,8 @@
                                         app:srcCompat="@drawable/locationbutton"
                                         android:id="@+id/locationbutton"
                                         android:background="@android:color/transparent"
-                                        android:layout_margin="10dp" />
+                                        android:layout_margin="10dp"
+                                        android:contentDescription="" />
                                 </FrameLayout>
 
                                 <FrameLayout
@@ -536,7 +537,7 @@
                                                 android:baselineAligned="false">
 
                                                 <FrameLayout
-                                                    android:layout_width="wrap_content"
+                                                    android:layout_width="0dp"
                                                     android:layout_height="wrap_content"
                                                     android:layout_weight="1"
                                                     android:layout_gravity="start"
@@ -560,96 +561,7 @@
                                                             android:paddingTop="5dp"
                                                             android:paddingBottom="5dp" />
 
-                                                        <ImageView
-                                                            android:layout_width="wrap_content"
-                                                            android:layout_height="wrap_content"
-                                                            app:srcCompat="@drawable/photoplace100x100taxinsurance"
-                                                            android:id="@+id/photoplace100x100taxinsurance"
-                                                            tools:ignore="ContentDescription,RtlHardcoded,RtlSymmetry"
-                                                            android:paddingLeft="5dp" />
-
                                                     </LinearLayout>
-                                                </FrameLayout>
-
-                                                <FrameLayout
-                                                    android:layout_width="wrap_content"
-                                                    android:layout_height="match_parent"
-                                                    android:layout_weight="1">
-
-                                                    <LinearLayout
-                                                        android:orientation="horizontal"
-                                                        android:layout_width="wrap_content"
-                                                        android:layout_height="match_parent"
-                                                        android:id="@+id/taxinsurancepicturelayoutframe">
-
-                                                        <LinearLayout
-                                                            android:orientation="vertical"
-                                                            android:layout_width="wrap_content"
-                                                            android:layout_height="match_parent"
-                                                            android:paddingLeft="5dp"
-                                                            android:paddingRight="5dp">
-
-                                                            <LinearLayout
-                                                                android:orientation="horizontal"
-                                                                android:layout_width="wrap_content"
-                                                                android:layout_height="wrap_content"
-                                                                android:paddingTop="5dp">
-
-                                                                <ImageButton
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="wrap_content"
-                                                                    android:id="@+id/taxinsurancetakephoto"
-                                                                    android:layout_column="0"
-                                                                    android:background="#00ffffff"
-                                                                    android:src="@drawable/button_effect_takephoto"
-                                                                    tools:ignore="ContentDescription,TooManyViews"
-                                                                    android:layout_weight="1" />
-
-                                                                <TextView
-                                                                    android:text="CAMERA"
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="match_parent"
-                                                                    android:id="@+id/taxinsurancecamera"
-                                                                    android:layout_weight="1"
-                                                                    android:gravity="center|start"
-                                                                    android:textStyle="normal|bold"
-                                                                    android:paddingLeft="5dp"
-                                                                    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
-
-                                                            </LinearLayout>
-
-                                                            <LinearLayout
-                                                                android:orientation="horizontal"
-                                                                android:layout_width="wrap_content"
-                                                                android:layout_height="wrap_content"
-                                                                android:paddingTop="6dp">
-
-                                                                <ImageButton
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="wrap_content"
-                                                                    android:id="@+id/taxinsurancecheckgallary"
-                                                                    android:layout_column="0"
-                                                                    android:background="#00ffffff"
-                                                                    android:src="@drawable/button_effect_photogallarybottom"
-                                                                    android:layout_weight="1"
-                                                                    tools:ignore="ContentDescription" />
-
-                                                                <TextView
-                                                                    android:text="GALLERY"
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="match_parent"
-                                                                    android:id="@+id/taxinsurancegallery"
-                                                                    android:layout_weight="1"
-                                                                    android:gravity="center|start"
-                                                                    android:textStyle="normal|bold"
-                                                                    android:paddingLeft="6dp"
-                                                                    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
-                                                            </LinearLayout>
-
-                                                        </LinearLayout>
-
-                                                    </LinearLayout>
-
                                                 </FrameLayout>
 
                                             </LinearLayout>
@@ -845,7 +757,7 @@
                                                 android:baselineAligned="false">
 
                                                 <FrameLayout
-                                                    android:layout_width="wrap_content"
+                                                    android:layout_width="0dp"
                                                     android:layout_height="wrap_content"
                                                     android:layout_weight="1"
                                                     android:layout_gravity="start"
@@ -869,96 +781,7 @@
                                                             android:paddingTop="5dp"
                                                             android:paddingBottom="5dp" />
 
-                                                        <ImageView
-                                                            android:layout_width="wrap_content"
-                                                            android:layout_height="wrap_content"
-                                                            app:srcCompat="@drawable/photoplace100x100taxinsurance"
-                                                            android:id="@+id/photoplace100x100regplate"
-                                                            tools:ignore="ContentDescription,RtlHardcoded,RtlSymmetry"
-                                                            android:paddingLeft="5dp" />
-
                                                     </LinearLayout>
-                                                </FrameLayout>
-
-                                                <FrameLayout
-                                                    android:layout_width="wrap_content"
-                                                    android:layout_height="match_parent"
-                                                    android:layout_weight="1">
-
-                                                    <LinearLayout
-                                                        android:orientation="horizontal"
-                                                        android:layout_width="wrap_content"
-                                                        android:layout_height="match_parent"
-                                                        android:id="@+id/regplatepicturelayoutframe">
-
-                                                        <LinearLayout
-                                                            android:orientation="vertical"
-                                                            android:layout_width="wrap_content"
-                                                            android:layout_height="match_parent"
-                                                            android:paddingLeft="5dp"
-                                                            android:paddingRight="5dp">
-
-                                                            <LinearLayout
-                                                                android:orientation="horizontal"
-                                                                android:layout_width="wrap_content"
-                                                                android:layout_height="wrap_content"
-                                                                android:paddingTop="5dp">
-
-                                                                <ImageButton
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="wrap_content"
-                                                                    android:id="@+id/regplatetakephoto"
-                                                                    android:layout_column="0"
-                                                                    android:background="#00ffffff"
-                                                                    android:src="@drawable/button_effect_takephoto"
-                                                                    tools:ignore="ContentDescription,TooManyViews"
-                                                                    android:layout_weight="1" />
-
-                                                                <TextView
-                                                                    android:text="CAMERA"
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="match_parent"
-                                                                    android:id="@+id/Regplatecamera"
-                                                                    android:layout_weight="1"
-                                                                    android:gravity="center|start"
-                                                                    android:textStyle="normal|bold"
-                                                                    android:paddingLeft="5dp"
-                                                                    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
-
-                                                            </LinearLayout>
-
-                                                            <LinearLayout
-                                                                android:orientation="horizontal"
-                                                                android:layout_width="wrap_content"
-                                                                android:layout_height="wrap_content"
-                                                                android:paddingTop="6dp">
-
-                                                                <ImageButton
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="wrap_content"
-                                                                    android:id="@+id/regplatecheckgallary"
-                                                                    android:layout_column="0"
-                                                                    android:background="#00ffffff"
-                                                                    android:src="@drawable/button_effect_photogallarybottom"
-                                                                    android:layout_weight="1"
-                                                                    tools:ignore="ContentDescription" />
-
-                                                                <TextView
-                                                                    android:text="GALLERY"
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="match_parent"
-                                                                    android:id="@+id/regplategallary"
-                                                                    android:layout_weight="1"
-                                                                    android:gravity="center|start"
-                                                                    android:textStyle="normal|bold"
-                                                                    android:paddingLeft="6dp"
-                                                                    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
-                                                            </LinearLayout>
-
-                                                        </LinearLayout>
-
-                                                    </LinearLayout>
-
                                                 </FrameLayout>
 
                                             </LinearLayout>
@@ -1154,7 +977,7 @@
                                                 android:baselineAligned="false">
 
                                                 <FrameLayout
-                                                    android:layout_width="wrap_content"
+                                                    android:layout_width="0dp"
                                                     android:layout_height="wrap_content"
                                                     android:layout_weight="1"
                                                     android:layout_gravity="start"
@@ -1178,96 +1001,7 @@
                                                             android:paddingTop="5dp"
                                                             android:paddingBottom="5dp" />
 
-                                                        <ImageView
-                                                            android:layout_width="wrap_content"
-                                                            android:layout_height="wrap_content"
-                                                            app:srcCompat="@drawable/photoplace100x100taxinsurance"
-                                                            android:id="@+id/photoplace100x100airelectrial"
-                                                            tools:ignore="ContentDescription,RtlHardcoded,RtlSymmetry"
-                                                            android:paddingLeft="5dp" />
-
                                                     </LinearLayout>
-                                                </FrameLayout>
-
-                                                <FrameLayout
-                                                    android:layout_width="wrap_content"
-                                                    android:layout_height="match_parent"
-                                                    android:layout_weight="1">
-
-                                                    <LinearLayout
-                                                        android:orientation="horizontal"
-                                                        android:layout_width="wrap_content"
-                                                        android:layout_height="match_parent"
-                                                        android:id="@+id/airelectrialpicturelayoutframe">
-
-                                                        <LinearLayout
-                                                            android:orientation="vertical"
-                                                            android:layout_width="wrap_content"
-                                                            android:layout_height="match_parent"
-                                                            android:paddingLeft="5dp"
-                                                            android:paddingRight="5dp">
-
-                                                            <LinearLayout
-                                                                android:orientation="horizontal"
-                                                                android:layout_width="wrap_content"
-                                                                android:layout_height="wrap_content"
-                                                                android:paddingTop="5dp">
-
-                                                                <ImageButton
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="wrap_content"
-                                                                    android:id="@+id/airelectrialtakephoto"
-                                                                    android:layout_column="0"
-                                                                    android:background="#00ffffff"
-                                                                    android:src="@drawable/button_effect_takephoto"
-                                                                    tools:ignore="ContentDescription,TooManyViews"
-                                                                    android:layout_weight="1" />
-
-                                                                <TextView
-                                                                    android:text="CAMERA"
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="match_parent"
-                                                                    android:id="@+id/airelectrialcamera"
-                                                                    android:layout_weight="1"
-                                                                    android:gravity="center|start"
-                                                                    android:textStyle="normal|bold"
-                                                                    android:paddingLeft="5dp"
-                                                                    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
-
-                                                            </LinearLayout>
-
-                                                            <LinearLayout
-                                                                android:orientation="horizontal"
-                                                                android:layout_width="wrap_content"
-                                                                android:layout_height="wrap_content"
-                                                                android:paddingTop="6dp">
-
-                                                                <ImageButton
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="wrap_content"
-                                                                    android:id="@+id/airelectrialcheckgallary"
-                                                                    android:layout_column="0"
-                                                                    android:background="#00ffffff"
-                                                                    android:src="@drawable/button_effect_photogallarybottom"
-                                                                    android:layout_weight="1"
-                                                                    tools:ignore="ContentDescription" />
-
-                                                                <TextView
-                                                                    android:text="GALLERY"
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="match_parent"
-                                                                    android:id="@+id/airelectrialgallary"
-                                                                    android:layout_weight="1"
-                                                                    android:gravity="center|start"
-                                                                    android:textStyle="normal|bold"
-                                                                    android:paddingLeft="6dp"
-                                                                    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
-                                                            </LinearLayout>
-
-                                                        </LinearLayout>
-
-                                                    </LinearLayout>
-
                                                 </FrameLayout>
 
                                             </LinearLayout>
@@ -1463,7 +1197,7 @@
                                                 android:baselineAligned="false">
 
                                                 <FrameLayout
-                                                    android:layout_width="wrap_content"
+                                                    android:layout_width="0dp"
                                                     android:layout_height="wrap_content"
                                                     android:layout_weight="1"
                                                     android:layout_gravity="start"
@@ -1487,96 +1221,7 @@
                                                             android:paddingTop="5dp"
                                                             android:paddingBottom="5dp" />
 
-                                                        <ImageView
-                                                            android:layout_width="wrap_content"
-                                                            android:layout_height="wrap_content"
-                                                            app:srcCompat="@drawable/photoplace100x100taxinsurance"
-                                                            android:id="@+id/photoplace100x100fluidleaks"
-                                                            tools:ignore="ContentDescription,RtlHardcoded,RtlSymmetry"
-                                                            android:paddingLeft="5dp" />
-
                                                     </LinearLayout>
-                                                </FrameLayout>
-
-                                                <FrameLayout
-                                                    android:layout_width="wrap_content"
-                                                    android:layout_height="match_parent"
-                                                    android:layout_weight="1">
-
-                                                    <LinearLayout
-                                                        android:orientation="horizontal"
-                                                        android:layout_width="wrap_content"
-                                                        android:layout_height="match_parent"
-                                                        android:id="@+id/fluidleakspicturelayoutframe">
-
-                                                        <LinearLayout
-                                                            android:orientation="vertical"
-                                                            android:layout_width="wrap_content"
-                                                            android:layout_height="match_parent"
-                                                            android:paddingLeft="5dp"
-                                                            android:paddingRight="5dp">
-
-                                                            <LinearLayout
-                                                                android:orientation="horizontal"
-                                                                android:layout_width="wrap_content"
-                                                                android:layout_height="wrap_content"
-                                                                android:paddingTop="5dp">
-
-                                                                <ImageButton
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="wrap_content"
-                                                                    android:id="@+id/fluidleakstakephoto"
-                                                                    android:layout_column="0"
-                                                                    android:background="#00ffffff"
-                                                                    android:src="@drawable/button_effect_takephoto"
-                                                                    tools:ignore="ContentDescription,TooManyViews"
-                                                                    android:layout_weight="1" />
-
-                                                                <TextView
-                                                                    android:text="CAMERA"
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="match_parent"
-                                                                    android:id="@+id/fluidleakscamera"
-                                                                    android:layout_weight="1"
-                                                                    android:gravity="center|start"
-                                                                    android:textStyle="normal|bold"
-                                                                    android:paddingLeft="5dp"
-                                                                    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
-
-                                                            </LinearLayout>
-
-                                                            <LinearLayout
-                                                                android:orientation="horizontal"
-                                                                android:layout_width="wrap_content"
-                                                                android:layout_height="wrap_content"
-                                                                android:paddingTop="6dp">
-
-                                                                <ImageButton
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="wrap_content"
-                                                                    android:id="@+id/fluidleakscheckgallary"
-                                                                    android:layout_column="0"
-                                                                    android:background="#00ffffff"
-                                                                    android:src="@drawable/button_effect_photogallarybottom"
-                                                                    android:layout_weight="1"
-                                                                    tools:ignore="ContentDescription" />
-
-                                                                <TextView
-                                                                    android:text="GALLERY"
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="match_parent"
-                                                                    android:id="@+id/fluidleaksgallary"
-                                                                    android:layout_weight="1"
-                                                                    android:gravity="center|start"
-                                                                    android:textStyle="normal|bold"
-                                                                    android:paddingLeft="6dp"
-                                                                    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
-                                                            </LinearLayout>
-
-                                                        </LinearLayout>
-
-                                                    </LinearLayout>
-
                                                 </FrameLayout>
 
                                             </LinearLayout>
@@ -1772,7 +1417,7 @@
                                                 android:baselineAligned="false">
 
                                                 <FrameLayout
-                                                    android:layout_width="wrap_content"
+                                                    android:layout_width="0dp"
                                                     android:layout_height="wrap_content"
                                                     android:layout_weight="1"
                                                     android:layout_gravity="start"
@@ -1796,96 +1441,7 @@
                                                             android:paddingTop="5dp"
                                                             android:paddingBottom="5dp" />
 
-                                                        <ImageView
-                                                            android:layout_width="wrap_content"
-                                                            android:layout_height="wrap_content"
-                                                            app:srcCompat="@drawable/photoplace100x100taxinsurance"
-                                                            android:id="@+id/photoplace100x100airsuspension"
-                                                            tools:ignore="ContentDescription,RtlHardcoded,RtlSymmetry"
-                                                            android:paddingLeft="5dp" />
-
                                                     </LinearLayout>
-                                                </FrameLayout>
-
-                                                <FrameLayout
-                                                    android:layout_width="wrap_content"
-                                                    android:layout_height="match_parent"
-                                                    android:layout_weight="1">
-
-                                                    <LinearLayout
-                                                        android:orientation="horizontal"
-                                                        android:layout_width="wrap_content"
-                                                        android:layout_height="match_parent"
-                                                        android:id="@+id/airsuspensionpicturelayoutframe">
-
-                                                        <LinearLayout
-                                                            android:orientation="vertical"
-                                                            android:layout_width="wrap_content"
-                                                            android:layout_height="match_parent"
-                                                            android:paddingLeft="5dp"
-                                                            android:paddingRight="5dp">
-
-                                                            <LinearLayout
-                                                                android:orientation="horizontal"
-                                                                android:layout_width="wrap_content"
-                                                                android:layout_height="wrap_content"
-                                                                android:paddingTop="5dp">
-
-                                                                <ImageButton
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="wrap_content"
-                                                                    android:id="@+id/airsuspensiontakephoto"
-                                                                    android:layout_column="0"
-                                                                    android:background="#00ffffff"
-                                                                    android:src="@drawable/button_effect_takephoto"
-                                                                    tools:ignore="ContentDescription,TooManyViews"
-                                                                    android:layout_weight="1" />
-
-                                                                <TextView
-                                                                    android:text="CAMERA"
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="match_parent"
-                                                                    android:id="@+id/airsuspensioncamera"
-                                                                    android:layout_weight="1"
-                                                                    android:gravity="center|start"
-                                                                    android:textStyle="normal|bold"
-                                                                    android:paddingLeft="5dp"
-                                                                    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
-
-                                                            </LinearLayout>
-
-                                                            <LinearLayout
-                                                                android:orientation="horizontal"
-                                                                android:layout_width="wrap_content"
-                                                                android:layout_height="wrap_content"
-                                                                android:paddingTop="6dp">
-
-                                                                <ImageButton
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="wrap_content"
-                                                                    android:id="@+id/airsuspensioncheckgallary"
-                                                                    android:layout_column="0"
-                                                                    android:background="#00ffffff"
-                                                                    android:src="@drawable/button_effect_photogallarybottom"
-                                                                    android:layout_weight="1"
-                                                                    tools:ignore="ContentDescription" />
-
-                                                                <TextView
-                                                                    android:text="GALLERY"
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="match_parent"
-                                                                    android:id="@+id/airsuspensiongallary"
-                                                                    android:layout_weight="1"
-                                                                    android:gravity="center|start"
-                                                                    android:textStyle="normal|bold"
-                                                                    android:paddingLeft="6dp"
-                                                                    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
-                                                            </LinearLayout>
-
-                                                        </LinearLayout>
-
-                                                    </LinearLayout>
-
                                                 </FrameLayout>
 
                                             </LinearLayout>
@@ -2080,7 +1636,7 @@
                                                 android:baselineAligned="false">
 
                                                 <FrameLayout
-                                                    android:layout_width="wrap_content"
+                                                    android:layout_width="0dp"
                                                     android:layout_height="wrap_content"
                                                     android:layout_weight="1"
                                                     android:layout_gravity="start"
@@ -2104,96 +1660,7 @@
                                                             android:paddingTop="5dp"
                                                             android:paddingBottom="5dp" />
 
-                                                        <ImageView
-                                                            android:layout_width="wrap_content"
-                                                            android:layout_height="wrap_content"
-                                                            app:srcCompat="@drawable/photoplace100x100taxinsurance"
-                                                            android:id="@+id/photoplace100x100wheelstyres"
-                                                            tools:ignore="ContentDescription,RtlHardcoded,RtlSymmetry"
-                                                            android:paddingLeft="5dp" />
-
                                                     </LinearLayout>
-                                                </FrameLayout>
-
-                                                <FrameLayout
-                                                    android:layout_width="wrap_content"
-                                                    android:layout_height="match_parent"
-                                                    android:layout_weight="1">
-
-                                                    <LinearLayout
-                                                        android:orientation="horizontal"
-                                                        android:layout_width="wrap_content"
-                                                        android:layout_height="match_parent"
-                                                        android:id="@+id/wheelsandtyrespicturelayoutframe">
-
-                                                        <LinearLayout
-                                                            android:orientation="vertical"
-                                                            android:layout_width="wrap_content"
-                                                            android:layout_height="match_parent"
-                                                            android:paddingLeft="5dp"
-                                                            android:paddingRight="5dp">
-
-                                                            <LinearLayout
-                                                                android:orientation="horizontal"
-                                                                android:layout_width="wrap_content"
-                                                                android:layout_height="wrap_content"
-                                                                android:paddingTop="5dp">
-
-                                                                <ImageButton
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="wrap_content"
-                                                                    android:id="@+id/wheelsandtyrestakephoto"
-                                                                    android:layout_column="0"
-                                                                    android:background="#00ffffff"
-                                                                    android:src="@drawable/button_effect_takephoto"
-                                                                    tools:ignore="ContentDescription,TooManyViews"
-                                                                    android:layout_weight="1" />
-
-                                                                <TextView
-                                                                    android:text="CAMERA"
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="match_parent"
-                                                                    android:id="@+id/wheelsandtyrescamera"
-                                                                    android:layout_weight="1"
-                                                                    android:gravity="center|start"
-                                                                    android:textStyle="normal|bold"
-                                                                    android:paddingLeft="5dp"
-                                                                    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
-
-                                                            </LinearLayout>
-
-                                                            <LinearLayout
-                                                                android:orientation="horizontal"
-                                                                android:layout_width="wrap_content"
-                                                                android:layout_height="wrap_content"
-                                                                android:paddingTop="6dp">
-
-                                                                <ImageButton
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="wrap_content"
-                                                                    android:id="@+id/wheelsandtyrescheckgallary"
-                                                                    android:layout_column="0"
-                                                                    android:background="#00ffffff"
-                                                                    android:src="@drawable/button_effect_photogallarybottom"
-                                                                    android:layout_weight="1"
-                                                                    tools:ignore="ContentDescription" />
-
-                                                                <TextView
-                                                                    android:text="GALLERY"
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="match_parent"
-                                                                    android:id="@+id/wheelsandtyresgallary"
-                                                                    android:layout_weight="1"
-                                                                    android:gravity="center|start"
-                                                                    android:textStyle="normal|bold"
-                                                                    android:paddingLeft="6dp"
-                                                                    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
-                                                            </LinearLayout>
-
-                                                        </LinearLayout>
-
-                                                    </LinearLayout>
-
                                                 </FrameLayout>
 
                                             </LinearLayout>
@@ -2389,7 +1856,7 @@
                                                 android:baselineAligned="false">
 
                                                 <FrameLayout
-                                                    android:layout_width="wrap_content"
+                                                    android:layout_width="0dp"
                                                     android:layout_height="wrap_content"
                                                     android:layout_weight="1"
                                                     android:layout_gravity="start"
@@ -2413,96 +1880,7 @@
                                                             android:paddingBottom="5dp"
                                                             android:paddingTop="5dp" />
 
-                                                        <ImageView
-                                                            android:layout_width="wrap_content"
-                                                            android:layout_height="wrap_content"
-                                                            app:srcCompat="@drawable/photoplace100x100taxinsurance"
-                                                            android:id="@+id/photoplace100x100lightsreflectors"
-                                                            tools:ignore="ContentDescription,RtlHardcoded,RtlSymmetry"
-                                                            android:paddingLeft="5dp" />
-
                                                     </LinearLayout>
-                                                </FrameLayout>
-
-                                                <FrameLayout
-                                                    android:layout_width="wrap_content"
-                                                    android:layout_height="match_parent"
-                                                    android:layout_weight="1">
-
-                                                    <LinearLayout
-                                                        android:orientation="horizontal"
-                                                        android:layout_width="wrap_content"
-                                                        android:layout_height="match_parent"
-                                                        android:id="@+id/lightsreflectorspicturelayoutframe">
-
-                                                        <LinearLayout
-                                                            android:orientation="vertical"
-                                                            android:layout_width="wrap_content"
-                                                            android:layout_height="match_parent"
-                                                            android:paddingLeft="5dp"
-                                                            android:paddingRight="5dp">
-
-                                                            <LinearLayout
-                                                                android:orientation="horizontal"
-                                                                android:layout_width="wrap_content"
-                                                                android:layout_height="wrap_content"
-                                                                android:paddingTop="5dp">
-
-                                                                <ImageButton
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="wrap_content"
-                                                                    android:id="@+id/lightsreflectorstakephoto"
-                                                                    android:layout_column="0"
-                                                                    android:background="#00ffffff"
-                                                                    android:src="@drawable/button_effect_takephoto"
-                                                                    tools:ignore="ContentDescription,TooManyViews"
-                                                                    android:layout_weight="1" />
-
-                                                                <TextView
-                                                                    android:text="CAMERA"
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="match_parent"
-                                                                    android:id="@+id/lightsreflectorscamera"
-                                                                    android:layout_weight="1"
-                                                                    android:gravity="center|start"
-                                                                    android:textStyle="normal|bold"
-                                                                    android:paddingLeft="5dp"
-                                                                    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
-
-                                                            </LinearLayout>
-
-                                                            <LinearLayout
-                                                                android:orientation="horizontal"
-                                                                android:layout_width="wrap_content"
-                                                                android:layout_height="wrap_content"
-                                                                android:paddingTop="6dp">
-
-                                                                <ImageButton
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="wrap_content"
-                                                                    android:id="@+id/lightsreflectorscheckgallary"
-                                                                    android:layout_column="0"
-                                                                    android:background="#00ffffff"
-                                                                    android:src="@drawable/button_effect_photogallarybottom"
-                                                                    android:layout_weight="1"
-                                                                    tools:ignore="ContentDescription" />
-
-                                                                <TextView
-                                                                    android:text="GALLERY"
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="match_parent"
-                                                                    android:id="@+id/lightsreflectorsgallary"
-                                                                    android:layout_weight="1"
-                                                                    android:gravity="center|start"
-                                                                    android:textStyle="normal|bold"
-                                                                    android:paddingLeft="6dp"
-                                                                    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
-                                                            </LinearLayout>
-
-                                                        </LinearLayout>
-
-                                                    </LinearLayout>
-
                                                 </FrameLayout>
 
                                             </LinearLayout>
@@ -2698,7 +2076,7 @@
                                                 android:baselineAligned="false">
 
                                                 <FrameLayout
-                                                    android:layout_width="wrap_content"
+                                                    android:layout_width="0dp"
                                                     android:layout_height="wrap_content"
                                                     android:layout_weight="1"
                                                     android:layout_gravity="start"
@@ -2722,96 +2100,7 @@
                                                             android:paddingBottom="5dp"
                                                             android:paddingTop="5dp" />
 
-                                                        <ImageView
-                                                            android:layout_width="wrap_content"
-                                                            android:layout_height="wrap_content"
-                                                            app:srcCompat="@drawable/photoplace100x100taxinsurance"
-                                                            android:id="@+id/photoplace100x100exhaust"
-                                                            tools:ignore="ContentDescription,RtlHardcoded,RtlSymmetry"
-                                                            android:paddingLeft="5dp" />
-
                                                     </LinearLayout>
-                                                </FrameLayout>
-
-                                                <FrameLayout
-                                                    android:layout_width="wrap_content"
-                                                    android:layout_height="match_parent"
-                                                    android:layout_weight="1">
-
-                                                    <LinearLayout
-                                                        android:orientation="horizontal"
-                                                        android:layout_width="wrap_content"
-                                                        android:layout_height="match_parent"
-                                                        android:id="@+id/exhaustpicturelayoutframe">
-
-                                                        <LinearLayout
-                                                            android:orientation="vertical"
-                                                            android:layout_width="wrap_content"
-                                                            android:layout_height="match_parent"
-                                                            android:paddingLeft="5dp"
-                                                            android:paddingRight="5dp">
-
-                                                            <LinearLayout
-                                                                android:orientation="horizontal"
-                                                                android:layout_width="wrap_content"
-                                                                android:layout_height="wrap_content"
-                                                                android:paddingTop="5dp">
-
-                                                                <ImageButton
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="wrap_content"
-                                                                    android:id="@+id/exhausttakephoto"
-                                                                    android:layout_column="0"
-                                                                    android:background="#00ffffff"
-                                                                    android:src="@drawable/button_effect_takephoto"
-                                                                    tools:ignore="ContentDescription,TooManyViews"
-                                                                    android:layout_weight="1" />
-
-                                                                <TextView
-                                                                    android:text="CAMERA"
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="match_parent"
-                                                                    android:id="@+id/exhaustcamera"
-                                                                    android:layout_weight="1"
-                                                                    android:gravity="center|start"
-                                                                    android:textStyle="normal|bold"
-                                                                    android:paddingLeft="5dp"
-                                                                    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
-
-                                                            </LinearLayout>
-
-                                                            <LinearLayout
-                                                                android:orientation="horizontal"
-                                                                android:layout_width="wrap_content"
-                                                                android:layout_height="wrap_content"
-                                                                android:paddingTop="6dp">
-
-                                                                <ImageButton
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="wrap_content"
-                                                                    android:id="@+id/exhaustcheckgallary"
-                                                                    android:layout_column="0"
-                                                                    android:background="#00ffffff"
-                                                                    android:src="@drawable/button_effect_photogallarybottom"
-                                                                    android:layout_weight="1"
-                                                                    tools:ignore="ContentDescription" />
-
-                                                                <TextView
-                                                                    android:text="GALLERY"
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="match_parent"
-                                                                    android:id="@+id/exhaustgallary"
-                                                                    android:layout_weight="1"
-                                                                    android:gravity="center|start"
-                                                                    android:textStyle="normal|bold"
-                                                                    android:paddingLeft="6dp"
-                                                                    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
-                                                            </LinearLayout>
-
-                                                        </LinearLayout>
-
-                                                    </LinearLayout>
-
                                                 </FrameLayout>
 
                                             </LinearLayout>
@@ -3007,7 +2296,7 @@
                                                 android:baselineAligned="false">
 
                                                 <FrameLayout
-                                                    android:layout_width="wrap_content"
+                                                    android:layout_width="0dp"
                                                     android:layout_height="wrap_content"
                                                     android:layout_weight="1"
                                                     android:layout_gravity="start"
@@ -3031,96 +2320,7 @@
                                                             android:paddingBottom="5dp"
                                                             android:paddingTop="5dp" />
 
-                                                        <ImageView
-                                                            android:layout_width="wrap_content"
-                                                            android:layout_height="wrap_content"
-                                                            app:srcCompat="@drawable/photoplace100x100taxinsurance"
-                                                            android:id="@+id/photoplace100x100bodyguards"
-                                                            tools:ignore="ContentDescription,RtlHardcoded,RtlSymmetry"
-                                                            android:paddingLeft="5dp" />
-
                                                     </LinearLayout>
-                                                </FrameLayout>
-
-                                                <FrameLayout
-                                                    android:layout_width="wrap_content"
-                                                    android:layout_height="match_parent"
-                                                    android:layout_weight="1">
-
-                                                    <LinearLayout
-                                                        android:orientation="horizontal"
-                                                        android:layout_width="wrap_content"
-                                                        android:layout_height="match_parent"
-                                                        android:id="@+id/bodyguardspicturelayoutframe">
-
-                                                        <LinearLayout
-                                                            android:orientation="vertical"
-                                                            android:layout_width="wrap_content"
-                                                            android:layout_height="match_parent"
-                                                            android:paddingLeft="5dp"
-                                                            android:paddingRight="5dp">
-
-                                                            <LinearLayout
-                                                                android:orientation="horizontal"
-                                                                android:layout_width="wrap_content"
-                                                                android:layout_height="wrap_content"
-                                                                android:paddingTop="5dp">
-
-                                                                <ImageButton
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="wrap_content"
-                                                                    android:id="@+id/bodyguardstakephoto"
-                                                                    android:layout_column="0"
-                                                                    android:background="#00ffffff"
-                                                                    android:src="@drawable/button_effect_takephoto"
-                                                                    tools:ignore="ContentDescription,TooManyViews"
-                                                                    android:layout_weight="1" />
-
-                                                                <TextView
-                                                                    android:text="CAMERA"
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="match_parent"
-                                                                    android:id="@+id/bodyguardscamera"
-                                                                    android:layout_weight="1"
-                                                                    android:gravity="center|start"
-                                                                    android:textStyle="normal|bold"
-                                                                    android:paddingLeft="5dp"
-                                                                    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
-
-                                                            </LinearLayout>
-
-                                                            <LinearLayout
-                                                                android:orientation="horizontal"
-                                                                android:layout_width="wrap_content"
-                                                                android:layout_height="wrap_content"
-                                                                android:paddingTop="6dp">
-
-                                                                <ImageButton
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="wrap_content"
-                                                                    android:id="@+id/bodyguardscheckgallary"
-                                                                    android:layout_column="0"
-                                                                    android:background="#00ffffff"
-                                                                    android:src="@drawable/button_effect_photogallarybottom"
-                                                                    android:layout_weight="1"
-                                                                    tools:ignore="ContentDescription" />
-
-                                                                <TextView
-                                                                    android:text="GALLERY"
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="match_parent"
-                                                                    android:id="@+id/bodyguardsgallary"
-                                                                    android:layout_weight="1"
-                                                                    android:gravity="center|start"
-                                                                    android:textStyle="normal|bold"
-                                                                    android:paddingLeft="6dp"
-                                                                    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
-                                                            </LinearLayout>
-
-                                                        </LinearLayout>
-
-                                                    </LinearLayout>
-
                                                 </FrameLayout>
 
                                             </LinearLayout>
@@ -3316,7 +2516,7 @@
                                                 android:baselineAligned="false">
 
                                                 <FrameLayout
-                                                    android:layout_width="wrap_content"
+                                                    android:layout_width="0dp"
                                                     android:layout_height="wrap_content"
                                                     android:layout_weight="1"
                                                     android:layout_gravity="start"
@@ -3340,96 +2540,7 @@
                                                             android:paddingBottom="5dp"
                                                             android:paddingTop="5dp" />
 
-                                                        <ImageView
-                                                            android:layout_width="wrap_content"
-                                                            android:layout_height="wrap_content"
-                                                            app:srcCompat="@drawable/photoplace100x100taxinsurance"
-                                                            android:id="@+id/photoplace100x100landingleg"
-                                                            tools:ignore="ContentDescription,RtlHardcoded,RtlSymmetry"
-                                                            android:paddingLeft="5dp" />
-
                                                     </LinearLayout>
-                                                </FrameLayout>
-
-                                                <FrameLayout
-                                                    android:layout_width="wrap_content"
-                                                    android:layout_height="match_parent"
-                                                    android:layout_weight="1">
-
-                                                    <LinearLayout
-                                                        android:orientation="horizontal"
-                                                        android:layout_width="wrap_content"
-                                                        android:layout_height="match_parent"
-                                                        android:id="@+id/landinglegpicturelayoutframe">
-
-                                                        <LinearLayout
-                                                            android:orientation="vertical"
-                                                            android:layout_width="wrap_content"
-                                                            android:layout_height="match_parent"
-                                                            android:paddingLeft="5dp"
-                                                            android:paddingRight="5dp">
-
-                                                            <LinearLayout
-                                                                android:orientation="horizontal"
-                                                                android:layout_width="wrap_content"
-                                                                android:layout_height="wrap_content"
-                                                                android:paddingTop="5dp">
-
-                                                                <ImageButton
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="wrap_content"
-                                                                    android:id="@+id/landinglegtakephoto"
-                                                                    android:layout_column="0"
-                                                                    android:background="#00ffffff"
-                                                                    android:src="@drawable/button_effect_takephoto"
-                                                                    tools:ignore="ContentDescription,TooManyViews"
-                                                                    android:layout_weight="1" />
-
-                                                                <TextView
-                                                                    android:text="CAMERA"
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="match_parent"
-                                                                    android:id="@+id/landinglegcamera"
-                                                                    android:layout_weight="1"
-                                                                    android:gravity="center|start"
-                                                                    android:textStyle="normal|bold"
-                                                                    android:paddingLeft="5dp"
-                                                                    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
-
-                                                            </LinearLayout>
-
-                                                            <LinearLayout
-                                                                android:orientation="horizontal"
-                                                                android:layout_width="wrap_content"
-                                                                android:layout_height="wrap_content"
-                                                                android:paddingTop="6dp">
-
-                                                                <ImageButton
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="wrap_content"
-                                                                    android:id="@+id/landinglegcheckgallary"
-                                                                    android:layout_column="0"
-                                                                    android:background="#00ffffff"
-                                                                    android:src="@drawable/button_effect_photogallarybottom"
-                                                                    android:layout_weight="1"
-                                                                    tools:ignore="ContentDescription" />
-
-                                                                <TextView
-                                                                    android:text="GALLERY"
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="match_parent"
-                                                                    android:id="@+id/landingleggallary"
-                                                                    android:layout_weight="1"
-                                                                    android:gravity="center|start"
-                                                                    android:textStyle="normal|bold"
-                                                                    android:paddingLeft="6dp"
-                                                                    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
-                                                            </LinearLayout>
-
-                                                        </LinearLayout>
-
-                                                    </LinearLayout>
-
                                                 </FrameLayout>
 
                                             </LinearLayout>
@@ -3625,7 +2736,7 @@
                                                 android:baselineAligned="false">
 
                                                 <FrameLayout
-                                                    android:layout_width="wrap_content"
+                                                    android:layout_width="0dp"
                                                     android:layout_height="wrap_content"
                                                     android:layout_weight="1"
                                                     android:layout_gravity="start"
@@ -3649,96 +2760,7 @@
                                                             android:paddingBottom="5dp"
                                                             android:paddingTop="5dp" />
 
-                                                        <ImageView
-                                                            android:layout_width="wrap_content"
-                                                            android:layout_height="wrap_content"
-                                                            app:srcCompat="@drawable/photoplace100x100taxinsurance"
-                                                            android:id="@+id/photoplace100x100sparetow"
-                                                            tools:ignore="ContentDescription,RtlHardcoded,RtlSymmetry"
-                                                            android:paddingLeft="5dp" />
-
                                                     </LinearLayout>
-                                                </FrameLayout>
-
-                                                <FrameLayout
-                                                    android:layout_width="wrap_content"
-                                                    android:layout_height="match_parent"
-                                                    android:layout_weight="1">
-
-                                                    <LinearLayout
-                                                        android:orientation="horizontal"
-                                                        android:layout_width="wrap_content"
-                                                        android:layout_height="match_parent"
-                                                        android:id="@+id/sparetowpicturelayoutframe">
-
-                                                        <LinearLayout
-                                                            android:orientation="vertical"
-                                                            android:layout_width="wrap_content"
-                                                            android:layout_height="match_parent"
-                                                            android:paddingLeft="5dp"
-                                                            android:paddingRight="5dp">
-
-                                                            <LinearLayout
-                                                                android:orientation="horizontal"
-                                                                android:layout_width="wrap_content"
-                                                                android:layout_height="wrap_content"
-                                                                android:paddingTop="5dp">
-
-                                                                <ImageButton
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="wrap_content"
-                                                                    android:id="@+id/sparetowtakephoto"
-                                                                    android:layout_column="0"
-                                                                    android:background="#00ffffff"
-                                                                    android:src="@drawable/button_effect_takephoto"
-                                                                    tools:ignore="ContentDescription,TooManyViews"
-                                                                    android:layout_weight="1" />
-
-                                                                <TextView
-                                                                    android:text="CAMERA"
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="match_parent"
-                                                                    android:id="@+id/sparetowcamera"
-                                                                    android:layout_weight="1"
-                                                                    android:gravity="center|start"
-                                                                    android:textStyle="normal|bold"
-                                                                    android:paddingLeft="5dp"
-                                                                    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
-
-                                                            </LinearLayout>
-
-                                                            <LinearLayout
-                                                                android:orientation="horizontal"
-                                                                android:layout_width="wrap_content"
-                                                                android:layout_height="wrap_content"
-                                                                android:paddingTop="6dp">
-
-                                                                <ImageButton
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="wrap_content"
-                                                                    android:id="@+id/sparetowcheckgallary"
-                                                                    android:layout_column="0"
-                                                                    android:background="#00ffffff"
-                                                                    android:src="@drawable/button_effect_photogallarybottom"
-                                                                    android:layout_weight="1"
-                                                                    tools:ignore="ContentDescription" />
-
-                                                                <TextView
-                                                                    android:text="GALLERY"
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="match_parent"
-                                                                    android:id="@+id/sparetowgallary"
-                                                                    android:layout_weight="1"
-                                                                    android:gravity="center|start"
-                                                                    android:textStyle="normal|bold"
-                                                                    android:paddingLeft="6dp"
-                                                                    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
-                                                            </LinearLayout>
-
-                                                        </LinearLayout>
-
-                                                    </LinearLayout>
-
                                                 </FrameLayout>
 
                                             </LinearLayout>
@@ -3934,7 +2956,7 @@
                                                 android:baselineAligned="false">
 
                                                 <FrameLayout
-                                                    android:layout_width="wrap_content"
+                                                    android:layout_width="0dp"
                                                     android:layout_height="wrap_content"
                                                     android:layout_weight="1"
                                                     android:layout_gravity="start"
@@ -3958,96 +2980,7 @@
                                                             android:paddingBottom="5dp"
                                                             android:paddingTop="5dp" />
 
-                                                        <ImageView
-                                                            android:layout_width="wrap_content"
-                                                            android:layout_height="wrap_content"
-                                                            app:srcCompat="@drawable/photoplace100x100taxinsurance"
-                                                            android:id="@+id/photoplace100x100trailerbrake"
-                                                            tools:ignore="ContentDescription,RtlHardcoded,RtlSymmetry"
-                                                            android:paddingLeft="5dp" />
-
                                                     </LinearLayout>
-                                                </FrameLayout>
-
-                                                <FrameLayout
-                                                    android:layout_width="wrap_content"
-                                                    android:layout_height="match_parent"
-                                                    android:layout_weight="1">
-
-                                                    <LinearLayout
-                                                        android:orientation="horizontal"
-                                                        android:layout_width="wrap_content"
-                                                        android:layout_height="match_parent"
-                                                        android:id="@+id/trailerbrakepicturelayoutframe">
-
-                                                        <LinearLayout
-                                                            android:orientation="vertical"
-                                                            android:layout_width="wrap_content"
-                                                            android:layout_height="match_parent"
-                                                            android:paddingLeft="5dp"
-                                                            android:paddingRight="5dp">
-
-                                                            <LinearLayout
-                                                                android:orientation="horizontal"
-                                                                android:layout_width="wrap_content"
-                                                                android:layout_height="wrap_content"
-                                                                android:paddingTop="5dp">
-
-                                                                <ImageButton
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="wrap_content"
-                                                                    android:id="@+id/trailerbraketakephoto"
-                                                                    android:layout_column="0"
-                                                                    android:background="#00ffffff"
-                                                                    android:src="@drawable/button_effect_takephoto"
-                                                                    tools:ignore="ContentDescription,TooManyViews"
-                                                                    android:layout_weight="1" />
-
-                                                                <TextView
-                                                                    android:text="CAMERA"
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="match_parent"
-                                                                    android:id="@+id/trailerbrakecamera"
-                                                                    android:layout_weight="1"
-                                                                    android:gravity="center|start"
-                                                                    android:textStyle="normal|bold"
-                                                                    android:paddingLeft="5dp"
-                                                                    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
-
-                                                            </LinearLayout>
-
-                                                            <LinearLayout
-                                                                android:orientation="horizontal"
-                                                                android:layout_width="wrap_content"
-                                                                android:layout_height="wrap_content"
-                                                                android:paddingTop="6dp">
-
-                                                                <ImageButton
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="wrap_content"
-                                                                    android:id="@+id/trailerbrakecheckgallary"
-                                                                    android:layout_column="0"
-                                                                    android:background="#00ffffff"
-                                                                    android:src="@drawable/button_effect_photogallarybottom"
-                                                                    android:layout_weight="1"
-                                                                    tools:ignore="ContentDescription" />
-
-                                                                <TextView
-                                                                    android:text="GALLERY"
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="match_parent"
-                                                                    android:id="@+id/trailerbrakegallary"
-                                                                    android:layout_weight="1"
-                                                                    android:gravity="center|start"
-                                                                    android:textStyle="normal|bold"
-                                                                    android:paddingLeft="6dp"
-                                                                    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
-                                                            </LinearLayout>
-
-                                                        </LinearLayout>
-
-                                                    </LinearLayout>
-
                                                 </FrameLayout>
 
                                             </LinearLayout>
@@ -4326,7 +3259,7 @@
                                                 android:baselineAligned="false">
 
                                                 <FrameLayout
-                                                    android:layout_width="wrap_content"
+                                                    android:layout_width="0dp"
                                                     android:layout_height="wrap_content"
                                                     android:layout_weight="1"
                                                     android:layout_gravity="start"
@@ -4350,96 +3283,7 @@
                                                             android:paddingBottom="5dp"
                                                             android:paddingTop="5dp" />
 
-                                                        <ImageView
-                                                            android:layout_width="wrap_content"
-                                                            android:layout_height="wrap_content"
-                                                            app:srcCompat="@drawable/photoplace100x100taxinsurance"
-                                                            android:id="@+id/photoplace100x100winmir"
-                                                            tools:ignore="ContentDescription,RtlHardcoded,RtlSymmetry"
-                                                            android:paddingLeft="5dp" />
-
                                                     </LinearLayout>
-                                                </FrameLayout>
-
-                                                <FrameLayout
-                                                    android:layout_width="wrap_content"
-                                                    android:layout_height="match_parent"
-                                                    android:layout_weight="1">
-
-                                                    <LinearLayout
-                                                        android:orientation="horizontal"
-                                                        android:layout_width="wrap_content"
-                                                        android:layout_height="match_parent"
-                                                        android:id="@+id/windowsandmirrorspicturelayoutframe">
-
-                                                        <LinearLayout
-                                                            android:orientation="vertical"
-                                                            android:layout_width="wrap_content"
-                                                            android:layout_height="match_parent"
-                                                            android:paddingLeft="5dp"
-                                                            android:paddingRight="5dp">
-
-                                                            <LinearLayout
-                                                                android:orientation="horizontal"
-                                                                android:layout_width="wrap_content"
-                                                                android:layout_height="wrap_content"
-                                                                android:paddingTop="5dp">
-
-                                                                <ImageButton
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="wrap_content"
-                                                                    android:id="@+id/windowsandmirrorstakephoto"
-                                                                    android:layout_column="0"
-                                                                    android:background="#00ffffff"
-                                                                    android:src="@drawable/button_effect_takephoto"
-                                                                    tools:ignore="ContentDescription,TooManyViews"
-                                                                    android:layout_weight="1" />
-
-                                                                <TextView
-                                                                    android:text="CAMERA"
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="match_parent"
-                                                                    android:id="@+id/windowsandmirrorscamera"
-                                                                    android:layout_weight="1"
-                                                                    android:gravity="center|start"
-                                                                    android:textStyle="normal|bold"
-                                                                    android:paddingLeft="5dp"
-                                                                    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
-
-                                                            </LinearLayout>
-
-                                                            <LinearLayout
-                                                                android:orientation="horizontal"
-                                                                android:layout_width="wrap_content"
-                                                                android:layout_height="wrap_content"
-                                                                android:paddingTop="6dp">
-
-                                                                <ImageButton
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="wrap_content"
-                                                                    android:id="@+id/windowsandmirrorscheckgallary"
-                                                                    android:layout_column="0"
-                                                                    android:background="#00ffffff"
-                                                                    android:src="@drawable/button_effect_photogallarybottom"
-                                                                    android:layout_weight="1"
-                                                                    tools:ignore="ContentDescription" />
-
-                                                                <TextView
-                                                                    android:text="GALLERY"
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="match_parent"
-                                                                    android:id="@+id/windowsandmirrorsgallary"
-                                                                    android:layout_weight="1"
-                                                                    android:gravity="center|start"
-                                                                    android:textStyle="normal|bold"
-                                                                    android:paddingLeft="6dp"
-                                                                    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
-                                                            </LinearLayout>
-
-                                                        </LinearLayout>
-
-                                                    </LinearLayout>
-
                                                 </FrameLayout>
 
                                             </LinearLayout>
@@ -4635,7 +3479,7 @@
                                                 android:baselineAligned="false">
 
                                                 <FrameLayout
-                                                    android:layout_width="wrap_content"
+                                                    android:layout_width="0dp"
                                                     android:layout_height="wrap_content"
                                                     android:layout_weight="1"
                                                     android:layout_gravity="start"
@@ -4659,96 +3503,7 @@
                                                             android:paddingBottom="5dp"
                                                             android:paddingTop="5dp" />
 
-                                                        <ImageView
-                                                            android:layout_width="wrap_content"
-                                                            android:layout_height="wrap_content"
-                                                            app:srcCompat="@drawable/photoplace100x100taxinsurance"
-                                                            android:id="@+id/photoplace100x100seatbelts"
-                                                            tools:ignore="ContentDescription,RtlHardcoded,RtlSymmetry"
-                                                            android:paddingLeft="5dp" />
-
                                                     </LinearLayout>
-                                                </FrameLayout>
-
-                                                <FrameLayout
-                                                    android:layout_width="wrap_content"
-                                                    android:layout_height="match_parent"
-                                                    android:layout_weight="1">
-
-                                                    <LinearLayout
-                                                        android:orientation="horizontal"
-                                                        android:layout_width="wrap_content"
-                                                        android:layout_height="match_parent"
-                                                        android:id="@+id/seatbeltpicturelayoutframe">
-
-                                                        <LinearLayout
-                                                            android:orientation="vertical"
-                                                            android:layout_width="wrap_content"
-                                                            android:layout_height="match_parent"
-                                                            android:paddingLeft="5dp"
-                                                            android:paddingRight="5dp">
-
-                                                            <LinearLayout
-                                                                android:orientation="horizontal"
-                                                                android:layout_width="wrap_content"
-                                                                android:layout_height="wrap_content"
-                                                                android:paddingTop="5dp">
-
-                                                                <ImageButton
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="wrap_content"
-                                                                    android:id="@+id/seatbelttakephoto"
-                                                                    android:layout_column="0"
-                                                                    android:background="#00ffffff"
-                                                                    android:src="@drawable/button_effect_takephoto"
-                                                                    tools:ignore="ContentDescription,TooManyViews"
-                                                                    android:layout_weight="1" />
-
-                                                                <TextView
-                                                                    android:text="CAMERA"
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="match_parent"
-                                                                    android:id="@+id/seatbeltscamera"
-                                                                    android:layout_weight="1"
-                                                                    android:gravity="center|start"
-                                                                    android:textStyle="normal|bold"
-                                                                    android:paddingLeft="5dp"
-                                                                    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
-
-                                                            </LinearLayout>
-
-                                                            <LinearLayout
-                                                                android:orientation="horizontal"
-                                                                android:layout_width="wrap_content"
-                                                                android:layout_height="wrap_content"
-                                                                android:paddingTop="6dp">
-
-                                                                <ImageButton
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="wrap_content"
-                                                                    android:id="@+id/seatbeltcheckgallary"
-                                                                    android:layout_column="0"
-                                                                    android:background="#00ffffff"
-                                                                    android:src="@drawable/button_effect_photogallarybottom"
-                                                                    android:layout_weight="1"
-                                                                    tools:ignore="ContentDescription" />
-
-                                                                <TextView
-                                                                    android:text="GALLERY"
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="match_parent"
-                                                                    android:id="@+id/seatbeltgallary"
-                                                                    android:layout_weight="1"
-                                                                    android:gravity="center|start"
-                                                                    android:textStyle="normal|bold"
-                                                                    android:paddingLeft="6dp"
-                                                                    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
-                                                            </LinearLayout>
-
-                                                        </LinearLayout>
-
-                                                    </LinearLayout>
-
                                                 </FrameLayout>
 
                                             </LinearLayout>
@@ -4944,7 +3699,7 @@
                                             android:baselineAligned="false">
 
                                             <FrameLayout
-                                                android:layout_width="wrap_content"
+                                                android:layout_width="0dp"
                                                 android:layout_height="wrap_content"
                                                 android:layout_weight="1"
                                                 android:layout_gravity="start"
@@ -4968,96 +3723,7 @@
                                                         android:paddingBottom="5dp"
                                                         android:paddingTop="5dp" />
 
-                                                    <ImageView
-                                                        android:layout_width="wrap_content"
-                                                        android:layout_height="wrap_content"
-                                                        app:srcCompat="@drawable/photoplace100x100taxinsurance"
-                                                        android:id="@+id/photoplace100x100washerandwiper"
-                                                        tools:ignore="ContentDescription,RtlHardcoded,RtlSymmetry"
-                                                        android:paddingLeft="5dp" />
-
                                                 </LinearLayout>
-                                            </FrameLayout>
-
-                                            <FrameLayout
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="match_parent"
-                                                android:layout_weight="1">
-
-                                                <LinearLayout
-                                                    android:orientation="horizontal"
-                                                    android:layout_width="wrap_content"
-                                                    android:layout_height="match_parent"
-                                                    android:id="@+id/washerandwiperpicturelayoutframe">
-
-                                                    <LinearLayout
-                                                        android:orientation="vertical"
-                                                        android:layout_width="wrap_content"
-                                                        android:layout_height="match_parent"
-                                                        android:paddingLeft="5dp"
-                                                        android:paddingRight="5dp">
-
-                                                        <LinearLayout
-                                                            android:orientation="horizontal"
-                                                            android:layout_width="wrap_content"
-                                                            android:layout_height="wrap_content"
-                                                            android:paddingTop="5dp">
-
-                                                            <ImageButton
-                                                                android:layout_width="wrap_content"
-                                                                android:layout_height="wrap_content"
-                                                                android:id="@+id/washerandwipertakephoto"
-                                                                android:layout_column="0"
-                                                                android:background="#00ffffff"
-                                                                android:src="@drawable/button_effect_takephoto"
-                                                                tools:ignore="ContentDescription,TooManyViews"
-                                                                android:layout_weight="1" />
-
-                                                            <TextView
-                                                                android:text="CAMERA"
-                                                                android:layout_width="wrap_content"
-                                                                android:layout_height="match_parent"
-                                                                android:id="@+id/washerandwipercamera"
-                                                                android:layout_weight="1"
-                                                                android:gravity="center|start"
-                                                                android:textStyle="normal|bold"
-                                                                android:paddingLeft="5dp"
-                                                                tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
-
-                                                        </LinearLayout>
-
-                                                        <LinearLayout
-                                                            android:orientation="horizontal"
-                                                            android:layout_width="wrap_content"
-                                                            android:layout_height="wrap_content"
-                                                            android:paddingTop="6dp">
-
-                                                            <ImageButton
-                                                                android:layout_width="wrap_content"
-                                                                android:layout_height="wrap_content"
-                                                                android:id="@+id/washerandwipercheckgallary"
-                                                                android:layout_column="0"
-                                                                android:background="#00ffffff"
-                                                                android:src="@drawable/button_effect_photogallarybottom"
-                                                                android:layout_weight="1"
-                                                                tools:ignore="ContentDescription" />
-
-                                                            <TextView
-                                                                android:text="GALLERY"
-                                                                android:layout_width="wrap_content"
-                                                                android:layout_height="match_parent"
-                                                                android:id="@+id/washerandwipergallary"
-                                                                android:layout_weight="1"
-                                                                android:gravity="center|start"
-                                                                android:textStyle="normal|bold"
-                                                                android:paddingLeft="6dp"
-                                                                tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
-                                                        </LinearLayout>
-
-                                                    </LinearLayout>
-
-                                                </LinearLayout>
-
                                             </FrameLayout>
 
                                         </LinearLayout>
@@ -5253,7 +3919,7 @@
                                                 android:baselineAligned="false">
 
                                                 <FrameLayout
-                                                    android:layout_width="wrap_content"
+                                                    android:layout_width="0dp"
                                                     android:layout_height="wrap_content"
                                                     android:layout_weight="1"
                                                     android:layout_gravity="start"
@@ -5277,96 +3943,7 @@
                                                             android:paddingBottom="5dp"
                                                             android:paddingTop="5dp" />
 
-                                                        <ImageView
-                                                            android:layout_width="wrap_content"
-                                                            android:layout_height="wrap_content"
-                                                            app:srcCompat="@drawable/photoplace100x100taxinsurance"
-                                                            android:id="@+id/photoplace100x100horn"
-                                                            tools:ignore="ContentDescription,RtlHardcoded,RtlSymmetry"
-                                                            android:paddingLeft="5dp" />
-
                                                     </LinearLayout>
-                                                </FrameLayout>
-
-                                                <FrameLayout
-                                                    android:layout_width="wrap_content"
-                                                    android:layout_height="match_parent"
-                                                    android:layout_weight="1">
-
-                                                    <LinearLayout
-                                                        android:orientation="horizontal"
-                                                        android:layout_width="wrap_content"
-                                                        android:layout_height="match_parent"
-                                                        android:id="@+id/hornpicturelayoutframe">
-
-                                                        <LinearLayout
-                                                            android:orientation="vertical"
-                                                            android:layout_width="wrap_content"
-                                                            android:layout_height="match_parent"
-                                                            android:paddingLeft="5dp"
-                                                            android:paddingRight="5dp">
-
-                                                            <LinearLayout
-                                                                android:orientation="horizontal"
-                                                                android:layout_width="wrap_content"
-                                                                android:layout_height="wrap_content"
-                                                                android:paddingTop="5dp">
-
-                                                                <ImageButton
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="wrap_content"
-                                                                    android:id="@+id/horntakephoto"
-                                                                    android:layout_column="0"
-                                                                    android:background="#00ffffff"
-                                                                    android:src="@drawable/button_effect_takephoto"
-                                                                    tools:ignore="ContentDescription,TooManyViews"
-                                                                    android:layout_weight="1" />
-
-                                                                <TextView
-                                                                    android:text="CAMERA"
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="match_parent"
-                                                                    android:id="@+id/horncamera"
-                                                                    android:layout_weight="1"
-                                                                    android:gravity="center|start"
-                                                                    android:textStyle="normal|bold"
-                                                                    android:paddingLeft="5dp"
-                                                                    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
-
-                                                            </LinearLayout>
-
-                                                            <LinearLayout
-                                                                android:orientation="horizontal"
-                                                                android:layout_width="wrap_content"
-                                                                android:layout_height="wrap_content"
-                                                                android:paddingTop="6dp">
-
-                                                                <ImageButton
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="wrap_content"
-                                                                    android:id="@+id/horncheckgallary"
-                                                                    android:layout_column="0"
-                                                                    android:background="#00ffffff"
-                                                                    android:src="@drawable/button_effect_photogallarybottom"
-                                                                    android:layout_weight="1"
-                                                                    tools:ignore="ContentDescription" />
-
-                                                                <TextView
-                                                                    android:text="GALLERY"
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="match_parent"
-                                                                    android:id="@+id/horngallary"
-                                                                    android:layout_weight="1"
-                                                                    android:gravity="center|start"
-                                                                    android:textStyle="normal|bold"
-                                                                    android:paddingLeft="6dp"
-                                                                    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
-                                                            </LinearLayout>
-
-                                                        </LinearLayout>
-
-                                                    </LinearLayout>
-
                                                 </FrameLayout>
 
                                             </LinearLayout>
@@ -5562,7 +4139,7 @@
                                                 android:baselineAligned="false">
 
                                                 <FrameLayout
-                                                    android:layout_width="wrap_content"
+                                                    android:layout_width="0dp"
                                                     android:layout_height="wrap_content"
                                                     android:layout_weight="1"
                                                     android:layout_gravity="start"
@@ -5586,96 +4163,7 @@
                                                             android:paddingBottom="5dp"
                                                             android:paddingTop="5dp" />
 
-                                                        <ImageView
-                                                            android:layout_width="wrap_content"
-                                                            android:layout_height="wrap_content"
-                                                            app:srcCompat="@drawable/photoplace100x100taxinsurance"
-                                                            android:id="@+id/photoplace100x100breakwarninglight"
-                                                            tools:ignore="ContentDescription,RtlHardcoded,RtlSymmetry"
-                                                            android:paddingLeft="5dp" />
-
                                                     </LinearLayout>
-                                                </FrameLayout>
-
-                                                <FrameLayout
-                                                    android:layout_width="wrap_content"
-                                                    android:layout_height="match_parent"
-                                                    android:layout_weight="1">
-
-                                                    <LinearLayout
-                                                        android:orientation="horizontal"
-                                                        android:layout_width="wrap_content"
-                                                        android:layout_height="match_parent"
-                                                        android:id="@+id/breakwarninglightpicturelayoutframe">
-
-                                                        <LinearLayout
-                                                            android:orientation="vertical"
-                                                            android:layout_width="wrap_content"
-                                                            android:layout_height="match_parent"
-                                                            android:paddingLeft="5dp"
-                                                            android:paddingRight="5dp">
-
-                                                            <LinearLayout
-                                                                android:orientation="horizontal"
-                                                                android:layout_width="wrap_content"
-                                                                android:layout_height="wrap_content"
-                                                                android:paddingTop="5dp">
-
-                                                                <ImageButton
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="wrap_content"
-                                                                    android:id="@+id/breakwarninglighttakephoto"
-                                                                    android:layout_column="0"
-                                                                    android:background="#00ffffff"
-                                                                    android:src="@drawable/button_effect_takephoto"
-                                                                    tools:ignore="ContentDescription,TooManyViews"
-                                                                    android:layout_weight="1" />
-
-                                                                <TextView
-                                                                    android:text="CAMERA"
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="match_parent"
-                                                                    android:id="@+id/breakwarninglightcamera"
-                                                                    android:layout_weight="1"
-                                                                    android:gravity="center|start"
-                                                                    android:textStyle="normal|bold"
-                                                                    android:paddingLeft="5dp"
-                                                                    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
-
-                                                            </LinearLayout>
-
-                                                            <LinearLayout
-                                                                android:orientation="horizontal"
-                                                                android:layout_width="wrap_content"
-                                                                android:layout_height="wrap_content"
-                                                                android:paddingTop="6dp">
-
-                                                                <ImageButton
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="wrap_content"
-                                                                    android:id="@+id/breakwarninglightcheckgallary"
-                                                                    android:layout_column="0"
-                                                                    android:background="#00ffffff"
-                                                                    android:src="@drawable/button_effect_photogallarybottom"
-                                                                    android:layout_weight="1"
-                                                                    tools:ignore="ContentDescription" />
-
-                                                                <TextView
-                                                                    android:text="GALLERY"
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="match_parent"
-                                                                    android:id="@+id/breakwarninglightgallary"
-                                                                    android:layout_weight="1"
-                                                                    android:gravity="center|start"
-                                                                    android:textStyle="normal|bold"
-                                                                    android:paddingLeft="6dp"
-                                                                    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
-                                                            </LinearLayout>
-
-                                                        </LinearLayout>
-
-                                                    </LinearLayout>
-
                                                 </FrameLayout>
 
                                             </LinearLayout>
@@ -5871,7 +4359,7 @@
                                                 android:baselineAligned="false">
 
                                                 <FrameLayout
-                                                    android:layout_width="wrap_content"
+                                                    android:layout_width="0dp"
                                                     android:layout_height="wrap_content"
                                                     android:layout_weight="1"
                                                     android:layout_gravity="start"
@@ -5895,96 +4383,7 @@
                                                             android:paddingBottom="5dp"
                                                             android:paddingTop="5dp" />
 
-                                                        <ImageView
-                                                            android:layout_width="wrap_content"
-                                                            android:layout_height="wrap_content"
-                                                            app:srcCompat="@drawable/photoplace100x100taxinsurance"
-                                                            android:id="@+id/photoplace100x100gauge"
-                                                            tools:ignore="ContentDescription,RtlHardcoded,RtlSymmetry"
-                                                            android:paddingLeft="5dp" />
-
                                                     </LinearLayout>
-                                                </FrameLayout>
-
-                                                <FrameLayout
-                                                    android:layout_width="wrap_content"
-                                                    android:layout_height="match_parent"
-                                                    android:layout_weight="1">
-
-                                                    <LinearLayout
-                                                        android:orientation="horizontal"
-                                                        android:layout_width="wrap_content"
-                                                        android:layout_height="match_parent"
-                                                        android:id="@+id/gaugepicturelayoutframe">
-
-                                                        <LinearLayout
-                                                            android:orientation="vertical"
-                                                            android:layout_width="wrap_content"
-                                                            android:layout_height="match_parent"
-                                                            android:paddingLeft="5dp"
-                                                            android:paddingRight="5dp">
-
-                                                            <LinearLayout
-                                                                android:orientation="horizontal"
-                                                                android:layout_width="wrap_content"
-                                                                android:layout_height="wrap_content"
-                                                                android:paddingTop="5dp">
-
-                                                                <ImageButton
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="wrap_content"
-                                                                    android:id="@+id/gaugetakephoto"
-                                                                    android:layout_column="0"
-                                                                    android:background="#00ffffff"
-                                                                    android:src="@drawable/button_effect_takephoto"
-                                                                    tools:ignore="ContentDescription,TooManyViews"
-                                                                    android:layout_weight="1" />
-
-                                                                <TextView
-                                                                    android:text="CAMERA"
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="match_parent"
-                                                                    android:id="@+id/gaugecamera"
-                                                                    android:layout_weight="1"
-                                                                    android:gravity="center|start"
-                                                                    android:textStyle="normal|bold"
-                                                                    android:paddingLeft="5dp"
-                                                                    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
-
-                                                            </LinearLayout>
-
-                                                            <LinearLayout
-                                                                android:orientation="horizontal"
-                                                                android:layout_width="wrap_content"
-                                                                android:layout_height="wrap_content"
-                                                                android:paddingTop="6dp">
-
-                                                                <ImageButton
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="wrap_content"
-                                                                    android:id="@+id/gaugecheckgallary"
-                                                                    android:layout_column="0"
-                                                                    android:background="#00ffffff"
-                                                                    android:src="@drawable/button_effect_photogallarybottom"
-                                                                    android:layout_weight="1"
-                                                                    tools:ignore="ContentDescription" />
-
-                                                                <TextView
-                                                                    android:text="GALLERY"
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="match_parent"
-                                                                    android:id="@+id/gaugegallary"
-                                                                    android:layout_weight="1"
-                                                                    android:gravity="center|start"
-                                                                    android:textStyle="normal|bold"
-                                                                    android:paddingLeft="6dp"
-                                                                    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
-                                                            </LinearLayout>
-
-                                                        </LinearLayout>
-
-                                                    </LinearLayout>
-
                                                 </FrameLayout>
 
                                             </LinearLayout>
@@ -6180,7 +4579,7 @@
                                                 android:baselineAligned="false">
 
                                                 <FrameLayout
-                                                    android:layout_width="wrap_content"
+                                                    android:layout_width="0dp"
                                                     android:layout_height="wrap_content"
                                                     android:layout_weight="1"
                                                     android:layout_gravity="start"
@@ -6204,96 +4603,7 @@
                                                             android:paddingBottom="5dp"
                                                             android:paddingTop="5dp" />
 
-                                                        <ImageView
-                                                            android:layout_width="wrap_content"
-                                                            android:layout_height="wrap_content"
-                                                            app:srcCompat="@drawable/photoplace100x100taxinsurance"
-                                                            android:id="@+id/photoplace100x100tacho"
-                                                            tools:ignore="ContentDescription,RtlHardcoded,RtlSymmetry"
-                                                            android:paddingLeft="5dp" />
-
                                                     </LinearLayout>
-                                                </FrameLayout>
-
-                                                <FrameLayout
-                                                    android:layout_width="wrap_content"
-                                                    android:layout_height="match_parent"
-                                                    android:layout_weight="1">
-
-                                                    <LinearLayout
-                                                        android:orientation="horizontal"
-                                                        android:layout_width="wrap_content"
-                                                        android:layout_height="match_parent"
-                                                        android:id="@+id/tachopicturelayoutframe">
-
-                                                        <LinearLayout
-                                                            android:orientation="vertical"
-                                                            android:layout_width="wrap_content"
-                                                            android:layout_height="match_parent"
-                                                            android:paddingLeft="5dp"
-                                                            android:paddingRight="5dp">
-
-                                                            <LinearLayout
-                                                                android:orientation="horizontal"
-                                                                android:layout_width="wrap_content"
-                                                                android:layout_height="wrap_content"
-                                                                android:paddingTop="5dp">
-
-                                                                <ImageButton
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="wrap_content"
-                                                                    android:id="@+id/tachotakephoto"
-                                                                    android:layout_column="0"
-                                                                    android:background="#00ffffff"
-                                                                    android:src="@drawable/button_effect_takephoto"
-                                                                    tools:ignore="ContentDescription,TooManyViews"
-                                                                    android:layout_weight="1" />
-
-                                                                <TextView
-                                                                    android:text="CAMERA"
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="match_parent"
-                                                                    android:id="@+id/tachocamera"
-                                                                    android:layout_weight="1"
-                                                                    android:gravity="center|start"
-                                                                    android:textStyle="normal|bold"
-                                                                    android:paddingLeft="5dp"
-                                                                    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
-
-                                                            </LinearLayout>
-
-                                                            <LinearLayout
-                                                                android:orientation="horizontal"
-                                                                android:layout_width="wrap_content"
-                                                                android:layout_height="wrap_content"
-                                                                android:paddingTop="6dp">
-
-                                                                <ImageButton
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="wrap_content"
-                                                                    android:id="@+id/tachocheckgallary"
-                                                                    android:layout_column="0"
-                                                                    android:background="#00ffffff"
-                                                                    android:src="@drawable/button_effect_photogallarybottom"
-                                                                    android:layout_weight="1"
-                                                                    tools:ignore="ContentDescription" />
-
-                                                                <TextView
-                                                                    android:text="GALLERY"
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="match_parent"
-                                                                    android:id="@+id/tachogallary"
-                                                                    android:layout_weight="1"
-                                                                    android:gravity="center|start"
-                                                                    android:textStyle="normal|bold"
-                                                                    android:paddingLeft="6dp"
-                                                                    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
-                                                            </LinearLayout>
-
-                                                        </LinearLayout>
-
-                                                    </LinearLayout>
-
                                                 </FrameLayout>
 
                                             </LinearLayout>
@@ -6489,7 +4799,7 @@
                                                 android:baselineAligned="false">
 
                                                 <FrameLayout
-                                                    android:layout_width="wrap_content"
+                                                    android:layout_width="0dp"
                                                     android:layout_height="wrap_content"
                                                     android:layout_weight="1"
                                                     android:layout_gravity="start"
@@ -6513,96 +4823,7 @@
                                                             android:paddingBottom="5dp"
                                                             android:paddingTop="5dp" />
 
-                                                        <ImageView
-                                                            android:layout_width="wrap_content"
-                                                            android:layout_height="wrap_content"
-                                                            app:srcCompat="@drawable/photoplace100x100taxinsurance"
-                                                            android:id="@+id/photoplace100x100airleaks"
-                                                            tools:ignore="ContentDescription,RtlHardcoded,RtlSymmetry"
-                                                            android:paddingLeft="5dp" />
-
                                                     </LinearLayout>
-                                                </FrameLayout>
-
-                                                <FrameLayout
-                                                    android:layout_width="wrap_content"
-                                                    android:layout_height="match_parent"
-                                                    android:layout_weight="1">
-
-                                                    <LinearLayout
-                                                        android:orientation="horizontal"
-                                                        android:layout_width="wrap_content"
-                                                        android:layout_height="match_parent"
-                                                        android:id="@+id/airleakspicturelayoutframe">
-
-                                                        <LinearLayout
-                                                            android:orientation="vertical"
-                                                            android:layout_width="wrap_content"
-                                                            android:layout_height="match_parent"
-                                                            android:paddingLeft="5dp"
-                                                            android:paddingRight="5dp">
-
-                                                            <LinearLayout
-                                                                android:orientation="horizontal"
-                                                                android:layout_width="wrap_content"
-                                                                android:layout_height="wrap_content"
-                                                                android:paddingTop="5dp">
-
-                                                                <ImageButton
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="wrap_content"
-                                                                    android:id="@+id/airleakstakephoto"
-                                                                    android:layout_column="0"
-                                                                    android:background="#00ffffff"
-                                                                    android:src="@drawable/button_effect_takephoto"
-                                                                    tools:ignore="ContentDescription,TooManyViews"
-                                                                    android:layout_weight="1" />
-
-                                                                <TextView
-                                                                    android:text="CAMERA"
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="match_parent"
-                                                                    android:id="@+id/airleakscamera"
-                                                                    android:layout_weight="1"
-                                                                    android:gravity="center|start"
-                                                                    android:textStyle="normal|bold"
-                                                                    android:paddingLeft="5dp"
-                                                                    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
-
-                                                            </LinearLayout>
-
-                                                            <LinearLayout
-                                                                android:orientation="horizontal"
-                                                                android:layout_width="wrap_content"
-                                                                android:layout_height="wrap_content"
-                                                                android:paddingTop="6dp">
-
-                                                                <ImageButton
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="wrap_content"
-                                                                    android:id="@+id/airleakscheckgallary"
-                                                                    android:layout_column="0"
-                                                                    android:background="#00ffffff"
-                                                                    android:src="@drawable/button_effect_photogallarybottom"
-                                                                    android:layout_weight="1"
-                                                                    tools:ignore="ContentDescription" />
-
-                                                                <TextView
-                                                                    android:text="GALLERY"
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="match_parent"
-                                                                    android:id="@+id/airleaksgallary"
-                                                                    android:layout_weight="1"
-                                                                    android:gravity="center|start"
-                                                                    android:textStyle="normal|bold"
-                                                                    android:paddingLeft="6dp"
-                                                                    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
-                                                            </LinearLayout>
-
-                                                        </LinearLayout>
-
-                                                    </LinearLayout>
-
                                                 </FrameLayout>
 
                                             </LinearLayout>
@@ -6881,7 +5102,7 @@
                                                 android:baselineAligned="false">
 
                                                 <FrameLayout
-                                                    android:layout_width="wrap_content"
+                                                    android:layout_width="0dp"
                                                     android:layout_height="wrap_content"
                                                     android:layout_weight="1"
                                                     android:layout_gravity="start"
@@ -6905,96 +5126,7 @@
                                                             android:paddingBottom="5dp"
                                                             android:paddingTop="5dp" />
 
-                                                        <ImageView
-                                                            android:layout_width="wrap_content"
-                                                            android:layout_height="wrap_content"
-                                                            app:srcCompat="@drawable/photoplace100x100taxinsurance"
-                                                            android:id="@+id/photoplace100x100steeringbreaking"
-                                                            tools:ignore="ContentDescription,RtlHardcoded,RtlSymmetry"
-                                                            android:paddingLeft="5dp" />
-
                                                     </LinearLayout>
-                                                </FrameLayout>
-
-                                                <FrameLayout
-                                                    android:layout_width="wrap_content"
-                                                    android:layout_height="match_parent"
-                                                    android:layout_weight="1">
-
-                                                    <LinearLayout
-                                                        android:orientation="horizontal"
-                                                        android:layout_width="wrap_content"
-                                                        android:layout_height="match_parent"
-                                                        android:id="@+id/steeringbreakingpicturelayoutframe">
-
-                                                        <LinearLayout
-                                                            android:orientation="vertical"
-                                                            android:layout_width="wrap_content"
-                                                            android:layout_height="match_parent"
-                                                            android:paddingLeft="5dp"
-                                                            android:paddingRight="5dp">
-
-                                                            <LinearLayout
-                                                                android:orientation="horizontal"
-                                                                android:layout_width="wrap_content"
-                                                                android:layout_height="wrap_content"
-                                                                android:paddingTop="5dp">
-
-                                                                <ImageButton
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="wrap_content"
-                                                                    android:id="@+id/steeringbreakingtakephoto"
-                                                                    android:layout_column="0"
-                                                                    android:background="#00ffffff"
-                                                                    android:src="@drawable/button_effect_takephoto"
-                                                                    tools:ignore="ContentDescription,TooManyViews"
-                                                                    android:layout_weight="1" />
-
-                                                                <TextView
-                                                                    android:text="CAMERA"
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="match_parent"
-                                                                    android:id="@+id/steeringbreakingcamera"
-                                                                    android:layout_weight="1"
-                                                                    android:gravity="center|start"
-                                                                    android:textStyle="normal|bold"
-                                                                    android:paddingLeft="5dp"
-                                                                    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
-
-                                                            </LinearLayout>
-
-                                                            <LinearLayout
-                                                                android:orientation="horizontal"
-                                                                android:layout_width="wrap_content"
-                                                                android:layout_height="wrap_content"
-                                                                android:paddingTop="6dp">
-
-                                                                <ImageButton
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="wrap_content"
-                                                                    android:id="@+id/steeringbreakingcheckgallary"
-                                                                    android:layout_column="0"
-                                                                    android:background="#00ffffff"
-                                                                    android:src="@drawable/button_effect_photogallarybottom"
-                                                                    android:layout_weight="1"
-                                                                    tools:ignore="ContentDescription" />
-
-                                                                <TextView
-                                                                    android:text="GALLERY"
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="match_parent"
-                                                                    android:id="@+id/steeringbreakinggallary"
-                                                                    android:layout_weight="1"
-                                                                    android:gravity="center|start"
-                                                                    android:textStyle="normal|bold"
-                                                                    android:paddingLeft="6dp"
-                                                                    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
-                                                            </LinearLayout>
-
-                                                        </LinearLayout>
-
-                                                    </LinearLayout>
-
                                                 </FrameLayout>
 
                                             </LinearLayout>
@@ -7190,7 +5322,7 @@
                                                 android:baselineAligned="false">
 
                                                 <FrameLayout
-                                                    android:layout_width="wrap_content"
+                                                    android:layout_width="0dp"
                                                     android:layout_height="wrap_content"
                                                     android:layout_weight="1"
                                                     android:layout_gravity="start"
@@ -7214,96 +5346,7 @@
                                                             android:paddingBottom="5dp"
                                                             android:paddingTop="5dp" />
 
-                                                        <ImageView
-                                                            android:layout_width="wrap_content"
-                                                            android:layout_height="wrap_content"
-                                                            app:srcCompat="@drawable/photoplace100x100taxinsurance"
-                                                            android:id="@+id/photoplace100x100loadsecure"
-                                                            tools:ignore="ContentDescription,RtlHardcoded,RtlSymmetry"
-                                                            android:paddingLeft="5dp" />
-
                                                     </LinearLayout>
-                                                </FrameLayout>
-
-                                                <FrameLayout
-                                                    android:layout_width="wrap_content"
-                                                    android:layout_height="match_parent"
-                                                    android:layout_weight="1">
-
-                                                    <LinearLayout
-                                                        android:orientation="horizontal"
-                                                        android:layout_width="wrap_content"
-                                                        android:layout_height="match_parent"
-                                                        android:id="@+id/loadsecurepicturelayoutframe">
-
-                                                        <LinearLayout
-                                                            android:orientation="vertical"
-                                                            android:layout_width="wrap_content"
-                                                            android:layout_height="match_parent"
-                                                            android:paddingLeft="5dp"
-                                                            android:paddingRight="5dp">
-
-                                                            <LinearLayout
-                                                                android:orientation="horizontal"
-                                                                android:layout_width="wrap_content"
-                                                                android:layout_height="wrap_content"
-                                                                android:paddingTop="5dp">
-
-                                                                <ImageButton
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="wrap_content"
-                                                                    android:id="@+id/loadsecuretakephoto"
-                                                                    android:layout_column="0"
-                                                                    android:background="#00ffffff"
-                                                                    android:src="@drawable/button_effect_takephoto"
-                                                                    tools:ignore="ContentDescription,TooManyViews"
-                                                                    android:layout_weight="1" />
-
-                                                                <TextView
-                                                                    android:text="CAMERA"
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="match_parent"
-                                                                    android:id="@+id/loadsecurecamera"
-                                                                    android:layout_weight="1"
-                                                                    android:gravity="center|start"
-                                                                    android:textStyle="normal|bold"
-                                                                    android:paddingLeft="5dp"
-                                                                    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
-
-                                                            </LinearLayout>
-
-                                                            <LinearLayout
-                                                                android:orientation="horizontal"
-                                                                android:layout_width="wrap_content"
-                                                                android:layout_height="wrap_content"
-                                                                android:paddingTop="6dp">
-
-                                                                <ImageButton
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="wrap_content"
-                                                                    android:id="@+id/loadsecurecheckgallary"
-                                                                    android:layout_column="0"
-                                                                    android:background="#00ffffff"
-                                                                    android:src="@drawable/button_effect_photogallarybottom"
-                                                                    android:layout_weight="1"
-                                                                    tools:ignore="ContentDescription" />
-
-                                                                <TextView
-                                                                    android:text="GALLERY"
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="match_parent"
-                                                                    android:id="@+id/loadsecuregallary"
-                                                                    android:layout_weight="1"
-                                                                    android:gravity="center|start"
-                                                                    android:textStyle="normal|bold"
-                                                                    android:paddingLeft="6dp"
-                                                                    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
-                                                            </LinearLayout>
-
-                                                        </LinearLayout>
-
-                                                    </LinearLayout>
-
                                                 </FrameLayout>
 
                                             </LinearLayout>
@@ -7499,7 +5542,7 @@
                                                 android:baselineAligned="false">
 
                                                 <FrameLayout
-                                                    android:layout_width="wrap_content"
+                                                    android:layout_width="0dp"
                                                     android:layout_height="wrap_content"
                                                     android:layout_weight="1"
                                                     android:layout_gravity="start"
@@ -7523,96 +5566,7 @@
                                                             android:paddingBottom="5dp"
                                                             android:paddingTop="5dp" />
 
-                                                        <ImageView
-                                                            android:layout_width="wrap_content"
-                                                            android:layout_height="wrap_content"
-                                                            app:srcCompat="@drawable/photoplace100x100taxinsurance"
-                                                            android:id="@+id/photoplace100x100tachospeedo"
-                                                            tools:ignore="ContentDescription,RtlHardcoded,RtlSymmetry"
-                                                            android:paddingLeft="5dp" />
-
                                                     </LinearLayout>
-                                                </FrameLayout>
-
-                                                <FrameLayout
-                                                    android:layout_width="wrap_content"
-                                                    android:layout_height="match_parent"
-                                                    android:layout_weight="1">
-
-                                                    <LinearLayout
-                                                        android:orientation="horizontal"
-                                                        android:layout_width="wrap_content"
-                                                        android:layout_height="match_parent"
-                                                        android:id="@+id/tachospeedopicturelayoutframe">
-
-                                                        <LinearLayout
-                                                            android:orientation="vertical"
-                                                            android:layout_width="wrap_content"
-                                                            android:layout_height="match_parent"
-                                                            android:paddingLeft="5dp"
-                                                            android:paddingRight="5dp">
-
-                                                            <LinearLayout
-                                                                android:orientation="horizontal"
-                                                                android:layout_width="wrap_content"
-                                                                android:layout_height="wrap_content"
-                                                                android:paddingTop="5dp">
-
-                                                                <ImageButton
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="wrap_content"
-                                                                    android:id="@+id/tachospeedotakephoto"
-                                                                    android:layout_column="0"
-                                                                    android:background="#00ffffff"
-                                                                    android:src="@drawable/button_effect_takephoto"
-                                                                    tools:ignore="ContentDescription,TooManyViews"
-                                                                    android:layout_weight="1" />
-
-                                                                <TextView
-                                                                    android:text="CAMERA"
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="match_parent"
-                                                                    android:id="@+id/tachospeedocamera"
-                                                                    android:layout_weight="1"
-                                                                    android:gravity="center|start"
-                                                                    android:textStyle="normal|bold"
-                                                                    android:paddingLeft="5dp"
-                                                                    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
-
-                                                            </LinearLayout>
-
-                                                            <LinearLayout
-                                                                android:orientation="horizontal"
-                                                                android:layout_width="wrap_content"
-                                                                android:layout_height="wrap_content"
-                                                                android:paddingTop="6dp">
-
-                                                                <ImageButton
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="wrap_content"
-                                                                    android:id="@+id/tachospeedocheckgallary"
-                                                                    android:layout_column="0"
-                                                                    android:background="#00ffffff"
-                                                                    android:src="@drawable/button_effect_photogallarybottom"
-                                                                    android:layout_weight="1"
-                                                                    tools:ignore="ContentDescription" />
-
-                                                                <TextView
-                                                                    android:text="GALLERY"
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="match_parent"
-                                                                    android:id="@+id/tachospeedogallary"
-                                                                    android:layout_weight="1"
-                                                                    android:gravity="center|start"
-                                                                    android:textStyle="normal|bold"
-                                                                    android:paddingLeft="6dp"
-                                                                    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
-                                                            </LinearLayout>
-
-                                                        </LinearLayout>
-
-                                                    </LinearLayout>
-
                                                 </FrameLayout>
 
                                             </LinearLayout>
@@ -7808,7 +5762,7 @@
                                                 android:baselineAligned="false">
 
                                                 <FrameLayout
-                                                    android:layout_width="wrap_content"
+                                                    android:layout_width="0dp"
                                                     android:layout_height="wrap_content"
                                                     android:layout_weight="1"
                                                     android:layout_gravity="start"
@@ -7832,96 +5786,7 @@
                                                             android:paddingBottom="5dp"
                                                             android:paddingTop="5dp" />
 
-                                                        <ImageView
-                                                            android:layout_width="wrap_content"
-                                                            android:layout_height="wrap_content"
-                                                            app:srcCompat="@drawable/photoplace100x100taxinsurance"
-                                                            android:id="@+id/photoplace100x100nowarninglights"
-                                                            tools:ignore="ContentDescription,RtlHardcoded,RtlSymmetry"
-                                                            android:paddingLeft="5dp" />
-
                                                     </LinearLayout>
-                                                </FrameLayout>
-
-                                                <FrameLayout
-                                                    android:layout_width="wrap_content"
-                                                    android:layout_height="match_parent"
-                                                    android:layout_weight="1">
-
-                                                    <LinearLayout
-                                                        android:orientation="horizontal"
-                                                        android:layout_width="wrap_content"
-                                                        android:layout_height="match_parent"
-                                                        android:id="@+id/nowarninglightspicturelayoutframe">
-
-                                                        <LinearLayout
-                                                            android:orientation="vertical"
-                                                            android:layout_width="wrap_content"
-                                                            android:layout_height="match_parent"
-                                                            android:paddingLeft="5dp"
-                                                            android:paddingRight="5dp">
-
-                                                            <LinearLayout
-                                                                android:orientation="horizontal"
-                                                                android:layout_width="wrap_content"
-                                                                android:layout_height="wrap_content"
-                                                                android:paddingTop="5dp">
-
-                                                                <ImageButton
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="wrap_content"
-                                                                    android:id="@+id/nowarninglightstakephoto"
-                                                                    android:layout_column="0"
-                                                                    android:background="#00ffffff"
-                                                                    android:src="@drawable/button_effect_takephoto"
-                                                                    tools:ignore="ContentDescription,TooManyViews"
-                                                                    android:layout_weight="1" />
-
-                                                                <TextView
-                                                                    android:text="CAMERA"
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="match_parent"
-                                                                    android:id="@+id/nowarninglightscamera"
-                                                                    android:layout_weight="1"
-                                                                    android:gravity="center|start"
-                                                                    android:textStyle="normal|bold"
-                                                                    android:paddingLeft="5dp"
-                                                                    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
-
-                                                            </LinearLayout>
-
-                                                            <LinearLayout
-                                                                android:orientation="horizontal"
-                                                                android:layout_width="wrap_content"
-                                                                android:layout_height="wrap_content"
-                                                                android:paddingTop="6dp">
-
-                                                                <ImageButton
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="wrap_content"
-                                                                    android:id="@+id/nowarninglightscheckgallary"
-                                                                    android:layout_column="0"
-                                                                    android:background="#00ffffff"
-                                                                    android:src="@drawable/button_effect_photogallarybottom"
-                                                                    android:layout_weight="1"
-                                                                    tools:ignore="ContentDescription" />
-
-                                                                <TextView
-                                                                    android:text="GALLERY"
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="match_parent"
-                                                                    android:id="@+id/nowarninglightsgallary"
-                                                                    android:layout_weight="1"
-                                                                    android:gravity="center|start"
-                                                                    android:textStyle="normal|bold"
-                                                                    android:paddingLeft="6dp"
-                                                                    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
-                                                            </LinearLayout>
-
-                                                        </LinearLayout>
-
-                                                    </LinearLayout>
-
                                                 </FrameLayout>
 
                                             </LinearLayout>

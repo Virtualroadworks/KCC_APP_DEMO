@@ -257,7 +257,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".AT_RiskAssessment_formfilled"
-            android:label="@string/title_activity_at__risk_assessment_formfilled"
+            android:label="Risk Assessment Form"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".AT_RiskAssessment_listadaptor"
@@ -269,7 +269,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".AT_RiskAssessment_view"
-            android:label="@string/title_activity_at__risk_assessment_view"
+            android:label="Risk Assessment Form"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".AT_TrafficPlanSelection"
