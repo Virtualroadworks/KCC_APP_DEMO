@@ -1,8 +1,10 @@
 package com.example.laptop.truckmanv5;
 
 import android.app.FragmentManager;
+import android.content.Context;
 import android.content.Intent;
 import android.media.MediaPlayer;
+import android.net.ConnectivityManager;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
@@ -37,8 +39,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private Firebase mRootRef;
     private Button start_inspection_button;
 
+    boolean internet_connected;
 
-    private TextView user_name,user_name2,access_level;
+
+    private TextView user_name,user_name2,access_level,features,database_check,online_check;
 
     private String Level_0 = "Level 0";
     private String Level_1 = "Level 1";
@@ -47,6 +51,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     FrameLayout Lockoutuserframelayout;
 
+
+    public boolean  Online_check () {
+
+        ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        return cm.getActiveNetworkInfo() != null && cm.getActiveNetworkInfo().isConnectedOrConnecting();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,12 +84,28 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
+        internet_connected = Online_check ();
 
         user_name = (TextView) findViewById(R.id.user_name);
+        online_check = (TextView) findViewById(R.id.online_check);
+        database_check = (TextView) findViewById(R.id.database_check);
+        features = (TextView) findViewById(R.id.features);
         user_name2 = (TextView) findViewById(R.id.user_name2);
         access_level = (TextView) findViewById(R.id.access_level);
         Lockoutuserframelayout = (FrameLayout) findViewById(R.id.Lockoutuserframelayout);
 
+
+        if (internet_connected == false) {
+            online_check.setText("Device Status = Offline");
+            database_check.setText("Data is being stored on device");
+            features.setText("Photo storage is temporarily disabled.");
+        }
+        else {
+            online_check.setText("Device Status = Online");
+            database_check.setText("Data is synchronised with database");
+            features.setText("All features are available");
+            // onlineimage.setImageResource(R.drawable.onlineicon);
+        }
 
         if (firebaseAuth.getCurrentUser() == null) {
             finish();

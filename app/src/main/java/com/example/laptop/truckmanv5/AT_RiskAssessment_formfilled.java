@@ -547,16 +547,15 @@ public class AT_RiskAssessment_formfilled extends AppCompatActivity {
 
                         ///////////////////////////////////////1: Traffic/////////////////////////////////////////////////
 
+
                         if (traffic_ppe.equals("Yes")) {
                             raform_trafficppe_yes.setChecked(true);
                         } else { raform_trafficppe_yes.setChecked(false);
                         }
-
                         if (traffic_ppe.equals("No")) {
                             raform_trafficppe_no.setChecked(true);
                         } else { raform_trafficppe_no.setChecked(false);
                         }
-
                         if (traffic_roads_or_footpath.equals("Road")) {
                             raform_trafficroads.setChecked(true);
                         } else { raform_trafficroads.setChecked(false);

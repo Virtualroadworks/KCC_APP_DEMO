@@ -45,7 +45,7 @@
                         tools:ignore="ContentDescription" />
 
                     <TextView
-                        android:text="Form: AT0013_3"
+                        android:text="Inspections Form"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:textStyle="normal|bold"

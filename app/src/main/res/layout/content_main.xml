@@ -34,37 +34,12 @@
             </FrameLayout>
 
             <TextView
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:text="LOGIN SUCCESSFUL"
-                android:id="@+id/textView55"
-                android:textSize="15sp"
-                android:layout_alignParentTop="false"
-                android:layout_alignParentStart="false"
-                android:layout_centerHorizontal="true"
-                android:textAlignment="center"
-                android:layout_gravity="center_horizontal" />
-
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Login Successful,"
-                android:id="@+id/textView103"
-                android:textSize="20sp"
-                android:layout_below="@+id/textView55"
-                android:layout_centerHorizontal="true"
-                android:layout_gravity="center_horizontal"
-                android:paddingTop="25dp"
-                android:textColor="#000000" />
-
-            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Greetings,"
                 android:id="@+id/textView102"
                 android:textSize="20sp"
-                android:layout_below="@+id/textView55"
+                android:layout_below="@+id/online_check"
                 android:layout_centerHorizontal="true"
                 android:layout_gravity="center_horizontal"
                 android:paddingTop="25dp"
@@ -80,6 +55,49 @@
                 android:layout_gravity="center_horizontal"
                 android:textColorHint="#B9959595"
                 android:hint="User Name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login Successful,"
+                android:id="@+id/textView103"
+                android:textSize="30sp"
+                android:layout_below="@+id/online_check"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="25dp"
+                android:textColor="@color/cast_expanded_controller_background_color"
+                android:paddingBottom="25dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Online: Status"
+                android:id="@+id/online_check"
+                android:textSize="20sp"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentStart="false"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/cast_expanded_controller_background_color" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/database_check"
+                android:textSize="20sp"
+                android:textColor="@color/cast_expanded_controller_background_color"
+                android:textAlignment="center" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/features"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textColor="@color/cast_expanded_controller_background_color" />
 
         </LinearLayout>
 
