@@ -966,6 +966,233 @@
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:background="@color/Egis_trans">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:baselineAligned="false">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/cs_equipement_overall_waterproofsbuttoneffect"
+                            android:background="@color/Egis_trans"
+                            android:layout_margin="10dp"
+                            tools:ignore="ContentDescription" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:text="@string/required"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:textStyle="normal|bold"
+                            android:textSize="20sp"
+                            android:textColor="@color/cast_expanded_controller_background_color" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:scaleX="1.8"
+                                android:scaleY="1.8"
+                                android:id="@+id/csform_cs_overalls_checkbox_yes"
+                                android:buttonTint="@color/Green_tickbox"
+                                tools:ignore="TooDeepLayout"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp" />
+
+                            <TextView
+                                android:text="@string/yes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:textStyle="normal|bold"
+                                android:textColor="@color/cast_expanded_controller_background_color"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                    </FrameLayout>
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:scaleX="1.8"
+                                android:scaleY="1.8"
+                                android:id="@+id/csform_cs_overalls_checkbox_no"
+                                android:buttonTint="@color/Green_tickbox"
+                                tools:ignore="TooDeepLayout"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp" />
+
+                            <TextView
+                                android:text="@string/no"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:textStyle="normal|bold"
+                                android:textColor="@color/cast_expanded_controller_background_color"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/Egis_trans">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:baselineAligned="false">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/cs_equipement_bump_hatbuttoneffect"
+                            android:background="@color/Egis_trans"
+                            android:layout_margin="10dp"
+                            tools:ignore="ContentDescription" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:text="@string/required"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:textStyle="normal|bold"
+                            android:textSize="20sp"
+                            android:textColor="@color/cast_expanded_controller_background_color" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:scaleX="1.8"
+                                android:scaleY="1.8"
+                                android:id="@+id/csform_cs_bumphat_checkbox_yes"
+                                android:buttonTint="@color/Green_tickbox"
+                                tools:ignore="TooDeepLayout"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp" />
+
+                            <TextView
+                                android:text="@string/yes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:textStyle="normal|bold"
+                                android:textColor="@color/cast_expanded_controller_background_color"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                    </FrameLayout>
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:scaleX="1.8"
+                                android:scaleY="1.8"
+                                android:id="@+id/csform_cs_bumphat_checkbox_no"
+                                android:buttonTint="@color/Green_tickbox"
+                                tools:ignore="TooDeepLayout"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp" />
+
+                            <TextView
+                                android:text="@string/no"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:textStyle="normal|bold"
+                                android:textColor="@color/cast_expanded_controller_background_color"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:padding="10dp">
 
                 <LinearLayout

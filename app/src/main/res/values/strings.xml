@@ -399,4 +399,7 @@
     <string name="cs_level_1"><u>CS Level 1</u></string>
     <string name="cs_level_2"><u>CS Level 2</u></string>
     <string name="cs_level_3"><u>CS Level 3</u></string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="required">Required</string>
 </resources>
