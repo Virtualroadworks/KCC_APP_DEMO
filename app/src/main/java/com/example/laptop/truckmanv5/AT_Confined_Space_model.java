@@ -1,5 +1,7 @@
 package com.example.laptop.truckmanv5;
 
+
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -17,160 +19,21 @@ public class AT_Confined_Space_model {
 
     //////////////////////////////////////////////////////////////////////////////////
 
-    private String raform_trafficppe_yes;
-    private String raform_trafficppe_no;
-    private String raform_trafficroads;
-    private String raform_trafficfootpath;
-    private String raform_traffictmpguidelines_yes;
-    private String raform_traffictmpguidelines_no;
-    private String raform_trafficbeacon_yes;
-    private String raform_trafficbeacon_no;
-    private String raform_trafficleftsite_yes;
-    private String raform_trafficleftsite_no;
-
-    private String raform_trafficfallsystem_yes;
-    private String raform_trafficfallsystem_no;
-    private String raform_heights_harnessinspect_yes;
-    private String raform_heights_harnessinspect_no;
-    private String raform_heights_ladderinspect_yes;
-    private String raform_heights_ladderinspect_no;
-    private String raform_heights_laddertie_yes;
-    private String raform_heights_laddertie_no;
-    private String raform_heights_manholebarriier_yes;
-    private String raform_heights_manholebarriier_no;
+    private String csform_generalppehivisvest;
+    private String csform_generalppehardhat;
+    private String csform_generalppesafetyboots;
+    private String csform_generalppegloves;
+    private String csform_generalppeoveralls;
+    private String csform_generalppeglasses;
 
     //////////////////////////////////////////////////////////////////////////////////
+
+    private String csform_cs_level_1;
+    private String csform_cs_level_2;
+    private String csform_cs_level_3;
 
     public AT_Confined_Space_model () {
     }
-
-
-    //////////////////////////////////////////////////////////////////////////////////
-
-    public void setraform_trafficppe_yes(String raform_trafficppe_yes) {
-        this.raform_trafficppe_yes = raform_trafficppe_yes;
-    }
-    public String getraform_trafficppe_yes() {
-        return raform_trafficppe_yes;
-    }
-    public void setraform_trafficppe_no(String raform_trafficppe_no) {
-        this.raform_trafficppe_no = raform_trafficppe_no;
-    }
-    public String getraform_trafficppe_no() {
-        return raform_trafficppe_no;
-    }
-    public void setraform_trafficroads(String raform_trafficroads) {
-        this.raform_trafficroads = raform_trafficroads;
-    }
-    public String getraform_trafficroads() {
-        return raform_trafficroads;
-    }
-    public void setraform_trafficfootpath(String raform_trafficfootpath) {
-        this.raform_trafficfootpath = raform_trafficfootpath;
-    }
-    public String getraform_trafficfootpath() {
-        return raform_trafficfootpath;
-    }
-    public void setraform_traffictmpguidelines_yes(String raform_traffictmpguidelines_yes) {
-        this.raform_traffictmpguidelines_yes = raform_traffictmpguidelines_yes;
-    }
-    public String getraform_traffictmpguidelines_yes() {
-        return raform_traffictmpguidelines_yes;
-    }
-    public void setraform_traffictmpguidelines_no(String raform_traffictmpguidelines_no) {
-        this.raform_traffictmpguidelines_no = raform_traffictmpguidelines_no;
-    }
-    public String getraform_traffictmpguidelines_no() {
-        return raform_traffictmpguidelines_no;
-    }
-    public void setraform_trafficbeacon_yes(String raform_trafficbeacon_yes) {
-        this.raform_trafficbeacon_yes = raform_trafficbeacon_yes;
-    }
-    public String getraform_trafficbeacon_yes() {
-        return raform_trafficbeacon_yes;
-    }
-    public void setraform_trafficbeacon_no(String raform_trafficbeacon_no) {
-        this.raform_trafficbeacon_no = raform_trafficbeacon_no;
-    }
-    public String getraform_trafficbeacon_no() {
-        return raform_trafficbeacon_no;
-    }
-    public void setraform_trafficleftsite_yes(String raform_trafficleftsite_yes) {
-        this.raform_trafficleftsite_yes = raform_trafficleftsite_yes;
-    }
-    public String getraform_trafficleftsite_yes() {
-        return raform_trafficleftsite_yes;
-    }
-    public void setraform_trafficleftsite_no(String raform_trafficleftsite_no) {
-        this.raform_trafficleftsite_no = raform_trafficleftsite_no;
-    }
-    public String getraform_trafficleftsite_no() {
-        return raform_trafficleftsite_no;
-    }
-
-    public void setraform_trafficfallsystem_yes(String raform_trafficfallsystem_yes) {
-        this.raform_trafficfallsystem_yes = raform_trafficfallsystem_yes;
-    }
-    public String getraform_trafficfallsystem_yes() {
-        return raform_trafficfallsystem_yes;
-    }
-    public void setraform_trafficfallsystem_no(String raform_trafficfallsystem_no) {
-        this.raform_trafficfallsystem_no = raform_trafficfallsystem_no;
-    }
-    public String getraform_trafficfallsystem_no() {
-        return raform_trafficfallsystem_no;
-    }
-
-    public void setraform_heights_harnessinspect_yes(String raform_heights_harnessinspect_yes) {
-        this.raform_heights_harnessinspect_yes = raform_heights_harnessinspect_yes;
-    }
-    public String getraform_heights_harnessinspect_yes() {
-        return raform_heights_harnessinspect_yes;
-    }
-    public void setraform_heights_harnessinspect_no(String raform_heights_harnessinspect_no) {
-        this.raform_heights_harnessinspect_no = raform_heights_harnessinspect_no;
-    }
-    public String getraform_heights_harnessinspect_no() {
-        return raform_heights_harnessinspect_no;
-    }
-    public void setraform_heights_ladderinspect_yes(String raform_heights_ladderinspect_yes) {
-        this.raform_heights_ladderinspect_yes = raform_heights_ladderinspect_yes;
-    }
-    public String getraform_heights_ladderinspect_yes() {
-        return raform_heights_ladderinspect_yes;
-    }
-    public void setraform_heights_ladderinspect_no(String raform_heights_ladderinspect_no) {
-        this.raform_heights_ladderinspect_no = raform_heights_ladderinspect_no;
-    }
-    public String getraform_heights_ladderinspect_no() {
-        return raform_heights_ladderinspect_no;
-    }
-    public void setraform_heights_laddertie_yes(String raform_heights_laddertie_yes) {
-        this.raform_heights_laddertie_yes = raform_heights_laddertie_yes;
-    }
-    public String getraform_heights_laddertie_yes() {
-        return raform_heights_laddertie_yes;
-    }
-    public void setraform_heights_laddertie_no(String raform_heights_laddertie_no) {
-        this.raform_heights_laddertie_no = raform_heights_laddertie_no;
-    }
-    public String getraform_heights_laddertie_no() {
-        return raform_heights_laddertie_no;
-    }
-    public void setraform_heights_manholebarriier_yes(String raform_heights_manholebarriier_yes) {
-        this.raform_heights_manholebarriier_yes = raform_heights_manholebarriier_yes;
-    }
-    public String getraform_heights_manholebarriier_yes() {
-        return raform_heights_manholebarriier_yes;
-    }
-    public void setraform_heights_manholebarriier_no(String raform_heights_manholebarriier_no) {
-        this.raform_heights_manholebarriier_no = raform_heights_manholebarriier_no;
-    }
-    public String getraform_heights_manholebarriier_no() {
-        return raform_heights_manholebarriier_no;
-    }
-
-    //////////////////////////////////////////////////////////////////////////////////
 
 
     public void setuser_name(String user_name) {
@@ -216,7 +79,78 @@ public class AT_Confined_Space_model {
     }
 
 
-///////////////////////////////////////1 Section 1 Location/////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////////////////////
+
+    public void setcsform_generalppehivisvest(String csform_generalppehivisvest) {
+        this.csform_generalppehivisvest = csform_generalppehivisvest;
+    }
+    public String getcsform_generalppehivisvest() {
+        return csform_generalppehivisvest;
+    }
+
+    public void setcsform_generalppehardhat(String csform_generalppehardhat) {
+        this.csform_generalppehardhat = csform_generalppehardhat;
+    }
+    public String getcsform_generalppehardhat() {
+        return csform_generalppehardhat;
+    }
+
+    public void setcsform_generalppesafetyboots(String csform_generalppesafetyboots) {
+        this.csform_generalppesafetyboots = csform_generalppesafetyboots;
+    }
+    public String getcsform_generalppesafetyboots() {
+        return csform_generalppesafetyboots;
+    }
+
+    public void setcsform_generalppegloves(String csform_generalppegloves) {
+        this.csform_generalppegloves = csform_generalppegloves;
+    }
+    public String getcsform_generalppegloves() {
+        return csform_generalppegloves;
+    }
+
+    public void setcsform_generalppeoveralls(String csform_generalppeoveralls) {
+        this.csform_generalppeoveralls = csform_generalppeoveralls;
+    }
+    public String getcsform_generalppeoveralls() {
+        return csform_generalppeoveralls;
+    }
+
+    public void setcsform_generalppeglasses(String csform_generalppeglasses) {
+        this.csform_generalppeglasses = csform_generalppeglasses;
+    }
+    public String getcsform_generalppeglasses() {
+        return csform_generalppeglasses;
+    }
+
+
+    //////////////////////////////////////////////////////////////////////////////////
+
+    public void setcsform_cs_level_1(String csform_cs_level_1) {
+        this.csform_cs_level_1 = csform_cs_level_1;
+    }
+    public String getcsform_cs_level_1() {
+        return csform_cs_level_1;
+    }
+
+    public void setcsform_cs_level_2(String csform_cs_level_2) {
+        this.csform_cs_level_2 = csform_cs_level_2;
+    }
+    public String getcsform_cs_level_2() {
+        return csform_cs_level_2;
+    }
+
+    public void setcsform_cs_level_3(String csform_cs_level_3) {
+        this.csform_cs_level_3 = csform_cs_level_3;
+    }
+    public String getcsform_cs_level_3() {
+        return csform_cs_level_3;
+    }
+
+
+
+    //////////////////////////////////////////////////////////////////////////////////
+
 
 
 //--------------------------------------------------------------------------------------
@@ -233,30 +167,18 @@ public class AT_Confined_Space_model {
 //--------------------------------------------------------------------------------------
 
 
-        result.put("raform_trafficppe_yes", raform_trafficppe_yes);
-        result.put("raform_trafficppe_no", raform_trafficppe_no);
+        result.put("csform_generalppehivisvest", csform_generalppehivisvest);
+        result.put("csform_generalppehardhat", csform_generalppehardhat);
+        result.put("csform_generalppesafetyboots", csform_generalppesafetyboots);
+        result.put("csform_generalppegloves", csform_generalppegloves);
+        result.put("csform_generalppeoveralls", csform_generalppeoveralls);
+        result.put("csform_generalppeglasses", csform_generalppeglasses);
 
-        result.put("raform_trafficroads", raform_trafficroads);
-        result.put("raform_trafficfootpath", raform_trafficfootpath);
-        result.put("raform_traffictmpguidelines_yes", raform_traffictmpguidelines_yes);
-        result.put("raform_traffictmpguidelines_no", raform_traffictmpguidelines_no);
-        result.put("raform_trafficbeacon_yes", raform_trafficbeacon_yes);
-        result.put("raform_trafficbeacon_no", raform_trafficbeacon_no);
-        result.put("raform_trafficleftsite_yes", raform_trafficleftsite_yes);
-        result.put("raform_trafficleftsite_no", raform_trafficleftsite_no);
+//--------------------------------------------------------------------------------------
 
-        result.put("raform_trafficfallsystem_yes", raform_trafficfallsystem_yes);
-        result.put("raform_trafficfallsystem_no", raform_trafficfallsystem_no);
-
-        result.put("raform_heights_harnessinspect_yes", raform_heights_harnessinspect_yes);
-        result.put("raform_heights_harnessinspect_no", raform_heights_harnessinspect_no);
-        result.put("raform_heights_ladderinspect_yes", raform_heights_ladderinspect_yes);
-        result.put("raform_heights_ladderinspect_no", raform_heights_ladderinspect_no);
-        result.put("raform_heights_laddertie_yes", raform_heights_laddertie_yes);
-        result.put("raform_heights_laddertie_no", raform_heights_laddertie_no);
-        result.put("raform_heights_manholebarriier_yes", raform_heights_manholebarriier_yes);
-        result.put("raform_heights_manholebarriier_no", raform_heights_manholebarriier_no);
-
+        result.put("csform_cs_level_1", csform_cs_level_1);
+        result.put("csform_cs_level_2", csform_cs_level_2);
+        result.put("csform_cs_level_3", csform_cs_level_3);
 
 //--------------------------------------------------------------------------------------
 

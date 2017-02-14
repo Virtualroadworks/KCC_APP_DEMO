@@ -165,33 +165,24 @@ public class AT_Confined_Space_database extends AppCompatActivity {
         add.setstartDate(model.getstartDate());
         add.setendDate(model.getendDate());
 
-        ///////////////////////////////////////Risk Assessment/////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////////////
 
-        add.setraform_trafficppe_yes(model.getraform_trafficppe_yes());
-        add.setraform_trafficppe_no(model.getraform_trafficppe_no());
-        add.setraform_trafficroads(model.getraform_trafficroads());
-        add.setraform_trafficfootpath(model.getraform_trafficfootpath());
-        add.setraform_traffictmpguidelines_yes(model.getraform_traffictmpguidelines_yes());
-        add.setraform_traffictmpguidelines_no(model.getraform_traffictmpguidelines_no());
-        add.setraform_trafficbeacon_yes(model.getraform_trafficbeacon_yes());
-        add.setraform_trafficbeacon_no(model.getraform_trafficbeacon_no());
-        add.setraform_trafficleftsite_yes(model.getraform_trafficleftsite_yes());
-        add.setraform_trafficleftsite_no(model.getraform_trafficleftsite_no());
-        add.setraform_trafficfallsystem_yes(model.getraform_trafficfallsystem_yes());
-        add.setraform_trafficfallsystem_no(model.getraform_trafficfallsystem_no());
-
-        add.setraform_heights_harnessinspect_yes(model.getraform_heights_harnessinspect_yes());
-        add.setraform_heights_harnessinspect_no(model.getraform_heights_harnessinspect_no());
-        add.setraform_heights_ladderinspect_yes(model.getraform_heights_ladderinspect_yes());
-        add.setraform_heights_ladderinspect_no(model.getraform_heights_ladderinspect_no());
-        add.setraform_heights_laddertie_yes(model.getraform_heights_laddertie_yes());
-        add.setraform_heights_laddertie_no(model.getraform_heights_laddertie_no());
-        add.setraform_heights_manholebarriier_yes(model.getraform_heights_manholebarriier_yes());
-        add.setraform_heights_manholebarriier_no(model.getraform_heights_manholebarriier_no());
+        add.setcsform_generalppehivisvest(model.getcsform_generalppehivisvest());
+        add.setcsform_generalppehardhat(model.getcsform_generalppehardhat());
+        add.setcsform_generalppesafetyboots(model.getcsform_generalppesafetyboots());
+        add.setcsform_generalppegloves(model.getcsform_generalppegloves());
+        add.setcsform_generalppeoveralls(model.getcsform_generalppeoveralls());
+        add.setcsform_generalppeglasses(model.getcsform_generalppeglasses());
 
 
+        ////////////////////////////////////////////////////////////////////////////////////////
 
-        ///////////////////////////////////////Risk Assessment/////////////////////////////////////////////////
+        add.setcsform_cs_level_1(model.getcsform_cs_level_1());
+        add.setcsform_cs_level_2(model.getcsform_cs_level_2());
+        add.setcsform_cs_level_3(model.getcsform_cs_level_3());
+
+
+        ////////////////////////////////////////////////////////////////////////////////////////
 
 
 

@@ -38,71 +38,48 @@ import com.squareup.picasso.Picasso;
 public class AT_Confined_Space_view extends AppCompatActivity {
 
     TextView user_name,user_email,user_department_area,user_contact_number,time_stamp;
-    EditText at0013_3ck_nature_works_other_description;
-    EditText at0013_3ck_hazard_tmp_comments;
+
 
     CoordinatorLayout cl;
     Button bOK,bCancel;
     int position;
     AT_Confined_Space_model AT_Confined_Space_model;
 
-    private static final int GALLARY_INTENT = 2;
-    private static final int CAMERA_REQUEST_CODE = 1;
-
     private ProgressDialog mProgressDialog;
 
     private StorageReference mStorage;
-
-    ImageButton at0013_3takephoto;
-    ImageButton at0013_3gallary;
-    ImageButton at0013_3selectmap;
 
 
 
     ///////////////////////////////////////////////////////////////////////////////////
 
-    Boolean ratrafficicon100x100pressed = false;
-    Boolean raworkingatheightsicon100x100pressed = false;
 
+    Boolean csform_cs_level_1_checkbox_pressed = false;
+    Boolean csform_cs_level_2_checkbox_pressed = false;
+    Boolean csform_cs_level_3_checkbox_pressed = false;
 
-    ImageButton ratrafficicon100x100;
-    ImageButton rappeicon100x100;
-    ImageButton raroadsicon100x100;
-    ImageButton rafootpathicon100x100;
-    ImageButton rarivercleaningicon100x100;
+    ImageButton csgeneralppehivisicon100x100;
+    ImageButton csgeneralppehardhaticon100x100;
+    ImageButton csgeneralppesafetybootsicon100x100;
+    ImageButton csgeneralppeglovesicon100x100;
+    ImageButton csgeneralppedustoverallicon100x100;
+    ImageButton csgeneralppegooglesicon100x100;
 
-    ImageButton raworkingatheightsicon100x100;
-    ImageButton rapowerlinesicon100x100;
-    ImageButton ramanhandleicon100x100;
-    ImageButton raconspaceicon100x100;
-    ImageButton rapowertoolsicon100x100;
-    ImageButton rageneralppeicon100x100;
+    CheckBox csform_generalppehivisvest;
+    CheckBox csform_generalppehardhat;
+    CheckBox csform_generalppesafetyboots;
+    CheckBox csform_generalppegloves;
+    CheckBox csform_generalppeoveralls;
+    CheckBox csform_generalppeglasses;
 
-    CheckBox raform_trafficppe_yes;
-    CheckBox raform_trafficppe_no;
-    CheckBox raform_trafficroads;
-    CheckBox raform_trafficfootpath;
-    CheckBox raform_traffictmpguidelines_yes;
-    CheckBox raform_traffictmpguidelines_no;
-    CheckBox raform_trafficbeacon_yes;
-    CheckBox raform_trafficbeacon_no;
-    CheckBox raform_trafficleftsite_yes;
-    CheckBox raform_trafficleftsite_no;
+    CheckBox csform_cs_level_1_checkbox;
+    CheckBox csform_cs_level_2_checkbox;
+    CheckBox csform_cs_level_3_checkbox;
 
-    CheckBox raform_trafficfallsystem_yes;
-    CheckBox raform_trafficfallsystem_no;
-    CheckBox raform_heights_harnessinspect_yes;
-    CheckBox raform_heights_harnessinspect_no;
-    CheckBox raform_heights_ladderinspect_yes;
-    CheckBox raform_heights_ladderinspect_no;
-    CheckBox raform_heights_laddertie_yes;
-    CheckBox raform_heights_laddertie_no;
-    CheckBox raform_heights_manholebarriier_yes;
-    CheckBox raform_heights_manholebarriier_no;
+    FrameLayout framelayout_cs_level_1;
+    FrameLayout framelayout_cs_level_2;
+    FrameLayout framelayout_cs_level_3;
 
-
-    FrameLayout framelayout_traffic;
-    FrameLayout framelayout_workingatheights;
 
     ///////////////////////////////////////////////////////////////////////////////////
 
@@ -114,121 +91,9 @@ public class AT_Confined_Space_view extends AppCompatActivity {
         setSupportActionBar(toolbar);
         time_stamp = (TextView) findViewById(R.id.time_stamp);
 
-        ///////////////////////////////////////////////////////////////////////////////////
-
-        ratrafficicon100x100 = (ImageButton) findViewById(R.id.ratrafficicon100x100);
-        rappeicon100x100 = (ImageButton) findViewById(R.id.rappeicon100x100);
-        raroadsicon100x100 = (ImageButton) findViewById(R.id.raroadsicon100x100);
-        rafootpathicon100x100 = (ImageButton) findViewById(R.id.rafootpathicon100x100);
-        rarivercleaningicon100x100 = (ImageButton) findViewById(R.id.rarivercleaningicon100x100);
-        ramanhandleicon100x100 = (ImageButton) findViewById(R.id.ramanhandleicon100x100);
-        raconspaceicon100x100 = (ImageButton) findViewById(R.id.raconspaceicon100x100);
-        rapowertoolsicon100x100 = (ImageButton) findViewById(R.id.rapowertoolsicon100x100);
-        rageneralppeicon100x100 = (ImageButton) findViewById(R.id.rageneralppeicon100x100);
-
-
-        raworkingatheightsicon100x100 = (ImageButton) findViewById(R.id.raworkingatheightsicon100x100);
-        rapowerlinesicon100x100 = (ImageButton) findViewById(R.id.rapowerlinesicon100x100);
-
-        raform_trafficppe_yes = (CheckBox) findViewById(R.id.raform_trafficppe_yes);
-        raform_trafficppe_no = (CheckBox) findViewById(R.id.raform_trafficppe_no);
-        raform_trafficroads = (CheckBox) findViewById(R.id.raform_trafficroads);
-        raform_trafficfootpath = (CheckBox) findViewById(R.id.raform_trafficfootpath);
-        raform_traffictmpguidelines_yes = (CheckBox) findViewById(R.id.raform_traffictmpguidelines_yes);
-        raform_traffictmpguidelines_no = (CheckBox) findViewById(R.id.raform_traffictmpguidelines_no);
-        raform_trafficbeacon_yes = (CheckBox) findViewById(R.id.raform_trafficbeacon_yes);
-        raform_trafficbeacon_no = (CheckBox) findViewById(R.id.raform_trafficbeacon_no);
-        raform_trafficleftsite_yes = (CheckBox) findViewById(R.id.raform_trafficleftsite_yes);
-        raform_trafficleftsite_no = (CheckBox) findViewById(R.id.raform_trafficleftsite_no);
-
-        raform_trafficfallsystem_yes = (CheckBox) findViewById(R.id.raform_trafficfallsystem_yes);
-        raform_trafficfallsystem_no = (CheckBox) findViewById(R.id.raform_trafficfallsystem_no);
-        raform_heights_harnessinspect_yes = (CheckBox) findViewById(R.id.raform_heights_harnessinspect_yes);
-        raform_heights_harnessinspect_no = (CheckBox) findViewById(R.id.raform_heights_harnessinspect_no);
-        raform_heights_ladderinspect_yes = (CheckBox) findViewById(R.id.raform_heights_ladderinspect_yes);
-        raform_heights_ladderinspect_no = (CheckBox) findViewById(R.id.raform_heights_ladderinspect_no);
-        raform_heights_laddertie_yes = (CheckBox) findViewById(R.id.raform_heights_laddertie_yes);
-        raform_heights_laddertie_no = (CheckBox) findViewById(R.id.raform_heights_laddertie_no);
-        raform_heights_manholebarriier_yes = (CheckBox) findViewById(R.id.raform_heights_manholebarriier_yes);
-        raform_heights_manholebarriier_no = (CheckBox) findViewById(R.id.raform_heights_manholebarriier_no);
-
-
-        framelayout_traffic = (FrameLayout) findViewById(R.id.framelayout_traffic);
-        framelayout_workingatheights = (FrameLayout) findViewById(R.id.framelayout_workingatheights);
-
-        ///////////////////////////////////////////////////////////////////////////////////
-
-        if (ratrafficicon100x100pressed == false) {
-            framelayout_traffic.setVisibility(LinearLayout.GONE);
-        }
-        if (ratrafficicon100x100pressed == true) {
-            framelayout_traffic.setVisibility(LinearLayout.VISIBLE);
-        }
-
-        if (raworkingatheightsicon100x100pressed == false) {
-            framelayout_workingatheights.setVisibility(LinearLayout.GONE);
-        }
-        if (raworkingatheightsicon100x100pressed == true) {
-            framelayout_workingatheights.setVisibility(LinearLayout.VISIBLE);
-        }
-
-
-        framelayout_traffic.setVisibility(LinearLayout.GONE);
-        rafootpathicon100x100.setVisibility(LinearLayout.GONE);
-
-        ///////////////////////////////////////////////////////////////////////////////////
-
-        ratrafficicon100x100.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (ratrafficicon100x100pressed == false) {
-                    framelayout_traffic.setVisibility(LinearLayout.VISIBLE);
-                    ratrafficicon100x100pressed ^= true;
-                } else if
-                        (ratrafficicon100x100pressed == true) {
-                    framelayout_traffic.setVisibility(LinearLayout.GONE);
-                    ratrafficicon100x100pressed ^= true;
-                }
-            }
-
-        });
-
-        raworkingatheightsicon100x100.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (raworkingatheightsicon100x100pressed == false) {
-                    framelayout_workingatheights.setVisibility(LinearLayout.VISIBLE);
-                    raworkingatheightsicon100x100pressed ^= true;
-                } else if
-                        (raworkingatheightsicon100x100pressed == true) {
-                    framelayout_workingatheights.setVisibility(LinearLayout.GONE);
-                    raworkingatheightsicon100x100pressed ^= true;
-                }
-            }
-
-        });
-
-
-
-
-
-
-
-        ///////////////////////////////////////////////////////////////////////////////////
-
-
         mStorage = FirebaseStorage.getInstance().getReference();
 
         mProgressDialog = new ProgressDialog(this);
-
-
-
-        at0013_3takephoto = (ImageButton) findViewById(R.id.at0013_3takephoto);
-        at0013_3gallary = (ImageButton) findViewById(R.id.at0013_3gallary);
-        at0013_3selectmap = (ImageButton) findViewById(R.id.at0013_3selectmap);
-
-        at0013_3ck_nature_works_other_description = (EditText) findViewById(R.id.at0013_3ck_nature_works_other_description);
-        at0013_3ck_hazard_tmp_comments = (EditText) findViewById(R.id.at0013_3ck_hazard_tmp_comments);
 
         String date = getIntent().getStringExtra("Date");
         time_stamp.setText(getIntent().getStringExtra("Date"));
@@ -236,14 +101,6 @@ public class AT_Confined_Space_view extends AppCompatActivity {
         position = getIntent().getIntExtra("Position", -1);
 
         cl = (CoordinatorLayout) findViewById(R.id.cdlayout);
-
-        user_name = (TextView) findViewById(R.id.user_name);
-        user_email = (TextView) findViewById(R.id.user_email);
-        user_department_area = (TextView) findViewById(R.id.user_department_area);
-        user_contact_number = (TextView) findViewById(R.id.user_contact_number);
-
-        bOK = (Button) findViewById(R.id.bOK);
-        bCancel = (Button) findViewById(R.id.bCancel);
 
         if (position != -1) {
             getSupportActionBar().setTitle("Edit Entry");
@@ -255,263 +112,172 @@ public class AT_Confined_Space_view extends AppCompatActivity {
         }
 
 
-        raform_trafficppe_yes.setOnClickListener(new View.OnClickListener() {
+
+        ///////////////////////////////////////////////////////////////////////////////////
+
+
+        user_name = (TextView) findViewById(R.id.user_name);
+        user_email = (TextView) findViewById(R.id.user_email);
+        user_department_area = (TextView) findViewById(R.id.user_department_area);
+        user_contact_number = (TextView) findViewById(R.id.user_contact_number);
+
+        bOK = (Button) findViewById(R.id.bOK);
+        bCancel = (Button) findViewById(R.id.bCancel);
+
+
+        csgeneralppehivisicon100x100 = (ImageButton) findViewById(R.id.csgeneralppehivisicon100x100);
+        csgeneralppehardhaticon100x100 = (ImageButton) findViewById(R.id.csgeneralppehardhaticon100x100);
+        csgeneralppesafetybootsicon100x100 = (ImageButton) findViewById(R.id.raroadsicon100x100);
+        csgeneralppeglovesicon100x100 = (ImageButton) findViewById(R.id.csgeneralppeglovesicon100x100);
+        csgeneralppedustoverallicon100x100 = (ImageButton) findViewById(R.id.csgeneralppedustoverallicon100x100);
+        csgeneralppegooglesicon100x100 = (ImageButton) findViewById(R.id.csgeneralppegooglesicon100x100);
+
+        csform_generalppehivisvest = (CheckBox) findViewById(R.id.csform_generalppehivisvest);
+        csform_generalppehardhat = (CheckBox) findViewById(R.id.csform_generalppehardhat);
+        csform_generalppesafetyboots = (CheckBox) findViewById(R.id.csform_generalppesafetyboots);
+        csform_generalppegloves = (CheckBox) findViewById(R.id.csform_generalppegloves);
+        csform_generalppeoveralls = (CheckBox) findViewById(R.id.csform_generalppeoveralls);
+        csform_generalppeglasses = (CheckBox) findViewById(R.id.csform_generalppeglasses);
+
+        csform_cs_level_1_checkbox = (CheckBox) findViewById(R.id.csform_cs_level_1_checkbox);
+        csform_cs_level_2_checkbox = (CheckBox) findViewById(R.id.csform_cs_level_2_checkbox);
+        csform_cs_level_3_checkbox = (CheckBox) findViewById(R.id.csform_cs_level_3_checkbox);
+
+        ///////////////////////////////////////////////////////////////////////////////////
+
+        framelayout_cs_level_1 = (FrameLayout) findViewById(R.id.framelayout_cs_level_1);
+        framelayout_cs_level_2 = (FrameLayout) findViewById(R.id.framelayout_cs_level_2);
+        framelayout_cs_level_3 = (FrameLayout) findViewById(R.id.framelayout_cs_level_3);
+
+        ///////////////////////////////////////////////////////////////////////////////////
+
+
+
+        ///////////////////////////////////////PPE/////////////////////////////////////////////////
+
+
+        csform_generalppehivisvest.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
 
-                if (raform_trafficppe_yes.isChecked()) {
-                    raform_trafficppe_yes.setChecked(true);
-                    raform_trafficppe_no.setChecked(false);
+                if (csform_generalppehivisvest.isChecked()) {
+                    csform_generalppehivisvest.setChecked(true);
                 }
             }
 
         });
 
-        raform_trafficppe_no.setOnClickListener(new View.OnClickListener() {
+        csform_generalppehardhat.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
 
-                if (raform_trafficppe_no.isChecked()) {
-                    raform_trafficppe_no.setChecked(true);
-                    raform_trafficppe_yes.setChecked(false);
+                if (csform_generalppehardhat.isChecked()) {
+                    csform_generalppehardhat.setChecked(true);
                 }
             }
 
         });
 
-        raform_trafficroads.setOnClickListener(new View.OnClickListener() {
+        csform_generalppesafetyboots.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
 
-                if (raform_trafficroads.isChecked()) {
-                    raform_trafficroads.setChecked(true);
-                    raform_trafficfootpath.setChecked(false);
-                    raroadsicon100x100.setVisibility(LinearLayout.VISIBLE);
-                    rafootpathicon100x100.setVisibility(LinearLayout.GONE);
+                if (csform_generalppesafetyboots.isChecked()) {
+                    csform_generalppesafetyboots.setChecked(true);
                 }
             }
 
         });
 
-        raform_trafficfootpath.setOnClickListener(new View.OnClickListener() {
+        csform_generalppegloves.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
 
-                if (raform_trafficfootpath.isChecked()) {
-                    raform_trafficfootpath.setChecked(true);
-                    raform_trafficroads.setChecked(false);
-                    raroadsicon100x100.setVisibility(LinearLayout.GONE);
-                    rafootpathicon100x100.setVisibility(LinearLayout.VISIBLE);
+                if (csform_generalppegloves.isChecked()) {
+                    csform_generalppegloves.setChecked(true);
                 }
             }
 
         });
 
-        raform_traffictmpguidelines_yes.setOnClickListener(new View.OnClickListener() {
+        csform_generalppeoveralls.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
 
-                if (raform_traffictmpguidelines_yes.isChecked()) {
-                    raform_traffictmpguidelines_yes.setChecked(true);
-                    raform_traffictmpguidelines_no.setChecked(false);
+                if (csform_generalppeoveralls.isChecked()) {
+                    csform_generalppeoveralls.setChecked(true);
                 }
             }
 
         });
 
-        raform_traffictmpguidelines_no.setOnClickListener(new View.OnClickListener() {
+        csform_generalppeglasses.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
 
-                if (raform_traffictmpguidelines_no.isChecked()) {
-                    raform_traffictmpguidelines_no.setChecked(true);
-                    raform_traffictmpguidelines_yes.setChecked(false);
+                if (csform_generalppeglasses.isChecked()) {
+                    csform_generalppeglasses.setChecked(true);
                 }
             }
 
         });
 
-        raform_trafficbeacon_yes.setOnClickListener(new View.OnClickListener() {
+        ///////////////////////////////////////Confined Space Level/////////////////////////////////////////////////
 
+
+
+        csform_cs_level_1_checkbox.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                if (raform_trafficbeacon_yes.isChecked()) {
-                    raform_trafficbeacon_yes.setChecked(true);
-                    raform_trafficbeacon_no.setChecked(false);
+                if (csform_cs_level_1_checkbox_pressed == false) {
+                    framelayout_cs_level_2.setVisibility(LinearLayout.GONE);
+                    framelayout_cs_level_3.setVisibility(LinearLayout.GONE);
+                    csform_cs_level_1_checkbox_pressed ^= true;
+                } else if
+                        (csform_cs_level_1_checkbox_pressed == true) {
+                    framelayout_cs_level_2.setVisibility(LinearLayout.VISIBLE);
+                    framelayout_cs_level_3.setVisibility(LinearLayout.VISIBLE);
+                    csform_cs_level_1_checkbox_pressed ^= true;
                 }
             }
 
         });
 
-        raform_trafficbeacon_no.setOnClickListener(new View.OnClickListener() {
-
+        csform_cs_level_2_checkbox.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                if (raform_trafficbeacon_no.isChecked()) {
-                    raform_trafficbeacon_no.setChecked(true);
-                    raform_trafficbeacon_yes.setChecked(false);
+                if (csform_cs_level_2_checkbox_pressed == false) {
+                    framelayout_cs_level_1.setVisibility(LinearLayout.GONE);
+                    framelayout_cs_level_3.setVisibility(LinearLayout.GONE);
+                    csform_cs_level_2_checkbox_pressed ^= true;
+                } else if
+                        (csform_cs_level_2_checkbox_pressed == true) {
+                    framelayout_cs_level_1.setVisibility(LinearLayout.VISIBLE);
+                    framelayout_cs_level_3.setVisibility(LinearLayout.VISIBLE);
+                    csform_cs_level_2_checkbox_pressed ^= true;
                 }
             }
 
         });
 
-        raform_trafficleftsite_yes.setOnClickListener(new View.OnClickListener() {
-
+        csform_cs_level_3_checkbox.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                if (raform_trafficleftsite_yes.isChecked()) {
-                    raform_trafficleftsite_yes.setChecked(true);
-                    raform_trafficleftsite_no.setChecked(false);
-                }
-            }
-
-        });
-
-        raform_trafficleftsite_no.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-
-                if (raform_trafficleftsite_no.isChecked()) {
-                    raform_trafficleftsite_no.setChecked(true);
-                    raform_trafficleftsite_yes.setChecked(false);
-                }
-            }
-
-        });
-
-        raform_trafficfallsystem_yes.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-
-                if (raform_trafficfallsystem_yes.isChecked()) {
-                    raform_trafficfallsystem_yes.setChecked(true);
-                    raform_trafficfallsystem_no.setChecked(false);
-                }
-            }
-
-        });
-
-        raform_trafficfallsystem_no.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-
-                if (raform_trafficfallsystem_no.isChecked()) {
-                    raform_trafficfallsystem_no.setChecked(true);
-                    raform_trafficfallsystem_yes.setChecked(false);
-                }
-            }
-
-        });
-
-        raform_heights_harnessinspect_yes.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-
-                if (raform_heights_harnessinspect_yes.isChecked()) {
-                    raform_heights_harnessinspect_yes.setChecked(true);
-                    raform_heights_harnessinspect_no.setChecked(false);
-                }
-            }
-
-        });
-
-        raform_heights_harnessinspect_no.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-
-                if (raform_heights_harnessinspect_no.isChecked()) {
-                    raform_heights_harnessinspect_no.setChecked(true);
-                    raform_heights_harnessinspect_yes.setChecked(false);
-                }
-            }
-
-        });
-
-        raform_heights_ladderinspect_yes.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-
-                if (raform_heights_ladderinspect_yes.isChecked()) {
-                    raform_heights_ladderinspect_yes.setChecked(true);
-                    raform_heights_ladderinspect_no.setChecked(false);
-                }
-            }
-
-        });
-
-        raform_heights_ladderinspect_no.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-
-                if (raform_heights_ladderinspect_no.isChecked()) {
-                    raform_heights_ladderinspect_no.setChecked(true);
-                    raform_heights_ladderinspect_yes.setChecked(false);
-                }
-            }
-
-        });
-        raform_heights_laddertie_yes.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-
-                if (raform_heights_laddertie_yes.isChecked()) {
-                    raform_heights_laddertie_yes.setChecked(true);
-                    raform_heights_laddertie_no.setChecked(false);
-                }
-            }
-
-        });
-
-        raform_heights_laddertie_yes.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-
-                if (raform_heights_laddertie_yes.isChecked()) {
-                    raform_heights_laddertie_yes.setChecked(true);
-                    raform_heights_laddertie_no.setChecked(false);
-                }
-            }
-
-        });
-        raform_heights_manholebarriier_yes.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-
-                if (raform_heights_manholebarriier_yes.isChecked()) {
-                    raform_heights_manholebarriier_yes.setChecked(true);
-                    raform_heights_manholebarriier_no.setChecked(false);
-                }
-            }
-
-        });
-
-        raform_heights_manholebarriier_no.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-
-                if (raform_heights_manholebarriier_no.isChecked()) {
-                    raform_heights_manholebarriier_no.setChecked(true);
-                    raform_heights_manholebarriier_yes.setChecked(false);
+                if (csform_cs_level_3_checkbox_pressed == false) {
+                    framelayout_cs_level_1.setVisibility(LinearLayout.GONE);
+                    framelayout_cs_level_2.setVisibility(LinearLayout.GONE);
+                    csform_cs_level_3_checkbox_pressed ^= true;
+                } else if
+                        (csform_cs_level_3_checkbox_pressed == true) {
+                    framelayout_cs_level_1.setVisibility(LinearLayout.VISIBLE);
+                    framelayout_cs_level_2.setVisibility(LinearLayout.VISIBLE);
+                    csform_cs_level_3_checkbox_pressed ^= true;
                 }
             }
 
@@ -519,7 +285,8 @@ public class AT_Confined_Space_view extends AppCompatActivity {
 
 
 
-///////////////////////////////////////Risk Assessment/////////////////////////////////////////////////
+
+        ///////////////////////////////////////Confined Space Level/////////////////////////////////////////////////
 
         bOK.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -539,7 +306,6 @@ public class AT_Confined_Space_view extends AppCompatActivity {
                     });
                     snackBar.show();
 
-
                 } else {
                     AT_Confined_Space_model p = new AT_Confined_Space_model();
                     p.setstartDate(getIntent().getStringExtra("Date"));
@@ -548,139 +314,77 @@ public class AT_Confined_Space_view extends AppCompatActivity {
                     p.setuser_department_area(user_department_area.getText().toString());
                     p.setuser_contact_number(user_contact_number.getText().toString());
 
-                    ///////////////////////////////////////Store Strings/////////////////////////////////////////////////
 
 
-
-///////////////////////////////////////1 Section 1 Location/////////////////////////////////////////////////
-                    if(raform_trafficppe_yes.isChecked()) {
-                        p.setraform_trafficppe_yes("Yes");
-                    }
-                    else {
-                        p.setraform_trafficppe_yes("No");
-                    }
-
-                    if(raform_trafficppe_no.isChecked()) {
-                        p.setraform_trafficppe_no("Yes");
-                    }
-                    else {
-                        p.setraform_trafficppe_no("No");
-                    }
-
-                    if(raform_trafficroads.isChecked()) {
-                        p.setraform_trafficroads("Yes");
-                    }
-                    else {
-                        p.setraform_trafficroads("No");
-                    }
-
-                    if(raform_trafficfootpath.isChecked()) {
-                        p.setraform_trafficfootpath("Yes");
-                    }
-                    else {
-                        p.setraform_trafficfootpath("No");
-                    }
-                    if(raform_traffictmpguidelines_yes.isChecked()) {
-                        p.setraform_traffictmpguidelines_yes("Yes");
-                    }
-                    else {
-                        p.setraform_traffictmpguidelines_yes("No");
-                    }
-
-                    if(raform_traffictmpguidelines_no.isChecked()) {
-                        p.setraform_traffictmpguidelines_no("Yes");
-                    }
-                    else {
-                        p.setraform_traffictmpguidelines_no("No");
-                    }
-
-                    if(raform_trafficbeacon_yes.isChecked()) {
-                        p.setraform_trafficbeacon_yes("Yes");
-                    }
-                    else {
-                        p.setraform_trafficbeacon_yes("No");
-                    }
-                    if(raform_trafficbeacon_no.isChecked()) {
-                        p.setraform_trafficbeacon_no("Yes");
-                    }
-                    else {
-                        p.setraform_trafficbeacon_no("No");
-                    }
-                    if(raform_trafficleftsite_yes.isChecked()) {
-                        p.setraform_trafficleftsite_yes("Yes");
-                    }
-                    else {
-                        p.setraform_trafficleftsite_yes("No");
-                    }
-                    if(raform_trafficleftsite_no.isChecked()) {
-                        p.setraform_trafficleftsite_no("Yes");
-                    }
-                    else {
-                        p.setraform_trafficleftsite_no("No");
-                    }
-                    if(raform_trafficfallsystem_yes.isChecked()) {
-                        p.setraform_trafficfallsystem_yes("Yes");
-                    }
-                    else {
-                        p.setraform_trafficfallsystem_yes("No");
-                    }
-                    if(raform_trafficfallsystem_no.isChecked()) {
-                        p.setraform_trafficfallsystem_no("Yes");
-                    }
-                    else {
-                        p.setraform_trafficfallsystem_no("No");
-                    }
-                    if(raform_heights_harnessinspect_yes.isChecked()) {
-                        p.setraform_heights_harnessinspect_yes("Yes");
-                    }
-                    else {
-                        p.setraform_heights_harnessinspect_yes("No");
-                    }
-                    if(raform_heights_harnessinspect_no.isChecked()) {
-                        p.setraform_heights_harnessinspect_no("Yes");
-                    }
-                    else {
-                        p.setraform_heights_harnessinspect_no("No");
-                    }
-                    if(raform_heights_ladderinspect_yes.isChecked()) {
-                        p.setraform_heights_ladderinspect_yes("Yes");
-                    }
-                    else {
-                        p.setraform_heights_ladderinspect_yes("No");
-                    }
-                    if(raform_heights_ladderinspect_no.isChecked()) {
-                        p.setraform_heights_ladderinspect_no("Yes");
-                    }
-                    else {
-                        p.setraform_heights_ladderinspect_no("No");
-                    }
-                    if(raform_heights_laddertie_yes.isChecked()) {
-                        p.setraform_heights_laddertie_yes("Yes");
-                    }
-                    else {
-                        p.setraform_heights_laddertie_yes("No");
-                    }
-                    if(raform_heights_laddertie_no.isChecked()) {
-                        p.setraform_heights_laddertie_no("Yes");
-                    }
-                    else {
-                        p.setraform_heights_laddertie_no("No");
-                    }
-                    if(raform_heights_manholebarriier_yes.isChecked()) {
-                        p.setraform_heights_manholebarriier_yes("Yes");
-                    }
-                    else {
-                        p.setraform_heights_manholebarriier_yes("No");
-                    }
-                    if(raform_heights_manholebarriier_no.isChecked()) {
-                        p.setraform_heights_manholebarriier_no("Yes");
-                    }
-                    else {
-                        p.setraform_heights_manholebarriier_no("No");
-                    }
 
                     ///////////////////////////////////////1 Section 1 Location/////////////////////////////////////////////////
 
+
+                    if(csform_generalppehivisvest.isChecked()) {
+                        p.setcsform_generalppehivisvest("Yes");
+                    }
+                    else {
+                        p.setcsform_generalppehivisvest("No");
+                    }
+
+
+                    if(csform_generalppehardhat.isChecked()) {
+                        p.setcsform_generalppehardhat("Yes");
+                    }
+                    else {
+                        p.setcsform_generalppehardhat("No");
+                    }
+
+                    if(csform_generalppesafetyboots.isChecked()) {
+                        p.setcsform_generalppesafetyboots("Yes");
+                    }
+                    else {
+                        p.setcsform_generalppesafetyboots("No");
+                    }
+
+                    if(csform_generalppegloves.isChecked()) {
+                        p.setcsform_generalppegloves("Yes");
+                    }
+                    else {
+                        p.setcsform_generalppegloves("No");
+                    }
+
+                    if(csform_generalppeoveralls.isChecked()) {
+                        p.setcsform_generalppeoveralls("Yes");
+                    }
+                    else {
+                        p.setcsform_generalppeoveralls("No");
+                    }
+
+                    if(csform_generalppeglasses.isChecked()) {
+                        p.setcsform_generalppeglasses("Yes");
+                    }
+                    else {
+                        p.setcsform_generalppeglasses("No");
+                    }
+
+                    ///////////////////////////////////////Confined Space Level/////////////////////////////////////////////////
+
+                    if(csform_cs_level_1_checkbox.isChecked()) {
+                        p.setcsform_cs_level_1("Yes");
+                    }
+                    else {
+                        p.setcsform_cs_level_1("No");
+                    }
+
+                    if(csform_cs_level_2_checkbox.isChecked()) {
+                        p.setcsform_cs_level_2("Yes");
+                    }
+                    else {
+                        p.setcsform_cs_level_2("No");
+                    }
+
+                    if(csform_cs_level_3_checkbox.isChecked()) {
+                        p.setcsform_cs_level_3("Yes");
+                    }
+                    else {
+                        p.setcsform_cs_level_3("No");
+                    }
 
 
                     if (AT_Confined_Space_model == null)
@@ -696,7 +400,6 @@ public class AT_Confined_Space_view extends AppCompatActivity {
                 finish();
             }
         });
-
 
         Firebase.setAndroidContext(this);
         Firebase mRootRef = new Firebase("https://truckman-1dc51.firebaseio.com/");
@@ -724,8 +427,6 @@ public class AT_Confined_Space_view extends AppCompatActivity {
             }
         });
     }
-
-
 
     FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
 

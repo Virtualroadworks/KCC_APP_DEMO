@@ -442,11 +442,11 @@ public class AT_RiskAssessment_view extends AppCompatActivity {
         if (rapowertoolsicon100x100pressed == true) {
             framelayout_powertools.setVisibility(LinearLayout.VISIBLE);
         }
-        if (rapowertoolsicon100x100pressed == false) {
-            framelayout_powertools.setVisibility(LinearLayout.GONE);
+        if (rageneralppeicon100x100pressed == false) {
+            framelayout_generalppe.setVisibility(LinearLayout.GONE);
         }
-        if (rapowertoolsicon100x100pressed == true) {
-            framelayout_powertools.setVisibility(LinearLayout.VISIBLE);
+        if (rageneralppeicon100x100pressed == true) {
+            framelayout_generalppe.setVisibility(LinearLayout.VISIBLE);
         }
         ///////////////////////////////////////////////////////////////////////////////////
 
@@ -573,13 +573,13 @@ public class AT_RiskAssessment_view extends AppCompatActivity {
         rageneralppeicon100x100.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (rapowertoolsicon100x100pressed == false) {
+                if (rageneralppeicon100x100pressed == false) {
                     framelayout_generalppe.setVisibility(LinearLayout.VISIBLE);
-                    rapowertoolsicon100x100pressed ^= true;
+                    rageneralppeicon100x100pressed ^= true;
                 } else if
-                        (rapowertoolsicon100x100pressed == true) {
+                        (rageneralppeicon100x100pressed == true) {
                     framelayout_generalppe.setVisibility(LinearLayout.GONE);
-                    rapowertoolsicon100x100pressed ^= true;
+                    rageneralppeicon100x100pressed ^= true;
                 }
             }
 

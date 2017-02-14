@@ -51,74 +51,30 @@ public class AT_Confined_Space_formfilled extends AppCompatActivity {
 
     private Button emailreport;
 
+    private String csform_generalppehivisvest;
+    private String csform_generalppehardhat;
+    private String csform_generalppesafetyboots;
+    private String csform_generalppegloves;
+    private String csform_generalppeoveralls;
+    private String csform_generalppeglasses;
 
-    ImageButton ratrafficicon100x100;
-    ImageButton rappeicon100x100;
-    ImageButton raroadsicon100x100;
-    ImageButton rafootpathicon100x100;
-    ImageButton rarivercleaningicon100x100;
+    private String csform_cs_level_1;
+    private String csform_cs_level_2;
+    private String csform_cs_level_3;
 
-    ImageButton raworkingatheightsicon100x100;
-    ImageButton rapowerlinesicon100x100;
-    ImageButton ramanhandleicon100x100;
-    ImageButton raconspaceicon100x100;
-    ImageButton rapowertoolsicon100x100;
-    ImageButton rageneralppeicon100x100;
+    ImageButton csgeneralppehivisicon100x100;
+    ImageButton csgeneralppehardhaticon100x100;
+    ImageButton csgeneralppesafetybootsicon100x100;
+    ImageButton csgeneralppeglovesicon100x100;
+    ImageButton csgeneralppedustoverallicon100x100;
+    ImageButton csgeneralppegooglesicon100x100;
 
-
-
-    String raform_trafficppe_yes;
-    String raform_trafficppe_no;
-    String raform_trafficroads;
-    String raform_trafficfootpath;
-    String raform_traffictmpguidelines_yes;
-    String raform_traffictmpguidelines_no;
-    String raform_trafficbeacon_yes;
-    String raform_trafficbeacon_no;
-    String raform_trafficleftsite_yes;
-    String raform_trafficleftsite_no;
-
-    String raform_trafficfallsystem_yes;
-    String raform_trafficfallsystem_no;
-    String raform_heights_harnessinspect_yes;
-    String raform_heights_harnessinspect_no;
-    String raform_heights_ladderinspect_yes;
-    String raform_heights_ladderinspect_no;
-    String raform_heights_laddertie_yes;
-    String raform_heights_laddertie_no;
-    String raform_heights_manholebarriier_yes;
-    String raform_heights_manholebarriier_no;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_at__confined__space_formfilled);
-        ratrafficicon100x100 = (ImageButton) findViewById(R.id.ratrafficicon100x100);
 
-        ///////////////////////////////////////////////////////////////////////////////////
-
-        ratrafficicon100x100 = (ImageButton) findViewById(R.id.ratrafficicon100x100);
-        rappeicon100x100 = (ImageButton) findViewById(R.id.rappeicon100x100);
-        raroadsicon100x100 = (ImageButton) findViewById(R.id.raroadsicon100x100);
-        rafootpathicon100x100 = (ImageButton) findViewById(R.id.rafootpathicon100x100);
-        rarivercleaningicon100x100 = (ImageButton) findViewById(R.id.rarivercleaningicon100x100);
-        ramanhandleicon100x100 = (ImageButton) findViewById(R.id.ramanhandleicon100x100);
-        raconspaceicon100x100 = (ImageButton) findViewById(R.id.raconspaceicon100x100);
-        rapowertoolsicon100x100 = (ImageButton) findViewById(R.id.rapowertoolsicon100x100);
-        rageneralppeicon100x100 = (ImageButton) findViewById(R.id.rageneralppeicon100x100);
-
-        raworkingatheightsicon100x100 = (ImageButton) findViewById(R.id.raworkingatheightsicon100x100);
-        rapowerlinesicon100x100 = (ImageButton) findViewById(R.id.rapowerlinesicon100x100);
-
-
-
-        ///////////////////////////////////////////////////////////////////////////////////
-
-
-
-        ///////////////////////////////////////////////////////////////////////////////////
-
-        ratrafficicon100x100 = (ImageButton) findViewById(R.id.ratrafficicon100x100);
 
         user_name = (TextView) findViewById(R.id.user_name);
         user_email = (TextView) findViewById(R.id.user_email);
@@ -132,6 +88,19 @@ public class AT_Confined_Space_formfilled extends AppCompatActivity {
 
         int position = getIntent().getIntExtra("Position", -1);
         searchAT_Confined_Space_model(position);
+
+
+        csgeneralppehivisicon100x100 = (ImageButton) findViewById(R.id.csgeneralppehivisicon100x100);
+        csgeneralppehardhaticon100x100 = (ImageButton) findViewById(R.id.csgeneralppehardhaticon100x100);
+        csgeneralppesafetybootsicon100x100 = (ImageButton) findViewById(R.id.raroadsicon100x100);
+        csgeneralppeglovesicon100x100 = (ImageButton) findViewById(R.id.csgeneralppeglovesicon100x100);
+        csgeneralppedustoverallicon100x100 = (ImageButton) findViewById(R.id.csgeneralppedustoverallicon100x100);
+        csgeneralppegooglesicon100x100 = (ImageButton) findViewById(R.id.csgeneralppegooglesicon100x100);
+
+
+
+        ///////////////////////////////////////////////////////////////////////////////////
+
 
         emailreport.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -199,36 +168,23 @@ public class AT_Confined_Space_formfilled extends AppCompatActivity {
                                 "\n" +
                                 "\n" +
                                 "\n" +
-                                ">>>>>>>  1: Traffic  <<<<<<<" +
+                                ">>>>>>>  Appropriate Box for PPE  <<<<<<<" +
                                 "\n" +
                                 "\n" + ", " + "Yes/No" +
                                 "\n" +
                                 "\n" +
-                                "1.1 : PPE REQUIRED?, " + ", " + raform_trafficppe_yes + ", " + raform_trafficppe_no + ", " +
+                                "1.1 : His Vis Jacket, " + ", " + csform_generalppehivisvest + ", " +
                                 "\n" +
-                                "1.2 : Working on the Roads or Footpath?, " + ", " + raform_trafficroads + ", " + raform_trafficfootpath + ", " +
+                                "1.2 : Hard Hat, " + ", " + csform_generalppehardhat + ", " +
                                 "\n" +
-                                "1.3 : TM applied in accordance with TTM guidelines? " + ", " + raform_traffictmpguidelines_yes + ", " + raform_traffictmpguidelines_no + ", " +
+                                "1.3 : Safety Boots, " + ", " + csform_generalppesafetyboots + ", " +
                                 "\n" +
-                                "1.4 : Beacon switched on when parked at worksite? " + ", " + raform_trafficbeacon_yes + ", " + raform_trafficbeacon_no + ", " +
+                                "1.4 : Safety Gloves, " + ", " + csform_generalppegloves + ", " +
                                 "\n" +
-                                "1.5 : Site left in a safe manner? " + ", " + raform_trafficleftsite_yes + ", " + raform_trafficleftsite_no + ", " +
+                                "1.5 : Safety Overalls, " + ", " + csform_generalppeoveralls + ", " +
                                 "\n" +
+                                "1.6 : Safety Glasses, " + ", " + csform_generalppeglasses + ", " +
                                 "\n" +
-                                ">>>>>>>  2: Working at Heights  <<<<<<<" +
-                                "\n" +
-                                "\n" + ", " + "Yes/No" +
-                                "\n" +
-                                "\n" +
-                                "2.1 : Fall arrest system inspected and checks are in date?, " + ", " + raform_trafficfallsystem_yes + ", " + raform_trafficfallsystem_no + ", " +
-                                "\n" +
-                                "2.2 : Harness inspection and in date?, " + ", " + raform_heights_harnessinspect_yes + ", " + raform_heights_harnessinspect_no + ", " +
-                                "\n" +
-                                "2.3 : Ladder inspection before use?, " + ", " + raform_heights_ladderinspect_yes + ", " + raform_heights_ladderinspect_no + ", " +
-                                "\n" +
-                                "2.4 : Ladder tied off and correctly footed?, " + ", " + raform_heights_laddertie_yes + ", " + raform_trafficfallsystem_no + ", " +
-                                "\n" +
-                                "2.5 : Manhole opening barriered off?, " + ", " + raform_heights_manholebarriier_yes + ", " + raform_heights_manholebarriier_no + ", " +
                                 "\n" +
                                 "\n" +
                                 ">>>>>>>  End of Report  <<<<<<<" +
@@ -236,8 +192,6 @@ public class AT_Confined_Space_formfilled extends AppCompatActivity {
                                 "\n" +
                                 ">>>>>>>  Thank you for using DCC App  <<<<<<<" +
                                 ", " ;
-
-
 
 
 
@@ -342,209 +296,102 @@ public class AT_Confined_Space_formfilled extends AppCompatActivity {
                         user_contact_number.setText(personDetailsModel.getuser_contact_number());
                         endDate.setText(personDetailsModel.getendDate());
                         startDate.setText(personDetailsModel.getstartDate());
+
                         ///////////////////////////////////////1: Traffic/////////////////////////////////////////////////
 
-                        raform_trafficppe_yes = personDetailsModel.getraform_trafficppe_yes();
-                        CheckBox trafficppe_yes = (CheckBox) findViewById(R.id.raform_trafficppe_yes);
+                        csform_generalppehivisvest = personDetailsModel.getcsform_generalppehivisvest();
+                        csform_generalppehardhat = personDetailsModel.getcsform_generalppehardhat();
+                        csform_generalppesafetyboots = personDetailsModel.getcsform_generalppesafetyboots();
+                        csform_generalppegloves = personDetailsModel.getcsform_generalppegloves();
+                        csform_generalppeoveralls = personDetailsModel.getcsform_generalppeoveralls();
+                        csform_generalppeglasses = personDetailsModel.getcsform_generalppeglasses();
 
-                        if (raform_trafficppe_yes.equals("Yes")) {
+                        csform_cs_level_1 = personDetailsModel.getcsform_cs_level_1();
+                        csform_cs_level_2 = personDetailsModel.getcsform_cs_level_2();
+                        csform_cs_level_3 = personDetailsModel.getcsform_cs_level_3();
 
-                            trafficppe_yes.setChecked(true);
+
+                        CheckBox CK_csform_generalppehivisvest = (CheckBox) findViewById(R.id.csform_generalppehivisvest);
+                        CheckBox CK_csform_generalppehardhat = (CheckBox) findViewById(R.id.csform_generalppehardhat);
+                        CheckBox CK_csform_generalppesafetyboots = (CheckBox) findViewById(R.id.csform_generalppesafetyboots);
+                        CheckBox CK_csform_generalppegloves = (CheckBox) findViewById(R.id.csform_generalppegloves);
+                        CheckBox CK_csform_generalppeoveralls = (CheckBox) findViewById(R.id.csform_generalppeoveralls);
+                        CheckBox CK_csform_generalppeglasses = (CheckBox) findViewById(R.id.csform_generalppeglasses);
+
+                        CheckBox csform_cs_level_1_checkbox = (CheckBox) findViewById(R.id.csform_cs_level_1_checkbox);
+                        CheckBox csform_cs_level_2_checkbox = (CheckBox) findViewById(R.id.csform_cs_level_2_checkbox);
+                        CheckBox csform_cs_level_3_checkbox = (CheckBox) findViewById(R.id.csform_cs_level_3_checkbox);
+
+
+                        if (csform_generalppehivisvest.equals("Yes")) {
+
+                            CK_csform_generalppehivisvest.setChecked(true);
                         }
                         else {
-                            trafficppe_yes.setChecked(false);
+                            CK_csform_generalppehivisvest.setChecked(false);
                         }
-                        raform_trafficppe_no = personDetailsModel.getraform_trafficppe_no();
-                        CheckBox trafficppe_no = (CheckBox) findViewById(R.id.raform_trafficppe_no);
 
-                        if (raform_trafficppe_no.equals("Yes")) {
+                        if (csform_generalppehardhat.equals("Yes")) {
 
-                            trafficppe_no.setChecked(true);
+                            CK_csform_generalppehardhat.setChecked(true);
                         }
                         else {
-                            trafficppe_no.setChecked(false);
+                            CK_csform_generalppehardhat.setChecked(false);
                         }
-                        raform_trafficroads = personDetailsModel.getraform_trafficroads();
-                        CheckBox trafficroads = (CheckBox) findViewById(R.id.raform_trafficroads);
+                        if (csform_generalppesafetyboots.equals("Yes")) {
 
-                        if (raform_trafficroads.equals("Yes")) {
-
-                            trafficroads.setChecked(true);
+                            CK_csform_generalppesafetyboots.setChecked(true);
                         }
                         else {
-                            trafficroads.setChecked(false);
+                            CK_csform_generalppesafetyboots.setChecked(false);
                         }
-                        raform_trafficfootpath = personDetailsModel.getraform_trafficfootpath();
-                        CheckBox trafficfootpath = (CheckBox) findViewById(R.id.raform_trafficfootpath);
+                        if (csform_generalppegloves.equals("Yes")) {
 
-                        if (raform_trafficfootpath.equals("Yes")) {
-
-                            trafficfootpath.setChecked(true);
+                            CK_csform_generalppegloves.setChecked(true);
                         }
                         else {
-                            trafficfootpath.setChecked(false);
+                            CK_csform_generalppegloves.setChecked(false);
                         }
-                        raform_traffictmpguidelines_yes = personDetailsModel.getraform_traffictmpguidelines_yes();
-                        CheckBox traffictmpguidelines_yes = (CheckBox) findViewById(R.id.raform_traffictmpguidelines_yes);
+                        if (csform_generalppeoveralls.equals("Yes")) {
 
-                        if (raform_traffictmpguidelines_yes.equals("Yes")) {
-
-                            traffictmpguidelines_yes.setChecked(true);
+                            CK_csform_generalppeoveralls.setChecked(true);
                         }
                         else {
-                            traffictmpguidelines_yes.setChecked(false);
+                            CK_csform_generalppeoveralls.setChecked(false);
                         }
-                        raform_traffictmpguidelines_no = personDetailsModel.getraform_traffictmpguidelines_no();
-                        CheckBox traffictmpguidelines_no = (CheckBox) findViewById(R.id.raform_traffictmpguidelines_no);
 
-                        if (raform_traffictmpguidelines_no.equals("Yes")) {
+                        if (csform_generalppeglasses.equals("Yes")) {
 
-                            traffictmpguidelines_no.setChecked(true);
+                            CK_csform_generalppeglasses.setChecked(true);
                         }
                         else {
-                            traffictmpguidelines_no.setChecked(false);
+                            CK_csform_generalppeglasses.setChecked(false);
                         }
-                        raform_trafficbeacon_yes = personDetailsModel.getraform_trafficbeacon_yes();
-                        CheckBox trafficbeacon_yes = (CheckBox) findViewById(R.id.raform_trafficbeacon_yes);
 
-                        if (raform_trafficbeacon_yes.equals("Yes")) {
 
-                            trafficbeacon_yes.setChecked(true);
-                        }
-                        else {
-                            trafficbeacon_yes.setChecked(false);
-                        }
-                        raform_trafficbeacon_no = personDetailsModel.getraform_trafficbeacon_no();
-                        CheckBox trafficbeacon_no = (CheckBox) findViewById(R.id.raform_trafficbeacon_no);
+///////////////////////////////////////1: Traffic/////////////////////////////////////////////////
+                        if (csform_cs_level_1.equals("Yes")) {
 
-                        if (raform_trafficbeacon_no.equals("Yes")) {
-
-                            trafficbeacon_no.setChecked(true);
+                            csform_cs_level_1_checkbox.setChecked(true);
                         }
                         else {
-                            trafficbeacon_no.setChecked(false);
+                            csform_cs_level_1_checkbox.setChecked(false);
                         }
-                        raform_trafficleftsite_yes = personDetailsModel.getraform_trafficleftsite_yes();
-                        CheckBox trafficleftsite_yes = (CheckBox) findViewById(R.id.raform_trafficleftsite_yes);
 
-                        if (raform_trafficleftsite_yes.equals("Yes")) {
+                        if (csform_cs_level_2.equals("Yes")) {
 
-                            trafficleftsite_yes.setChecked(true);
+                            csform_cs_level_2_checkbox.setChecked(true);
                         }
                         else {
-                            trafficleftsite_yes.setChecked(false);
+                            csform_cs_level_2_checkbox.setChecked(false);
                         }
-                        raform_trafficleftsite_no = personDetailsModel.getraform_trafficleftsite_no();
-                        CheckBox trafficleftsite_no = (CheckBox) findViewById(R.id.raform_trafficleftsite_no);
 
-                        if (raform_trafficleftsite_no.equals("Yes")) {
+                        if (csform_cs_level_3.equals("Yes")) {
 
-                            trafficleftsite_no.setChecked(true);
+                            csform_cs_level_3_checkbox.setChecked(true);
                         }
                         else {
-                            trafficleftsite_no.setChecked(false);
-                        }
-                        ///////////////////////////////////////2: Working at Heights/////////////////////////////////////////////////
-
-                        raform_trafficfallsystem_yes = personDetailsModel.getraform_trafficfallsystem_yes();
-                        CheckBox trafficfallsystem_yes = (CheckBox) findViewById(R.id.raform_trafficfallsystem_yes);
-
-                        if (raform_trafficfallsystem_yes.equals("Yes")) {
-
-                            trafficfallsystem_yes.setChecked(true);
-                        }
-                        else {
-                            trafficfallsystem_yes.setChecked(false);
-                        }
-                        raform_trafficfallsystem_no = personDetailsModel.getraform_trafficfallsystem_no();
-                        CheckBox trafficfallsystem_no = (CheckBox) findViewById(R.id.raform_trafficfallsystem_no);
-
-                        if (raform_trafficfallsystem_no.equals("Yes")) {
-
-                            trafficfallsystem_no.setChecked(true);
-                        }
-                        else {
-                            trafficfallsystem_no.setChecked(false);
-                        }
-                        raform_heights_harnessinspect_yes = personDetailsModel.getraform_heights_harnessinspect_yes();
-                        CheckBox heights_harnessinspect_yes = (CheckBox) findViewById(R.id.raform_heights_harnessinspect_yes);
-
-                        if (raform_heights_harnessinspect_yes.equals("Yes")) {
-
-                            heights_harnessinspect_yes.setChecked(true);
-                        }
-                        else {
-                            heights_harnessinspect_yes.setChecked(false);
-                        }
-                        raform_heights_harnessinspect_no = personDetailsModel.getraform_heights_harnessinspect_no();
-                        CheckBox heights_harnessinspect_no = (CheckBox) findViewById(R.id.raform_heights_harnessinspect_no);
-
-                        if (raform_heights_harnessinspect_no.equals("Yes")) {
-
-                            heights_harnessinspect_no.setChecked(true);
-                        }
-                        else {
-                            heights_harnessinspect_no.setChecked(false);
-                        }
-                        raform_heights_ladderinspect_yes = personDetailsModel.getraform_heights_ladderinspect_yes();
-                        CheckBox heights_ladderinspect_yes = (CheckBox) findViewById(R.id.raform_heights_ladderinspect_yes);
-
-                        if (raform_heights_ladderinspect_yes.equals("Yes")) {
-
-                            heights_ladderinspect_yes.setChecked(true);
-                        }
-                        else {
-                            heights_ladderinspect_yes.setChecked(false);
-                        }
-                        raform_heights_ladderinspect_no = personDetailsModel.getraform_heights_ladderinspect_no();
-                        CheckBox heights_ladderinspect_no = (CheckBox) findViewById(R.id.raform_heights_ladderinspect_no);
-
-                        if (raform_heights_ladderinspect_no.equals("Yes")) {
-
-                            heights_ladderinspect_no.setChecked(true);
-                        }
-                        else {
-                            heights_ladderinspect_no.setChecked(false);
-                        }
-                        raform_heights_laddertie_yes = personDetailsModel.getraform_heights_laddertie_yes();
-                        CheckBox heights_laddertie_yes = (CheckBox) findViewById(R.id.raform_heights_laddertie_yes);
-
-                        if (raform_heights_laddertie_yes.equals("Yes")) {
-
-                            heights_laddertie_yes.setChecked(true);
-                        }
-                        else {
-                            heights_laddertie_yes.setChecked(false);
-                        }
-                        raform_heights_laddertie_no = personDetailsModel.getraform_heights_laddertie_no();
-                        CheckBox heights_laddertie_no = (CheckBox) findViewById(R.id.raform_heights_laddertie_no);
-
-                        if (raform_heights_laddertie_no.equals("Yes")) {
-
-                            heights_laddertie_no.setChecked(true);
-                        }
-                        else {
-                            heights_laddertie_no.setChecked(false);
-                        }
-                        raform_heights_manholebarriier_yes = personDetailsModel.getraform_heights_manholebarriier_yes();
-                        CheckBox heights_manholebarriier_yes = (CheckBox) findViewById(R.id.raform_heights_manholebarriier_yes);
-
-                        if (raform_heights_manholebarriier_yes.equals("Yes")) {
-
-                            heights_manholebarriier_yes.setChecked(true);
-                        }
-                        else {
-                            heights_manholebarriier_yes.setChecked(false);
-                        }
-                        raform_heights_manholebarriier_no = personDetailsModel.getraform_heights_manholebarriier_no();
-                        CheckBox heights_manholebarriier_no = (CheckBox) findViewById(R.id.raform_heights_manholebarriier_no);
-
-                        if (raform_heights_manholebarriier_no.equals("Yes")) {
-
-                            heights_manholebarriier_no.setChecked(true);
-                        }
-                        else {
-                            heights_manholebarriier_no.setChecked(false);
+                            csform_cs_level_3_checkbox.setChecked(false);
                         }
 
                     }

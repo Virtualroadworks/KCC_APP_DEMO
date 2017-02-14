@@ -396,4 +396,7 @@
     <string name="title_activity_at__confined__space_formfilled">AT_Confined_Space_formfilled
     </string>
     <string name="title_activity_at__confined__space_database">AT_Confined_Space_database</string>
+    <string name="cs_level_1"><u>CS Level 1</u></string>
+    <string name="cs_level_2"><u>CS Level 2</u></string>
+    <string name="cs_level_3"><u>CS Level 3</u></string>
 </resources>
