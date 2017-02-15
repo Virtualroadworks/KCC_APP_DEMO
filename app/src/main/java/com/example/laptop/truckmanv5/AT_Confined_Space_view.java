@@ -372,6 +372,201 @@ public class AT_Confined_Space_view extends AppCompatActivity {
 
         ///////////////////////////////////////Confined Space Level/////////////////////////////////////////////////
 
+
+        csform_cs_overalls_checkbox_yes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (csform_cs_overalls_checkbox_yes.isChecked()) {
+                    csform_cs_overalls_checkbox_no.setChecked(false);}
+            }
+        });
+        csform_cs_overalls_checkbox_no.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (csform_cs_overalls_checkbox_no.isChecked()) {
+                    csform_cs_overalls_checkbox_yes.setChecked(false);}
+            }
+        });
+
+        csform_cs_gasmonitor_checkbox_yes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (csform_cs_gasmonitor_checkbox_yes.isChecked()) {
+                    csform_cs_gasmonitor_checkbox_no.setChecked(false);}
+            }
+        });
+        csform_cs_gasmonitor_checkbox_no.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (csform_cs_gasmonitor_checkbox_no.isChecked()) {
+                    csform_cs_gasmonitor_checkbox_yes.setChecked(false);}
+            }
+        });
+
+        csform_cs_emergencycall_checkbox_yes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (csform_cs_emergencycall_checkbox_yes.isChecked()) {
+                    csform_cs_emergencycall_checkbox_no.setChecked(false);}
+            }
+        });
+        csform_cs_emergencycall_checkbox_no.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (csform_cs_emergencycall_checkbox_no.isChecked()) {
+                    csform_cs_emergencycall_checkbox_yes.setChecked(false);}
+            }
+        });
+
+        csform_cs_firstaid_checkbox_yes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (csform_cs_firstaid_checkbox_yes.isChecked()) {
+                    csform_cs_firstaid_checkbox_no.setChecked(false);}
+            }
+        });
+        csform_cs_firstaid_checkbox_no.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (csform_cs_firstaid_checkbox_no.isChecked()) {
+                    csform_cs_firstaid_checkbox_yes.setChecked(false);}
+            }
+        });
+
+        csform_cs_explosivelight_checkbox_yes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (csform_cs_explosivelight_checkbox_yes.isChecked()) {
+                    csform_cs_explosivelight_checkbox_no.setChecked(false);}
+            }
+        });
+        csform_cs_explosivelight_checkbox_no.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (csform_cs_explosivelight_checkbox_no.isChecked()) {
+                    csform_cs_explosivelight_checkbox_yes.setChecked(false);}
+            }
+        });
+
+        csform_cs_safetysigns_checkbox_yes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (csform_cs_safetysigns_checkbox_yes.isChecked()) {
+                    csform_cs_explosivelight_checkbox_no.setChecked(false);}
+            }
+        });
+        csform_cs_explosivelight_checkbox_no.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (csform_cs_explosivelight_checkbox_no.isChecked()) {
+                    csform_cs_safetysigns_checkbox_yes.setChecked(false);}
+            }
+        });
+
+        csform_cs_isolationsources_checkbox_yes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (csform_cs_isolationsources_checkbox_yes.isChecked()) {
+                    csform_cs_isolationsources_checkbox_no.setChecked(false);}
+            }
+        });
+        csform_cs_isolationsources_checkbox_no.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (csform_cs_isolationsources_checkbox_no.isChecked()) {
+                    csform_cs_isolationsources_checkbox_yes.setChecked(false);}
+            }
+        });
+
+        csform_cs_lifejacket_checkbox_yes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (csform_cs_lifejacket_checkbox_yes.isChecked()) {
+                    csform_cs_lifejacket_checkbox_no.setChecked(false);}
+            }
+        });
+        csform_cs_lifejacket_checkbox_no.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (csform_cs_lifejacket_checkbox_no.isChecked()) {
+                    csform_cs_lifejacket_checkbox_yes.setChecked(false);}
+            }
+        });
+
+        csform_cs_bumphat_checkbox_yes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (csform_cs_bumphat_checkbox_yes.isChecked()) {
+                    csform_cs_bumphat_checkbox_no.setChecked(false);}
+            }
+        });
+        csform_cs_bumphat_checkbox_no.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (csform_cs_bumphat_checkbox_no.isChecked()) {
+                    csform_cs_bumphat_checkbox_yes.setChecked(false);}
+            }
+        });
+
+        csform_cs_escapeset_checkbox_yes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (csform_cs_escapeset_checkbox_yes.isChecked()) {
+                    csform_cs_escapeset_checkbox_no.setChecked(false);}
+            }
+        });
+        csform_cs_escapeset_checkbox_no.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (csform_cs_escapeset_checkbox_no.isChecked()) {
+                    csform_cs_escapeset_checkbox_yes.setChecked(false);}
+            }
+        });
+
+        csform_cs_tripodharness_checkbox_yes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (csform_cs_tripodharness_checkbox_yes.isChecked()) {
+                    csform_cs_tripodharness_checkbox_no.setChecked(false);}
+            }
+        });
+        csform_cs_tripodharness_checkbox_no.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (csform_cs_tripodharness_checkbox_no.isChecked()) {
+                    csform_cs_tripodharness_checkbox_yes.setChecked(false);}
+            }
+        });
+
+        csform_cs_communication_checkbox_yes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (csform_cs_communication_checkbox_yes.isChecked()) {
+                    csform_cs_communication_checkbox_no.setChecked(false);}
+            }
+        });
+        csform_cs_communication_checkbox_no.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (csform_cs_communication_checkbox_no.isChecked()) {
+                    csform_cs_communication_checkbox_yes.setChecked(false);}
+            }
+        });
+        csform_cs_rescue_checkbox_yes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (csform_cs_rescue_checkbox_yes.isChecked()) {
+                    csform_cs_rescue_checkbox_no.setChecked(false);}
+            }
+        });
+        csform_cs_rescue_checkbox_no.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (csform_cs_rescue_checkbox_no.isChecked()) {
+                    csform_cs_rescue_checkbox_yes.setChecked(false);}
+            }
+        });
+
         bOK.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -469,6 +664,89 @@ public class AT_Confined_Space_view extends AppCompatActivity {
                     else {
                         p.setcsform_cs_level_3("No");
                     }
+
+                    ///////////////////////////////////////Confined Space Level/////////////////////////////////////////////////
+
+                    if(csform_cs_overalls_checkbox_yes.isChecked()) {
+                        p.setcs_overalls("Yes");
+                    } else if(csform_cs_overalls_checkbox_no.isChecked()) {
+                        p.setcs_overalls("No");
+                    } else { p.setcs_overalls("N/A");}
+
+                    if(csform_cs_gasmonitor_checkbox_yes.isChecked()) {
+                        p.setcs_gasmonitor("Yes");
+                    } else if(csform_cs_gasmonitor_checkbox_no.isChecked()) {
+                        p.setcs_gasmonitor("No");
+                    } else { p.setcs_gasmonitor("N/A");}
+
+                    if(csform_cs_emergencycall_checkbox_yes.isChecked()) {
+                        p.setcs_emergencycall("Yes");
+                    } else if(csform_cs_emergencycall_checkbox_no.isChecked()) {
+                        p.setcs_emergencycall("No");
+                    } else { p.setcs_emergencycall("N/A");}
+
+                    if(csform_cs_firstaid_checkbox_yes.isChecked()) {
+                        p.setcs_firstaid("Yes");
+                    } else if(csform_cs_firstaid_checkbox_no.isChecked()) {
+                        p.setcs_firstaid("No");
+                    } else { p.setcs_firstaid("N/A");}
+
+                    if(csform_cs_explosivelight_checkbox_yes.isChecked()) {
+                        p.setcs_explosivelight("Yes");
+                    } else if(csform_cs_explosivelight_checkbox_no.isChecked()) {
+                        p.setcs_explosivelight("No");
+                    } else { p.setcs_explosivelight("N/A");}
+
+                    if(csform_cs_safetysigns_checkbox_yes.isChecked()) {
+                        p.setcs_safetysigns("Yes");
+                    } else if(csform_cs_safetysigns_checkbox_no.isChecked()) {
+                        p.setcs_safetysigns("No");
+                    } else { p.setcs_safetysigns("N/A");}
+
+                    if(csform_cs_isolationsources_checkbox_yes.isChecked()) {
+                        p.setcs_isolationsources("Yes");
+                    } else if(csform_cs_isolationsources_checkbox_no.isChecked()) {
+                        p.setcs_isolationsources("No");
+                    } else { p.setcs_isolationsources("N/A");}
+
+                    if(csform_cs_lifejacket_checkbox_yes.isChecked()) {
+                        p.setcs_lifejacket("Yes");
+                    } else if(csform_cs_lifejacket_checkbox_no.isChecked()) {
+                        p.setcs_lifejacket("No");
+                    } else { p.setcs_lifejacket("N/A");}
+
+                    if(csform_cs_bumphat_checkbox_yes.isChecked()) {
+                        p.setcs_bumphat("Yes");
+                    } else if(csform_cs_bumphat_checkbox_no.isChecked()) {
+                        p.setcs_bumphat("No");
+                    } else { p.setcs_bumphat("N/A");}
+
+                    if(csform_cs_escapeset_checkbox_yes.isChecked()) {
+                        p.setcs_escapeset("Yes");
+                    } else if(csform_cs_escapeset_checkbox_no.isChecked()) {
+                        p.setcs_escapeset("No");
+                    } else { p.setcs_escapeset("N/A");}
+
+                    if(csform_cs_tripodharness_checkbox_yes.isChecked()) {
+                        p.setcs_tripodharness("Yes");
+                    } else if(csform_cs_tripodharness_checkbox_no.isChecked()) {
+                        p.setcs_tripodharness("No");
+                    } else { p.setcs_tripodharness("N/A");}
+
+                    if(csform_cs_communication_checkbox_yes.isChecked()) {
+                        p.setcs_communication("Yes");
+                    } else if(csform_cs_communication_checkbox_no.isChecked()) {
+                        p.setcs_communication("No");
+                    } else { p.setcs_communication("N/A");}
+
+                    if(csform_cs_rescue_checkbox_yes.isChecked()) {
+                        p.setcs_rescue("Yes");
+                    } else if(csform_cs_rescue_checkbox_no.isChecked()) {
+                        p.setcs_rescue("No");
+                    } else { p.setcs_rescue("N/A");}
+
+
+
 
 
                     if (AT_Confined_Space_model == null)

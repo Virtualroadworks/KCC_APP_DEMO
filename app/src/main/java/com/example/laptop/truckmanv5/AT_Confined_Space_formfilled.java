@@ -62,12 +62,36 @@ public class AT_Confined_Space_formfilled extends AppCompatActivity {
     private String csform_cs_level_2;
     private String csform_cs_level_3;
 
+    private String cs_overalls;
+    private String cs_gasmonitor;
+    private String cs_emergencycall;
+    private String cs_firstaid;
+    private String cs_explosivelight;
+    private String cs_safetysigns;
+    private String cs_isolationsources;
+    private String cs_lifejacket;
+    private String cs_bumphat;
+    private String cs_escapeset;
+    private String cs_tripodharness;
+    private String cs_communication;
+    private String cs_rescue;
+
+
     ImageButton csgeneralppehivisicon100x100;
     ImageButton csgeneralppehardhaticon100x100;
     ImageButton csgeneralppesafetybootsicon100x100;
     ImageButton csgeneralppeglovesicon100x100;
     ImageButton csgeneralppedustoverallicon100x100;
     ImageButton csgeneralppegooglesicon100x100;
+
+    FrameLayout framelayout_cs_level_1;
+    FrameLayout framelayout_cs_level_2;
+    FrameLayout framelayout_cs_level_3;
+
+    FrameLayout FrameLayout_Equipment_Requirement_CS1;
+    FrameLayout FrameLayout_Equipment_Requirement_CS2;
+    FrameLayout FrameLayout_Equipment_Requirement_CS3;
+
 
 
     @Override
@@ -97,6 +121,23 @@ public class AT_Confined_Space_formfilled extends AppCompatActivity {
         csgeneralppedustoverallicon100x100 = (ImageButton) findViewById(R.id.csgeneralppedustoverallicon100x100);
         csgeneralppegooglesicon100x100 = (ImageButton) findViewById(R.id.csgeneralppegooglesicon100x100);
 
+        ///////////////////////////////////////////////////////////////////////////////////
+
+        ///////////////////////////////////////////////////////////////////////////////////
+
+        framelayout_cs_level_1 = (FrameLayout) findViewById(R.id.framelayout_cs_level_1);
+        framelayout_cs_level_2 = (FrameLayout) findViewById(R.id.framelayout_cs_level_2);
+        framelayout_cs_level_3 = (FrameLayout) findViewById(R.id.framelayout_cs_level_3);
+
+        ///////////////////////////////////////////////////////////////////////////////////
+
+        FrameLayout_Equipment_Requirement_CS1 = (FrameLayout) findViewById(R.id.FrameLayout_Equipment_Requirement_CS1);
+        FrameLayout_Equipment_Requirement_CS2 = (FrameLayout) findViewById(R.id.FrameLayout_Equipment_Requirement_CS2);
+        FrameLayout_Equipment_Requirement_CS3 = (FrameLayout) findViewById(R.id.FrameLayout_Equipment_Requirement_CS3);
+
+        FrameLayout_Equipment_Requirement_CS1.setVisibility(LinearLayout.GONE);
+        FrameLayout_Equipment_Requirement_CS2.setVisibility(LinearLayout.GONE);
+        FrameLayout_Equipment_Requirement_CS3.setVisibility(LinearLayout.GONE);
 
 
         ///////////////////////////////////////////////////////////////////////////////////
@@ -297,7 +338,7 @@ public class AT_Confined_Space_formfilled extends AppCompatActivity {
                         endDate.setText(personDetailsModel.getendDate());
                         startDate.setText(personDetailsModel.getstartDate());
 
-                        ///////////////////////////////////////1: Traffic/////////////////////////////////////////////////
+                        ////////////////////////////////////////////////////////////////////////////////////////
 
                         csform_generalppehivisvest = personDetailsModel.getcsform_generalppehivisvest();
                         csform_generalppehardhat = personDetailsModel.getcsform_generalppehardhat();
@@ -311,6 +352,20 @@ public class AT_Confined_Space_formfilled extends AppCompatActivity {
                         csform_cs_level_3 = personDetailsModel.getcsform_cs_level_3();
 
 
+                        cs_overalls = personDetailsModel.getcs_overalls();
+                        cs_gasmonitor = personDetailsModel.getcs_gasmonitor();
+                        cs_emergencycall = personDetailsModel.getcs_emergencycall();
+                        cs_firstaid = personDetailsModel.getcs_firstaid();
+                        cs_explosivelight = personDetailsModel.getcs_explosivelight();
+                        cs_safetysigns = personDetailsModel.getcs_safetysigns();
+                        cs_isolationsources = personDetailsModel.getcs_isolationsources();
+                        cs_lifejacket = personDetailsModel.getcs_lifejacket();
+                        cs_bumphat = personDetailsModel.getcs_bumphat();
+                        cs_escapeset = personDetailsModel.getcs_escapeset();
+                        cs_tripodharness = personDetailsModel.getcs_tripodharness();
+                        cs_communication = personDetailsModel.getcs_communication();
+                        cs_rescue = personDetailsModel.getcs_rescue();
+
                         CheckBox CK_csform_generalppehivisvest = (CheckBox) findViewById(R.id.csform_generalppehivisvest);
                         CheckBox CK_csform_generalppehardhat = (CheckBox) findViewById(R.id.csform_generalppehardhat);
                         CheckBox CK_csform_generalppesafetyboots = (CheckBox) findViewById(R.id.csform_generalppesafetyboots);
@@ -322,76 +377,211 @@ public class AT_Confined_Space_formfilled extends AppCompatActivity {
                         CheckBox csform_cs_level_2_checkbox = (CheckBox) findViewById(R.id.csform_cs_level_2_checkbox);
                         CheckBox csform_cs_level_3_checkbox = (CheckBox) findViewById(R.id.csform_cs_level_3_checkbox);
 
+                        CheckBox csform_cs_overalls_checkbox_yes = (CheckBox) findViewById(R.id.csform_cs_overalls_checkbox_yes);
+                        CheckBox csform_cs_overalls_checkbox_no = (CheckBox) findViewById(R.id.csform_cs_overalls_checkbox_no);
+                        CheckBox csform_cs_gasmonitor_checkbox_yes = (CheckBox) findViewById(R.id.csform_cs_gasmonitor_checkbox_yes);
+                        CheckBox csform_cs_gasmonitor_checkbox_no = (CheckBox) findViewById(R.id.csform_cs_gasmonitor_checkbox_no);
+                        CheckBox csform_cs_emergencycall_checkbox_yes = (CheckBox) findViewById(R.id.csform_cs_emergencycall_checkbox_yes);
+                        CheckBox csform_cs_emergencycall_checkbox_no = (CheckBox) findViewById(R.id.csform_cs_emergencycall_checkbox_no);
+                        CheckBox csform_cs_firstaid_checkbox_yes = (CheckBox) findViewById(R.id.csform_cs_firstaid_checkbox_yes);
+                        CheckBox csform_cs_firstaid_checkbox_no = (CheckBox) findViewById(R.id.csform_cs_firstaid_checkbox_no);
+                        CheckBox csform_cs_explosivelight_checkbox_yes = (CheckBox) findViewById(R.id.csform_cs_explosivelight_checkbox_yes);
+                        CheckBox csform_cs_explosivelight_checkbox_no = (CheckBox) findViewById(R.id.csform_cs_explosivelight_checkbox_no);
+                        CheckBox csform_cs_safetysigns_checkbox_yes = (CheckBox) findViewById(R.id.csform_cs_safetysigns_checkbox_yes);
+                        CheckBox csform_cs_safetysigns_checkbox_no = (CheckBox) findViewById(R.id.csform_cs_safetysigns_checkbox_no);
+                        CheckBox csform_cs_isolationsources_checkbox_yes = (CheckBox) findViewById(R.id.csform_cs_isolationsources_checkbox_yes);
+                        CheckBox csform_cs_isolationsources_checkbox_no = (CheckBox) findViewById(R.id.csform_cs_isolationsources_checkbox_no);
+                        CheckBox csform_cs_lifejacket_checkbox_yes = (CheckBox) findViewById(R.id.csform_cs_lifejacket_checkbox_yes);
+                        CheckBox csform_cs_lifejacket_checkbox_no = (CheckBox) findViewById(R.id.csform_cs_lifejacket_checkbox_no);
+                        CheckBox csform_cs_bumphat_checkbox_yes = (CheckBox) findViewById(R.id.csform_cs_bumphat_checkbox_yes);
+                        CheckBox csform_cs_bumphat_checkbox_no = (CheckBox) findViewById(R.id.csform_cs_bumphat_checkbox_no);
+                        CheckBox csform_cs_escapeset_checkbox_yes = (CheckBox) findViewById(R.id.csform_cs_escapeset_checkbox_yes);
+                        CheckBox csform_cs_escapeset_checkbox_no = (CheckBox) findViewById(R.id.csform_cs_escapeset_checkbox_no);
+                        CheckBox csform_cs_tripodharness_checkbox_yes = (CheckBox) findViewById(R.id.csform_cs_tripodharness_checkbox_yes);
+                        CheckBox csform_cs_tripodharness_checkbox_no = (CheckBox) findViewById(R.id.csform_cs_tripodharness_checkbox_no);
+                        CheckBox csform_cs_communication_checkbox_yes = (CheckBox) findViewById(R.id.csform_cs_communication_checkbox_yes);
+                        CheckBox csform_cs_communication_checkbox_no = (CheckBox) findViewById(R.id.csform_cs_communication_checkbox_no);
+                        CheckBox csform_cs_rescue_checkbox_yes = (CheckBox) findViewById(R.id.csform_cs_rescue_checkbox_yes);
+                        CheckBox csform_cs_rescue_checkbox_no = (CheckBox) findViewById(R.id.csform_cs_rescue_checkbox_no);
+
+                        ////////////////////////////////////////////////////////////////////////////////////////
+
 
                         if (csform_generalppehivisvest.equals("Yes")) {
-
                             CK_csform_generalppehivisvest.setChecked(true);
                         }
-                        else {
-                            CK_csform_generalppehivisvest.setChecked(false);
+                        else {CK_csform_generalppehivisvest.setChecked(false);
                         }
-
                         if (csform_generalppehardhat.equals("Yes")) {
-
                             CK_csform_generalppehardhat.setChecked(true);
                         }
-                        else {
-                            CK_csform_generalppehardhat.setChecked(false);
+                        else {CK_csform_generalppehardhat.setChecked(false);
                         }
                         if (csform_generalppesafetyboots.equals("Yes")) {
-
                             CK_csform_generalppesafetyboots.setChecked(true);
                         }
-                        else {
-                            CK_csform_generalppesafetyboots.setChecked(false);
+                        else {CK_csform_generalppesafetyboots.setChecked(false);
                         }
                         if (csform_generalppegloves.equals("Yes")) {
-
                             CK_csform_generalppegloves.setChecked(true);
                         }
-                        else {
-                            CK_csform_generalppegloves.setChecked(false);
+                        else {CK_csform_generalppegloves.setChecked(false);
                         }
                         if (csform_generalppeoveralls.equals("Yes")) {
-
                             CK_csform_generalppeoveralls.setChecked(true);
                         }
-                        else {
-                            CK_csform_generalppeoveralls.setChecked(false);
+                        else {CK_csform_generalppeoveralls.setChecked(false);
                         }
-
                         if (csform_generalppeglasses.equals("Yes")) {
-
                             CK_csform_generalppeglasses.setChecked(true);
                         }
-                        else {
-                            CK_csform_generalppeglasses.setChecked(false);
+                        else {CK_csform_generalppeglasses.setChecked(false);
                         }
 
-
-///////////////////////////////////////1: Traffic/////////////////////////////////////////////////
+                        ////////////////////////////////////////////////////////////////////////////////////////
                         if (csform_cs_level_1.equals("Yes")) {
-
                             csform_cs_level_1_checkbox.setChecked(true);
+                            framelayout_cs_level_1.setVisibility(LinearLayout.VISIBLE);
+                            framelayout_cs_level_2.setVisibility(LinearLayout.GONE);
+                            framelayout_cs_level_3.setVisibility(LinearLayout.GONE);
+                            FrameLayout_Equipment_Requirement_CS1.setVisibility(LinearLayout.VISIBLE);
+                            FrameLayout_Equipment_Requirement_CS2.setVisibility(LinearLayout.GONE);
+                            FrameLayout_Equipment_Requirement_CS3.setVisibility(LinearLayout.GONE);
                         }
-                        else {
-                            csform_cs_level_1_checkbox.setChecked(false);
+                        else {csform_cs_level_1_checkbox.setChecked(false);
                         }
 
                         if (csform_cs_level_2.equals("Yes")) {
-
                             csform_cs_level_2_checkbox.setChecked(true);
+                            framelayout_cs_level_1.setVisibility(LinearLayout.GONE);
+                            framelayout_cs_level_2.setVisibility(LinearLayout.VISIBLE);
+                            framelayout_cs_level_3.setVisibility(LinearLayout.GONE);
+                            FrameLayout_Equipment_Requirement_CS1.setVisibility(LinearLayout.VISIBLE);
+                            FrameLayout_Equipment_Requirement_CS2.setVisibility(LinearLayout.VISIBLE);
+                            FrameLayout_Equipment_Requirement_CS3.setVisibility(LinearLayout.GONE);
                         }
-                        else {
-                            csform_cs_level_2_checkbox.setChecked(false);
+                        else {csform_cs_level_2_checkbox.setChecked(false);
                         }
 
                         if (csform_cs_level_3.equals("Yes")) {
-
                             csform_cs_level_3_checkbox.setChecked(true);
+                            framelayout_cs_level_1.setVisibility(LinearLayout.GONE);
+                            framelayout_cs_level_2.setVisibility(LinearLayout.GONE);
+                            framelayout_cs_level_3.setVisibility(LinearLayout.VISIBLE);
+                            FrameLayout_Equipment_Requirement_CS1.setVisibility(LinearLayout.VISIBLE);
+                            FrameLayout_Equipment_Requirement_CS2.setVisibility(LinearLayout.VISIBLE);
+                            FrameLayout_Equipment_Requirement_CS3.setVisibility(LinearLayout.VISIBLE);
                         }
-                        else {
-                            csform_cs_level_3_checkbox.setChecked(false);
+                        else {csform_cs_level_3_checkbox.setChecked(false);
+                        }
+
+
+                        ////////////////////////////////////////////////////////////////////////////////////////
+                        if (cs_overalls.equals("Yes")) {
+                            csform_cs_overalls_checkbox_yes.setChecked(true);
+                        } else { csform_cs_overalls_checkbox_yes.setChecked(false);
+                        }
+                        if (cs_overalls.equals("No")) {
+                            csform_cs_overalls_checkbox_no.setChecked(true);
+                        } else { csform_cs_overalls_checkbox_no.setChecked(false);
+                        }
+
+                        if (cs_gasmonitor.equals("Yes")) {
+                            csform_cs_gasmonitor_checkbox_yes.setChecked(true);
+                        } else { csform_cs_gasmonitor_checkbox_yes.setChecked(false);
+                        }
+                        if (cs_gasmonitor.equals("No")) {
+                            csform_cs_gasmonitor_checkbox_no.setChecked(true);
+                        } else { csform_cs_gasmonitor_checkbox_no.setChecked(false);
+                        }
+
+                        if (cs_emergencycall.equals("Yes")) {
+                            csform_cs_emergencycall_checkbox_yes.setChecked(true);
+                        } else { csform_cs_emergencycall_checkbox_yes.setChecked(false);
+                        }
+                        if (cs_emergencycall.equals("No")) {
+                            csform_cs_emergencycall_checkbox_no.setChecked(true);
+                        } else { csform_cs_emergencycall_checkbox_no.setChecked(false);
+                        }
+                        if (cs_firstaid.equals("Yes")) {
+                            csform_cs_firstaid_checkbox_yes.setChecked(true);
+                        } else { csform_cs_firstaid_checkbox_yes.setChecked(false);
+                        }
+                        if (cs_firstaid.equals("No")) {
+                            csform_cs_firstaid_checkbox_no.setChecked(true);
+                        } else { csform_cs_firstaid_checkbox_no.setChecked(false);
+                        }
+                        if (cs_explosivelight.equals("Yes")) {
+                            csform_cs_explosivelight_checkbox_yes.setChecked(true);
+                        } else { csform_cs_explosivelight_checkbox_yes.setChecked(false);
+                        }
+                        if (cs_explosivelight.equals("No")) {
+                            csform_cs_explosivelight_checkbox_no.setChecked(true);
+                        } else { csform_cs_explosivelight_checkbox_no.setChecked(false);
+                        }
+                        if (cs_safetysigns.equals("Yes")) {
+                            csform_cs_safetysigns_checkbox_yes.setChecked(true);
+                        } else { csform_cs_safetysigns_checkbox_yes.setChecked(false);
+                        }
+                        if (cs_safetysigns.equals("No")) {
+                            csform_cs_safetysigns_checkbox_no.setChecked(true);
+                        } else { csform_cs_safetysigns_checkbox_no.setChecked(false);
+                        }
+                        if (cs_isolationsources.equals("Yes")) {
+                            csform_cs_isolationsources_checkbox_yes.setChecked(true);
+                        } else { csform_cs_isolationsources_checkbox_yes.setChecked(false);
+                        }
+                        if (cs_isolationsources.equals("No")) {
+                            csform_cs_isolationsources_checkbox_no.setChecked(true);
+                        } else { csform_cs_isolationsources_checkbox_no.setChecked(false);
+                        }
+                        if (cs_lifejacket.equals("Yes")) {
+                            csform_cs_lifejacket_checkbox_yes.setChecked(true);
+                        } else { csform_cs_lifejacket_checkbox_yes.setChecked(false);
+                        }
+                        if (cs_lifejacket.equals("No")) {
+                            csform_cs_lifejacket_checkbox_no.setChecked(true);
+                        } else { csform_cs_lifejacket_checkbox_no.setChecked(false);
+                        }
+                        if (cs_bumphat.equals("Yes")) {
+                            csform_cs_bumphat_checkbox_yes.setChecked(true);
+                        } else { csform_cs_bumphat_checkbox_yes.setChecked(false);
+                        }
+                        if (cs_bumphat.equals("No")) {
+                            csform_cs_bumphat_checkbox_no.setChecked(true);
+                        } else { csform_cs_bumphat_checkbox_no.setChecked(false);
+                        }
+                        if (cs_escapeset.equals("Yes")) {
+                            csform_cs_escapeset_checkbox_yes.setChecked(true);
+                        } else { csform_cs_escapeset_checkbox_yes.setChecked(false);
+                        }
+                        if (cs_escapeset.equals("No")) {
+                            csform_cs_escapeset_checkbox_no.setChecked(true);
+                        } else { csform_cs_escapeset_checkbox_no.setChecked(false);
+                        }
+                        if (cs_tripodharness.equals("Yes")) {
+                            csform_cs_tripodharness_checkbox_yes.setChecked(true);
+                        } else { csform_cs_tripodharness_checkbox_yes.setChecked(false);
+                        }
+                        if (cs_tripodharness.equals("No")) {
+                            csform_cs_tripodharness_checkbox_no.setChecked(true);
+                        } else { csform_cs_tripodharness_checkbox_no.setChecked(false);
+                        }
+                        if (cs_communication.equals("Yes")) {
+                            csform_cs_communication_checkbox_yes.setChecked(true);
+                        } else { csform_cs_communication_checkbox_yes.setChecked(false);
+                        }
+                        if (cs_communication.equals("No")) {
+                            csform_cs_communication_checkbox_no.setChecked(true);
+                        } else { csform_cs_communication_checkbox_no.setChecked(false);
+                        }
+                        if (cs_rescue.equals("Yes")) {
+                            csform_cs_rescue_checkbox_yes.setChecked(true);
+                        } else { csform_cs_rescue_checkbox_yes.setChecked(false);
+                        }
+                        if (cs_rescue.equals("No")) {
+                            csform_cs_rescue_checkbox_no.setChecked(true);
+                        } else { csform_cs_rescue_checkbox_no.setChecked(false);
                         }
 
                     }

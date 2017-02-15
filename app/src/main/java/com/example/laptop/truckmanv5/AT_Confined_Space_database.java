@@ -184,6 +184,23 @@ public class AT_Confined_Space_database extends AppCompatActivity {
 
         ////////////////////////////////////////////////////////////////////////////////////////
 
+        add.setcs_overalls(model.getcs_overalls());
+        add.setcs_gasmonitor(model.getcs_gasmonitor());
+        add.setcs_emergencycall(model.getcs_emergencycall());
+        add.setcs_firstaid(model.getcs_firstaid());
+        add.setcs_explosivelight(model.getcs_explosivelight());
+        add.setcs_safetysigns(model.getcs_safetysigns());
+        add.setcs_isolationsources(model.getcs_isolationsources());
+        add.setcs_lifejacket(model.getcs_lifejacket());
+        add.setcs_bumphat(model.getcs_bumphat());
+        add.setcs_escapeset(model.getcs_escapeset());
+        add.setcs_tripodharness(model.getcs_tripodharness());
+        add.setcs_communication(model.getcs_communication());
+        add.setcs_rescue(model.getcs_rescue());
+
+
+        ////////////////////////////////////////////////////////////////////////////////////////
+
 
 
 
