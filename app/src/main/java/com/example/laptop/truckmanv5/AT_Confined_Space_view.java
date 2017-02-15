@@ -111,6 +111,8 @@ public class AT_Confined_Space_view extends AppCompatActivity {
     FrameLayout FrameLayout_Equipment_Requirement_CS2;
     FrameLayout FrameLayout_Equipment_Requirement_CS3;
 
+    FrameLayout Framelayout_Buttons;
+
 
 
     ///////////////////////////////////////////////////////////////////////////////////
@@ -213,11 +215,15 @@ public class AT_Confined_Space_view extends AppCompatActivity {
         framelayout_cs_level_2 = (FrameLayout) findViewById(R.id.framelayout_cs_level_2);
         framelayout_cs_level_3 = (FrameLayout) findViewById(R.id.framelayout_cs_level_3);
 
+        Framelayout_Buttons = (FrameLayout) findViewById(R.id.Framelayout_Buttons);
+
         ///////////////////////////////////////////////////////////////////////////////////
 
         FrameLayout_Equipment_Requirement_CS1.setVisibility(LinearLayout.GONE);
         FrameLayout_Equipment_Requirement_CS2.setVisibility(LinearLayout.GONE);
         FrameLayout_Equipment_Requirement_CS3.setVisibility(LinearLayout.GONE);
+
+        Framelayout_Buttons.setVisibility(LinearLayout.GONE);
 
         ///////////////////////////////////////PPE/////////////////////////////////////////////////
 
@@ -307,6 +313,7 @@ public class AT_Confined_Space_view extends AppCompatActivity {
                     FrameLayout_Equipment_Requirement_CS3.setVisibility(LinearLayout.GONE);
                     framelayout_cs_level_2.setVisibility(LinearLayout.GONE);
                     framelayout_cs_level_3.setVisibility(LinearLayout.GONE);
+                    Framelayout_Buttons.setVisibility(LinearLayout.VISIBLE);
                     csform_cs_level_1_checkbox_pressed ^= true;
                 } else if
                         (csform_cs_level_1_checkbox_pressed == true) {
@@ -315,6 +322,7 @@ public class AT_Confined_Space_view extends AppCompatActivity {
                     FrameLayout_Equipment_Requirement_CS3.setVisibility(LinearLayout.GONE);
                     framelayout_cs_level_2.setVisibility(LinearLayout.VISIBLE);
                     framelayout_cs_level_3.setVisibility(LinearLayout.VISIBLE);
+                    Framelayout_Buttons.setVisibility(LinearLayout.GONE);
                     csform_cs_level_1_checkbox_pressed ^= true;
                 }
             }
@@ -330,6 +338,7 @@ public class AT_Confined_Space_view extends AppCompatActivity {
                     FrameLayout_Equipment_Requirement_CS3.setVisibility(LinearLayout.GONE);
                     framelayout_cs_level_1.setVisibility(LinearLayout.GONE);
                     framelayout_cs_level_3.setVisibility(LinearLayout.GONE);
+                    Framelayout_Buttons.setVisibility(LinearLayout.VISIBLE);
                     csform_cs_level_2_checkbox_pressed ^= true;
                 } else if
                         (csform_cs_level_2_checkbox_pressed == true) {
@@ -339,6 +348,7 @@ public class AT_Confined_Space_view extends AppCompatActivity {
                     FrameLayout_Equipment_Requirement_CS3.setVisibility(LinearLayout.GONE);
                     framelayout_cs_level_1.setVisibility(LinearLayout.VISIBLE);
                     framelayout_cs_level_3.setVisibility(LinearLayout.VISIBLE);
+                    Framelayout_Buttons.setVisibility(LinearLayout.GONE);
                     csform_cs_level_2_checkbox_pressed ^= true;
                 }
             }
@@ -354,6 +364,7 @@ public class AT_Confined_Space_view extends AppCompatActivity {
                     FrameLayout_Equipment_Requirement_CS3.setVisibility(LinearLayout.VISIBLE);
                     framelayout_cs_level_1.setVisibility(LinearLayout.GONE);
                     framelayout_cs_level_2.setVisibility(LinearLayout.GONE);
+                    Framelayout_Buttons.setVisibility(LinearLayout.VISIBLE);
                     csform_cs_level_3_checkbox_pressed ^= true;
                 } else if
                         (csform_cs_level_3_checkbox_pressed == true) {
@@ -362,6 +373,7 @@ public class AT_Confined_Space_view extends AppCompatActivity {
                     FrameLayout_Equipment_Requirement_CS3.setVisibility(LinearLayout.GONE);
                     framelayout_cs_level_1.setVisibility(LinearLayout.VISIBLE);
                     framelayout_cs_level_2.setVisibility(LinearLayout.VISIBLE);
+                    Framelayout_Buttons.setVisibility(LinearLayout.GONE);
                     csform_cs_level_3_checkbox_pressed ^= true;
                 }
             }

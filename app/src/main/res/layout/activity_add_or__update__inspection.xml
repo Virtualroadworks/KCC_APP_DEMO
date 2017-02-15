@@ -373,14 +373,6 @@
                                     android:layout_height="match_parent"
                                     android:layout_weight="1">
 
-                                    <ImageButton
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        app:srcCompat="@drawable/locationbutton"
-                                        android:id="@+id/locationbutton"
-                                        android:background="@android:color/transparent"
-                                        android:layout_margin="10dp"
-                                        android:contentDescription="" />
                                 </FrameLayout>
 
                                 <FrameLayout

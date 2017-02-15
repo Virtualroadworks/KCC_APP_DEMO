@@ -221,7 +221,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
     ImageButton airelectrial_icon_image;
     ImageButton airsuspension_icon_image;
 
-    ImageButton locationbutton;
+   // ImageButton locationbutton;
 
 
     //Image Default and tick Buttons (2 go in here)
@@ -697,7 +697,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
         drivinginspectionhidebutton = (Button) findViewById(R.id.drivinginspectionhidebutton);
 
 
-        locationbutton = (ImageButton) findViewById(R.id.locationbutton);
+       // locationbutton = (ImageButton) findViewById(R.id.locationbutton);
 
         //Image Buttons Icons
         windowsandmirrors_icon_image = (ImageButton) findViewById(R.id.windowsandmirrors_icon_image);
@@ -3926,17 +3926,17 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
             }
         });
 
-        locationbutton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+       // locationbutton.setOnClickListener(new View.OnClickListener() {
+         //   @Override
+           // public void onClick(View v) {
 
-                userLocation.disconnect();
-                userLocation.connect();
+             //   userLocation.disconnect();
+               // userLocation.connect();
 //                mp.start();
 //                startActivity(new Intent(Add_or_Update_Inspection.this, MyLocationDemoActivity.class));
 
-            }
-        });
+//            }
+//        });
 
 
 

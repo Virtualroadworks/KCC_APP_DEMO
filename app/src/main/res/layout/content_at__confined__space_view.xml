@@ -44,7 +44,7 @@
                         tools:ignore="ContentDescription" />
 
                     <TextView
-                        android:text="Confined Space"
+                        android:text="Confined Space Form"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:textStyle="normal|bold"
@@ -239,7 +239,8 @@
                         android:textSize="25sp"
                         android:textAlignment="center"
                         android:background="@drawable/button_roundoff2"
-                        android:padding="15dp" />
+                        android:padding="15dp"
+                        android:layout_margin="15dp" />
 
                     <TextView
                         android:text="This form must be compleated before anyone entres the Confined Space"
@@ -250,7 +251,8 @@
                         android:background="@drawable/button_roundoff3"
                         android:textColor="@color/cardview_light_background"
                         android:padding="20dp"
-                        tools:ignore="HardcodedText" />
+                        tools:ignore="HardcodedText"
+                        android:layout_margin="15dp" />
 
                     <TextView
                         android:text="Any Work that might produce sparks, heat or toxic fumes or gases requires a seperate risk assessment."
@@ -261,7 +263,8 @@
                         android:background="@drawable/button_roundoff3"
                         android:textColor="@color/cardview_light_background"
                         android:padding="20dp"
-                        tools:ignore="HardcodedText" />
+                        tools:ignore="HardcodedText"
+                        android:layout_margin="15dp" />
 
                 </LinearLayout>
 
@@ -279,14 +282,16 @@
                     android:layout_marginTop="20dp">
 
                     <TextView
-                        android:text="Tick the appropriate box for the PPE you are using."
-                        android:layout_width="match_parent"
+                        android:text="1/ Tick the appropriate box below for the PPE you are using."
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/cast_expanded_controller_background_color"
                         android:layout_weight="1"
                         android:textSize="20sp"
                         tools:ignore="HardcodedText"
-                        android:padding="10dp" />
+                        android:padding="10dp"
+                        android:background="@drawable/button_roundoff4"
+                        android:layout_margin="10dp" />
 
 
                     <LinearLayout
@@ -547,14 +552,16 @@
             </FrameLayout>
 
             <TextView
-                android:text="Tick One Box that Describes the Confined Space and the Activity you are about to undertake:"
-                android:layout_width="match_parent"
+                android:text="2/ Tick One Box that Describes the Confined Space and the Activity you are about to undertake:"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/cast_expanded_controller_background_color"
                 android:layout_weight="1"
                 android:textSize="20sp"
                 tools:ignore="HardcodedText"
-                android:layout_margin="10dp" />
+                android:layout_margin="10dp"
+                android:background="@drawable/button_roundoff4"
+                android:padding="10dp" />
 
             <FrameLayout
                 android:layout_width="match_parent"
@@ -972,6 +979,22 @@
                     android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:text="3/ Ensure that you have all the controls in place appropriate to the level of Confined Space that you have identified. Tick correct box in the checklist below."
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/cast_expanded_controller_background_color"
+                            android:textSize="20sp"
+                            tools:ignore="HardcodedText"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/button_roundoff4"
+                            android:padding="10dp" />
+
+                    </FrameLayout>
 
                     <FrameLayout
                         android:layout_width="match_parent"
@@ -2825,33 +2848,69 @@
                     </FrameLayout>
                 </LinearLayout>
             </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/cardview_dark_background"
+                android:padding="10dp">
+
+            </FrameLayout>
 
 
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:padding="10dp">
+                android:id="@+id/Framelayout_Buttons">
 
                 <LinearLayout
-                    android:orientation="horizontal"
+                    android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <Button
-                        android:text="Cancel"
-                        android:layout_width="wrap_content"
+                    <TextView
+                        android:text="If All appropriate controls are not in place then DO NOT ENTER the Confined Space and inform your supervisor immediately."
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:id="@+id/bCancel"
+                        android:textColor="@color/cardview_light_background"
                         android:layout_weight="1"
-                        tools:ignore="ButtonStyle,HardcodedText" />
-                    <Button
-                        android:text="OK"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/bOK"
-                        android:layout_weight="1"
-                        tools:ignore="ButtonStyle,HardcodedText" />
+                        android:textSize="30sp"
+                        tools:ignore="HardcodedText"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/button_roundoff6"
+                        android:padding="10dp"
+                        android:textStyle="normal|bold"
+                        android:textAlignment="center" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <Button
+                            android:text="Cancel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/bCancel"
+                            android:layout_weight="1"
+                            tools:ignore="ButtonStyle,HardcodedText,NestedWeights"
+                            android:background="@drawable/button_roundoff5"
+                            android:layout_margin="20dp"
+                            android:textSize="20sp" />
+                        <Button
+                            android:text="submit form"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/bOK"
+                            android:layout_weight="1"
+                            tools:ignore="ButtonStyle,HardcodedText"
+                            android:background="@drawable/button_roundoff7"
+                            android:layout_margin="20dp"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
                 </LinearLayout>
+
             </FrameLayout>
 
 
