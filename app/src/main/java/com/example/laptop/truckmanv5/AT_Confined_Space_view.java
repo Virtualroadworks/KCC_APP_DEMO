@@ -76,9 +76,41 @@ public class AT_Confined_Space_view extends AppCompatActivity {
     CheckBox csform_cs_level_2_checkbox;
     CheckBox csform_cs_level_3_checkbox;
 
+    CheckBox csform_cs_overalls_checkbox_yes;
+    CheckBox csform_cs_overalls_checkbox_no;
+    CheckBox csform_cs_gasmonitor_checkbox_yes;
+    CheckBox csform_cs_gasmonitor_checkbox_no;
+    CheckBox csform_cs_emergencycall_checkbox_yes;
+    CheckBox csform_cs_emergencycall_checkbox_no;
+    CheckBox csform_cs_firstaid_checkbox_yes;
+    CheckBox csform_cs_firstaid_checkbox_no;
+    CheckBox csform_cs_explosivelight_checkbox_yes;
+    CheckBox csform_cs_explosivelight_checkbox_no;
+    CheckBox csform_cs_safetysigns_checkbox_yes;
+    CheckBox csform_cs_safetysigns_checkbox_no;
+    CheckBox csform_cs_isolationsources_checkbox_yes;
+    CheckBox csform_cs_isolationsources_checkbox_no;
+    CheckBox csform_cs_lifejacket_checkbox_yes;
+    CheckBox csform_cs_lifejacket_checkbox_no;
+    CheckBox csform_cs_bumphat_checkbox_yes;
+    CheckBox csform_cs_bumphat_checkbox_no;
+    CheckBox csform_cs_escapeset_checkbox_yes;
+    CheckBox csform_cs_escapeset_checkbox_no;
+    CheckBox csform_cs_tripodharness_checkbox_yes;
+    CheckBox csform_cs_tripodharness_checkbox_no;
+    CheckBox csform_cs_communication_checkbox_yes;
+    CheckBox csform_cs_communication_checkbox_no;
+    CheckBox csform_cs_rescue_checkbox_yes;
+    CheckBox csform_cs_rescue_checkbox_no;
+
     FrameLayout framelayout_cs_level_1;
     FrameLayout framelayout_cs_level_2;
     FrameLayout framelayout_cs_level_3;
+
+    FrameLayout FrameLayout_Equipment_Requirement_CS1;
+    FrameLayout FrameLayout_Equipment_Requirement_CS2;
+    FrameLayout FrameLayout_Equipment_Requirement_CS3;
+
 
 
     ///////////////////////////////////////////////////////////////////////////////////
@@ -143,6 +175,38 @@ public class AT_Confined_Space_view extends AppCompatActivity {
         csform_cs_level_2_checkbox = (CheckBox) findViewById(R.id.csform_cs_level_2_checkbox);
         csform_cs_level_3_checkbox = (CheckBox) findViewById(R.id.csform_cs_level_3_checkbox);
 
+        csform_cs_overalls_checkbox_yes = (CheckBox) findViewById(R.id.csform_cs_overalls_checkbox_yes);
+        csform_cs_overalls_checkbox_no = (CheckBox) findViewById(R.id.csform_cs_overalls_checkbox_no);
+        csform_cs_gasmonitor_checkbox_yes = (CheckBox) findViewById(R.id.csform_cs_gasmonitor_checkbox_yes);
+        csform_cs_gasmonitor_checkbox_no = (CheckBox) findViewById(R.id.csform_cs_gasmonitor_checkbox_no);
+        csform_cs_emergencycall_checkbox_yes = (CheckBox) findViewById(R.id.csform_cs_emergencycall_checkbox_yes);
+        csform_cs_emergencycall_checkbox_no = (CheckBox) findViewById(R.id.csform_cs_emergencycall_checkbox_no);
+        csform_cs_firstaid_checkbox_yes = (CheckBox) findViewById(R.id.csform_cs_firstaid_checkbox_yes);
+        csform_cs_firstaid_checkbox_no = (CheckBox) findViewById(R.id.csform_cs_firstaid_checkbox_no);
+        csform_cs_explosivelight_checkbox_yes = (CheckBox) findViewById(R.id.csform_cs_explosivelight_checkbox_yes);
+        csform_cs_explosivelight_checkbox_no = (CheckBox) findViewById(R.id.csform_cs_explosivelight_checkbox_no);
+        csform_cs_safetysigns_checkbox_yes = (CheckBox) findViewById(R.id.csform_cs_safetysigns_checkbox_yes);
+        csform_cs_safetysigns_checkbox_no = (CheckBox) findViewById(R.id.csform_cs_safetysigns_checkbox_no);
+        csform_cs_isolationsources_checkbox_yes = (CheckBox) findViewById(R.id.csform_cs_isolationsources_checkbox_yes);
+        csform_cs_isolationsources_checkbox_no = (CheckBox) findViewById(R.id.csform_cs_isolationsources_checkbox_no);
+        csform_cs_lifejacket_checkbox_yes = (CheckBox) findViewById(R.id.csform_cs_lifejacket_checkbox_yes);
+        csform_cs_lifejacket_checkbox_no = (CheckBox) findViewById(R.id.csform_cs_lifejacket_checkbox_no);
+        csform_cs_bumphat_checkbox_yes = (CheckBox) findViewById(R.id.csform_cs_bumphat_checkbox_yes);
+        csform_cs_bumphat_checkbox_no = (CheckBox) findViewById(R.id.csform_cs_bumphat_checkbox_no);
+        csform_cs_escapeset_checkbox_yes = (CheckBox) findViewById(R.id.csform_cs_escapeset_checkbox_yes);
+        csform_cs_escapeset_checkbox_no = (CheckBox) findViewById(R.id.csform_cs_escapeset_checkbox_no);
+        csform_cs_tripodharness_checkbox_yes = (CheckBox) findViewById(R.id.csform_cs_tripodharness_checkbox_yes);
+        csform_cs_tripodharness_checkbox_no = (CheckBox) findViewById(R.id.csform_cs_tripodharness_checkbox_no);
+        csform_cs_communication_checkbox_yes = (CheckBox) findViewById(R.id.csform_cs_communication_checkbox_yes);
+        csform_cs_communication_checkbox_no = (CheckBox) findViewById(R.id.csform_cs_communication_checkbox_no);
+        csform_cs_rescue_checkbox_yes = (CheckBox) findViewById(R.id.csform_cs_rescue_checkbox_yes);
+        csform_cs_rescue_checkbox_no = (CheckBox) findViewById(R.id.csform_cs_rescue_checkbox_no);
+
+        FrameLayout_Equipment_Requirement_CS1 = (FrameLayout) findViewById(R.id.FrameLayout_Equipment_Requirement_CS1);
+        FrameLayout_Equipment_Requirement_CS2 = (FrameLayout) findViewById(R.id.FrameLayout_Equipment_Requirement_CS2);
+        FrameLayout_Equipment_Requirement_CS3 = (FrameLayout) findViewById(R.id.FrameLayout_Equipment_Requirement_CS3);
+
+
         ///////////////////////////////////////////////////////////////////////////////////
 
         framelayout_cs_level_1 = (FrameLayout) findViewById(R.id.framelayout_cs_level_1);
@@ -151,7 +215,9 @@ public class AT_Confined_Space_view extends AppCompatActivity {
 
         ///////////////////////////////////////////////////////////////////////////////////
 
-
+        FrameLayout_Equipment_Requirement_CS1.setVisibility(LinearLayout.GONE);
+        FrameLayout_Equipment_Requirement_CS2.setVisibility(LinearLayout.GONE);
+        FrameLayout_Equipment_Requirement_CS3.setVisibility(LinearLayout.GONE);
 
         ///////////////////////////////////////PPE/////////////////////////////////////////////////
 
@@ -236,11 +302,17 @@ public class AT_Confined_Space_view extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (csform_cs_level_1_checkbox_pressed == false) {
+                    FrameLayout_Equipment_Requirement_CS1.setVisibility(LinearLayout.VISIBLE);
+                    FrameLayout_Equipment_Requirement_CS2.setVisibility(LinearLayout.GONE);
+                    FrameLayout_Equipment_Requirement_CS3.setVisibility(LinearLayout.GONE);
                     framelayout_cs_level_2.setVisibility(LinearLayout.GONE);
                     framelayout_cs_level_3.setVisibility(LinearLayout.GONE);
                     csform_cs_level_1_checkbox_pressed ^= true;
                 } else if
                         (csform_cs_level_1_checkbox_pressed == true) {
+                    FrameLayout_Equipment_Requirement_CS1.setVisibility(LinearLayout.GONE);
+                    FrameLayout_Equipment_Requirement_CS2.setVisibility(LinearLayout.GONE);
+                    FrameLayout_Equipment_Requirement_CS3.setVisibility(LinearLayout.GONE);
                     framelayout_cs_level_2.setVisibility(LinearLayout.VISIBLE);
                     framelayout_cs_level_3.setVisibility(LinearLayout.VISIBLE);
                     csform_cs_level_1_checkbox_pressed ^= true;
@@ -253,11 +325,18 @@ public class AT_Confined_Space_view extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (csform_cs_level_2_checkbox_pressed == false) {
+                    FrameLayout_Equipment_Requirement_CS1.setVisibility(LinearLayout.VISIBLE);
+                    FrameLayout_Equipment_Requirement_CS2.setVisibility(LinearLayout.VISIBLE);
+                    FrameLayout_Equipment_Requirement_CS3.setVisibility(LinearLayout.GONE);
                     framelayout_cs_level_1.setVisibility(LinearLayout.GONE);
                     framelayout_cs_level_3.setVisibility(LinearLayout.GONE);
                     csform_cs_level_2_checkbox_pressed ^= true;
                 } else if
                         (csform_cs_level_2_checkbox_pressed == true) {
+
+                    FrameLayout_Equipment_Requirement_CS1.setVisibility(LinearLayout.GONE);
+                    FrameLayout_Equipment_Requirement_CS2.setVisibility(LinearLayout.GONE);
+                    FrameLayout_Equipment_Requirement_CS3.setVisibility(LinearLayout.GONE);
                     framelayout_cs_level_1.setVisibility(LinearLayout.VISIBLE);
                     framelayout_cs_level_3.setVisibility(LinearLayout.VISIBLE);
                     csform_cs_level_2_checkbox_pressed ^= true;
@@ -270,11 +349,17 @@ public class AT_Confined_Space_view extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (csform_cs_level_3_checkbox_pressed == false) {
+                    FrameLayout_Equipment_Requirement_CS1.setVisibility(LinearLayout.VISIBLE);
+                    FrameLayout_Equipment_Requirement_CS2.setVisibility(LinearLayout.VISIBLE);
+                    FrameLayout_Equipment_Requirement_CS3.setVisibility(LinearLayout.VISIBLE);
                     framelayout_cs_level_1.setVisibility(LinearLayout.GONE);
                     framelayout_cs_level_2.setVisibility(LinearLayout.GONE);
                     csform_cs_level_3_checkbox_pressed ^= true;
                 } else if
                         (csform_cs_level_3_checkbox_pressed == true) {
+                    FrameLayout_Equipment_Requirement_CS1.setVisibility(LinearLayout.GONE);
+                    FrameLayout_Equipment_Requirement_CS2.setVisibility(LinearLayout.GONE);
+                    FrameLayout_Equipment_Requirement_CS3.setVisibility(LinearLayout.GONE);
                     framelayout_cs_level_1.setVisibility(LinearLayout.VISIBLE);
                     framelayout_cs_level_2.setVisibility(LinearLayout.VISIBLE);
                     csform_cs_level_3_checkbox_pressed ^= true;
@@ -282,7 +367,6 @@ public class AT_Confined_Space_view extends AppCompatActivity {
             }
 
         });
-
 
 
 
