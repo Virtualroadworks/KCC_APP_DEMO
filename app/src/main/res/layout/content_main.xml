@@ -11,203 +11,326 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/app_bar_main">
 
-    <FrameLayout
+    <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="fill_parent"
-            android:layout_height="match_parent">
-
-            <FrameLayout
-                android:layout_width="wrap_content"
-                android:layout_height="140dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="10dp">
-
-                <ImageView
-                    android:layout_width="361dp"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/imageView6"
-                    android:src="@drawable/main_unlock_icon"
-                    tools:ignore="ContentDescription" />
-            </FrameLayout>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Greetings,"
-                android:id="@+id/textView102"
-                android:textSize="20sp"
-                android:layout_centerHorizontal="true"
-                android:layout_gravity="center_horizontal"
-                android:paddingTop="25dp"
-                android:textColor="#000000" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/user_name"
-                android:textSize="40sp"
-                android:textAlignment="center"
-                android:layout_centerHorizontal="true"
-                android:layout_gravity="center_horizontal"
-                android:textColorHint="#B9959595"
-                android:hint="User Name" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Login Successful,"
-                android:id="@+id/textView103"
-                android:textSize="30sp"
-                android:layout_centerHorizontal="true"
-                android:layout_gravity="center_horizontal"
-                android:paddingTop="25dp"
-                android:textColor="@color/cast_expanded_controller_background_color"
-                android:paddingBottom="25dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Online: Status"
-                android:id="@+id/online_check"
-                android:textSize="20sp"
-                android:layout_centerHorizontal="true"
-                android:textAlignment="center"
-                android:layout_gravity="center_horizontal"
-                android:textColor="@color/cardview_light_background"
-                android:background="@drawable/button_roundoff2"
-                android:padding="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/database_check"
-                android:textSize="20sp"
-                android:textColor="@color/cast_expanded_controller_background_color"
-                android:textAlignment="center" />
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/features"
-                android:textAlignment="center"
-                android:textSize="20sp"
-                android:textColor="@color/cast_expanded_controller_background_color" />
-
-        </LinearLayout>
+        android:layout_height="wrap_content">
 
         <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/Egis_OK"
-            android:id="@+id/Lockoutuserframelayout">
+            android:layout_height="wrap_content">
 
-            <FrameLayout
-                android:layout_width="match_parent"
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
                 android:layout_height="match_parent">
 
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="140dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp">
 
-                    <FrameLayout
+                    <ImageView
+                        android:layout_width="361dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView6"
+                        android:src="@drawable/main_unlock_icon"
+                        tools:ignore="ContentDescription" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Login Successful,"
+                            android:id="@+id/textView103"
+                            android:textSize="30sp"
+                            android:layout_centerHorizontal="true"
+                            android:paddingTop="5dp"
+                            android:textColor="@color/cast_expanded_controller_background_color"
+                            android:paddingBottom="5dp"
+                            android:layout_gravity="center" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/user_name"
+                            android:textSize="40sp"
+                            android:textAlignment="center"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_horizontal"
+                            android:textColorHint="@color/cast_expanded_controller_background_color"
+                            android:hint="User Name" />
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:text="Location Services"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:textStyle="normal|bold"
+                                    android:textColor="@color/cast_expanded_controller_background_color"
+                                    android:textSize="20sp" />
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    app:srcCompat="@drawable/gpsonlineiconxl"
+                                    android:id="@+id/gpsonlineiconxl" />
+
+                                <TextView
+                                    android:text="Online"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/gps_check"
+                                    android:gravity="center"
+                                    android:textStyle="normal|bold"
+                                    android:textColor="@color/cast_expanded_controller_background_color"
+                                    android:textSize="20sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:text="Device"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:textStyle="normal|bold"
+                                    android:textColor="@color/cast_expanded_controller_background_color"
+                                    android:textSize="20sp" />
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    app:srcCompat="@drawable/onlineiconxl"
+                                    android:id="@+id/onlineiconxl" />
+
+                                <TextView
+                                    android:text="Online"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/online_check"
+                                    android:gravity="center"
+                                    android:textStyle="normal|bold"
+                                    android:textColor="@color/cast_expanded_controller_background_color"
+                                    android:textSize="20sp" />
+                            </LinearLayout>
+                        </LinearLayout>
 
                         <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center">
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
 
                             <TextView
-                                android:text="Greetings"
+                                android:text="Database"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:textAlignment="center"
-                                android:textSize="28sp"
-                                android:textColor="@color/common_google_signin_btn_text_dark_default" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:id="@+id/user_name2"
-                                android:textSize="40sp"
-                                android:textAlignment="center"
-                                android:layout_centerHorizontal="true"
-                                android:layout_gravity="center_horizontal"
-                                android:textColor="@color/cast_libraries_material_featurehighlight_text_body_color"
-                                android:hint="User Name" />
+                                android:gravity="center"
+                                android:textStyle="normal|bold"
+                                android:textColor="@color/cast_expanded_controller_background_color"
+                                android:textSize="20sp" />
 
                             <ImageView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                app:srcCompat="@drawable/lockouticon"
-                                android:id="@+id/imageView8"
-                                android:layout_gravity="center"
-                                tools:ignore="ContentDescription" />
+                                app:srcCompat="@drawable/databaseonlineiconxl"
+                                android:id="@+id/databaseonlineiconxl" />
 
                             <TextView
-                                android:text="Please await"
+                                android:text="Online"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:id="@+id/textView41"
-                                android:textAlignment="center"
-                                android:textSize="28sp"
-                                android:textColor="@color/common_google_signin_btn_text_dark_default" />
-
-                            <TextView
-                                android:text="Activation"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:id="@+id/textView40"
-                                android:textAlignment="center"
-                                android:textSize="28sp"
-                                android:textColor="@color/common_google_signin_btn_text_dark_default" />
-
-                            <TextView
-                                android:text="to DCC APP"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:textAlignment="center"
-                                android:textSize="20sp"
-                                android:textColor="@color/cast_libraries_material_featurehighlight_text_body_color" />
-
-                            <TextView
-                                android:text="Your access Level is"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:textAlignment="center"
-                                android:textSize="20sp"
-                                android:textColor="@color/cast_libraries_material_featurehighlight_text_body_color" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:id="@+id/access_level"
-                                android:textSize="40sp"
-                                android:textAlignment="center"
-                                android:layout_centerHorizontal="true"
-                                android:layout_gravity="center_horizontal"
-                                android:textColor="@color/cast_libraries_material_featurehighlight_text_body_color"
-                                android:hint="User Name" />
-
+                                android:id="@+id/database_check"
+                                android:gravity="center"
+                                android:textStyle="normal|bold"
+                                android:textColor="@color/cast_expanded_controller_background_color"
+                                android:textSize="20sp" />
                         </LinearLayout>
 
-                    </FrameLayout>
+                    </LinearLayout>
 
-                </LinearLayout>
+                </FrameLayout>
 
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:text="Last Database Sync:"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textStyle="normal|bold"
+                            android:textSize="16sp"
+                            android:gravity="bottom"
+                            android:layout_weight="1"
+                            android:textColor="@color/cast_expanded_controller_background_color"
+                            android:textAlignment="viewStart" />
+
+                        <TextView
+                            android:text="Database Time"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/Database_Synctime"
+                            android:layout_weight="1"
+                            android:textColor="@color/cast_expanded_controller_background_color"
+                            android:gravity="end" />
+                    </LinearLayout>
+
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_height="match_parent"
+                android:background="@color/Egis_OK"
+                android:id="@+id/Lockoutuserframelayout"
+                android:layout_width="match_parent">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center">
+
+                                <TextView
+                                    android:text="Greetings"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textAlignment="center"
+                                    android:textSize="28sp"
+                                    android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/user_name2"
+                                    android:textSize="40sp"
+                                    android:textAlignment="center"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_gravity="center_horizontal"
+                                    android:textColor="@color/cast_libraries_material_featurehighlight_text_body_color"
+                                    android:hint="User Name" />
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    app:srcCompat="@drawable/lockouticon"
+                                    android:id="@+id/imageView8"
+                                    android:layout_gravity="center"
+                                    tools:ignore="ContentDescription" />
+
+                                <TextView
+                                    android:text="Please await"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/textView41"
+                                    android:textAlignment="center"
+                                    android:textSize="28sp"
+                                    android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+                                <TextView
+                                    android:text="Activation"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/textView40"
+                                    android:textAlignment="center"
+                                    android:textSize="28sp"
+                                    android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+                                <TextView
+                                    android:text="to DCC APP"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textAlignment="center"
+                                    android:textSize="20sp"
+                                    android:textColor="@color/cast_libraries_material_featurehighlight_text_body_color" />
+
+                                <TextView
+                                    android:text="Your access Level is"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textAlignment="center"
+                                    android:textSize="20sp"
+                                    android:textColor="@color/cast_libraries_material_featurehighlight_text_body_color" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/access_level"
+                                    android:textSize="40sp"
+                                    android:textAlignment="center"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_gravity="center_horizontal"
+                                    android:textColor="@color/cast_libraries_material_featurehighlight_text_body_color"
+                                    android:hint="User Name" />
+
+                            </LinearLayout>
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                </FrameLayout>
             </FrameLayout>
-        </FrameLayout>
 
-    </FrameLayout>
+        </FrameLayout>
+    </android.support.v4.widget.NestedScrollView>
 
 </RelativeLayout>

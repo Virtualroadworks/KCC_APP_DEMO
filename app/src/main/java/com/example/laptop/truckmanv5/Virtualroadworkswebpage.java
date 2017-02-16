@@ -52,7 +52,7 @@ public class Virtualroadworkswebpage extends AppCompatActivity {
 
             case R.id.vrhome:
                 startActivity (new Intent(this, MainActivity.class));
-                return true;
+                finish();
 
 
         }

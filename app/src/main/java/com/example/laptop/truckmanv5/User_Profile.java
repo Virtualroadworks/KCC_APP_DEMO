@@ -291,11 +291,11 @@ public class User_Profile extends AppCompatActivity implements View.OnClickListe
 
             case R.id.vrhome:
                 startActivity (new Intent(this, MainActivity.class));
-                return true;
+                finish();
 
             case R.id.vrdatabase:
                 startActivity (new Intent(this, dccdrainageforms.class));
-                return true;
+                finish();
 
         }
 

@@ -9,6 +9,7 @@ import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.location.Geocoder;
 import android.location.Location;
+import android.location.LocationManager;
 import android.media.MediaPlayer;
 import android.net.ConnectivityManager;
 import android.net.Uri;
@@ -20,6 +21,7 @@ import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.view.ContextThemeWrapper;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -60,10 +62,15 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
     CoordinatorLayout cl;
 
     boolean internet_connected;
+
     TextView Onlinetext;
-    ImageView onlineimage;
+    TextView GPSOnlinetext;
+    ImageView onlineicon;
+    ImageView gpsonlineicon;
 
     private StorageReference mStorage;
+
+
 
 
     private static final int GALLARY_INTENT25 = 49;
@@ -221,7 +228,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
     ImageButton airelectrial_icon_image;
     ImageButton airsuspension_icon_image;
 
-   // ImageButton locationbutton;
+    ImageButton locationbutton;
 
 
     //Image Default and tick Buttons (2 go in here)
@@ -415,6 +422,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
     String vehiclephotopictureuri;
     String vehiclephotopicturepath;
+
 
     double Locationlat = 0;
     double Locationlong = 0;
@@ -644,20 +652,41 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
 
 
+
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_or__update__inspection);
 
+
         userLocation = new UserLocation(this, this);
+
+
+        Onlinetext = (TextView) findViewById(R.id.Onlinetext);
+        GPSOnlinetext = (TextView) findViewById(R.id.GPSOnlinetext);
+        onlineicon = (ImageView) findViewById(R.id.onlineicon);
+        gpsonlineicon = (ImageView) findViewById(R.id.gpsonlineicon);
+
+        LocationManager locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
+
+        if (locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)){
+            GPSOnlinetext.setText("GPS Online");
+            gpsonlineicon.setImageResource(R.drawable.gpsonlineicon);
+        }else{
+            GPSOnlinetext.setText("GPS Offline");
+            gpsonlineicon.setImageResource(R.drawable.gpsofflineicon);
+            showGPSDisabledAlertToUser();
+
+        }
 
         prg = (ProgressBar) findViewById(R.id.progressBar);
         prg.setProgress(0);
         prg.setMax(100);
         prg.setProgressTintList(ColorStateList.valueOf(Color.GREEN));
 
-        Onlinetext = (TextView) findViewById(R.id.Onlinetext);
-        onlineimage = (ImageView) findViewById(R.id.onlineimage);
 
 
         mStorage = FirebaseStorage.getInstance().getReference();
@@ -697,7 +726,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
         drivinginspectionhidebutton = (Button) findViewById(R.id.drivinginspectionhidebutton);
 
 
-       // locationbutton = (ImageButton) findViewById(R.id.locationbutton);
+        locationbutton = (ImageButton) findViewById(R.id.locationbutton);
 
         //Image Buttons Icons
         windowsandmirrors_icon_image = (ImageButton) findViewById(R.id.windowsandmirrors_icon_image);
@@ -3926,17 +3955,17 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
             }
         });
 
-       // locationbutton.setOnClickListener(new View.OnClickListener() {
-         //   @Override
-           // public void onClick(View v) {
+        locationbutton.setOnClickListener(new View.OnClickListener() {
+           @Override
+            public void onClick(View v) {
 
-             //   userLocation.disconnect();
-               // userLocation.connect();
-//                mp.start();
+               userLocation.disconnect();
+               userLocation.connect();
+                mp.start();
 //                startActivity(new Intent(Add_or_Update_Inspection.this, MyLocationDemoActivity.class));
 
-//            }
-//        });
+            }
+        });
 
 
 
@@ -4060,37 +4089,15 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                     p.setairsuspensiontempfixfill(airsuspensiontempfixfill.getText().toString());
                     p.setairsuspensiondescribedefectfill(airsuspensiondescribedefectfill.getText().toString());
 
-
                     p.setvehiclephotopicturepath(vehiclephotopicturepath);
 
                     p.setlocationlat(Double.toString(Locationlat));
                     p.setlocationlong(Double.toString(Locationlong));
 
 
-
                     //if (person == null)
                        Vehicle_Reports.getInstance().addPerson(p);
 
-                    new AlertDialog.Builder(Add_or_Update_Inspection.this)
-                            .setTitle("Inspection Saved")
-                            .setMessage("Would you like to Read/Email this report now?")
-                            .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
-                                public void onClick(DialogInterface dialog, int which) {
-
-                                    Intent nextView2 = new Intent(Add_or_Update_Inspection.this, Person_Details_emailreport.class);
-                                    nextView2.putExtra("CalledFromAdd_or_Update_Inspection", true);
-                                    startActivity(nextView2);
-
-                                    // continue with delete
-                                }
-                            })
-                            .setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
-                                public void onClick(DialogInterface dialog, int which) {
-                                    startActivity (new Intent(Add_or_Update_Inspection.this, MainActivity.class));
-                                }
-                            })
-                            .setIcon(android.R.drawable.ic_dialog_alert)
-                            .show();
 
                 }
             }
@@ -4134,11 +4141,11 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
         if (internet_connected == false) {
             Onlinetext.setText("Offline");
-            onlineimage.setImageResource(R.drawable.offlineicon);
+            onlineicon.setImageResource(R.drawable.offlineicon);
         }
         else {
             Onlinetext.setText("Online");
-            onlineimage.setImageResource(R.drawable.onlineicon);
+            onlineicon.setImageResource(R.drawable.onlineicon);
         }
         ///////////////////////////////////////////////////////////////////////////////////
 
@@ -4149,7 +4156,38 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
             }
         });
     }
-   //////////////////////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////////////////////
+
+
+
+    private void showGPSDisabledAlertToUser(){
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(new ContextThemeWrapper(this, R.style.AlertDialogCustom));
+        alertDialogBuilder.setMessage("Would you like to turn on, Location Services?")
+                .setCancelable(false)
+                .setPositiveButton("Goto Settings Page To Enable Location Services",
+                        new DialogInterface.OnClickListener(){
+                            public void onClick(DialogInterface dialog, int id){
+                                Intent callGPSSettingIntent = new Intent(
+                                        android.provider.Settings.ACTION_LOCATION_SOURCE_SETTINGS);
+                                startActivity(callGPSSettingIntent);
+                                GPSOnlinetext.setText("GPS Online");
+                                gpsonlineicon.setImageResource(R.drawable.gpsonlineicon);
+
+                            }
+                        });
+
+        alertDialogBuilder.setNegativeButton("Cancel",
+                new DialogInterface.OnClickListener(){
+                    public void onClick(DialogInterface dialog, int id){
+                        dialog.cancel();
+                    }
+                });
+        AlertDialog alert = alertDialogBuilder.create();
+        alert.show();
+
+
+    }
+
 
 
 
@@ -4280,17 +4318,22 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
         switch (item.getItemId()) {
 
             case R.id.vrhome:
+
                 startActivity (new Intent(this, MainActivity.class));
-                return true;
+                finish();
+
 
             case R.id.vrdatabase:
                 startActivity (new Intent(this, dccdrainageforms.class));
-                return true;
+                finish();
+
 
         }
 
         return super.onOptionsItemSelected(item);
     }
+
+
 
 
     public void handleNewLocation(Location location) {

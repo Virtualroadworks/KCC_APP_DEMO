@@ -260,12 +260,14 @@ public class dccdrainageforms extends AppCompatActivity  {
         switch (item.getItemId()) {
 
             case R.id.vrhome:
+
                 startActivity (new Intent(this, MainActivity.class));
-                return true;
+                break;
+
 
             case R.id.vrdatabase:
                 startActivity (new Intent(this, dccdrainageforms.class));
-                return true;
+                break;
 
         }
 

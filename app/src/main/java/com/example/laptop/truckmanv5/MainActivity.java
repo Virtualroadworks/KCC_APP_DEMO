@@ -2,7 +2,9 @@ package com.example.laptop.truckmanv5;
 
 import android.app.FragmentManager;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.location.LocationManager;
 import android.media.MediaPlayer;
 import android.net.ConnectivityManager;
 import android.os.Bundle;
@@ -13,7 +15,9 @@ import android.support.v4.app.NavUtils;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.view.ContextThemeWrapper;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -21,6 +25,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -42,7 +47,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     boolean internet_connected;
 
 
-    private TextView user_name,user_name2,access_level,features,database_check,online_check;
+    private TextView user_name,user_name2,Database_Synctime,access_level,database_check,online_check,gps_check;
 
     private String Level_0 = "Level 0";
     private String Level_1 = "Level 1";
@@ -50,6 +55,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private String Level_3 = "Level 3";
 
     FrameLayout Lockoutuserframelayout;
+
+    TextView Onlinetext;
+    TextView GPSOnlinetext;
+    ImageView onlineiconxl;
+    ImageView gpsonlineiconxl;
+    ImageView databaseonlineiconxl;
 
 
     public boolean  Online_check () {
@@ -84,26 +95,50 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        internet_connected = Online_check ();
-
         user_name = (TextView) findViewById(R.id.user_name);
         online_check = (TextView) findViewById(R.id.online_check);
         database_check = (TextView) findViewById(R.id.database_check);
-        features = (TextView) findViewById(R.id.features);
+        gps_check = (TextView) findViewById(R.id.gps_check);
         user_name2 = (TextView) findViewById(R.id.user_name2);
         access_level = (TextView) findViewById(R.id.access_level);
+        Database_Synctime = (TextView) findViewById(R.id.Database_Synctime);
+        Onlinetext = (TextView) findViewById(R.id.Onlinetext);
+        GPSOnlinetext = (TextView) findViewById(R.id.GPSOnlinetext);
+
+        onlineiconxl = (ImageView) findViewById(R.id.onlineiconxl);
+        gpsonlineiconxl = (ImageView) findViewById(R.id.gpsonlineiconxl);
+        databaseonlineiconxl = (ImageView) findViewById(R.id.databaseonlineiconxl);
+
         Lockoutuserframelayout = (FrameLayout) findViewById(R.id.Lockoutuserframelayout);
+        Lockoutuserframelayout = (FrameLayout) findViewById(R.id.Lockoutuserframelayout);
+
+        internet_connected = Online_check ();
+
+        LocationManager locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
+
+        if (locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)){
+            gps_check.setText("Online");
+            gpsonlineiconxl.setImageResource(R.drawable.gpsonlineiconxl);
+            Toast.makeText(this, "GPS is Enabled in your devide", Toast.LENGTH_SHORT).show();
+        }else{
+            gps_check.setText("Offline");
+            gpsonlineiconxl.setImageResource(R.drawable.gpsofflineiconxl);
+            showGPSDisabledAlertToUser();
+        }
 
 
         if (internet_connected == false) {
-            online_check.setText("Device Status = Offline");
-            database_check.setText("Data is being stored on device");
-            features.setText("Photo storage is temporarily disabled.");
+            online_check.setText("Offline");
+            onlineiconxl.setImageResource(R.drawable.offlineiconxl);
+            databaseonlineiconxl.setImageResource(R.drawable.offlineiconxl);
+            database_check.setText("Awaiting sync");
+
         }
         else {
-            online_check.setText("Device Status = Online");
-            database_check.setText("Data is synchronised with database");
-            features.setText("All features are available");
+            online_check.setText("Online");
+            onlineiconxl.setImageResource(R.drawable.onlineiconxl);
+            databaseonlineiconxl.setImageResource(R.drawable.databaseonlineiconxl);
+            database_check.setText("Synced");
             // onlineimage.setImageResource(R.drawable.onlineicon);
         }
 
@@ -112,12 +147,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             startActivity(new Intent(this, Login_Page.class));
         }
 
-
         mRootRef.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("Profile").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(com.firebase.client.DataSnapshot dataSnapshot) {
 
                 String userName = dataSnapshot.child("User Name").getValue(String.class);
+                String Database_Synced = dataSnapshot.child("Time User last connected").getValue(String.class);
 
                 String userAccessLevel = dataSnapshot.child("User Access Level").getValue(String.class);
 
@@ -134,7 +169,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 access_level.setText(userAccessLevel);
                 user_name.setText(userName);
                 user_name2.setText(userName);
-
+                Database_Synctime.setText(Database_Synced);
             }
 
             @Override
@@ -144,6 +179,40 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         });
 
     }
+
+    //////////////////////////////Location Services Check////////////////////////////////////////////////////
+
+
+
+    private void showGPSDisabledAlertToUser(){
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(new ContextThemeWrapper(this, R.style.AlertDialogCustom));
+        alertDialogBuilder.setMessage("Would you like to turn on, Location Services?")
+                .setCancelable(false)
+                .setPositiveButton("Goto Settings Page To Enable Location Services",
+                        new DialogInterface.OnClickListener(){
+                            public void onClick(DialogInterface dialog, int id){
+                                Intent callGPSSettingIntent = new Intent(
+                                        android.provider.Settings.ACTION_LOCATION_SOURCE_SETTINGS);
+                                startActivity(callGPSSettingIntent);
+                                gps_check.setText("Online");
+                                gpsonlineiconxl.setImageResource(R.drawable.gpsonlineicon);
+
+                            }
+                        });
+
+        alertDialogBuilder.setNegativeButton("Cancel",
+                new DialogInterface.OnClickListener(){
+                    public void onClick(DialogInterface dialog, int id){
+                        dialog.cancel();
+                    }
+                });
+        AlertDialog alert = alertDialogBuilder.create();
+        alert.show();
+
+
+    }
+
+    //////////////////////////////////////////////////////////////////////////////////
 
 
 
@@ -189,7 +258,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
             case R.id.vrdatabase:
                 startActivity (new Intent(this, dccdrainageforms.class));
-                return true;
+                break;
+            case R.id.vrhome:
+
+                startActivity (new Intent(this, MainActivity.class));
+                break;
 
         }
 

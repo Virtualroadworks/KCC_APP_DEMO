@@ -556,13 +556,13 @@ public class Vehicle_Reports extends AppCompatActivity  {
 
             case R.id.vrhome:
                 startActivity (new Intent(this, MainActivity.class));
-                return true;
+                finish();
 
 
 
             case R.id.vrdatabase:
                 startActivity (new Intent(this, dccdrainageforms.class));
-                return true;
+                finish();
 
 
         }

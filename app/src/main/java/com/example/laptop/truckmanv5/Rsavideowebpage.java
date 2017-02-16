@@ -56,7 +56,7 @@ public class Rsavideowebpage extends AppCompatActivity {
 
             case R.id.vrhome:
                 startActivity (new Intent(this, MainActivity.class));
-                return true;
+                finish();
 
         }
 
