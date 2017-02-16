@@ -4029,6 +4029,8 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                         }
                     });
                     snackBar.show();
+
+
                 } else {
                     Person p = new Person();
                     p.setReg(pReg.getText().toString());
@@ -4098,7 +4100,8 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                     //if (person == null)
                        Vehicle_Reports.getInstance().addPerson(p);
 
-
+                    if (person == null)
+                        Vehicle_Reports.getInstance().addPerson(p);
                 }
             }
         });
