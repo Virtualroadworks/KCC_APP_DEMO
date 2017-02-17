@@ -91,6 +91,9 @@ public class AT0013_3_model {
     private String at0013_3pictureuri;
     private String at0013_3picturepath;
 
+    private String locationlat;
+    private String locationlong;
+
     //////////////////////////////////////////////////////////////////////////////////
 
 
@@ -561,7 +564,18 @@ public class AT0013_3_model {
         return this.at0013_3picturepath;
     }
 
-
+    public void setlocationlat(String locationlat) {
+        this.locationlat = locationlat;
+    }
+    public String getlocationlat() {
+        return locationlat;
+    }
+    public void setlocationlong(String locationlong) {
+        this.locationlong = locationlong;
+    }
+    public String getlocationlong() {
+        return locationlong;
+    }
 //--------------------------------------------------------------------------------------
 
 
@@ -647,6 +661,10 @@ public class AT0013_3_model {
         result.put("at0013_3ck_hazard_tmp_comments", at0013_3ck_hazard_tmp_comments);
         result.put("at0013_3pictureuri", at0013_3pictureuri);
         result.put("at0013_3picturepath", at0013_3picturepath);
+
+
+        result.put("locationlat", locationlat);
+        result.put("locationlong", locationlong);
 
         return result;
     }

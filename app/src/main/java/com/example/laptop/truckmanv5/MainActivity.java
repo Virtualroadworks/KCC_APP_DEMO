@@ -130,7 +130,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         if (internet_connected == false) {
             online_check.setText("Offline");
             onlineiconxl.setImageResource(R.drawable.offlineiconxl);
-            databaseonlineiconxl.setImageResource(R.drawable.offlineiconxl);
+            databaseonlineiconxl.setImageResource(R.drawable.databaseofflineiconxl);
             database_check.setText("Awaiting sync");
 
         }
@@ -293,7 +293,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             Toast.makeText(this, "Forms Database", Toast.LENGTH_SHORT).show();
 
         } else if (id == R.id.nav_truckman_app) {
-            Toast.makeText(this, "About DCC APP", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(this, DCC_WEBSITE.class));
+            Toast.makeText(this, "DCC Website", Toast.LENGTH_SHORT).show();
 
         } else if (id == R.id.nav_truckman_contact) {
             startActivity(new Intent(this, Virtualroadworkswebpage.class));

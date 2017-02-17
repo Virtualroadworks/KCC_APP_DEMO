@@ -198,6 +198,9 @@ public class AT_Confined_Space_database extends AppCompatActivity {
         add.setcs_communication(model.getcs_communication());
         add.setcs_rescue(model.getcs_rescue());
 
+        add.setlocationlat(model.getlocationlat());
+        add.setlocationlong(model.getlocationlong());
+
 
         ////////////////////////////////////////////////////////////////////////////////////////
 

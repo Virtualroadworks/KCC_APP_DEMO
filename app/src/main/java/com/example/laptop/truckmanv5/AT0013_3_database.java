@@ -235,6 +235,9 @@ public class AT0013_3_database extends AppCompatActivity {
         add.setat0013_3pictureuri(model.getat0013_3pictureuri());
         add.setat0013_3picturepath(model.getat0013_3picturepath());
 
+        add.setlocationlat(model.getlocationlat());
+        add.setlocationlong(model.getlocationlong());
+
         Date date = new Date();
         String dateString = DateFormat.getDateTimeInstance().format(date);
         add.setendDate(dateString);

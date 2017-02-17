@@ -186,11 +186,11 @@ public class User_Profile_Edit extends AppCompatActivity  {
 
             case R.id.vrhome:
                 startActivity (new Intent(this, MainActivity.class));
-                finish();
+                return true;
 
             case R.id.vrdatabase:
                 startActivity (new Intent(this, dccdrainageforms.class));
-                finish();
+                return true;
 
         }
 

@@ -57,7 +57,8 @@
                             android:text="user_name"
                             android:textSize="12sp"
                             android:paddingLeft="5dp"
-                            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+                            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry"
+                            android:textColor="@color/cast_expanded_controller_background_color" />
                     </LinearLayout>
 
                         <LinearLayout
@@ -85,7 +86,8 @@
                                 android:text="Start Date"
                                 android:textSize="12sp"
                                 android:paddingLeft="5dp"
-                                tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+                                tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry"
+                                android:textColor="@color/cast_expanded_controller_background_color" />
                         </LinearLayout>
 
                     </LinearLayout>
@@ -115,7 +117,8 @@
                                 android:textSize="12sp"
                                 android:paddingTop="7dp"
                                 tools:ignore="HardcodedText"
-                                android:layout_gravity="center" />
+                                android:layout_gravity="center"
+                                android:textColor="@color/cast_expanded_controller_background_color" />
                         </FrameLayout>
 
                     </LinearLayout>

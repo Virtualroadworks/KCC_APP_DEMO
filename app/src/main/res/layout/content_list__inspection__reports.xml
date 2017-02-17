@@ -9,7 +9,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.laptop.truckmanv5.List_Inspection_Reports"
+    tools:context="com.example.laptop.truckmanv5.list_inspection_reports"
     tools:showIn="@layout/activity_list__inspection__reports">
 
 </RelativeLayout>

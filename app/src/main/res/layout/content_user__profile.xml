@@ -68,7 +68,14 @@
                         android:textAppearance="?android:attr/textAppearanceMedium"
                         android:text="Are these details below correct?"
                         android:id="@+id/textView41"
-                        android:textSize="16dp" />
+                        android:textSize="16sp"
+                        android:background="@drawable/button_roundoff4"
+                        android:padding="5dp"
+                        android:textColor="@color/cast_expanded_controller_background_color"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp" />
 
                     <FrameLayout
                     android:layout_width="fill_parent"
@@ -85,8 +92,8 @@
                             android:layout_height="wrap_content"
                             android:text="User Name :"
                             android:id="@+id/User_Name_tital"
-                            android:layout_gravity="left|bottom"
-                            android:textSize="16dp" />
+                            android:layout_gravity="left"
+                            android:textSize="16sp" />
 
                         <TextView
                             android:layout_width="fill_parent"
@@ -94,7 +101,8 @@
                             android:text="New Text"
                             android:id="@+id/User_Name_tital_fill"
                             android:layout_gravity="center_horizontal"
-                            android:textColor="#000000" />
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
                     </LinearLayout>
 
                 </FrameLayout>
@@ -115,7 +123,7 @@
                                 android:text="Date User Account Created :"
                                 android:id="@+id/User_Account_Created_on_tital"
                                 android:layout_gravity="left|bottom"
-                                android:textSize="16dp" />
+                                android:textSize="16sp" />
 
                             <TextView
                                 android:layout_width="fill_parent"
@@ -123,7 +131,8 @@
                                 android:text="New Text"
                                 android:id="@+id/User_Account_Created_on_tital_fill"
                                 android:layout_gravity="center_horizontal"
-                                android:textColor="#000000" />
+                                android:textColor="#000000"
+                                android:textSize="16sp" />
                         </LinearLayout>
 
                     </FrameLayout>
@@ -144,7 +153,7 @@
                                 android:text="Date User last connected :"
                                 android:id="@+id/Time_User_last_connected_tital"
                                 android:layout_gravity="left|bottom"
-                                android:textSize="16dp" />
+                                android:textSize="16sp" />
 
                             <TextView
                                 android:layout_width="fill_parent"
@@ -152,7 +161,8 @@
                                 android:text="New Text"
                                 android:id="@+id/Time_User_last_connected_tital_fill"
                                 android:layout_gravity="center_horizontal"
-                                android:textColor="#000000" />
+                                android:textColor="#000000"
+                                android:textSize="16sp" />
                         </LinearLayout>
 
                     </FrameLayout>
@@ -173,7 +183,7 @@
                                 android:text="Admin/User"
                                 android:id="@+id/User_Role_tital"
                                 android:layout_gravity="left|bottom"
-                                android:textSize="16dp" />
+                                android:textSize="16sp" />
 
                             <TextView
                                 android:layout_width="fill_parent"
@@ -181,7 +191,8 @@
                                 android:text="New Text"
                                 android:id="@+id/User_Role_tital_fill"
                                 android:layout_gravity="center_horizontal"
-                                android:textColor="#000000" />
+                                android:textColor="#000000"
+                                android:textSize="16sp" />
                         </LinearLayout>
                     </FrameLayout>
 
@@ -201,7 +212,7 @@
                                 android:text="User Access Level :"
                                 android:id="@+id/User_Access_tital"
                                 android:layout_gravity="left|bottom"
-                                android:textSize="16dp" />
+                                android:textSize="16sp" />
 
                             <TextView
                                 android:layout_width="fill_parent"
@@ -209,7 +220,8 @@
                                 android:text="New Text"
                                 android:id="@+id/User_Access_tital_fill"
                                 android:layout_gravity="center_horizontal"
-                                android:textColor="#000000" />
+                                android:textColor="#000000"
+                                android:textSize="16sp" />
                         </LinearLayout>
                     </FrameLayout>
 
@@ -229,7 +241,7 @@
                                 android:text="User Email :"
                                 android:id="@+id/User_Email_tital"
                                 android:layout_gravity="left|bottom"
-                                android:textSize="16dp" />
+                                android:textSize="16sp" />
 
                             <TextView
                                 android:layout_width="fill_parent"
@@ -237,7 +249,8 @@
                                 android:text="New Text"
                                 android:id="@+id/User_Email_tital_fill"
                                 android:layout_gravity="center_horizontal"
-                                android:textColor="#000000" />
+                                android:textColor="#000000"
+                                android:textSize="16sp" />
                         </LinearLayout>
                     </FrameLayout>
                     <FrameLayout
@@ -256,7 +269,7 @@
                                 android:text="Inspection Report Email Recipient :"
                                 android:id="@+id/report_email_recipient"
                                 android:layout_gravity="left|bottom"
-                                android:textSize="16dp" />
+                                android:textSize="16sp" />
 
                             <TextView
                                 android:layout_width="fill_parent"
@@ -264,7 +277,8 @@
                                 android:text="New Text"
                                 android:id="@+id/etreport_email_recipient"
                                 android:layout_gravity="center_horizontal"
-                                android:textColor="#000000" />
+                                android:textColor="#000000"
+                                android:textSize="16sp" />
                         </LinearLayout>
                     </FrameLayout>
 
@@ -284,7 +298,7 @@
                                 android:text="User Company :"
                                 android:id="@+id/User_Company_tital"
                                 android:layout_gravity="left|bottom"
-                                android:textSize="16dp" />
+                                android:textSize="16sp" />
 
                             <TextView
                                 android:layout_width="fill_parent"
@@ -292,7 +306,8 @@
                                 android:text="New Text"
                                 android:id="@+id/User_Company_tital_fill"
                                 android:layout_gravity="center_horizontal"
-                                android:textColor="#000000" />
+                                android:textColor="#000000"
+                                android:textSize="16sp" />
                         </LinearLayout>
                     </FrameLayout>
 
@@ -312,7 +327,7 @@
                                 android:text="User Contact Number :"
                                 android:id="@+id/User_Contact_Number_tital"
                                 android:layout_gravity="left|bottom"
-                                android:textSize="16dp" />
+                                android:textSize="16sp" />
 
                             <TextView
                                 android:layout_width="fill_parent"
@@ -320,7 +335,8 @@
                                 android:text="New Text"
                                 android:id="@+id/User_Contact_Number_tital_fill"
                                 android:layout_gravity="center_horizontal"
-                                android:textColor="#000000" />
+                                android:textColor="#000000"
+                                android:textSize="16sp" />
                         </LinearLayout>
                     </FrameLayout>
 
@@ -810,11 +826,13 @@
                         android:textAppearance="?android:attr/textAppearanceMedium"
                         android:text="(If these details are not correct, you can update your user profile via the Main Menu)"
                         android:id="@+id/textView42"
-                        android:textSize="10dp"
-                        android:paddingTop="10dp"
+                        android:textSize="15sp"
                         android:layout_gravity="center_horizontal"
                         android:textAlignment="center"
-                        android:paddingBottom="10dp" />
+                        android:background="@drawable/button_roundoff7"
+                        android:padding="10dp"
+                        android:layout_margin="5dp"
+                        android:textColor="@color/cast_expanded_controller_background_color" />
 
                 </LinearLayout>
 

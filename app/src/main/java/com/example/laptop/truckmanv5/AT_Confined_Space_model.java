@@ -46,6 +46,9 @@ public class AT_Confined_Space_model {
     private String cs_communication;
     private String cs_rescue;
 
+    private String locationlat;
+    private String locationlong;
+
 
 
     //////////////////////////////////////////////////////////////////////////////////
@@ -164,6 +167,18 @@ public class AT_Confined_Space_model {
 }
     public String getcsform_cs_level_3() {
         return csform_cs_level_3;
+    }
+    public void setlocationlat(String locationlat) {
+        this.locationlat = locationlat;
+    }
+    public String getlocationlat() {
+        return locationlat;
+    }
+    public void setlocationlong(String locationlong) {
+        this.locationlong = locationlong;
+    }
+    public String getlocationlong() {
+        return locationlong;
     }
 
 
@@ -298,6 +313,8 @@ public class AT_Confined_Space_model {
         result.put("cs_communication", cs_communication);
         result.put("cs_rescue", cs_rescue);
 
+        result.put("locationlat", locationlat);
+        result.put("locationlong", locationlong);
 
 
 //--------------------------------------------------------------------------------------

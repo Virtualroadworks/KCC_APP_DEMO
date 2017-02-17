@@ -1,13 +1,20 @@
 package com.example.laptop.truckmanv5;
 
 import android.app.ProgressDialog;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.location.Location;
+import android.location.LocationManager;
+import android.net.ConnectivityManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.Snackbar;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.view.ContextThemeWrapper;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
@@ -32,7 +39,7 @@ import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 import com.squareup.picasso.Picasso;
 
-public class AT0013_3_view extends AppCompatActivity {
+public class AT0013_3_view extends AppCompatActivity implements UserLocation.LocationCallback {
 
     TextView user_name,user_email,user_department_area,user_contact_number,time_stamp;
     EditText at0013_3ck_nature_works_other_description;
@@ -42,6 +49,26 @@ public class AT0013_3_view extends AppCompatActivity {
     Button bOK,bCancel;
     int position;
     AT0013_3_model AT0013_3_model;
+
+    boolean internet_connected;
+
+    TextView Onlinetext;
+    TextView GPSOnlinetext;
+    ImageView onlineicon;
+    ImageView gpsonlineicon;
+
+    double Locationlat = 0;
+    double Locationlong = 0;
+
+    UserLocation userLocation;
+
+    public boolean  Online_check () {
+
+        ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        return cm.getActiveNetworkInfo() != null && cm.getActiveNetworkInfo().isConnectedOrConnecting();
+    }
+
+
 
     private static final int GALLARY_INTENT = 2;
     private static final int CAMERA_REQUEST_CODE = 1;
@@ -135,6 +162,25 @@ public class AT0013_3_view extends AppCompatActivity {
         setContentView(R.layout.activity_at0013_3);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        userLocation = new UserLocation(this, this);
+
+        Onlinetext = (TextView) findViewById(R.id.Onlinetext);
+        GPSOnlinetext = (TextView) findViewById(R.id.GPSOnlinetext);
+        onlineicon = (ImageView) findViewById(R.id.onlineicon);
+        gpsonlineicon = (ImageView) findViewById(R.id.gpsonlineicon);
+
+        LocationManager locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
+
+        if (locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)){
+            GPSOnlinetext.setText("GPS Online");
+            gpsonlineicon.setImageResource(R.drawable.gpsonlineicon);
+        }else{
+            GPSOnlinetext.setText("GPS Offline");
+            gpsonlineicon.setImageResource(R.drawable.gpsofflineicon);
+            showGPSDisabledAlertToUser();
+
+        }
 
         time_stamp = (TextView) findViewById(R.id.time_stamp);
 
@@ -722,6 +768,9 @@ public class AT0013_3_view extends AppCompatActivity {
                         p.setat0013_3ck_hazard_tmp_na("No");
                     }
 
+                    p.setlocationlat(Double.toString(Locationlat));
+                    p.setlocationlong(Double.toString(Locationlong));
+
                     if (AT0013_3_model == null)
                         AT0013_3_database.getInstance().addAT0013_3_model(p);
                     startActivity (new Intent(AT0013_3_view.this, MainActivity.class));
@@ -762,6 +811,45 @@ public class AT0013_3_view extends AppCompatActivity {
 
             }
         });
+
+        internet_connected = Online_check ();
+
+        if (internet_connected == false) {
+            Onlinetext.setText("Offline");
+            onlineicon.setImageResource(R.drawable.offlineicon);
+        }
+        else {
+            Onlinetext.setText("Online");
+            onlineicon.setImageResource(R.drawable.onlineicon);
+        }
+    }
+
+    private void showGPSDisabledAlertToUser(){
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(new ContextThemeWrapper(this, R.style.AlertDialogCustom));
+        alertDialogBuilder.setMessage("Would you like to turn on, Location Services?")
+                .setCancelable(false)
+                .setPositiveButton("Goto Settings Page To Enable Location Services",
+                        new DialogInterface.OnClickListener(){
+                            public void onClick(DialogInterface dialog, int id){
+                                Intent callGPSSettingIntent = new Intent(
+                                        android.provider.Settings.ACTION_LOCATION_SOURCE_SETTINGS);
+                                startActivity(callGPSSettingIntent);
+                                GPSOnlinetext.setText("GPS Online");
+                                gpsonlineicon.setImageResource(R.drawable.gpsonlineicon);
+
+                            }
+                        });
+
+        alertDialogBuilder.setNegativeButton("Cancel",
+                new DialogInterface.OnClickListener(){
+                    public void onClick(DialogInterface dialog, int id){
+                        dialog.cancel();
+                    }
+                });
+        AlertDialog alert = alertDialogBuilder.create();
+        alert.show();
+
+
     }
 
     @Override
@@ -826,5 +914,13 @@ public class AT0013_3_view extends AppCompatActivity {
                     public void onCancelled(DatabaseError databaseError) {
                     }
                 });
+    }
+    public void handleNewLocation(Location location) {
+
+        System.out.println(location);
+
+        Locationlat = location.getLatitude();
+        Locationlong = location.getLongitude();
+
     }
 }
