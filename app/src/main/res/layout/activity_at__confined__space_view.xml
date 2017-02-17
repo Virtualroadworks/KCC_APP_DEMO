@@ -24,5 +24,4 @@
     <include layout="@layout/content_at__confined__space_view" />
 
 
-
 </android.support.design.widget.CoordinatorLayout>

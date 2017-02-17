@@ -70,9 +70,6 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
     private StorageReference mStorage;
 
-
-
-
     private static final int GALLARY_INTENT25 = 49;
     private static final int CAMERA_REQUEST_CODE25= 50;
 
@@ -649,13 +646,6 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
     }
 
 
-
-
-
-
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -671,6 +661,8 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
         gpsonlineicon = (ImageView) findViewById(R.id.gpsonlineicon);
 
         LocationManager locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
+
+
 
         if (locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)){
             GPSOnlinetext.setText("GPS Online");
@@ -712,7 +704,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
         user_contact_number = (TextView) findViewById(R.id.user_contact_number);
         pReg = (EditText) findViewById(R.id.pReg);
 
-        bOK = (Button) findViewById(R.id.bOk);
+        bOK = (Button) findViewById(R.id.backOK);
         bCancel = (Button) findViewById(R.id.bCancel);
         vehiclephoto = (Button) findViewById(R.id.vehiclephoto);
 
@@ -726,7 +718,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
         drivinginspectionhidebutton = (Button) findViewById(R.id.drivinginspectionhidebutton);
 
 
-        locationbutton = (ImageButton) findViewById(R.id.locationbutton);
+      // locationbutton = (ImageButton) findViewById(R.id.locationbutton);
 
         //Image Buttons Icons
         windowsandmirrors_icon_image = (ImageButton) findViewById(R.id.windowsandmirrors_icon_image);
@@ -1021,8 +1013,6 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
         /////////////////////////Camera Section///////////////////////////////////////////
 
         photoplace100x100vehiclephoto = (ImageView) findViewById(R.id.photoplace100x100vehiclephoto);
-
-
 
         /////////////////////////Whole Boxs///////////////////////////////////////////
 
@@ -3854,7 +3844,6 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
 
 
-
         outsideinspectionhidebutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -3878,6 +3867,8 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
         outsideinspectionshowbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                userLocation.disconnect();
+                userLocation.connect();
                 taxandinsurancewholebox.setVisibility(LinearLayout.VISIBLE);
                 regplatewholebox.setVisibility(LinearLayout.VISIBLE);
                 airandelectrialwholebox.setVisibility(LinearLayout.VISIBLE);
@@ -3955,21 +3946,17 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
             }
         });
 
-        locationbutton.setOnClickListener(new View.OnClickListener() {
-           @Override
-            public void onClick(View v) {
-
-               userLocation.disconnect();
-               userLocation.connect();
-                mp.start();
-//                startActivity(new Intent(Add_or_Update_Inspection.this, MyLocationDemoActivity.class));
-
-            }
-        });
+//        locationbutton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//                public void onClick(View v) {
+//            userLocation.disconnect();
+//            userLocation.connect();
+//            mp.start();
+//            }
+//        });
 
 
 
-        // Database
 
         bOK.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -4097,11 +4084,10 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                     p.setlocationlong(Double.toString(Locationlong));
 
 
-                    //if (person == null)
-                       Vehicle_Reports.getInstance().addPerson(p);
-
                     if (person == null)
                         Vehicle_Reports.getInstance().addPerson(p);
+                    startActivity (new Intent(Add_or_Update_Inspection.this, MainActivity.class));
+                    finish();
                 }
             }
         });
@@ -4139,7 +4125,6 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
             }
         });
 
-
         internet_connected = Online_check ();
 
         if (internet_connected == false) {
@@ -4155,12 +4140,12 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
         bCancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                startActivity (new Intent(Add_or_Update_Inspection.this, MainActivity.class));
                 finish();
             }
         });
     }
     //////////////////////////////////////////////////////////////////////////////////
-
 
 
     private void showGPSDisabledAlertToUser(){
@@ -4175,7 +4160,6 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                                 startActivity(callGPSSettingIntent);
                                 GPSOnlinetext.setText("GPS Online");
                                 gpsonlineicon.setImageResource(R.drawable.gpsonlineicon);
-
                             }
                         });
 
@@ -4187,7 +4171,6 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
                 });
         AlertDialog alert = alertDialogBuilder.create();
         alert.show();
-
 
     }
 
@@ -4336,14 +4319,9 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
         return super.onOptionsItemSelected(item);
     }
 
-
-
-
     public void handleNewLocation(Location location) {
 
         System.out.println(location);
-
-
 
         Locationlat = location.getLatitude();
         Locationlong = location.getLongitude();

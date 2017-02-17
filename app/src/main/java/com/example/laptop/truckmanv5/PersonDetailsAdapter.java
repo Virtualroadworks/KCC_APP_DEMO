@@ -49,7 +49,7 @@ public class PersonDetailsAdapter extends BaseAdapter {
             holder.user_name = (TextView) v.findViewById(R.id.user_name);
             holder.startdate = (TextView) v.findViewById(R.id.startdate);
             holder.reg = (TextView) v.findViewById(R.id.reg);
-            holder.DeletePerson = (ImageView) v.findViewById(R.id.DeletePerson);
+            //holder.DeletePerson = (ImageView) v.findViewById(R.id.DeletePerson);
             v.setTag(holder);
         } else {
             holder = (Holder) v.getTag();
@@ -62,12 +62,12 @@ public class PersonDetailsAdapter extends BaseAdapter {
         // Make a text area to hold the date, then get the date from the person class
 
 
-        holder.DeletePerson.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ShowConfirmDialog(context, position);
-            }
-        });
+//        holder.DeletePerson.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                ShowConfirmDialog(context, position);
+//            }
+//        });
         return v;
     }
 

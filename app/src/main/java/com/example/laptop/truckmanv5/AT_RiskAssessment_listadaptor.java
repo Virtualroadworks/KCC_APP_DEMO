@@ -48,7 +48,7 @@ public class AT_RiskAssessment_listadaptor extends BaseAdapter {
             holder = new AT_RiskAssessment_listadaptor.Holder();
             holder.startdate = (TextView) v.findViewById(R.id.startdate);
             holder.user_name = (TextView) v.findViewById(R.id.user_name);
-            holder.DeletePerson = (ImageView) v.findViewById(R.id.DeletePerson);
+            //holder.DeletePerson = (ImageView) v.findViewById(R.id.DeletePerson);
             v.setTag(holder);
         } else {
             holder = (AT_RiskAssessment_listadaptor.Holder) v.getTag();
@@ -60,12 +60,12 @@ public class AT_RiskAssessment_listadaptor extends BaseAdapter {
         // Make a text area to hold the date, then get the date from the person class
 
 
-        holder.DeletePerson.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ShowConfirmDialog(context, position);
-            }
-        });
+//        holder.DeletePerson.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                ShowConfirmDialog(context, position);
+//            }
+//        });
         return v;
     }
 

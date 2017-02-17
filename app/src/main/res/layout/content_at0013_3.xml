@@ -249,13 +249,14 @@
             </FrameLayout>
 
             <FrameLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <LinearLayout
                     android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
 
                     <FrameLayout
                         android:layout_width="match_parent"
@@ -319,36 +320,6 @@
                         </LinearLayout>
                     </FrameLayout>
 
-                    <FrameLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                        <LinearLayout
-                            android:orientation="vertical"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <ImageButton
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                app:srcCompat="@drawable/button_effect_map_button"
-                                android:id="@+id/at0013_3selectmap"
-                                android:background="@color/trans"
-                                android:layout_margin="10dp"
-                                tools:ignore="ContentDescription,InefficientWeight" />
-
-                            <TextView
-                                android:text="Select Map"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:textStyle="normal|bold"
-                                android:textAlignment="center"
-                                android:textColor="@color/common_google_signin_btn_text_dark_focused"
-                                tools:ignore="HardcodedText,InefficientWeight" />
-                        </LinearLayout>
-
-                    </FrameLayout>
                 </LinearLayout>
 
             </FrameLayout>
@@ -3345,14 +3316,20 @@
                             android:layout_height="wrap_content"
                             android:id="@+id/bCancel"
                             android:layout_weight="1"
-                            tools:ignore="ButtonStyle,HardcodedText" />
+                            tools:ignore="ButtonStyle,HardcodedText,NestedWeights"
+                            android:background="@drawable/button_roundoff5"
+                            android:layout_margin="20dp"
+                            android:textSize="20sp" />
                         <Button
-                            android:text="OK"
+                            android:text="submit form"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:id="@+id/bOK"
                             android:layout_weight="1"
-                            tools:ignore="ButtonStyle,HardcodedText" />
+                            tools:ignore="ButtonStyle,HardcodedText"
+                            android:background="@drawable/button_roundoff7"
+                            android:layout_margin="20dp"
+                            android:textSize="20sp" />
                     </LinearLayout>
 
                 </FrameLayout>

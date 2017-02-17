@@ -621,7 +621,7 @@
                                 android:layout_height="wrap_content"
                                 app:srcCompat="@drawable/ratmpguidelinesbuttoneffect"
                                 android:id="@+id/ratmpguidelinesicon100x100"
-                                tools:ignore="ContentDescription"
+                                tools:ignore="ContentDescription,TooManyViews"
                                 android:background="@color/Egis_trans" />
 
                         </LinearLayout>

@@ -224,6 +224,9 @@ public class AT_RiskAssessment_database extends AppCompatActivity {
         add.setgeneralppehardhat(model.getgeneralppehardhat());
         add.setgeneralppedustmask(model.getgeneralppedustmask());
 
+        add.setlocationlat(model.getlocationlat());
+        add.setlocationlong(model.getlocationlong());
+
 
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 

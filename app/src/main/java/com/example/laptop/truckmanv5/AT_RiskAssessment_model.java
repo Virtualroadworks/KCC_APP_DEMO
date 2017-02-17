@@ -51,6 +51,9 @@ public class AT_RiskAssessment_model {
     private String generalppehardhat;
     private String generalppedustmask;
 
+    private String locationlat;
+    private String locationlong;
+
 
 
     public AT_RiskAssessment_model () {
@@ -308,6 +311,19 @@ public class AT_RiskAssessment_model {
     public String getgeneralppedustmask() {
         return generalppedustmask;
     }
+
+    public void setlocationlat(String locationlat) {
+        this.locationlat = locationlat;
+    }
+    public String getlocationlat() {
+        return locationlat;
+    }
+    public void setlocationlong(String locationlong) {
+        this.locationlong = locationlong;
+    }
+    public String getlocationlong() {
+        return locationlong;
+    }
     //////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -377,6 +393,10 @@ public class AT_RiskAssessment_model {
         result.put("generalppehivis", generalppehivis);
         result.put("generalppehardhat", generalppehardhat);
         result.put("generalppedustmask", generalppedustmask);
+
+        result.put("locationlat", locationlat);
+        result.put("locationlong", locationlong);
+
 
         //--------------------------------------------------------------------------------------
 

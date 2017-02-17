@@ -113,7 +113,8 @@
                             app:srcCompat="@drawable/dcc_database_logo_60"
                             android:id="@+id/imageView9"
                             android:layout_gravity="center"
-                            tools:ignore="ContentDescription" />
+                            tools:ignore="ContentDescription"
+                            android:background="@color/Egis_trans" />
 
                     </FrameLayout>
                 </LinearLayout>
@@ -164,10 +165,10 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center"
                                 android:textColor="@color/cardview_light_background"
-                                android:paddingLeft="20dp"
                                 tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry"
                                 android:textSize="12sp"
-                                android:paddingRight="20dp" />
+                                android:paddingStart="20dp"
+                                android:paddingEnd="20dp" />
                         </FrameLayout>
                     </FrameLayout>
 
@@ -251,10 +252,10 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center"
                                 android:textColor="@color/cardview_light_background"
-                                android:paddingLeft="20dp"
                                 tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry"
                                 android:textSize="12sp"
-                                android:paddingRight="20dp" />
+                                android:paddingEnd="20dp"
+                                android:paddingStart="20dp" />
                         </FrameLayout>
                     </FrameLayout>
 
@@ -292,97 +293,6 @@
 
                 </LinearLayout>
 
-            </FrameLayout>
-
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/Confinedspacecheckframelayout">
-
-                <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                </FrameLayout>
-
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <FrameLayout
-                        android:layout_height="20dp"
-                        android:background="@drawable/button_roundoff4"
-                        android:layout_marginTop="5dp"
-                        android:layout_width="match_parent">
-
-                        <TextView
-                            android:text="Traffic Management Plan Selection"
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:textColor="@color/common_google_signin_btn_text_dark_focused"
-                            android:paddingLeft="20dp"
-                            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry"
-                            android:textSize="12sp" />
-                    </FrameLayout>
-
-                    <FrameLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/Level1access">
-
-                        <FrameLayout
-                            android:layout_height="20dp"
-                            android:background="@drawable/button_roundoff"
-                            android:layout_width="wrap_content"
-                            android:layout_gravity="right">
-
-                            <TextView
-                                android:text="Level 1 + 2 : Access"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:gravity="center"
-                                android:textColor="@color/cardview_light_background"
-                                android:paddingLeft="20dp"
-                                tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry"
-                                android:textSize="12sp"
-                                android:paddingRight="20dp" />
-                        </FrameLayout>
-                    </FrameLayout>
-
-                    <LinearLayout
-                        android:orientation="horizontal"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:padding="10dp">
-
-                        <Button
-                            android:text="Form : TM Plans"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/form_tm_plans"
-                            tools:ignore="ButtonStyle,HardcodedText"
-                            android:layout_weight="1"
-                            android:clickable="false"
-                            android:background="@drawable/button_roundoff5"
-                            android:textSize="12sp"
-                            android:layout_margin="5dp" />
-
-                        <Button
-                            android:text="Database : Plans Achive"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/database_tm_plans"
-                            tools:ignore="ButtonStyle,HardcodedText"
-                            android:layout_weight="1"
-                            android:clickable="false"
-                            android:background="@drawable/button_roundoff3"
-                            android:textSize="12sp"
-                            android:layout_margin="5dp" />
-
-                    </LinearLayout>
-                </LinearLayout>
             </FrameLayout>
 
             <FrameLayout
@@ -431,10 +341,10 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center"
                                 android:textColor="@color/cardview_light_background"
-                                android:paddingLeft="20dp"
                                 tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry"
                                 android:textSize="12sp"
-                                android:paddingRight="20dp" />
+                                android:paddingStart="20dp"
+                                android:paddingEnd="20dp" />
                         </FrameLayout>
                     </FrameLayout>
 
@@ -517,10 +427,10 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center"
                                 android:textColor="@color/cardview_light_background"
-                                android:paddingLeft="20dp"
                                 tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry"
                                 android:textSize="12sp"
-                                android:paddingRight="20dp" />
+                                android:paddingStart="20dp"
+                                android:paddingEnd="20dp" />
                         </FrameLayout>
                     </FrameLayout>
 
@@ -557,6 +467,85 @@
 
                     </LinearLayout>
 
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/Confinedspacecheckframelayout">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <FrameLayout
+                        android:layout_height="20dp"
+                        android:background="@drawable/button_roundoff4"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent">
+
+                        <TextView
+                            android:text="Traffic Management Plan Selection"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                            android:paddingLeft="20dp"
+                            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry"
+                            android:textSize="12sp" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Level1access">
+
+                        <FrameLayout
+                            android:layout_height="20dp"
+                            android:background="@drawable/button_roundoff"
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="right">
+
+                            <TextView
+                                android:text="Level 1 + 2 : Access"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textColor="@color/cardview_light_background"
+                                tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry"
+                                android:textSize="12sp"
+                                android:paddingStart="20dp"
+                                android:paddingEnd="20dp" />
+                        </FrameLayout>
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="10dp">
+
+                        <Button
+                            android:text="TM Plans Document"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/form_tm_plans"
+                            tools:ignore="ButtonStyle,HardcodedText"
+                            android:layout_weight="1"
+                            android:clickable="false"
+                            android:background="@drawable/button_roundoff2"
+                            android:textSize="12sp"
+                            android:layout_margin="5dp" />
+
+                    </LinearLayout>
                 </LinearLayout>
             </FrameLayout>
 

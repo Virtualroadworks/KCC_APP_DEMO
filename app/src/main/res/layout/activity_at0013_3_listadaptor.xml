@@ -8,88 +8,55 @@
 
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:cardElevation="9dp"
-        android:layout_margin="5dp">
+        android:layout_height="45dp"
+        app:cardElevation="13dp"
+        android:layout_margin="10dp"
+        android:padding="5dp">
+
         <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left|center"
+            android:layout_gravity="center|start"
+            tools:ignore="RtlHardcoded"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inspection Time:"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/startdate"
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:text="Start Date"
+                android:textSize="12sp"
+                android:textStyle="normal|bold"
+                tools:ignore="HardcodedText"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/cast_expanded_controller_background_color" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/user_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="5dp">
-            <LinearLayout
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:weightSum="1"
-                tools:ignore="UselessParent">
+            android:text="userName"
+            android:textAlignment="textEnd"
+            android:textSize="12sp"
+            android:layout_weight="1"
+            android:textStyle="normal|bold"
+            tools:ignore="HardcodedText,InefficientWeight"
+            android:layout_gravity="center|end"
+            android:textColor="@color/cast_expanded_controller_background_color"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp" />
 
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content">
-
-                    <LinearLayout
-                        android:orientation="horizontal"
-                        android:layout_width="wrap_content"
-                        android:layout_height="fill_parent"
-                        android:gravity="left"
-                        android:layout_gravity="left"
-                        tools:ignore="RtlHardcoded">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Inspection Time:"
-                            android:id="@+id/textView26"
-                            android:textSize="12sp"
-                            android:textStyle="bold"
-                            tools:ignore="HardcodedText" />
-
-                        <TextView
-                            android:id="@+id/startdate"
-                            android:layout_width="135dp"
-                            android:layout_height="wrap_content"
-                            android:text="Start Date"
-                            android:textSize="12sp"
-                            android:textStyle="normal|bold"
-                            tools:ignore="HardcodedText"
-                            android:layout_marginLeft="5dp" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="right"
-                        android:gravity="right"
-                        tools:ignore="RtlHardcoded,UseCompoundDrawables">
-
-                        <TextView
-                            android:id="@+id/user_name"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="userName"
-                            android:textAlignment="textEnd"
-                            android:textSize="12sp"
-                            android:layout_weight="1"
-                            android:gravity="start"
-                            android:textStyle="normal|bold"
-                            tools:ignore="HardcodedText,InefficientWeight"
-                            android:layout_gravity="center" />
-
-                        <ImageView
-                            android:id="@+id/DeletePerson"
-                            android:layout_width="35dp"
-                            android:layout_height="35dp"
-                            android:layout_gravity="center_vertical"
-                            android:contentDescription="Delete"
-                            android:src="@drawable/vr_bin_icon"
-                            tools:ignore="HardcodedText" />
-
-                    </LinearLayout>
-
-                </LinearLayout>
-
-            </LinearLayout>
-        </LinearLayout>
     </android.support.v7.widget.CardView>
 </LinearLayout>

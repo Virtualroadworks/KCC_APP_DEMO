@@ -119,7 +119,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         if (locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)){
             gps_check.setText("Online");
             gpsonlineiconxl.setImageResource(R.drawable.gpsonlineiconxl);
-            Toast.makeText(this, "GPS is Enabled in your devide", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(this, "GPS is Enabled in your devide", Toast.LENGTH_SHORT).show();
         }else{
             gps_check.setText("Offline");
             gpsonlineiconxl.setImageResource(R.drawable.gpsofflineiconxl);

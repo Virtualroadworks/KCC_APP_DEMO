@@ -16,155 +16,214 @@
 
         <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
             <LinearLayout
                 android:orientation="horizontal"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                tools:ignore="DisableBaselineAlignment,UselessParent">
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="UselessParent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/dcc_logo_100dp"
+                    android:id="@+id/imageView7"
+                    tools:ignore="ContentDescription" />
 
                 <FrameLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_gravity="center"
-                    android:paddingRight="10dp"
-                    tools:ignore="InefficientWeight,RtlHardcoded,RtlSymmetry">
+                    android:layout_height="match_parent">
 
                     <LinearLayout
                         android:orientation="vertical"
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent">
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        tools:ignore="UselessParent">
 
                         <TextView
-                            android:text="Report Progress Bar"
-                            android:layout_width="match_parent"
+                            android:text="Vehicle"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:id="@+id/textView227"
-                            android:gravity="center"
-                            android:textStyle="bold"
-                            android:textSize="12sp"
-                            tools:ignore="HardcodedText,InefficientWeight"
-                            android:scrollbarSize="12dp"
+                            android:textStyle="normal|bold"
                             android:textColor="@color/common_google_signin_btn_text_dark_focused"
-                            android:layout_weight="1" />
+                            tools:ignore="HardcodedText"
+                            android:textSize="14sp"
+                            android:background="@color/trans" />
 
-                        <ProgressBar
-                            style="?android:attr/progressBarStyleHorizontal"
-                            android:layout_height="match_parent"
-                            android:max="100"
-                            android:progress="0"
-                            android:id="@+id/progressBar"
+                        <TextView
+                            android:text="Inspection"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal|bold"
+                            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                            tools:ignore="HardcodedText"
+                            android:textSize="14sp"
+                            android:background="@color/trans" />
+                    </LinearLayout>
+
+                </FrameLayout>
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    tools:ignore="RtlHardcoded">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        tools:ignore="DisableBaselineAlignment,UselessParent"
+                        android:layout_gravity="end">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:soundEffectsEnabled="true"
-                            tools:ignore="InefficientWeight"
+                            android:layout_gravity="center"
+                            android:paddingRight="10dp"
+                            tools:ignore="InefficientWeight,RtlHardcoded,RtlSymmetry">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:text="Report Progress Bar"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/textView227"
+                                    android:gravity="center"
+                                    android:textStyle="bold"
+                                    android:textSize="12sp"
+                                    tools:ignore="HardcodedText,InefficientWeight"
+                                    android:scrollbarSize="12dp"
+                                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                    android:layout_weight="1" />
+
+                                <ProgressBar
+                                    style="?android:attr/progressBarStyleHorizontal"
+                                    android:layout_height="match_parent"
+                                    android:max="100"
+                                    android:progress="0"
+                                    android:id="@+id/progressBar"
+                                    android:layout_weight="1"
+                                    android:soundEffectsEnabled="true"
+                                    tools:ignore="InefficientWeight"
+                                    android:paddingStart="5dp"
+                                    android:paddingEnd="5dp"
+                                    android:layout_width="175dp" />
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center">
+
+                                    <TextView
+                                        android:text="0%"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:id="@+id/textView48"
+                                        android:textStyle="bold"
+                                        tools:ignore="HardcodedText,TooDeepLayout"
+                                        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                        android:gravity="start"
+                                        android:layout_weight="1" />
+
+                                    <TextView
+                                        android:text="100%"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:id="@+id/textView226"
+                                        android:textStyle="bold"
+                                        tools:ignore="HardcodedText"
+                                        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                        android:layout_gravity="end" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:paddingStart="5dp"
-                            android:paddingEnd="5dp"
-                            android:layout_width="200dp" />
+                            android:paddingEnd="5dp">
 
-                        <LinearLayout
-                            android:orientation="horizontal"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center">
-
-                            <TextView
-                                android:text="0%"
+                            <LinearLayout
+                                android:orientation="vertical"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:id="@+id/textView48"
-                                android:textStyle="bold"
-                                tools:ignore="HardcodedText,TooDeepLayout"
-                                android:textColor="@color/common_google_signin_btn_text_dark_focused"
-                                android:gravity="start"
-                                android:layout_weight="1" />
+                                tools:ignore="UseCompoundDrawables">
 
-                            <TextView
-                                android:text="100%"
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    app:srcCompat="@drawable/onlineicon"
+                                    android:id="@+id/onlineicon"
+                                    tools:ignore="ContentDescription" />
+
+                                <TextView
+                                    android:text="Online"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:id="@+id/Onlinetext"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    tools:ignore="HardcodedText,RtlSymmetry"
+                                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                    android:textStyle="normal|bold"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingStart="5dp"
+                            android:paddingEnd="5dp">
+
+                            <LinearLayout
+                                android:orientation="vertical"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:id="@+id/textView226"
-                                android:textStyle="bold"
-                                tools:ignore="HardcodedText"
-                                android:textColor="@color/common_google_signin_btn_text_dark_focused"
-                                android:layout_gravity="end" />
+                                tools:ignore="UseCompoundDrawables">
 
-                        </LinearLayout>
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    app:srcCompat="@drawable/gpsonlineicon"
+                                    android:id="@+id/gpsonlineicon"
+                                    tools:ignore="ContentDescription" />
+
+                                <TextView
+                                    android:text="GPS On"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:id="@+id/GPSOnlinetext"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    tools:ignore="HardcodedText,RtlSymmetry"
+                                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                    android:textStyle="normal|bold"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+                        </FrameLayout>
 
                     </LinearLayout>
 
                 </FrameLayout>
-
-                <FrameLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp">
-
-                    <LinearLayout
-                        android:orientation="vertical"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        tools:ignore="UseCompoundDrawables">
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            app:srcCompat="@drawable/onlineicon"
-                            android:id="@+id/onlineicon"
-                            tools:ignore="ContentDescription" />
-
-                        <TextView
-                            android:text="Online"
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:id="@+id/Onlinetext"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            tools:ignore="HardcodedText,RtlSymmetry"
-                            android:textColor="@color/common_google_signin_btn_text_dark_focused"
-                            android:textStyle="normal|bold" />
-                    </LinearLayout>
-                </FrameLayout>
-
-                <FrameLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp">
-
-                    <LinearLayout
-                        android:orientation="vertical"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        tools:ignore="UseCompoundDrawables">
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            app:srcCompat="@drawable/gpsonlineicon"
-                            android:id="@+id/gpsonlineicon"
-                            tools:ignore="ContentDescription" />
-
-                        <TextView
-                            android:text="GPS On"
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:id="@+id/GPSOnlinetext"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            tools:ignore="HardcodedText,RtlSymmetry"
-                            android:textColor="@color/common_google_signin_btn_text_dark_focused"
-                            android:textStyle="normal|bold" />
-                    </LinearLayout>
-                </FrameLayout>
-
             </LinearLayout>
-
         </FrameLayout>
 
 
@@ -408,28 +467,14 @@
                                 tools:ignore="DisableBaselineAlignment">
 
                                 <FrameLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1">
-
-                                    <ImageButton
-                                        android:layout_width="67dp"
-                                        android:layout_height="match_parent"
-                                        app:srcCompat="@drawable/vr_truckman_info_icon"
-                                        android:id="@+id/locationbutton"
-                                        android:background="@drawable/button_roundoff"
-                                        tools:ignore="ContentDescription" />
-                                </FrameLayout>
-
-                                <FrameLayout
-                                    android:layout_width="match_parent"
+                                    android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:layout_weight="1"
                                     tools:ignore="InefficientWeight">
 
                                     <EditText
                                         android:id="@+id/pReg"
-                                        android:layout_width="match_parent"
+                                        android:layout_width="250dp"
                                         android:layout_height="58dp"
                                         android:inputType="textEmailAddress"
                                         android:hint="02-D-4178"
@@ -579,13 +624,13 @@
                                                     android:layout_height="wrap_content"
                                                     android:layout_weight="1"
                                                     android:layout_gravity="start"
-                                                    tools:ignore="NestedWeights">
+                                                    tools:ignore="NestedWeights,TooManyViews">
 
                                                     <LinearLayout
                                                         android:orientation="horizontal"
                                                         android:layout_width="wrap_content"
                                                         android:layout_height="wrap_content"
-                                                        tools:ignore="UselessParent">
+                                                        tools:ignore="TooManyViews,UselessParent">
 
                                                         <ImageButton
                                                             android:layout_width="wrap_content"
@@ -6011,7 +6056,7 @@
 
                                         <Button
                                             android:layout_width="match_parent"
-                                            android:layout_height="0dp"
+                                            android:layout_height="wrap_content"
                                             android:id="@+id/vehiclephoto"
                                             android:text="Take photo of vehicle "
                                             android:layout_weight="0.64"
@@ -6022,35 +6067,31 @@
                                             tools:ignore="ButtonStyle,HardcodedText" />
 
                                         <LinearLayout
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
                                             android:orientation="horizontal"
-                                            android:gravity="center">
-
-                                            <Button
                                             android:layout_width="match_parent"
                                             android:layout_height="match_parent"
-                                            android:id="@+id/bCancel"
-                                            android:text="Cancel "
-                                                android:background="@drawable/button_roundoff5"
-                                                android:textColor="#ffffff"
-                                            android:textSize="20sp"
-                                            tools:ignore="ButtonStyle,HardcodedText"
-                                                android:layout_marginEnd="10dp"
-                                                android:layout_weight="1" />
+                                            android:layout_weight="1">
 
                                             <Button
-                                                android:layout_width="match_parent"
-                                                android:layout_height="match_parent"
-                                                android:id="@+id/bOk"
-                                                android:text="Upload"
+                                                android:text="Cancel"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:id="@+id/bCancel"
+                                                android:layout_weight="1"
+                                                tools:ignore="ButtonStyle,HardcodedText,NestedWeights"
                                                 android:background="@drawable/button_roundoff5"
-                                                android:textColor="#ffffff"
-                                                android:textSize="20sp"
+                                                android:layout_margin="20dp"
+                                                android:textSize="20sp" />
+                                            <Button
+                                                android:text="submit form"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:id="@+id/backOK"
+                                                android:layout_weight="1"
                                                 tools:ignore="ButtonStyle,HardcodedText"
-                                                android:layout_marginStart="10dp"
-                                                android:layout_weight="1" />
-
+                                                android:background="@drawable/button_roundoff7"
+                                                android:layout_margin="20dp"
+                                                android:textSize="20sp" />
                                         </LinearLayout>
 
                                     </LinearLayout>

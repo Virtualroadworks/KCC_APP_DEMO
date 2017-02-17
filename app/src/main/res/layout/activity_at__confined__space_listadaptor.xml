@@ -1,28 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    tools:context="com.example.laptop.truckmanv5.AT_Confined_Space_listadaptor">
+    android:layout_height="match_parent">
 
-    <android.support.design.widget.AppBarLayout
+    <android.support.v7.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:layout_height="45dp"
+        app:cardElevation="13dp"
+        android:layout_margin="10dp"
+        android:padding="5dp">
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
+        <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
+            android:layout_height="match_parent"
+            android:gravity="left|center"
+            android:layout_gravity="center|start"
+            tools:ignore="RtlHardcoded"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
 
-    </android.support.design.widget.AppBarLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inspection Time:"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
 
-    <include layout="@layout/content_at__confined__space_listadaptor" />
+            <TextView
+                android:id="@+id/startdate"
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:text="Start Date"
+                android:textSize="12sp"
+                android:textStyle="normal|bold"
+                tools:ignore="HardcodedText"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/cast_expanded_controller_background_color" />
+        </LinearLayout>
 
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="userName"
+            android:textAlignment="textEnd"
+            android:textSize="12sp"
+            android:layout_weight="1"
+            android:textStyle="normal|bold"
+            tools:ignore="HardcodedText,InefficientWeight"
+            android:layout_gravity="center|end"
+            android:textColor="@color/cast_expanded_controller_background_color"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp" />
 
-
-</android.support.design.widget.CoordinatorLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

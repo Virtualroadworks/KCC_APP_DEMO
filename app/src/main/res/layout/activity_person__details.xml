@@ -356,33 +356,20 @@
                                     android:layout_width="140dp"
                                     android:layout_height="wrap_content"
                                     android:textAppearance="?android:attr/textAppearanceMedium"
-                                    android:text="Location :"
-                                    android:id="@+id/textView47"
+                                    android:text="Vehicle Registration:"
                                     android:textColor="#000000"
                                     android:textSize="15sp"
                                     tools:ignore="HardcodedText" />
 
                                 <TextView
-                                    tools:text="Inspection Start Time"
-                                    android:id="@+id/tvlocation_address_view"
+                                    android:id="@+id/tvReg"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:textSize="15sp"
                                     android:textColor="#000000"
-                                    android:text="Inspection Start Time"
+                                    android:text="Reg"
                                     tools:ignore="HardcodedText,RtlSymmetry" />
 
-                                <TextView
-                                    tools:text="Inspection Start Time"
-                                    android:id="@+id/tvlocation_address_viewmail"
-                                    android:layout_width="0dp"
-                                    android:layout_height="0dp"
-                                    android:textSize="15sp"
-                                    android:textColor="#000000"
-                                    android:paddingLeft="10dp"
-                                    android:text="Inspection Start Time"
-                                    android:visibility="invisible"
-                                    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
                             </LinearLayout>
                         </FrameLayout>
 
@@ -412,21 +399,26 @@
                                 android:layout_gravity="end" />
 
                             <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Button
+                                    android:text="Email Report"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/emailreport"
+                                    android:layout_weight="1"
+                                    android:padding="5dp"
+                                    android:layout_margin="5dp"
+                                    tools:ignore="HardcodedText,InefficientWeight"
+                                    android:background="@drawable/button_roundoff4" />
+                            </LinearLayout>
+
+                            <LinearLayout
                                 android:orientation="vertical"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content">
-
-                                <TextView
-                                    android:id="@+id/tvReg"
-                                    android:layout_width="190dp"
-                                    android:layout_height="50dp"
-                                    tools:text="Reg"
-                                    android:textAlignment="center"
-                                    android:background="@drawable/regplatebackground"
-                                    android:paddingTop="12dp"
-                                    android:textColor="#000000"
-                                    android:textSize="20sp"
-                                    android:layout_gravity="start" />
 
                                 <TextView
                                     tools:text="Reg"
@@ -439,15 +431,9 @@
                                     android:paddingTop="12dp"
                                     android:textColor="#000000"
                                     android:textSize="20sp"
-                                    android:visibility="invisible" />
+                                    android:visibility="invisible"
+                                    tools:ignore="Suspicious0dp" />
 
-                                <ImageButton
-                                    android:layout_width="190dp"
-                                    android:layout_height="50dp"
-                                    android:id="@+id/emailreport"
-                                    android:background="@drawable/emailreport"
-                                    tools:ignore="ContentDescription"
-                                    android:layout_gravity="start" />
                             </LinearLayout>
 
                         </FrameLayout>
@@ -460,397 +446,375 @@
                     android:layout_height="match_parent"
                     android:paddingBottom="2dp">
 
-                    <TextView
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:text="Outside - Inspection"
-                        android:id="@+id/textView99"
-                        android:layout_gravity="center"
-                        android:textAlignment="center"
-                        android:textSize="15sp"
-                        android:background="@drawable/button_roundoff3"
-                        android:textColor="#ffffff"
-                        tools:ignore="HardcodedText" />
-
-                </FrameLayout>
-
-                <FrameLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content">
-
                     <LinearLayout
                         android:orientation="vertical"
                         android:layout_width="match_parent"
-                        android:layout_height="fill_parent" >
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        tools:ignore="InefficientWeight">
 
                         <TextView
                             android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="Outside - Inspection"
+                            android:id="@+id/textView99"
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+                            android:textSize="15sp"
+                            android:background="@drawable/button_roundoff3"
+                            android:textColor="#ffffff"
+                            tools:ignore="HardcodedText"
+                            android:layout_margin="10dp"
+                            android:padding="5dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Tax and insurance"
-                            android:id="@+id/textView142"
                             android:textAlignment="center"
                             android:textSize="15sp"
                             android:background="@drawable/button_roundoff3"
                             android:textColor="#ffffff"
-                            tools:ignore="HardcodedText" />
+                            tools:ignore="HardcodedText"
+                            android:padding="5dp" />
 
                         <FrameLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
+                            android:layout_height="match_parent">
 
                             <LinearLayout
                                 android:orientation="horizontal"
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:baselineAligned="false">
+                                android:layout_height="match_parent">
 
-                                <LinearLayout
-                                    android:orientation="vertical"
+                                <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    tools:ignore="InefficientWeight">
+                                    android:text="Defect Status:"
+                                    tools:ignore="HardcodedText,TooDeepLayout" />
 
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:text="Defect Status:"
-                                        android:id="@+id/textView143"
-                                        tools:ignore="HardcodedText,TooDeepLayout" />
-
-                                    <TextView
-                                        tools:text="Tax and Insurance"
-                                        android:id="@+id/taxinsurancedescribedefectfill_report"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content" />
-
-                                    <TextView
-                                        tools:text="Windows and Mirrors"
-                                        android:id="@+id/taxinsurancedescribedefectfill_reportemail"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="0dp"
-                                        android:visibility="invisible" />
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:text="Temporary Fix (If Any):"
-                                        android:id="@+id/textView145"
-                                        tools:ignore="HardcodedText" />
-
-                                    <TextView
-                                        tools:text="Tax and Insurance"
-                                        android:id="@+id/taxinsurancetempfixfill_report"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        tools:ignore="HardcodedText" />
-
-                                    <TextView
-                                        tools:text="Tax and Insurance"
-                                        android:id="@+id/taxinsurancetempfixfill_reportemail"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="0dp"
-                                        android:visibility="invisible"
-                                        tools:ignore="HardcodedText" />
-                                </LinearLayout>
-
-                                <ImageView
-                                    app:srcCompat="@drawable/photoplace90x90"
-                                    android:id="@+id/taxinsuranceImageviewpicplace"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    tools:ignore="ContentDescription" />
+                                <TextView
+                                    android:id="@+id/taxinsurancedescribedefectfill_report"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1" />
 
                             </LinearLayout>
 
                         </FrameLayout>
 
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Temporary Fix (If Any):"
+                                    tools:ignore="HardcodedText" />
+
+                                <TextView
+                                    android:id="@+id/taxinsurancetempfixfill_report"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    tools:ignore="HardcodedText"
+                                    android:layout_weight="1" />
+
+                            </LinearLayout>
+                        </FrameLayout>
+
+                        <TextView
+                            tools:text="Windows and Mirrors"
+                            android:id="@+id/taxinsurancedescribedefectfill_reportemail"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            tools:text="Tax and Insurance"
+                            android:id="@+id/taxinsurancetempfixfill_reportemail"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:visibility="invisible"
+                            tools:ignore="HardcodedText" />
                     </LinearLayout>
 
                 </FrameLayout>
 
                 <FrameLayout
-                    android:layout_width="fill_parent"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <LinearLayout
                         android:orientation="vertical"
                         android:layout_width="match_parent"
-                        android:layout_height="fill_parent" >
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        tools:ignore="InefficientWeight">
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Reg Plate, Markings"
-                            android:id="@+id/textView200"
                             android:textAlignment="center"
                             android:textSize="15sp"
                             android:background="@drawable/button_roundoff3"
                             android:textColor="#ffffff"
-                            tools:ignore="HardcodedText" />
+                            tools:ignore="HardcodedText"
+                            android:padding="5dp" />
 
                         <FrameLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
+                            android:layout_height="match_parent">
 
                             <LinearLayout
                                 android:orientation="horizontal"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent">
 
-                                <LinearLayout
+                                <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:orientation="vertical"
-                                    android:layout_weight="1"
-                                    tools:ignore="InefficientWeight">
+                                    android:text="Defect Status:"
+                                    tools:ignore="HardcodedText,TooDeepLayout" />
 
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:text="Defect Status:"
-                                        android:id="@+id/textView201"
-                                        tools:ignore="HardcodedText" />
-
-                                    <TextView
-                                        tools:text="Reg Plate"
-                                        android:id="@+id/regplatedescribedefectfill_report"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content" />
-
-                                    <TextView
-                                        tools:text="Windows and Mirrors"
-                                        android:id="@+id/regplatedescribedefectfill_reportemail"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="0dp"
-                                        android:visibility="invisible" />
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:text="Temporary Fix (If Any):"
-                                        android:id="@+id/textView203"
-                                        tools:ignore="HardcodedText" />
-
-                                    <TextView
-                                        tools:text="Reg Plate"
-                                        android:id="@+id/regplatetempfixfill_report"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        tools:ignore="HardcodedText,TooManyViews" />
-
-                                    <TextView
-                                        tools:text="Windows and Mirrors"
-                                        android:id="@+id/regplatetempfixfill_reportemail"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="0dp"
-                                        android:visibility="invisible"
-                                        tools:ignore="HardcodedText" />
-
-                                </LinearLayout>
-
-                                <ImageView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    app:srcCompat="@drawable/photoplace90x90"
-                                    android:id="@+id/regplateImageviewpicplace"
-                                    tools:ignore="ContentDescription" />
+                                <TextView
+                                    android:id="@+id/regplatedescribedefectfill_report"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1" />
 
                             </LinearLayout>
 
                         </FrameLayout>
 
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Temporary Fix (If Any):"
+                                    tools:ignore="HardcodedText" />
+
+                                <TextView
+                                    android:id="@+id/regplatetempfixfill_report"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    tools:ignore="HardcodedText"
+                                    android:layout_weight="1" />
+
+                            </LinearLayout>
+                        </FrameLayout>
+
+                        <TextView
+                            tools:text="Windows and Mirrors"
+                            android:id="@+id/regplatedescribedefectfill_reportemail"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            tools:text="Tax and Insurance"
+                            android:id="@+id/regplatetempfixfill_reportemail"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:visibility="invisible"
+                            tools:ignore="HardcodedText" />
                     </LinearLayout>
 
                 </FrameLayout>
 
                 <FrameLayout
-                    android:layout_width="fill_parent"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <LinearLayout
                         android:orientation="vertical"
                         android:layout_width="match_parent"
-                        android:layout_height="fill_parent" >
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        tools:ignore="InefficientWeight">
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Air and Electrial"
-                            android:id="@+id/textView212"
                             android:textAlignment="center"
                             android:textSize="15sp"
                             android:background="@drawable/button_roundoff3"
                             android:textColor="#ffffff"
-                            tools:ignore="HardcodedText" />
+                            tools:ignore="HardcodedText"
+                            android:padding="5dp" />
 
                         <FrameLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
-
-                            <LinearLayout
-                                android:orientation="horizontal"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
-
-                                <LinearLayout
-                                    android:orientation="vertical"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    tools:ignore="InefficientWeight">
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:text="Defect Status:"
-                                        android:id="@+id/textView213"
-                                        tools:ignore="HardcodedText,TooManyViews" />
-
-                                    <TextView
-                                        tools:text="Air and Electrial"
-                                        android:id="@+id/airelectrialdescribedefectfill_report"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        tools:ignore="TooManyViews" />
-
-                                    <TextView
-                                        tools:text="Windows and Mirrors"
-                                        android:id="@+id/airelectrialdescribedefectfill_reportemail"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="0dp"
-                                        android:visibility="invisible" />
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:text="Temporary Fix (If Any):"
-                                        android:id="@+id/textView215"
-                                        tools:ignore="HardcodedText,TooManyViews" />
-
-                                    <TextView
-                                        tools:text="Air and Electrial"
-                                        android:id="@+id/airelectrialtempfixfill_report"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        tools:ignore="HardcodedText" />
-
-                                    <TextView
-                                        tools:text="Windows and Mirrors"
-                                        android:id="@+id/airelectrialtempfixfill_reportemail"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="0dp"
-                                        android:visibility="invisible"
-                                        tools:ignore="HardcodedText" />
-                                </LinearLayout>
-
-                                <ImageView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    app:srcCompat="@drawable/photoplace90x90"
-                                    android:id="@+id/airelectrialImageviewpicplace"
-                                    tools:ignore="ContentDescription" />
-
-                            </LinearLayout>
-                        </FrameLayout>
-
-                    </LinearLayout>
-
-                </FrameLayout>
-
-                <FrameLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content">
-
-                    <LinearLayout
-                        android:orientation="vertical"
-                        android:layout_width="match_parent"
-                        android:layout_height="fill_parent" >
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Fluid Levels, leaks"
-                            android:id="@+id/textView208"
-                            android:textAlignment="center"
-                            android:textSize="15sp"
-                            android:background="@drawable/button_roundoff3"
-                            android:textColor="#ffffff"
-                            tools:ignore="HardcodedText,TooManyViews" />
-
-                        <FrameLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
+                            android:layout_height="match_parent">
 
                             <LinearLayout
                                 android:orientation="horizontal"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent">
 
-                                <LinearLayout
-                                    android:orientation="vertical"
+                                <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    tools:ignore="InefficientWeight">
+                                    android:text="Defect Status:"
+                                    tools:ignore="HardcodedText,TooDeepLayout" />
 
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:text="Defect Status:"
-                                        android:id="@+id/textView209"
-                                        tools:ignore="HardcodedText" />
+                                <TextView
+                                    android:id="@+id/airelectrialdescribedefectfill_report"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1" />
 
-                                    <TextView
-                                        tools:text="Fluid and Leaks"
-                                        android:id="@+id/fluidleaksdescribedefectfill_report"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content" />
+                            </LinearLayout>
 
-                                    <TextView
-                                        tools:text="Windows and Mirrors"
-                                        android:id="@+id/fluidleaksdescribedefectfill_reportemail"
-                                        android:layout_width="0dp"
-                                        android:layout_height="0dp"
-                                        android:visibility="invisible"
-                                        tools:ignore="TooManyViews" />
+                        </FrameLayout>
 
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:text="Temporary Fix (If Any):"
-                                        android:id="@+id/textView211"
-                                        tools:ignore="HardcodedText" />
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
 
-                                    <TextView
-                                        tools:text="Fluid and Leaks"
-                                        android:id="@+id/fluidleakstempfixfill_report"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        tools:ignore="HardcodedText" />
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
 
-                                    <TextView
-                                        tools:text="Windows and Mirrors"
-                                        android:id="@+id/fluidleakstempfixfill_reportemail"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="0dp"
-                                        android:visibility="invisible"
-                                        tools:ignore="HardcodedText" />
-
-                                </LinearLayout>
-
-                                <ImageView
+                                <TextView
                                     android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    app:srcCompat="@drawable/photoplace90x90"
-                                    android:id="@+id/fluidleaksImageviewpicplace"
-                                    tools:ignore="ContentDescription" />
+                                    android:layout_height="wrap_content"
+                                    android:text="Temporary Fix (If Any):"
+                                    tools:ignore="HardcodedText" />
+
+                                <TextView
+                                    android:id="@+id/airelectrialtempfixfill_report"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    tools:ignore="HardcodedText"
+                                    android:layout_weight="1" />
 
                             </LinearLayout>
                         </FrameLayout>
 
+                        <TextView
+                            tools:text="Windows and Mirrors"
+                            android:id="@+id/airelectrialdescribedefectfill_reportemail"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            tools:text="Tax and Insurance"
+                            android:id="@+id/airelectrialtempfixfill_reportemail"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:visibility="invisible"
+                            tools:ignore="HardcodedText" />
                     </LinearLayout>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        tools:ignore="InefficientWeight">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Fluid and Leaks"
+                            android:textAlignment="center"
+                            android:textSize="15sp"
+                            android:background="@drawable/button_roundoff3"
+                            android:textColor="#ffffff"
+                            tools:ignore="HardcodedText"
+                            android:padding="5dp" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Defect Status:"
+                                    tools:ignore="HardcodedText,TooDeepLayout" />
+
+                                <TextView
+                                    android:id="@+id/fluidleaksdescribedefectfill_report"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1" />
+
+                            </LinearLayout>
+
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Temporary Fix (If Any):"
+                                    tools:ignore="HardcodedText" />
+
+                                <TextView
+                                    android:id="@+id/fluidleakstempfixfill_report"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    tools:ignore="HardcodedText"
+                                    android:layout_weight="1" />
+
+                            </LinearLayout>
+                        </FrameLayout>
+
+                        <TextView
+                            tools:text="Windows and Mirrors"
+                            android:id="@+id/fluidleaksdescribedefectfill_reportemail"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            tools:text="Tax and Insurance"
+                            android:id="@+id/fluidleakstempfixfill_reportemail"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:visibility="invisible"
+                            tools:ignore="HardcodedText" />
+                    </LinearLayout>
+
                 </FrameLayout>
 
                 <FrameLayout
@@ -863,15 +827,15 @@
                         android:layout_height="fill_parent" >
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Air Suspension"
-                            android:id="@+id/textView220"
                             android:textAlignment="center"
                             android:textSize="15sp"
                             android:background="@drawable/button_roundoff3"
                             android:textColor="#ffffff"
-                            tools:ignore="HardcodedText" />
+                            tools:ignore="HardcodedText"
+                            android:padding="5dp" />
 
                         <FrameLayout
                             android:layout_width="match_parent"
@@ -934,13 +898,6 @@
 
                                 </LinearLayout>
 
-                                <ImageView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    app:srcCompat="@drawable/photoplace90x90"
-                                    android:id="@+id/airsuspensionImageviewpicplace"
-                                    tools:ignore="ContentDescription" />
-
                             </LinearLayout>
                         </FrameLayout>
 
@@ -958,7 +915,7 @@
                         android:layout_height="fill_parent" >
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Wheels and Tyres"
                             android:id="@+id/textView148"
@@ -966,7 +923,8 @@
                             android:textSize="15sp"
                             android:background="@drawable/button_roundoff3"
                             android:textColor="#ffffff"
-                            tools:ignore="HardcodedText" />
+                            tools:ignore="HardcodedText"
+                            android:padding="5dp" />
 
                         <FrameLayout
                             android:layout_width="match_parent"
@@ -1029,13 +987,6 @@
 
                                 </LinearLayout>
 
-                                <ImageView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    app:srcCompat="@drawable/photoplace90x90"
-                                    android:id="@+id/wheelsandtyresImageviewpicplace"
-                                    tools:ignore="ContentDescription" />
-
                             </LinearLayout>
                         </FrameLayout>
 
@@ -1052,7 +1003,7 @@
                         android:layout_height="fill_parent" >
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Lights and Reflectors"
                             android:id="@+id/textView156"
@@ -1060,7 +1011,8 @@
                             android:textSize="15sp"
                             android:background="@drawable/button_roundoff3"
                             android:textColor="#ffffff"
-                            tools:ignore="HardcodedText" />
+                            tools:ignore="HardcodedText"
+                            android:padding="5dp" />
 
                         <FrameLayout
                             android:layout_width="match_parent"
@@ -1121,13 +1073,6 @@
                                         tools:ignore="HardcodedText" />
                                 </LinearLayout>
 
-                                <ImageView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    app:srcCompat="@drawable/photoplace90x90"
-                                    android:id="@+id/lightsreflectorsImageviewpicplace"
-                                    tools:ignore="ContentDescription" />
-
                             </LinearLayout>
                         </FrameLayout>
 
@@ -1145,7 +1090,7 @@
                         tools:ignore="UselessParent">
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Exhaust"
                             android:id="@+id/textView162"
@@ -1153,7 +1098,8 @@
                             android:textSize="15sp"
                             android:background="@drawable/button_roundoff3"
                             android:textColor="#ffffff"
-                            tools:ignore="HardcodedText" />
+                            tools:ignore="HardcodedText"
+                            android:padding="5dp" />
 
                         <FrameLayout
                             android:layout_width="match_parent"
@@ -1214,13 +1160,6 @@
                                         tools:ignore="HardcodedText" />
                                 </LinearLayout>
 
-                                <ImageView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    app:srcCompat="@drawable/photoplace90x90"
-                                    android:id="@+id/exhaustImageviewpicplace"
-                                    tools:ignore="ContentDescription" />
-
                             </LinearLayout>
 
                         </FrameLayout>
@@ -1238,7 +1177,7 @@
                         android:layout_height="fill_parent" >
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Body, Guards, Straps"
                             android:id="@+id/textView182"
@@ -1246,7 +1185,8 @@
                             android:textSize="15sp"
                             android:background="@drawable/button_roundoff3"
                             android:textColor="#ffffff"
-                            tools:ignore="HardcodedText" />
+                            tools:ignore="HardcodedText"
+                            android:padding="5dp" />
 
                         <FrameLayout
                             android:layout_width="match_parent"
@@ -1307,13 +1247,6 @@
                                         tools:ignore="HardcodedText" />
                                 </LinearLayout>
 
-                                <ImageView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    app:srcCompat="@drawable/photoplace90x90"
-                                    android:id="@+id/bodyguardsImageviewpicplace"
-                                    tools:ignore="ContentDescription" />
-
                             </LinearLayout>
                         </FrameLayout>
 
@@ -1331,7 +1264,7 @@
                         android:layout_height="fill_parent" >
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="landing Leg"
                             android:id="@+id/textView190"
@@ -1339,7 +1272,8 @@
                             android:textSize="15sp"
                             android:background="@drawable/button_roundoff3"
                             android:textColor="#ffffff"
-                            tools:ignore="HardcodedText" />
+                            tools:ignore="HardcodedText"
+                            android:padding="5dp" />
 
                         <FrameLayout
                             android:layout_width="match_parent"
@@ -1397,13 +1331,6 @@
                                         android:layout_height="0dp" />
                                 </LinearLayout>
 
-                                <ImageView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    app:srcCompat="@drawable/photoplace90x90"
-                                    android:id="@+id/landinglegImageviewpicplace"
-                                    tools:ignore="ContentDescription" />
-
                             </LinearLayout>
                         </FrameLayout>
 
@@ -1420,7 +1347,7 @@
                         android:layout_height="fill_parent" >
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Spare, Steps, Tow"
                             android:id="@+id/textView169"
@@ -1428,7 +1355,8 @@
                             android:textSize="15sp"
                             android:background="@drawable/button_roundoff3"
                             android:textColor="#ffffff"
-                            tools:ignore="HardcodedText" />
+                            tools:ignore="HardcodedText"
+                            android:padding="5dp" />
 
                         <FrameLayout
                             android:layout_width="match_parent"
@@ -1487,13 +1415,6 @@
                                         android:visibility="invisible" />
                                 </LinearLayout>
 
-                                <ImageView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    app:srcCompat="@drawable/photoplace90x90"
-                                    android:id="@+id/sparetowImageviewpicplace"
-                                    tools:ignore="ContentDescription" />
-
                             </LinearLayout>
                         </FrameLayout>
 
@@ -1510,7 +1431,7 @@
                         android:layout_height="fill_parent" >
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Trailer Brake (operate)"
                             android:id="@+id/textView177"
@@ -1518,7 +1439,8 @@
                             android:textSize="15sp"
                             android:background="@drawable/button_roundoff3"
                             android:textColor="#ffffff"
-                            tools:ignore="HardcodedText" />
+                            tools:ignore="HardcodedText"
+                            android:padding="5dp" />
 
                         <FrameLayout
                             android:layout_width="match_parent"
@@ -1577,13 +1499,6 @@
                                         android:visibility="invisible" />
                                 </LinearLayout>
 
-                                <ImageView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    app:srcCompat="@drawable/photoplace90x90"
-                                    android:id="@+id/trailerbrakeImageviewpicplace"
-                                    tools:ignore="ContentDescription" />
-
                             </LinearLayout>
                         </FrameLayout>
 
@@ -1607,7 +1522,9 @@
                         android:textSize="15sp"
                         android:background="@drawable/button_roundoff2"
                         android:textColor="#ffffff"
-                        tools:ignore="HardcodedText" />
+                        tools:ignore="HardcodedText"
+                        android:layout_margin="10dp"
+                        android:padding="5dp" />
 
                 </FrameLayout>
 
@@ -1621,7 +1538,7 @@
                         android:layout_height="fill_parent" >
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Windows and Mirrors check"
                             android:id="@+id/textView6"
@@ -1629,7 +1546,8 @@
                             android:textSize="15sp"
                             android:background="@drawable/button_roundoff2"
                             android:textColor="#ffffff"
-                            tools:ignore="HardcodedText" />
+                            tools:ignore="HardcodedText"
+                            android:padding="5dp" />
 
                         <FrameLayout
                             android:layout_width="match_parent"
@@ -1688,13 +1606,6 @@
                                         android:visibility="invisible" />
                                 </LinearLayout>
 
-                                <ImageView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    app:srcCompat="@drawable/photoplace90x90"
-                                    android:id="@+id/winmirImageviewpicplace"
-                                    tools:ignore="ContentDescription" />
-
                             </LinearLayout>
                         </FrameLayout>
 
@@ -1711,7 +1622,7 @@
                         android:layout_height="fill_parent" >
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Seats,Belts and Controls check"
                             android:id="@+id/textView8"
@@ -1719,7 +1630,8 @@
                             android:textSize="15sp"
                             android:background="@drawable/button_roundoff2"
                             android:textColor="#ffffff"
-                            tools:ignore="HardcodedText" />
+                            tools:ignore="HardcodedText"
+                            android:padding="5dp" />
 
                         <FrameLayout
                             android:layout_width="match_parent"
@@ -1778,13 +1690,6 @@
                                         android:visibility="invisible" />
                                 </LinearLayout>
 
-                                <ImageView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    app:srcCompat="@drawable/photoplace90x90"
-                                    android:id="@+id/seatbeltsImageviewpicplace"
-                                    tools:ignore="ContentDescription" />
-
                             </LinearLayout>
                         </FrameLayout>
 
@@ -1801,7 +1706,7 @@
                         android:layout_height="fill_parent" >
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Washers and Wipers check"
                             android:id="@+id/textView10"
@@ -1809,7 +1714,8 @@
                             android:textSize="15sp"
                             android:background="@drawable/button_roundoff2"
                             android:textColor="#ffffff"
-                            tools:ignore="HardcodedText" />
+                            tools:ignore="HardcodedText"
+                            android:padding="5dp" />
 
                         <FrameLayout
                             android:layout_width="match_parent"
@@ -1868,13 +1774,6 @@
                                         android:visibility="invisible" />
                                 </LinearLayout>
 
-                                <ImageView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    app:srcCompat="@drawable/photoplace90x90"
-                                    android:id="@+id/washerandwiperImageviewpicplace"
-                                    tools:ignore="ContentDescription" />
-
                             </LinearLayout>
                         </FrameLayout>
 
@@ -1891,7 +1790,7 @@
                         android:layout_height="fill_parent" >
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Horn check"
                             android:id="@+id/textView12"
@@ -1899,7 +1798,8 @@
                             android:textSize="15sp"
                             android:background="@drawable/button_roundoff2"
                             android:textColor="#ffffff"
-                            tools:ignore="HardcodedText" />
+                            tools:ignore="HardcodedText"
+                            android:padding="5dp" />
 
                         <FrameLayout
                             android:layout_width="match_parent"
@@ -1958,13 +1858,6 @@
                                         android:visibility="invisible" />
                                 </LinearLayout>
 
-                                <ImageView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    app:srcCompat="@drawable/photoplace90x90"
-                                    android:id="@+id/hornImageviewpicplace"
-                                    tools:ignore="ContentDescription" />
-
                             </LinearLayout>
                         </FrameLayout>
 
@@ -1981,7 +1874,7 @@
                         android:layout_height="fill_parent" >
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Break warning light"
                             android:id="@+id/textView20"
@@ -1989,7 +1882,8 @@
                             android:textSize="15sp"
                             android:background="@drawable/button_roundoff2"
                             android:textColor="#ffffff"
-                            tools:ignore="HardcodedText" />
+                            tools:ignore="HardcodedText"
+                            android:padding="5dp" />
 
                         <FrameLayout
                             android:layout_width="match_parent"
@@ -2048,13 +1942,6 @@
                                         android:visibility="invisible" />
                                 </LinearLayout>
 
-                                <ImageView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    app:srcCompat="@drawable/photoplace90x90"
-                                    android:id="@+id/breakwarninglightImageviewpicplace"
-                                    tools:ignore="ContentDescription" />
-
                             </LinearLayout>
                         </FrameLayout>
 
@@ -2071,7 +1958,7 @@
                         android:layout_height="fill_parent" >
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Gauge &amp; Warning Lights"
                             android:id="@+id/textView84"
@@ -2079,7 +1966,8 @@
                             android:textSize="15sp"
                             android:background="@drawable/button_roundoff2"
                             android:textColor="#ffffff"
-                            tools:ignore="HardcodedText" />
+                            tools:ignore="HardcodedText"
+                            android:padding="5dp" />
 
                         <FrameLayout
                             android:layout_width="match_parent"
@@ -2138,13 +2026,6 @@
                                         android:visibility="invisible" />
                                 </LinearLayout>
 
-                                <ImageView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    app:srcCompat="@drawable/photoplace90x90"
-                                    android:id="@+id/gaugeImageviewpicplace"
-                                    tools:ignore="ContentDescription" />
-
                             </LinearLayout>
 
                         </FrameLayout>
@@ -2162,7 +2043,7 @@
                         android:layout_height="fill_parent" >
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Tacho and Speed Limiter"
                             android:id="@+id/textView91"
@@ -2170,7 +2051,8 @@
                             android:textSize="15sp"
                             android:background="@drawable/button_roundoff2"
                             android:textColor="#ffffff"
-                            tools:ignore="HardcodedText" />
+                            tools:ignore="HardcodedText"
+                            android:padding="5dp" />
 
                         <FrameLayout
                             android:layout_width="match_parent"
@@ -2229,13 +2111,6 @@
                                         android:visibility="invisible" />
                                 </LinearLayout>
 
-                                <ImageView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    app:srcCompat="@drawable/photoplace90x90"
-                                    android:id="@+id/tachoImageviewpicplace"
-                                    tools:ignore="ContentDescription" />
-
                             </LinearLayout>
 
                         </FrameLayout>
@@ -2253,7 +2128,7 @@
                         android:layout_height="fill_parent" >
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Air Leaks and Pressure"
                             android:id="@+id/textView104"
@@ -2261,7 +2136,8 @@
                             android:textSize="15sp"
                             android:background="@drawable/button_roundoff2"
                             android:textColor="#ffffff"
-                            tools:ignore="HardcodedText" />
+                            tools:ignore="HardcodedText"
+                            android:padding="5dp" />
 
                         <FrameLayout
                             android:layout_width="match_parent"
@@ -2320,13 +2196,6 @@
                                         android:visibility="invisible" />
                                 </LinearLayout>
 
-                                <ImageView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    app:srcCompat="@drawable/photoplace90x90"
-                                    android:id="@+id/airleaksImageviewpicplace"
-                                    tools:ignore="ContentDescription" />
-
                             </LinearLayout>
 
                         </FrameLayout>
@@ -2350,7 +2219,9 @@
                         android:textSize="15sp"
                         android:background="@drawable/button_roundoff"
                         android:textColor="#ffffff"
-                        tools:ignore="HardcodedText" />
+                        tools:ignore="HardcodedText"
+                        android:layout_margin="10dp"
+                        android:padding="5dp" />
 
                 </FrameLayout>
 
@@ -2364,7 +2235,7 @@
                         android:layout_height="fill_parent" >
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Steering and Breaking checks"
                             android:id="@+id/textView22"
@@ -2372,7 +2243,8 @@
                             android:textSize="15sp"
                             android:background="@drawable/button_roundoff"
                             android:textColor="#ffffff"
-                            tools:ignore="HardcodedText" />
+                            tools:ignore="HardcodedText"
+                            android:padding="5dp" />
 
                         <FrameLayout
                             android:layout_width="match_parent"
@@ -2431,13 +2303,6 @@
                                         android:visibility="invisible" />
                                 </LinearLayout>
 
-                                <ImageView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    app:srcCompat="@drawable/photoplace90x90"
-                                    android:id="@+id/steeringbreakingImageviewpicplace"
-                                    tools:ignore="ContentDescription" />
-
                             </LinearLayout>
                         </FrameLayout>
 
@@ -2454,7 +2319,7 @@
                         android:layout_height="fill_parent" >
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Load secure, balance checks"
                             android:id="@+id/textView119"
@@ -2462,7 +2327,8 @@
                             android:textSize="15sp"
                             android:background="@drawable/button_roundoff"
                             android:textColor="#ffffff"
-                            tools:ignore="HardcodedText" />
+                            tools:ignore="HardcodedText"
+                            android:padding="5dp" />
 
                         <FrameLayout
                             android:layout_width="match_parent"
@@ -2521,13 +2387,6 @@
                                         android:visibility="invisible" />
                                 </LinearLayout>
 
-                                <ImageView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    app:srcCompat="@drawable/photoplace90x90"
-                                    android:id="@+id/loadsecureImageviewpicplace"
-                                    tools:ignore="ContentDescription" />
-
                             </LinearLayout>
                         </FrameLayout>
 
@@ -2544,7 +2403,7 @@
                         android:layout_height="fill_parent" >
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Tacho, Speedo Limiter checks"
                             android:id="@+id/textView127"
@@ -2553,7 +2412,8 @@
                             android:background="@drawable/button_roundoff"
                             android:textColor="#ffffff"
                             tools:ignore="HardcodedText"
-                            android:maxLines="1" />
+                            android:maxLines="1"
+                            android:padding="5dp" />
 
                         <FrameLayout
                             android:layout_width="match_parent"
@@ -2612,13 +2472,6 @@
                                         android:visibility="invisible" />
                                 </LinearLayout>
 
-                                <ImageView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    app:srcCompat="@drawable/photoplace90x90"
-                                    android:id="@+id/tachospeedoImageviewpicplace"
-                                    tools:ignore="ContentDescription" />
-
                             </LinearLayout>
                         </FrameLayout>
 
@@ -2635,7 +2488,7 @@
                         android:layout_height="fill_parent" >
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="No Warning lights check"
                             android:id="@+id/textView135"
@@ -2643,7 +2496,8 @@
                             android:textSize="15sp"
                             android:background="@drawable/button_roundoff"
                             android:textColor="#ffffff"
-                            tools:ignore="HardcodedText" />
+                            tools:ignore="HardcodedText"
+                            android:padding="5dp" />
 
                         <FrameLayout
                             android:layout_width="match_parent"
@@ -2701,13 +2555,6 @@
                                         android:layout_height="0dp"
                                         android:visibility="invisible" />
                                 </LinearLayout>
-
-                                <ImageView
-                                    android:layout_width="wrap_content"
-                                    app:srcCompat="@drawable/photoplace90x90"
-                                    android:id="@+id/nowarninglightsImageviewpicplace"
-                                    tools:ignore="ContentDescription"
-                                    android:layout_height="match_parent" />
 
                             </LinearLayout>
                         </FrameLayout>

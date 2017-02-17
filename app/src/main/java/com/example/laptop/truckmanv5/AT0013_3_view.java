@@ -52,7 +52,7 @@ public class AT0013_3_view extends AppCompatActivity {
 
     ImageButton at0013_3takephoto;
     ImageButton at0013_3gallary;
-    ImageButton at0013_3selectmap;
+
 
     ImageView photoplace250x250at0013_3;
 
@@ -146,7 +146,7 @@ public class AT0013_3_view extends AppCompatActivity {
 
         at0013_3takephoto = (ImageButton) findViewById(R.id.at0013_3takephoto);
         at0013_3gallary = (ImageButton) findViewById(R.id.at0013_3gallary);
-        at0013_3selectmap = (ImageButton) findViewById(R.id.at0013_3selectmap);
+
 
         at0013_3ck_nature_works_other_description = (EditText) findViewById(R.id.at0013_3ck_nature_works_other_description);
         at0013_3ck_hazard_tmp_comments = (EditText) findViewById(R.id.at0013_3ck_hazard_tmp_comments);

@@ -24,6 +24,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.HorizontalScrollView;
@@ -64,40 +65,14 @@ import static com.example.laptop.truckmanv5.R.id.imageView;
 public class Person_Details extends AppCompatActivity {
 
     private TextView tvPersonDetailName,tvPersonDetailEmail,tvPersonDetailPhone,tvcompanyname,tvReg
-            ,startDate,endDate,tvreport_email_recipient,tvlocation_address_view;
+            ,startDate,endDate,tvreport_email_recipient;
 
 
 
     private StorageReference mStorage;
 
     /////////////////////////////////////////////////////////////////////////
-    //New Database Links
-    private ImageView taxinsuranceImageviewpicplace;
-    private ImageView regplateImageviewpicplace;
-    private ImageView airelectrialImageviewpicplace;
-    private ImageView fluidleaksImageviewpicplace;
-    private ImageView airsuspensionImageviewpicplace;
-    private ImageView wheelsandtyresImageviewpicplace;
-    private ImageView lightsreflectorsImageviewpicplace;
-    private ImageView exhaustImageviewpicplace;
-    private ImageView bodyguardsImageviewpicplace;
-    private ImageView landinglegImageviewpicplace;
-    private ImageView sparetowImageviewpicplace;
-    private ImageView trailerbrakeImageviewpicplace;
 
-    private ImageView winmirImageviewpicplace;
-    private ImageView seatbeltsImageviewpicplace;
-    private ImageView washerandwiperImageviewpicplace;
-    private ImageView hornImageviewpicplace;
-    private ImageView breakwarninglightImageviewpicplace;
-    private ImageView gaugeImageviewpicplace;
-    private ImageView tachoImageviewpicplace;
-    private ImageView airleaksImageviewpicplace;
-
-    private ImageView steeringbreakingImageviewpicplace;
-    private ImageView loadsecureImageviewpicplace;
-    private ImageView tachospeedoImageviewpicplace;
-    private ImageView nowarninglightsImageviewpicplace;
 
     private ImageView vehiclephotoImageviewpicplace;
 
@@ -154,11 +129,10 @@ public class Person_Details extends AppCompatActivity {
 
 
     /////////////////////////////////////////////////////////////////////////
-    //Email Reports
-    //Email In-Cab
 
 
-    private ImageButton emailreport;
+
+    Button emailreport;
 
     /////////////////////////////////////////////////////////////////////////
 
@@ -166,9 +140,7 @@ public class Person_Details extends AppCompatActivity {
 
 
     String taxinsurancepictureuri;
-    String taxinsurancepicturepath;
     String regplatepictureuri;
-    String regplatepicturepath;
     String airelectrialpictureuri;
     String fluidleakspictureuri;
     String airsuspensionpictureuri;
@@ -196,33 +168,6 @@ public class Person_Details extends AppCompatActivity {
 
     String vehiclephotopictureuri;
 
-    String airelectrialpicturepath;
-    String fluidleakspicturepath;
-    String airsuspensionpicturepath;
-    String wheelsandtyrespicturepath;
-    String lightsreflectorspicturepath;
-    String exhaustpicturepath;
-    String bodyguardspicturepath;
-    String landinglegpicturepath;
-    String sparetowpicturepath;
-    String trailerbrakepicturepath;
-
-    String winmirpicturepath;
-    String seatbeltspicturepath;
-    String washerandwiperpicturepath;
-    String hornpicturepath;
-    String breakwarninglightpicturepath;
-    String gaugepicturepath;
-    String tachopicturepath;
-    String airleakspicturepath;
-
-    String steeringbreakingpicturepath;
-    String loadsecurepicturepath;
-    String tachospeedopicturepath;
-    String nowarninglightspicturepath;
-
-
-    String vehiclephotopicturepath;
 
     String locationlat;
     String locationlong;
@@ -255,7 +200,7 @@ public class Person_Details extends AppCompatActivity {
 
 
 
-        emailreport = (ImageButton) findViewById(R.id.emailreport);
+        emailreport = (Button) findViewById(R.id.emailreport);
 
 
 
@@ -269,8 +214,6 @@ public class Person_Details extends AppCompatActivity {
                 String tvPersonDetailNameemailemailstring = tvPersonDetailNameemailemail.getText().toString();
                 TextView tvreport_email_recipientmail = (TextView) findViewById(R.id.tvreport_email_recipient);
                 String tvreport_email_recipientmailstring = tvreport_email_recipientmail.getText().toString();
-                TextView tvlocation_address_viewmail = (TextView) findViewById(R.id.tvlocation_address_view);
-                String tvlocation_address_viewmailstring = tvlocation_address_viewmail.getText().toString();
                 TextView tvPersonDetailEmailemail = (TextView) findViewById(R.id.tvPersonDetailEmail);
                 String tvPersonDetailEmailemailstring = tvPersonDetailEmailemail.getText().toString();
                 TextView tvcompanynameemail = (TextView) findViewById(R.id.tvcompanyname);
@@ -469,84 +412,59 @@ public class Person_Details extends AppCompatActivity {
                                  "\n" +
                                  "Tax Insurance defect fill, " + taxinsurancedescribedefectfill_reportemailstring + "\n" +
                                  "Tax Insurance Temp defect fill, " + taxinsurancetempfixfill_reportemailstring + "\n" +
-                                 "Tax Insurance Photo, " + taxinsurancepictureuri + "\n" +
                                  "Reg Plate defect fill, " + regplatedescribedefectfill_reportemailstring + "\n" +
                                  "Reg Plate Temp defect fill, " + regplatetempfixfill_reportemailstring + "\n" +
-                                 "Reg Plate Photo, " + regplatepictureuri + "\n" +
                                  "Air Electrial defect fill, " + airelectrialdescribedefectfill_reportemailstring + "\n" +
                                  "Air Electrial Temp defect fill, " + airelectrialtempfixfill_reportemailstring + "\n" +
-                                 "Air Electrial Photo, " + airelectrialpictureuri + "\n" +
                                  "Fluid leaks defect fill, " + fluidleaksdescribedefectfill_reportemailstring + "\n" +
                                  "Fluid leaks Temp defect fill, " + fluidleakstempfixfill_reportemailstring + "\n" +
-                                 "Fluid Leaks Photo, " + fluidleakspictureuri + "\n" +
                                  "Air Suspension defect fill, " + airsuspensiondescribedefectfill_reportemailstring + "\n" +
                                  "Air Suspension Temp defect fill, " + airsuspensiontempfixfill_reportemailstring + "\n" +
-                                 "Air Suspension Photo, " + airsuspensionpictureuri + "\n" +
                                  "Wheels and Tyres defect fill, " + wheelstyresdescribedefectfill_reportemailstring + "\n" +
                                  "Wheels and Tyres Temp defect fill, " + wheelstyrestempfixfill_reportemailstring + "\n" +
-                                 "Wheels and Tyres Photo, " + wheelsandtyrespictureuri + "\n" +
                                  "Lights and Reflectors defect fill, " + lightsreflectorsdescribedefectfill_reportemailstring + "\n" +
                                  "Lights and Reflectors Temp defect fill, " + lightsreflectorstempfixfill_reportemailstring + "\n" +
-                                 "Lights and Reflectors Photo, " + lightsreflectorspictureuri + "\n" +
                                  "Exhaust defect fill, " + exhaustdescribedefectfill_reportemailstring + "\n" +
                                  "Exhaust Temp defect fill, " + exhausttempfixfill_reportemailstring + "\n" +
-                                 "Exhaust Photo, " + exhaustpictureuri + "\n" +
                                  "Body and Guards defect fill, " + bodyguardsdescribedefectfill_reportemailstring + "\n" +
                                  "Body and Guards Temp defect fill, " + bodyguardstempfixfill_reportemailstring + "\n" +
-                                 "Body Guards Photo, " + bodyguardspictureuri + "\n" +
                                  "Landing Leg defect fill, " + landinglegdescribedefectfill_reportemailstring + "\n" +
                                  "Landing Leg defect fill, " + landinglegtempfixfill_reportemailstring + "\n" +
-                                 "Landing Leg Photo, " + landinglegpictureuri + "\n" +
                                  "Spare Tow defect fill, " + sparetowdescribedefectfill_reportemailstring + "\n" +
                                  "Spare Tow Temp defect fill, " + sparetowtempfixfill_reportemailstring + "\n" +
-                                 "Spare Tow Photo, " + sparetowpictureuri + "\n" +
                                  "Trailer break defect fill, " + trailerbrakedescribedefectfill_reportemailstring + "\n" +
                                  "Trailer break defect fill, " + trailerbraketempfixfill_reportemailstring + "\n" +
-                                 "Trailer Brake Photo, " + trailerbrakepictureuri + "\n" +
                                  "\n" +
                                  ">>>>>>> In-Cab Inspection <<<<<<<" + "\n" +
                                  "\n" +
                                  "Windows and Mirrors defect fill, " + winmirdescribedefectfill_reportemailstring + "\n" +
                                  "Windows and Mirrors Temp defect fill, " + winmirtempfixfill_reportemailstring + "\n" +
-                                 "Windows and Mirrors Photo, " + winmirpictureuri + "\n" +
                                  "Seatbelt defect fill, " + seatbeltdescribedefectfill_reportemailstring + "\n" +
                                  "Seatbelt break defect fill, " + seatbelttempfixfill_reportemailstring + "\n" +
-                                 "Seatbelts Photo, " + seatbeltspictureuri + "\n" +
                                  "Washer and Wiper defect fill, " + washerandwiperdescribedefectfill_reportemailstring + "\n" +
                                  "Washer and Wiper Temp defect fill, " + washerandwipertempfixfill_reportemailstring + "\n" +
-                                 "Washer and Wiper Photo, " + washerandwiperpictureuri + "\n" +
                                  "Horn defect fill, " + horndescribedefectfill_reportemailstring + "\n" +
                                  "Horn defect fill, " + horntempfixfill_reportemailstring + "\n" +
-                                 "Horn Photo, " + hornpictureuri + "\n" +
                                  "Break Warning Lights defect fill, " + breakwarninglightdescribedefectfill_reportemailstring + "\n" +
                                  "Break Warning Lights Temp defect fill, " +  breakwarninglighttempfixfill_reportemailstring + "\n" +
-                                 "Break Warning Lights Photo, " + breakwarninglightpictureuri + "\n" +
                                  "Gauges defect fill, " + gaugedescribedefectfill_reportemailstring + "\n" +
                                  "Gauges defect fill, " + gaugetempfixfill_reportemailstring + "\n" +
-                                 "Gauges Photo, " + gaugepictureuri + "\n" +
                                  "Tacho defect fill, " + tachodescribedefectfill_reportemailstring + "\n" +
                                  "Tacho Temp defect fill, " +  tachotempfixfill_reportemailstring + "\n" +
-                                 "Tacho Photo, " + tachopictureuri + "\n" +
                                  "Air Leaks defect fill, " + airleaksdescribedefectfill_reportemailstring + "\n" +
                                  "Air Leaks defect fill, " + airleakstempfixfill_reportemailstring + "\n" +
-                                 "Airleaks Photo, " + airleakspictureuri + "\n" +
                                  "\n" +
                                  ">>>>>>> Driving Inspection <<<<<<<" + "\n" +
                                  "\n" +
                                  "Steering and Breaking defect fill, " + steeringbreakingdescribedefectfill_reportemailstring + "\n" +
                                  "Steering and Breaking Temp defect fill, " +  steeringbreakingtempfixfill_reportemailstring + "\n" +
-                                 "Steering and Breaking Photo, " + steeringbreakingpictureuri + "\n" +
                                  "Load secure defect fill, " + loadsecuredescribedefectfill_reportemailstring + "\n" +
                                  "Load secure fill, " + loadsecuretempfixfill_reportemailstring + "\n" +
-                                 "Load secure Photo, " + loadsecurepictureuri + "\n" +
                                  "Tacho and Speedo defect fill, " + tachospeedodescribedefectfill_reportemailstring + "\n" +
                                  "Tacho and Speedo Temp defect fill, " +  tachospeedotempfixfill_reportemailstring + "\n" +
-                                 "Tacho and Speedo limiter Photo, " + tachospeedopictureuri + "\n" +
                                  "No Warning lights defect fill, " + nowarninglightsdescribedefectfill_reportemailstring + "\n" +
                                  "No Warning lights  fill, " + nowarninglightstempfixfill_reportemailstring + "\n" +
-                                "No Warning Lights limiter Photo, " + nowarninglightspictureuri + "\n"
-                                + "\n" + ", "
-                                + "\n" + ", ";
+                                  "\n" + ", ";
 
 
                 File outputDir = getApplicationContext().getExternalCacheDir();
@@ -636,33 +554,6 @@ public class Person_Details extends AppCompatActivity {
         });
 
 
-        taxinsuranceImageviewpicplace = (ImageView) findViewById(R.id.taxinsuranceImageviewpicplace);
-        regplateImageviewpicplace = (ImageView) findViewById(R.id.regplateImageviewpicplace);
-        airelectrialImageviewpicplace = (ImageView) findViewById(R.id.airelectrialImageviewpicplace);
-        fluidleaksImageviewpicplace = (ImageView) findViewById(R.id.fluidleaksImageviewpicplace);
-        airsuspensionImageviewpicplace = (ImageView) findViewById(R.id.airsuspensionImageviewpicplace);
-        wheelsandtyresImageviewpicplace = (ImageView) findViewById(R.id.wheelsandtyresImageviewpicplace);
-        lightsreflectorsImageviewpicplace = (ImageView) findViewById(R.id.lightsreflectorsImageviewpicplace);
-        exhaustImageviewpicplace = (ImageView) findViewById(R.id.exhaustImageviewpicplace);
-        bodyguardsImageviewpicplace = (ImageView) findViewById(R.id.bodyguardsImageviewpicplace);
-        landinglegImageviewpicplace = (ImageView) findViewById(R.id.landinglegImageviewpicplace);
-        sparetowImageviewpicplace = (ImageView) findViewById(R.id.sparetowImageviewpicplace);
-        trailerbrakeImageviewpicplace = (ImageView) findViewById(R.id.trailerbrakeImageviewpicplace);
-
-        winmirImageviewpicplace = (ImageView) findViewById(R.id.winmirImageviewpicplace);
-        seatbeltsImageviewpicplace = (ImageView) findViewById(R.id.seatbeltsImageviewpicplace);
-        washerandwiperImageviewpicplace = (ImageView) findViewById(R.id.washerandwiperImageviewpicplace);
-        hornImageviewpicplace = (ImageView) findViewById(R.id.hornImageviewpicplace);
-        breakwarninglightImageviewpicplace = (ImageView) findViewById(R.id.breakwarninglightImageviewpicplace);
-        gaugeImageviewpicplace = (ImageView) findViewById(R.id.gaugeImageviewpicplace);
-        tachoImageviewpicplace = (ImageView) findViewById(R.id.tachoImageviewpicplace);
-        airleaksImageviewpicplace = (ImageView) findViewById(R.id.airleaksImageviewpicplace);
-
-        steeringbreakingImageviewpicplace = (ImageView) findViewById(R.id.steeringbreakingImageviewpicplace);
-        loadsecureImageviewpicplace = (ImageView) findViewById(R.id.loadsecureImageviewpicplace);
-        tachospeedoImageviewpicplace = (ImageView) findViewById(R.id.tachospeedoImageviewpicplace);
-        nowarninglightsImageviewpicplace = (ImageView) findViewById(R.id.nowarninglightsImageviewpicplace);
-
         vehiclephotoImageviewpicplace = (ImageView) findViewById(R.id.vehiclephotoImageviewpicplace);
 
 
@@ -671,7 +562,7 @@ public class Person_Details extends AppCompatActivity {
         tvPersonDetailEmail= (TextView) findViewById(R.id.tvPersonDetailEmail);
         tvPersonDetailPhone= (TextView) findViewById(R.id.tvPersonDetailPhone);
         tvreport_email_recipient= (TextView) findViewById(R.id.tvreport_email_recipient);
-        tvlocation_address_view= (TextView) findViewById(R.id.tvlocation_address_view);
+
 
 
         tvcompanyname= (TextView) findViewById(R.id.tvcompanyname);
@@ -749,7 +640,6 @@ public class Person_Details extends AppCompatActivity {
                         tvPersonDetailName.setText(personDetailsModel.getuser_name());
                         tvPersonDetailEmail.setText(personDetailsModel.getuser_email());
                         tvreport_email_recipient.setText(personDetailsModel.getreport_email_recipient());
-                        tvlocation_address_view.setText(personDetailsModel.getlocation_address_view());
                         tvPersonDetailPhone.setText(personDetailsModel.getuser_contact_number());
                         tvcompanyname.setText(personDetailsModel.getuser_company());
                         tvReg.setText(personDetailsModel.getReg());
@@ -805,90 +695,11 @@ public class Person_Details extends AppCompatActivity {
                         airelectrialdescribedefectfill_report.setText(personDetailsModel.getairelectrialdescribedefectfill());
                         airsuspensiontempfixfill_report.setText(personDetailsModel.getairsuspensiontempfixfill());
                         airsuspensiondescribedefectfill_report.setText(personDetailsModel.getairsuspensiondescribedefectfill());
-                        //url address
-                        taxinsurancepictureuri = personDetailsModel.gettaxinsurancepictureuri();
-                        taxinsurancepicturepath = personDetailsModel.gettaxinsurancepicturepath();
-                        regplatepictureuri = personDetailsModel.getregplatepictureuri();
-                        regplatepicturepath = personDetailsModel.getregplatepicturepath();
-                        airelectrialpictureuri = personDetailsModel.getairelectrialpictureuri();
-                        fluidleakspictureuri = personDetailsModel.getfluidleakspictureuri();
-                        airsuspensionpictureuri = personDetailsModel.getairsuspensionpictureuri();
-                        wheelsandtyrespictureuri = personDetailsModel.getwheelsandtyrespictureuri();
-                        lightsreflectorspictureuri = personDetailsModel.getlightsreflectorspictureuri();
-                        exhaustpictureuri = personDetailsModel.getexhaustpictureuri();
-                        bodyguardspictureuri = personDetailsModel.getbodyguardspictureuri();
-                        landinglegpictureuri = personDetailsModel.getlandinglegpictureuri();
-                        sparetowpictureuri = personDetailsModel.getsparetowpictureuri();
-                        trailerbrakepictureuri = personDetailsModel.gettrailerbrakepictureuri();
-
-                        winmirpictureuri = personDetailsModel.getwinmirpictureuri();
-                        seatbeltspictureuri = personDetailsModel.getseatbeltspictureuri();
-                        washerandwiperpictureuri = personDetailsModel.getwasherandwiperpictureuri();
-                        hornpictureuri = personDetailsModel.gethornpictureuri();
-                        breakwarninglightpictureuri = personDetailsModel.getbreakwarninglightpictureuri();
-                        gaugepictureuri = personDetailsModel.getgaugepictureuri();
-                        tachopictureuri = personDetailsModel.gettachopictureuri();
-                        airleakspictureuri = personDetailsModel.getairleakspictureuri();
-
-                        steeringbreakingpictureuri = personDetailsModel.getsteeringbreakingpictureuri();
-                        loadsecurepictureuri = personDetailsModel.getloadsecurepictureuri();
-                        tachospeedopictureuri = personDetailsModel.gettachospeedopictureuri();
-                        nowarninglightspictureuri = personDetailsModel.getnowarninglightspictureuri();
-
-                        vehiclephotopictureuri = personDetailsModel.getvehiclephotopictureuri();
-
-                        airelectrialpicturepath = personDetailsModel.getairelectrialpicturepath();
-                        fluidleakspicturepath = personDetailsModel.getfluidleakspicturepath();
-                        airsuspensionpicturepath = personDetailsModel.getairsuspensionpicturepath();
-                        wheelsandtyrespicturepath = personDetailsModel.getwheelsandtyrespicturepath();
-                        lightsreflectorspicturepath = personDetailsModel.getlightsreflectorspicturepath();
-                        exhaustpicturepath = personDetailsModel.getexhaustpicturepath();
-                        bodyguardspicturepath = personDetailsModel.getbodyguardspicturepath();
-                        landinglegpicturepath = personDetailsModel.getlandinglegpicturepath();
-                        sparetowpicturepath = personDetailsModel.getsparetowpicturepath();
-                        trailerbrakepicturepath = personDetailsModel.gettrailerbrakepicturepath();
-
-                        winmirpicturepath = personDetailsModel.getwinmirpicturepath();
-                        seatbeltspicturepath = personDetailsModel.getseatbeltspicturepath();
-                        washerandwiperpicturepath = personDetailsModel.getwasherandwiperpicturepath();
-                        hornpicturepath = personDetailsModel.gethornpicturepath();
-                        breakwarninglightpicturepath = personDetailsModel.getbreakwarninglightpicturepath();
-                        gaugepicturepath = personDetailsModel.getgaugepicturepath();
-                        tachopicturepath = personDetailsModel.gettachopicturepath();
-                        airleakspicturepath = personDetailsModel.getairleakspicturepath();
-                        steeringbreakingpicturepath = personDetailsModel.getsteeringbreakingpicturepath();
-                        loadsecurepicturepath = personDetailsModel.getloadsecurepicturepath();
-                        tachospeedopicturepath= personDetailsModel.gettachospeedopicturepath();
-                        nowarninglightspicturepath = personDetailsModel.getnowarninglightspicturepath();
-                        vehiclephotopicturepath = personDetailsModel.getvehiclephotopicturepath();
-
-                        Picasso.with(Person_Details.this).load(taxinsurancepictureuri).resize(300,300).centerCrop().into(taxinsuranceImageviewpicplace);
-                        Picasso.with(Person_Details.this).load(regplatepictureuri).resize(300,300).centerCrop().into(regplateImageviewpicplace);
-                        Picasso.with(Person_Details.this).load(airelectrialpictureuri).resize(300,300).centerCrop().into(airelectrialImageviewpicplace);
-                        Picasso.with(Person_Details.this).load(fluidleakspictureuri).resize(300,300).centerCrop().into(fluidleaksImageviewpicplace);
-                        Picasso.with(Person_Details.this).load(airsuspensionpictureuri).resize(300,300).centerCrop().into(airsuspensionImageviewpicplace);
-                        Picasso.with(Person_Details.this).load(wheelsandtyrespictureuri).resize(300,300).centerCrop().into(wheelsandtyresImageviewpicplace);
-                        Picasso.with(Person_Details.this).load(lightsreflectorspictureuri).resize(300,300).centerCrop().into(lightsreflectorsImageviewpicplace);
-                        Picasso.with(Person_Details.this).load(exhaustpictureuri).resize(300,300).centerCrop().into(exhaustImageviewpicplace);
-                        Picasso.with(Person_Details.this).load(bodyguardspictureuri).resize(300,300).centerCrop().into(bodyguardsImageviewpicplace);
-                        Picasso.with(Person_Details.this).load(landinglegpictureuri).resize(300,300).centerCrop().into(landinglegImageviewpicplace);
-                        Picasso.with(Person_Details.this).load(sparetowpictureuri).resize(300,300).centerCrop().into(sparetowImageviewpicplace);
-                        Picasso.with(Person_Details.this).load(trailerbrakepictureuri).resize(300,300).centerCrop().into(trailerbrakeImageviewpicplace);
 
 
-                        Picasso.with(Person_Details.this).load(winmirpictureuri).resize(300,300).centerCrop().into(winmirImageviewpicplace);
-                        Picasso.with(Person_Details.this).load(seatbeltspictureuri).resize(300,300).centerCrop().into(seatbeltsImageviewpicplace);
-                        Picasso.with(Person_Details.this).load(washerandwiperpictureuri).resize(300,300).centerCrop().into(washerandwiperImageviewpicplace);
-                        Picasso.with(Person_Details.this).load(hornpictureuri).resize(300,300).centerCrop().into(hornImageviewpicplace);
-                        Picasso.with(Person_Details.this).load(breakwarninglightpictureuri).resize(300,300).centerCrop().into(breakwarninglightImageviewpicplace);
-                        Picasso.with(Person_Details.this).load(gaugepictureuri).resize(300,300).centerCrop().into(gaugeImageviewpicplace);
-                        Picasso.with(Person_Details.this).load(tachopictureuri).resize(300,300).centerCrop().into(tachoImageviewpicplace);
-                        Picasso.with(Person_Details.this).load(airleakspictureuri).resize(300,300).centerCrop().into(airleaksImageviewpicplace);
 
-                        Picasso.with(Person_Details.this).load(steeringbreakingpictureuri).resize(300,300).centerCrop().into(steeringbreakingImageviewpicplace);
-                        Picasso.with(Person_Details.this).load(loadsecurepictureuri).resize(300,300).centerCrop().into(loadsecureImageviewpicplace);
-                        Picasso.with(Person_Details.this).load(tachospeedopictureuri).resize(300,300).centerCrop().into(tachospeedoImageviewpicplace);
-                        Picasso.with(Person_Details.this).load(nowarninglightspictureuri).resize(300,300).centerCrop().into(nowarninglightsImageviewpicplace);
+
+
 
 
                         Picasso.with(Person_Details.this).load(vehiclephotopictureuri).fit().centerCrop().into(vehiclephotoImageviewpicplace);

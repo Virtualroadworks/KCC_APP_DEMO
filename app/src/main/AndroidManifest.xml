@@ -7,6 +7,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
 
     <application
         android:name=".truckmanv5"
@@ -241,7 +242,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".AT0013_3_database"
-            android:label="Inspection Checklist"
+            android:label="Inspection Checklist Database"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".AT0013_3_formfilled"
@@ -253,7 +254,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".AT_RiskAssessment_database"
-            android:label="@string/title_activity_at__risk_assessment_database"
+            android:label="Risk Assessment Database"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".AT_RiskAssessment_formfilled"
@@ -289,7 +290,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".AT_Confined_Space_listadaptor"
-            android:label="@string/title_activity_at__confined__space_listadaptor"
+            android:label="Confined Space Database"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".AT_Confined_Space_formfilled"
@@ -297,7 +298,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".AT_Confined_Space_database"
-            android:label="@string/title_activity_at__confined__space_database"
+            android:label="Confined Space Database"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

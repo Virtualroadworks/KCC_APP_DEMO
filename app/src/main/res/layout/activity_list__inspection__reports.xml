@@ -118,15 +118,6 @@
                                 android:layout_gravity="center" />
                         </FrameLayout>
 
-                        <ImageView
-                            android:id="@+id/DeletePerson"
-                            android:layout_width="25dp"
-                            android:layout_height="25dp"
-                            android:layout_gravity="center_vertical|end"
-                            android:contentDescription="Delete"
-                            android:src="@drawable/vr_bin_icon"
-                            android:layout_marginRight="5dp"
-                            tools:ignore="HardcodedText,InefficientWeight,RtlHardcoded" />
                     </LinearLayout>
 
                 </LinearLayout>

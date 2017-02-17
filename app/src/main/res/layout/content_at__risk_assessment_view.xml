@@ -27,36 +27,149 @@
 
             <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp">
-
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
                 <LinearLayout
                     android:orientation="horizontal"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="UselessParent">
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         app:srcCompat="@drawable/dcc_logo_100dp"
                         android:id="@+id/imageView7"
-                        android:layout_weight="1"
                         tools:ignore="ContentDescription" />
 
-                    <TextView
-                        android:text="Risk Assessment"
+                    <FrameLayout
                         android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            tools:ignore="UselessParent">
+
+                            <TextView
+                                android:text="Vehicle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="normal|bold"
+                                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                tools:ignore="HardcodedText"
+                                android:textSize="14sp"
+                                android:background="@color/trans" />
+
+                            <TextView
+                                android:text="Inspection"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="normal|bold"
+                                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                tools:ignore="HardcodedText"
+                                android:textSize="14sp"
+                                android:background="@color/trans" />
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:textStyle="normal|bold"
-                        android:textColor="@color/common_google_signin_btn_text_dark_focused"
-                        tools:ignore="HardcodedText"
-                        android:textSize="25sp"
-                        android:textAlignment="viewStart"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:background="@color/trans" />
+                        android:layout_gravity="right"
+                        tools:ignore="RtlHardcoded">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            tools:ignore="DisableBaselineAlignment,UselessParent"
+                            android:layout_gravity="end">
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:paddingStart="5dp"
+                                android:paddingEnd="5dp">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    tools:ignore="UseCompoundDrawables">
+
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        app:srcCompat="@drawable/onlineicon"
+                                        android:id="@+id/onlineicon"
+                                        tools:ignore="ContentDescription,TooDeepLayout" />
+
+                                    <TextView
+                                        android:text="Online"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:id="@+id/Onlinetext"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        tools:ignore="HardcodedText,RtlSymmetry"
+                                        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                        android:textStyle="normal|bold"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:paddingStart="5dp"
+                                android:paddingEnd="5dp">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    tools:ignore="UseCompoundDrawables">
+
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        app:srcCompat="@drawable/gpsonlineicon"
+                                        android:id="@+id/gpsonlineicon"
+                                        tools:ignore="ContentDescription" />
+
+                                    <TextView
+                                        android:text="GPS On"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:id="@+id/GPSOnlinetext"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        tools:ignore="HardcodedText,RtlSymmetry"
+                                        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                                        android:textStyle="normal|bold"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                    </FrameLayout>
                 </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:foreground="@color/common_google_signin_btn_text_dark_focused"
+                tools:ignore="UselessLeaf">
 
             </FrameLayout>
 
@@ -526,7 +639,8 @@
                                         android:scaleX="1.6"
                                         android:scaleY="1.6"
                                         android:id="@+id/raform_trafficfootpath"
-                                        android:buttonTint="@color/Red_tickbox" />
+                                        android:buttonTint="@color/Red_tickbox"
+                                        tools:ignore="TooManyViews" />
 
                                     <TextView
                                         android:text="Footpath"
@@ -4514,31 +4628,32 @@
                     android:layout_height="match_parent"
                 android:layout_marginTop="20dp">
 
-                    <LinearLayout
-                        android:orientation="horizontal"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-                        <Button
-                            android:text="Cancel"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/bCancel"
-                            android:layout_weight="1"
-                            tools:ignore="ButtonStyle,HardcodedText"
-                            android:background="@drawable/button_roundoff5"
-                            android:textSize="24sp" />
-
-                        <Button
-                            android:text="OK"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/bOK"
-                            android:layout_weight="1"
-                            tools:ignore="ButtonStyle,HardcodedText"
-                            android:background="@drawable/button_roundoff4"
-                            android:textSize="24sp" />
-                    </LinearLayout>
+                    <Button
+                        android:text="Cancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/bCancel"
+                        android:layout_weight="1"
+                        tools:ignore="ButtonStyle,HardcodedText,NestedWeights"
+                        android:background="@drawable/button_roundoff5"
+                        android:layout_margin="20dp"
+                        android:textSize="20sp" />
+                    <Button
+                        android:text="submit form"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/bOK"
+                        android:layout_weight="1"
+                        tools:ignore="ButtonStyle,HardcodedText"
+                        android:background="@drawable/button_roundoff7"
+                        android:layout_margin="20dp"
+                        android:textSize="20sp" />
+                </LinearLayout>
 
                 </FrameLayout>
 

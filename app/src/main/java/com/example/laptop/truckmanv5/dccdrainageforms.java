@@ -65,7 +65,7 @@ public class dccdrainageforms extends AppCompatActivity  {
         database_Vehicle_check = (Button) findViewById(R.id.database_Vehicle_check);
 
         form_tm_plans = (Button) findViewById(R.id.form_tm_plans);
-        database_tm_plans = (Button) findViewById(R.id.database_tm_plans);
+        //database_tm_plans = (Button) findViewById(R.id.database_tm_plans);
 
         form_confined_space = (Button) findViewById(R.id.form_confined_space);
         database_confined_space = (Button) findViewById(R.id.database_confined_space);
