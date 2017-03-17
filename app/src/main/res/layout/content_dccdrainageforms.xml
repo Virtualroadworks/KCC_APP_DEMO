@@ -235,29 +235,7 @@
                             android:textSize="12sp" />
                     </FrameLayout>
 
-                    <FrameLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:id="@+id/Level1access">
 
-                        <FrameLayout
-                            android:layout_height="20dp"
-                            android:background="@drawable/button_roundoff"
-                            android:layout_width="wrap_content"
-                            android:layout_gravity="right">
-
-                            <TextView
-                                android:text="Level 1 : Access"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:gravity="center"
-                                android:textColor="@color/cardview_light_background"
-                                tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry"
-                                android:textSize="12sp"
-                                android:paddingEnd="20dp"
-                                android:paddingStart="20dp" />
-                        </FrameLayout>
-                    </FrameLayout>
 
                     <LinearLayout
                         android:orientation="horizontal"
@@ -324,29 +302,7 @@
                             android:background="@drawable/button_roundoff4" />
                     </FrameLayout>
 
-                    <FrameLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/Level1access">
 
-                        <FrameLayout
-                            android:layout_height="20dp"
-                            android:background="@drawable/button_roundoff"
-                            android:layout_width="wrap_content"
-                            android:layout_gravity="right">
-
-                            <TextView
-                                android:text="Level 1 + 2 : Access"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:gravity="center"
-                                android:textColor="@color/cardview_light_background"
-                                tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry"
-                                android:textSize="12sp"
-                                android:paddingStart="20dp"
-                                android:paddingEnd="20dp" />
-                        </FrameLayout>
-                    </FrameLayout>
 
                     <LinearLayout
                         android:orientation="horizontal"
@@ -410,29 +366,7 @@
                             android:textAlignment="viewStart" />
                     </FrameLayout>
 
-                    <FrameLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/Level1access">
 
-                        <FrameLayout
-                            android:layout_height="20dp"
-                            android:background="@drawable/button_roundoff"
-                            android:layout_width="wrap_content"
-                            android:layout_gravity="right">
-
-                            <TextView
-                                android:text="Level 1 + 2 + 3: Access"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:gravity="center"
-                                android:textColor="@color/cardview_light_background"
-                                tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry"
-                                android:textSize="12sp"
-                                android:paddingStart="20dp"
-                                android:paddingEnd="20dp" />
-                        </FrameLayout>
-                    </FrameLayout>
 
                     <LinearLayout
                         android:orientation="horizontal"
@@ -503,29 +437,7 @@
                             android:textSize="12sp" />
                     </FrameLayout>
 
-                    <FrameLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/Level1access">
 
-                        <FrameLayout
-                            android:layout_height="20dp"
-                            android:background="@drawable/button_roundoff"
-                            android:layout_width="wrap_content"
-                            android:layout_gravity="right">
-
-                            <TextView
-                                android:text="Level 1 + 2 : Access"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:gravity="center"
-                                android:textColor="@color/cardview_light_background"
-                                tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry"
-                                android:textSize="12sp"
-                                android:paddingStart="20dp"
-                                android:paddingEnd="20dp" />
-                        </FrameLayout>
-                    </FrameLayout>
 
                     <LinearLayout
                         android:orientation="horizontal"

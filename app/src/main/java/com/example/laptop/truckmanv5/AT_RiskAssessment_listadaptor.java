@@ -18,7 +18,9 @@ public class AT_RiskAssessment_listadaptor extends BaseAdapter {
     private Context context;
     private LayoutInflater inflater;
 
-    public AT_RiskAssessment_listadaptor(Context context, ArrayList<AT_RiskAssessment_model> arrayListAT_RiskAssessment) {
+    public AT_RiskAssessment_listadaptor() {}
+
+        public AT_RiskAssessment_listadaptor(Context context, ArrayList<AT_RiskAssessment_model> arrayListAT_RiskAssessment) {
         this.context = context;
         this.arrayListAT_RiskAssessment  = arrayListAT_RiskAssessment;
         inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);

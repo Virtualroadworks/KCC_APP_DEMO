@@ -18,7 +18,9 @@ public class AT0013_3_listadaptor extends BaseAdapter {
     private Context context;
     private LayoutInflater inflater;
 
-    public AT0013_3_listadaptor(Context context, ArrayList<AT0013_3_model> arrayListAT0013_3) {
+    public AT0013_3_listadaptor() {}
+
+        public AT0013_3_listadaptor(Context context, ArrayList<AT0013_3_model> arrayListAT0013_3) {
         this.context = context;
         this.arrayListAT0013_3  = arrayListAT0013_3;
         inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);

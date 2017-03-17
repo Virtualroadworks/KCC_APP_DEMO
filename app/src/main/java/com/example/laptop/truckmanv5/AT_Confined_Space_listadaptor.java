@@ -18,7 +18,9 @@ public class AT_Confined_Space_listadaptor extends BaseAdapter {
     private Context context;
     private LayoutInflater inflater;
 
-    public AT_Confined_Space_listadaptor(Context context, ArrayList<AT_Confined_Space_model> arrayListAT_Confined_Space) {
+    public AT_Confined_Space_listadaptor() {}
+
+        public AT_Confined_Space_listadaptor(Context context, ArrayList<AT_Confined_Space_model> arrayListAT_Confined_Space) {
         this.context = context;
         this.arrayListAT_Confined_Space  = arrayListAT_Confined_Space;
         inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);

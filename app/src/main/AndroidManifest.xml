@@ -82,10 +82,6 @@
             android:label="@string/title_activity_popup__wam"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Popup_WAM"
-            android:label="@string/title_activity_popup__wam"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
             android:name=".Info_Box_Windows_and_Mirrors"
             android:label="Info Box Windows and Mirrors"
             android:theme="@style/AppTheme.NoActionBar" />
