@@ -198,29 +198,85 @@
                     android:layout_weight="1">
 
                     <LinearLayout
-                        android:orientation="horizontal"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
 
-                        <TextView
-                            android:text="Last Database Sync:"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:textStyle="normal|bold"
-                            android:textSize="16sp"
-                            android:gravity="bottom"
-                            android:layout_weight="1"
-                            android:textColor="@color/cast_expanded_controller_background_color"
-                            android:textAlignment="viewStart" />
-
-                        <TextView
-                            android:text="Database Time"
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:id="@+id/Database_Synctime"
-                            android:layout_weight="1"
-                            android:textColor="@color/cast_expanded_controller_background_color"
-                            android:gravity="end" />
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="bottom"
+                                android:text="Last Database Sync:"
+                                android:textAlignment="viewStart"
+                                android:textColor="@color/cast_expanded_controller_background_color"
+                                android:textSize="16sp"
+                                android:textStyle="normal|bold" />
+
+                            <TextView
+                                android:id="@+id/Database_Synctime"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="end"
+                                android:text="Database Time"
+                                android:textColor="@color/cast_expanded_controller_background_color" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="bottom"
+                                android:text="Installed App Build Version:"
+                                android:textAlignment="viewStart"
+                                android:textColor="@color/cast_expanded_controller_background_color"
+                                android:textSize="16sp"
+                                android:textStyle="normal|bold" />
+
+                            <TextView
+                                android:id="@+id/app_build_version"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="end"
+                                android:text="2.0"
+                                android:textColor="@color/cast_expanded_controller_background_color" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="bottom"
+                                android:text="Latest App Build Version:"
+                                android:textAlignment="viewStart"
+                                android:textColor="@color/cast_expanded_controller_background_color"
+                                android:textSize="16sp"
+                                android:textStyle="normal|bold" />
+
+                            <TextView
+                                android:id="@+id/latest_app_build_version"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="end"
+                                android:textColor="@color/cast_expanded_controller_background_color" />
+                        </LinearLayout>
                     </LinearLayout>
 
                 </FrameLayout>
@@ -229,90 +285,90 @@
             </LinearLayout>
 
             <FrameLayout
-                android:layout_height="match_parent"
-                android:background="@color/Egis_OK"
                 android:id="@+id/Lockoutuserframelayout"
-                android:layout_width="match_parent">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/Egis_OK">
 
                 <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
                     <LinearLayout
-                        android:orientation="vertical"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center">
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
 
                         <TextView
-                            android:text="Greetings"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:text="Greetings"
                             android:textAlignment="center"
-                            android:textSize="28sp"
-                            android:textColor="@color/common_google_signin_btn_text_dark_default" />
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="28sp" />
 
                         <TextView
+                            android:id="@+id/user_name2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:id="@+id/user_name2"
-                            android:textSize="40sp"
-                            android:textAlignment="center"
                             android:layout_gravity="center_horizontal"
+                            android:hint="User Name"
+                            android:textAlignment="center"
                             android:textColor="@color/cast_libraries_material_featurehighlight_text_body_color"
-                            android:hint="User Name" />
+                            android:textSize="40sp" />
 
                         <ImageView
+                            android:id="@+id/imageView8"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            app:srcCompat="@drawable/lockouticon"
-                            android:id="@+id/imageView8"
                             android:layout_gravity="center"
+                            app:srcCompat="@drawable/lockouticon"
                             tools:ignore="ContentDescription" />
 
                         <TextView
-                            android:text="Please await"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
                             android:id="@+id/textView41"
-                            android:textAlignment="center"
-                            android:textSize="28sp"
-                            android:textColor="@color/common_google_signin_btn_text_dark_default" />
-
-                        <TextView
-                            android:text="Activation"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:text="Please await"
+                            android:textAlignment="center"
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="28sp" />
+
+                        <TextView
                             android:id="@+id/textView40"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Activation"
                             android:textAlignment="center"
-                            android:textSize="28sp"
-                            android:textColor="@color/common_google_signin_btn_text_dark_default" />
+                            android:textColor="@color/common_google_signin_btn_text_dark_default"
+                            android:textSize="28sp" />
 
                         <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
                             android:text="to DCC APP"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
                             android:textAlignment="center"
-                            android:textSize="20sp"
-                            android:textColor="@color/cast_libraries_material_featurehighlight_text_body_color" />
+                            android:textColor="@color/cast_libraries_material_featurehighlight_text_body_color"
+                            android:textSize="20sp" />
 
                         <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
                             android:text="Your access Level is"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
                             android:textAlignment="center"
-                            android:textSize="20sp"
-                            android:textColor="@color/cast_libraries_material_featurehighlight_text_body_color" />
+                            android:textColor="@color/cast_libraries_material_featurehighlight_text_body_color"
+                            android:textSize="20sp" />
 
                         <TextView
+                            android:id="@+id/access_level"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:id="@+id/access_level"
-                            android:textSize="40sp"
-                            android:textAlignment="center"
                             android:layout_gravity="center_horizontal"
+                            android:hint="User Name"
+                            android:textAlignment="center"
                             android:textColor="@color/cast_libraries_material_featurehighlight_text_body_color"
-                            android:hint="User Name" />
+                            android:textSize="40sp" />
 
                     </LinearLayout>
 

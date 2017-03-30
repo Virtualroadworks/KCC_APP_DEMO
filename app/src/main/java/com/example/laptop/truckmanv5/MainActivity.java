@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     boolean internet_connected;
 
 
-    private TextView user_name,user_name2,Database_Synctime,access_level,database_check,online_check,gps_check;
+    private TextView user_name,user_name2,Database_Synctime,app_build_version,latest_app_build_version,access_level,database_check,online_check,gps_check;
 
     private String Level_0 = "Level 0";
     private String Level_1 = "Level 1";
@@ -102,6 +102,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         user_name2 = (TextView) findViewById(R.id.user_name2);
         access_level = (TextView) findViewById(R.id.access_level);
         Database_Synctime = (TextView) findViewById(R.id.Database_Synctime);
+
+        app_build_version = (TextView) findViewById(R.id.app_build_version);
+        latest_app_build_version = (TextView) findViewById(R.id.latest_app_build_version);
+
         Onlinetext = (TextView) findViewById(R.id.Onlinetext);
         GPSOnlinetext = (TextView) findViewById(R.id.GPSOnlinetext);
 
@@ -170,6 +174,21 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 user_name.setText(userName);
                 user_name2.setText(userName);
                 Database_Synctime.setText(Database_Synced);
+            }
+
+            @Override
+            public void onCancelled(FirebaseError firebaseError) {
+
+            }
+        });
+
+        mRootRef.child("APP_Build").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(com.firebase.client.DataSnapshot dataSnapshot) {
+
+                String App_build2 = dataSnapshot.getValue(String.class);
+                latest_app_build_version.setText(App_build2);
+
             }
 
             @Override
