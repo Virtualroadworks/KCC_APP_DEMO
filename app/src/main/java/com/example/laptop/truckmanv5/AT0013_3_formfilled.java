@@ -226,9 +226,9 @@ public class AT0013_3_formfilled extends AppCompatActivity {
                 String [] username= { user_emailstring };
 
                 final String template_message =
-                        ">>>>>>> AT0013_3 Report - RIVERGANG CREW DAILY CHECKLIST<<<<<<<"
+                        ">>>>>>> Inspections Checklist Form<<<<<<<"
                                 + '\n'
-                                + '\n' + "This is a Rivergang crew checklist report, filled on " + startDatestring + " using the DCC App."
+                                + '\n' + "This is a Inspections checklist form, filled on " + startDatestring + " using the DCC App."
                                 + '\n'
                                 + '\n' + "It was compleated and sent in by " + user_namestring
                                 + '\n'
@@ -248,7 +248,7 @@ public class AT0013_3_formfilled extends AppCompatActivity {
 
                 final String csvString =
 
-                                "Report Form, " + "AT0013_3" + ", " +
+                                "Report Form, " + "Inspections Checklist" + ", " +
                                 "\n" +
                                 "Inspection done by, " + user_namestring + ", " +
                                 "\n" +

@@ -480,7 +480,6 @@
                                         android:hint="02-D-4178"
                                         android:background="@drawable/regplatebackground"
                                         android:textAlignment="center"
-                                        android:textIsSelectable="true"
                                         android:textSize="20sp"
                                         android:textStyle="bold"
                                         android:layout_gravity="center"

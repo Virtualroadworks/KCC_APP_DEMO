@@ -250,7 +250,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:gravity="end"
-                                android:text="2.0"
+                                android:text="3.0"
                                 android:textColor="@color/cast_expanded_controller_background_color" />
                         </LinearLayout>
                         <LinearLayout
