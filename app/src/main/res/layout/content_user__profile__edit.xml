@@ -122,8 +122,7 @@
                 <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="5dp"
-                    android:background="#61cbf9">
-                </FrameLayout>
+                    android:background="@color/KCC_APP"></FrameLayout>
 
                 <TextView
                     android:layout_width="wrap_content"

@@ -42,7 +42,7 @@
             <item
                 android:id="@+id/nav_truckman_app"
                 android:icon="@drawable/vr_truckman_info_icon"
-                android:title="DCC Website" />
+                android:title="KCC Website" />
             <item
                 android:id="@+id/nav_truckman_instructions"
                 android:icon="@drawable/vr_truckman_info_icon"

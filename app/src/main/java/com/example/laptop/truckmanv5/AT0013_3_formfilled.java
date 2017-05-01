@@ -226,9 +226,9 @@ public class AT0013_3_formfilled extends AppCompatActivity {
                 String [] username= { user_emailstring };
 
                 final String template_message =
-                        ">>>>>>> RSA - Inspections Checklist Form<<<<<<<"
+                        ">>>>>>> KCC - Inspections Checklist Form<<<<<<<"
                                 + '\n'
-                                + '\n' + "This is a Inspections checklist form, filled on " + startDatestring + " using the RSA App."
+                                + '\n' + "This is a Inspections checklist form, filled on " + startDatestring + " using the KCC App."
                                 + '\n'
                                 + '\n' + "It was compleated and sent in by " + user_namestring
                                 + '\n'
@@ -238,7 +238,7 @@ public class AT0013_3_formfilled extends AppCompatActivity {
                                 + '\n'
                                 + '\n' + ">>>>>>> Attached below is the Excel and PDF of the Report (if Required)<<<<<<<"
                                 + '\n'
-                                + '\n' + "This email was generated using the RSA App"
+                                + '\n' + "This email was generated using the KCC App"
                                 + '\n'
                                 + '\n' + "Kind Regards"
                                 + '\n'
@@ -457,7 +457,7 @@ public class AT0013_3_formfilled extends AppCompatActivity {
                                         ">>>>>>>  End of Report  <<<<<<<" +
                                         "\n" +
                                         "\n" +
-                                        ">>>>>>>  Thank you for using RSA App  <<<<<<<" +
+                                        ">>>>>>>  Thank you for using KCC App  <<<<<<<" +
                                 ", " ;
 
 
@@ -480,7 +480,7 @@ public class AT0013_3_formfilled extends AppCompatActivity {
                     canvas.drawColor(Color.WHITE);
                 u.draw(canvas);
 
-                File pdfFile = new File(outputDir, "RSA_Inspections" + startDatestring + ".pdf");
+                File pdfFile = new File(outputDir, "KCC_Inspections" + startDatestring + ".pdf");
 
                 try {
 
@@ -529,7 +529,7 @@ public class AT0013_3_formfilled extends AppCompatActivity {
 
                     intent = new Intent(Intent.ACTION_SEND_MULTIPLE);
                     intent.putExtra(Intent.EXTRA_EMAIL, user_emailstring);
-                    intent.putExtra(Intent.EXTRA_SUBJECT, ("RSA Inspections Form :- " + startDatestring + " Submitted by " + user_namestring));
+                    intent.putExtra(Intent.EXTRA_SUBJECT, ("KCC Inspections Form :- " + startDatestring + " Submitted by " + user_namestring));
                     intent.putExtra(Intent.EXTRA_TEXT, template_message);
 
                     ArrayList<Uri> uris = new ArrayList<Uri>();

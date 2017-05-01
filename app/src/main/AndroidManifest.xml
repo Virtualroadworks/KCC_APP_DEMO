@@ -190,7 +190,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Rsavideowebpage"
-            android:label="DCC Videos"
+            android:label="KCC Videos"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Apptutorial"
@@ -230,7 +230,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".dccdrainageforms"
-            android:label="RSA Forms Database"
+            android:label="KCC Forms Database"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".AT0013_3_view"
@@ -274,7 +274,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".DCC_PLANS_PDF"
-            android:label="RSA Document"
+            android:label="KCC Document"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".AT_Confined_Space_view"
@@ -298,7 +298,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".DCC_WEBSITE"
-            android:label="RSA Website"
+            android:label="KCC Website"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

@@ -11,4 +11,5 @@
     <color name="trans">#00ffffff</color>
     <color name="Red_tickbox">#ff3333</color>
     <color name="Green_tickbox">#33ff33</color>
+    <color name="KCC_APP">#ffcc33</color>
 </resources>
