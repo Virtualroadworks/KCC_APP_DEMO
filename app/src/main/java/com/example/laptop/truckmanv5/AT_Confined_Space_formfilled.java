@@ -173,7 +173,7 @@ public class AT_Confined_Space_formfilled extends AppCompatActivity {
                 final String template_message =
                         ">>>>>>> Confined Space Report - CHECKLIST<<<<<<<"
                                 + '\n'
-                                + '\n' + "This is a checklist report, filled on " + startDatestring + " using the DCC App."
+                                + '\n' + "This is a checklist report, filled on " + startDatestring + " using the RSA App."
                                 + '\n'
                                 + '\n' + "It was compleated and sent in by " + user_namestring
                                 + '\n'
@@ -183,7 +183,7 @@ public class AT_Confined_Space_formfilled extends AppCompatActivity {
                                 + '\n'
                                 + '\n' + ">>>>>>> Attached below is the Excel and PDF of the Report (if Required)<<<<<<<"
                                 + '\n'
-                                + '\n' + "This email was generated using the DCC App"
+                                + '\n' + "This email was generated using the RSA App"
                                 + '\n'
                                 + '\n' + "Kind Regards"
                                 + '\n'
@@ -231,7 +231,7 @@ public class AT_Confined_Space_formfilled extends AppCompatActivity {
                                 ">>>>>>>  End of Report  <<<<<<<" +
                                 "\n" +
                                 "\n" +
-                                ">>>>>>>  Thank you for using DCC App  <<<<<<<" +
+                                ">>>>>>>  Thank you for using RSA App  <<<<<<<" +
                                 ", " ;
 
 
@@ -252,7 +252,7 @@ public class AT_Confined_Space_formfilled extends AppCompatActivity {
                     canvas.drawColor(Color.WHITE);
                 u.draw(canvas);
 
-                File pdfFile = new File(outputDir, "Confined_Space_Checklist" + startDatestring + ".pdf");
+                File pdfFile = new File(outputDir, "RSA_Confined_Space_Checklist" + startDatestring + ".pdf");
 
                 try {
 
@@ -301,7 +301,7 @@ public class AT_Confined_Space_formfilled extends AppCompatActivity {
 
                     intent = new Intent(Intent.ACTION_SEND_MULTIPLE);
                     intent.putExtra(Intent.EXTRA_EMAIL, user_emailstring);
-                    intent.putExtra(Intent.EXTRA_SUBJECT, ("DCC Confined Space Checklist :- " + startDatestring + " Submitted by " + user_namestring));
+                    intent.putExtra(Intent.EXTRA_SUBJECT, ("RSA Confined Space Checklist :- " + startDatestring + " Submitted by " + user_namestring));
                     intent.putExtra(Intent.EXTRA_TEXT, template_message);
 
                     ArrayList<Uri> uris = new ArrayList<Uri>();

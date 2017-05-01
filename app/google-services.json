@@ -1,43 +1,35 @@
 {
   "project_info": {
-    "project_number": "1049267089427",
-    "firebase_url": "https://truckman-1dc51.firebaseio.com",
-    "project_id": "truckman-1dc51",
-    "storage_bucket": "truckman-1dc51.appspot.com"
+    "project_number": "80408787468",
+    "firebase_url": "https://kcc-app-c2be0.firebaseio.com",
+    "project_id": "kcc-app-c2be0",
+    "storage_bucket": "kcc-app-c2be0.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1049267089427:android:10b5050594673c15",
+        "mobilesdk_app_id": "1:80408787468:android:5da84b59d96286de",
         "android_client_info": {
-          "package_name": "com.virtualroadworks.dccwaterapp"
+          "package_name": "com.virtualroadworks.kcc_demo_app"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1049267089427-an9r2i1v9vpr3cpcl4hd8c8vc2achf75.apps.googleusercontent.com",
+          "client_id": "80408787468-rvjrai0cvlpobihlptkb3joj98a9j0qj.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.virtualroadworks.dccwaterapp",
-            "certificate_hash": "903A6B66895AFD20F56ADC09CE756A912ED34559"
+            "package_name": "com.virtualroadworks.kcc_demo_app",
+            "certificate_hash": "903a6b66895afd20f56adc09ce756a912ed34559"
           }
         },
         {
-          "client_id": "1049267089427-8i4ttr69j6moplu5bup96n6p1qpsropl.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.virtualroadworks.dccwaterapp",
-            "certificate_hash": "8E4BF5C39379592AE21AE84334FE877E1E367A42"
-          }
-        },
-        {
-          "client_id": "1049267089427-riv0jm17mj7mtjfdnsqdcd8v5r659vcq.apps.googleusercontent.com",
+          "client_id": "80408787468-jsfeq6ao9h3inlm5rqm48kt2fi3k7v08.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyA2TabvbqGtEeyz--asvOObZ_QWLuhjBUw"
+          "current_key": "AIzaSyCwtQHk3sXaxAqDeLsKpBRC8xTeA2JcyBM"
         }
       ],
       "services": {
@@ -48,7 +40,7 @@
           "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "1049267089427-riv0jm17mj7mtjfdnsqdcd8v5r659vcq.apps.googleusercontent.com",
+              "client_id": "80408787468-jsfeq6ao9h3inlm5rqm48kt2fi3k7v08.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

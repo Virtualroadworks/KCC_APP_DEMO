@@ -1424,7 +1424,7 @@ public class AT_RiskAssessment_view extends AppCompatActivity implements UserLoc
         });
 
         Firebase.setAndroidContext(this);
-        Firebase mRootRef = new Firebase("https://truckman-1dc51.firebaseio.com/");
+        Firebase mRootRef = new Firebase("https://kcc-app-c2be0.firebaseio.com//");
         FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
 
         mRootRef.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("Profile").addValueEventListener(new com.firebase.client.ValueEventListener() {

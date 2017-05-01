@@ -45,7 +45,7 @@ public class zRegname extends AppCompatActivity implements View.OnClickListener 
         progressDialog = new ProgressDialog(this);
 
         Firebase.setAndroidContext(this);
-        mRootRef = new Firebase("https://truckman-1dc51.firebaseio.com");
+        mRootRef = new Firebase("https://road-safety-contracts-demo.firebaseio.com");
         firebaseAuth = FirebaseAuth.getInstance();
 
         z_regnamerightarrow = (ImageButton) findViewById(R.id.z_regnamerightarrow);

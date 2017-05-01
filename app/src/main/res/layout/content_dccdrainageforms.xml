@@ -65,16 +65,16 @@
                 android:layout_width="match_parent">
 
                 <TextView
-                    android:text="Drainage"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:background="@drawable/button_roundoff2"
                     android:gravity="center"
-                    android:textStyle="normal|bold"
-                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
                     android:paddingLeft="20dp"
-                    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry"
+                    android:text="RSA Forms"
                     android:textAlignment="center"
-                    android:background="@drawable/button_roundoff2" />
+                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                    android:textStyle="normal|bold"
+                    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
 
             </FrameLayout>
 

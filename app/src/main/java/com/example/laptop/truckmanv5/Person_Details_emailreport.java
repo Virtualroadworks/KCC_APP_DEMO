@@ -435,9 +435,9 @@ public class Person_Details_emailreport extends AppCompatActivity {
                 String [] username= { emailsend_name };
 
                 final String template_message =
-                        ">>>>>>> Vehicle Report <<<<<<<"
+                        ">>>>>>> RSA - Vehicle Report <<<<<<<"
                         + '\n'
-                        + '\n' + "This is a Vehicle inspection report, filled by " + tvPersonDetailNameemailemailstring + " using the DCC App."
+                        + '\n' + "This is a Vehicle inspection report, filled by " + tvPersonDetailNameemailemailstring + " using the RSA App."
                         + '\n'
                         + '\n' + "An inspection has just been filled out and compleated on vehicle reg number "
                         + '\n'
@@ -458,16 +458,16 @@ public class Person_Details_emailreport extends AppCompatActivity {
                         + '\n'
                         + '\n' + ">>>>>>> End of vehicle report <<<<<<<"
                         + '\n'
-                        + '\n' + "Thank you for using the Truckman App"
+                        + '\n' + "Thank you for using the RSA App"
                         + '\n'
                         + '\n' + "Kind Regards"
                         + '\n'
-                        + '\n' + "The DCC Team.";
+                        + '\n' + "The RSA Team.";
 
 
                 final String csvString =
 
-                         ", " + "DCC Vehicle Inspection Report"+ "\n" +
+                         ", " + "RSA Vehicle Inspection Report"+ "\n" +
                         "Date of Inspection, " + startDateemailstring + '\n' +
                         "Inspector Name, " + tvPersonDetailNameemailemailstring + '\n' +
                         "Vehicle reg number, " + tvRegemailstring + "\n" +
@@ -578,7 +578,7 @@ public class Person_Details_emailreport extends AppCompatActivity {
                 u.draw(canvas);
 
 
-                File pdfFile = new File(outputDir, "DCC Vehicle Report" + startDateemailstring + ".pdf");
+                File pdfFile = new File(outputDir, "RSA Vehicle Report" + startDateemailstring + ".pdf");
 
                 try {
 
@@ -620,7 +620,7 @@ public class Person_Details_emailreport extends AppCompatActivity {
 
                 File csvfile;
                 try {
-                    csvfile = File.createTempFile("report", ".csv", outputDir);
+                    csvfile = File.createTempFile("RSA_Vehicle_Report", ".csv", outputDir);
                     FileWriter fileWriter = new FileWriter(csvfile, true);
                     fileWriter.write(csvString);
                     fileWriter.flush();
@@ -629,7 +629,7 @@ public class Person_Details_emailreport extends AppCompatActivity {
                     intent = new Intent(Intent.ACTION_SEND_MULTIPLE);
                     intent.putExtra(Intent.EXTRA_EMAIL, tvPersonDetailEmailemailstring);
                     intent.putExtra(android.content.Intent.EXTRA_EMAIL,new String[] { tvreport_email_recipientmailstring });
-                    intent.putExtra(Intent.EXTRA_SUBJECT, ("DCC Vehicle Report :- " + startDateemailstring + " Submitted By " + tvPersonDetailNameemailemailstring));
+                    intent.putExtra(Intent.EXTRA_SUBJECT, ("RSA Vehicle Report :- " + startDateemailstring + " Submitted By " + tvPersonDetailNameemailemailstring));
                     intent.putExtra(Intent.EXTRA_TEXT, template_message);
 
                     ArrayList<Uri> uris = new ArrayList<Uri>();

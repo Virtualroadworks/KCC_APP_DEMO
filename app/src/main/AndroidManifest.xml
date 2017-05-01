@@ -13,7 +13,7 @@
         android:name=".truckmanv5"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="DCC APP"
+        android:label="KCC APP"
         android:screenOrientation="portrait"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -230,7 +230,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".dccdrainageforms"
-            android:label="DCC Forms Database"
+            android:label="RSA Forms Database"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".AT0013_3_view"
@@ -274,7 +274,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".DCC_PLANS_PDF"
-            android:label="DCC Document"
+            android:label="RSA Document"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".AT_Confined_Space_view"
@@ -298,7 +298,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".DCC_WEBSITE"
-            android:label="DCC Website"
+            android:label="RSA Website"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

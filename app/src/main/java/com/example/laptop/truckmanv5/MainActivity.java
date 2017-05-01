@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         setSupportActionBar(toolbar);
 
         Firebase.setAndroidContext(this);
-        mRootRef = new Firebase("https://truckman-1dc51.firebaseio.com");
+        mRootRef = new Firebase("https://kcc-app-c2be0.firebaseio.com/");
         firebaseAuth = FirebaseAuth.getInstance();
 
         Date date = new Date();

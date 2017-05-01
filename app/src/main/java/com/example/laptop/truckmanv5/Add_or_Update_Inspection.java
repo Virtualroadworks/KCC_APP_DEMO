@@ -4094,7 +4094,7 @@ public class Add_or_Update_Inspection extends AppCompatActivity implements Popup
 
 
         Firebase.setAndroidContext(this);
-        Firebase mRootRef = new Firebase("https://truckman-1dc51.firebaseio.com/");
+        Firebase mRootRef = new Firebase("https://road-safety-contracts-demo.firebaseio.com/");
         FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
 
         ///////////////////////////////////////////////////////////////////////////////////

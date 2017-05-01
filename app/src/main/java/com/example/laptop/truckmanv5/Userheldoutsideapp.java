@@ -39,7 +39,7 @@ public class Userheldoutsideapp extends AppCompatActivity {
 
         firebaseAuth = FirebaseAuth.getInstance();
         Firebase.setAndroidContext(this);
-        mRootRef = new Firebase("https://truckman-1dc51.firebaseio.com");
+        mRootRef = new Firebase("https://road-safety-contracts-demo.firebaseio.com");
 
         user_name2 = (TextView) findViewById(R.id.user_name2);
         access_level = (TextView) findViewById(R.id.access_level);

@@ -72,11 +72,11 @@
             </FrameLayout>
 
             <TextView
-                android:text='"DCC APP" Mobile/Web application software '
+                android:id="@+id/textView11"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView11"
-                android:paddingTop="15dp" />
+                android:paddingTop="15dp"
+                android:text='"RSA APP" Mobile/Web application software ' />
 
             <TextView
                 android:text="  We licence use of the App and Documents to you on the basis of this EULA and subject to any rules or policies applied by the Google Android application store from whose site, located at https://play.google.com/store/apps (Appstore), the End-user downloaded the App (Appstore Rules), or the APK send directly to you. We and/or the owners of the App and Documents remain the owners of the App and Documents at all times."

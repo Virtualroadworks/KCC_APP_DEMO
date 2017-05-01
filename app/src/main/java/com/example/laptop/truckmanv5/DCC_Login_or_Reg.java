@@ -34,7 +34,7 @@ public class DCC_Login_or_Reg extends AppCompatActivity implements View.OnClickL
 
 
         Firebase.setAndroidContext(this);
-        mRootRef = new Firebase("https://truckman-1dc51.firebaseio.com/");
+        mRootRef = new Firebase("https://kcc-app-c2be0.firebaseio.com/");
         firebaseAuth = FirebaseAuth.getInstance();
 
         progressDialog = new ProgressDialog(this);

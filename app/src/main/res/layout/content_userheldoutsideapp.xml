@@ -83,12 +83,12 @@
                             android:textColor="@color/common_google_signin_btn_text_dark_default" />
 
                         <TextView
-                            android:text="to DCC APP"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:text="to RSA APP"
                             android:textAlignment="center"
-                            android:textSize="24sp"
-                            android:textColor="@color/cast_libraries_material_featurehighlight_text_body_color" />
+                            android:textColor="@color/cast_libraries_material_featurehighlight_text_body_color"
+                            android:textSize="24sp" />
 
                         <TextView
                             android:text="Your access Level is"
